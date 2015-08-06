@@ -1,0 +1,70 @@
+% !TEX encoding = ISO-8859-1
+\documentclass[12pt]{article}
+
+\usepackage{amssymb}
+\usepackage{amsmath,amsfonts,amsthm,amstext}
+\usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[pdftex]{graphicx}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage[all]{xy}
+
+\setlength{\topmargin}{-1.0in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textheight}{10.1in}
+\setlength{\textwidth}{6.5in}
+\setlength{\baselineskip}{12mm}
+
+\newcounter{exercicios}
+\setcounter{exercicios}{0}
+\newcommand{\questao}{
+\addtocounter{exercicios}{36}
+\noindent{\bf Exerc{\'\i}cio \arabic{exercicios}: }}
+
+\newcommand{\equi}{\Leftrightarrow}
+\newcommand{\bic}{\leftrightarrow}
+\newcommand{\cond}{\rightarrow}
+\newcommand{\impl}{\Rightarrow}
+\newcommand{\nao}{\sim}
+\newcommand{\sub}{\subseteq}
+\newcommand{\e}{\ \wedge\ }
+\newcommand{\ou}{\ \vee\ }
+\newcommand{\vaz}{\emptyset}
+
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\vesp}{\vspace{0.2cm}}
+\newcommand{\z}{\mathbb{Z}}
+\newcommand{\n}{\mathbb{N}}
+\newcommand{\q}{\mathbb{Q}}
+\newtheorem{defin}{Defini{\c c}{\~a}o}
+
+\newcommand{\compcent}[1]{\vcenter{\hbox{$#1\circ$}}}
+\newcommand{\comp}{\mathbin{\mathchoice
+{\compcent\scriptstyle}{\compcent\scriptstyle}
+{\compcent\scriptscriptstyle}{\compcent\scriptscriptstyle}}}
+
+\begin{document}
+
+\questao Sejam $H$ e $K$ subgrupos de um grupo $G$ (com nota{\c c}{\~a}o
+multiplicativa).
+\begin{enumerate}[label=({\alph*})]
+
+\item[(d)] Demonstre que se $HK=\{hk \mid h\in H, k\in K\}$ {\'e} subgrupo
+de $G$, ent{\~a}o $HK=KH$.
+
+[\emph{Nota: $HK=KH$ \textbf{n{\~a}o} quer dizer que $hk=kh$,
+para todo $h\in H, k\in K$; significa que $hk=k_1h_1 \in KH$ e $kh=h_2k_2 \in
+HK$, para todo $h\in H, k\in K$.}]
+\end{enumerate}
+
+\textbf{Solu{\c c}{\~a}o}: Seja $\alpha \in KH$. Ent{\~a}o existem $k \in K$ e $h \in H$ tais que $\alpha = kh$. Temos que 
+$\alpha^{-1} = h^{-1}k^{-1} \in HK$. Como $HK$ {\'e} por hip{\'o}tese um subgrupo de $G$ e $\alpha^{-1} \in HK$, ent{\~a}o $(\alpha^{-1})^{-1} = \alpha \in HK$. Logo $KH \subseteq HK$.
+
+Agora seja $\beta \in HK$. Como $HK$ {\'e} subgrupo de $G$, ent{\~a}o $\beta^{-1} \in HK$. Logo $\beta^{-1} = h_2k_2$, com $h_2 \in H$ e $k_2 \in K$. Da{\'i} $\beta = (\beta^{-1})^{-1} = (h_2k_2)^{-1} = k_2^{-1}h_2^{-1}$. Logo, $HK \subseteq KH$.
+
+Portanto $KH = HK$.
+
+
+
+\end{document}
