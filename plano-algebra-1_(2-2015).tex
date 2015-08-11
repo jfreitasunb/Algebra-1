@@ -1,15 +1,23 @@
 %!TEX program = xelatex
-% !TEX encoding = ISO-8859-1
-\documentclass{article}
-
-\usepackage{amssymb}
-\usepackage{amsmath,amsfonts,amsthm,amstext}
-\usepackage[brazil]{babel}
-\usepackage[latin1]{inputenc}
+%!TEX encoding = ISO-8859-1
+\documentclass[12pt]{article}
+%\usepackage[leqno]{amsmath}
+%\usepackage{makeidx,graphics}
 \usepackage{graphicx}
 \graphicspath{{/Users/jfreitas/Dropbox/imagens-latex/}{/home/jfreitas/Dropbox/imagens-latex/}}
+\usepackage{amssymb,amsmath,amsfonts,amsthm,amstext}
+%\usepackage{color}
+\usepackage[latin1]{inputenc}
+\usepackage[portuges]{babel}
+\usepackage{enumerate}
 \usepackage{url}
-\usepackage{enumitem}
+
+
+\newcommand{\real}{\mathbb{R}}
+
+%\DeclareGraphicsRule{jpg}{*[}{}{`jpeg2eps #1.jpg}
+%\input{seteps}
+%\input{setbmp-dvips}
 
 \setlength{\topmargin}{-1.0in}
 \setlength{\oddsidemargin}{0in}
@@ -21,46 +29,38 @@
 \pagestyle{empty}
 
 \begin{figure}[h]
-        \begin{minipage}[c]{1.7cm}
-        \includegraphics[width=1.7cm]{unb.pdf}
-        \end{minipage}%
-        \hspace{0pt}
-        \begin{minipage}[c]{4in}
-          {Universidade de Bras{\'\i}lia} \\
-          {Departamento de Matem{\'a}tica}
-\end{minipage}
+    \begin{minipage}[c]{1.7cm}
+    \includegraphics[width=1.7cm]{unb.pdf}
+    \end{minipage}%
+    \hspace{0pt}
+    \begin{minipage}[c]{4in}
+    {Universidade de Bras{\'\i}lia} \\
+    {Departamento de Matem{\'a}tica}
+    \end{minipage}
 \end{figure}
-\vspace{-0.35cm} \hrule
-
-\begin{center}
-{\Large\bf {\'A}lgebra 1 - Turma A} \\ \vspace{9pt} {\large\bf Plano
-de Ensino -- 2$^{o}$/2011}\\ \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
-%\vspace{0.25cm}
-\end{center}
+\vspace{-0.9cm}
 \hrule
 
-\vspace{9pt}
-\noindent \textbf{\underline{Programa:}}
-\begin{enumerate}[label={\arabic*})]
-%\item No{\c c}{\~o}es de L{\'o}gica.
+\begin{center}
+{\large\bf Plano de Ensino -- 2$^{o}$/2015} \\
+{\large\bf Álgebra 1 -- Turma B}\\
+Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+\end{center}
+\hrule
+\vspace{0.25cm}
+\noindent {\bf{PROGRAMA:}} 17 semanas dividas em 3 m\'{o}dulos.
+\begin{enumerate}[1)]
 
-\item Teoria de Conjuntos.
+\item Noções Básicas: Operações lógicas elementares; Conjuntos; Produtos Cartesianos Finitos; Relações: de ordem e de equivalência, conjunto quociente; funções: injetoras, sobrejetoras, bijetoras; 
 
-\item N{\'u}meros Inteiros.
+\item Estruturas álgebricas: grupos, grupos abelianos, subgrupos, relações de equivalência módulo um subgrupo e o Teorema de Lagrange, Grupos Cíclicos, Grupos de Permutações; Anéis, Subanéis. Ideais, Domínio de Integridade, Anéis de divisão; Corpos de frações de um domínio de integridade
 
-\item Rela{\c c}{\~o}es e Fun{\c c}{\~o}es.
-
-\item Estruturas Alg{\'e}bricas: An{\'e}is, Dom{\'\i}nios de
-  Integridade, Grupos e Corpos.
-
-\item Polin{\^o}mios em uma Vari{\'a}vel sobre Dom{\'\i}nios de Integridade e Corpos.
+\item Polinômios sobre domínios de integridade: forma e função polinomial, o algorítmo de Euclides para polinômios sobre um corpo, polinômios irredutíveis. Outros tópicos: construção dos números reais (por sequências de Cauchy), caracterização do corpo dos números reais. Estruturas algébricas simples.
 \end{enumerate}
 
-\vspace{9pt}
-\noindent \textbf{\underline{Bibliografia B{\'a}sica:}}
-\vspace{0.15cm}
+\noindent {\bf{BIBLIOGRAFIA:}}
+\begin{itemize}
 
-\begin{enumerate}[label={\arabic*})]
 \item S. Shokranian: {\it {\'A}lgebra 1}, Ci{\^e}ncia Moderna, 2010.
 
 \item H. H. Domingues, G. Iezzi: {\it {\'A}lgebra Moderna}, $2^a$
@@ -72,73 +72,113 @@ de Ensino -- 2$^{o}$/2011}\\ \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
 \item G. Birkhoff, S. MacLane: {\it {\'A}lgebra Moderna B{\'a}sica}, $4^a$ Ed.,
   Guanabara Dois, 1980.
 
-%\item E. A. Filho: {\it Inicia{\c c}{\~a}o {\`a} L{\'o}gica Matem{\'a}tica}, Nobel, 2002.
-\end{enumerate}
+\end{itemize}
 
-\noindent \textbf{\underline{Avalia{\c c}{\~a}o:}}
-\vspace{0.15cm}
-
-\noindent Ser{\~a}o aplicadas tr{\^e}s provas $P_1$, $P_2$ e $P_3$. A {\bf nota final (NF)}
-ser{\'a} calculada de acordo com a seguinte f{\'o}rmula:
-\[
-NF = \dfrac{P_1 + 2P_2 + 3P_3}{6}.
-\]
-Para ser aprovado o aluno
-dever{\'a} obter {\bf notal final (NF)} igual ou superior a $5,0$. As provas est{\~a}o
-previstas para as datas indicadas abaixo. No entanto, a crit{\'e}rio do
-professor, essas datas poder{\~a}o ser alteradas.
+\noindent {\bf{SISTEMA DE AVALIA\c{C}\~{A}O:}} O curso \'{e} dividido em tr\^{e}s
+m\'{o}dulos e em cada um ser{\'a} realizada uma prova correspondendo a 90\% da nota do módulo e testes em sala, as quais s\~{a}o atribu\'{\i}das as notas $P_1$, $P_2$ e $P_3$, nas datas detalhadas a seguir.
 
 \begin{center}
-%\vspace{0.5cm}
-\begin{tabular}{cccc}
-Prova:    & $P_1$    & $P_2$    & $P_3$ \cr
-Data: & 29/09/11 & 03/11/11 & 13/12/11 \cr
-\end{tabular}
+    \begin{tabular}{c|c|c}
+        \hline\hline
+        \hspace{1cm}{\bf Prova}\hspace{1cm} & \hspace{3cm}{\bf Data}\hspace{3cm} & \hspace{1.7cm}{\bf Hor\'{a}rio}\hspace{1.7cm} \\
+        \hline\hline
+        $P_1$ & 25/09/15 (sexta-feira) \phantom{x} & 19:00 - 20:40 \\
+        \hline
+        $P_2$ & 30/10/15 (sexta-feira) \phantom{x} & 19:00 - 20:40 \\
+        \hline
+        $P_3$ & 04/12/15 (sexta-feira) \phantom{x} & 19:00 - 20:40 \\
+        \hline\hline
+        %$PF$ &  11/07/11 (segunda-fei) \phantom{x} & 8:00 - 9:50 \\
+        %\hline\hline
+    \end{tabular}
 \end{center}
 
-\noindent \textbf{\underline{Observa{\c c}{\~o}es:}}
+{\bf \noindent Nota Final:} A partir das notas das provas mencionadas neste texto, a nota final ($NF$) de cada estudante \'{e} dada
+por
 \vspace{-0.15cm}
+\[
+NF = \frac{ P_1 + P_2 + P_3}{3}
+\]
+e ser\'{a} considerado aprovado o estudante que obtiver $NF \geq 5,00$.
 
-\begin{enumerate}[label={\arabic*})]
-
-\item Todos estudantes devem {\bf obrigatoriamente} se cadastrar no Moodle no endere{\c c}o
-\url{www.aprender.unb.br}. Em seguida, devem se inscrever na disciplina
+{\bf \noindent Men\c{c}\~{a}o Final:} ser\'{a} obtida da $NF$ de
+acordo com as normas da UnB.
 \begin{center}
-``{\'A}lgebra 1 - Turma A'', com c{\'o}digo de inscri{\c c}{\~a}o {\bf 567329}.
+    \begin{tabular}{c|c}
+        \hline\hline
+        \hspace{1cm}{Nota}\hspace{1cm} & \hspace{0.25cm}{Men\c{c}\~{a}o}\hspace{0.25cm}\\
+        \hline\hline
+        9,00 a 10,0 & SS \\
+        \hline
+        7,00 a 8,99 & MS \\
+        \hline
+        5,00 a 6,99 & MM \\
+        \hline
+        3,00 a 4,99 & MI \\
+        \hline
+        0,00 a 2,99  & II \\
+        \hline\hline
+    \end{tabular}
 \end{center}
+Receber{\'a} a men{\c c}{\~a}o {\bf SR} quem estiver reprovado por faltar mais de 25\%
+das aulas.
 
-\item As provas ser{\~a}o aplicadas apenas para alunos regularmente
-  matriculados na Turma A. A data da prova poder{\'a} ser alterada a crit{\'e}rio do
-  professor (de acordo com a realiza{\c c}{\~a}o do cronograma de ensino);
-\vspace{-.25cm}
+\noindent {\bf{P\'{A}GINA DA TURMA:}} Todos estudantes devem
+obrigatoriamente se cadastrar no MOODLE para ter acesso a listas de exerc{\'\i}cios, comunica\c{c}\~oes oficiais da disciplina, notas de aula entre outras informa\c{c}\~oes. Para tal o(a) aluno(a) deve acessar o endere\c{c}o
+\begin{center}
+    \url{e-mural.mat.unb.br/cadastro.php}
+\end{center}
+ para efetuar o cadastro. Nesta p\'agina ser\'a solicitada a matr{\'\i}cula, e-mail e defini\c{c}\~ao da senha de acesso. Para validar o cadastro o(a) aluno(a) dever\'a informar uma disciplina e turma do MAT na qual est\'a regularmente matriculado. Ap\'os a efetiva\c{c}\~ao do cadastro, dever\'a acessar o endere\c{c}o 
+ \begin{center}
+     \url{moodle.mat.unb.br}
+ \end{center}
+  para ter acesso \`a p\'agina da disciplina e a seu conte\'udo.
 
-\item O aluno dever{\'a} apresentar documento de identifica{\c c}{\~a}o durante a
-  realiza{\c c}{\~a}o da prova;
-\vspace{-.25cm}
 
-\item N{\~a}o {\'e} permitida a participa{\c c}{\~a}o de estudantes ouvintes durante as
-  aulas;
-\vspace{-.25cm}
+\begin{itemize}
+\item Toda a comunica\c{c}\~{a}o oficial do curso, inclusive a divulga\c{c}\~{a}o de
+notas e gabaritos, se dar\'{a} atrav\'{e}s do {\em F\'{o}rum de Not\'{\i}cias} do
+MOODLE.\vspace{-0.20cm}
+\item No {\em F\'{o}rum de Debates} do MOODLE poder\~{a}o ser
+postadas d\'{u}vidas que ser\~{a}o respondidas on-line pelos seus
+colegas ou pelo monitor dessa turma.
+\end{itemize}
 
-\item N{\~a}o haver{\'a} prova de reposi{\c c}{\~a}o;
-\vspace{-.25cm}
+\noindent {\bf{OBSERVA\c{C}\~{O}ES IMPORTANTES:}}
 
-\item As provas ser{\~a}o individuais e sem consulta, sendo proibida a
-  utiliza{\c c}{\~a}o de calculadoras e o empr{\'e}stimo de qualquer tipo de material
-  entre os alunos;
-\vspace{-.25cm}
+\begin{itemize}
+\item[1)] As provas ser\~{a}o individuais e sem qualquer tipo de
+aux\'{\i}lio (calculadora, livros etc.), sendo vedado o empr\'{e}stimo de
+qualquer material entre os alunos durante as avalia\c{c}\~{o}es. As
+tentativas de fraude ser\~{a}o reprimidas com m\'{a}ximo rigor.
+\vspace{-0.25cm}
 
-\item Durante as avalia{\c c}{\~o}es, qualquer aparelho eletr{\^o}nico (incluindo
-  celular) dever{\'a} estar desligado, sob pena de anula{\c c}{\~a}o da prova.
-\vspace{-.25cm}
+\item[2)] \'{E} vedado o uso de telefones celulares e quaisquer dispositivos eletr\^{o}nicos pessoais durante a realiza\c{c}\~{a}o das atividades do curso em sala de aula. \vspace{-0.25cm}
 
-\item Haver{\'a} avalia{\c c}{\~a}o quanto {\`a} clareza, apresenta{\c c}{\~a}o e formaliza{\c c}{\~a}o na
-  resolu{\c c}{\~a}o das quest{\~o}es de cada prova. A nota do aluno poder{\'a} ser alterada
-  em raz{\~a}o da inobserv{\^a}ncia desses par{\^a}metros.
+\item[3)] Ser\'{a} exigido documento de identifica\c{c}\~{a}o dos estudantes nos
+dias de provas e testes. \vspace{-0.25cm}
 
-\end{enumerate}
+\item[4)] A aus\^{e}ncia acarretar\'{a} nota zero em qualquer uma das
+avalia\c{c}\~{o}es. \vspace{-0.25cm}
+
+\item[5)] A crit\'{e}rio do professor, as datas das provas poder\~{a}o
+ser alteradas. \vspace{-0.25cm}
+
+\item[6)] A lista de presen\c{c}a ser\'{a} passada apenas uma vez
+durante cada aula e est\'{a} sujeita a confirma\c{c}\~{a}o oral. O
+estudante deve assin\'{a}-la com sua rubrica. {\'E} proibido assinar
+com suas iniciais e \'{e} proibido assinar por outra pessoa.
+\vspace{-0.25cm}
+
+\item[7)] Haver{\'a} avalia{\c c}{\~a}o quanto {\`a} clareza, apresenta{\c
+c}{\~a}o e formaliza{\c c}{\~a}o na  resolu{\c c}{\~a}o das quest{\~o}es de
+cada prova. A nota do aluno poder{\'a} ser alterada em raz{\~a}o da
+inobserv{\^a}ncia desses par{\^a}metros.
+
+\item[8)] A comunica\c{c}\~ao entre o professor/monitores e estudantes ser\'a, preferencialmente,
+ estabelecida pelo f\'orum do MOODLE.
+\end{itemize}
 
 \vfill
 \hrule
-
 \end{document}
