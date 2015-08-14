@@ -706,7 +706,7 @@ Neste caso, $2 \in A$ e $2 \in B$, logo $A \nsubseteq B$. Por outro lado, $3 \in
 
 Assim, dados 2 conjuntos $A$ e $B$, nem sempre temos que $A \subseteq B$ ou $B \subseteq A$.
 
-\begin{prop} Seja $A$ um conjunto. Ent{\~a}o $ \emptyset \subseteq A$.\end{prop}
+\begin{proposicao} Seja $A$ um conjunto. Ent{\~a}o $ \emptyset \subseteq A$.\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o} Suponha que $ \emptyset \nsubseteq A$. Logo existe $x \in \emptyset$ e $x \in A$. Mas por defini{\c c}{\~a}o o conjunto vazio n{\~a}o cont{\'e}m elementos. Logo {\'e} um absurdo ou uma contradi{\c c}{\~a}o existir $z \in \emptyset$. Portanto, $ \emptyset \subseteq A$, como quer{\'\i}amos demonstrar.\#
 
@@ -722,9 +722,9 @@ Exemplo: Sejam
 \[ A = \{1,2,3\},\ B = \{2,3,4\}\]
 \[A \cap B = \{2,3\}\]
 
-\begin{prop} Sejam $A$ e $B$ dois conjuntos. Ent{\~a}o
+\begin{proposicao} Sejam $A$ e $B$ dois conjuntos. Ent{\~a}o
 \[(A \cap B) \subseteq A  \mbox{ e } (A \cap B) \subseteq B.\]
-\end{prop}
+\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o} Seja $x \in A \cap B$ um elemento arbitr{\'a}rio. Logo $x \in A$ e $x \in B$. De $x \in A$ temos que $A \cap B \subseteq A$. De $x \in B$ temos que $A \cap B \subseteq B$. Como quer{\'\i}amos demonstrar.\#
 
@@ -753,12 +753,12 @@ Quando a intersec{\c c}{\~a}o de dois ou mais conjuntos {\'e} vazia, dizemos que
 Se $C = A \cup B$, tais que $A \cap B = \emptyset$, dizemos que $C$ {\'e} uma uni{\~a}o disjunta de $A$ e $B$. Neste caso, escrevemos
 \[C = A \sqcup B\]
 
-\begin{prop} Sejam $A,\ B$ e $C$ tr{\^e}s conjuntos, ent{\~a}o
+\begin{proposicao} Sejam $A,\ B$ e $C$ tr{\^e}s conjuntos, ent{\~a}o
 \begin{enumerate}
 \item $A\cap(B\cup C)=(A\cap B)\cup(A\cap C)$
 \item $A\cup(B\cap C)=(A\cup B)\cap(A\cup C)$
 \end{enumerate}
-\end{prop}
+\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}:
 \begin{enumerate}
@@ -808,16 +808,16 @@ Exemplo:\\
 $A=\{1,2,3,4\},\ E=\{1,2,3,5,4,0,8,9\}$\\
 $A^{c}=\{0,8,9\}$
 
-\begin{prop} Sejam $A,B,E$ conjuntos. Se $A\subseteq B\subseteq E$, ent{\~a}o $C_{E}(B)\subseteq C_{E}(A)$.\end{prop}
+\begin{proposicao} Sejam $A,B,E$ conjuntos. Se $A\subseteq B\subseteq E$, ent{\~a}o $C_{E}(B)\subseteq C_{E}(A)$.\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}: Seja $x\in B^{c}$, logo $x\notin B$ e assim $x\notin A$, pois $A\subseteq B$. Ent{\~a}o $x\in A^{c}$, ou seja, $B^{c}\subseteq A^{c}$. (Q.E.D.).\#\\
 
-\begin{prop} Sejam $A,B,E$ tr{\^e}s conjunto tais que $A\subseteq E$ e $B\subseteq E$. Ent{\~a}o:
+\begin{proposicao} Sejam $A,B,E$ tr{\^e}s conjunto tais que $A\subseteq E$ e $B\subseteq E$. Ent{\~a}o:
 \begin{enumerate}
 \item $(A\cup B)^{c}=A^{c}\cap B^{c}$
 \item $(A\cap B)^{c}=A^{c}\cup B^{c}$
 \end{enumerate}
-\end{prop}
+\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}: Seja $x\in(A\cup B)^{c}$. Logo $x\in A\cup B$, assim $x\notin A\wedge x\notin B$. Da{\'\i}, $x\in A^{c}\wedge x\in B^{c}$, isto {\'e}, $x\in A^{c}\cap B^{c}$. Desse modo,
 \begin{equation}
@@ -1062,7 +1062,7 @@ De fato, dados $d$ e $d_{1}$ m{\'a}ximos divisores comuns de $a$ e $b$, ent{\~a}
 
 \begin{nota}[M{\'a}ximo Divisor Comum] Indicaremos por $mdc(a,b)$ o m{\'a}ximo divisor comum ente $a$ e $b$, que j{\'a} sabemos que {\'e} {\'u}nico quando existe.\end{nota}
 
-\begin{prop} Quaisquer que sejam $a,b\in\mathbb{Z}$, existe $d\in\mathbb{Z}$ que {\'e} o m{\'a}ximo divisor comum entre $a$ e $b$.\end{prop}
+\begin{proposicao} Quaisquer que sejam $a,b\in\mathbb{Z}$, existe $d\in\mathbb{Z}$ que {\'e} o m{\'a}ximo divisor comum entre $a$ e $b$.\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}: Das observa{\c c}{\~o}es anteriores podemos considerar somente o caso em que $a>0$ e $b>0$.
 
@@ -1229,11 +1229,11 @@ $\bar{3}=\{x\in X/xR3\}=\{3\}$\\
 $\bar{4}=\{x\in X/xR4\}=\{4\}$
 \end{enumerate}
 
-\begin{prop} Seja R uma rela{\c c}{\~a}o de equival{\^e}ncia em um conjunto n{\~a}o vazio X, sejam a,b$\in$X. Se $\bar{a}\cap\bar{b}\neq\emptyset$, ent{\~a}o aRb.\end{prop}
+\begin{proposicao} Seja R uma rela{\c c}{\~a}o de equival{\^e}ncia em um conjunto n{\~a}o vazio X, sejam a,b$\in$X. Se $\bar{a}\cap\bar{b}\neq\emptyset$, ent{\~a}o aRb.\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}: Como  $\bar{a}\cap\bar{b}\neq\emptyset$, existe um $y\in\bar{a}\cap\bar{b}$, logo $y\in\bar{a}\wedge y\in\bar{b}$. Da defini{\c c}{\~a}o de classe de equival{\^e}ncia temos que yRa e yRb. Como R {\'e} rela{\c c}{\~a}o de equival{\^e}ncia temos que aRy e bRy. Por transitividade, aRb, como quer{\'\i}amos demonstrar.\#
 
-\begin{prop} Se  $\bar{a}\cap\bar{b}\neq\emptyset$, ent{\~a}o $\bar{a}=\bar{b}$\end{prop}
+\begin{proposicao} Se  $\bar{a}\cap\bar{b}\neq\emptyset$, ent{\~a}o $\bar{a}=\bar{b}$\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}: Seja $y\in \bar{a}$. Da{\'\i} yRa. Como $\bar{a}\cap\bar{b}\neq\emptyset$, pela proposi{\c c}{\~a}o anterior, aRb. Logo, como yRa e aRb, segue que yRb, ou seja, $y\in\bar{b}$. Da{\'\i} $\bar{a}\subseteq\bar{b}$. Como no caso anterior, mostra-se que $\bar{b}\subseteq\bar{a}$. Portanto $\bar{a}=\bar{b}$.\#
 
@@ -1247,7 +1247,7 @@ $\bar{f}=\{f,g\}$
 
 \begin{definicao}[Representante da Classe de Equival{\^e}ncia] Seja C uma classe de equival{\^e}ncia de uma rela{\c c}{\~a}o de equival{\^e}ncia R. Qualquer elemento $y\in C$ {\'e} chamado representante de C.\end{definicao}
 
-\begin{prop} Seja X um conjunto n{\~a}o vazio e R uma rela{\c c}{\~a}o de equival{\^e}ncia em X. Ent{\~a}o X {\'e} a uni{\~a}o disjunta das classes $\bar{a}, a\in X$, ou seja, \[X=\displaystyle\bigsqcup_{a\in X}\bar{a}\].\end{prop}
+\begin{proposicao} Seja X um conjunto n{\~a}o vazio e R uma rela{\c c}{\~a}o de equival{\^e}ncia em X. Ent{\~a}o X {\'e} a uni{\~a}o disjunta das classes $\bar{a}, a\in X$, ou seja, \[X=\displaystyle\bigsqcup_{a\in X}\bar{a}\].\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}: Para todo $a\in X, \bar{a}\subseteq X$, logo $\displaystyle\bigsqcup_{a\in X}\bar{a}\subseteq X$. Seja $b\in X$. Logo $b\in\bar{b}$, da{\'\i} $b\in \displaystyle\bigsqcup_{a\in X}\bar{a}$, logo $X\subseteq\displaystyle\bigsqcup_{a\in X}\bar{a}$. Portanto, $X=\displaystyle\bigsqcup_{a\in X}\bar{a}$.\#
 
@@ -1378,11 +1378,11 @@ Temos ent{\~a}o que $(g\circ f)(x)=g(f(x)), \forall x\in A$.
 Observa{\c c}{\~a}o: Se $f:A\rightarrow B$ e $g:B\rightarrow A$ ent{\~a}o existem $f\circ g$ e $g\circ f$. Por{\'e}m, em geral, $f\circ g\neq g\circ f$.
 
 \subsubsection{Propriedades}
-\begin{prop} Se $f:A\rightarrow B$ e $g:B\rightarrow C$ s{\~a}o fun{\c c}{\~o}es injetoras, ent{\~a}o $g\circ f$ {\'e} injetora.\end{prop}
+\begin{proposicao} Se $f:A\rightarrow B$ e $g:B\rightarrow C$ s{\~a}o fun{\c c}{\~o}es injetoras, ent{\~a}o $g\circ f$ {\'e} injetora.\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}: Dados $x_{1},x_{2}\in A$ tais que $(g\circ f)(x_{1})=(g\circ f)(x_{2})$ temos que $g(f(x_{1}))=g(f(x_{2}))$. Como $g$ {\'e} injetora, $f(x_{1})=f(x_{2})$. Mas $f$ {\'e} injetora, da{\'\i} $x_{1}=x_{2}$. Logo $g\circ f$ {\'e} injetora.\#
 
-\begin{prop} Se $f:A\rightarrow B$ e $g:B\rightarrow C$ s{\~a}o sobrejetoras, ent{\~a}o $g\circ f$ {\'e} sobrejetora.\end{prop}
+\begin{proposicao} Se $f:A\rightarrow B$ e $g:B\rightarrow C$ s{\~a}o sobrejetoras, ent{\~a}o $g\circ f$ {\'e} sobrejetora.\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}: Temos que $g\circ f:A\rightarrow C$. Dado $z\in C$. Como $g$ {\'e} sobrejetora, $\exists y\in B/g(y)=z$. Como $f$ {\'e} sobrejetora, $\exists x\in A/f(x)=y$. Assim, $z=g(y)=g(f(x))=(g\circ f)(x)$. Logo $g\circ f$ {\'e} sobrejetora.\#
 
@@ -1390,17 +1390,17 @@ Observa{\c c}{\~a}o: Se $f:A\rightarrow B$ e $g:B\rightarrow A$ ent{\~a}o existe
 \subsubsection{Defini{\c c}{\~a}o}
 \begin{definicao}[Fun{\c c}{\~a}o Identidade] Dado um conjunto $A\neq\emptyset$, a fun{\c c}{\~a}o $i_{A}:A\rightarrow A$ dada por $i_{A}(x)=(x)$ {\'e} chamada de fun{\c c}{\~a}o identidade.\end{definicao}
 
-\begin{prop} Se $f:E\rightarrow F$ {\'e} bijetora, ent{\~a}o $f\circ f^{-1}=i_{F}\wedge f^{-1}\circ f=i_{E}$\end{prop}
+\begin{proposicao} Se $f:E\rightarrow F$ {\'e} bijetora, ent{\~a}o $f\circ f^{-1}=i_{F}\wedge f^{-1}\circ f=i_{E}$\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}: Temos $i_{F}:F\rightarrow F$ e $i_{E}:E\rightarrow E$. Al{\'e}m disso, $f\circ f^{-1}:F\rightarrow F$ e $f^{-1}\circ f:E\rightarrow E$, da{\'\i} $D(f\circ f^{-1})=D(i_{F})$\footnote{$D(f(x))$ {\'e} o dom{\'\i}nio da fun{\c c}{\~a}o $f$} e $D(f^{-1}\circ f)=D(i_{E})$. Dado $x\in F, (f\circ f^{-1})(x)=f(f^{-1}(x))=x=i_{F}(x)$. Dado $x\in E, (f^{-1}\circ f)(x)=f^{-1}(f(x))=x=i_{E}(x)$.\#
 
 \subsubsection{Propriedades}
-\begin{prop} Se $f:E\rightarrow F$ e $g:F\rightarrow E$ s{\~a}o fun{\c c}{\~o}es, ent{\~a}o:
+\begin{proposicao} Se $f:E\rightarrow F$ e $g:F\rightarrow E$ s{\~a}o fun{\c c}{\~o}es, ent{\~a}o:
 \begin{enumerate}
 \item $f\circ i_{e}=f, i_{F}\circ f=f, g\circ i_{F}=g, i_{E}\circ g=g$
 \item Se $g\circ f=i_{E}$, e $f\circ g=i_{F}$, ent{\~a}o $f$ e $g$ s{\~a}o bijetoras e $g=f^{-1}$
 \end{enumerate}
-\end{prop}
+\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}:
 \begin{enumerate}
@@ -1456,14 +1456,14 @@ isto {\'e}, $f^{-1}(B)$ {\'e} o conjunto dos elementos de $E$ que tem imagem em 
 \end{itemize}
 \end{enumerate}
 
-\begin{prop}
+\begin{proposicao}
 Seja $f : E \to F$ uma aplica{\c c}{\~a}o (ou fun{\c c}{\~a}o) e sejam $A$, $B \sub E$, $X$, $Y \sub F$.
 \begin{enumerate}
 \item Se $A \sub B$, ent{\~a}o $f(A) \sub f(B)$.
 
 \item $f^{-1}(X \cup Y) = f^{-1}(X) \cup f^{-1}(Y)$.
 \end{enumerate}
-\end{prop}
+\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}: 
 \begin{enumerate}
@@ -1494,7 +1494,7 @@ Exemplos:
 
 \end{enumerate}
 \subsection{Propriedades}
-\begin{prop} A congru{\^e}ncia m{\'o}dulo $m$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia em $\mathbb{Z}$.\end{prop}
+\begin{proposicao} A congru{\^e}ncia m{\'o}dulo $m$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia em $\mathbb{Z}$.\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}: 
 \begin{enumerate}
@@ -1541,7 +1541,7 @@ $R_{m}(n)=\{x\in\mathbb{Z}/x=n+km, k\in\mathbb{Z}\}$
 
 \subsection{Classes de equival{\^e}ncia m{\'o}dulo $m$}
 
-\begin{prop} As classes de equival{\^e}ncia definidas pela congru{\^e}ncia m{\'o}dulo $m$ s{\~a}o determinadas pelos restos da divis{\~a}o euclidiana por $m$. Em outras palavras, $R_{m}(n)$ {\'e} o conjunto dos n{\'u}meros inteiros cujo resto na divis{\~a}o euclidiana por $m$ {\'e} $n$.\end{prop}
+\begin{proposicao} As classes de equival{\^e}ncia definidas pela congru{\^e}ncia m{\'o}dulo $m$ s{\~a}o determinadas pelos restos da divis{\~a}o euclidiana por $m$. Em outras palavras, $R_{m}(n)$ {\'e} o conjunto dos n{\'u}meros inteiros cujo resto na divis{\~a}o euclidiana por $m$ {\'e} $n$.\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}: Dado $x\in\mathbb{Z}$, pela divis{\~a}o de Euclides, podemos escrever $x=km+r$ onde $0\leq r\leq m$. Da{\'\i}, $x-r=km$, isto {\'e}, $m|(x-r)$. Logo $x\in R_{m}(r)$. Portanto, se $r=n$, ent{\~a}o $x\in R_{m}(n)$ e neste caso, $x=km+n=n+km$, ou seja, o resto da divis{\~a}o euclidiana de $x$ por $m$ {\'e} $n$.\#	
 
@@ -1557,7 +1557,7 @@ $R_{3}(2)=\{x\in\mathbb{Z}/x=3q+2,q\in\mathbb{Z}\}$
 
 \end{enumerate}
 
-\begin{prop} Na rela{\c c}{\~a}o de equival{\^e}ncia m{\'o}dulo $m$ existem $m$ classes de equival{\^e}ncia.\end{prop}
+\begin{proposicao} Na rela{\c c}{\~a}o de equival{\^e}ncia m{\'o}dulo $m$ existem $m$ classes de equival{\^e}ncia.\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}: Os poss{\'\i}veis restos na divis{\~a}o euclidiana por $m$ s{\~a}o $0,1,...,(m-1)$. Como cada poss{\'\i}vel resto define uma classe de equival{\^e}ncia diferente, existem exatamente $m$ classes de equival{\^e}ncia.\#
 
@@ -1594,7 +1594,7 @@ Em $\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$ definimos
 \end{eqnarray}
 Para $\bar{a},\bar{b}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$
 
-\begin{prop} As opera{\c c}{\~o}es de soma e produto definidas em (5.1) e (5.2) s{\~a}o independentes dos representantes das classes.\end{prop}
+\begin{proposicao} As opera{\c c}{\~o}es de soma e produto definidas em (5.1) e (5.2) s{\~a}o independentes dos representantes das classes.\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}: Dadas duas classes com representantes diferentes, $\bar{a}_{1}=\bar{a}_{2},\  \bar{b}_{1}=\bar{b}_{2}, a_{1}\neq a_{2}, b_{1}=b_{2}$, temos:\\
 \[\overline{a_{1}+b_{1}}=\bar{a}_{1}\oplus\bar{b}_{1}=\bar{a}_{2}\oplus\bar{b}_{2}=\overline{a_{2}+b_{2}}\]\\
@@ -1653,9 +1653,9 @@ Neste caso, $\bar{b}$ {\'e} chamado inverso de $\bar{a}$ e denotaremos $\bar{b}=
 
 Quando $\bar{b}$ existe, ele {\'e} {\'u}nico. De fato, dado $\bar{a}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$, se existem $\bar{b},\bar{d}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$ tais que $\bar{a}\odot\bar{b}=\bar{1}=\bar{a}\odot\bar{d}$, ent{\~a}o $\bar{b}=\bar{b}\odot\bar{1}=\bar{b}\odot (\bar{a}\odot\bar{d})=(\bar{b}\odot\bar{a})\odot\bar{d}=\bar{1}\odot\bar{d}=\bar{d}$.
 
-\begin{prop} Um elemento $\bar{a}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$ {\'e} invers{\'\i}vel se, e somente se,
+\begin{proposicao} Um elemento $\bar{a}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$ {\'e} invers{\'\i}vel se, e somente se,
  \[mdc(a,m)=1\]
-\end{prop}
+\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}: Suponha que existe $\bar{b}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$ tal que $\bar{a}\odot\bar{b}=\bar{1}$. Assim, $\overline{ab}=\bar{1}$, ou seja, $ab\equiv 1(mod\ m)$. Da{\'\i}, $ab-1=km, k\in\mathbb{Z}$, logo $ab+m(-k)=1$, e ent{\~a}o $mdc(a,m)=1$.
 
@@ -1694,7 +1694,7 @@ Logo, em $\displaystyle\frac{\mathbb{Z}}{100\mathbb{Z}}$ existem 40 elementos in
 
 \begin{nota}[Conjunto dos elementos invers{\'\i}veis] Denotaremos o conjunto de todos os elementos invers{\'\i}veis de $\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$ por $\left(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}\right)^{*}$, ou ainda $U\left(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}\right)$.\end{nota}
 
-\begin{prop} Sejam $\bar{a},\bar{b}\in\left(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}\right)^{*}$. Ent{\~a}o $\bar{a}\odot\bar{b}\in\left(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}\right)^{*}$.\end{prop}
+\begin{proposicao} Sejam $\bar{a},\bar{b}\in\left(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}\right)^{*}$. Ent{\~a}o $\bar{a}\odot\bar{b}\in\left(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}\right)^{*}$.\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}: Por uma proposi{\c c}{\~a}o anterior, basta verificar que\\ $mdc(ab,m)=1$. Para que $\bar{a}\odot\bar{b}\in\left(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}\right)^{*}$.
 
@@ -1914,7 +1914,7 @@ $(S,\oplus,\odot)$ {\'e} um subanel de $\displaystyle\frac{\mathbb{Z}}{4\mathbb{
 \item No anel $\mathbb{Z}$, o conjunto $m\mathbb{Z}(m>1)$ {\'e} um subanel de $\mathbb{Z}$
 \end{enumerate}
 
-\begin{prop} Seja $(A,+,.)$ um anel. Um subconjunto n{\~a}o vazio $C\subseteq A$ {\'e} um sub- anel de $A$ se, e somente se, $x+y\in C,\ xy\in C\ \forall x,y\in C$.\end{prop}
+\begin{proposicao} Seja $(A,+,.)$ um anel. Um subconjunto n{\~a}o vazio $C\subseteq A$ {\'e} um sub- anel de $A$ se, e somente se, $x+y\in C,\ xy\in C\ \forall x,y\in C$.\end{proposicao}
 
 $(A,+,.),(B,\oplus,\odot)$ An{\'e}is\\
 $f:A\rightarrow B$\\
@@ -1948,12 +1948,12 @@ Se (A,+,.) {\'e} um anel, ent{\~a}o $f:A\rightarrow A$ dada por $f(a)=a$ {\'e} u
 \end{enumerate}
 
 \subsubsection{Propriedades}
-\begin{prop} Seja $f:A\rightarrow B$ homomorfismo do anel A no anel B. Ent{\~a}o:
+\begin{proposicao} Seja $f:A\rightarrow B$ homomorfismo do anel A no anel B. Ent{\~a}o:
 \begin{enumerate}
 \item $f(0_{A})=0_{B}$
 \item $f(-a)=-f(a),\forall a\in A$
 \end{enumerate}
-\end{prop}
+\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}:
 \begin{enumerate}
@@ -1997,13 +1997,13 @@ $f(n)=n,\forall n\in\mathbb{Z}$
 Quando $I=A$ ou $I=\{0_{A}\},\ I$ {\'e} chamado de anel trivial.
 
 \subsubsection{Propriedades}
-\begin{prop} Seja $A$ um anel comutativo e $I$ um ideal de $A$. Ent{\~a}o \[0_{A}\in I\].\end{prop}
+\begin{proposicao} Seja $A$ um anel comutativo e $I$ um ideal de $A$. Ent{\~a}o \[0_{A}\in I\].\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}: Temos que da defini{\c c}{\~a}o de ideal, $ab\in I$, para todo $a,b\in I$.
 
 Assim, dado $a\in I,\ a0_{A}=0_{A}\in I$.\#
 
-\begin{prop} Sejam $A$ um anel comutativo e unit{\'a}rio e $I$ um ideal de $A$. Se $1_{A}\in I$, ent{\~a}o $I=A$\end{prop}
+\begin{proposicao} Sejam $A$ um anel comutativo e unit{\'a}rio e $I$ um ideal de $A$. Se $1_{A}\in I$, ent{\~a}o $I=A$\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}: Como $I$ {\'e} ideal, $1_{A}x\in I$, para todo $x\in A$, ou seja, $x=1_{A}x\in I$ para qualquer $x\in A$, logo, $A\subseteq I$. Como $I\subseteq A$, ent{\~a}o $I=A$.\#
 
@@ -2031,7 +2031,7 @@ Observa{\c c}{\~a}o: Num anel $(A,+,.)$, a diferen{\c c}a $a-b$ {\'e} definida c
 \begin{definicao}[Congru{\^e}ncia m{\'o}dulo I] Seja $I$ um ideal de um anel $(A,+,.)$. Dizemos que $x$ {\'e} congruente a $y$ m{\'o}dulo $I$ quando $x-y\in I$. Neste caso, escrevemos $x\equiv y(mod\ I)$.\end{definicao}
 
 \subsubsection{Propriedades}
-\begin{prop} A congru{\^e}ncia M{\'o}dulo $I$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia em $A \ times A$($A$ anel unit{\'a}rio).\end{prop}
+\begin{proposicao} A congru{\^e}ncia M{\'o}dulo $I$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia em $A \ times A$($A$ anel unit{\'a}rio).\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}: Como $0=0_{A}\in I$ e para todo $x\in I$, $x-x=0\in I$, ent{\~a}o $x\equiv x(mod\ I)$.
 
@@ -2199,13 +2199,13 @@ Seja $(G,*)$ um grupo. Um subconjunto n{\~a}o vazio $H\subseteq G$ {\'e} um subg
 \end{definicao}
 
 \subsubsection{Propriedades}
-\begin{prop}
+\begin{proposicao}
 Um subconjunto n{\~a}o vazio $H\subseteq G$ {\'e} um subgrupo de $G$ se, e somente se
 \begin{enumerate}
 \item $x^{-1}\in H,\forall x\in H$
 \item $x*y\in H,\forall x,y\in H$
 \end{enumerate}
-\end{prop}
+\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}: Se $H$ {\'e} subgrupo, ent{\~a}o $H$ {\'e} um grupo. Logo 1 e 2 s{\~a}o satisfeitos.
 
