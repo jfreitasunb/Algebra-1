@@ -1,25 +1,26 @@
-% !TEX encoding = ISO-8859-1
-
+%!TEX program = xelatex
+%!TEX encoding = ISO-8859-1
 \documentclass[portuguese,twoside,12pt]{report}%opcao draft remove os links
 \usepackage{amssymb,amsmath,amsfonts,amsthm,amstext}
 \usepackage[brazil]{babel}
-\usepackage[latin1]{inputenc}
+\usepackage{inputenc}
 \usepackage{fancybox}
 \usepackage{niceframe}
 \usepackage{hyperref}
-%\usepackage[pdftex]{graphicx}
+\usepackage{graphicx}
+\graphicspath{{/Users/jfreitas/Dropbox/imagens-latex/}{/home/jfreitas/Dropbox/imagens-latex/}}
 \usepackage{makeidx}
 
 %=============================================================================================
 %             Nomes para defini{\c c}{\~o}es, teoremas, etc
 %=============================================================================================
 
-\newtheorem{teo}{Teorema}[chapter]
-\newtheorem{defi}{Defini{\c c}{\~a}o}[chapter]
-\newtheorem{nota}{Nota{\c c}{\~a}o}[defi]
-\newtheorem{prop}{Proposi{\c c}{\~a}o}[defi]
-\newtheorem{lema}{Lema}[prop]
-\newtheorem{cor}{Corol{\'a}rio}[prop]
+\newtheorem{teorema}{Teorema}[chapter]
+\newtheorem{definicao}{Defini{\c c}{\~a}o}[chapter]
+\newtheorem{nota}{Nota{\c c}{\~a}o}[definicao]
+\newtheorem{proposicao}{Proposi{\c c}{\~a}o}[definicao]
+\newtheorem{lema}{Lema}[proposicao]
+\newtheorem{corolario}{Corol{\'a}rio}[proposicao]
 
 %=============================================================================================
 %             Cabe{\c c}alhos
@@ -159,8 +160,8 @@ A l{\'o}gica pode n{\~a}o nos levar {\`a} verdade no sentido absoluto, mas nos p
 
 \subsection{Proposi{\c c}{\~a}o}
 
-\begin{defi}[Proposi{\c c}{\~a}o]: Chama-se proposi{\c c}{\~a}o todo conjunto de palavras ou s{\'\i}mbolos que exprime um pensamento de sentido completo.
-\end{defi}
+\begin{definicao}[Proposi{\c c}{\~a}o]: Chama-se proposi{\c c}{\~a}o todo conjunto de palavras ou s{\'\i}mbolos que exprime um pensamento de sentido completo.
+\end{definicao}
 
 S{\~a}o exemplos de proposi{\c c}{\~o}es:
 \begin{enumerate}
@@ -169,7 +170,7 @@ S{\~a}o exemplos de proposi{\c c}{\~o}es:
 \end{enumerate}
 
 \subsection{Valor de uma proposi{\c c}{\~a}o}
-\begin{defi}[Valor de uma Proposi{\c c}{\~a}o]Chama-se valor de uma proposi{\c c}{\~a}o a verdade se a proposi{\c c}{\~a}o {\'e} verdadeira e a falsidade se for falsa.\end{defi}
+\begin{definicao}[Valor de uma Proposi{\c c}{\~a}o]Chama-se valor de uma proposi{\c c}{\~a}o a verdade se a proposi{\c c}{\~a}o {\'e} verdadeira e a falsidade se for falsa.\end{definicao}
 
 \subsection{Princ{\'\i}pios fundamentais}
 A l{\'o}gica matem{\'a}tica adota como regras fundamentais os dois seguintes princ{\'\i}pios (ou axiomas):
@@ -178,7 +179,7 @@ A l{\'o}gica matem{\'a}tica adota como regras fundamentais os dois seguintes pri
 \item \textbf{Princ{\'\i}pio do Terceiro exclu{\'\i}do}: Toda proposi{\c c}{\~a}o ou {\'e} verdadeira ou {\'e} falsa, isto {\'e}, verifica-se sempre um desses casos e nunca um terceiro
 \end{enumerate}
 \subsection{Argumento l{\'o}gico}
-\begin{defi}[Argumento l{\'o}gico]: Um argumento l{\'o}gico {\'e} uma seq{\"u}{\^e}ncia de proposi{\c c}{\~o}es , na qual uma das seq{\"u}{\^e}ncias {\'e} a conclus{\~a}o e as demais, chamadas de premissas, formam as provas ou evid{\^e}ncias para a conclus{\~a}o.\end{defi}
+\begin{definicao}[Argumento l{\'o}gico]: Um argumento l{\'o}gico {\'e} uma seq{\"u}{\^e}ncia de proposi{\c c}{\~o}es , na qual uma das seq{\"u}{\^e}ncias {\'e} a conclus{\~a}o e as demais, chamadas de premissas, formam as provas ou evid{\^e}ncias para a conclus{\~a}o.\end{definicao}
 
 Exemplos:
 
@@ -206,7 +207,7 @@ Exemplo: $3>4$ ou $4>3$
 
 \subsection{Conectivos}
 
-\begin{defi}[Conectivos]Chamam-se conectivos palavras que se usam para formar novas proposi{\c c}{\~o}es a partir de outras.\end{defi}
+\begin{definicao}[Conectivos]Chamam-se conectivos palavras que se usam para formar novas proposi{\c c}{\~o}es a partir de outras.\end{definicao}
 
 Em l{\'o}gica matem{\'a}tica os conectivos usuais s{\~a}o os seguintes:
 \begin{itemize}
@@ -270,7 +271,7 @@ Vamos usar a nota{\c c}{\~a}o (Tabela \ref{notacao}), chamada Tabela Verdade (Ta
 \end{table}
 
 \subsubsection{Nega{\c c}{\~a}o}
-\begin{defi}[Nega{\c c}{\~a}o] Chama-se nega{\c c}{\~a}o de uma proposi{\c c}{\~a}o p a proposi{\c c}{\~a}o representada por ``n{\~a}o p"($\neg p$), cujo valor l{\'o}gico {\'e} verdade quando p for falsa e a falsidade quando p for verdadeira.\end{defi}
+\begin{definicao}[Nega{\c c}{\~a}o] Chama-se nega{\c c}{\~a}o de uma proposi{\c c}{\~a}o p a proposi{\c c}{\~a}o representada por ``n{\~a}o p"($\neg p$), cujo valor l{\'o}gico {\'e} verdade quando p for falsa e a falsidade quando p for verdadeira.\end{definicao}
 \begin{table}[h]
    \centering 
    \setlength{\arrayrulewidth}{0,5\arrayrulewidth}
@@ -294,7 +295,7 @@ Exemplo:\\
 
 \subsubsection{Conjuga{\c c}{\~a}o}
 
-\begin{defi}[Conjuga{\c c}{\~a}o] Chama-se conjuga{\c c}{\~a}o de duas proposi{\c c}{\~o}es $p$ e $q$, a proposi{\c c}{\~a}o representada por ``$p$ e $q$", denotada $p\wedge q$, cujo valor l{\'o}gico {\'e} verdade quando as proposi{\c c}{\~o}es $p$ e $q$ s{\~a}o ambas verdadeiras e falsidade nos demais casos.\end{defi}
+\begin{definicao}[Conjuga{\c c}{\~a}o] Chama-se conjuga{\c c}{\~a}o de duas proposi{\c c}{\~o}es $p$ e $q$, a proposi{\c c}{\~a}o representada por ``$p$ e $q$", denotada $p\wedge q$, cujo valor l{\'o}gico {\'e} verdade quando as proposi{\c c}{\~o}es $p$ e $q$ s{\~a}o ambas verdadeiras e falsidade nos demais casos.\end{definicao}
 \begin{table}[h]
    \centering 
    \setlength{\arrayrulewidth}{0,5\arrayrulewidth}
@@ -327,7 +328,7 @@ $V(q\wedge r)=F$
 \end{center}
 
 \subsubsection{Disjun{\c c}{\~a}o}
-\begin{defi}[Disjun{\c c}{\~a}o]: Chama-se disjun{\c c}{\~a}o de duas proposi{\c c}{\~o}es $p$ e $q$ a proposi{\c c}{\~a}o representada por ``p ou q", denotada ``$p\vee q$", cujo valor l{\'o}gico {\'e} verdade quando ao menos uma das proposi{\c c}{\~o}es $p$ e $q$ forem verdadeiras, e falsidade quando ambas as proposi{\c c}{\~o}es $p$ e $q$ forem falsas.\end{defi}
+\begin{definicao}[Disjun{\c c}{\~a}o]: Chama-se disjun{\c c}{\~a}o de duas proposi{\c c}{\~o}es $p$ e $q$ a proposi{\c c}{\~a}o representada por ``p ou q", denotada ``$p\vee q$", cujo valor l{\'o}gico {\'e} verdade quando ao menos uma das proposi{\c c}{\~o}es $p$ e $q$ forem verdadeiras, e falsidade quando ambas as proposi{\c c}{\~o}es $p$ e $q$ forem falsas.\end{definicao}
 
 A tabela verdade da disjun{\c c}{\~a}o {\'e} (Tabela \ref{disjuncao}):
 \begin{table}[h]
@@ -355,7 +356,7 @@ Exemplo:\\
 \textbf{$Q$}: $\pi=3\vee\sqrt{-1}=1$, $V(Q)=F$
 
 \subsubsection{Disjun{\c c}{\~a}o exclusiva}
-\begin{defi}[Disjun{\c c}{\~a}o Exclusiva] Chama-se disjun{\c c}{\~a}o exclusiva de duas proposi{\c c}{\~o}es $p$ e $q$ a proposi{\c c}{\~a}o representada por $p\veebar q$, que se l{\^e} ``ou $p$ ou $q$", ou tamb{\'e}m ``$p$ ou $q$, mas n{\~a}o ambos", cujo valor l{\'o}gico {\'e} a verdade somente quando $p$ {\'e} verdade ou $q$ {\'e} verdade, mas n{\~a}o quando $p$ e $q$ s{\~a}o ambos verdadeiras, e tem valor l{\'o}gico falsidade nos demais casos.\end{defi}
+\begin{definicao}[Disjun{\c c}{\~a}o Exclusiva] Chama-se disjun{\c c}{\~a}o exclusiva de duas proposi{\c c}{\~o}es $p$ e $q$ a proposi{\c c}{\~a}o representada por $p\veebar q$, que se l{\^e} ``ou $p$ ou $q$", ou tamb{\'e}m ``$p$ ou $q$, mas n{\~a}o ambos", cujo valor l{\'o}gico {\'e} a verdade somente quando $p$ {\'e} verdade ou $q$ {\'e} verdade, mas n{\~a}o quando $p$ e $q$ s{\~a}o ambos verdadeiras, e tem valor l{\'o}gico falsidade nos demais casos.\end{definicao}
 \begin{table}[h]
    \centering 
    \setlength{\arrayrulewidth}{0,5\arrayrulewidth}
@@ -379,7 +380,7 @@ Exemplo:\\
 \textbf{$P$}: Todo n{\'u}mero inteiro ou {\'e} par ou {\'e} {\'\i}mpar, $V(P)=V$
 
 \subsubsection{Condicional}
-\begin{defi}[Condicional] Chama-se proposi{\c c}{\~a}o condicional ou condicional uma proposi{\c c}{\~a}o representada por ``$p\rightarrow q$", que l{\^e}-se ``se $p$ ent{\~a}o $q$". O valor l{\'o}gico da condicional {\'e} a falsidade no caso em que $p$ {\'e} verdade e $q$ {\'e} falsidade e tem valor l{\'o}gico verdade nos demais casos.\end{defi}
+\begin{definicao}[Condicional] Chama-se proposi{\c c}{\~a}o condicional ou condicional uma proposi{\c c}{\~a}o representada por ``$p\rightarrow q$", que l{\^e}-se ``se $p$ ent{\~a}o $q$". O valor l{\'o}gico da condicional {\'e} a falsidade no caso em que $p$ {\'e} verdade e $q$ {\'e} falsidade e tem valor l{\'o}gico verdade nos demais casos.\end{definicao}
 
 Na condicional ``$p\rightarrow q$", dizemos que $p$ {\'e} o antecedente e o $q$ {\'e} o conseq{\"u}ente. O s{\'\i}mbolo "$\rightarrow$" {\'e} chamado de s{\'\i}mbolo de implica{\c c}{\~a}o.
 \begin{table}[h]
