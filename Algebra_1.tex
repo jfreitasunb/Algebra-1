@@ -933,19 +933,19 @@ Logo, o elemento $a_{0}\in A$ do P.B.O. {\'e} {\'u}nico. Chamamos $a_{0}$ de ele
 
 \section{Princ{\'\i}pio da Indu{\c c}{\~a}o Finita}
 
-\begin{teo}[Indu{\c c}{\~a}o finita (1ª vers{\~a}o)] : Dado $a\in\mathbb{Z}$, suponhamos que a cada inteiro $n\geq a$ esteja associada uma proposi{\c c}{\~a}o $P(n)$ que depende de $n$. Ent{\~a}o $P(n)$ ser{\'a} verdadeira para todo $n\geq a$ desde que seja poss{\'\i}vel provar o seguinte:
+\begin{teorema}[Indu{\c c}{\~a}o finita (1ª vers{\~a}o)] : Dado $a\in\mathbb{Z}$, suponhamos que a cada inteiro $n\geq a$ esteja associada uma proposi{\c c}{\~a}o $P(n)$ que depende de $n$. Ent{\~a}o $P(n)$ ser{\'a} verdadeira para todo $n\geq a$ desde que seja poss{\'\i}vel provar o seguinte:
 \begin{enumerate}
 \item $P(a)$ {\'e} verdadeira
 \item Dado $r>a$, se $P(k)$ {\'e} verdadeira para todo $k$ tal que $a\leq k\leq r$, ent{\~a}o $P(r)$ {\'e} verdadeira.
 \end{enumerate}
-\end{teo}
+\end{teorema}
 
-\begin{teo}[Indu{\c c}{\~a}o finita (2ª vers{\~a}o)] Dado $a\in\mathbb{Z}$, suponhamos que para cada $n\geq a$ esteja associada uma proposi{\c c}{\~a}o $P(n)$. Ent{\~a}o $P(n)$ {\'e} verdadeira $\forall n\geq 1$ desde que seja poss{\'\i}vel provar o seguinte:
+\begin{teorema}[Indu{\c c}{\~a}o finita (2ª vers{\~a}o)] Dado $a\in\mathbb{Z}$, suponhamos que para cada $n\geq a$ esteja associada uma proposi{\c c}{\~a}o $P(n)$. Ent{\~a}o $P(n)$ {\'e} verdadeira $\forall n\geq 1$ desde que seja poss{\'\i}vel provar o seguinte:
 \begin{enumerate}
 \item $P(a)$ {\'e} verdadeira
 \item Se $P(r)$ {\'e} verdadeira para $r\geq a$, ent{\~a}o $P(r+1)$ {\'e} verdadeira
 \end{enumerate}
-\end{teo}
+\end{teorema}
 
 Exemplo:\\
 
@@ -962,12 +962,12 @@ Pela Hip{\'o}tese de Indu{\c c}{\~a}o, temos \[1+2+...+r+(r+1)=\displaystyle\fra
 
 Portanto, pelo princ{\'\i}pio da indu{\c c}{\~a}o finita \[1+2+...+n=\displaystyle\frac{n(n+1)}{2}\]
 
-\begin{teo} Dado $a\in\mathbb{Z}$, suponhamos que cada inteiro $n\geq a$ esteja associado uma proposi{\c c}{\~a}o $P(n)$. Ent{\~a}o $P(n)$ ser{\'a} verdadeira $\forall n\geq a$ desde que seja poss{\'\i}vel provar que:
+\begin{teorema} Dado $a\in\mathbb{Z}$, suponhamos que cada inteiro $n\geq a$ esteja associado uma proposi{\c c}{\~a}o $P(n)$. Ent{\~a}o $P(n)$ ser{\'a} verdadeira $\forall n\geq a$ desde que seja poss{\'\i}vel provar que:
 \begin{enumerate}
 \item $P(a)$ {\'e} verdadeira
 \item Dado que $r>a$, se $P(k)$ {\'e} verdadeira para todo $k$ tal que $a\leq k\leq r$, ent{\~a}o $P(r)$ {\'e} verdadeira
 \end{enumerate}
-\end{teo}
+\end{teorema}
 
 \textbf{Demonstra{\c c}{\~a}o}: Seja $F=\{\ell\in\mathbb{Z}/a\leq\ell\wedge P(\ell)$ {\'e} falsa$\}$. Suponha $F\neq\emptyset$. Como $F$ {\'e} limitado inferiormente, pelo princ{\'\i}pio da boa ordena{\c c}{\~a}o, existe $\ell_{0}\in F/\ell_{0}\leq x,\forall x\in F$. Como $\ell_{0}\in F,\ P(\ell_{0})$ {\'e} falsa. Mas $P(a)$ {\'e} verdadeira, assim, $\ell_{0}>a$. Agora, como $\ell_{0}$ {\'e} o m{\'\i}nimo de $F$, ent{\~a}o $P(x)$ {\'e} verdadeira para $a\leq x<\ell_{0}$.\\
 
@@ -1015,7 +1015,7 @@ Logo $a|(bx+cy)$
 
 \section{Algoritmo de divis{\~a}o de Euclides}
 
-\begin{teo}[Algoritmo de divis{\~a}o de Euclides] Para quaisquer $a,b\in\mathbb{Z}$, com\\ $b>0$, existem {\'u}nicos $q$ e $r$ inteiros tais que $a=bq+r$, com $0\leq r<b$.\end{teo}
+\begin{teorema}[Algoritmo de divis{\~a}o de Euclides] Para quaisquer $a,b\in\mathbb{Z}$, com\\ $b>0$, existem {\'u}nicos $q$ e $r$ inteiros tais que $a=bq+r$, com $0\leq r<b$.\end{teorema}
 
 \textbf{Demonstra{\c c}{\~a}o}: Vamos mostrar primeiro a exist{\^e}ncia de $q$ e $r$.
 
@@ -1138,7 +1138,7 @@ Se $S$ {\'e} ideal de $\mathbb{Z}$, ent{\~a}o $S=\{nk/n\in\mathbb{Z}\}$.
 \begin{nota}[Conjunto dos m{\'u}ltiplos de $g$] Se $g\in\mathbb{Z}$, denotamos por $g\mathbb{Z}$, ou $\mathbb{Z}g$, o subconjunto dos inteiros que s{\~a}o m{\'u}ltiplos de $g$ (os inteiros que s{\~a}o divis{\'\i}veis por $g$). Em outras palavras \[g\mathbb{Z}=\{gn/n\in\mathbb{Z}\}=\{0,\pm g,\pm 2g,\pm 3g,...\}\]
 \end{nota}
 
-\begin{teo} Seja $S$ um ideal de $\mathbb{Z}$. Ent{\~a}o, existe um n{\'u}mero $g\in\mathbb{Z}$ tal que $S=g\mathbb{Z}$.\end{teo}
+\begin{teorema} Seja $S$ um ideal de $\mathbb{Z}$. Ent{\~a}o, existe um n{\'u}mero $g\in\mathbb{Z}$ tal que $S=g\mathbb{Z}$.\end{teorema}
 
 \textbf{Demonstra{\c c}{\~a}o}: Se $S=\{0\}$, ent{\~a}o tomamos $g=0$ e da{\'\i} $S=0\mathbb{Z}$. Se $S=\mathbb{Z}$, ent{\~a}o $g=1$ e $S=1\mathbb{Z}$.
 
@@ -1350,7 +1350,7 @@ $f^{-1}(5)=1$\\
 $f^{-1}(6)=1$\\
 $f^{-1}(7)=3$
 
-\begin{teo} Dada $f:A\rightarrow B$ fun{\c c}{\~a}o tome $f^{-1}:B\rightarrow A$. Definida com o $f^{-1}(b)=a$ se $f(a)=b$. Ent{\~a}o $f^{-1}$ {\'e} uma fun{\c c}{\~a}o se, e somente se, $f$ {\'e} bijetora.\end{teo}
+\begin{teorema} Dada $f:A\rightarrow B$ fun{\c c}{\~a}o tome $f^{-1}:B\rightarrow A$. Definida com o $f^{-1}(b)=a$ se $f(a)=b$. Ent{\~a}o $f^{-1}$ {\'e} uma fun{\c c}{\~a}o se, e somente se, $f$ {\'e} bijetora.\end{teorema}
 
 \textbf{Demonstra{\c c}{\~a}o}: Suponha $f^{-1}$ {\'e} fun{\c c}{\~a}o. Precisamos provar que $f$ {\'e} injetora e sobrejetora.
 
@@ -1506,7 +1506,7 @@ Portanto {\'e} rela{\c c}{\~a}o de equival{\^e}ncia. \#
 
 \end{enumerate}
 
-\begin{teo} A rela{\c c}{\~a}o de congru{\^e}ncia m{\'o}dulo $m$ satisfaz as seguintes propriedades:
+\begin{teorema} A rela{\c c}{\~a}o de congru{\^e}ncia m{\'o}dulo $m$ satisfaz as seguintes propriedades:
 \begin{enumerate}
 \item $a_{1}\equiv b_{1}(mod\ m)\Leftrightarrow a_{1}-b_{1}\equiv 0(mod\ m)$
 \item Se $a_{1}\equiv b_{1}(mod\ m)$ e $a_{2}\equiv b_{2}(mod\ m)$, ent{\~a}o $a_{1}+a_{2}\equiv b_{1}+b_{2}(mod\ m)$
@@ -1515,7 +1515,7 @@ Portanto {\'e} rela{\c c}{\~a}o de equival{\^e}ncia. \#
 \item Vale a lei do cancelamento: se $d\in\mathbb{Z}$ e $mdc(d,m)=1$ ent{\~a}o\\ $ad\equiv bd(mod\ m)$ implica $a\equiv b(mod\ m)$
 
 \end{enumerate}
-\end{teo}
+\end{teorema}
 
 \textbf{Demonstra{\c c}{\~a}o}: Provemos o {\'\i}tem 3
 
@@ -2091,7 +2091,7 @@ Agora, \[(x+I)\odot(y+I)=(xy)+I\] \[(x_{1}+I)\odot(y_{1}+I)=(x_{1}y_{1})+I\]
 Como $(x-x_{1})y\in I$ e $(y-y_{1})x_{1}\in I$. Logo, \[(x-x_{1})y+(y-y_{1})x_{1}\in I\] \[xy-\underbrace{x_{1}y+yx_{1}}_{=0}-y_{1}x_{1}\in I\]
 \[xy-x_{1}y_{1}\in I\], ou seja, $xy+I+x_{1}y_{1}+I$. Portanto, \[(x+I)\odot(y-I)=(x_{1}+I)\odot(y_{1}+I)\]
 
-\begin{teo} Seja $(A,+,.)$ um anel associativo, comutativo e com unidade. Ent{\~a}o, se $I$ {\'e} um ideal de $A$, o quociente $\displaystyle\frac{A}{I}$ com as opera{\c c}{\~o}es $\oplus$ e $\odot$ {\'e} um anel associativo, comutativo e com unidade. O elemento zero desse anel {\'e} a classe $0_{A}+I$ e o elemento um de $\displaystyle\frac{A}{I}$ {\'e} $1_{A}+I$. \end{teo}
+\begin{teorema} Seja $(A,+,.)$ um anel associativo, comutativo e com unidade. Ent{\~a}o, se $I$ {\'e} um ideal de $A$, o quociente $\displaystyle\frac{A}{I}$ com as opera{\c c}{\~o}es $\oplus$ e $\odot$ {\'e} um anel associativo, comutativo e com unidade. O elemento zero desse anel {\'e} a classe $0_{A}+I$ e o elemento um de $\displaystyle\frac{A}{I}$ {\'e} $1_{A}+I$. \end{teorema}
 
 \chapter{Grupos}
 
@@ -2238,9 +2238,9 @@ $H_{3}=\{\bar{1},\bar{7}\}$ {\'e} subgrupo de G
 
 \section{Ordem de um subgrupo}
 
-\begin{teo}[Lagrange]
+\begin{teorema}[Lagrange]
 Seja $G$ um grupo finito. Se $H\subseteq G$ {\'e} um subgrupo, ent{\~a}o $|H|$ divide $|G|$.
-\end{teo}
+\end{teorema}
 
 Exemplo: Quais s{\~a}o as poss{\'\i}veis ordens dos subgrupos de um grupo de ordem 48?
 
