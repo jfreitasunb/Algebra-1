@@ -1,0 +1,286 @@
+%!TEX program = xelatex
+%!TEX root = geometria_analitica.tex
+%%Usar makeindex -s indexstyle.ist arquivo.idx no terminal para gerar o {\'\i}ndice remissivo agrupado por inicial
+%%Ap\'os executar pdflatex arquivo
+\chapter{N{\'u}meros Inteiros}
+\section{Conceitos b{\'a}sicos}
+
+\hspace{0,5cm}Indicaremos por $\mathbb{Z}$ o conjunto dos n{\'u}meros inteiros. Portanto $\mathbb{Z}=\{0,\pm 1,\pm 2,\pm 3, \pm 4,...\}$.
+
+\subsubsection{Propriedades b{\'a}sicas da adi{\c c}{\~a}o e da multiplica{\c c}{\~a}o}
+
+Admitiremos as propriedades b{\'a}sicas da adi{\c c}{\~a}o e da multiplica{\c c}{\~a}o em $\mathbb{Z}$. Assim, dados $a,b,c\in\mathbb{Z}$, temos:\\
+
+\begin{minipage}[l]{0,5\textwidth}
+Adi{\c c}{\~a}o
+\begin{enumerate}
+\item $a+b=b+a$
+\item $a(b+c)=(a+b)+c$
+\item $a+0=a$
+\item $a+(-a)=0$
+\end{enumerate}
+\end{minipage}
+\begin{minipage}[r]{0,5\textwidth}
+Multiplica{\c c}{\~a}o
+\begin{enumerate}
+\item $ab=ba$
+\item $a(bc)=(ab)c$
+\item $a1=a$
+\item $ab=0\rightarrow a=0\vee b=0$
+\item $ab=1\rightarrow a=\pm 1\wedge b=\pm 1$
+\item $a(b+c)=ab+ac$
+\end{enumerate}
+\end{minipage}
+
+\subsubsection{Propriedades b{\'a}sicas das desigualdades}
+
+Admitiremos tamb{\'e}m a rela{\c c}{\~a}o "menor ou igual", em $\mathbb{Z}$, denotada por "$\leq$". Dados $a,b,c\in\mathbb{Z}$, valem as seguintes propriedades:
+\begin{enumerate}
+\item $a\leq A$
+\item $a\leq b\wedge b\leq a\rightarrow a=b$
+\item $a\leq b\wedge b\leq c\rightarrow a\leq c$
+\item $a\leq b\veebar b\leq a$
+\item $a\leq b\rightarrow a+c\leq b+c$
+\item $0\leq a\wedge 0\leq b\rightarrow 0\leq ab$
+\end{enumerate}
+
+Para a rela{\c c}{\~a}o "menor", cujo s{\'\i}mbolo {\'e} "$<$", vale
+\begin{enumerate}
+\item $0<a\wedge 0<b\rightarrow 0<ab$
+\item $0<a\wedge b<0\rightarrow ab<0$
+\item $0<a\wedge 0<b\rightarrow 0<ab$
+\end{enumerate}
+
+\section{Princ{\'\i}pio da boa ordena{\c c}{\~a}o}
+
+\begin{definicao}[Limite Inferior] Seja $A$ um subconjunto n{\~a}o vazio de $\mathbb{Z}$. Dizemos que $A$ {\'e} limitado inferiormente se $\exists\ell\in\mathbb{Z}/\ell\leq a,\ \forall a\in A$.\end{definicao}
+
+Por exemplo:\\
+$A=\{-2,0,1,2,3,...\},\ B=\{...,-6,-4,-2,0\},\ C=\{8,16,24,32\}$
+
+$A$ e $C$ s{\~a}o limitados inferiormente pois $-3\leq a,\ 7\leq c,\forall a\in A\wedge\forall c\in C$.
+
+\textbf{Princ{\'\i}pio da boa ordena{\c c}{\~a}o}: Se $A$ {\'e} um subconjunto n{\~a}o vazio de $\mathbb{Z}$ e $A$ {\'e} limitado inferiormente, ent{\~a}o $\exists a_{0}\in A/a_{0}\leq x,\forall x\in A$.\\
+
+Seja $A\neq\emptyset, A\subseteq\mathbb{Z},\ A$ limitada inferiormente. Pelo P.B.O., $\exists a_{0}\in A/a_{0}\leq x,\forall x\in A$. Suponha que existe $a_{1}\in A/a_{1}\leq x, \forall x\in A$. Logo $a_{0}\leq a_{1}\wedge a_{1}\leq a_{0}$, da{\'\i} $a_{1}=a_{0}$.\\
+
+Logo, o elemento $a_{0}\in A$ do P.B.O. {\'e} {\'u}nico. Chamamos $a_{0}$ de elemento m{\'\i}nimo ou elemento minimal.\\
+
+\section{Princ{\'\i}pio da Indu{\c c}{\~a}o Finita}
+
+\begin{teorema}[Indu{\c c}{\~a}o finita (1ª vers{\~a}o)] : Dado $a\in\mathbb{Z}$, suponhamos que a cada inteiro $n\geq a$ esteja associada uma proposi{\c c}{\~a}o $P(n)$ que depende de $n$. Ent{\~a}o $P(n)$ ser{\'a} verdadeira para todo $n\geq a$ desde que seja poss{\'\i}vel provar o seguinte:
+\begin{enumerate}
+\item $P(a)$ {\'e} verdadeira
+\item Dado $r>a$, se $P(k)$ {\'e} verdadeira para todo $k$ tal que $a\leq k\leq r$, ent{\~a}o $P(r)$ {\'e} verdadeira.
+\end{enumerate}
+\end{teorema}
+
+\begin{teorema}[Indu{\c c}{\~a}o finita (2ª vers{\~a}o)] Dado $a\in\mathbb{Z}$, suponhamos que para cada $n\geq a$ esteja associada uma proposi{\c c}{\~a}o $P(n)$. Ent{\~a}o $P(n)$ {\'e} verdadeira $\forall n\geq 1$ desde que seja poss{\'\i}vel provar o seguinte:
+\begin{enumerate}
+\item $P(a)$ {\'e} verdadeira
+\item Se $P(r)$ {\'e} verdadeira para $r\geq a$, ent{\~a}o $P(r+1)$ {\'e} verdadeira
+\end{enumerate}
+\end{teorema}
+
+Exemplo:\\
+
+Mostre que $\forall n\in\mathbb{N}$ vale \[1+2+3+...+n=\displaystyle\frac{n(n+1)}{2}\]
+
+Para $n=1$, temos
+\[1=\displaystyle\frac{1(1+1)}{2}\]
+
+Agora, suponha que para $r\geq 1$, temos \[\underbrace{1+2+...+r=\displaystyle\frac{r(r+1)}{2}}_{H.I}\]
+
+Assim, para $r+1$ temos \[1+2+3+...+r+(r+1)\]
+
+Pela Hip{\'o}tese de Indu{\c c}{\~a}o, temos \[1+2+...+r+(r+1)=\displaystyle\frac{r(r+1)}{2}+(r+1)=\displaystyle\frac{r(r+1)+2(r+1)}{2}\] \[=\displaystyle\frac{(r+2)(r+1)}{2}\]
+
+Portanto, pelo princ{\'\i}pio da indu{\c c}{\~a}o finita \[1+2+...+n=\displaystyle\frac{n(n+1)}{2}\]
+
+\begin{teorema} Dado $a\in\mathbb{Z}$, suponhamos que cada inteiro $n\geq a$ esteja associado uma proposi{\c c}{\~a}o $P(n)$. Ent{\~a}o $P(n)$ ser{\'a} verdadeira $\forall n\geq a$ desde que seja poss{\'\i}vel provar que:
+\begin{enumerate}
+\item $P(a)$ {\'e} verdadeira
+\item Dado que $r>a$, se $P(k)$ {\'e} verdadeira para todo $k$ tal que $a\leq k\leq r$, ent{\~a}o $P(r)$ {\'e} verdadeira
+\end{enumerate}
+\end{teorema}
+
+\textbf{Demonstra{\c c}{\~a}o}: Seja $F=\{\ell\in\mathbb{Z}/a\leq\ell\wedge P(\ell)$ {\'e} falsa$\}$. Suponha $F\neq\emptyset$. Como $F$ {\'e} limitado inferiormente, pelo princ{\'\i}pio da boa ordena{\c c}{\~a}o, existe $\ell_{0}\in F/\ell_{0}\leq x,\forall x\in F$. Como $\ell_{0}\in F,\ P(\ell_{0})$ {\'e} falsa. Mas $P(a)$ {\'e} verdadeira, assim, $\ell_{0}>a$. Agora, como $\ell_{0}$ {\'e} o m{\'\i}nimo de $F$, ent{\~a}o $P(x)$ {\'e} verdadeira para $a\leq x<\ell_{0}$.\\
+
+De 2 temos que $P(\ell_{0})$ {\'e} verdadeira, o que {\'e} uma contradi{\c c}{\~a}o, pois verificamos anteriormente que $P(\ell_{0})$ {\'e} falso.\\
+
+Portanto $F=\emptyset$ e o teorema est{\'a} demonstrado.\#
+
+\section{Divisibilidade}
+
+\begin{definicao}[Divis{\~a}o] Sejam $a,b$ n{\'u}meros inteiros, $b\neq\emptyset$. Dizemos que $b$ divide $a$ quando existe um inteiro $c$ tal que $a=bc$.\end{definicao}
+
+Exemplos:
+\begin{enumerate}
+\item Os inteiros 1 e $-1$ dividem todos os n{\'u}meros inteiros $a$, pois \[a=1a,a=(-1)(-a)\]
+\item O n{\'u}mero 0 n{\~a}o divide nenhum inteiro $b$, pois n{\~a}o existe $a$ tal que $b=0a$
+\item Para todo $b\neq 0$,$b$ divide $\pm b$
+\item Para todo inteiro $b\neq 0$, $b$ divide 0, pois $0=b0$
+\item 3 n{\~a}o divide 8, mas 17 divide 51
+\end{enumerate}
+
+\begin{nota}[Divis{\~a}o] Quando $b$ divide $a$, escrevemos $b|a$. Quando $b$ n{\~a}o divide $a$, escrevemos $b\not{|}a$\end{nota}
+
+\textbf{Propriedades}
+\begin{enumerate}
+\item $a|a, \forall a\in\mathbb{Z}$
+\item Se $a|b$ e $b|a,\ a,b\geq 0\rightarrow a=b$
+
+De fato existe $c,d\in\mathbb{Z}/b=ca\wedge a=bd$. Se $a=0\vee b=0$ ent{\~a}o $b=0\veebar a=0$. Podemos supor $a\neq 0$ e $b\neq 0$.
+
+Assim\\
+$b=c(bd)$\\
+$b(1-cd)=0$. Da{\'\i}, $1-cd=0$, isto {\'e}, $cd=1$.
+
+Assim, $c=\pm 1\wedge d=\pm 1$. Como $a>0$ e $b>0$, devemos ter $c=d=1$. Portanto $a=b$
+\item Se $a|b$ e $b|c$, ent{\~a}o $a|c$
+
+De fato, $b=pa\wedge c=bq \Rightarrow c=(pq)a$, ou seja, $a|c$
+\item Se $a|b$ e $a|c$, ent{\~a}o $a|(bx+cy)$, para todos $x,y\in\mathbb{Z}$
+
+Temos $b=ap$ e $c=aq$, $p,q\in\mathbb{Z}$
+\[bx+cy=apx+aqy=a\underbrace{(px+qy)}_{\in\mathbb{Z}}\]
+
+Logo $a|(bx+cy)$
+\end{enumerate}
+
+\section{Algoritmo de divis{\~a}o de Euclides}
+
+\begin{teorema}[Algoritmo de divis{\~a}o de Euclides] Para quaisquer $a,b\in\mathbb{Z}$, com\\ $b>0$, existem {\'u}nicos $q$ e $r$ inteiros tais que $a=bq+r$, com $0\leq r<b$.\end{teorema}
+
+\textbf{Demonstra{\c c}{\~a}o}: Vamos mostrar primeiro a exist{\^e}ncia de $q$ e $r$.
+
+Seja $M=\{m\in\mathbb{Z}/m=a-bt,\ t\in\mathbb{Z}\}$, onde $t$ varia sobre todos os inteiros. Temos $m\neq\emptyset$. Al{\'e}m disso, $M^{+}$ {\'e} limitado inferiormente, logo, pelo princ{\'\i}pio da boa ordena{\c c}{\~a}o, existe $r\in M^{+}/r\leq x,\ \forall x\in M^{+}$. Como $r\in m^{+}\subseteq M$, existe $q\in\mathbb{Z}$ tal que $r=a+bq$. Portanto, $a=bq+r,\ q\in\mathbb{Z}$, com $r\leq 0$.
+
+Falta provar que $r<b$.
+
+Suponha ent{\~a}o que $r\geq b$. Logo $r=a-bq\geq b$, ou seja,\[a-bq-b\geq 0\Leftrightarrow a-b(q+1)\geq 0\]
+
+Desse modo, $a-b(q+1)\in M^{+}$.
+
+Agora, \[b>0\Rightarrow bq+b>bq\Rightarrow b(q+1)>bq\] \[-b(q+1)<-bq\Rightarrow a-b(a+1)<a-bq=r\], o que {\'e} uma contradi{\c c}{\~a}o, pois $r$ {\'e} o m{\'\i}nimo de $M^{+}$, logo, $r<b$, ou seja, $a=bq+r,\ q,r\in\mathbb{Z},\ 0\leq r<b$\\
+
+Falta provar a unidade de $q$ e $r$. Assim, suponha que existam \[q_{1},q_{2},r_{1},r_{2}\in\mathbb{Z},\ 0\leq r_{1}<b,\ 0\leq r_{2}<b\], tais que:
+\[a=bq_{1}+r_{1}=bq_{2}+r_{2}\]
+
+Suponha $r_{1}\neq r_{2}$. Suponha tamb{\'e}m que $r_{1}>r_{2}$. Assim, \[0\leq r_{1}-r_{2}=b(q_{2}-q_{1})\]
+
+E da{\'\i}, $q_{2}-q_{1}\geq 0$.
+
+Desse modo \[r_{1}=b(q_{2}-q_{1})+r_{2}\]
+
+Mas $r_{1}\geq 0,\ q_{2}-q_{1}\geq 1$, da{\'\i} $r_{1}>b$, o que {\'e} uma contradi{\c c}{\~a}o, logo $r_{1}=r_{2}$ e ent{\~a}o $q_{1}=q_{2}$, o que prova a unicidade.\#
+
+\section{M{\'a}ximo Divisor Comum}
+
+\begin{definicao}[M{\'a}ximo Divisor Comum] Dado $a,b\in\mathbb{Z}$, dizemos que $d\in\mathbb{Z}$ {\'e} o m{\'a}ximo divisor comum entre $a$ e $b$ se
+\begin{enumerate}
+\item $d\geq 0$
+\item $d|a$ e $d|b$
+\item Se $d'$ {\'e} um inteiro tal que $d'|a$ e $d'|b$, ent{\~a}o $d'|d$ %REVISAR
+\end{enumerate}
+\end{definicao}
+
+Observa{\c c}{\~o}es:
+\begin{enumerate}
+\item Se $d$ e $d_{1}$ s{\~a}o m{\'a}ximos divisores comuns entre $a$ e $b$, ent{\~a}o $d=d_{1}$.\\
+
+De fato, dados $d$ e $d_{1}$ m{\'a}ximos divisores comuns de $a$ e $b$, ent{\~a}o temos que $d|a,d|b,d_{1}|a,d_{1}|b$. Mas pelo item 3 da defini{\c c}{\~a}o temos $d|d_{1}$ e $d_{1}|d$. Agora, como $d_{1}\geq 0$ e $d\geq 0$, segue que $d=d_{1}$
+\item Se $a=b=0$, segue que $d=d_{1}$ %REVISAR
+\item Se $a=0$ e $b\neq 0$, ent{\~a}o $d=|b|$
+\item Se $d$ {\'e} o m{\'a}ximo divisor comum entre $a$ e $b$, ent{\~a}o $d$ tamb{\'e}m {\'e} o m{\'a}ximo divisor comum entre $a$ e $-b$, $-a$ e $b$ e entre $-a$ e $-b$.
+\end{enumerate}
+
+\begin{nota}[M{\'a}ximo Divisor Comum] Indicaremos por $mdc(a,b)$ o m{\'a}ximo divisor comum ente $a$ e $b$, que j{\'a} sabemos que {\'e} {\'u}nico quando existe.\end{nota}
+
+\begin{proposicao} Quaisquer que sejam $a,b\in\mathbb{Z}$, existe $d\in\mathbb{Z}$ que {\'e} o m{\'a}ximo divisor comum entre $a$ e $b$.\end{proposicao}
+
+\textbf{Demonstra{\c c}{\~a}o}: Das observa{\c c}{\~o}es anteriores podemos considerar somente o caso em que $a>0$ e $b>0$.
+
+Seja $L=\{ax+by/x,y\in\mathbb{Z}\}$. Temos que $L\neq\emptyset$ pois tomando $x=1$ e $y=0$, temos que $m=a1+b0$, pelo princ{\'\i}pio da boa ordena{\c c}{\~a}o, existe $d\in L^{+}$ tal que $d\leq x$, para todo $x\in L^{+}$.
+
+Mostremos que $d=mdc(a,b)$
+\begin{enumerate}
+\item $d\geq 0$ pois $d\in L^{+}$
+\item Como $d\in L^{+}$, existem $x_{0},y_{0}\in\mathbb{Z}$ tais que $d=ax_{0}+by_{0}$.
+
+Agora usando o algoritmo da divis{\~a}o de Euclides para $a$ e $d$ temos que existem $k,r\in\mathbb{Z},0\leq r<d$ tais que $a=kd+r$.
+
+Assim:\[a=k(ax_{0}+by_{0})+r\] \[r=a(1-kx_{0})+b(-y_{0})k\] Da{\'\i}, $r\in L$, mas $r\geq 0$, ent{\~a}o $r\in L^{+}$. Como $d$ {\'e} o m{\'\i}nimo de $L^{+}$ devemos ter $r=0$ e assim $a=kd$, ou seja, $d|a$.
+
+Analogamente, \textit{Mutatis Mutandis}, mostra-se que $d|b$.
+\item Seja $d\in\mathbb{Z}$ tal que $d'|a$ e $d'|b$. Temos que $d'|(ax+by)$, para $x,y\in\mathbb{Z}$, em particular, $d'|(ax_{0}+by_{0})=d$, ou seja, $d'|d$.
+\end{enumerate}
+
+Portanto, $d=mdc(a,b)$.\#
+
+Observa{\c c}{\~a}o:
+\begin{enumerate}
+\item Se $d=mdc(a,b)$, ent{\~a}o $d=ax_{0}+by_{0}$, onde $x_{0},y_{0}\in\mathbb{Z}$. Os elementos $x_{0}$ e $y_{0}$ satisfazem que tal igualdade n{\~a}o {\'e} {\'u}nica.
+\item Uma igualdade do tipo $d=ax_{0}+by_{0}$ {\'e} chamada de Identidade de Bezout
+
+Exemplos:
+\begin{enumerate}
+\item $mdc(2,3)=1$\\
+$1=2(-1)+3.1=2.2+3(-1)$
+\item $mdc(4,8)=4$\\
+\end{enumerate}
+\end{enumerate}
+
+Considere os seguintes subconjuntos de $\mathbb{Z}$\\
+\[I=\{2k/k\in\mathbb{Z}\}=\{0,\pm 2,\pm 4,\pm 6,...\}\]\[J=\{2r+1/r\in\mathbb{Z}\}=\{\pm 1,\pm 3,\pm 5,...\}\]
+
+Dados quaisquer $a,b\in I$, temos $a+b\in I$. Al{\'e}m disso, dado $n\in\mathbb{Z},\ na\in I$. Por outro lado, $1,3\in J$ mas $1+3=4\notin J$.
+
+\section{Ideais}
+
+\subsubsection{Defini{\c c}{\~a}o}
+\begin{definicao}[Ideal] Um subconjunto n{\~a}o vazio $S\subseteq\mathbb{Z}$ {\'e} chamado de um ideal de $\mathbb{Z}$ se valem as seguintes condi{\c c}{\~o}es:
+\begin{enumerate}
+\item $r_{1}+r_{2}\in S,\forall r_{1},r_{2}\in S$
+\item $nr\in S,\forall n\in\mathbb{Z},\forall r\in S$
+\end{enumerate}
+\end{definicao}
+
+\subsubsection{Propriedades}
+Seja S ideal de $\mathbb{Z}$
+\begin{enumerate}
+\item $r_{1}-r_{2}\in S$, para todos $r_{1}, r_{2}\in S$, pois $r_{1}-r_{2}=r_{1}+(-r_{2})$
+\item $0\in S$, pois $0=r-r$, para qualquer $r\in S$
+\end{enumerate}
+
+Exemplos:
+\begin{enumerate}
+\item $S=\{2k/k\in\mathbb{Z}\}$ {\'e} um ideal de $\mathbb{Z}$
+\item $S=\{0\}$ e $S=\mathbb{Z}$ s{\~a}o ideais de $\mathbb{Z}$, chamados de ideais triviais
+\item Dado $a,b,c\in\mathbb{Z}$, o subconjunto $S=\{ax+by/x,y\in\mathbb{Z}\}$ {\'e} um ideal de $\mathbb{Z}$
+
+$S\neq\emptyset$ pois $0=a0+b0\in S$
+
+Sejam $ax_{1}+by_{1},ax_{2}+by_{2}\in S$. Temos $(ax_{1}+by_{1})+(ax_{2}+by_{2})=a(x_{1}+x_{2})+b(y_{1}+y_{2})\in S$
+
+Agora, sejam $ax_{1}+by{1}\in S$ e $n\in\mathbb{Z}$ temos \[n(ax_{1}+by_{1})=a(nx_{1})+b(ny_{1})\in S\]
+\end{enumerate}
+
+De modo geral, dados $a_{1},a_{2},...,a_{n}$ n{\'u}meros inteiros, o subconjunto \[S=\{a_{1}x_{1}+a_{2}x_{2}+...+a_{n}x_{n}/x_{1},...,x_{n}\in\mathbb{Z}\}\] {\'e} um ideal de $\mathbb{Z}$.
+
+Se $S$ {\'e} ideal de $\mathbb{Z}$, ent{\~a}o $S=\{nk/n\in\mathbb{Z}\}$.
+\subsubsection{Conjunto dos m{\'u}ltiplos de $g$}
+\begin{nota}[Conjunto dos m{\'u}ltiplos de $g$] Se $g\in\mathbb{Z}$, denotamos por $g\mathbb{Z}$, ou $\mathbb{Z}g$, o subconjunto dos inteiros que s{\~a}o m{\'u}ltiplos de $g$ (os inteiros que s{\~a}o divis{\'\i}veis por $g$). Em outras palavras \[g\mathbb{Z}=\{gn/n\in\mathbb{Z}\}=\{0,\pm g,\pm 2g,\pm 3g,...\}\]
+\end{nota}
+
+\begin{teorema} Seja $S$ um ideal de $\mathbb{Z}$. Ent{\~a}o, existe um n{\'u}mero $g\in\mathbb{Z}$ tal que $S=g\mathbb{Z}$.\end{teorema}
+
+\textbf{Demonstra{\c c}{\~a}o}: Se $S=\{0\}$, ent{\~a}o tomamos $g=0$ e da{\'\i} $S=0\mathbb{Z}$. Se $S=\mathbb{Z}$, ent{\~a}o $g=1$ e $S=1\mathbb{Z}$.
+
+Assim podemos supor $S\neq\{0\}$ e $S\neq\mathbb{Z}$. Seja $S^{+}=\{x\in S/x>0\}$. Do {\'\i}tem 2 da defini{\c c}{\~a}o de ideal, segue que $S^{+}\neq\emptyset$. Assim, pelo princ{\'\i}pio da boa ordena{\c c}{\~a}o, existe $g\in S^{+}$ tal que $g\leq x,\forall x\in S^{+}$.
+
+Como $g\in S^{+}\subseteq S$ e $S$ {\'e} um ideal de $\mathbb{Z}$, ent{\~a}o $gn\in S\forall n\in\mathbb{Z}$, ou seja, $g\mathbb{Z}\subseteq S$.
+
+Agora precisamos mostrar que $a=gq$, onde $q\in\mathbb{Z}$. Assim, dado $a\in S$, o algoritmo da divis{\~a}o de Euclides garante que existem $q,r\in\mathbb{Z}$ tais que $a=gq+r$, onde $0\leq r<g$. Como $a,q,g\in S$ e $S$ {\'e} um ideal, ent{\~a}o $r=a-gq\in S$. Se $r>0$, ent{\~a}o como $r<g$ e $g$ {\'e} o m{\'\i}nimo de $S^{+}$ obtemos uma contradi{\c c}{\~a}o. Logo, $r=0$ e $a=gp$. Da{\'\i} $S\subseteq g\mathbb{Z}$. Portanto $s=g\mathbb{Z}$.\#
+
+Exemplo: O conjunto $S=\{2x-5y/x,y\in\mathbb{Z}\}$ {\'e} ideal de $\mathbb{Z}$. Neste caso,\\ $S^{+}=\{1,2,3,...\}$. Assim, $g=1$ e $S=1\mathbb{Z}=\mathbb{Z}$.
