@@ -1,15 +1,41 @@
-%!TEX program = xelatex
+%!TEX program = xelatex 
 %!TEX encoding = ISO-8859-1
-\documentclass[portuguese,twoside,12pt]{report}%opcao draft remove os links
-\usepackage{amssymb,amsmath,amsfonts,amsthm,amstext}
+
+\documentclass[portuguese,twoside,12pt]{book}%opcao draft remove os links
+\usepackage{amssymb,amsmath,amsfonts,amsthm,amstext,pxfonts}
 \usepackage[brazil]{babel}
-\usepackage{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{fancybox}
-\usepackage{niceframe}
-\usepackage{hyperref}
+%\usepackage[section]{placeins}
+\usepackage[unicode,bookmarks=true,colorlinks]{hyperref}
 \usepackage{graphicx}
-\graphicspath{{/Users/jfreitas/Dropbox/imagens-latex/}{/home/jfreitas/Dropbox/imagens-latex/}}
+%\graphicspath{{/home/jfreitas/Github/Geometria_Analitica/figuras-latex/}{/Users/jfreitas/GitHub/Geometria_Analitica/figuras-latex/}{C:/Users/jfreitas/Documents/GitHub/Geometria_Analitica/figuras-latex/}}
+\graphicspath{{./figuras-latex/}}
 \usepackage{makeidx}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{subfigure}
+\usepackage{gensymb}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{tikz,tikz-3dplot,tkz-euclide,circuitikz,siunitx,pstricks-add,pst-coil,pst-3dplot}
+\usepackage{pst-plot,pst-func,pst-eucl,pst-solides3d}
+\usetkzobj{all}
+\usetikzlibrary{scopes}
+\usetikzlibrary{through}
+\usetikzlibrary{lindenmayersystems}
+\usetikzlibrary[shadings]
+\usetikzlibrary{arrows}
+\usetikzlibrary{intersections,positioning}
+\usepackage{ccicons}
+\usepackage{ifthen}
+\usepackage{gauss}
+\usepackage{cases}
+% \usepackage{pgfplots}
+% \usepgfplotslibrary{external} 
+% \tikzexternalize
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
 
 %=============================================================================================
 %             Nomes para defini{\c c}{\~o}es, teoremas, etc
@@ -17,11 +43,18 @@
 
 \newtheorem{teorema}{Teorema}[chapter]
 \newtheorem{definicao}{Defini{\c c}{\~a}o}[chapter]
-\newtheorem{nota}{Nota{\c c}{\~a}o}[definicao]
+\newtheorem{propriedades}{Propriedades}[definicao]
+\newtheorem{notacao}{Nota\c{c}\~ao}[definicao]
 \newtheorem{proposicao}{Proposi{\c c}{\~a}o}[definicao]
 \newtheorem{lema}{Lema}[proposicao]
-\newtheorem{corolario}{Corol{\'a}rio}[proposicao]
-
+\newtheorem{corolario}{Corol{\'a}rio}[teorema]
+\newtheorem{observacao}{Observa{\c c}{\~a}o}[definicao]
+\newtheorem{exemplos}{Exemplos}[definicao]
+\newtheorem{exemplo}{Exemplo}[definicao]
+\newenvironment{prova}[1][Prova]{\noindent\textbf{#1:} }{\hfill$\diamondsuit$}%{\ \rule{0.5em}{0.5em}}
+\newtheoremstyle{dotless}{}{}{\itshape}{}{\bfseries}{}{ }{}
+\theoremstyle{dotless}
+\newtheorem*{solucao}{Solu{\c c}{\~a}o:}
 %=============================================================================================
 %             Cabe{\c c}alhos
 %=============================================================================================
@@ -60,101 +93,94 @@
 \renewcommand{\baselinestretch}{1.4}         % DIST{\^A}NCIA ENTRE LINHAS
 
 %=============================================================================================
+%        Todo list
+%=============================================================================================
+
+\usepackage[colorinlistoftodos, textwidth=1.9cm, shadow]{todonotes}
+\setlength{\marginparwidth}{2.03cm}
+
+%=============================================================================================
 %             Comandos Pessoais
 %=============================================================================================
-
+\newcommand{\elipse}[2]{\dfrac{x^2}{#1} + \dfrac{y^2}{#2} = 1}
+\newcommand{\im}{{\rm Im\,}}
+\newcommand{\inner}[2]{\langle \vec{#1}, \vec{#2} \rangle}
+\newcommand{\proj}{{\rm proj}}
+\newcommand{\aut}{{\rm Aut\,}}
+\newcommand{\cp}[1]{\mathbb{#1}}
+\newcommand{\eq}{=}
+\newcommand{\norm}[1]{\left\Vert{#1}\right\Vert}
 \newcommand{\sub}{\subseteq}
+\newcommand{\n}{\mathbb{N}}
+\newcommand{\integer}{\mathbb{Z}}
+\newcommand{\rac}{\mathbb{Q}}
 \newcommand{\real}{\mathbb{R}}
-%=============================================================================================
+\newcommand{\complex}{\mathbb{C}}
+\newcommand{\lap}[1]{\mathcal{L}\left\{#1\right\}}
+\newcommand{\lapi}[1]{\mathcal{L}^{-1}\left\{#1\right\}}
+\newcommand{\se}[1]{\displaystyle\sum_{n = 1}^\infty{#1}}
+\newcommand{\dlim}[2]{\displaystyle\lim_{#1\rightarrow #2}}
+\newcommand{\slim}{\displaystyle\lim_{n \rightarrow \infty}}
+\newcommand{\seq}[1]{\{{#1_n\}}}
+\newcommand{\seg}[1]{\displaystyle\sum_{n = 1}^\infty{#1_n}}
+\newcommand{\sei}[2]{\displaystyle\sum_{#1}^\infty{#2}}
+\newcommand{\sepc}[3]{\displaystyle\sum_{#1}^\infty{#2(x - #3)^n}}
+\newcommand{\imp}[3]{\displaystyle\int_{#1}^{+\infty}{#3}{d #2}}
+\newcommand{\dint}[4]{\displaystyle\int_{#1}^{#2}{#4}{d#3}}
+\newcommand{\inti}[2]{\displaystyle\int{#1}{d#2}}
+\newcommand{\norma}[1]{\left\lVert#1\right\rVert}
+\newcommand{\flim}[1]{\displaystyle\lim_{#1\rightarrow \infty}}
+\renewcommand{\sin}{{\rm sen\,}}
+\renewcommand{\tan}{{\rm tg\,}}
+\renewcommand{\csc}{{\rm cossec\,}}
+\renewcommand{\cot}{{\rm cotg\,}}
+\renewcommand{\sinh}{{\rm senh\,}}
 
+
+%=============================================================================================
+%\'Indice remissivo em 3 colunas
+%=============================================================================================
+% \makeatletter
+% \renewenvironment{theindex}
+%  {\if@twocolumn
+%   \@restonecolfalse
+%  \else
+%   \@restonecoltrue
+%  \fi
+%  \setlength{\columnseprule}{0pt}
+%  \setlength{\columnsep}{35pt}
+%  \begin{multicols}{3}[\section*{\indexname}]
+%  \markboth{\MakeUppercase\indexname}%
+%    {\MakeUppercase\indexname}%
+%  \thispagestyle{plain}
+%  \setlength{\parindent}{0pt}
+%  \setlength{\parskip}{0pt plus 0.3pt}
+%  \relax
+%  \let\item\@idxitem}%
+%  {\end{multicols}\if@restonecol\onecolumn\else\clearpage\fi}
+% \makeatother
 
 \makeindex
 
 
 
-\title{\Huge \textbf{{\'A}lgebra 1}\\ \vspace{0,5cm} \Large Notas de Aula}
-\author{\Large Departamento de Matem{\'a}tica\\ \\ \large Universidade de Bras{\'\i}lia - UnB}
-\date{2/2010}
-
 \begin{document}
-\maketitle
-
-\begin{center}
-\Huge \textbf{Pref{\'a}cio}
-\end{center}
-\hspace{0,5cm}Essas notas de Aula s{\~a}o referentes {\`a} mat{\'e}ria {\'A}lgebra 1,
-ministrada na UnB - Universidade de Bras{\'\i}lia - durante o 2º Semestre de 2010
-pelo professor Jos{\'e} Ant{\^o}nio de O. Freitas, Departamento de Matem{\'a}tica. Tais
-notas foram transcritas e editadas pelo graduando em Ci{\^e}ncias Econ{\^o}micas
-Luiz Eduardo Sol R. da Silva\footnote{luizeduardosol@hotmail.com}.
-
-{\'E} livre a reprodu{\c c}{\~a}o, distribui{\c c}{\~a}o e edi{\c c}{\~a}o deste material, desde que citadas as suas fontes e autores. Cr{\'\i}ticas e sugest{\~o}es s{\~a}o bem vindas.
-\vspace{20cm}
-
-
-
-
-\begin{center} \textbf{\Large Nota{\c c}{\~o}es e express{\~o}es}
-\end{center}
-\begin{minipage}[l]{0,5\textwidth}
-\begin{itemize}
-\item $\neg$ N{\~a}o
-\item $\forall$ Para todo
-\item $/$ Tal que
-\item $|$ Divide
-\item $\Rightarrow$ Implica
-\item $\in$ Pertence
-\item $\emptyset$ Vazio
-\item $\subseteq$ Contido ou igual a
-\item $\supseteq$ Cont{\'e}m ou igual a
-\item $\wedge$ E
-\item $\vee$ Ou
-\item $=$ Igual
-\item $\neq$ Diferente
-\item $\mathbb{Z}$ N{\'u}meros Inteiros
-\item $\mathbb{R}$ N{\'u}meros Reais
-\item $\cap$ Intersec{\c c}{\~a}o
-\item $>$ Maior que
-\item $\geq$ Maior ou igual a
-\item $\displaystyle\bigcup_{i=1}^{n}$ Uni{\~a}o de $n$ conjuntos
-\item $\displaystyle\bigsqcup_{i=1}^{n}$ Uni{\~a}o disjunta de $n$ conjuntos
-
-
-\end{itemize}
-\end{minipage}
-\begin{minipage}[r]{0,5\textwidth}
-\begin{itemize}
-
-\item $\leftrightarrow$ Se, e somente se
-\item $\veebar$ Ou...,ou..., mas nunca ambos
-\item $\rightarrow$ Se,... ent{\~a}o...
-\item $\exists$ Existe
-\item $\Leftrightarrow$ Equivalente a
-\item $\notin$ N{\~a}o pertence
-\item \# Fim da demonstra{\c c}{\~a}o
-\item $\mathbb{N}$ N{\'u}meros Naturais
-\item $\mathbb{Q}$ N{\'u}meros Racionais
-\item $\nsubseteq$ N{\~a}o cont{\'e}m ou {\'e} igual a
-\item $\cup$ Uni{\~a}o
-\item $\sqcup$ Uni{\~a}o Disjunta
-\item $<$ Menor que
-\item $\leq$ Menor ou igual a
-\item $\displaystyle\bigcap_{i=1}^{n}$ Intersec{\c c}{\~a}o de $n$ conjuntos
-\item Q.E.D. (\textit{Quod Erat Demonstrandum}): Como se queria demonstrar
-\item P.B.O.: Princ{\'\i}pio da boa ordena{\c c}{\~a}o
-\item H.I.: Hip{\'o}tese de Indu{\c c}{\~a}o
-\item \textit{Mutatis Mutandis}:  Mudando o que tem que ser mudado
-
-\end{itemize}
-\end{minipage}
-
+%\listoftodos
+\include{capa}
+\hypersetup{linkcolor=blue}
 \tableofcontents
-
-
-
-
-
-
+\listoffigures
+\hypersetup{linkcolor=red}
+\include{vetores-no-plano}
+\include{reta-no-plano}
+\include{circunferencias-e-conicas}
+\include{vetores-no-espaco}
+\include{reta-e-plano-espaco}
+\include{quadricas}
+\include{bibliografia}
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{\'Indice Remissivo}
 \printindex
 
 \end{document}
