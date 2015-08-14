@@ -4,7 +4,7 @@
 \documentclass[portuguese,twoside,12pt]{book}%opcao draft remove os links
 \usepackage{amssymb,amsmath,amsfonts,amsthm,amstext,pxfonts}
 \usepackage[brazil]{babel}
-\usepackage[utf8]{inputenc}
+\usepackage{inputenc}
 \usepackage{fancybox}
 %\usepackage[section]{placeins}
 \usepackage[unicode,bookmarks=true,colorlinks]{hyperref}
@@ -43,6 +43,7 @@
 
 \newtheorem{teorema}{Teorema}[chapter]
 \newtheorem{definicao}{Defini{\c c}{\~a}o}[chapter]
+\newtheorem{nota}{Nota{\c c}{\~a}o}[definicao]
 \newtheorem{propriedades}{Propriedades}[definicao]
 \newtheorem{notacao}{Nota\c{c}\~ao}[definicao]
 \newtheorem{proposicao}{Proposi{\c c}{\~a}o}[definicao]
@@ -171,12 +172,13 @@
 \tableofcontents
 \listoffigures
 \hypersetup{linkcolor=red}
-\include{vetores-no-plano}
-\include{reta-no-plano}
-\include{circunferencias-e-conicas}
-\include{vetores-no-espaco}
-\include{reta-e-plano-espaco}
-\include{quadricas}
+\include{prefacio-e-notacoes}
+\include{teoria-de-conjuntos}
+\include{relacoes-e-funcoes}
+\include{numeros-inteiros}
+\include{operacoes-em-Zm}
+\include{aneis}
+\include{grupos}
 \include{bibliografia}
 \cleardoublepage
 \phantomsection
