@@ -1,0 +1,255 @@
+%!TEX program = xelatex
+%!TEX root = geometria_analitica.tex
+%%Usar makeindex -s indexstyle.ist arquivo.idx no terminal para gerar o {\'\i}ndice remissivo agrupado por inicial
+%%Ap\'os executar pdflatex arquivo
+\chapter{No{\c c}{\~o}es de Teoria de Conjuntos}
+\section{Conceitos b{\'a}sicos}
+
+Um conjunto {\'e} uma ``cole{\c c}{\~a}o" ou ``fam{\'\i}lia" de elementos.
+
+Usaremos letras mai{\'u}sculas do alfabeto para denotar os conjuntos e denotaremos elementos por letras min{\'u}sculas do alfabeto.
+
+Dado um conjunto $A$, para indicar o fato de que $a$ {\'e} um elemento de $A$, escrevemos:
+\[a \in A\]
+
+Para dizer que um elemento $b$ n{\~a}o pertence ao conjunto $A$, escrevemos:
+\[b \notin A\]
+
+Um conjunto sem elementos {\'e} chamado de vazio ou conjunto vazio. Tal conjunto {\'e} denotado por $\emptyset$.
+
+Dado um conjunto $A$ e $a$ um elemento, ocorre sempre o seguinte:
+\[a \in A \mbox{ ou } a \notin A\]
+
+Al{\'e}m disso, para dois elementos $a,b\in A$, ocorre exatamente o seguinte:
+\[a=b \mbox{ ou } a\neq b\]
+
+\section{Descri{\c c}{\~a}o de um conjunto}
+
+Um conjunto $A$ pode ser dado pela simples listagem dos seus elementos, como por exemplo:
+\[ A= \{1,2,3,4,5\}\]
+\[B = \{verdade,\ falso\}\]
+
+Um conjunto tamb{\'e}m pode ser dado pela descri{\c c}{\~a}o das propriedades dos seus elementos, como por exemplo:
+
+$A=\{n \mid n$ {\'e} m{\'u}ltiplo de 2$\}=\{2,4,6,...\}$
+
+\section{Alguns conjuntos importantes}
+\begin{enumerate}
+\item $\mathbb{N}=\{1,2,3,...\}$ o conjunto do n{\'u}meros naturais
+\item $\mathbb{Z}=\{...,-2,-1,0,1,2,...\}$ o conjunto dos n{\'u}meros inteiros
+\item $\mathbb{N}_{0}=\{0,1,2,3,...\}$ o conjunto dos n{\'u}meros inteiros n{\~a}o negativos
+\item $\mathbb{R}$ o conjunto dos n{\'u}meros reais
+\item $\mathbb{R}^{*}$ o conjunto dos n{\'u}meros reais n{\~a}o nulos
+\item $\mathbb{Q}=\left\{\dfrac{p}{q} \mid p,q \in \mathbb{Z}, q \neq 0 \right\}$ o conjunto dos n{\'u}meros racionais
+\end{enumerate}
+
+\section{Propriedades dos conjuntos}
+
+\subsubsection{Igualdade entre conjuntos}
+
+Dados dois conjuntos $A$ e $B$, dizemos que $A$ e $B$ s{\~a}o iguais se, e somente se, eles t{\^e}m os mesmos elementos, ou seja, para todo $a\in A$ temos que $a\in B$ e para todo $b\in B,b\in A$.
+
+Se $A$ e $B$ s{\~a}o iguais, escrevemos $A = B$
+\[ \{1,2,3,4\} = \{3,2,1,4\} \]
+\[ \{1,2,3\} \neq \{2,3\} \]
+
+\subsubsection{Contin{\^e}ncia de conjuntos}
+
+Se $A$ e $B$ s{\~a}o dois conjuntos, dizemos que A {\'e} um subconjunto de $B$ se todo elemento de $A$ for elemento de $B$, ou seja, se para todo elemento $a$, a seguinte implica{\c c}{\~a}o for verdadeira.
+\[ a \in A \Rightarrow a \in B\]
+
+Nesse caso, denota-se $A \subseteq B$ ou $B \supseteq A$.
+
+Para o caso onde $A$ {\'e} um subconjunto de $B$ mas n{\~a}o {\'e} igual a $B$, escrevemos:
+\begin{center}
+$A \subsetneq B$(Em alguns livros, usa-se a nota{\c c}{\~a}o $A \subset B$ para contin{\^e}ncia pr{\'o}pria)
+\end{center}
+
+Nesse caso, dizemos que $A$ {\'e} um subconjunto pr{\'o}prio de $B$.
+
+Para dizer que $A$ n{\~a}o est{\'a} contido em $B$, escrevemos $A \nsubseteq B$
+
+Assim, a igualdade entre dois conjuntos pode ser descrita como
+\[ A = B \Leftrightarrow A \subseteq B \mbox{ e } B \subseteq A\]
+
+Ou seja, se $A = B$ ent{\~a}o $A \subseteq B$ e $B \subseteq A$, por outro lado, se $A \subseteq B$ e $B \subseteq A$, ent{\~a}o $A = B$
+
+Quando $A$ e $B$ n{\~a}o s{\~a}o iguais, escrevemos $A \neq B$. Assim, temos
+\[ A \neq B \Leftrightarrow A \nsubseteq B \mbox{ ou } B \nsubseteq A\]
+
+\subsection{Propriedades da contin{\^e}ncia}
+Para quaisquer 3 conjuntos $A,B$ e $C$ temos
+\begin{enumerate}
+\item $A\subseteq A$ (Lei reflexiva)
+\item Se $A\subseteq B \mbox{ e } B\subseteq A$, ent{\~a}o $A=B$ (Lei anti-sim{\'e}trica)
+\item Se $A\subseteq B$ e $B\subseteq C$, ent{\~a}o $A\subseteq C$ (Lei transitiva)
+\end{enumerate}
+
+Considere os seguintes conjuntos:
+\[A = \{ n \in \mathbb{N} \mid n \mbox{ {\'e} m{\'u}ltiplo de } 2\}=\{2,4,6,...\}\]
+\[ B = \{n\in\mathbb{N} \mid n \mbox{ {\'e} m{\'u}ltiplo de } 3\}=\{3,6,9,...\}\]
+
+Neste caso, $2 \in A$ e $2 \in B$, logo $A \nsubseteq B$. Por outro lado, $3 \in B$ e $3 \notin A$, logo $B \nsubseteq A$.
+
+Assim, dados 2 conjuntos $A$ e $B$, nem sempre temos que $A \subseteq B$ ou $B \subseteq A$.
+
+\begin{proposicao} Seja $A$ um conjunto. Ent{\~a}o $ \emptyset \subseteq A$.\end{proposicao}
+
+\textbf{Demonstra{\c c}{\~a}o} Suponha que $ \emptyset \nsubseteq A$. Logo existe $x \in \emptyset$ e $x \in A$. Mas por defini{\c c}{\~a}o o conjunto vazio n{\~a}o cont{\'e}m elementos. Logo {\'e} um absurdo ou uma contradi{\c c}{\~a}o existir $z \in \emptyset$. Portanto, $ \emptyset \subseteq A$, como quer{\'\i}amos demonstrar.\#
+
+\section{Rela{\c c}{\~o}es entre conjuntos}
+
+\subsubsection{Intersec{\c c}{\~a}o}
+
+\begin{definicao}[Intersec{\c c}{\~a}o] Sejam $A$ e $B$ dois conjuntos. Definimos a intersec{\c c}{\~a}o de $A$ e $B$ como sendo o conjunto $A \cap B$ cujos elementos pertencem ao conjunto $A$ e $B$ simultaneamente. Assim,
+\[ A \cap B = \{x \mid x \in A\mbox{ e }  x \in B\}\]
+\end{definicao}
+
+Exemplo: Sejam
+\[ A = \{1,2,3\},\ B = \{2,3,4\}\]
+\[A \cap B = \{2,3\}\]
+
+\begin{proposicao} Sejam $A$ e $B$ dois conjuntos. Ent{\~a}o
+\[(A \cap B) \subseteq A  \mbox{ e } (A \cap B) \subseteq B.\]
+\end{proposicao}
+
+\textbf{Demonstra{\c c}{\~a}o} Seja $x \in A \cap B$ um elemento arbitr{\'a}rio. Logo $x \in A$ e $x \in B$. De $x \in A$ temos que $A \cap B \subseteq A$. De $x \in B$ temos que $A \cap B \subseteq B$. Como quer{\'\i}amos demonstrar.\#
+
+\subsubsection{Uni{\~a}o}
+
+\begin{definicao}[Uni{\~a}o] Sejam $A$ e $B$ dois conjuntos. Definimos a uni{\~a}o de $A$ com $B$ como sendo o conjunto $A \cup B$, cujos elementos pertencem ao conjunto $A$ ou ao conjunto $B$. Assim,
+\[A \cup B = \{x \mid x \in A \mbox{ ou } x \in B\}.\]
+\end{definicao}
+
+Exemplo: Sejam
+\[A = \{1,2,3\},\ B = \{2,3,4\}\]
+\[A \cup B = \{1,2,3,4\}\]
+
+O conceito de uni{\~a}o($ \cup $) e intersec{\c c}{\~a}o($ \cap $) pode ser estendido para mais de 2 conjuntos.
+
+\subsubsection{Uni{\~a}o e Intersec{\c c}{\~a}o de m{\'u}ltiplos conjuntos}
+\begin{definicao}[Uni{\~a}o e Intersec{\c c}{\~a}o de m{\'u}ltiplos conjuntos] Sejam $A_{1},...,A_{n}$ $n$ conjuntos dados. Ent{\~a}o
+\[A_{1} \cup A_{2} \cup \cdots \cup A_{n}= \displaystyle\bigcup_{k=1}^{n} A_{k}\]
+{\'e} o conjunto dos elementos $x$ tais que $x$ pertence a pelo menos um dos conjuntos $A_{1}$, ..., $A_{n}$. Agora,
+\[A_{1} \cap \cdots \cap A_{n} = \displaystyle\bigcap_{k=1}^{n}A_{k}\]
+{\'e} o conjunto dos elementos $x$ que pertencem a todos os conjuntos $A_{1}$, ..., $A_{n}$ simultaneamente.
+\end{definicao}
+
+Quando a intersec{\c c}{\~a}o de dois ou mais conjuntos {\'e} vazia, dizemos que eles s{\~a}o conjuntos disjuntos.
+
+Se $C = A \cup B$, tais que $A \cap B = \emptyset$, dizemos que $C$ {\'e} uma uni{\~a}o disjunta de $A$ e $B$. Neste caso, escrevemos
+\[C = A \sqcup B\]
+
+\begin{proposicao} Sejam $A,\ B$ e $C$ tr{\^e}s conjuntos, ent{\~a}o
+\begin{enumerate}
+\item $A\cap(B\cup C)=(A\cap B)\cup(A\cap C)$
+\item $A\cup(B\cap C)=(A\cup B)\cap(A\cup C)$
+\end{enumerate}
+\end{proposicao}
+
+\textbf{Demonstra{\c c}{\~a}o}:
+\begin{enumerate}
+\item Precisamos mostrar que
+\[A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)\]
+e
+\[(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C).\]
+
+Seja $x\in A\cap(B\cup C)$. Logo $x\in A$ e $x\in B\cup C$. Agora, de $x\in B\cup C$, temos que $x\in B$ ou $x\in C$. Suponha que $x\in B$. Como $x\in A$, segue que $x\in A\cap B$. Assim, $x\in(A\cap B)\cup(A\cap C)$, ou seja, $A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$. Por outro lado, se $x\in C$, ent{\~a}o $x\in C$, ent{\~a}o $x\in A\cap C$ e da{\'\i} $x\in(A\cap B)\cup(A\cap C)$, logo $A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$.
+
+Portanto,
+\[A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C).\]
+
+Reciprocamente, seja $x\in(A\cap B)\cup(A\cap C)$. Assim, $x\in A\cap B$ ou $x\in A\cap C$. Suponha que $x\in A\cap B$. Da{\'\i}, $x\in A$ e $x\in B$. Como $x\in B$, segue que $x\in B\cup C$ e ent{\~a}o $x\in A\cap(B\cup C)$, ou seja, $(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C)$. Agora, supondo que $x\in A\cap C$. Da{\'\i} $x\in A$ e $x\in C$. Desse modo, $x\in B\cup C$, ent{\~a}o $x\in A\cap(B\cup C)$, isto {\'e}
+\[(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C).\]
+
+Portanto temos \[A\cap(B\cup C)=(A\cap B)\cup(A\cap C).\]
+
+Como quer{\'\i}amos demonstrar.\#
+\item O mesmo racioc{\'\i}nio se aplica, \textit{Mutatis Mutandis}, {\`a} segunda demonstra{\c c}{\~a}o.
+\end{enumerate}
+
+\subsubsection{Diferen{\c c}a de Conjuntos}
+\begin{definicao}[Diferen{\c c}a de Conjuntos] Dados dois conjuntos $A$ e $B$, definimos a diferen{\c c}a dos conjuntos $A$ e $B$, denotado $A-B$ (ou $A\backslash B)$
+\[A - B = \{x | x \in A \mbox{ e } x \notin B\}.\]
+\end{definicao}
+
+Exemplos:
+\begin{enumerate}
+\item $A=\{1,2,3,5,4\}$, $B=\{2,3,6,8\}$, $A-B=\{1,4,5\}$, $B-A=\{6,8\}$
+\item $A=\{2,4,6,8,10,...\}$,  $B=\{3,6,9,12,15,...\}$, $A-B=\{2,4,8,10,14,16,...\}$, $B - A=\{3,9,15,21,...\}$
+\end{enumerate}
+
+\subsubsection{Complementar}
+
+\begin{definicao}[Complementar] Dados dois conjuntos $A$ e $E$ tais que $A\subseteq E$, definimos o complementar de $A$ em $E$, denotado $A^{C}$ ou $C_{E}(A)$, como
+\[C_{E}(A) = \{ x \in E | x \in A \}.\]
+\end{definicao}
+
+Observa{\c c}{\~o}es:
+\begin{enumerate}
+\item Se $A = E$, ent{\~a}o $C_{A}(A)=\{ x \in A \mid x \notin A \}=\emptyset$
+\item $(A^{C})^{C}=\{x \in E \mid x \notin A^{C}\} = \{ x \in E \mid x \in A \}=A$
+\end{enumerate}
+
+Exemplo:\\
+$A=\{1,2,3,4\},\ E=\{1,2,3,5,4,0,8,9\}$\\
+$A^{c}=\{0,8,9\}$
+
+\begin{proposicao} Sejam $A,B,E$ conjuntos. Se $A\subseteq B\subseteq E$, ent{\~a}o $C_{E}(B)\subseteq C_{E}(A)$.\end{proposicao}
+
+\textbf{Demonstra{\c c}{\~a}o}: Seja $x\in B^{c}$, logo $x\notin B$ e assim $x\notin A$, pois $A\subseteq B$. Ent{\~a}o $x\in A^{c}$, ou seja, $B^{c}\subseteq A^{c}$. (Q.E.D.).\#\\
+
+\begin{proposicao} Sejam $A,B,E$ tr{\^e}s conjunto tais que $A\subseteq E$ e $B\subseteq E$. Ent{\~a}o:
+\begin{enumerate}
+\item $(A\cup B)^{c}=A^{c}\cap B^{c}$
+\item $(A\cap B)^{c}=A^{c}\cup B^{c}$
+\end{enumerate}
+\end{proposicao}
+
+\textbf{Demonstra{\c c}{\~a}o}: Seja $x\in(A\cup B)^{c}$. Logo $x\in A\cup B$, assim $x\notin A\wedge x\notin B$. Da{\'\i}, $x\in A^{c}\wedge x\in B^{c}$, isto {\'e}, $x\in A^{c}\cap B^{c}$. Desse modo,
+\begin{equation}
+(A\cup B)^{c}\subseteq A^{c}\cap B^{c}
+\end{equation}
+
+Por outro lado, se $x\in A^{c}\cap B^{c}$, ent{\~a}o $x\in A^{c}\wedge x\in B^{c}$. Da{\'\i}, $x\notin A\wedge x\notin B$, ou seja, $x\notin A\cup B$, logo $x\in (A\cup B)^{c}$. Desse modo
+\begin{equation}
+A^{c}\cap B^{c}\subseteq(A\cup B)^{c}
+\end{equation}
+
+Portanto, de (2.1) e (2.2) temos \[(A\cup B)^{c}=A^{c}\cap B^{c}\]
+
+(Q.E.D).\#\\
+
+\subsubsection{Produto Cartesiano}
+
+\begin{definicao}[Produto Cartesiano] Dados 2 conjuntos $A$ e $B$, definimos o produto cartesiano $A$ e $B$ por
+\begin{center}
+$A\times B=\{(a,b)/a\in A,b\in B\}$
+\end{center}
+\end{definicao}
+
+Como o conjunto dos pares ordenados $(a,b)$, onde $a$ percorre $A$ e $b$ percorre $B$.
+
+Dados $(a,b),(c,d)\in A$x$B$, temos $(a,b)=(c,d)$ se, e somente se, \[a=c\wedge b=d\]
+
+Em geral, $A$x$B\neq B$x$A$.
+
+Exemplo:\\
+$A=\{1,2\},\ B=\{3\}$\\
+$A$x$B=\{(1,3),(2,3)\}$\\
+$B$x$A=\{(3,1),(3,2)\}$
+
+\subsubsection{Conjunto partes}
+
+\begin{definicao}[Conjunto Partes] Para qualquer conjunto $A$, indicamos por $P(A)$\[P(A)=\{X/X\subseteq A\}\] o conjunto das partes de $A$.\end{definicao}
+
+Os elementos desse conjunto s{\~a}o todos os subconjuntos de $A$. Dizer que $x\in P(A)$ significa que $x\in A$. Particularmente, temos $\emptyset\in P(A)$ e $A\in P(A)$.
+
+Exemplos:
+\begin{enumerate}
+\item $A=\emptyset,\ P(A)=\{\emptyset\}$
+\item $B=\{b\},\ P(B)=\{\emptyset,B\}$
+\item $C=\{a,b,c\}$\\
+$P(C)=\{\emptyset, \{a\}, \{b\},\{c\},\{a,b\},\{a,c\},\{b,c\},C\}$
+\item $D=\mathbb{R},P(D)=\{X/X\subseteq\mathbb{R}\}$, por exemplo $\mathbb{Q}\in P(D)$
+\end{enumerate}
