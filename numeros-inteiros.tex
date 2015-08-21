@@ -102,16 +102,18 @@ Pela Hip{\'o}tese de Indu{\c c}{\~a}o, temos \[1+2+...+r+(r+1)=\displaystyle\fra
 
 Portanto, pelo princ{\'\i}pio da indu{\c c}{\~a}o finita \[1+2+...+n=\displaystyle\frac{n(n+1)}{2}\]
 
-\begin{teorema} Dado $a\in\mathbb{Z}$, suponhamos que cada inteiro $n\geq a$ esteja associado uma proposi{\c c}{\~a}o $P(n)$. Ent{\~a}o $P(n)$ ser{\'a} verdadeira $\forall n\geq a$ desde que seja poss{\'\i}vel provar que:
+\begin{teorema}
+Dado $a\in\mathbb{Z}$, suponhamos que cada inteiro $n\geq a$ esteja associado uma proposi{\c c}{\~a}o $P(n)$. Ent{\~a}o $P(n)$ ser{\'a} verdadeira $\forall n\geq a$ desde que seja poss{\'\i}vel provar que:
 \begin{enumerate}
-\item $P(a)$ {\'e} verdadeira
-\item Dado que $r>a$, se $P(k)$ {\'e} verdadeira para todo $k$ tal que $a\leq k\leq r$, ent{\~a}o $P(r)$ {\'e} verdadeira
+\item $P(a)$ {\'e} verdadeira.
+\item Dado que $r > a$, se $P(k)$ {\'e} verdadeira para todo $k$ tal que $a \leq k \leq r$, ent{\~a}o $P(r)$ {\'e} verdadeira
 \end{enumerate}
 \end{teorema}
 
-\textbf{Demonstra{\c c}{\~a}o}: Seja $F=\{\ell\in\mathbb{Z}/a\leq\ell\wedge P(\ell)$ {\'e} falsa$\}$. Suponha $F\neq\emptyset$. Como $F$ {\'e} limitado inferiormente, pelo princ{\'\i}pio da boa ordena{\c c}{\~a}o, existe $\ell_{0}\in F/\ell_{0}\leq x,\forall x\in F$. Como $\ell_{0}\in F,\ P(\ell_{0})$ {\'e} falsa. Mas $P(a)$ {\'e} verdadeira, assim, $\ell_{0}>a$. Agora, como $\ell_{0}$ {\'e} o m{\'\i}nimo de $F$, ent{\~a}o $P(x)$ {\'e} verdadeira para $a\leq x<\ell_{0}$.\\
+\textbf{Demonstra{\c c}{\~a}o}:
+Seja $F=\{l \in \Z \mid a \leq l\ \mbox{e}\ P(l)\ \mbox{{\'e} falsa}\}$. Suponha $F \neq \emptyset$. Como $F$ {\'e} limitado inferiormente, pelo princ{\'\i}pio da boa ordena{\c c}{\~a}o, existe $l_0 \in F$ tal que $l_{0} \leq x$, para todo $x \in F$. Como $l_{0} \in F$, $P(l_0)$ {\'e} falsa. Mas $P(a)$ {\'e} verdadeira, assim, $l_0 > a$. Agora, como $l_0$ {\'e} o m{\'\i}nimo de $F$, ent{\~a}o $P(x)$ {\'e} verdadeira para $a \leq x < l_0$.
 
-De 2 temos que $P(\ell_{0})$ {\'e} verdadeira, o que {\'e} uma contradi{\c c}{\~a}o, pois verificamos anteriormente que $P(\ell_{0})$ {\'e} falso.\\
+Agora pelo item (2) segue que $P(l_0)$ {\'e} verdadeira, o que {\'e} uma contradi{\c c}{\~a}o, pois verificamos anteriormente que $P(l_0)$ {\'e} falso.
 
 Portanto $F=\emptyset$ e o teorema est{\'a} demonstrado.\#
 
