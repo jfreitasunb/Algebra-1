@@ -99,7 +99,7 @@ Assim, dados 2 conjuntos $A$ e $B$, nem sempre temos que $A \subseteq B$ ou $B \
 
 \begin{proposicao} Seja $A$ um conjunto. Ent{\~a}o $ \emptyset \subseteq A$.\end{proposicao}
 
-\textbf{Demonstra{\c c}{\~a}o} Suponha que $ \emptyset \nsubseteq A$. Logo existe $x \in \emptyset$ e $x \in A$. Mas por defini{\c c}{\~a}o o conjunto vazio n{\~a}o cont{\'e}m elementos. Logo {\'e} um absurdo ou uma contradi{\c c}{\~a}o existir $z \in \emptyset$. Portanto, $ \emptyset \subseteq A$, como quer{\'\i}amos demonstrar.\#
+\textbf{Demonstra{\c c}{\~a}o} Suponha que $ \emptyset \nsubseteq A$. Logo existe $x \in \emptyset$ e $x \notin A$. Mas por defini{\c c}{\~a}o o conjunto vazio n{\~a}o cont{\'e}m elementos. Logo {\'e} um absurdo ou uma contradi{\c c}{\~a}o existir $z \in \emptyset$. Portanto, $ \emptyset \subseteq A$, como quer{\'\i}amos demonstrar.\#
 
 \section{Rela{\c c}{\~o}es entre conjuntos}
 
@@ -186,7 +186,7 @@ Exemplos:
 \subsubsection{Complementar}
 
 \begin{definicao}[Complementar] Dados dois conjuntos $A$ e $E$ tais que $A\subseteq E$, definimos o complementar de $A$ em $E$, denotado $A^{C}$ ou $C_{E}(A)$, como
-\[C_{E}(A) = \{ x \in E | x \in A \}.\]
+\[C_{E}(A) = \{ x \in E \mid x \notin A \}.\]
 \end{definicao}
 
 Observa{\c c}{\~o}es:
@@ -210,7 +210,7 @@ $A^{c}=\{0,8,9\}$
 \end{enumerate}
 \end{proposicao}
 
-\textbf{Demonstra{\c c}{\~a}o}: Seja $x\in(A\cup B)^{c}$. Logo $x\in A\cup B$, assim $x\notin A\wedge x\notin B$. Da{\'\i}, $x\in A^{c}\wedge x\in B^{c}$, isto {\'e}, $x\in A^{c}\cap B^{c}$. Desse modo,
+\textbf{Demonstra{\c c}{\~a}o}: Seja $x\in(A\cup B)^{c}$. Logo $x\notin A\cup B$, assim $x\notin A\wedge x\notin B$. Da{\'\i}, $x\in A^{c}\wedge x\in B^{c}$, isto {\'e}, $x\in A^{c}\cap B^{c}$. Desse modo,
 \begin{equation}
 (A\cup B)^{c}\subseteq A^{c}\cap B^{c}
 \end{equation}
