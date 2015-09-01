@@ -2,7 +2,8 @@
 %!TEX encoding = ISO-8859-1
 \documentclass[12pt]{article}
 
-\usepackage{amssymb,amsmath,amsfonts,amsthm,amstext}
+\usepackage{amssymb}
+\usepackage{amsmath,amsfonts,amsthm,amstext,mathabx}
 \usepackage[brazil]{babel}
 %\usepackage[latin1]{inputenc}
 \usepackage{graphicx}
@@ -32,13 +33,13 @@
 \newcommand{\e}{\ \wedge\ }
 \newcommand{\ou}{\ \vee\ }
 \newcommand{\vaz}{\emptyset}
+\newcommand{\nsub}{\nsubset}
 \renewcommand{\sin}{{\rm sen\,}}
 
+\newcommand{\n}{\mathbb{N}}
+\newcommand{\z}{\mathbb{Z}}
 \newcommand{\real}{\mathbb{R}}
 \newcommand{\vesp}{\vspace{0.2cm}}
-\newcommand{\z}{\mathbb{Z}}
-\newcommand{\n}{\mathbb{N}}
-\newcommand{\q}{\mathbb{Q}}
 \newcommand{\subne}{\subsetneqq}
 
 
@@ -63,12 +64,37 @@
 \vspace{-1cm}\hrule
 
 \begin{center}
-{\Large\bf {\'A}lgebra 1 - Turma B} \\ \vspace{9pt} {\large\bf
-  $2^{\underline{a}}$ Lista de Exerc{\'\i}cios -- 2$^{o}$/2015}\\ \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+{\Large\bf {\'A}lgebra 1 - Turma B -- 2$^{o}$/2015} \\ \vspace{9pt} {\large\bf
+  $2^{\underline{a}}$ Lista de Exerc{\'\i}cios -- Indução e Relações}\\
+\vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
 \end{center}
 \hrule
 
 \vspace{.6cm}
+
+\questao Prove por indu{\c c}{\~a}o que:
+\begin{enumerate}[label={\alph*})]
+\item $1^2 + 2^2 + \cdots + n^2 = \dfrac{n(n + 1)(2n + 1)}{6}$, $n \in \n$.
+
+%\item $(1 + p)^n \ge 1 + np$, $n \in \n$, $p > -1$.
+
+\item $1 + 3 + 5 + \cdots + (2n - 1) = n^2$, $n \ge 1$.
+
+\item $2.1 + 2.2 + 2.3 + \cdots + 2n = n^2 + n$, $n \ge 1$.
+
+\item Qualquer número inteiro positivo $n \ge 8$ pode ser escrito como a soma de $3'$s e $5'$s.
+
+\item $1 + q + q^2 + \cdots + q^n = \dfrac{1 - q^{n + 1}}{1 - q}$, $q \ne
+  1$.
+
+\item $3^{2n + 1} + 2^{n + 2}$ {\'e} múltiplo de $7$, para todo $n \in \n$.
+
+\item Para todo $n \ge 0$, $9^n - 1$ {\'e} múltiplo de 8.
+
+\item $1^3 + 2^3 + \cdots + n^3 = \left[\dfrac{n(n+1)}{2}\right]^2$, $n \ge 1$.
+\end{enumerate}
+
+\vesp
 
 
 \questao Quais das rela{\c c}{\~o}es abaixo s{\~a}o rela{\c c}{\~o}es de equival{\^e}ncia sobre $E = \{a,b,c\}$?
@@ -171,248 +197,4 @@ descreva o conjunto quociente $\z^*/R$.
 
 \questao Seja $R = \{ (x, y) \in \real^2 \mid x - y \in \q\}$. Provar que $R$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia e descrever as classes representadas por $1/2$ e $\sqrt{2}$.
 
-\vesp
-
-\questao Seja $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia
-sobre um conjunto n{\~a}o vazio $E$. Considere o conjunto quociente
-$E/R$ e  a aplica{\c c}{\~a}o quociente $q:E\to E/R$, ou seja, a aplica{\c c}{\~a}o
-que a cada $x\in E$ associa sua classe $\bar{x}$ m{\'o}dulo $R$. Seja
-$f:E\to F$ uma aplica{\c c}{\~a}o de $E$ em um conjunto $F$.
-
-\begin{enumerate}[label={\alph*})]
-\item Mostre que existe uma aplica{\c c}{\~a}o $g$ tal que $g\circ
-q=f$ se, e somente se, a seguinte condi{\c c}{\~a}o estiver verificada:
-para quaisquer $x,y\in E$, se $x\equiv y~(\mathrm{mod}~R)$ ent{\~a}o
-$f(x)=f(y).$
-\[
-\xymatrix{
-E  \ar[d]_-{f} \ar[r]^-{q}& E/R \ar@{-->}[dl]^-{g}  \\
-F  &  \\
-}
-\]
-\item Supondo que exista $g$ tal que $g\circ q=f$, mostre que
-$g$ {\'e} {\'u}nica.
-\item Nas condi{\c c}{\~o}es do item anterior, mostre que $g$ {\'e}
-sobrejetora se, e somente se, $f$ {\'e} sobrejetora.
-\end{enumerate}
-
-\vesp
-
-\questao Seja $f:E\to F$ e considere a seguinte
-rela{\c c}{\~a}o sobre $E$:
-\[
-xRy \Leftrightarrow f(x)=f(y).
-\]
-\begin{enumerate}[label={\alph*})]
-\item Mostre que $R$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia.
-\item Mostre que se $f$ {\'e} sobrejetora, ent{\~a}o existe uma {\'u}nica
-bije{\c c}{\~a}o $g: E/R \to F$ tal que $g\circ \pi = f$, onde $\pi: E\to
-E/R$ {\'e} a aplica{\c c}{\~a}o quociente.
-\end{enumerate}
-
-\vesp
-
-\questao Fa{\c c}a a tabela da soma e da multiplica{\c c}{\~a}o nos conjuntos: $\z_{3}$,
-$\z_{4}$, $\z_{5}$, $\z_{6}$, $\z_{7}$, $\z_{8}$ e $\z_{9}$.
-
-\vesp
-
-\questao Resolva a equa{\c c}{\~a}o $x \oplus \overline{2} = \overline{0}$ no
-conjunto $\z_{4}$. Tamb{\'e}m resolva as equa{\c c}{\~o}es $x \oplus \overline{2} =
-\overline{1}$, $x^2 \oplus \overline{2}x = \overline{2}$ e $x^3 \oplus
-\overline{2}x = \overline{3}$ no mesmo conjunto.
-
-\vesp
-
-\questao Para quais valores de $\overline{a}$ a equa{\c c}{\~a}o $\overline{2}\odot x = \overline{a}$ tem solu{\c c}{\~a}o no conjunto $\z_{5}$?
-
-\vesp
-
-\questao Resolva a equa{\c c}{\~a}o $x^2 \oplus \overline{2}x \oplus \overline{1} = \overline{0}$ nos conjuntos $\z_{8}$ e $\z_{9}$, caso ela tenha ra{\'\i}zes.
-
-\vesp
-
-\questao Mostre que para qualquer $n \in \z$, existe um elemento
-$\overline{a} \in \z_{m}$, tal que $a \equiv n \pmod m$. ({\it Sugest{\~a}o:
-  usar a divis{\~a}o de Euclides}.)
-
-\vesp
-
-\questao Para um n{\'u}mero inteiro positivo $m$ definimos a {\it fun{\c c}{\~a}o
-  proje{\c c}{\~a}o} $f_m: \z \rightarrow \z_{m}$ por
-\[
-f_m(u) = \overline{u}
-\]
-onde $\overline{u}$ {\'e} a classe m{\'o}dulo $m$ de $u$ no conjunto
-$\z_{m}$. Verifique se:
-\begin{enumerate}[label=({\arabic*})]
-\item $f_m$ {\'e} injetora?
-\item $f_m$ {\'e} sobrejetora?
-\item $f_m$ {\'e} bijetora?
-\end{enumerate}
-
-\vesp
-
-\questao Com os dados do exerc{\'\i}cio anterior, mostre que
-\[
-f_m(x + y) = f_m(x) \oplus f_m(y),\quad f_m(xy) = f_m(x)\odot f_m(y).
-\]
-
-\vesp
-
-\questao Por meio da rela{\c c}{\~a}o de congru{\^e}ncia m{\'o}dulo $m$, ache o resto da
-divis{\~a}o do n{\'u}mero $7^{298}$ por $4$.
-
-\vesp
-
-\questao Por meio da rela{\c c}{\~a}o de congru{\^e}ncia m{\'o}dulo $m$, mostre que um n{\'u}mero
-inteiro $n$ na base decimal {\'e} divis{\'\i}vel por $3$ se, e somente se, a soma de
-seus algarismos {\'e} divis{\'\i}vel por $3$. Da mesma forma, mostre que um n{\'u}mero
-positivo $n$ {\'e} divis{\'\i}vel por $5$ se, e somente se, o {\'u}ltimo algarismo de $n$
-{\'e} $0$ ou $5$.
-
-\vesp
-
-\questao Mostre que nem sempre a soma de dois elementos de $\mathcal{U}(\z_{m})$ pertence ao conjunto  $\mathcal{U}(\z_m)$.
-
-\vesp
-
-\questao Ache todos os elementos invers{\'\i}veis de $\z_{100}$.
-
-\vesp
-
-\questao {\'E} falso ou verdadeiro que o n{\'u}mero de elementos dos conjuntos $\mathcal{U}(\z_{5})$ e $\mathcal{U}(\z_{10})^*$ {\'e} igual?
-
-\vesp
-
-\questao Mostre que para um n{\'u}mero primo $p$, h{\'a} somente duas possibilidades: $p \equiv 1 \pmod 4$ ou $p \equiv 3 \pmod 4$. {(\it Sugest{\~a}o: usar divis{\~a}o de Euclides por 4.)}
-
-\vesp
-
-
-\questao Consideremos em $\z \times \z$ as opera{\c c}{\~o}es $+$ e $\cdot$,
-definidas por
-\begin{enumerate}[label=({\arabic*})]
-\item $(a, b) + (c, d) = (a + c, b + d)$,
-\item $(a, b) \cdot (c, d) = (ac - bd, ad + bc)$.
-\end{enumerate}
-Mostre que $(\z\times \z, +, \cdot)$ {\'e} um anel comutativo e com unidade.
-
-\vesp
-
-\questao Prove que s{\~a}o an{\'e}is:
-\begin{enumerate}[label=({\alph*})]
-\item O conjunto $\z$ dotado da adi{\c c}{\~a}o usual e a multiplica{\c
-    c}{\~a}o definida por $ab = 0$, para todos $a$, $b \in \z$.
-
-\item O conjunto $\q$ com a soma $x \oplus y = x + y - 1$ e a multiplica{\c
-    c}{\~a}o $x \odot y = x + y - xy$.
-
-\item O conjunto $\z \times \z$ com a soma e multiplica{\c c}{\~a}o dadas por:
-\[
-(a,b) + (c,d) = (a + c, b + d) \quad \mbox{e} \quad (a,b) \cdot (c,d) = (ac, ad + bc).
-\]
-\end{enumerate}
-
-\vesp
-
-\questao Quais dos an{\'e}is do exerc{\'\i}cio anterior s{\~a}o comutativos?
-Quais tem unidade? Determine a unidade no caso de existir.
-
-
-\vesp
-
-\questao Seja $M_2(\real)$ o conjunto das matrizes $2 \times 2$ com entradas
-em $\real$. Defina a adi{\c c}{\~a}o e a multiplica{\c c}{\~a}o em
-$M_2(\real)$ por
-\[
-\begin{pmatrix}
-a & b\\
-c & d
-\end{pmatrix}
-+
-\begin{pmatrix}
-e & f\\
-g & h
-\end{pmatrix}
-=
-\begin{pmatrix}
-a + e & b + f\\
-c + g & d + h
-\end{pmatrix}
-\]
-\[
-\begin{pmatrix}
-a & b\\
-c & d
-\end{pmatrix}
-\cdot
-\begin{pmatrix}
-e & f\\
-g & h
-\end{pmatrix}
-=
-\begin{pmatrix}
-ae + bg & af + bh\\
-ce + dg & cf + dh
-\end{pmatrix}
-\]
-Prove que $(M_2(\real), +, \cdot)$ {\'e} um anel. Esse anel {\'e} comutativo? Possui unidade?
-
-\vesp
-
-\questao Considere a soma $+$ e a multiplica{\c c}{\~a}o $\cdot$ em $\mathbb{C}$ e $i$ o número imaginário, isto é, $i^2 = -1$.
-\begin{enumerate}[label=({\alph*})]
-\item Seja $\z[i] = \{a + bi \mid a, b \in \z\}$. Mostre que $(\z[i], +,
-  \cdot)$ {\'e} um anel comutativo com unidade. Esse anel {\'e} chamado {\it anel do
-    inteiros de Gauss}.
-\item Sejam $\z[\sqrt{3}] = \{ a + b\sqrt{3} \mid a, b \in \z\}$ e
-  $\z[i\sqrt{3}] = \{ a + bi\sqrt{3} \mid a, b \in \z\}$. Mostre que
-  $(\z[\sqrt{3}], +, \cdot)$ e $(\z[i\sqrt{3}], +, \cdot)$ s{\~a}o an{\'e}is comutativos
-  com unidade.
-\item Mais geralmente, mostre que se $n$ {\'e} um inteiro positivo, ent{\~a}o
-  $(\z[\sqrt{n}], +, \cdot)$ e $(\z[i\sqrt{n}], +, \cdot)$ s{\~a}o an{\'e}is comutativos
-  com unidade, onde $\z[i\sqrt{n}] = \{ a + bi\sqrt{n} \mid a, b \in \z\}$ e
-  $\z[i\sqrt{n}] = \{ a + bi\sqrt{n} \mid a, b \in \z\}$ .
-\end{enumerate}
-
-\vesp
-
-\questao Mostre que num anel comutativo $(A, +, \cdot)$ vale a identidade
-$(a + b)^2 = a^2 + 2a\cdot b + b^2$. Como ser{\'a} escrita essa identidade nos
-an{\'e}is como $\z_{2}$ e, em geral, nos an{\'e}is como $\z_{m}$, onde $m$ {\'e} um
-n{\'u}mero par?
-
-\vesp
-
-\questao D{\^e} um exemplo de um anel com $4$ elementos todos satisfazendo a
-condi{\c c}{\~a}o $x^2 = x$.
-
-\vesp
-
-\questao Dados um anel $(A, +, \cdot)$ e $n \in \n$. Para $a \in A$,
-definimos
-\[
-a^1 = a \quad \mbox{e}\quad a^n = a^{n -1 }a
-\]
-para $n > 1$. Prove que
-\begin{enumerate}[label=({\arabic*})]
-\item Para todos $m$, $n \in \n$ e para todo $a \in A$, $a^ma^n = a^{m + n}$.
-\item Para todos $m$, $n \in \n$ e para todo $a \in A$, $(a^m)^n = a^{mn}$.
-\end{enumerate}
-
-\vesp
-
-\questao Seja $A$ um anel com a seguinte propriedade: $x^2 = x$, para todo
-$x \in A$. Mostre que $-a = a$, para todo $a \in A$.
-
-{\it Sugestao:
-  Considere o produto $(x + y)^2$.}
-
-\vesp
-
-\questao Prove que um anel com a propriedade do exerc{\'\i}cio anterior é
-necessariamente comutativo.
-
-{\it Sugestao: Tome $x$, $y \in A$ e calcule $(x + y)^2$.}
 \end{document}
