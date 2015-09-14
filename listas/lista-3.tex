@@ -1,0 +1,161 @@
+%!TEX program = xelatex
+%!TEX encoding = ISO-8859-1
+\documentclass[12pt]{article}
+
+\usepackage{amssymb,amsmath,amsfonts,amsthm,amstext}
+\usepackage[brazil]{babel}
+%\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\graphicspath{{/home/jfreitas/Dropbox/imagens-latex/}{/Users/jfreitas/Dropbox/imagens-latex/}{D:/Dropbox/imagens-latex/}}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage[all]{xy}
+
+\setlength{\topmargin}{-1.0in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textheight}{10.1in}
+\setlength{\textwidth}{6.5in}
+\setlength{\baselineskip}{12mm}
+
+\newcounter{exercicios}
+\setcounter{exercicios}{0}
+\newcommand{\questao}{
+\addtocounter{exercicios}{1}
+\noindent{\bf Exerc{\'\i}cio \arabic{exercicios}: }}
+
+\newcommand{\equi}{\Leftrightarrow}
+\newcommand{\bic}{\leftrightarrow}
+\newcommand{\cond}{\rightarrow}
+\newcommand{\impl}{\Rightarrow}
+\newcommand{\nao}{\sim}
+\newcommand{\sub}{\subseteq}
+\newcommand{\e}{\ \wedge\ }
+\newcommand{\ou}{\ \vee\ }
+\newcommand{\vaz}{\emptyset}
+\renewcommand{\sin}{{\rm sen\,}}
+
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\vesp}{\vspace{0.2cm}}
+\newcommand{\z}{\mathbb{Z}}
+\newcommand{\n}{\mathbb{N}}
+\newcommand{\q}{\mathbb{Q}}
+\newcommand{\subne}{\subsetneqq}
+
+
+\newcommand{\compcent}[1]{\vcenter{\hbox{$#1\circ$}}}
+\newcommand{\comp}{\mathbin{\mathchoice
+{\compcent\scriptstyle}{\compcent\scriptstyle}
+{\compcent\scriptscriptstyle}{\compcent\scriptscriptstyle}}}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{figure}[h]
+        \begin{minipage}[c]{1.7cm}
+        \includegraphics[width=1.7cm]{unb.pdf}
+        \end{minipage}%
+        \hspace{0pt}
+        \begin{minipage}[c]{4in}
+          {Universidade de Bras{\'\i}lia} \\
+          {Departamento de Matem{\'a}tica}
+\end{minipage}
+\end{figure}
+\vspace{-1cm}\hrule
+
+\begin{center}
+{\Large\bf {\'A}lgebra 1 - Turma B} \\ \vspace{9pt} {\large\bf
+  $2^{\underline{a}}$ Lista de Exerc{\'\i}cios -- 2$^{o}$/2015}\\ \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+\end{center}
+\hrule
+
+\vspace{.6cm}
+
+
+\questao Seja $f:E\to F$ uma aplica{\c c}{\~a}o e sejam $A$ e $B$ subconjuntos de $E$. Mostre que
+\begin{enumerate}[label={\alph*})]
+\item Se $A\subset B$, ent{\~a}o $f(A)\subset f(B)$.
+\item $f(A\cup B)=f(A)\cup f(B)$.
+\item $f(A\cap B)\subset f(A)\cap f(B)$.
+\item Se $f$ {\'e} injetora, ent{\~a}o $f(A\cap B) =  f(A)\cap f(B)$.
+\item $f$ {\'e} bijetora se, e somente se, $f(A^C) = (f(A))^C$ para todo $A \sub E$.
+\end{enumerate}
+
+\vesp
+
+\questao Seja $f:E\to F$ uma aplica{\c c}{\~a}o e sejam $A\subset
+E$ e $X, Y\subset F$. Mostre que
+\begin{enumerate}[label={\alph*})]
+\item Se $X\subset Y$, ent{\~a}o $f^{-1}(X)\subset f^{-1}(Y)$.
+\item $f^{-1}(X\cup Y)=f^{-1}(X)\cup f^{-1}(Y)$.
+\item $f^{-1}(X\cap Y)= f^{-1}(X)\cap f^{-1}(Y)$.
+\item $A\subset f^{-1}(f(A))$.
+\item $f(f^{-1}(X))= X \cap \mbox{Im}f$ e conclua que se $f$ {\'e} sobrejetora ent{\~a}o
+$f(f^{-1}(X))=X$.
+\end{enumerate}
+
+\vesp
+
+\questao Se as aplica{\c c}{\~o}es $f:E\to F$ e $g: F\to E$ s{\~a}o
+tais que $g\circ f$ {\'e} injetora, ent{\~a}o $f$ {\'e} injetora.
+
+\vesp
+
+\questao Se as aplica{\c c}{\~o}es $f:E\to F$ e $g: F\to E$ s{\~a}o
+tais que $g\circ f$ {\'e} sobrejetora, ent{\~a}o g {\'e} sobrejetora.
+
+\vesp
+
+\questao Mostrar que toda aplica{\c c}{\~a}o injetora (sobrejetora) de um conjunto finito em si mesmo {\'e} tamb{\'e}m sobrejetora (injetora).
+
+\vesp
+
+\questao Seja $f: \real^2 \to \real$ dada por $f(x,y) = xy$.
+\begin{enumerate}[label={\alph*})]
+\item $f$ {\'e} injetora?
+\item $f$ {\'e} sobrejetora?
+\item Obter $f^{-1}({0})$.
+\item Obter $f([0,1]\times [0,1])$.
+\end{enumerate}
+
+\vesp
+
+\questao Considere a aplica{\c c}{\~a}o $f : \z \times \z \to \z \times \z$ tal que $f(x,y) = (2x + 3, 4y + 5)$. Prove que $f$ {\'e} injetora. Verifique se $f$ {\'e} bijetora.
+
+\vesp
+
+\questao Mostra que a fun{\c c}{\~a}o $f : \real \to \real$ definida por $f(x) = ax + b$, com $a$ e $b$ constantes reais, $a \ne 0$, {\'e} uma bije{\c c}{\~a}o. Obter $f^{-1}$.
+
+\vesp
+
+\questao Mostrar que $f : \real - \left\{-\dfrac{d}{c}\right\} \to \real  - \left\{\dfrac{a}{c}\right\}$ dada por $f(x) =  \dfrac{ax + b}{cx + d}$, onde $a$, $b$, $c$, $d$ s{\~a}o n{\'u}meros reais constantes, $ad - bc \ne 0$, {\'e} uma bije{\c c}{\~a}o. Descrever a aplica{\c c}{\~a}o $f^{-1}$.
+
+\vesp
+
+\questao Achar uma fun{\c c}{\~a}o $f : A \to B$, com $A$ e $B$ subconjuntos de $\real$, para cada caso abaixo:
+\begin{enumerate}[label={\alph*})]
+\item $A = \real$, $B \subne \real$ e $f$ injetora e n{\~a}o sobrejetora.
+\item $A \subne \real$, $B = \real$ e $f$ injetora e n{\~a}o sobrejetora.
+\item $A = \real$, $B \subne \real$ e $f$ sobrejetora e n{\~a}o injetora.
+\item $A \subne \real$, $B = \real$ e $f$ sobrejetora e n{\~a}o injetora.
+\end{enumerate}
+
+\vesp
+
+\questao Classificar (se poss{\'\i}vel) em injetora ou sobrejetora as seguintes fun{\c c}{\~o}es de $\real$ em $\real$.
+
+\begin{enumerate}[label={\alph*})]
+\begin{multicols}{2}
+\item $y = x^3$
+\item $y = x^2 - 5x - 6$
+\item $y = 2^x$
+\item $y = | \sin x |$
+\item $y = x + | x |$
+\item $y = x + 3$
+\end{multicols}
+\end{enumerate}
+
+\vesp
+
+\questao Seja a fun{\c c}{\~a}o $f : \real \to \real$ dada por $f(x) = | x |$. Determinar $f([-1,1])$, $f(]-1,2])$, $f(\real)$, $f^{-1}([0,3])$, $f^{-1}([-1,3])$ e $f^{-1}(\real_-^*)$.
+
+\end{document}
