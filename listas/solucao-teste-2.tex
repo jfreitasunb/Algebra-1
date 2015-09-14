@@ -1,0 +1,95 @@
+%!TEX program = xelatex
+%!TEX encoding = ISO-8859-1
+\documentclass[12pt]{article}
+
+\usepackage{amssymb}
+\usepackage{amsmath,amsfonts,amsthm,amstext,mathabx}
+\usepackage[brazil]{babel}
+%\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\graphicspath{{/home/jfreitas/Dropbox/imagens-latex/}{/Users/jfreitas/Dropbox/imagens-latex/}{D:/Dropbox/imagens-latex/}}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage[all]{xy}
+
+\setlength{\topmargin}{-1.0in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textheight}{10.1in}
+\setlength{\textwidth}{6.5in}
+\setlength{\baselineskip}{12mm}
+
+\newcounter{exercicios}
+\setcounter{exercicios}{0}
+\newcommand{\questao}{
+\addtocounter{exercicios}{1}
+\noindent{\bf Exerc{\'\i}cio \arabic{exercicios}: }}
+
+\newcommand{\equi}{\Leftrightarrow}
+\newcommand{\bic}{\leftrightarrow}
+\newcommand{\cond}{\rightarrow}
+\newcommand{\impl}{\Rightarrow}
+\newcommand{\nao}{\sim}
+\newcommand{\sub}{\subseteq}
+\newcommand{\e}{\ \wedge\ }
+\newcommand{\ou}{\ \vee\ }
+\newcommand{\vaz}{\emptyset}
+\newcommand{\nsub}{\nsubset}
+\renewcommand{\sin}{{\rm sen\,}}
+
+\newcommand{\n}{\mathbb{N}}
+\newcommand{\z}{\mathbb{Z}}
+\newcommand{\q}{\mathbb{Q}}
+\newcommand{\cmp}{\mathbb{C}}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\vesp}{\vspace{0.2cm}}
+\newcommand{\subne}{\subsetneqq}
+
+
+\newcommand{\compcent}[1]{\vcenter{\hbox{$#1\circ$}}}
+\newcommand{\comp}{\mathbin{\mathchoice
+{\compcent\scriptstyle}{\compcent\scriptstyle}
+{\compcent\scriptscriptstyle}{\compcent\scriptscriptstyle}}}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{figure}[h]
+        \begin{minipage}[c]{1.7cm}
+        \includegraphics[width=1.7cm]{unb.pdf}
+        \end{minipage}%
+        \hspace{0pt}
+        \begin{minipage}[c]{4in}
+          {Universidade de Bras{\'\i}lia} \\
+          {Departamento de Matem{\'a}tica}
+\end{minipage}
+\end{figure}
+\vspace{-1cm}\hrule
+
+\begin{center}
+{\Large\bf {\'A}lgebra 1 - Turma B -- 2$^{o}$/2015} \\ \vspace{9pt} {\large\bf
+  $2^{\underline{o}}$ Teste - Resolução}\\
+\vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+\end{center}
+\hrule
+
+\vspace{.6cm}
+
+\questao Mostre que $9^n - 1$ {\'e} m\'ultiplo de 8 para todo $n \ge 0$.
+
+\noindent\textbf{Solucao:}
+
+\vesp
+
+\questao Seja $A=\z\times \z^*$, onde
+$\mathbb{Z}^*=\mathbb{Z}\setminus \{0\}$. Para $(a,b), (c,d) \in
+A$, considere a seguinte rela{\c c}{\~a}o
+\[
+(a,b)R (c,d) \Leftrightarrow ad=bc.
+\]
+\begin{enumerate}[label={\alph*})]
+\item Mostre que $R$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia sobre $A$.
+\item Descreva a classe de equival{\^e}ncia $\overline{(0,1)}$, $\overline{(1,1)}$, $\overline{(1,2)}$, $\overline{(2,1)}$, $\overline{(2,2)}$, $\overline{(2,3)}$.
+\end{enumerate}
+
+
+\end{document}
