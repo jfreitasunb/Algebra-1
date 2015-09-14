@@ -67,7 +67,7 @@
 
 \begin{center}
 {\Large\bf {\'A}lgebra 1 - Turma B -- 2$^{o}$/2015} \\ \vspace{9pt} {\large\bf
-  $2^{\underline{o}}$ Teste - Resolução}\\
+  $2^{\underline{o}}$ Teste - Resolu\c{c}\~ao}\\
 \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
 \end{center}
 \hrule
@@ -76,27 +76,27 @@
 
 \questao Mostre que $9^n - 1$ {\'e} m\'ultiplo de 8 para todo $n \ge 0$.
 
-\noindent\textbf{Solucao:} Primeiro devemos verificar que a base da indução é válida. Para isso tomamos $n = 0$:
+\noindent\textbf{Solu\c{c}\~ao:} Primeiro devemos verificar que a base da indu\c{c}\~ao \'e v\'alida. Para isso tomamos $n = 0$:
 \[
 	9^0 - 1 = 0 = 8\cdot 0.
 \]
-Assim a base da indução é verdadeira.
+Assim a base da indu\c{c}\~ao \'e verdadeira.
 
 Agora suponha que para um certo $k \ge 0$ tenhamos:
 \[
 	(H.I)\ 9^k - 1 = 8l
 \]
-para algum $l \in \z$. Vamos provar que para $k + 1$ também obtemos um múltiplo de 8. Temos
+para algum $l \in \z$. Vamos provar que para $k + 1$ tamb\'em obtemos um m\'ultiplo de 8. Temos
 \begin{align*}
 	9^{k + 1} - 1 &= 9^k\cdot 9 - 1 \\& = 9^k\cdot 9 - (9 - 8) \\ &= 9(9^k - 1) - 8
 \end{align*}
-Agora pela hipótese de indução, $9^k - 1 = 8l$ assim a última equação pode ser escrita como:
+Agora pela hip\'otese de indu\c{c}\~ao, $9^k - 1 = 8l$ assim a \'ultima equa\c{c}\~ao pode ser escrita como:
 \begin{align*}
 	9^{k + 1} - 1 &= 9\cdot 8l - 8 \\ &= 8(9l - 1),
 \end{align*}
-ou seja, um múltiplo de 8. Portanto pelo Princípio da Indução Finita, a afirmação é verdadeira.
+ou seja, um m\'ultiplo de 8. Portanto pelo Princ{\'\i}pio da Indu\c{c}\~ao Finita, a afirma\c{c}\~ao \'e verdadeira.
 
-\vesp
+\vspace{.5cm}
 
 \questao Seja $A=\z\times \z^*$, onde
 $\mathbb{Z}^*=\mathbb{Z}\setminus \{0\}$. Para $(a,b), (c,d) \in
@@ -106,8 +106,36 @@ A$, considere a seguinte rela{\c c}{\~a}o
 \]
 \begin{enumerate}[label={\alph*})]
 \item Mostre que $R$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia sobre $A$.
-\item Descreva a classe de equival{\^e}ncia $\overline{(0,1)}$, $\overline{(1,1)}$, $\overline{(1,2)}$, $\overline{(2,1)}$, $\overline{(2,2)}$, $\overline{(2,3)}$.
+\noindent\textbf{Solu\c{c}\~ao:} Para $(x,y)$, $(z,t)$ e $(r,s) \in A$ temos
+\begin{enumerate}
+	\item $(x,y)R(x,y)$ pois $xy = xy$ para todo $(x,y) \in A$. Assim $R$ \'e reflexiva.
+	\item Se $(x,y)R(z,t)$, ent\~ao $xt = yz$, ou seja, $yz = xt$. Logo $(z,t)R(x,y)$ e com isso $R$ \'e sim\'etrica.
+	\item Se $(x,y)R(z,t)$ e $(z,t)R(r,s)$ ent\~ao
+	\begin{align}
+		xt = yz\\
+		zs = tr.
+	\end{align}
+	Multiplicando a segunda equa\c{c}\~ao por $y$ e organizando os fatores obtemos:
+	\begin{align*}
+		(yz)s = t(yr)\\
+		(xt)s = t(yr)\\
+		t(xs) = t(yr)\\
+		t(xs - yr) = 0.
+	\end{align*}
+	Como $t \in \z^*$, devemos ter $xs - yr = 0$, ou seja, $xs = yr$. Logo $(x,y)R(r,s)$, e com isso $R$ \'e transitiva.
+	Portanto, $R$ \'e uma rela\c{c}\~ao de equival\^encia.
 \end{enumerate}
 
+\item Descreva a classe de equival{\^e}ncia $\overline{(0,1)}$, $\overline{(1,1)}$, $\overline{(1,2)}$, $\overline{(2,1)}$, $\overline{(2,2)}$, $\overline{(2,3)}$.
+\noindent\textbf{Solu\c{c}\~ao:}
+\begin{align*}
+	\overline{(0,1)} &= \{ (x, y) \in A \mid (x,y)R(0,1)\} = \{ (x,y) \in R \mid x\cdot 0 = y\cdot 1\} \\ &= \{ (x,y) \in R \mid y = 0 \} = \{(0, y) \mid y \in \z^*\} \\ &= \{ (0,1), (0,-1), (0,\pm 2) , (0, \pm 3), \cdots\}\\
+	\overline{(1,1)} &= \{ (x, y) \in A \mid (x,y)R(1,1)\} = \{ (x,y) \in R \mid x\cdot 1 = y\cdot 1\} \\ &= \{ (x,y) \in R \mid x = y \} = \{(y, y) \mid y \in \z^*\}\\
+	\overline{(1,2)} &= \{ (x, y) \in A \mid (x,y)R(1,2)\} = \{ (x,y) \in R \mid x\cdot 2 = y\cdot 1\} \\ &= \{ (x,y) \in R \mid 2x = y \} = \{(x, 2x) \mid x \in \z^*\}\\
+	\overline{(2,1)} &= \{ (x, y) \in A \mid (x,y)R(2,1)\} = \{ (x,y) \in R \mid x\cdot 1 = y\cdot 2\} \\ &= \{ (x,y) \in R \mid x = 2y \} = \{(2y, y) \mid y \in \z^*\}\\
+	\overline{(2,2)} &= \{ (x, y) \in A \mid (x,y)R(2,2)\} = \{ (x,y) \in R \mid x\cdot 2 = y\cdot 2\} \\ &= \{ (x,y) \in R \mid 2x = 2y \} = \{(y, y) \mid y \in \z^*\} = \overline{(1,1)}\\
+	\overline{(2,3)} &= \{ (x, y) \in A \mid (x,y)R(2,3)\} = \{ (x,y) \in R \mid x\cdot 3 = y\cdot 2\} \\ &= \{ \cdots,(-4,-3),(-2,-3), (2,3), (4,3), \cdots\}
+\end{align*}
+\end{enumerate}
 
 \end{document}
