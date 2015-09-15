@@ -80,15 +80,15 @@
 
 \questao Mostre que $C_E(A) \subseteq C_E(B)$ se, e somente se, $A \cup B = A$.
 
-\noindent\textbf{Solu\c{c}\~ao:} Temos duas afirmações para serem demonstradas:
+\noindent\textbf{Solu\c{c}\~ao:} Temos duas afirma\c{c}\~oes para serem demonstradas:
 \begin{enumerate}
-	\item[$1^a$] Se $C_E(A) \subseteq C_E(B)$ então, $A \cup B = A$.
+	\item[$1^a$)] Se $C_E(A) \subseteq C_E(B)$ ent\~ao, $A \cup B = A$.
 
-	Como queremos mostrar que $A \cup B = A$ devemos mostrar que $A \cup B \subseteq A$ e que $A \subseteq A \cup B$. A inclusão $A \subseteq A \cup B$ é consequência da definição de união de conjuntos. Assim seja $x \in A \cup B$. Daí $x \in A$ ou $x \in B$. Se $x \in A$ não temos nada há fazer. Suponha então que $x \in B$. Assim $x \notin C_E(B)$ e como $C_E(A) \subseteq C_E(B)$, então $x \notin C_E(A)$, isto é, $x \in A$. Logo $A \cup B \subseteq A$. Portanto $A \cup B = A$.
+	Como queremos mostrar que $A \cup B = A$ devemos mostrar que $A \cup B \subseteq A$ e que $A \subseteq A \cup B$. A inclus\~ao $A \subseteq A \cup B$ \'e consequ\^encia da defini\c{c}\~ao de uni\~ao de conjuntos. Assim seja $x \in A \cup B$. Da{\'\i} $x \in A$ ou $x \in B$. Se $x \in A$ n\~ao temos nada h\'a fazer. Suponha ent\~ao que $x \in B$. Assim $x \notin C_E(B)$ e como $C_E(A) \subseteq C_E(B)$, ent\~ao $x \notin C_E(A)$, isto \'e, $x \in A$. Logo $A \cup B \subseteq A$. Portanto $A \cup B = A$.
 
-	\item[$2^a$] Se $A \cup B = A$, então $C_E(A) \subseteq C_E(B)$.
+	\item[$2^a$)] Se $A \cup B = A$, ent\~ao $C_E(A) \subseteq C_E(B)$.
 
-	Seja $x \in C_E(A)$. Então por definição $x \notin A$. Mas $A = A \cup B$ e assim $x \notin B$. Logo $x \in C_E(B)$. Portanto $C_E(A) \subseteq C_E(B)$.
+	Seja $x \in C_E(A)$. Ent\~ao por defini\c{c}\~ao $x \notin A$. Mas $A = A \cup B$ e assim $x \notin B$. Logo $x \in C_E(B)$. Portanto $C_E(A) \subseteq C_E(B)$.
 \end{enumerate}
 
 \vspace{.5cm}
@@ -97,14 +97,14 @@
 
 \noindent\textbf{Solu\c{c}\~ao:} Para mostrar a igualdade desses conjuntos precisamos mostrar que:
 \begin{enumerate}
-	\item [$1^o$] $A \cup ( B - C) \subseteq (A \cup B) - (C - A)$
+	\item [$1^o$)] $A \cup ( B - C) \subseteq (A \cup B) - (C - A)$
 
-	Seja $x \in A \cup (B - C)$. Então $x \in A$ ou $x \in (B - C)$. Se $x \in A$, então $x \in A \cup B$ e $x \notin (C - A)$. Assim $x \in (A \cup B) - (C - A)$. Com isso $A \cup ( B - C) \subseteq (A \cup B) - (C - A)$. Agora suponha que $x \in (B - C)$. Então $x \in B$ e $x \notin C$. Neste caso $x \in A \cup B$ e $x \notin (C - A)$ pois $x \notin C$. Logo $x \in (A \cup B) - (C - A)$ e novamente $A \cup ( B - C) \subseteq (A \cup B) - (C - A)$. Portanto $A \cup ( B - C) \subseteq (A \cup B) - (C - A)$.
+	Seja $x \in A \cup (B - C)$. Ent\~ao $x \in A$ ou $x \in (B - C)$. Se $x \in A$, ent\~ao $x \in A \cup B$ e $x \notin (C - A)$. Assim $x \in (A \cup B) - (C - A)$. Com isso $A \cup ( B - C) \subseteq (A \cup B) - (C - A)$. Agora suponha que $x \in (B - C)$. Ent\~ao $x \in B$ e $x \notin C$. Neste caso $x \in A \cup B$ e $x \notin (C - A)$ pois $x \notin C$. Logo $x \in (A \cup B) - (C - A)$ e novamente $A \cup ( B - C) \subseteq (A \cup B) - (C - A)$. Portanto $A \cup ( B - C) \subseteq (A \cup B) - (C - A)$.
 
-	\item [$2^o$] $(A \cup B) - (C - A) \subseteq A \cup ( B - C)$
+	\item [$2^o$)] $(A \cup B) - (C - A) \subseteq A \cup ( B - C)$
 
-	Seja $x \in (A \cup B) - (C - A)$. Assim $x \in A \cup B$ e $x \notin (C - A)$. Se $x \in A$, então $x \in A \cup (B - C)$ e acabamos. Suponha que $x \in B$. Como $x \notin (C - A)$, então $x \notin C$ ou $x \in A$. Se $x \notin C$, então como $x \in B$ obtemos que $x \in B - C$ e com isso $x \in A \cup (B - C)$. Se $x \in A$, então $x \in A \cup (B - C)$. Logo sempre teremos $x \in A \cup (B - C)$ e assim $(A \cup B) - (C - A) \subseteq A \cup ( B - C)$. Portanto $(A \cup B) - (C - A) \subseteq A \cup ( B - C)$.
+	Seja $x \in (A \cup B) - (C - A)$. Assim $x \in A \cup B$ e $x \notin (C - A)$. Se $x \in A$, ent\~ao $x \in A \cup (B - C)$ e acabamos. Suponha que $x \in B$. Como $x \notin (C - A)$, ent\~ao $x \notin C$ ou $x \in A$. Se $x \notin C$, ent\~ao como $x \in B$ obtemos que $x \in B - C$ e com isso $x \in A \cup (B - C)$. Se $x \in A$, ent\~ao $x \in A \cup (B - C)$. Logo sempre teremos $x \in A \cup (B - C)$ e assim $(A \cup B) - (C - A) \subseteq A \cup ( B - C)$. Portanto $(A \cup B) - (C - A) \subseteq A \cup ( B - C)$.
 \end{enumerate}
-Com isso provamos que $(A \cup B) - (C - A) \subseteq A \cup ( B - C)$, como queríamos.
+Com isso provamos que $(A \cup B) - (C - A) = A \cup ( B - C)$, como quer{\'\i}amos.
 
 \end{document}
