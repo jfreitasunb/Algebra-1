@@ -56,8 +56,6 @@ A = \{n \mid n \mbox{ \'e m{\'u}ltiplo de } 2\} = \{2,4,6,...\}.
 
 \section{Propriedades dos conjuntos}
 
-\subsubsection{Igualdade entre conjuntos}
-
 \begin{definicao}
 	Dados dois conjuntos $A$ e $B$, dizemos que $A$ e $B$ s{\~a}o iguais se, e somente se, eles t{\^e}m os mesmos elementos. Ou seja, para todo $x \in A$ temos que $x \in B$ e para todo $y \in B$ temos $y \in A$.
 \end{definicao}
@@ -66,29 +64,23 @@ Se $A$ e $B$ s{\~a}o iguais, escrevemos $A = B$
 \[ \{1,2,3,4\} = \{3,2,1,4\} \]
 \[ \{1,2,3\} \neq \{2,3\} \]
 
-\subsubsection{Contin{\^e}ncia de conjuntos}
+\begin{definicao}
+	Se $A$ e $B$ s{\~a}o dois conjuntos, dizemos que $A$ {\'e} um \textbf{subconjunto} de $B$ ou que $A$ \textbf{está contido} em $B$ ou que $B$ \textbf{contém} $A$ se todo elemento de $A$ for elemento de $B$. Ou seja, se para todo elemento $x \in A$, temos $x \in B$. Nesse caso, escrevemos $A \subseteq B$ ou $B \supseteq A$.
+\end{definicao}
 
-Se $A$ e $B$ s{\~a}o dois conjuntos, dizemos que A {\'e} um subconjunto de $B$ se todo elemento de $A$ for elemento de $B$, ou seja, se para todo elemento $a$, a seguinte implica{\c c}{\~a}o for verdadeira.
-\[ a \in A \Rightarrow a \in B\]
 
-Nesse caso, denota-se $A \subseteq B$ ou $B \supseteq A$.
-
-Para o caso onde $A$ {\'e} um subconjunto de $B$ mas n{\~a}o {\'e} igual a $B$, escrevemos:
-\begin{center}
-$A \subsetneq B$(Em alguns livros, usa-se a nota{\c c}{\~a}o $A \subset B$ para contin{\^e}ncia pr{\'o}pria)
-\end{center}
+Caso $A$ seja um subconjunto de $B$ mas n{\~a}o {\'e} igual a $B$, escrevemos:
+\[
+A \subsetneq B.
+\]
 
 Nesse caso, dizemos que $A$ {\'e} um subconjunto pr{\'o}prio de $B$.
 
 Para dizer que $A$ n{\~a}o est{\'a} contido em $B$, escrevemos $A \nsubseteq B$
 
-Assim, a igualdade entre dois conjuntos pode ser descrita como
-\[ A = B \Leftrightarrow A \subseteq B \mbox{ e } B \subseteq A\]
+Usando a definição de continência podemos definir igualdade de conjuntos da seguinte forma: dois conjuntos $A$ e $B$ são iguais se, e somente se, $A \subseteq B$ e $B \subseteq A$. Ou seja, se $A = B$ ent{\~a}o $A \subseteq B$ e $B \subseteq A$, por outro lado, se $A \subseteq B$ e $B \subseteq A$, ent{\~a}o $A = B$.
 
-Ou seja, se $A = B$ ent{\~a}o $A \subseteq B$ e $B \subseteq A$, por outro lado, se $A \subseteq B$ e $B \subseteq A$, ent{\~a}o $A = B$
-
-Quando $A$ e $B$ n{\~a}o s{\~a}o iguais, escrevemos $A \neq B$. Assim, temos
-\[ A \neq B \Leftrightarrow A \nsubseteq B \mbox{ ou } B \nsubseteq A\]
+Quando $A$ e $B$ n{\~a}o s{\~a}o iguais, escrevemos $A \neq B$. Para que $A \neq B$ devemos ter $A \nsubseteq B$ ou $B \nsubseteq A$.
 
 \subsection{Propriedades da contin{\^e}ncia}
 Para quaisquer 3 conjuntos $A,B$ e $C$ temos
