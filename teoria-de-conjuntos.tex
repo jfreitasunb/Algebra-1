@@ -21,12 +21,12 @@ x \notin A.
 
 Um conjunto sem elementos {\'e} chamado de \textbf{vazio} ou \textbf{conjunto vazio}. Tal conjunto {\'e} denotado por $\emptyset$.
 
-Dado um conjunto $A$ e $x$ um elemento, ocorre sempre o uma das seguintes situações:
+Dado um conjunto $A$ e $x$ um elemento, ocorre sempre o uma das seguintes situa\c{c}\~oes:
 \[
 x \in A \mbox{ ou } x \notin A.
 \]
 
-Al{\'e}m disso, para dois elementos $x$, $y \in A$, ocorre exatamente uma das seguinte situações:
+Al{\'e}m disso, para dois elementos $x$, $y \in A$, ocorre exatamente uma das seguinte situa\c{c}\~oes:
 \[
 x = y \mbox{ ou } x \neq y.
 \]
@@ -65,7 +65,7 @@ Se $A$ e $B$ s{\~a}o iguais, escrevemos $A = B$
 \[ \{1,2,3\} \neq \{2,3\} \]
 
 \begin{definicao}
-	Se $A$ e $B$ s{\~a}o dois conjuntos, dizemos que $A$ {\'e} um \textbf{subconjunto} de $B$ ou que $A$ \textbf{está contido} em $B$ ou que $B$ \textbf{contém} $A$ se todo elemento de $A$ for elemento de $B$. Ou seja, se para todo elemento $x \in A$, temos $x \in B$. Nesse caso, escrevemos $A \subseteq B$ ou $B \supseteq A$.
+	Se $A$ e $B$ s{\~a}o dois conjuntos, dizemos que $A$ {\'e} um \textbf{subconjunto} de $B$ ou que $A$ \textbf{est\'a contido} em $B$ ou que $B$ \textbf{cont\'em} $A$ se todo elemento de $A$ for elemento de $B$. Ou seja, se para todo elemento $x \in A$, temos $x \in B$. Nesse caso, escrevemos $A \subseteq B$ ou $B \supseteq A$.
 \end{definicao}
 
 
@@ -78,7 +78,7 @@ Nesse caso, dizemos que $A$ {\'e} um subconjunto pr{\'o}prio de $B$.
 
 Para dizer que $A$ n{\~a}o est{\'a} contido em $B$, escrevemos $A \nsubseteq B$
 
-Usando a definição de continência podemos definir igualdade de conjuntos da seguinte forma: dois conjuntos $A$ e $B$ são iguais se, e somente se, $A \subseteq B$ e $B \subseteq A$. Ou seja, se $A = B$ ent{\~a}o $A \subseteq B$ e $B \subseteq A$, por outro lado, se $A \subseteq B$ e $B \subseteq A$, ent{\~a}o $A = B$.
+Usando a defini\c{c}\~ao de contin\^encia podemos definir igualdade de conjuntos da seguinte forma: dois conjuntos $A$ e $B$ s\~ao iguais se, e somente se, $A \subseteq B$ e $B \subseteq A$. Ou seja, se $A = B$ ent{\~a}o $A \subseteq B$ e $B \subseteq A$, por outro lado, se $A \subseteq B$ e $B \subseteq A$, ent{\~a}o $A = B$.
 
 Quando $A$ e $B$ n{\~a}o s{\~a}o iguais, escrevemos $A \neq B$. Para que $A \neq B$ devemos ter $A \nsubseteq B$ ou $B \nsubseteq A$.
 
@@ -103,7 +103,7 @@ Neste caso, $2 \in A$ e $2 \notin B$, logo $A \nsubseteq B$. Por outro lado, $3 
 	Seja $A$ um conjunto. Ent{\~a}o $ \emptyset \subseteq A$.
 \end{proposicao}
 \begin{prova}
-	Suponha que $\emptyset \nsubseteq A$. Logo existe $x \in \emptyset$ tal que $x \notin A$. Mas por defini{\c c}{\~a}o, o conjunto vazio n{\~a}o cont{\'e}m elementos. Logo a existência de $x \in \emptyset$ {\'e} uma contradi{\c c}{\~a}o. Tal contradição surgiu por termos suposto que $\emptyset \nsubseteq A$. Portanto, $\emptyset \subseteq A$, como quer{\'\i}amos demonstrar.
+	Suponha que $\emptyset \nsubseteq A$. Logo existe $x \in \emptyset$ tal que $x \notin A$. Mas por defini{\c c}{\~a}o, o conjunto vazio n{\~a}o cont{\'e}m elementos. Logo a exist\^encia de $x \in \emptyset$ {\'e} uma contradi{\c c}{\~a}o. Tal contradi\c{c}\~ao surgiu por termos suposto que $\emptyset \nsubseteq A$. Portanto, $\emptyset \subseteq A$, como quer{\'\i}amos demonstrar.
 \end{prova}
 
 \section{Rela{\c c}{\~o}es entre conjuntos}
@@ -129,7 +129,7 @@ Exemplo: Sejam
 \end{align*}
 \end{proposicao}
 \begin{prova}
-	Seja $x \in A \cap B$ um elemento qualquer. Da definição de interseção de conjuntos temos $x \in A$ e $x \in B$. De $x \in A$ segue que $A \cap B \subseteq A$ e de $x \in B$ segue que $A \cap B \subseteq B$, como quer{\'\i}amos demonstrar.
+	Seja $x \in A \cap B$ um elemento qualquer. Da defini\c{c}\~ao de interse\c{c}\~ao de conjuntos temos $x \in A$ e $x \in B$. De $x \in A$ segue que $A \cap B \subseteq A$ e de $x \in B$ segue que $A \cap B \subseteq B$, como quer{\'\i}amos demonstrar.
 \end{prova}
 
 \begin{definicao}[Uni{\~a}o]
@@ -181,14 +181,14 @@ A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)\\
 (A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C).
 \end{align*}
 
-Seja $x\in A\cap(B\cup C)$. Logo $x\in A$ e $x\in B\cup C$. Agora, de $x\in B\cup C$, segue que $x\in B$ ou $x\in C$. Suponha que $x\in B$. Como $x\in A$, então $x\in A\cap B$. Assim, $x\in(A\cap B)\cup(A\cap C)$, ou seja, $A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$. Por outro lado, se $x\in C$, como $x\in A$, ent{\~a}o $x\in A\cap C$ e da{\'\i} $x\in(A\cap B)\cup(A\cap C)$, logo $A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$.
+Seja $x\in A\cap(B\cup C)$. Logo $x\in A$ e $x\in B\cup C$. Agora, de $x\in B\cup C$, segue que $x\in B$ ou $x\in C$. Suponha que $x\in B$. Como $x\in A$, ent\~ao $x\in A\cap B$. Assim, $x\in(A\cap B)\cup(A\cap C)$, ou seja, $A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$. Por outro lado, se $x\in C$, como $x\in A$, ent{\~a}o $x\in A\cap C$ e da{\'\i} $x\in(A\cap B)\cup(A\cap C)$, logo $A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$.
 
 Portanto,
 \[
 	A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C).
 \]
 
-Agora, seja $x\in(A\cap B)\cup(A\cap C)$. Daí, $x\in A\cap B$ ou $x\in A\cap C$. Suponha que $x\in A\cap B$. Assim, $x\in A$ e $x\in B$. Como $x\in B$, segue que $x\in B\cup C$ e ent{\~a}o $x\in A\cap(B\cup C)$, ou seja, $(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C)$. Agora, suponnha que $x\in A\cap C$. Com isso $x\in A$ e $x\in C$. Desse modo, $x\in B\cup C$ e ent{\~a}o $x\in A\cap(B\cup C)$ e daí
+Agora, seja $x\in(A\cap B)\cup(A\cap C)$. Da{\'\i}, $x\in A\cap B$ ou $x\in A\cap C$. Suponha que $x\in A\cap B$. Assim, $x\in A$ e $x\in B$. Como $x\in B$, segue que $x\in B\cup C$ e ent{\~a}o $x\in A\cap(B\cup C)$, ou seja, $(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C)$. Agora, suponnha que $x\in A\cap C$. Com isso $x\in A$ e $x\in C$. Desse modo, $x\in B\cup C$ e ent{\~a}o $x\in A\cap(B\cup C)$ e da{\'\i}
 \[
 	(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C).
 \]
@@ -198,7 +198,7 @@ Portanto
 	A\cap(B\cup C)=(A\cap B)\cup(A\cap C),
 \]
 como quer{\'\i}amos.
-\item Análoga ao caso anterior.
+\item An\'aloga ao caso anterior.
 \end{enumerate}
 \end{prova}
 
@@ -239,7 +239,7 @@ Exemplo:
 	Sejam $A$, $B$ e $E$ conjuntos. Se $A\subseteq B\subseteq E$, ent{\~a}o $C_E(B)\subseteq C_E(A)$.
 \end{proposicao}
 \begin{prova}
-	Seja $x \in B^C$. Assim $x\notin B$ e como $A \subseteq B$, então $x \notin A$. Daí por definição $x\in A^C$, ou seja, $B^C\subseteq A^C$.
+	Seja $x \in B^C$. Assim $x\notin B$ e como $A \subseteq B$, ent\~ao $x \notin A$. Da{\'\i} por defini\c{c}\~ao $x\in A^C$, ou seja, $B^C\subseteq A^C$.
 \end{prova}
 
 \begin{proposicao} Sejam $A$, $B$ e $E$ tr{\^e}s conjunto tais que $A\subseteq E$ e $B\subseteq E$. Ent{\~a}o:
@@ -265,7 +265,7 @@ Exemplo:
 			(A\cup B)^C = A^C\cap B^C.
 		\]
 
-		\item Seja $x \in (A\cap B)^C$. Logo $x\notin A\cap B$, assim $x\notin A$ ou $x\notin B$. Então $x\in A^C$ ou $x\in B^C$, isto {\'e}, $x\in A^C\cup B^C$. Desse modo,
+		\item Seja $x \in (A\cap B)^C$. Logo $x\notin A\cap B$, assim $x\notin A$ ou $x\notin B$. Ent\~ao $x\in A^C$ ou $x\in B^C$, isto {\'e}, $x\in A^C\cup B^C$. Desse modo,
 		\begin{equation}\label{complementar_intersecao-1}
 			(A\cap B)^C \subseteq A^C\cup B^C.
 		\end{equation}
@@ -283,7 +283,7 @@ Exemplo:
 \end{prova}
 
 \begin{definicao}[Produto Cartesiano]
-	Dados dois conjuntos $A$ e $B$, definimos o \textbf{produto cartesiano} de $A$ por $B$ por
+	Dados dois conjuntos $A$ e $B$, definimos o \textbf{produto cartesiano} de $A$ por $B$ como sendo o conjunto
 	\[
 		A \times B = \{(x,y) \mid x\in A, y\in B\}.
 	\]
@@ -306,7 +306,7 @@ Exemplo:
 	\[
 		\mathcal{P}(A) = \{ X \mid X\subseteq A\}
 	\]
-	que é chamado de \textbf{conjunto das partes} de $A$.
+	que \'e chamado de \textbf{conjunto das partes} de $A$.
 \end{definicao}
 
 Os elementos desse conjunto s{\~a}o todos os subconjuntos de $A$. Dizer que $Y\in \mathcal{P}(A)$ significa que $Y \subseteq A$. Particularmente, temos $\emptyset\in \mathcal{P}(A)$ e $A\in \mathcal{P}(A)$.
