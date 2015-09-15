@@ -108,46 +108,64 @@ Neste caso, $2 \in A$ e $2 \notin B$, logo $A \nsubseteq B$. Por outro lado, $3 
 
 \section{Rela{\c c}{\~o}es entre conjuntos}
 
-\subsubsection{Intersec{\c c}{\~a}o}
-
-\begin{definicao}[Intersec{\c c}{\~a}o] Sejam $A$ e $B$ dois conjuntos. Definimos a intersec{\c c}{\~a}o de $A$ e $B$ como sendo o conjunto $A \cap B$ cujos elementos pertencem ao conjunto $A$ e $B$ simultaneamente. Assim,
-\[ A \cap B = \{x \mid x \in A\mbox{ e }  x \in B\}\]
+\begin{definicao}[Intersec{\c c}{\~a}o]
+Sejam $A$ e $B$ dois conjuntos. Definimos a \textbf{intersec{\c c}{\~a}o} de $A$ e $B$ como sendo o conjunto $A \cap B$ cujos elementos pertencem ao conjunto $A$ e $B$ simultaneamente. Assim,
+\[
+A \cap B = \{x \mid x \in A\mbox{ e }  x \in B\}.
+\]
 \end{definicao}
 
 Exemplo: Sejam
-\[ A = \{1,2,3\},\ B = \{2,3,4\}\]
-\[A \cap B = \{2,3\}\]
+\begin{align*}
+	A = \{1,2,3\}\\
+	B = \{2,3,4\}\\
+	A \cap B = \{2,3\}.
+\end{align*}
 
 \begin{proposicao} Sejam $A$ e $B$ dois conjuntos. Ent{\~a}o
-\[(A \cap B) \subseteq A  \mbox{ e } (A \cap B) \subseteq B.\]
+\begin{align*}
+	(A \cap B) \subseteq A\\
+	(A \cap B) \subseteq B.
+\end{align*}
 \end{proposicao}
+\begin{prova}
+	Seja $x \in A \cap B$ um elemento qualquer. Da definição de interseção de conjuntos temos $x \in A$ e $x \in B$. De $x \in A$ segue que $A \cap B \subseteq A$ e de $x \in B$ segue que $A \cap B \subseteq B$, como quer{\'\i}amos demonstrar.
+\end{prova}
 
-\textbf{Demonstra{\c c}{\~a}o} Seja $x \in A \cap B$ um elemento arbitr{\'a}rio. Logo $x \in A$ e $x \in B$. De $x \in A$ temos que $A \cap B \subseteq A$. De $x \in B$ temos que $A \cap B \subseteq B$. Como quer{\'\i}amos demonstrar.\#
-
-\subsubsection{Uni{\~a}o}
-
-\begin{definicao}[Uni{\~a}o] Sejam $A$ e $B$ dois conjuntos. Definimos a uni{\~a}o de $A$ com $B$ como sendo o conjunto $A \cup B$, cujos elementos pertencem ao conjunto $A$ ou ao conjunto $B$. Assim,
-\[A \cup B = \{x \mid x \in A \mbox{ ou } x \in B\}.\]
+\begin{definicao}[Uni{\~a}o]
+Sejam $A$ e $B$ dois conjuntos. Definimos a \textbf{uni{\~a}o} de $A$ com $B$ como sendo o conjunto $A \cup B$, cujos elementos pertencem ao conjunto $A$ ou ao conjunto $B$. Assim,
+\[
+A \cup B = \{x \mid x \in A \mbox{ ou } x \in B\}.
+\]
 \end{definicao}
 
 Exemplo: Sejam
-\[A = \{1,2,3\},\ B = \{2,3,4\}\]
-\[A \cup B = \{1,2,3,4\}\]
+\begin{align*}
+	A = \{1,2,3\}\\
+	B = \{2,3,4\}\\
+	A \cup B = \{1,2,3,4\}
+\end{align*}
 
-O conceito de uni{\~a}o($ \cup $) e intersec{\c c}{\~a}o($ \cap $) pode ser estendido para mais de 2 conjuntos.
+O conceito de uni{\~a}o ($ \cup $) e intersec{\c c}{\~a}o ($ \cap $) pode ser estendido para mais de dois conjuntos.
 
-\subsubsection{Uni{\~a}o e Intersec{\c c}{\~a}o de m{\'u}ltiplos conjuntos}
-\begin{definicao}[Uni{\~a}o e Intersec{\c c}{\~a}o de m{\'u}ltiplos conjuntos] Sejam $A_{1},...,A_{n}$ $n$ conjuntos dados. Ent{\~a}o
-\[A_{1} \cup A_{2} \cup \cdots \cup A_{n}= \displaystyle\bigcup_{k=1}^{n} A_{k}\]
-{\'e} o conjunto dos elementos $x$ tais que $x$ pertence a pelo menos um dos conjuntos $A_{1}$, ..., $A_{n}$. Agora,
-\[A_{1} \cap \cdots \cap A_{n} = \displaystyle\bigcap_{k=1}^{n}A_{k}\]
-{\'e} o conjunto dos elementos $x$ que pertencem a todos os conjuntos $A_{1}$, ..., $A_{n}$ simultaneamente.
+\begin{definicao}[Uni{\~a}o e Intersec{\c c}{\~a}o finita de conjuntos]
+Sejam $A_{1}$, \dots, $A_{n}$ conjuntos. Ent{\~a}o
+\[
+A_{1} \cup A_{2} \cup \cdots \cup A_{n}= \displaystyle\bigcup_{k=1}^n A_{k}
+\]
+{\'e} o conjunto dos elementos $x$ tais que $x$ pertence a pelo menos um dos conjuntos $A_{1}$, \dots, $A_{n}$. Agora,
+\[
+A_{1} \cap \cdots \cap A_{n} = \displaystyle\bigcap_{k=1}^{n}A_{k}
+\]
+{\'e} o conjunto dos elementos $x$ que pertencem a todos os conjuntos $A_{1}$, \dots, $A_{n}$ simultaneamente.
 \end{definicao}
 
-Quando a intersec{\c c}{\~a}o de dois ou mais conjuntos {\'e} vazia, dizemos que eles s{\~a}o conjuntos disjuntos.
+Quando a intersec{\c c}{\~a}o de dois ou mais conjuntos {\'e} vazia, dizemos que eles s{\~a}o \textbf{conjuntos disjuntos}.
 
-Se $C = A \cup B$, tais que $A \cap B = \emptyset$, dizemos que $C$ {\'e} uma uni{\~a}o disjunta de $A$ e $B$. Neste caso, escrevemos
-\[C = A \sqcup B\]
+Sejam $A$ e $B$ conjuntos tais que $C = A \cup B$ e $A \cap B = \emptyset$. Neste caso dizemos que $C$ {\'e} uma \textbf{uni{\~a}o disjunta} de $A$ e $B$. Denotamos tal fato por
+\[
+C = A \sqcup B.
+\]
 
 \begin{proposicao} Sejam $A,\ B$ e $C$ tr{\^e}s conjuntos, ent{\~a}o
 \begin{enumerate}
