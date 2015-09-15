@@ -91,9 +91,16 @@
 	Seja $x \in C_E(A)$. Então por definição $x \notin A$. Mas $A = A \cup B$ e assim $x \notin B$. Logo $x \in C_E(B)$. Portanto $C_E(A) \subseteq C_E(B)$.
 \end{enumerate}
 
-
 \vspace{.5cm}
 
-\questao Mostre que $A \cup ( B - C) = (A \cup B) - (C - A$
+\questao Mostre que $A \cup ( B - C) = (A \cup B) - (C - A)$.
+
+\noindent\textbf{Solu\c{c}\~ao:} Para mostrar a igualdade desses conjuntos precisamos mostrar que:
+\begin{enumerate}
+	\item [$1^o$] $A \cup ( B - C) \subseteq (A \cup B) - (C - A)$
+
+	Seja $x \in A \cup (B - C)$. Então $x \in A$ ou $x \in (B - C)$. Se $x \in A$, então $x \in A \cup B$ e $x \notin (C - A)$. Assim $x \in (A \cup B) - (C - A)$. Com isso $A \cup ( B - C) \subseteq (A \cup B) - (C - A)$. Agora suponha que $x \in (B - C)$. Então $x \in B$ e $x \notin C$. Neste caso $x \in A \cup B$ e $x \notin (C - A)$ pois $x \notin C$. Logo $x \in (A \cup B) - (C - A)$ e novamente $A \cup ( B - C) \subseteq (A \cup B) - (C - A)$. Portanto $A \cup ( B - C) \subseteq (A \cup B) - (C - A)$.
+\end{enumerate}
+
 
 \end{document}
