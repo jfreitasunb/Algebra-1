@@ -100,7 +100,11 @@
 	\item [$1^o$] $A \cup ( B - C) \subseteq (A \cup B) - (C - A)$
 
 	Seja $x \in A \cup (B - C)$. Então $x \in A$ ou $x \in (B - C)$. Se $x \in A$, então $x \in A \cup B$ e $x \notin (C - A)$. Assim $x \in (A \cup B) - (C - A)$. Com isso $A \cup ( B - C) \subseteq (A \cup B) - (C - A)$. Agora suponha que $x \in (B - C)$. Então $x \in B$ e $x \notin C$. Neste caso $x \in A \cup B$ e $x \notin (C - A)$ pois $x \notin C$. Logo $x \in (A \cup B) - (C - A)$ e novamente $A \cup ( B - C) \subseteq (A \cup B) - (C - A)$. Portanto $A \cup ( B - C) \subseteq (A \cup B) - (C - A)$.
-\end{enumerate}
 
+	\item [$2^o$] $(A \cup B) - (C - A) \subseteq A \cup ( B - C)$
+
+	Seja $x \in (A \cup B) - (C - A)$. Assim $x \in A \cup B$ e $x \notin (C - A)$. Se $x \in A$, então $x \in A \cup (B - C)$ e acabamos. Suponha que $x \in B$. Como $x \notin (C - A)$, então $x \notin C$ ou $x \in A$. Se $x \notin C$, então como $x \in B$ obtemos que $x \in B - C$ e com isso $x \in A \cup (B - C)$. Se $x \in A$, então $x \in A \cup (B - C)$. Logo sempre teremos $x \in A \cup (B - C)$ e assim $(A \cup B) - (C - A) \subseteq A \cup ( B - C)$. Portanto $(A \cup B) - (C - A) \subseteq A \cup ( B - C)$.
+\end{enumerate}
+Com isso provamos que $(A \cup B) - (C - A) \subseteq A \cup ( B - C)$, como queríamos.
 
 \end{document}
