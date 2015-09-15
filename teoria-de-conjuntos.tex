@@ -83,24 +83,28 @@ Usando a definição de continência podemos definir igualdade de conjuntos da s
 Quando $A$ e $B$ n{\~a}o s{\~a}o iguais, escrevemos $A \neq B$. Para que $A \neq B$ devemos ter $A \nsubseteq B$ ou $B \nsubseteq A$.
 
 \subsection{Propriedades da contin{\^e}ncia}
-Para quaisquer 3 conjuntos $A,B$ e $C$ temos
+Dados conjuntos $A$, $B$ e $C$ temos:
 \begin{enumerate}
-\item $A\subseteq A$ (Lei reflexiva)
-\item Se $A\subseteq B \mbox{ e } B\subseteq A$, ent{\~a}o $A=B$ (Lei anti-sim{\'e}trica)
-\item Se $A\subseteq B$ e $B\subseteq C$, ent{\~a}o $A\subseteq C$ (Lei transitiva)
+\item $A\subseteq A$ (Reflexividade)
+\item Se $A\subseteq B \mbox{ e } B\subseteq A$, ent{\~a}o $A=B$. (Antissimetria)
+\item Se $A\subseteq B$ e $B\subseteq C$, ent{\~a}o $A\subseteq C$. (Transitividade)
 \end{enumerate}
 
 Considere os seguintes conjuntos:
-\[A = \{ n \in \mathbb{N} \mid n \mbox{ {\'e} m{\'u}ltiplo de } 2\}=\{2,4,6,...\}\]
-\[ B = \{n\in\mathbb{N} \mid n \mbox{ {\'e} m{\'u}ltiplo de } 3\}=\{3,6,9,...\}\]
+\begin{align*}
+	A &= \{ n \in \n \mid n \mbox{ {\'e} m{\'u}ltiplo de } 2\} = \{2,4,6,...\}\\
+	B &= \{n \in \n \mid n \mbox{ {\'e} m{\'u}ltiplo de } 3\} = \{3,6,9,...\}.
+\end{align*}
 
-Neste caso, $2 \in A$ e $2 \in B$, logo $A \nsubseteq B$. Por outro lado, $3 \in B$ e $3 \notin A$, logo $B \nsubseteq A$.
 
-Assim, dados 2 conjuntos $A$ e $B$, nem sempre temos que $A \subseteq B$ ou $B \subseteq A$.
+Neste caso, $2 \in A$ e $2 \notin B$, logo $A \nsubseteq B$. Por outro lado, $3 \in B$ e $3 \notin A$ e com isso $B \nsubseteq A$. Portanto, dados dois conjuntos $A$ e $B$, nem sempre temos $A \subseteq B$ ou $B \subseteq A$.
 
-\begin{proposicao} Seja $A$ um conjunto. Ent{\~a}o $ \emptyset \subseteq A$.\end{proposicao}
-
-\textbf{Demonstra{\c c}{\~a}o} Suponha que $ \emptyset \nsubseteq A$. Logo existe $x \in \emptyset$ e $x \notin A$. Mas por defini{\c c}{\~a}o o conjunto vazio n{\~a}o cont{\'e}m elementos. Logo {\'e} um absurdo ou uma contradi{\c c}{\~a}o existir $z \in \emptyset$. Portanto, $ \emptyset \subseteq A$, como quer{\'\i}amos demonstrar.\#
+\begin{proposicao} 
+	Seja $A$ um conjunto. Ent{\~a}o $ \emptyset \subseteq A$.
+\end{proposicao}
+\begin{prova}
+	Suponha que $\emptyset \nsubseteq A$. Logo existe $x \in \emptyset$ tal que $x \notin A$. Mas por defini{\c c}{\~a}o, o conjunto vazio n{\~a}o cont{\'e}m elementos. Logo a existência de $x \in \emptyset$ {\'e} uma contradi{\c c}{\~a}o. Tal contradição surgiu por termos suposto que $\emptyset \nsubseteq A$. Portanto, $\emptyset \subseteq A$, como quer{\'\i}amos demonstrar.
+\end{prova}
 
 \section{Rela{\c c}{\~o}es entre conjuntos}
 
