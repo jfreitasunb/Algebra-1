@@ -167,37 +167,46 @@ Sejam $A$ e $B$ conjuntos tais que $C = A \cup B$ e $A \cap B = \emptyset$. Nest
 C = A \sqcup B.
 \]
 
-\begin{proposicao} Sejam $A,\ B$ e $C$ tr{\^e}s conjuntos, ent{\~a}o
+\begin{proposicao} Sejam $A,\ B$ e $C$ tr{\^e}s conjuntos, ent{\~a}o:
 \begin{enumerate}
 \item $A\cap(B\cup C)=(A\cap B)\cup(A\cap C)$
 \item $A\cup(B\cap C)=(A\cup B)\cap(A\cup C)$
 \end{enumerate}
 \end{proposicao}
-
-\textbf{Demonstra{\c c}{\~a}o}:
-\begin{enumerate}
+\begin{prova}
+	\begin{enumerate}
 \item Precisamos mostrar que
-\[A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)\]
-e
-\[(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C).\]
+\begin{align*}
+A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)\\
+(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C).
+\end{align*}
 
-Seja $x\in A\cap(B\cup C)$. Logo $x\in A$ e $x\in B\cup C$. Agora, de $x\in B\cup C$, temos que $x\in B$ ou $x\in C$. Suponha que $x\in B$. Como $x\in A$, segue que $x\in A\cap B$. Assim, $x\in(A\cap B)\cup(A\cap C)$, ou seja, $A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$. Por outro lado, se $x\in C$, ent{\~a}o $x\in C$, ent{\~a}o $x\in A\cap C$ e da{\'\i} $x\in(A\cap B)\cup(A\cap C)$, logo $A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$.
+Seja $x\in A\cap(B\cup C)$. Logo $x\in A$ e $x\in B\cup C$. Agora, de $x\in B\cup C$, segue que $x\in B$ ou $x\in C$. Suponha que $x\in B$. Como $x\in A$, então $x\in A\cap B$. Assim, $x\in(A\cap B)\cup(A\cap C)$, ou seja, $A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$. Por outro lado, se $x\in C$, como $x\in A$, ent{\~a}o $x\in A\cap C$ e da{\'\i} $x\in(A\cap B)\cup(A\cap C)$, logo $A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$.
 
 Portanto,
-\[A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C).\]
+\[
+	A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C).
+\]
 
-Reciprocamente, seja $x\in(A\cap B)\cup(A\cap C)$. Assim, $x\in A\cap B$ ou $x\in A\cap C$. Suponha que $x\in A\cap B$. Da{\'\i}, $x\in A$ e $x\in B$. Como $x\in B$, segue que $x\in B\cup C$ e ent{\~a}o $x\in A\cap(B\cup C)$, ou seja, $(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C)$. Agora, supondo que $x\in A\cap C$. Da{\'\i} $x\in A$ e $x\in C$. Desse modo, $x\in B\cup C$, ent{\~a}o $x\in A\cap(B\cup C)$, isto {\'e}
-\[(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C).\]
+Agora, seja $x\in(A\cap B)\cup(A\cap C)$. Daí, $x\in A\cap B$ ou $x\in A\cap C$. Suponha que $x\in A\cap B$. Assim, $x\in A$ e $x\in B$. Como $x\in B$, segue que $x\in B\cup C$ e ent{\~a}o $x\in A\cap(B\cup C)$, ou seja, $(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C)$. Agora, suponnha que $x\in A\cap C$. Com isso $x\in A$ e $x\in C$. Desse modo, $x\in B\cup C$ e ent{\~a}o $x\in A\cap(B\cup C)$ e daí
+\[
+	(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C).
+\]
 
-Portanto temos \[A\cap(B\cup C)=(A\cap B)\cup(A\cap C).\]
-
-Como quer{\'\i}amos demonstrar.\#
-\item O mesmo racioc{\'\i}nio se aplica, \textit{Mutatis Mutandis}, {\`a} segunda demonstra{\c c}{\~a}o.
+Portanto
+\[
+	A\cap(B\cup C)=(A\cap B)\cup(A\cap C),
+\]
+como quer{\'\i}amos.
+\item Análoga ao caso anterior.
 \end{enumerate}
+\end{prova}
 
-\subsubsection{Diferen{\c c}a de Conjuntos}
-\begin{definicao}[Diferen{\c c}a de Conjuntos] Dados dois conjuntos $A$ e $B$, definimos a diferen{\c c}a dos conjuntos $A$ e $B$, denotado $A-B$ (ou $A\backslash B)$
-\[A - B = \{x | x \in A \mbox{ e } x \notin B\}.\]
+\begin{definicao}[Diferen{\c c}a de Conjuntos]
+Dados dois conjuntos $A$ e $B$, definimos a \textbf{diferen{\c c}a} dos conjuntos $A$ e $B$, denotado $A-B$ (ou $A\backslash B)$ como sendo
+\[
+A - B = \{x \mid x \in A \mbox{ e } x \notin B\}.
+\]
 \end{definicao}
 
 Exemplos:
@@ -206,77 +215,106 @@ Exemplos:
 \item $A=\{2,4,6,8,10,...\}$,  $B=\{3,6,9,12,15,...\}$, $A-B=\{2,4,8,10,14,16,...\}$, $B - A=\{3,9,15,21,...\}$
 \end{enumerate}
 
-\subsubsection{Complementar}
-
-\begin{definicao}[Complementar] Dados dois conjuntos $A$ e $E$ tais que $A\subseteq E$, definimos o complementar de $A$ em $E$, denotado $A^{C}$ ou $C_{E}(A)$, como
-\[C_{E}(A) = \{ x \in E \mid x \notin A \}.\]
+\begin{definicao}[Complementar]
+Dados dois conjuntos $A$ e $E$ tais que $A\subseteq E$, definimos o \textbf{complementar} de $A$ em $E$, denotado $A^C$ ou $C_E(A)$, como
+\[
+	C_E(A) = \{ x \in E \mid x \notin A \}.
+\]
 \end{definicao}
 
 Observa{\c c}{\~o}es:
 \begin{enumerate}
-\item Se $A = E$, ent{\~a}o $C_{A}(A)=\{ x \in A \mid x \notin A \}=\emptyset$
-\item $(A^{C})^{C}=\{x \in E \mid x \notin A^{C}\} = \{ x \in E \mid x \in A \}=A$
+\item Se $A = E$, ent{\~a}o $C_A(A) = \{ x \in A \mid x \notin A \} = \emptyset$.
+\item $(A^C)^C = \{x \in E \mid x \notin A^C\} = \{ x \in E \mid x \in A \} = A$
 \end{enumerate}
 
-Exemplo:\\
-$A=\{1,2,3,4\},\ E=\{1,2,3,5,4,0,8,9\}$\\
-$A^{c}=\{0,8,9\}$
+Exemplo:
+\begin{align*}
+	A &= \{1,2,3,4\}\\
+	E &= \{1,2,3,5,4,0,8,9\}\\
+	A^C &= \{0,5,8,9\}
+\end{align*}
 
-\begin{proposicao} Sejam $A,B,E$ conjuntos. Se $A\subseteq B\subseteq E$, ent{\~a}o $C_{E}(B)\subseteq C_{E}(A)$.\end{proposicao}
+\begin{proposicao}
+	Sejam $A$, $B$ e $E$ conjuntos. Se $A\subseteq B\subseteq E$, ent{\~a}o $C_E(B)\subseteq C_E(A)$.
+\end{proposicao}
+\begin{prova}
+	Seja $x \in B^C$. Assim $x\notin B$ e como $A \subseteq B$, então $x \notin A$. Daí por definição $x\in A^C$, ou seja, $B^C\subseteq A^C$.
+\end{prova}
 
-\textbf{Demonstra{\c c}{\~a}o}: Seja $x\in B^{c}$, logo $x\notin B$ e assim $x\notin A$, pois $A\subseteq B$. Ent{\~a}o $x\in A^{c}$, ou seja, $B^{c}\subseteq A^{c}$. (Q.E.D.).\#\\
-
-\begin{proposicao} Sejam $A,B,E$ tr{\^e}s conjunto tais que $A\subseteq E$ e $B\subseteq E$. Ent{\~a}o:
+\begin{proposicao} Sejam $A$, $B$ e $E$ tr{\^e}s conjunto tais que $A\subseteq E$ e $B\subseteq E$. Ent{\~a}o:
 \begin{enumerate}
-\item $(A\cup B)^{c}=A^{c}\cap B^{c}$
-\item $(A\cap B)^{c}=A^{c}\cup B^{c}$
+\item $(A\cup B)^C = A^C\cap B^C$
+\item $(A\cap B)^C = A^C\cup B^C$
 \end{enumerate}
 \end{proposicao}
+\begin{prova}
+	\begin{enumerate}
+		\item Seja $x \in (A\cup B)^C$. Logo $x\notin A\cup B$, assim $x\notin A$ e $x\notin B$. Da{\'\i}, $x\in A^C$ e $x\in B^C$, isto {\'e}, $x\in A^C\cap B^C$. Desse modo,
+		\begin{equation}\label{complementar_uniao-1}
+			(A\cup B)^C \subseteq A^C\cap B^C.
+		\end{equation}
 
-\textbf{Demonstra{\c c}{\~a}o}: Seja $x\in(A\cup B)^{c}$. Logo $x\notin A\cup B$, assim $x\notin A\wedge x\notin B$. Da{\'\i}, $x\in A^{c}\wedge x\in B^{c}$, isto {\'e}, $x\in A^{c}\cap B^{c}$. Desse modo,
-\begin{equation}
-(A\cup B)^{c}\subseteq A^{c}\cap B^{c}
-\end{equation}
+		Por outro lado, se $x\in A^C\cap B^C$, ent{\~a}o $x\in A^C$ e $x\in B^C$. Da{\'\i}, $x\notin A$ e $x\notin B$, ou seja, $x\notin A\cup B$, logo $x\in (A\cup B)^C$. Desse modo
+		\begin{equation}\label{complementar_uniao-2}
+			A^C\cap B^C\subseteq(A\cup B)^C.
+		\end{equation}
 
-Por outro lado, se $x\in A^{c}\cap B^{c}$, ent{\~a}o $x\in A^{c}\wedge x\in B^{c}$. Da{\'\i}, $x\notin A\wedge x\notin B$, ou seja, $x\notin A\cup B$, logo $x\in (A\cup B)^{c}$. Desse modo
-\begin{equation}
-A^{c}\cap B^{c}\subseteq(A\cup B)^{c}
-\end{equation}
+		Portanto, de \eqref{complementar_uniao-1} e \eqref{complementar_uniao-2} temos
+		\[
+			(A\cup B)^C = A^C\cap B^C.
+		\]
 
-Portanto, de (2.1) e (2.2) temos \[(A\cup B)^{c}=A^{c}\cap B^{c}\]
+		\item Seja $x \in (A\cap B)^C$. Logo $x\notin A\cap B$, assim $x\notin A$ ou $x\notin B$. Então $x\in A^C$ ou $x\in B^C$, isto {\'e}, $x\in A^C\cup B^C$. Desse modo,
+		\begin{equation}\label{complementar_intersecao-1}
+			(A\cap B)^C \subseteq A^C\cup B^C.
+		\end{equation}
 
-(Q.E.D).\#\\
+		Por outro lado, se $x\in A^C\cup B^C$, ent{\~a}o $x\in A^C$ ou $x\in B^C$. Da{\'\i}, $x\notin A$ ou $x\notin B$, ou seja, $x\notin A\cap B$, logo $x\in (A\cap B)^C$. Desse modo
+		\begin{equation}\label{complementar_intersecao-2}
+			A^C\cup B^C\subseteq(A\cap B)^C.
+		\end{equation}
 
-\subsubsection{Produto Cartesiano}
+		Portanto, de \eqref{complementar_intersecao-1} e \eqref{complementar_intersecao-2} temos
+		\[
+			(A\cap B)^C = A^C\cup B^C.
+		\]
+	\end{enumerate}
+\end{prova}
 
-\begin{definicao}[Produto Cartesiano] Dados 2 conjuntos $A$ e $B$, definimos o produto cartesiano $A$ e $B$ por
-\begin{center}
-$A\times B=\{(a,b)/a\in A,b\in B\}$
-\end{center}
+\begin{definicao}[Produto Cartesiano]
+	Dados dois conjuntos $A$ e $B$, definimos o \textbf{produto cartesiano} de $A$ por $B$ por
+	\[
+		A \times B = \{(x,y) \mid x\in A, y\in B\}.
+	\]
 \end{definicao}
 
-Como o conjunto dos pares ordenados $(a,b)$, onde $a$ percorre $A$ e $b$ percorre $B$.
+Dados $(x,y)$, $(z,t) \in A\times B$, temos $(x,y) = (z,t)$ se, e somente se, $x = z$ e $y = t$.
 
-Dados $(a,b),(c,d)\in A$x$B$, temos $(a,b)=(c,d)$ se, e somente se, \[a=c\wedge b=d\]
+Em geral, $A \times B \neq B\times A$.
 
-Em geral, $A$x$B\neq B$x$A$.
+Exemplo:
+\begin{align*}
+	A &= \{1,2\}\\
+	B &= \{3\}\\
+	A \times B &= \{(1,3),(2,3)\}\\
+	B \times A &= \{(3,1),(3,2)\}
+\end{align*}
 
-Exemplo:\\
-$A=\{1,2\},\ B=\{3\}$\\
-$A$x$B=\{(1,3),(2,3)\}$\\
-$B$x$A=\{(3,1),(3,2)\}$
+\begin{definicao}[Conjunto Partes]
+	Para qualquer conjunto $A$, indicamos por $\mathcal{P}(A)$ o conjunto
+	\[
+		\mathcal{P}(A) = \{ X \mid X\subseteq A\}
+	\]
+	que é chamado de \textbf{conjunto das partes} de $A$.
+\end{definicao}
 
-\subsubsection{Conjunto partes}
-
-\begin{definicao}[Conjunto Partes] Para qualquer conjunto $A$, indicamos por $P(A)$\[P(A)=\{X/X\subseteq A\}\] o conjunto das partes de $A$.\end{definicao}
-
-Os elementos desse conjunto s{\~a}o todos os subconjuntos de $A$. Dizer que $x\in P(A)$ significa que $x\in A$. Particularmente, temos $\emptyset\in P(A)$ e $A\in P(A)$.
+Os elementos desse conjunto s{\~a}o todos os subconjuntos de $A$. Dizer que $Y\in \mathcal{P}(A)$ significa que $Y \subseteq A$. Particularmente, temos $\emptyset\in \mathcal{P}(A)$ e $A\in \mathcal{P}(A)$.
 
 Exemplos:
 \begin{enumerate}
-\item $A=\emptyset,\ P(A)=\{\emptyset\}$
-\item $B=\{b\},\ P(B)=\{\emptyset,B\}$
-\item $C=\{a,b,c\}$\\
-$P(C)=\{\emptyset, \{a\}, \{b\},\{c\},\{a,b\},\{a,c\},\{b,c\},C\}$
-\item $D=\mathbb{R},P(D)=\{X/X\subseteq\mathbb{R}\}$, por exemplo $\mathbb{Q}\in P(D)$
+\item $A = \emptyset$,$\mathcal{P}(A) = \{\emptyset\}$;
+\item $B = \{x\}$, $\mathcal{P}(B) = \{\emptyset, B\}$;
+\item $C = \{a,b,c\}$, $\mathcal{P}(C)=\{\emptyset, \{a\}, \{b\},\{c\},\{a,b\},\{a,c\},\{b,c\},C\}$;
+\item $D=\real$, $\mathcal{P}(D)=\{X\mid X \subseteq \real\}$, por exemplo $\rac\in \mathcal{P}(D)$.
 \end{enumerate}
