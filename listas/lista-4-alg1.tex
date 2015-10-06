@@ -73,6 +73,12 @@
 % \questao Mostre que num grupo $G$, o elemento neutro e inverso de cada
 % elemento {\'e} {\'u}nico.
 
+\questao Sejam $G$ um grupo e $x$, $y$, $z \in G$. Prove que:
+\begin{enumerate}
+	\item Se $xy = xz$, então $y = z$.
+	\item Se $yx = zx$, então $y = z$.
+\end{enumerate}
+
 \vesp
 
 \questao Verifique se o conjunto $\q_{>0}$ dos n{\'u}meros racionais estritamente positivos com a
@@ -205,4 +211,83 @@ neutro $e$ e suponha que $H$ e $K$ s{\~a}o subgrupos de $G$ tais que
 $|H|=p$ e $|K|=q$, onde $p$ e $q$ s{\~a}o primos distintos. Mostre que
 $H\cap K=\{e\}$.
 
+\vesp
+
+\questao Determine $f$, $g \in S_3$ tais que:
+\begin{enumerate}
+	\item $(f \comp g)^3 \ne f^3\comp g^3$
+	\item $(f \comp g)^2 \ne f^2\comp g^2$
+\end{enumerate}
+
+\vesp
+
+\questao Considere o grupo $S_3$:
+\begin{enumerate}
+	\item Determine todos os elementos $f \in S_3$ tais que $f^2 = Id$ e $f \ne Id$.
+	\item Determine todos os elementos $g \in S_3$ tais que $g^3 = Id$ e $g \ne Id$.
+\end{enumerate}
+
+\vesp
+
+\questao Seja $V = \{Id, f, g, h\}$ o seguinte subconjunto do grupo $S_4$:
+\begin{align*}
+	Id = \begin{pmatrix}
+		1 & 2 & 3 & 4\\
+		1 & 2 & 3 & 4
+	\end{pmatrix}; \quad f = \begin{pmatrix}
+		1 & 2 & 3 & 4\\
+		2 & 1 & 4 & 3
+	\end{pmatrix}\\
+	g = \begin{pmatrix}
+		1 & 2 & 3 & 4\\
+		3 & 4 & 1 & 2
+	\end{pmatrix}; \quad h = \begin{pmatrix}
+		1 & 2 & 3 & 4\\
+		4 & 3 & 2 & 1
+	\end{pmatrix}.
+\end{align*}
+\begin{enumerate}
+	\item Prove que $(V, \comp)$ é um grupo contendo 4 elementos, onde $\comp$ é a operação de $S_4$.
+	\item Prove que $(V, \comp)$ é um grupo abeliano.
+\end{enumerate}
+
+\vesp
+
+\questao Considere o grupo $S_7$ e seja
+\[
+	1 = \begin{pmatrix}
+		1 & 2 & 3 & 4 & 5 & 6 & 7\\
+		1 & 2 & 3 & 4 & 5 & 6 & 7
+	\end{pmatrix}
+\].
+\begin{enumerate}
+	\item Encontre o menor $l \ge 0$ tal que $\sigma^l = 1$, onde
+	 \[
+	 	\sigma = \begin{pmatrix}
+	 		1 & 2 & 3 & 4 & 5 & 6 & 7\\
+	 		3 & 4 & 2 & 6 & 7 & 5 & 1
+	 	\end{pmatrix}.
+	 \]
+	\item Encontre $\beta \in S_7$ tal que $\sigma\comp\beta = 1$, onde
+	\[
+	 	\sigma = \begin{pmatrix}
+	 		1 & 2 & 3 & 4 & 5 & 6 & 7\\
+	 		3 & 4 & 2 & 6 & 7 & 5 & 1
+	 	\end{pmatrix}.
+	 \]
+	\item Encontre o menor $k \ge 0$ tal que $\beta^k = 1$, onde
+	\[
+	 	\beta = \begin{pmatrix}
+	 		1 & 2 & 3 & 4 & 5 & 6 & 7\\
+	 		3 & 1 & 2 & 6 & 7 & 4 & 5
+	 	\end{pmatrix}.
+	 \].
+	\item Encontre $\gamma \in S_7$ tal que $\gamma\comp\beta^k = 1$, onde
+	\[
+	 	\beta = \begin{pmatrix}
+	 		1 & 2 & 3 & 4 & 5 & 6 & 7\\
+	 		3 & 1 & 2 & 6 & 7 & 4 & 5
+	 	\end{pmatrix}.
+	 \].
+\end{enumerate}
 \end{document}
