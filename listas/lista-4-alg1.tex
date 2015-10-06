@@ -74,7 +74,7 @@
 % elemento {\'e} {\'u}nico.
 
 \questao Sejam $G$ um grupo e $x$, $y$, $z \in G$. Prove que:
-\begin{enumerate}
+\begin{enumerate}[label=({\alph*})]
 	\item Se $xy = xz$, então $y = z$.
 	\item Se $yx = zx$, então $y = z$.
 \end{enumerate}
@@ -153,14 +153,14 @@ $H\subseteq K$ ou $K\subseteq H$.
 
 \vesp
 
-\questao Sabendo que $G = \{e, a, b, c, d, f\}$ {\'e} um grupo multiplicativo isomorfo ao grupo $(\z_6, +)$, pede-se:
-\begin{enumerate}[label=({\alph*})]
-\item construir uma tabela de multiplica{\c c}{\~a}o para $G$;
-\item calcular $a^2$, $b^{-2}$ e $c^{-3}$;
-\item obter $x \in G$ tal que $dxf = a^{-1}$.
-\end{enumerate}
+%\questao Sabendo que $G = \{e, a, b, c, d, f\}$ {\'e} um grupo multiplicativo isomorfo ao grupo $(\z_6, +)$, pede-se:
+%\begin{enumerate}[label=({\alph*})]
+%\item construir uma tabela de multiplica{\c c}{\~a}o para $G$;
+%\item calcular $a^2$, $b^{-2}$ e $c^{-3}$;
+%\item obter $x \in G$ tal que $dxf = a^{-1}$.
+%\end{enumerate}
 
-\vesp
+%\vesp
 
 \questao Sejam $f:G\to H$ e $g:H\to J$ isomorfismos de grupos. Mostre
 que
@@ -214,7 +214,7 @@ $H\cap K=\{e\}$.
 \vesp
 
 \questao Determine $f$, $g \in S_3$ tais que:
-\begin{enumerate}
+\begin{enumerate}[label=({\alph*})]
 	\item $(f \comp g)^3 \ne f^3\comp g^3$
 	\item $(f \comp g)^2 \ne f^2\comp g^2$
 \end{enumerate}
@@ -222,7 +222,7 @@ $H\cap K=\{e\}$.
 \vesp
 
 \questao Considere o grupo $S_3$:
-\begin{enumerate}
+\begin{enumerate}[label=({\alph*})]
 	\item Determine todos os elementos $f \in S_3$ tais que $f^2 = Id$ e $f \ne Id$.
 	\item Determine todos os elementos $g \in S_3$ tais que $g^3 = Id$ e $g \ne Id$.
 \end{enumerate}
@@ -246,48 +246,32 @@ $H\cap K=\{e\}$.
 		4 & 3 & 2 & 1
 	\end{pmatrix}.
 \end{align*}
-\begin{enumerate}
+\begin{enumerate}[label=({\alph*})]
 	\item Prove que $(V, \comp)$ é um grupo contendo 4 elementos, onde $\comp$ é a operação de $S_4$.
 	\item Prove que $(V, \comp)$ é um grupo abeliano.
 \end{enumerate}
 
 \vesp
 
-\questao Considere o grupo $S_7$ e seja
-\[
-	1 = \begin{pmatrix}
+\questao Considere o grupo $S_7$ e sejam
+\begin{align*}
+	1 &= \begin{pmatrix}
 		1 & 2 & 3 & 4 & 5 & 6 & 7\\
 		1 & 2 & 3 & 4 & 5 & 6 & 7
-	\end{pmatrix}
-\].
-\begin{enumerate}
-	\item Encontre o menor $l \ge 0$ tal que $\sigma^l = 1$, onde
-	 \[
-	 	\sigma = \begin{pmatrix}
+	\end{pmatrix}\\
+	\sigma &= \begin{pmatrix}
 	 		1 & 2 & 3 & 4 & 5 & 6 & 7\\
 	 		3 & 4 & 2 & 6 & 7 & 5 & 1
-	 	\end{pmatrix}.
-	 \]
-	\item Encontre $\beta \in S_7$ tal que $\sigma\comp\beta = 1$, onde
-	\[
-	 	\sigma = \begin{pmatrix}
-	 		1 & 2 & 3 & 4 & 5 & 6 & 7\\
-	 		3 & 4 & 2 & 6 & 7 & 5 & 1
-	 	\end{pmatrix}.
-	 \]
-	\item Encontre o menor $k \ge 0$ tal que $\beta^k = 1$, onde
-	\[
-	 	\beta = \begin{pmatrix}
+	 	\end{pmatrix}.\\
+	\beta &= \begin{pmatrix}
 	 		1 & 2 & 3 & 4 & 5 & 6 & 7\\
 	 		3 & 1 & 2 & 6 & 7 & 4 & 5
 	 	\end{pmatrix}.
-	 \].
-	\item Encontre $\gamma \in S_7$ tal que $\gamma\comp\beta^k = 1$, onde
-	\[
-	 	\beta = \begin{pmatrix}
-	 		1 & 2 & 3 & 4 & 5 & 6 & 7\\
-	 		3 & 1 & 2 & 6 & 7 & 4 & 5
-	 	\end{pmatrix}.
-	 \].
+\end{align*}.
+\begin{enumerate}[label=({\alph*})]
+	\item Encontre o menor $l \ge 0$ tal que $\sigma^l = 1$.
+	\item Encontre $\beta \in S_7$ tal que $\sigma\comp\beta = 1$.
+	\item Encontre o menor $k \ge 0$ tal que $\beta^k = 1$.
+	\item Encontre $\gamma \in S_7$ tal que $\gamma\comp\beta^k = 1$.
 \end{enumerate}
 \end{document}
