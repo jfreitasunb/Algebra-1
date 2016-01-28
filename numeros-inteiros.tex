@@ -34,9 +34,9 @@ Multiplica{\c c}{\~a}o
 
 \subsubsection{Propriedades b{\'a}sicas das desigualdades}
 
-Admitiremos tamb{\'e}m a rela{\c c}{\~a}o "menor ou igual", em $\mathbb{Z}$, denotada por "$\leq$". Dados $a,b,c\in\mathbb{Z}$, valem as seguintes propriedades:
+Admitiremos tamb{\'e}m a rela{\c c}{\~a}o ``menor ou igual'', em $\Z$, denotada por ``$\leq$''. Dados $a$, $b$, $c\in \Z$, valem as seguintes propriedades:
 \begin{enumerate}
-\item $a\leq A$
+\item $a\leq a$
 \item $a\leq b\wedge b\leq a\rightarrow a=b$
 \item $a\leq b\wedge b\leq c\rightarrow a\leq c$
 \item $a\leq b\veebar b\leq a$
@@ -44,11 +44,10 @@ Admitiremos tamb{\'e}m a rela{\c c}{\~a}o "menor ou igual", em $\mathbb{Z}$, den
 \item $0\leq a\wedge 0\leq b\rightarrow 0\leq ab$
 \end{enumerate}
 
-Para a rela{\c c}{\~a}o "menor", cujo s{\'\i}mbolo {\'e} "$<$", vale
+Para a rela{\c c}{\~a}o ``menor'', cujo s{\'\i}mbolo {\'e} ``$<$'', vale:
 \begin{enumerate}
-\item $0<a\wedge 0<b\rightarrow 0<ab$
-\item $0<a\wedge b<0\rightarrow ab<0$
-\item $0<a\wedge 0<b\rightarrow 0<ab$
+\item Se $a> 0$ e $b > 0$, então $ab > 0$.
+\item Se $a > 0$ e $b<0$, então $ab<0$.
 \end{enumerate}
 
 \section{Princ{\'\i}pio da boa ordena{\c c}{\~a}o}
@@ -80,7 +79,7 @@ Dado $a \in \Z$, suponhamos que a cada inteiro $n\geq a$ esteja associada uma pr
 \end{teorema}
 
 \begin{teorema}[Indu{\c c}{\~a}o finita ($2^a$ vers{\~a}o)]
-Dado $a \in \Z$, suponhamos que para cada $n\geq a$ esteja associada uma proposi{\c c}{\~a}o $P(n)$. Ent{\~a}o $P(n)$ {\'e} verdadeira para todo $n \geq 1$ desde que seja poss{\'\i}vel provar o seguinte:
+Dado $a \in \Z$, suponhamos que para cada $n\geq a$ esteja associada uma proposi{\c c}{\~a}o $P(n)$. Ent{\~a}o $P(n)$ {\'e} verdadeira para todo $n \geq a$ desde que seja poss{\'\i}vel provar o seguinte:
 \begin{enumerate}
 \item $P(a)$ {\'e} verdadeira.
 \item Se $P(r)$ {\'e} verdadeira para $r \geq a$, ent{\~a}o $P(r+1)$ {\'e} verdadeira.
