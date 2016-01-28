@@ -4,117 +4,142 @@
 %%Ap\'os executar pdflatex arquivo
 \chapter{An{\'e}is}
 
-\section{Conjunto munido de uma opera{\c c}{\~a}o bin{\'a}ria}
-\subsection{Defini{\c c}{\~a}o}
+% \section{Conjunto munido de uma opera{\c c}{\~a}o bin{\'a}ria}
+% \subsection{Defini{\c c}{\~a}o}
 
-\begin{definicao}[Conjunto munido de uma opera{\c c}{\~a}o bin{\'a}ria] Seja C um conjunto n{\~a}o vazio. Dizemos que C est{\'a} munido (ou equipado) de uma opera{\c c}{\~a}o bin{\'a}ria quando existe uma fun{\c c}{\~a}o
-\begin{center}
-$\Delta:C \times C\rightarrow C$\\
-$(a,b)\longmapsto a\Delta b$
-\end{center}
-\end{definicao}
+% \begin{definicao}[Conjunto munido de uma opera{\c c}{\~a}o bin{\'a}ria] Seja C um conjunto n{\~a}o vazio. Dizemos que C est{\'a} munido (ou equipado) de uma opera{\c c}{\~a}o bin{\'a}ria quando existe uma fun{\c c}{\~a}o
+% \begin{center}
+% $\Delta:C \times C\rightarrow C$\\
+% $(a,b)\longmapsto a\Delta b$
+% \end{center}
+% \end{definicao}
 
-A opera{\c c}{\~a}o bin{\'a}ria tamb{\'e}m {\'e} chamada de opera{\c c}{\~a}o interna.
+% A opera{\c c}{\~a}o bin{\'a}ria tamb{\'e}m {\'e} chamada de opera{\c c}{\~a}o interna.
 
-Exemplos:
+% Exemplos:
+% \begin{enumerate}
+% \item A soma dos n{\'u}meros dos conjuntos $\mathbb{Z}$ e $\mathbb{Q}$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria
+% \item O produto dos $\mathbb{Z}$ e $\mathbb{Q}$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria
+% \item $\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}=\{\bar{0},\bar{1},...,\overline{m-1}\}$\\
+% $\bar{a},\bar{b}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$\\
+% $\bar{a}\oplus\bar{b}=\overline{a+b}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$\\
+% $\bar{a}\odot\bar{b}=\overline{ab}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$
+% \item $U(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}})=\{\bar{a}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}/\exists\bar{b}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}/\bar{a}\odot\bar{b}=1\}$\\
+% "$\odot$" em $U(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}})$ {\'e}  uma opera{\c c}{\~a}o bin{\'a}ria\\
+% $U(\displaystyle\frac{\mathbb{Z}}{4\mathbb{Z}})=\{\bar{1},\bar{3}\}$\\
+% $\bar{1}\oplus\bar{3}=\bar{0}\notin U(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}})$\\
+% "$\oplus$" em $U(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}})$ n{\~a}o {\'e} opera{\c c}{\~a}o bin{\'a}ria.
+% \item ``$\div$" em $\mathbb{Q}^{*}$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria
+% \item ``$\div$" em $\mathbb{N}, \mathbb{Z}, \mathbb{Z}^{*}, \mathbb{Q}$ n{\~a}o {\'e} opera{\c c}{\~a}o bin{\'a}ria
+
+% \end{enumerate}
+
+\section{Defini{\c c}{\~o}es}
+
+\begin{definicao} Um conjunto n{\~a}o vazio $A$ munido de duas opera{\c c}{\~o}es ``+" e ``$\cdot$", chamados soma e produto, {\'e} chamado de \textbf{anel} quando as seguintes condi{\c c}{\~o}es s{\~a}o verdadeiras:
 \begin{enumerate}
-\item A soma dos n{\'u}meros dos conjuntos $\mathbb{Z}$ e $\mathbb{Q}$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria
-\item O produto dos $\mathbb{Z}$ e $\mathbb{Q}$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria
-\item $\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}=\{\bar{0},\bar{1},...,\overline{m-1}\}$\\
-$\bar{a},\bar{b}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$\\
-$\bar{a}\oplus\bar{b}=\overline{a+b}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$\\
-$\bar{a}\odot\bar{b}=\overline{ab}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$
-\item $U(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}})=\{\bar{a}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}/\exists\bar{b}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}/\bar{a}\odot\bar{b}=1\}$\\
-"$\odot$" em $U(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}})$ {\'e}  uma opera{\c c}{\~a}o bin{\'a}ria\\
-$U(\displaystyle\frac{\mathbb{Z}}{4\mathbb{Z}})=\{\bar{1},\bar{3}\}$\\
-$\bar{1}\oplus\bar{3}=\bar{0}\notin U(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}})$\\
-"$\oplus$" em $U(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}})$ n{\~a}o {\'e} opera{\c c}{\~a}o bin{\'a}ria.
-\item ``$\div$" em $\mathbb{Q}^{*}$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria
-\item ``$\div$" em $\mathbb{N}, \mathbb{Z}, \mathbb{Z}^{*}, \mathbb{Q}$ n{\~a}o {\'e} opera{\c c}{\~a}o bin{\'a}ria
+\item \textbf{Elemento Neutro}: Existe em $A$ um elemento denotado por 0 (zero) ou $0_{A}$ tal que para todo elemento $a\in A$ vale
+\[
+	a + 0 = 0 + a = a.
+\]
 
-\end{enumerate}
-
-\section{Defini{\c c}{\~a}o de anel}
-
-\begin{definicao}[Anel] Um conjunto n{\~a}o vazio $A$ munido de duas opera{\c c}{\~o}es ``+" e ``.", chamados soma e produto, {\'e} um anel quando as seguintes condi{\c c}{\~o}es s{\~a}o verdadeiras:
-\begin{enumerate}
-\item \textbf{Elemento Neutro}: Existe em $``A"$ um elemento denotado por 0(zero) ou $0_{A}$ tal que para todo elemento $a\in A$ vale
-\[a+0=0+a=a\]
 \item \textbf{Elemento Oposto}: Para cada elemento $a\in A$, existe $b\in A$ tal que
-\[a+b=b+a=0\]
-\item \textbf{Associatividade}: para todos $a,b,c\in A$ vale que
-\[(a+b)+c=a+(b+c)\]
-Essa propriedade {\'e} chamada propriedade associativa da soma
-\item \textbf{Comutatividade}: Para todo $a,b\in A$ vale
-\[a+b=b+a\]
-\item \textbf{Distributividade}: Para todo $a,b,c\in A$ vale
-\[(a+b)c=ac+bc\]
-Essa propriedade {\'e} chamada distributiva em rela{\c c}{\~a}o ao produto
-\item \textbf{Distributividade}: Para todos $a,b,c\in A$ vale
-\[a(b+c)=ab+ac\]
-Essa {\'e} a propriedade distributiva do produto em rela{\c c}{\~a}o {\`a} soma
+\[
+	a + b = b + a = 0_A.
+\]
 
-Al{\'e}m disso, se A satisfizer
-\item \textbf{Comutatividade}: Se para todos $a,b\in A$ vale
-\[ab=ba\]
-Dizemos que A {\'e} um anel comutativo
-\item \textbf{Elemento um}: Se existe em A um elemento denotado por 1 ou $1_{A}$ tal que
-\[a1=1a=a\]
-Para todo $a\in A$, ent{\~a}o chamamos de anel com unidade ou anel unit{\'a}rio. O elemento 1 {\'e} chamado elemento um ou unidade
-\item \textbf{Associatividade}: Se para todos $a,b,c\in A$, vale que
-\[a(bc)=(ab)c\]
-Dizemos que A {\'e} anel associativo em $M_{2}(\mathbb{R})=\left\{\left[\begin{array}{cc}
-a & b\\
-c & d
-\end{array}\right]/a,b,c,d\in\mathbb{R}\right\}$
+\item \textbf{Associatividade}: para todos $a$, $b$, $c\in A$ vale que
+\[
+	(a + b) + c = a + (b + c).
+\]
+Essa propriedade {\'e} chamada \textbf{propriedade associativa} da soma.
+
+\item \textbf{Comutatividade}: Para todos $a$, $b \in A$ vale
+\[
+	a + b = b + a.
+\]
+
+\item \textbf{Distributividade}: Para todos $a$, $b$, $c \in A$ vale
+\[
+	(a + b)\cdot c = a\cdot c + b\cdot c.
+\]
+Essa propriedade {\'e} chamada \textbf{distributiva em rela{\c c}{\~a}o ao produto}.
+
+\item \textbf{Distributividade}: Para todos $a$, $b$, $c\in A$ vale
+\[
+	a\cdot(b + c) = a\cdot b + a\cdot c.
+\]
+Essa {\'e} a propriedade \textbf{distributiva do produto em rela{\c c}{\~a}o {\`a} soma}.
+
+Al{\'e}m disso, se $A$ satisfizer
+\item \textbf{Comutatividade}: Para todos $a$, $b\in A$ vale
+\[
+	a\cdot b = b\cdot a.
+\]
+Dizemos que $A$ {\'e} um \textbf{anel comutativo}.
+
+\item \textbf{Elemento um}: Se existe em $A$ um elemento denotado por $1$ ou $1_{A}$ tal que
+\[
+	a\cdot 1 = 1\cdot a = a.
+\]
+Para todo $a\in A$, ent{\~a}o chamamos de anel com unidade ou anel unit{\'a}rio. O elemento 1 {\'e} chamado de \textbf{unidade} de $A$ e $A$ é chamado de \textbf{anel com unidade} ou \textbf{anel unitário}.
+
+\item \textbf{Associatividade}: Se para todos $a$, $b$, $c\in A$, vale que
+\[
+	a\cdot (b\cdot c) = (a\cdot b)\cdot c.
+\]
+Dizemos que $A$ {\'e} um \textbf{anel associativo}.
 \end{enumerate}
 \end{definicao}
-Defina a soma como a soma usual de matrizes e defina o produto do seguinte modo: dados $A,B\in M_{2}(\mathbb{R})$
-\[[A,B]=\underbrace{\underbrace{AB}-\underbrace{BA}}_{Produto\ usual\ de\ Matrizes}\]
 
-Verificar que $M_{2}(\mathbb{R})$ com a soma usual de matrizes e produto [,] {\'e} um anel, mas n{\~a}o {\'e} associativo.
+Quando A, munido de duas opera{\c c}{\~o}es ``+'' e ``$\cdot$'' {\'e} um anel, ele ser{\'a} denotado $(A,+,\cdot)$, para indicar claramente as opera{\c c}{\~o}es bin{\'a}rias em $A$.
+
+\begin{exemplo}
+	Em
+	\[
+		M_{2}(\real) = \left\{\left[\begin{array}{cc}
+		a & b\\
+		c & d
+		\end{array}\right]\mid a, b, c, d \in \real\right\}
+	\]
+	defina a soma como a soma usual de matrizes e defina o produto do seguinte modo: dados $A$, $B\in M_{2}(\real)$
+	\[
+		[A, B] = AB - BA,
+	\]
+	onde $AB$ denota o produto usual de matrizes. Verifique que $M_{2}(\real)$ com a soma usual de matrizes e produto $[,]$ {\'e} um anel, mas n{\~a}o {\'e} associativo.
+	\begin{solucao}
+		De fato,
+		\begin{enumerate}
+		\item $A\in M_{2}(\mathbb{R})$, existe $0_{2}\in M_{2}(\mathbb{R})$ tal que $A+0_{2}=0_{2}+A$. A saber:\\
+		\[0_{2}=\left[\begin{array}{cc}
+		0 & 0\\
+		0 & 0
+		\end{array}\right]\]
+		
+		\item Para todo $A\in M_{2}(\mathbb{R})$ existe $B\in M_{2}(\mathbb{R})$ tal que $A+B=B+A=0_{2}$. A saber:\\
+		\[B=\left[\begin{array}{cc}
+	     -a & -b\\
+	    -c & -d
+		\end{array}\right]\]
+		
+		\item $(A+B)+C=A+(B+C)$ pois em $\mathbb{R}$ vale a associatividade
+		
+		\item $A+B=B+A$, pois em $\mathbb{R}$ a soma {\'e} comutativa
+		
+		\item $[(A+B),C]=(A+B)C-C(A+B)$\\
+		$=AC+BC-CA-CB=AC-CA+BC-CB=[A,C]+[B,C]$
+		
+		\item $[A,B]=AB-BA, [B,A]=BA-AB \Rightarrow [A,B]=-[B,A]$
+\end{enumerate}
+	\end{solucao}
+\end{exemplo}
+
 
 \[[[A,B],C]\neq [A,[B,C]]\]
 
-Quando A, munido de duas opera{\c c}{\~o}es "+" e "." {\'e} um anel, ele ser{\'a} denotado (A,+,.), para indicar claramente as opera{\c c}{\~o}es bin{\'a}rias em A.
 
-No exemplo anterior:\\
-$(M_{2}(\mathbb{R};+;[,])$ {\'e} anel pois
 
-\[\underbrace{\left[\begin{array}{cc}
-a & b\\
-c & d
-\end{array}\right]}_{A},\left[\begin{array}{cc}
-x & y\\
-z & t
-\end{array}\right]\in M_{2}(\mathbb{R})\]
-\[\left[\begin{array}{cc}
-a & b\\
-c & d
-\end{array}\right]+\left[\begin{array}{cc}
-x & y\\
-z & t
-\end{array}\right]=\left[\begin{array}{cc}
-a+x & b+y\\
-c+z & d+t
-\end{array}\right]\]
-\begin{enumerate}
-\item $A\in M_{2}(\mathbb{R})$, existe $0_{2}\in M_{2}(\mathbb{R})$ tal que $A+0_{2}=0_{2}+A$. A saber:\\
-\[0_{2}=\left[\begin{array}{cc}
-0 & 0\\
-0 & 0
-\end{array}\right]\]
-\item Para todo $A\in M_{2}(\mathbb{R})$ existe $B\in M_{2}(\mathbb{R})$ tal que $A+B=B+A=0_{2}$. A saber:\\
-\[B=\left[\begin{array}{cc}
--a & -b\\
--c & -d
-\end{array}\right]\]
-\item $(A+B)+C=A+(B+C)$ pois em $\mathbb{R}$ vale a associatividade
-\item $A+B=B+A$, pois em $\mathbb{R}$ a soma {\'e} comutativa
-\item $[(A+B),C]=(A+B)C-C(A+B)$\\
-$=AC+BC-CA-CB=AC-CA+BC-CB=[A,C]+[B,C]$
-\item $[A,B]=AB-BA, [B,A]=BA-AB \Rightarrow [A,B]=-[B,A]$
-\end{enumerate}
+
 
 Exemplos:
 \begin{enumerate}
