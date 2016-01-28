@@ -46,8 +46,8 @@ Admitiremos tamb{\'e}m a rela{\c c}{\~a}o ``menor ou igual'', em $\Z$, denotada 
 
 Para a rela{\c c}{\~a}o ``menor'', cujo s{\'\i}mbolo {\'e} ``$<$'', vale:
 \begin{enumerate}
-\item Se $a> 0$ e $b > 0$, então $ab > 0$.
-\item Se $a > 0$ e $b<0$, então $ab<0$.
+\item Se $a> 0$ e $b > 0$, ent\~ao $ab > 0$.
+\item Se $a > 0$ e $b<0$, ent\~ao $ab<0$.
 \end{enumerate}
 
 \section{Princ{\'\i}pio da boa ordena{\c c}{\~a}o}
@@ -107,7 +107,7 @@ Dado $a \in \Z$, suponhamos que para cada $n\geq a$ esteja associada uma proposi
 				1+2+...+r+(r+1) &= \dfrac{r(r+1)}{2}+(r+1) = \dfrac{r(r+1)+2(r+1)}{2}\\ 
 				&= \frac{(r+2)(r+1)}{2}.
 			\end{align*}
-			Portanto, pelo princ{\'\i}pio da indu{\c c}{\~a}o finita a afirmação está provada.
+			Portanto, pelo princ{\'\i}pio da indu{\c c}{\~a}o finita a afirma\c{c}\~ao est\'a provada.
 		\end{solucao}
 
 		\item Prove que $(1 + p)^n \ge 1 + np$ para todo $n \in \n$ e $p \ge 0$.
@@ -116,7 +116,7 @@ Dado $a \in \Z$, suponhamos que para cada $n\geq a$ esteja associada uma proposi
 			\[
 				(1 + p)^1 \ge 1 + p.
 			\]
-			Suponha então que para $n = k$ temos
+			Suponha ent\~ao que para $n = k$ temos
 			\[
 				(1 + p)^k \ge 1 + kp.
 			\]
@@ -124,7 +124,7 @@ Dado $a \in \Z$, suponhamos que para cada $n\geq a$ esteja associada uma proposi
 			\begin{align*}
 				(1 + p)^{k + 1} &= (1 + p)^r(1 + p) \ge (1 + rp)(1 + p) \\ &= 1 + p + rp + rp^2 \\ &\ge 1 + (r + 1)p.
 			\end{align*}
-			Logo pelo Princípio da Indução finita a afirmação é verdadeira.
+			Logo pelo Princ{\'\i}pio da Indu\c{c}\~ao finita a afirma\c{c}\~ao \'e verdadeira.
 		\end{solucao}
 	\end{enumerate}
 \end{exemplos}
@@ -191,11 +191,11 @@ Logo $a|(bx+cy)$
 
 \textbf{Demonstra{\c c}{\~a}o}: Vamos mostrar primeiro a exist{\^e}ncia de $q$ e $r$.
 
-Seja $M = \{m \in \Z \mid m = a - bt, t \in \Z\}$. Temos $M \ne \emptyset$ pois $a \in M$. Seja $M^+ = \{x \in M \mid x \ge 0\}$. Por definição $M^{+}$ {\'e} limitado inferiormente. Além disso, como $t \in \Z$ e $M^+ \subseteq M$ então $M^+ \ne \emptyset$. Logo, pelo princ{\'\i}pio da boa ordena{\c c}{\~a}o, existe $r \in M^{+}$ tal que $r\leq x$, para todo $x \in M^{+}$. Como $r\in M^{+}\subseteq M$, existe $q\in\mathbb{Z}$ tal que $r = a+bq$. Portanto, $a = bq+r$, $q \in \Z$, com $r \ge 0$.
+Seja $M = \{m \in \Z \mid m = a - bt, t \in \Z\}$. Temos $M \ne \emptyset$ pois $a \in M$. Seja $M^+ = \{x \in M \mid x \ge 0\}$. Por defini\c{c}\~ao $M^{+}$ {\'e} limitado inferiormente. Al\'em disso, como $t \in \Z$ e $M^+ \subseteq M$ ent\~ao $M^+ \ne \emptyset$. Logo, pelo princ{\'\i}pio da boa ordena{\c c}{\~a}o, existe $r \in M^{+}$ tal que $r\leq x$, para todo $x \in M^{+}$. Como $r\in M^{+}\subseteq M$, existe $q\in\mathbb{Z}$ tal que $r = a+bq$. Portanto, $a = bq+r$, $q \in \Z$, com $r \ge 0$.
 
-Precisamos provar que $r < b$. Para isso, suponha ent{\~a}o que $r \geq b$. Logo $r = a-bq \geq b$, ou seja, $a - bq - b\geq 0$. Isto é, $a - b(q+1) \geq 0$ e desse modo, $a - b(q+1) \in M^{+}$.
+Precisamos provar que $r < b$. Para isso, suponha ent{\~a}o que $r \geq b$. Logo $r = a-bq \geq b$, ou seja, $a - bq - b\geq 0$. Isto \'e, $a - b(q+1) \geq 0$ e desse modo, $a - b(q+1) \in M^{+}$.
 
-Agora, como $b > 0$ então $bq + b > bq$. Daí $b(q+1) > bq$. Logo $-b(q+1) < -bq$. Finalmente, $a - b(q + 1) < a - bq = r$, o que {\'e} uma contradi{\c c}{\~a}o, pois $r$ {\'e} o m{\'\i}nimo de $M^+$. Logo, $r < b$, ou seja, $a = bq + r$, $q$, $r \in \Z$ com $0 \leq r < b$.
+Agora, como $b > 0$ ent\~ao $bq + b > bq$. Da{\'\i} $b(q+1) > bq$. Logo $-b(q+1) < -bq$. Finalmente, $a - b(q + 1) < a - bq = r$, o que {\'e} uma contradi{\c c}{\~a}o, pois $r$ {\'e} o m{\'\i}nimo de $M^+$. Logo, $r < b$, ou seja, $a = bq + r$, $q$, $r \in \Z$ com $0 \leq r < b$.
 
 Falta provar a unicidade de $q$ e $r$. Assim, suponha que existam $q_1$, $q_2$, $r_1$, $r_2 \in \Z$, com $0 \leq r_1 < b$, $0 \leq r_2 < b$, tais que:
 \[
@@ -258,7 +258,7 @@ Portanto, $d=mdc(a,b)$.\#
 
 Observa{\c c}{\~a}o:
 \begin{enumerate}
-\item Se $d=mdc(a,b)$, ent{\~a}o $d=ax_{0}+by_{0}$, onde $x_{0},y_{0}\in\mathbb{Z}$. Os elementos $x_{0}$ e $y_{0}$ satisfazem que tal igualdade n{\~a}o são {\'u}nicos.
+\item Se $d=mdc(a,b)$, ent{\~a}o $d=ax_{0}+by_{0}$, onde $x_{0},y_{0}\in\mathbb{Z}$. Os elementos $x_{0}$ e $y_{0}$ satisfazem que tal igualdade n{\~a}o s\~ao {\'u}nicos.
 \item Uma igualdade do tipo $d=ax_{0}+by_{0}$ {\'e} chamada de \textbf{Identidade de Bezout}.
 
 Exemplos:
@@ -289,7 +289,7 @@ Um subconjunto n{\~a}o vazio $S \subseteq\Z$ {\'e} chamado de um \textbf{ideal} 
 \end{definicao}
 
 \subsubsection{Propriedades}
-Seja S um ideal de $\mathbb{Z}$. Então:
+Seja S um ideal de $\mathbb{Z}$. Ent\~ao:
 \begin{enumerate}
 \item $r_1 - r_2\in S$, para todos $r_1$, $r_2 \in S$, pois $r_1 - r_2 = r_1 + (-r_2)$.
 \item $0 \in S$, pois $0 = r - r$, para qualquer $r\in S$.
