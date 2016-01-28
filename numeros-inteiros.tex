@@ -109,6 +109,23 @@ Dado $a \in \Z$, suponhamos que para cada $n\geq a$ esteja associada uma proposi
 			\end{align*}
 			Portanto, pelo princ{\'\i}pio da indu{\c c}{\~a}o finita a afirmação está provada.
 		\end{solucao}
+
+		\item Prove que $(1 + p)^n \ge 1 + np$ para todo $n \in \n$ e $p \ge 0$.
+		\begin{solucao}
+			Para $n = 1$ temos
+			\[
+				(1 + p)^1 \ge 1 + p.
+			\]
+			Suponha então que para $n = k$ temos
+			\[
+				(1 + p)^k \ge 1 + kp.
+			\]
+			Para $n = k + 1$ temos
+			\begin{align*}
+				(1 + p)^{k + 1} &= (1 + p)^r(1 + p) \ge (1 + rp)(1 + p) \\ &= 1 + p + rp + rp^2 \\ &\ge 1 + (r + 1)p.
+			\end{align*}
+			Logo pelo Princípio da Indução finita a afirmação é verdadeira.
+		\end{solucao}
 	\end{enumerate}
 \end{exemplos}
 
