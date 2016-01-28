@@ -86,20 +86,34 @@ Dado $a \in \Z$, suponhamos que para cada $n\geq a$ esteja associada uma proposi
 \end{enumerate}
 \end{teorema}
 
-Exemplo:\\
+\begin{exemplos}
+	\begin{enumerate}
+		\item Mostre que para todo $n \in \n$ vale
+		\[
+			1+2+3+...+n = \frac{n(n+1)}{2}.
+		\]
+		\begin{solucao}
+			Para $n=1$, temos
+			\[
+				1=\displaystyle\frac{1(1+1)}{2}.
+			\]
 
-Mostre que $\forall n\in\mathbb{N}$ vale \[1+2+3+...+n=\displaystyle\frac{n(n+1)}{2}\]
+			Agora, suponha que para $r\geq 1$, temos
+			\[
+				\underbrace{1+2+...+r = \frac{r(r+1)}{2}}_{H.I}.
+			\]
+			Assim, para $r+1$ usando a Hip{\'o}tese de Indu{\c c}{\~a}o, obtemos
+			\begin{align*}
+				1+2+...+r+(r+1) &= \dfrac{r(r+1)}{2}+(r+1) = \dfrac{r(r+1)+2(r+1)}{2}\\ 
+				&= \frac{(r+2)(r+1)}{2}.
+			\end{align*}
+			Portanto, pelo princ{\'\i}pio da indu{\c c}{\~a}o finita a afirmação está provada.
+		\end{solucao}
+	\end{enumerate}
+\end{exemplos}
 
-Para $n=1$, temos
-\[1=\displaystyle\frac{1(1+1)}{2}\]
 
-Agora, suponha que para $r\geq 1$, temos \[\underbrace{1+2+...+r=\displaystyle\frac{r(r+1)}{2}}_{H.I}\]
 
-Assim, para $r+1$ temos \[1+2+3+...+r+(r+1)\]
-
-Pela Hip{\'o}tese de Indu{\c c}{\~a}o, temos \[1+2+...+r+(r+1)=\displaystyle\frac{r(r+1)}{2}+(r+1)=\displaystyle\frac{r(r+1)+2(r+1)}{2}\] \[=\displaystyle\frac{(r+2)(r+1)}{2}\]
-
-Portanto, pelo princ{\'\i}pio da indu{\c c}{\~a}o finita \[1+2+...+n=\displaystyle\frac{n(n+1)}{2}\]
 
 \begin{teorema}
 Dado $a\in\mathbb{Z}$, suponhamos que cada inteiro $n\geq a$ esteja associado uma proposi{\c c}{\~a}o $P(n)$. Ent{\~a}o $P(n)$ ser{\'a} verdadeira $\forall n\geq a$ desde que seja poss{\'\i}vel provar que:
