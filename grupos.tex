@@ -5,6 +5,13 @@
 \chapter{Grupos}
 
 \section{Defini{\c c}{\~a}o}
+
+\begin{definicao}
+   Seja $A$ um conjunto não vazio. Toda função $f : A \times A \to A$ é chamada de uma \textbf{operação binária} sobre $A$.
+\end{definicao}
+
+Nas considerações que faremos a seguir uma opereção binária $f$ sobre $A$ associa a cada par ordenado $(x, y) \in A \times A$ um elemento $f(x, y) \in A$ será denotada simplesmente por $*$. Assim escreveremos $f(x, y) = x*y$. Por exemplo a operação $* : \n \times \n \to \n$ tal que $x*y = x^y$ está bem definida pois $x^y \in \n$ sempre que $x$, $y \in \n$. Observe que esta operação não pode ser definida em $\Z$ pois por exemplo $2^{-1} \notin \Z$. Também não pode ser definida em $\rac$ pois $2^{1/2} \notin \rac$.
+
 \begin{definicao}[Grupo] Um grupo $G$ {\'e} um conjunto n{\~a}o vazio munido de uma opera{\c c}{\~a}o bin{\'a}ria $*$ tal que:
 \begin{enumerate}
 \item Para todo $x$, $y$, $z\in G$ temos $(x*y)*z=x*(y*z)$. (Associatividade)
