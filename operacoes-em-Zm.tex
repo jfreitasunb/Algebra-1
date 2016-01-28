@@ -68,7 +68,7 @@ $R_{m}(n)=\{x\in\mathbb{Z}/x=n+km, k\in\mathbb{Z}\}$
 
 \begin{proposicao} As classes de equival{\^e}ncia definidas pela congru{\^e}ncia m{\'o}dulo $m$ s{\~a}o determinadas pelos restos da divis{\~a}o euclidiana por $m$. Em outras palavras, $R_{m}(n)$ {\'e} o conjunto dos n{\'u}meros inteiros cujo resto na divis{\~a}o euclidiana por $m$ {\'e} $n$.\end{proposicao}
 
-\textbf{Demonstra{\c c}{\~a}o}: Dado $x\in\mathbb{Z}$, pela divis{\~a}o de Euclides, podemos escrever $x=km+r$ onde $0\leq r\leq m$. Da{\'\i}, $x-r=km$, isto {\'e}, $m|(x-r)$. Logo $x\in R_{m}(r)$. Portanto, se $r=n$, ent{\~a}o $x\in R_{m}(n)$ e neste caso, $x=km+n=n+km$, ou seja, o resto da divis{\~a}o euclidiana de $x$ por $m$ {\'e} $n$.\#  
+\textbf{Demonstra{\c c}{\~a}o}: Dado $x\in\mathbb{Z}$, pela divis{\~a}o de Euclides, podemos escrever $x=km+r$ onde $0\leq r < m$. Da{\'\i}, $x-r=km$, isto {\'e}, $m|(x-r)$. Logo $x\in R_{m}(r)$. Portanto, se $r=n$, ent{\~a}o $x\in R_{m}(n)$ e neste caso, $x=km+n=n+km$, ou seja, o resto da divis{\~a}o euclidiana de $x$ por $m$ {\'e} $n$.\#  
 
 \begin{corolario} $R_{m}(k)=R_{m}(l)$ se, e somente se, $k\equiv l(mod\ m)$.\end{corolario}
 
@@ -121,7 +121,7 @@ Para $\bar{a},\bar{b}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$
 
 \begin{proposicao} As opera{\c c}{\~o}es de soma e produto definidas em (5.1) e (5.2) s{\~a}o independentes dos representantes das classes.\end{proposicao}
 
-\textbf{Demonstra{\c c}{\~a}o}: Dadas duas classes com representantes diferentes, $\bar{a}_{1}=\bar{a}_{2},\  \bar{b}_{1}=\bar{b}_{2}, a_{1}\neq a_{2}, b_{1}=b_{2}$, temos:\\
+\textbf{Demonstra{\c c}{\~a}o}: Dadas duas classes com representantes diferentes, $\bar{a}_{1}=\bar{a}_{2},\  \bar{b}_{1}=\bar{b}_{2}, a_{1}\ne a_{2}, b_{1}\ne b_{2}$, temos:\\
 \[\overline{a_{1}+b_{1}}=\bar{a}_{1}\oplus\bar{b}_{1}=\bar{a}_{2}\oplus\bar{b}_{2}=\overline{a_{2}+b_{2}}\]\\
 \[\overline{a_{1}b_{1}}=\bar{a}_{1}\odot\bar{b}_{1}=\bar{a}_{2}\odot\bar{b}_{2}=\overline{a_{2}b_{2}}\]\\
 
