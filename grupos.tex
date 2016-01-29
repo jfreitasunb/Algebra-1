@@ -257,6 +257,32 @@ para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a pa
 	\end{enumerate}
 \end{exemplos}
 
+\begin{proposicao}
+	Sejam $f : G \to H$ um homomorfismo de grupos. Então:
+	\begin{enumerate}
+		\item $\ker(f)$ é um subgrupo de $G$.
+		\item $f$ é um monomorfismo se, e somente se, $\ker(f) = \{1_G\}$.
+	\end{enumerate}
+\end{proposicao}
+\begin{prova}
+	\begin{enumerate}
+		\item Como $f(1_G) = 1_H$, então $1_G \in \ker(f)$ e com isso $\ker(f) \ne \emptyset$. Se $x \in \ker(f)$, então $f(x^{-1}) = [f(x)]^{-1} = 1_H^{-1} = 1_H$ e daí $x^{-1} \in \ker(f)$. Finalmente se $x$, $y \in \ker(f)$, então $f(x*y) = f(x)\triangle f(y) = 1_H \triangle 1_H = 1_H$, ou seja, $x * y \in \ker(f)$.
+
+		Portanto $\ker(f)$ é um subgrupo de $G$.
+
+		\item Suponha que $f$ é um monomorfismo de grupos. Tome $x \in \ker(f)$. Temos $f(x) = 1_H = f(1_G)$ e como $f$ é injetora $x = 1_G$. Logo $\ker(f) = \{1_G\}$.
+
+		Agora suponha que $\ker(f) = \{1_G\}$. Sejam $x$, $y \in G$ tais que
+		\begin{align*}
+			f(x) &= f(y)\\
+			f(x)\triangle f(y)^{-1} & = 1_H\\
+			f(x)\triangle f(y^{-1}) &= 1_H\\
+			f(x * y^{-1}) &= 1_H
+		\end{align*}
+		e daí $x*y^{-1} \in \ker(f) = \{1_G\}$. Logo $x*y^{-1} = 1_G$, isto é, $x = y$. Portanto $f$ é injetora.
+	\end{enumerate}
+\end{prova}
+
 
 
 
