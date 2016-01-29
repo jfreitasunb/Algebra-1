@@ -202,9 +202,34 @@ para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a pa
 	\end{enumerate}
 \end{exemplos}
 
+\begin{proposicao}
+	Sejam $(G, *)$ e $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo. Denote por $1_G$ e $1_H$ os elementos neutros de $G$ e $H$, respectivamente.
+	\begin{enumerate}
+		\item $f(1_G) = 1_H$
+		\item $f(x^{-1}) = (f(x))^{-1}$ para todo $x \in G$.
+	\end{enumerate}
+\end{proposicao}
 
+\begin{proposicao}
+	Sejam $I$ é um subgrupo de $G$ e $f : G \to H$ um homomorfismo de grupos. Então $f(I)$ é um subgrupo de $H$.
+\end{proposicao}
+\begin{prova}
+	Como $I$ é um subgrupo de $G$, então $1_G \in G$. Agora $f$ é um homomorfismo, logo $f(1_G) = 1_H \in f(I)$ e assim $f(I) \ne \emptyset$.
 
+	Agora, dado $y \in f(I)$ precisamos mostrar que $y^{-1} \in f(I)$. Mas se $y \in f(I)$, então $y = f(x)$ com $x \in I$. Daí
+	\[
+		y^{-1} = [f(x)]^{-1} = f(x^{-1})
+	\]
+	e como $I$ é um subgrupo de $G$, $x^{-1} \in I$ e como isso $y^{-1} \in f(I)$.
 
+	Finalmente, dados $y$, $z \in f(I)$ existem $x_1$, $x_2 \in I$ tais que $y = f(x_1)$ e $z = f(x_2)$. Mas $f$ é homomorfismo, daí
+	\[
+		y\triangle z = f(x_1)\triangle f(x_2) = f(x_1*x_2)
+	\]
+	e como $I$ é subgrupo, $x_1*x_2 \in I$. Logo $y\triangle z \in f(I)$.
+
+	Portanto $f(I)$ é um subgrupo de $H$.
+\end{prova}
 
 
 
