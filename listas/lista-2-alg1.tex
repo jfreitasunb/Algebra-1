@@ -28,7 +28,7 @@
 \newcommand{\bic}{\leftrightarrow}
 \newcommand{\cond}{\rightarrow}
 \newcommand{\impl}{\Rightarrow}
-\newcommand{\nao}{\sim}
+%\newcommand{\nao}{\sim}
 \newcommand{\sub}{\subseteq}
 \newcommand{\e}{\ \wedge\ }
 \newcommand{\ou}{\ \vee\ }
@@ -116,7 +116,7 @@
 % \questao Em $\n \times \n$ defina $(a, b) \le (c, d)$ se, e somente se, $a \mid c$ e $b \le d$. Mostre que $\le$ \'e uma rela\c{c}\~ao de ordem parcial em $\n \times \n$.
 
 \questao Para $a$, $b \in \real$ defina $aRb$ quando $ab = 0$. Prove ou d\^e um contra-exemplo a cada uma das seguintes afirma\c{c}\~oes:
-\begin{enumerate}
+\begin{enumerate}[label={\alph*})]
   \item A rela\c{c}\~ao $R$ satisfaz a propriedade reflexiva.
   \item A rela\c{c}\~ao $R$ satisfaz a propriedade sim\'etrica.
   \item A rela\c{c}\~ao $R$ satisfaz a propriedade transitiva.
@@ -125,7 +125,7 @@
 \vesp
 
 \questao Para $a$, $b \in \real$ defina $aRb$ quando $ab \ne 0$. Prove ou d\^e um contra-exemplo a cada uma das seguintes afirma\c{c}\~oes:
-\begin{enumerate}
+\begin{enumerate}[label={\alph*})]
   \item A rela\c{c}\~ao $R$ satisfaz a propriedade reflexiva.
   \item A rela\c{c}\~ao $R$ satisfaz a propriedade sim\'etrica.
   \item A rela\c{c}\~ao $R$ satisfaz a propriedade transitiva.
@@ -134,7 +134,7 @@
 \vesp
 
 \questao Para $a$, $b \in \real$ defina $aRb$ quando $\mid a - b \mid < 5$. Prove ou d\^e um contra-exemplo a cada uma das seguintes afirma\c{c}\~oes:
-\begin{enumerate}
+\begin{enumerate}[label={\alph*})]
   \item A rela\c{c}\~ao $R$ satisfaz a propriedade reflexiva.
   \item A rela\c{c}\~ao $R$ satisfaz a propriedade sim\'etrica.
   \item A rela\c{c}\~ao $R$ satisfaz a propriedade transitiva.
@@ -193,7 +193,7 @@ Mostre que $R$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia sobre $A$.
 \vesp
 
 \questao Defina a fun\c{c}\~ao $f : \real \to \real$ por $f(x) = x^2 + 1$. Para $a$, $b \in \real$ defina $aRb$ quando $f(a) = f(b)$.
-\begin{enumerate}
+\begin{enumerate}[label={\alph*})]
   \item Prove que $R$ \'e uma rela\c{c}\~ao de equival\^encia em $\real$.
   \item Liste todos os elementos no conjunto $\{x \in \real \mid xR3\}$.
   \item A rela\c{c}\~ao $R$ satisfaz a propriedade transitiva.
@@ -202,7 +202,7 @@ Mostre que $R$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia sobre $A$.
 \vesp
 
 \questao Para pontos $(a, b)$, $(c, d) \in \real^e$ defina $(a, b) \sim (c, d)$ quando $a^2 + b^2 = c^2 + d^2$.
-\begin{enumerate}
+\begin{enumerate}[label={\alph*})]
   \item Prove que $\sim$ \'e uma rela\c{c}\~ao de equival\^encia em $\real^2$.
   \item Liste todos os elementos no conjunto $\{(x, y) \in \real \mid (x, y) \sim (0, 0)\}$.
   \item Liste cinco elementos distintos no conjunto $\{(x, y) \in \real \mid (x, y) \sim (1, 0)\}$.
@@ -212,7 +212,7 @@ Mostre que $R$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia sobre $A$.
 $\mathbb{Z}^*=\mathbb{Z}\setminus \{0\}$. Para $(a,b), (c,d) \in
 A$, considere a seguinte rela{\c c}{\~a}o
 \[
-(a,b)R (c,d) \Leftrightarrow ad=bc.
+(a,b)R (c,d) \mbox{ quando } ad=bc.
 \]
 \begin{enumerate}[label={\alph*})]
 \item Mostre que $R$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia sobre $A$.
@@ -223,7 +223,7 @@ A$, considere a seguinte rela{\c c}{\~a}o
 
 \questao Considere a seguinte rela{\c c}{\~a}o sobre $\mathbb{C}$:
 \[
-(x+yi)R(r+si) \Leftrightarrow x^2+y^2=r^2+s^2.
+(x+yi)R(r+si) \mbox{ quando } x^2+y^2=r^2+s^2.
 \]
 \begin{enumerate}[label={\alph*})]
 \item Mostre que $R$ {\'e} rela{\c c}{\~a}o de equival{\^e}ncia.
@@ -235,7 +235,7 @@ A$, considere a seguinte rela{\c c}{\~a}o
 \questao Seja $R$ uma rela{\c c}{\~a}o sobre $\q$
 definida da seguinte forma:
 \[
-xRy \Leftrightarrow x-y \in \mathbb{Z}.
+xRy \mbox{ quando } x-y \in \mathbb{Z}.
 \]
 \begin{enumerate}[label={\alph*})]
 \item Prove que $R$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia sobre $\q$.
@@ -252,7 +252,7 @@ se, $x \mid y$) {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia sobre $\z$?
 
 \questao Seja $R$ a seguinte rela{\c c}{\~a}o sobre $\z^*$:
 \[
-xRy \Leftrightarrow x\mid y \mbox{ e } y\mid x.
+xRy \mbox{ quando } x\mid y \mbox{ e } y\mid x.
 \]
 Mostre que $R$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia sobre $\z^*$ e
 descreva o conjunto quociente $\z^*/R$.
