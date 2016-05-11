@@ -34,25 +34,31 @@ Exemplos:
 \item $(\rac^*,\cdot)$ {\'e} um grupo abeliano.
 \item $(\real,+)$ {\'e} um grupo abeliano.
 \item $(\real^*,\cdot)$ {\'e} um grupo abeliano.
-\item $(\complex,+)$ {\'e} um grupo abeliano.
-\item $(\complex^*,\cdot)$ {\'e} um grupo abeliano.
 \item Considere o conjunto dos n{\'u}meros reais $\mathbb{R}$ com a opera{\c c}{\~a}o $*$ definida por \[x*y=x+y-3\], $x,y\in\mathbb{R}$. Ent{\~a}o $(\mathbb{R},*)$ {\'e} um grupo abeliano.
+\begin{solucao}
+	De fato,
 
-De fato,
+	\begin{align*}
+		(x*y)*z &= (x+y-3)*z = (x+y-3)+z-3\\
+		&= x+(y-3+z)-3 = x+(y+z-3)-3 = x*(y+z-3)\\
+		&= x*(y*z)
+	\end{align*}
+	para todo $x,y,z\in \mathbb{R}$.
 
-\begin{align*}
-(x*y)*z &= (x+y-3)*z = (x+y-3)+z-3\\
-&= x+(y-3+z)-3 = x+(y+z-3)-3 = x*(y+z-3)\\
-&= x*(y*z)
-\end{align*}
-para todo $x,y,z\in \mathbb{R}$.
-\item $x*y=x+y-3=y+x-3=y*x$ para todo $x,y\in\mathbb{R}$. Logo, $*$ {\'e} comutativa
-\item Para todo $x\in\mathbb{R}$, temos $x*3=x+3-3=x$. Logo, 3 {\'e} o elemento neutro de $*$.
-\item Dado $x\in\mathbb{R}$, tome $x^{-1}=6-x$. Assim \[x*x^{-1}=x+(6-x)-3=3\]
+	Agora,
+	\[
+		x*y=x+y-3=y+x-3=y*x
+	\]
+	para todo $x,y\in\mathbb{R}$. Logo, $*$ {\'e} comutativa.
 
-Logo, para $x\in\mathbb{R}$ o inverso de $x$ por $*$ {\'e} $6-x$.
+	Para todo $x\in\mathbb{R}$, temos $x*3=x+3-3=x$. Logo, 3 {\'e} o elemento neutro de $*$.
 
-Portanto $(\mathbb{R}, *)$ {\'e} um grupo comutativo.
+	Dado $x\in\mathbb{R}$, tome $x^{-1}=6-x$. Assim \[x*x^{-1}=x+(6-x)-3=3\]
+
+	Logo, para $x\in\mathbb{R}$ o inverso de $x$ por $*$ {\'e} $6-x$.
+
+	Portanto $(\mathbb{R}, *)$ {\'e} um grupo comutativo.
+\end{solucao}
 
 \item $\left(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}},\oplus\right)$ {\'e} grupo.
 \item $\left(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}-\{\bar{0}\},\odot\right)$ {\'e} grupo?\\
