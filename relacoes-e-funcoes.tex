@@ -25,9 +25,9 @@ $R=\{(x,y)\in \mathbb{R}$x$\mathbb{R}/ y\geq 0\}$
 \subsubsection{Defini{\c c}{\~a}o}
 \begin{definicao}[Rela{\c c}{\~a}o de equival{\^e}ncia] Seja X um conjunto n{\~a}o vazio e $R\subseteq X \times X$ uma rela{\c c}{\~a}o. Dizemos que R {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia se:
 \begin{enumerate}
-\item $\forall a \in X,(a,a)\in R$ (Reflexidade)
-\item $(a,b)\in R \rightarrow (b,a)\in R$ (Simetria)
-\item $(a,b) \in R \wedge (b,c) \in R \rightarrow (a,c)\in R$ (Transitividade)
+\item[Reflexidade] Para todo $a \in X$, $(a,a)\in R$.
+\item[Simetria] Se $(a, b) \in R$, então $(b, a) \in R$.
+\item[Transitividade] Se $(a, b) \in R$ e $(b, c) \in R$, então $(a, c)\in R$.
 \end{enumerate}
 \end{definicao}
 
@@ -35,16 +35,18 @@ Quando $R\subseteq X$x$X$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia, dizemo
 
 \subsection{Equival{\^e}ncia m{\'o}dulo R}
 
-\begin{nota}[Equival{\^e}ncia m{\'o}dulo R] Seja R uma rela{\c c}{\~a}o de equival{\^e}ncia em X. Para exprimirmos que $(a,b)\in R$ usaremos a nota{\c c}{\~a}o $a\equiv b(R)$, que se l{\^e} ``a equivalente a B m{\'o}dulo R", ou ainda a nota{\c c}{\~a}o aRb, com o mesmo significado anterior.\end{nota}
+\begin{nota}[Equival{\^e}ncia m{\'o}dulo R]
+Seja R uma rela{\c c}{\~a}o de equival{\^e}ncia em X. Para dizermos que $(a,b)\in R$ usaremos a nota{\c c}{\~a}o $a\equiv b(R)$, que se l{\^e} ``a é equivalente a b m{\'o}dulo R", ou ainda a nota{\c c}{\~a}o $aRb$, com o mesmo significado anterior.
+\end{nota}
 
 Exemplos:
 \begin{enumerate}
-\item Seja X=\{1,2,3\}. Temos XxX=\{(1,1),(1,2),(1,3),(2,1),(2,2),(2,3),(3,1),(3,2),(3,3)\}\\
+\item Seja X=\{1,2,3\}. Temos $X\times X=\{(1,1),(1,2),(1,3),(2,1),(2,2),(2,3),(3,1),(3,2),(3,3)\}$.
 S{\~a}o exemplos de rela{\c c}{\~o}es de equival{\^e}ncia:\\
-$R_{1}=X$x$X$\\
+$R_{1}=X\times X$\\
 $R_{2}=\{(1,1),(2,2),(3,3)\}$\\
 $R_{3}=\{(1,1),(2,2),(3,3),(1,2),(2,1)\}$
-\item Seja $X=\mathbb{Z}$ e $R\in \mathbb{Z}$x$\mathbb{Z}$ definida por $R=\{(x,y)\in \mathbb{Z}$x$\mathbb{Z} /x=y\}$\\
+\item Seja $X=\mathbb{Z}$ e $R\subseteq \mathbb{Z}\times \mathbb{Z}$ definida por $R=\{(x,y)\in \mathbb{Z} \times \mathbb{Z} \mid x=y\}$
 R {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia pois:
 \begin{itemize}
 \item $\forall a \in \mathbb{Z}, (a,a) \in R$ pois a=a
@@ -64,7 +66,9 @@ R {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia pois:
 \subsection{Classe de equival{\^e}ncia e conjunto quociente}
 \begin{definicao}[Classe de Equival{\^e}ncia] Seja R uma rela{\c c}{\~a}o de equival{\^e}ncia sobre um conjunto X. Dado $a\in X$, chamamos classe de equival{\^e}ncia determinada por a m{\'o}dulo R, denotada por $\bar{a}$ ou C(a), o subconjunto constitu{\'\i}do pelos elementos $b\in X$ tais que bRa, ou seja, $\bar{a}=C(a)=\{a\in X/ bRa\}$\end{definicao}
 
-\begin{definicao}[Conjunto quociente] O subconjunto das classes de equival{\^e}ncia m{\'o}dulo R ser{\'a} denotado por x/R e {\'e} chamado conjunto quociente de X por R.\end{definicao}
+\begin{definicao}[Conjunto quociente]
+O conjunto das classes de equival{\^e}ncia m{\'o}dulo R ser{\'a} denotado por $X/R$ e {\'e} chamado conjunto quociente de X por R.
+\end{definicao}
 
 Observa{\c c}{\~a}o: Dado um conjunto $X\neq\emptyset$ e R uma rela{\c c}{\~a}o de equival{\^e}ncia em X, dado $a\in X$ como R {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia, aRa, da{\'\i} $\bar{a}\neq\emptyset$, pois $a\in\bar{a}$\\
 
@@ -199,7 +203,7 @@ $f(3)=7$
 Neste caso, $f^{-1}$ {\'e} dado por:\\
 $f^{-1}(5)=0$\\
 $f^{-1}(5)=1$\\
-$f^{-1}(6)=1$\\
+$f^{-1}(6)=2$\\
 $f^{-1}(7)=3$
 
 \begin{teorema} Dada $f:A\rightarrow B$ fun{\c c}{\~a}o tome $f^{-1}:B\rightarrow A$. Definida com o $f^{-1}(b)=a$ se $f(a)=b$. Ent{\~a}o $f^{-1}$ {\'e} uma fun{\c c}{\~a}o se, e somente se, $f$ {\'e} bijetora.\end{teorema}
@@ -242,63 +246,65 @@ Observa{\c c}{\~a}o: Se $f:A\rightarrow B$ e $g:B\rightarrow A$ ent{\~a}o existe
 \subsubsection{Defini{\c c}{\~a}o}
 \begin{definicao}[Fun{\c c}{\~a}o Identidade] Dado um conjunto $A\neq\emptyset$, a fun{\c c}{\~a}o $i_{A}:A\rightarrow A$ dada por $i_{A}(x)=(x)$ {\'e} chamada de fun{\c c}{\~a}o identidade.\end{definicao}
 
-\begin{proposicao} Se $f:E\rightarrow F$ {\'e} bijetora, ent{\~a}o $f\circ f^{-1}=i_{F}\wedge f^{-1}\circ f=i_{E}$\end{proposicao}
+\begin{proposicao}
+Se $f:A\rightarrow B$ {\'e} bijetora, ent{\~a}o $f\circ f^{-1}=i_{B}\wedge f^{-1}\circ f=i_{A}$.
+\end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}: Temos $i_{F}:F\rightarrow F$ e $i_{E}:E\rightarrow E$. Al{\'e}m disso, $f\circ f^{-1}:F\rightarrow F$ e $f^{-1}\circ f:E\rightarrow E$, da{\'\i} $D(f\circ f^{-1})=D(i_{F})$\footnote{$D(f(x))$ {\'e} o dom{\'\i}nio da fun{\c c}{\~a}o $f$} e $D(f^{-1}\circ f)=D(i_{E})$. Dado $x\in F, (f\circ f^{-1})(x)=f(f^{-1}(x))=x=i_{F}(x)$. Dado $x\in E, (f^{-1}\circ f)(x)=f^{-1}(f(x))=x=i_{E}(x)$.\#
 
 \subsubsection{Propriedades}
-\begin{proposicao} Se $f:E\rightarrow F$ e $g:F\rightarrow E$ s{\~a}o fun{\c c}{\~o}es, ent{\~a}o:
+\begin{proposicao} Se $f:A\rightarrow B$ e $g:B\rightarrow A$ s{\~a}o fun{\c c}{\~o}es, ent{\~a}o:
 \begin{enumerate}
-\item $f\circ i_{e}=f, i_{F}\circ f=f, g\circ i_{F}=g, i_{E}\circ g=g$
-\item Se $g\circ f=i_{E}$, e $f\circ g=i_{F}$, ent{\~a}o $f$ e $g$ s{\~a}o bijetoras e $g=f^{-1}$
+\item $f\circ i_{A}=f, i_{B}\circ f=f, g\circ i_{B}=g, i_{E}\circ g=g$
+\item Se $g\circ f=i_{A}$, e $f\circ g=i_{B}$, ent{\~a}o $f$ e $g$ s{\~a}o bijetoras e $g=f^{-1}$
 \end{enumerate}
 \end{proposicao}
 
 \textbf{Demonstra{\c c}{\~a}o}:
 \begin{enumerate}
-\item Provemos que $f\circ i_{E}=f$.\\
-Primeiro temos $f:E\rightarrow F$ e $i_{E}:E\rightarrow E$. Da{\'\i}, $f\circ i_{E}:E\rightarrow F$, ou seja, $D(f\circ i_{E})=D(f)$. Dado $x\in E$, temos $(f\circ i_{E})(x)=f(i_{E}(x))=f(x)$. Portanto, $f\circ i_{E}=f$
-\item Provemos q $f$ {\'e} bijetora.\\
-Dados $x_{1},x_{2}\in F/f(x_{1})=f(x_{2})$. Como $f:E\rightarrow F$ e $g:F\rightarrow E$, ent{\~a}o $g(f(x_{1}))=g(f(x_{2}))$, ou seja, $(g\circ f)(x_{1})=(g\circ f)(x_{2})$. Da{\'\i}, $i_{E}(x_{1})=i_{E}(x_{2})$. Logo, $x_{1}=x_{2}$, isto {\'e}, $f$ {\'e} injetora.
+\item Provemos que $f\circ i_{A}=f$.\\
+Primeiro temos $f:A\rightarrow B$ e $i_{A}:A\rightarrow A$. Da{\'\i}, $f\circ i_{A}:A\rightarrow B$, ou seja, $D(f\circ i_{A})=D(f)$. Dado $x\in A$, temos $(f\circ i_{A})(x)=f(i_{A}(x))=f(x)$. Portanto, $f\circ i_{A}=f$.
+\item Provemos que $f$ {\'e} bijetora.\\
+Dados $x_{1}$, $x_{2}\in B$ tais que $f(x_{1})=f(x_{2})$. Como $f:A\rightarrow B$ e $g:B\rightarrow A$, ent{\~a}o $g(f(x_{1}))=g(f(x_{2}))$, ou seja, $(g\circ f)(x_{1})=(g\circ f)(x_{2})$. Da{\'\i}, $i_{A}(x_{1})=i_{A}(x_{2})$. Logo, $x_{1}=x_{2}$, isto {\'e}, $f$ {\'e} injetora.
 
-Agora, dado $y\in F$, segue que $y=i_{F}(y)$. Mas $i_{F}=f\circ g$. Da{\'\i}, $y=i_{F}(y)=(f\circ g)(y)=f(g(y))$. Assim, $x=g(y)\in E$ e $f(x)=y$.
+Agora, dado $y\in B$, segue que $y=i_{B}(y)$. Mas $i_{B}=f\circ g$. Da{\'\i}, $y=i_{B}(y)=(f\circ g)(y)=f(g(y))$. Assim, $x=g(y)\in A$ e $f(x)=y$.
 
-Logo $f$ {\'e} sobrejetora. Portanto $f$ {\'e} bijetora. Analogamente, prova-se que g {\'e} bijetora. Provemos que $g=f^{-1}$. Temos  $f^{-1}:F\rightarrow E$, da{\'\i}, $D(y)=F=D(f^{-1})$. Agora, $f\circ g=i_{F}=f\circ f^{-1}$. Assim, para todo $x\in F, (f\circ g)(x)=(f\circ f^{-1})(x)$. Isto {\'e}, $f(g(x))=f(f^{-1}(x))$. Portanto, $g(x)=f^{-1}(x)\forall x\in F$. Logo, $g=f^{-1}$. \#
+Logo $f$ {\'e} sobrejetora. Portanto $f$ {\'e} bijetora. Analogamente, prova-se que g {\'e} bijetora. Provemos que $g=f^{-1}$. Temos  $f^{-1}:B\rightarrow A$, da{\'\i}, $D(g) = B = D(f^{-1})$. Agora, $f\circ g = i_{B} = f\circ f^{-1}$. Assim, para todo $x\in F$, $(f\circ g)(x)=(f\circ f^{-1})(x)$. Isto {\'e}, $f(g(x))=f(f^{-1}(x))$. Portanto, $g(x)=f^{-1}(x)\forall x\in B$. Logo, $g=f^{-1}$. \#
 \end{enumerate}
 
 \begin{definicao}
-Seja $f : E \to F$ uma fun{\c c}{\~a}o.
+Seja $f : A \to B$ uma fun{\c c}{\~a}o.
 \begin{enumerate}
-\item Dado $A \sub E$, chama-se {\rm imagem direta} de $A$, segundo $f$ e indica-se por $f(A)$ o subconjunto de $F$ dado por
+\item Dado $P \sub A$, chama-se {\rm imagem direta} de $P$, segundo $f$ e indica-se por $f(P)$ o subconjunto de $F$ dado por
 \[
-f(A) = \{f(x) \mid x \in A\},
+f(P) = \{f(x) \mid x \in P\},
 \]
-isto {\'e}, $f(A)$ {\'e} o conjunto das imagens por $f$ dos elementos de $A$.
+isto {\'e}, $f(P)$ {\'e} o conjunto das imagens por $f$ dos elementos de $P$.
 
-\item Dado $B \sub F$, chama-se {\rm imagem inversa} de $B$, segundo $f$ e indica-se por $f^{-1}(B)$ o subconjunto de $E$ dado por
+\item Dado $Q \sub B$, chama-se {\rm imagem inversa} de $Q$, segundo $f$ e indica-se por $f^{-1}(Q)$ o subconjunto de $A$ dado por
 \[
-f^{-1}(B) = \{x \in E \mid f(x) \in B\},
+f^{-1}(Q) = \{x \in E \mid f(x) \in Q\},
 \]
-isto {\'e}, $f^{-1}(B)$ {\'e} o conjunto dos elementos de $E$ que tem imagem em $B$ atrav{\'e}s de $f$.
+isto {\'e}, $f^{-1}(Q)$ {\'e} o conjunto dos elementos de $A$ que tem imagem em $Q$ atrav{\'e}s de $f$.
 \end{enumerate}
 \end{definicao}
 
 {\it Exemplos:}
 \begin{enumerate}
-\item Seja $E = \{1, 3, 5, 7, 9 \}$ e $F = \{0, 1, 2, 3, \dots, 10\}$ e $f : E \to F$ dada por $f(x) = x + 1$. Temos que
+\item Seja $A = \{1, 3, 5, 7, 9 \}$ e $B = \{0, 1, 2, 3, \dots, 10\}$ e $f : A \to B$ dada por $f(x) = x + 1$. Temos que
 \begin{itemize}
 \item $f(\{3, 5, 7\}) = \{f(3), f(5), f(7)\} = \{4, 6, 8\}$
 
-\item $f(E) = \{f(1), f(3), f(5), f(7), f(9)\} = \{2, 4, 6, 8, 10\}$
+\item $f(A) = \{f(1), f(3), f(5), f(7), f(9)\} = \{2, 4, 6, 8, 10\}$
 
 \item $f(\emptyset) = \emptyset$
 
-\item $f^{-1}(\{2, 4, 10\}) = \{x \in E \mid f(x) \in \{2, 4, 10\}\} = \{1, 3, 9\}$
+\item $f^{-1}(\{2, 4, 10\}) = \{x \in A \mid f(x) \in \{2, 4, 10\}\} = \{1, 3, 9\}$
 
-\item $f^{-1}(\{0, 1, 3, 5, 7, 9\}) = \{x \in E \mid f(x) \in \{0, 1, 3, 5, 7, 9\}\} = \emptyset$
+\item $f^{-1}(\{0, 1, 3, 5, 7, 9\}) = \{x \in A \mid f(x) \in \{0, 1, 3, 5, 7, 9\}\} = \emptyset$
 \end{itemize}
 
-\item Sejam $E = F= \real$ e $f : \real \to \real$ dada por $f(x) = x^2$. Temos
+\item Sejam $A = B= \real$ e $f : \real \to \real$ dada por $f(x) = x^2$. Temos
 \begin{itemize}
 \item $f(\{1, 2, 3\}) = \{1, 4, 9\}$
 
@@ -309,9 +315,9 @@ isto {\'e}, $f^{-1}(B)$ {\'e} o conjunto dos elementos de $E$ que tem imagem em 
 \end{enumerate}
 
 \begin{proposicao}
-Seja $f : E \to F$ uma aplica{\c c}{\~a}o (ou fun{\c c}{\~a}o) e sejam $A$, $B \sub E$, $X$, $Y \sub F$.
+Seja $f : A \to B$ uma aplica{\c c}{\~a}o (ou fun{\c c}{\~a}o) e sejam $P$, $Q \sub E$, $X$, $Y \sub B$.
 \begin{enumerate}
-\item Se $A \sub B$, ent{\~a}o $f(A) \sub f(B)$.
+\item Se $P \sub Q$, ent{\~a}o $f(P) \sub f(Q)$.
 
 \item $f^{-1}(X \cup Y) = f^{-1}(X) \cup f^{-1}(Y)$.
 \end{enumerate}
@@ -319,11 +325,11 @@ Seja $f : E \to F$ uma aplica{\c c}{\~a}o (ou fun{\c c}{\~a}o) e sejam $A$, $B \
 
 \textbf{Demonstra{\c c}{\~a}o}: 
 \begin{enumerate}
-\item Se $y \in f(A)$, ent{\~a}o existe $x \in A$ tal que $f(x) = y$. Mas como $A \sub B$, ent{\~a}o $x \in B$ e da{\'\i} $y \in f(B)$. Logo $f(A) \sub f(B)$.
+\item Se $y \in f(P)$, ent{\~a}o existe $x \in P$ tal que $f(x) = y$. Mas como $P \sub Q$, ent{\~a}o $x \in Q$ e da{\'\i} $y \in f(Q)$. Logo $f(P) \sub f(Q)$.
 
-\item Seja $x \in f^{-1}(X \cup Y)$. Ent{\~a}o $f(x) \in X \cup Y$. Se $f(x) \in X$, entao $x \in f^{-1}(X)$ e da{\'\i} $x \in f^{-1}(X) \cup f^{-1}(Y)$. Se $f(x) \in Y$, ent{\~a}o $x \in f^{-1}(Y)$ e assim $x \in f^{-1}(X) \cup f^{-1}(Y)$. Logo, $f^{-1}(X \cup Y) \sub f^{-1}(X) \cup f^{-1}(Y)$.
+\item Seja $z \in f^{-1}(X \cup Y)$. Ent{\~a}o $f(z) \in X \cup Y$. Se $f(z) \in X$, entao $z \in f^{-1}(X)$ e da{\'\i} $z \in f^{-1}(X) \cup f^{-1}(Y)$. Se $f(z) \in Y$, ent{\~a}o $z \in f^{-1}(Y)$ e assim $z \in f^{-1}(X) \cup f^{-1}(Y)$. Logo, $f^{-1}(X \cup Y) \sub f^{-1}(X) \cup f^{-1}(Y)$.
 
-Agora, seja $x \in f^{-1}(X) \cup f^{-1}(Y)$. Se $x \in f^{-1}(X)$, ent{\~a}o $f(x) \in X$, da{\'\i} $f(x) \in X \cup Y$, isto {\'e}, $x \in f^{-1}(X \cup Y)$. Se $x \in f^{-1}(Y)$, ent{\~a}o $f(x) \in Y$ e assim $f(x) \in X \cup Y$, isto {\'e}, $x \in f^{-1}(X \cup Y)$. Logo $f^{-1}(X) \cup f^{-1}(Y) \sub f^{-1}(X \cup Y)$.
+Agora, seja $z \in f^{-1}(X) \cup f^{-1}(Y)$. Se $z \in f^{-1}(X)$, ent{\~a}o $f(z) \in X$, da{\'\i} $f(z) \in X \cup Y$, isto {\'e}, $z \in f^{-1}(X \cup Y)$. Se $z \in f^{-1}(Y)$, ent{\~a}o $f(z) \in Y$ e assim $f(z) \in X \cup Y$, isto {\'e}, $z \in f^{-1}(X \cup Y)$. Logo $f^{-1}(X) \cup f^{-1}(Y) \sub f^{-1}(X \cup Y)$.
 
 Portanto, $f^{-1}(X \cup Y) = f^{-1}(X) \cup f^{-1}(Y)$. \#
 \end{enumerate}
