@@ -39,6 +39,7 @@
 \newcommand{\z}{\mathbb{Z}}
 \newcommand{\n}{\mathbb{N}}
 \newcommand{\q}{\mathbb{Q}}
+\newcommand{\complex}{\mathbb{C}}
 \newtheorem{defin}{Defini{\c c}{\~a}o}
 
 \newcommand{\compcent}[1]{\vcenter{\hbox{$#1\circ$}}}
@@ -72,6 +73,26 @@
 
 % \questao Mostre que num grupo $G$, o elemento neutro e inverso de cada
 % elemento {\'e} {\'u}nico.
+
+\questao Seja
+\[
+	\complex = \{a + bi \mid a, b \in \real\}
+\]
+e $i^2 = -1$. Mostre que:
+\begin{enumerate}
+	\item $(\complex, +)$ é um grupo abeliano, onde
+	\[
+		(a + bi) + (c + di) = (a + c) + (b + d)i 
+	\]
+	para $a + bi$, $c + di \in \complex$.
+	\item Para $\complex^* = \complex - \{0\}$, $(\complex^*, \cdot)$ é um grupo abeliano, onde
+	\[
+		(a + bi)\cdot (c + di) = (ac - bd) + (ad + bc)i 
+	\]
+	para $a + bi$, $c + di \in \complex$.
+\end{enumerate}
+
+\vesp
 
 \questao Verifique se o conjunto $\q_{>0}$ dos n{\'u}meros racionais estritamente positivos com a
  opera{\c c}{\~a}o dada {\'e} ou n{\~a}o um grupo. Justifique sua
