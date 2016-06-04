@@ -162,14 +162,14 @@ Portanto, $H=\{e\}$ ou $H=G$.\#
 \section{Homomorfimos de Grupos} % (fold)
 \label{sec:homomorfimos_de_grupos}
 
-Sejam $(G, *)$ e $(H, \triangle)$ grupos quaisquer. Considere uma função $f : G \to H$. Entre todas as possíveis funções entre $G$ e $H$ vamos considerar somente aquelas que satisfação a condição
+Sejam $(G, *)$ e $(H, \triangle)$ grupos quaisquer. Considere uma fun\c{c}\~ao $f : G \to H$. Entre todas as poss{\'\i}veis fun\c{c}\~oes entre $G$ e $H$ vamos considerar somente aquelas que satisfa\c{c}\~ao a condi\c{c}\~ao
 \[
 	f(x * y) = f(x)\triangle f(y)
 \]
 para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a partir da imagem de $x$ e de $y$,
 
 \begin{definicao}
-	Dados doi grupos $(G, *)$ e $(H,\triangle)$ dizemos que uma função $f : G \to H$ é um \textbf{homomorfismo de grupos} se
+	Dados doi grupos $(G, *)$ e $(H,\triangle)$ dizemos que uma fun\c{c}\~ao $f : G \to H$ \'e um \textbf{homomorfismo de grupos} se
 	\[
 		f(x * y) = f(x)\triangle f(y)
 	\]
@@ -179,33 +179,33 @@ para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a pa
 \begin{observacao}
 	Sejam $(G, *)$ e $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo.
 	\begin{enumerate}
-		\item Se $G = H$, neste caso $f : G \to G$ é chamado de um \textbf{endomorfimos} de grupos.
-		\item Se $f : G \to H$ é uma função injetora, então dizemos que $f$ é um \textbf{monomorfismo} de grupos.
-		\item Se $f : G \to H$ é uma função sobrejetora, então dizemos que $f$ é um \textbf{epimorfismo} de grupos.
-		\item Se $f : G \to H$ é uma função bijetora, então dizemos que $f$ é um \textbf{isomorfismo} de grupos.
-		\item Se $f : G \to G$ é uma função bijetora, então dizemos que $f$ é um \textbf{automorfismo} de grupos.
+		\item Se $G = H$, neste caso $f : G \to G$ \'e chamado de um \textbf{endomorfimos} de grupos.
+		\item Se $f : G \to H$ \'e uma fun\c{c}\~ao injetora, ent\~ao dizemos que $f$ \'e um \textbf{monomorfismo} de grupos.
+		\item Se $f : G \to H$ \'e uma fun\c{c}\~ao sobrejetora, ent\~ao dizemos que $f$ \'e um \textbf{epimorfismo} de grupos.
+		\item Se $f : G \to H$ \'e uma fun\c{c}\~ao bijetora, ent\~ao dizemos que $f$ \'e um \textbf{isomorfismo} de grupos.
+		\item Se $f : G \to G$ \'e uma fun\c{c}\~ao bijetora, ent\~ao dizemos que $f$ \'e um \textbf{automorfismo} de grupos.
 	\end{enumerate}
 \end{observacao}
 
 \begin{exemplos}
 	\begin{enumerate}
-		\item A função $f : \Z \to \complex$ dada por $f(x) = i^x$ é um homomorfismo de $(\Z, +)$ em $(\complex, \cdot)$. De fato,
+		\item A fun\c{c}\~ao $f : \Z \to \complex$ dada por $f(x) = i^x$ \'e um homomorfismo de $(\Z, +)$ em $(\complex, \cdot)$. De fato,
 		\[
 			f(x + y) = i^{x + y} = i^x\cdot i^y = f(x)\cdot f(y)
 		\]
 		para todos $x$, $y \in \Z$.
 
-		\item A função $f : \real^*_+ \to \real$ dada por $f(x) = \ln(x)$ é um homomorfismo de $(\real^*_+)$ em $(\real, +)$. De fato,
+		\item A fun\c{c}\~ao $f : \real^*_+ \to \real$ dada por $f(x) = \ln(x)$ \'e um homomorfismo de $(\real^*_+)$ em $(\real, +)$. De fato,
 		\[
 			f(xy) = \ln(xy) = \ln(x) + \ln(y) = f(x) + f(y)
 		\]
-		para todos $x$, $y \in \real^*_+$. Além disso, como $\ln(x)$ é uma função bijetora, então $f$ é um isomorfismo de grupos.
+		para todos $x$, $y \in \real^*_+$. Al\'em disso, como $\ln(x)$ \'e uma fun\c{c}\~ao bijetora, ent\~ao $f$ \'e um isomorfismo de grupos.
 
-		\item Sejam $m$ um inteiro positivo fixo. A função $f: \Z \to \Z_m$ definida por $f(x) = \overline{x}$ é um homomorfimos de $(\Z, +)$ em $(\Z_m, \oplus)$. De fato,
+		\item Sejam $m$ um inteiro positivo fixo. A fun\c{c}\~ao $f: \Z \to \Z_m$ definida por $f(x) = \overline{x}$ \'e um homomorfimos de $(\Z, +)$ em $(\Z_m, \oplus)$. De fato,
 		\[
 			f(x + y) = \overline{x + y} = \overline{x} + \overline{y} = f(x) + f(y).
 		\]
-		Além disso, esse homomorfismo é sobrejetor.
+		Al\'em disso, esse homomorfismo \'e sobrejetor.
 	\end{enumerate}
 \end{exemplos}
 
@@ -218,28 +218,28 @@ para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a pa
 \end{proposicao}
 
 \begin{proposicao}
-	Sejam $I$ é um subgrupo de $G$ e $f : G \to H$ um homomorfismo de grupos. Então $f(I)$ é um subgrupo de $H$.
+	Sejam $I$ \'e um subgrupo de $G$ e $f : G \to H$ um homomorfismo de grupos. Ent\~ao $f(I)$ \'e um subgrupo de $H$.
 \end{proposicao}
 \begin{prova}
-	Como $I$ é um subgrupo de $G$, então $1_G \in G$. Agora $f$ é um homomorfismo, logo $f(1_G) = 1_H \in f(I)$ e assim $f(I) \ne \emptyset$.
+	Como $I$ \'e um subgrupo de $G$, ent\~ao $1_G \in G$. Agora $f$ \'e um homomorfismo, logo $f(1_G) = 1_H \in f(I)$ e assim $f(I) \ne \emptyset$.
 
-	Agora, dado $y \in f(I)$ precisamos mostrar que $y^{-1} \in f(I)$. Mas se $y \in f(I)$, então $y = f(x)$ com $x \in I$. Daí
+	Agora, dado $y \in f(I)$ precisamos mostrar que $y^{-1} \in f(I)$. Mas se $y \in f(I)$, ent\~ao $y = f(x)$ com $x \in I$. Da{\'\i}
 	\[
 		y^{-1} = [f(x)]^{-1} = f(x^{-1})
 	\]
-	e como $I$ é um subgrupo de $G$, $x^{-1} \in I$ e como isso $y^{-1} \in f(I)$.
+	e como $I$ \'e um subgrupo de $G$, $x^{-1} \in I$ e como isso $y^{-1} \in f(I)$.
 
-	Finalmente, dados $y$, $z \in f(I)$ existem $x_1$, $x_2 \in I$ tais que $y = f(x_1)$ e $z = f(x_2)$. Mas $f$ é homomorfismo, daí
+	Finalmente, dados $y$, $z \in f(I)$ existem $x_1$, $x_2 \in I$ tais que $y = f(x_1)$ e $z = f(x_2)$. Mas $f$ \'e homomorfismo, da{\'\i}
 	\[
 		y\triangle z = f(x_1)\triangle f(x_2) = f(x_1*x_2)
 	\]
-	e como $I$ é subgrupo, $x_1*x_2 \in I$. Logo $y\triangle z \in f(I)$.
+	e como $I$ \'e subgrupo, $x_1*x_2 \in I$. Logo $y\triangle z \in f(I)$.
 
-	Portanto $f(I)$ é um subgrupo de $H$.
+	Portanto $f(I)$ \'e um subgrupo de $H$.
 \end{prova}
 
 \begin{definicao}
-	Sejam $(G, *)$ e $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo de grupos. Chama-se de \textbf{núcleo} ou \textbf{kernel} de $f$ e denota-se por $N(f)$ ou $\ker(f)$ o seguinte subconjunto de $G$:
+	Sejam $(G, *)$ e $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo de grupos. Chama-se de \textbf{n\'ucleo} ou \textbf{kernel} de $f$ e denota-se por $N(f)$ ou $\ker(f)$ o seguinte subconjunto de $G$:
 	\[
 		\ker(f) = \{x \in G \mid f(x) = 1_H\}.
 	\]
@@ -252,12 +252,12 @@ para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a pa
 			\ker(f) = \{x \in \Z \mid f(x) = 1\} = \{x \in \Z \mid i^x = 1\} = \{0, \pm 4, \pm 8, \cdots\} = 4\Z.
 		\]
 
-		\item O núcleo do homomorfismo $f : \real^*_+ \to \real$ dado por $f(x) = \ln(x)$. Temos
+		\item O n\'ucleo do homomorfismo $f : \real^*_+ \to \real$ dado por $f(x) = \ln(x)$. Temos
 		\[
 			\ker(f) = \{x \in \real^*_+ \mid f(x) = 0\} = \{x \in \real^*_+ \mid \ln(x) = 0\} = \{1\}.
 		\]
 
-		\item O núcleo do homomorfismo $f : \Z \to \Z_m$ dado por $f(x) = \overline{x}$, $m > 0$ fixo. Temos
+		\item O n\'ucleo do homomorfismo $f : \Z \to \Z_m$ dado por $f(x) = \overline{x}$, $m > 0$ fixo. Temos
 		\[
 			\ker(f) = \{x \in \Z \mid f(x) = \overline{0}\} = \{x \in \Z \mid \overline{x} = \overline{0}\} = \{0, \pm m, \pm 2m, \cdots\}.
 		\]
@@ -265,19 +265,19 @@ para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a pa
 \end{exemplos}
 
 \begin{proposicao}
-	Sejam $f : G \to H$ um homomorfismo de grupos. Então:
+	Sejam $f : G \to H$ um homomorfismo de grupos. Ent\~ao:
 	\begin{enumerate}
-		\item $\ker(f)$ é um subgrupo de $G$.
-		\item $f$ é um monomorfismo se, e somente se, $\ker(f) = \{1_G\}$.
+		\item $\ker(f)$ \'e um subgrupo de $G$.
+		\item $f$ \'e um monomorfismo se, e somente se, $\ker(f) = \{1_G\}$.
 	\end{enumerate}
 \end{proposicao}
 \begin{prova}
 	\begin{enumerate}
-		\item Como $f(1_G) = 1_H$, então $1_G \in \ker(f)$ e com isso $\ker(f) \ne \emptyset$. Se $x \in \ker(f)$, então $f(x^{-1}) = [f(x)]^{-1} = 1_H^{-1} = 1_H$ e daí $x^{-1} \in \ker(f)$. Finalmente se $x$, $y \in \ker(f)$, então $f(x*y) = f(x)\triangle f(y) = 1_H \triangle 1_H = 1_H$, ou seja, $x * y \in \ker(f)$.
+		\item Como $f(1_G) = 1_H$, ent\~ao $1_G \in \ker(f)$ e com isso $\ker(f) \ne \emptyset$. Se $x \in \ker(f)$, ent\~ao $f(x^{-1}) = [f(x)]^{-1} = 1_H^{-1} = 1_H$ e da{\'\i} $x^{-1} \in \ker(f)$. Finalmente se $x$, $y \in \ker(f)$, ent\~ao $f(x*y) = f(x)\triangle f(y) = 1_H \triangle 1_H = 1_H$, ou seja, $x * y \in \ker(f)$.
 
-		Portanto $\ker(f)$ é um subgrupo de $G$.
+		Portanto $\ker(f)$ \'e um subgrupo de $G$.
 
-		\item Suponha que $f$ é um monomorfismo de grupos. Tome $x \in \ker(f)$. Temos $f(x) = 1_H = f(1_G)$ e como $f$ é injetora $x = 1_G$. Logo $\ker(f) = \{1_G\}$.
+		\item Suponha que $f$ \'e um monomorfismo de grupos. Tome $x \in \ker(f)$. Temos $f(x) = 1_H = f(1_G)$ e como $f$ \'e injetora $x = 1_G$. Logo $\ker(f) = \{1_G\}$.
 
 		Agora suponha que $\ker(f) = \{1_G\}$. Sejam $x$, $y \in G$ tais que
 		\begin{align*}
@@ -286,7 +286,7 @@ para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a pa
 			f(x)\triangle f(y^{-1}) &= 1_H\\
 			f(x * y^{-1}) &= 1_H
 		\end{align*}
-		e daí $x*y^{-1} \in \ker(f) = \{1_G\}$. Logo $x*y^{-1} = 1_G$, isto é, $x = y$. Portanto $f$ é injetora.
+		e da{\'\i} $x*y^{-1} \in \ker(f) = \{1_G\}$. Logo $x*y^{-1} = 1_G$, isto \'e, $x = y$. Portanto $f$ \'e injetora.
 	\end{enumerate}
 \end{prova}
 
