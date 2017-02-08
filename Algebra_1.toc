@@ -1,7 +1,7 @@
 \select@language {brazil}
 \select@language {brazil}
-\contentsline {chapter}{\numberline {1}Conceitor Básicos}{11}{chapter.1}
-\contentsline {section}{\numberline {1.1}Príncipio da não contradição e do 3$^o$ excluído}{11}{section.1.1}
+\contentsline {chapter}{\numberline {1}Conceitos B\'asicos}{11}{chapter.1}
+\contentsline {section}{\numberline {1.1}Pr{\'\i }ncipio da n\~ao contradi\c {c}\~ao e do terceiro exclu{\'\i }do}{11}{section.1.1}
 \contentsline {chapter}{\numberline {2}No{\c c}{\~o}es de Teoria de Conjuntos}{13}{chapter.2}
 \contentsline {section}{\numberline {2.1}Conceitos b{\'a}sicos}{13}{section.2.1}
 \contentsline {section}{\numberline {2.2}Descri{\c c}{\~a}o de um conjunto}{14}{section.2.2}

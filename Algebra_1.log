@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.1.21)  8 FEB 2017 14:54
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.1.21)  8 FEB 2017 15:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1866,12 +1866,6 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 170.
 [2] (./Algebra_1.toc
-Missing character: There is no á in font pxb!
-Missing character: There is no í in font pxr!
-Missing character: There is no ã in font pxr!
-Missing character: There is no ç in font pxr!
-Missing character: There is no ã in font pxr!
-Missing character: There is no í in font pxr!
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining portuges shorthand "|
@@ -2000,64 +1994,8 @@ Package babel Info: Redefining portuges shorthand "|
 Cap\'{\i }tulo 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
-Missing character: There is no Á in font pxb!
-Missing character: There is no ç in font pxbi!
-Missing character: There is no ã in font pxbi!
-Missing character: There is no é in font pxi!
-Missing character: There is no í in font pxi!
-Missing character: There is no ó in font pxbi!
-Missing character: There is no ó in font pxbi!
-Missing character: There is no ç in font pxi!
-Missing character: There is no ã in font pxi!
-Missing character: There is no é in font pxi!
-Missing character: There is no ç in font pxi!
-Missing character: There is no ã in font pxi!
-Missing character: There is no é in font pxi!
-Missing character: There is no ç in font pxi!
-Missing character: There is no ã in font pxi!
-Missing character: There is no é in font pxi!
-Missing character: There is no í in font pxb!
-Missing character: There is no ã in font pxb!
-Missing character: There is no ç in font pxb!
-Missing character: There is no ã in font pxb!
-Missing character: There is no í in font pxb!
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 16.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 16.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 16.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 16.
-
-Missing character: There is no ç in font pxr!
-Missing character: There is no ã in font pxr!
-Missing character: There is no ã in font pxr!
-Missing character: There is no ç in font pxr!
-Missing character: There is no ã in font pxr!
-Missing character: There is no é in font pxr!
-Missing character: There is no é in font pxr!
-Missing character: There is no é in font pxr!
-Missing character: There is no í in font pxr!
-Missing character: There is no ç in font pxr!
-Missing character: There is no ã in font pxr!
-Missing character: There is no ó in font pxr!
-Missing character: There is no ó in font pxr!
-Missing character: There is no ç in font pxr!
-Missing character: There is no õ in font pxr!
-Missing character: There is no ã in font pxr!
-Missing character: There is no é in font pxr!
-Missing character: There is no ó in font pxr!
-Missing character: There is no ç in font pxr!
-Missing character: There is no ã in font pxr!
-Missing character: There is no é in font pxr!
-Missing character: There is no é in font pxr!
-Missing character: There is no à in font pxr!
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 33.
 Package babel Info: Redefining portuges shorthand "|
@@ -2067,25 +2005,6 @@ Package babel Info: Redefining portuges shorthand "|
 
 
 ]
-Missing character: There is no ó in font pxr!
-Missing character: There is no ç in font pxr!
-Missing character: There is no ã in font pxr!
-Missing character: There is no á in font pxr!
-Missing character: There is no ç in font pxr!
-Missing character: There is no õ in font pxr!
-Missing character: There is no é in font pxr!
-Missing character: There is no ã in font pxr!
-Missing character: There is no ã in font pxr!
-Missing character: There is no é in font pxr!
-Missing character: There is no é in font pxr!
-Missing character: There is no é in font pxr!
-Missing character: There is no é in font pxr!
-Missing character: There is no í in font pxb!
-Missing character: There is no ã in font pxb!
-Missing character: There is no ç in font pxb!
-Missing character: There is no ã in font pxb!
-Missing character: There is no í in font pxb!
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.73512pt.
@@ -2177,12 +2096,6 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 259.
 [18]
-Missing character: There is no ã in font pxi!
-Missing character: There is no ã in font pxi!
-Missing character: There is no ç in font pxr!
-Missing character: There is no ã in font pxr!
-Missing character: There is no ç in font pxr!
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -3264,7 +3177,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 189.
 Here is how much of TeX's memory you used:
  45088 strings out of 493706
  932611 string characters out of 6145769
- 1207780 words of memory out of 5000000
+ 1207825 words of memory out of 5000000
  47555 multiletter control sequences out of 15000+600000
  59604 words of font info for 181 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
