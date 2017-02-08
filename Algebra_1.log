@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.1.21)  8 FEB 2017 14:36
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.1.21)  8 FEB 2017 14:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1866,6 +1866,12 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 170.
 [2] (./Algebra_1.toc
+Missing character: There is no á in font pxb!
+Missing character: There is no í in font pxr!
+Missing character: There is no ã in font pxr!
+Missing character: There is no ç in font pxr!
+Missing character: There is no ã in font pxr!
+Missing character: There is no í in font pxr!
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining portuges shorthand "|
@@ -1881,9 +1887,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 49.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 48.
+(babel)             in language  on input line 49.
 [4]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1892,9 +1898,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 76.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 76.
+(babel)             in language  on input line 77.
 [5])
 \tf@toc=\write7
 \openout7 = `Algebra_1.toc'.
@@ -1994,23 +2000,91 @@ Package babel Info: Redefining portuges shorthand "|
 Cap\'{\i }tulo 1.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
+Missing character: There is no Á in font pxb!
+Missing character: There is no ç in font pxbi!
+Missing character: There is no ã in font pxbi!
+Missing character: There is no é in font pxi!
+Missing character: There is no í in font pxi!
+Missing character: There is no ó in font pxbi!
+Missing character: There is no ó in font pxbi!
+Missing character: There is no ç in font pxi!
+Missing character: There is no ã in font pxi!
+Missing character: There is no é in font pxi!
+Missing character: There is no ç in font pxi!
+Missing character: There is no ã in font pxi!
+Missing character: There is no é in font pxi!
+Missing character: There is no ç in font pxi!
+Missing character: There is no ã in font pxi!
+Missing character: There is no é in font pxi!
+Missing character: There is no í in font pxb!
+Missing character: There is no ã in font pxb!
+Missing character: There is no ç in font pxb!
+Missing character: There is no ã in font pxb!
+Missing character: There is no í in font pxb!
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 6.
+(babel)             in language  on input line 16.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 16.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 16.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 16.
+
+Missing character: There is no ç in font pxr!
+Missing character: There is no ã in font pxr!
+Missing character: There is no ã in font pxr!
+Missing character: There is no ç in font pxr!
+Missing character: There is no ã in font pxr!
+Missing character: There is no é in font pxr!
+Missing character: There is no é in font pxr!
+Missing character: There is no é in font pxr!
+Missing character: There is no í in font pxr!
+Missing character: There is no ç in font pxr!
+Missing character: There is no ã in font pxr!
+Missing character: There is no ó in font pxr!
+Missing character: There is no ó in font pxr!
+Missing character: There is no ç in font pxr!
+Missing character: There is no õ in font pxr!
+Missing character: There is no ã in font pxr!
+Missing character: There is no é in font pxr!
+Missing character: There is no ó in font pxr!
+Missing character: There is no ç in font pxr!
+Missing character: There is no ã in font pxr!
+Missing character: There is no é in font pxr!
+Missing character: There is no é in font pxr!
+Missing character: There is no à in font pxr!
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 33.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 32.
+(babel)             in language  on input line 33.
 [11
 
 
 
 ]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 34.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 47.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 57.
+Missing character: There is no ó in font pxr!
+Missing character: There is no ç in font pxr!
+Missing character: There is no ã in font pxr!
+Missing character: There is no á in font pxr!
+Missing character: There is no ç in font pxr!
+Missing character: There is no õ in font pxr!
+Missing character: There is no é in font pxr!
+Missing character: There is no ã in font pxr!
+Missing character: There is no ã in font pxr!
+Missing character: There is no é in font pxr!
+Missing character: There is no é in font pxr!
+Missing character: There is no é in font pxr!
+Missing character: There is no é in font pxr!
+Missing character: There is no í in font pxb!
+Missing character: There is no ã in font pxb!
+Missing character: There is no ç in font pxb!
+Missing character: There is no ã in font pxb!
+Missing character: There is no í in font pxb!
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2019,26 +2093,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 48.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 48.
 [12]
+Cap\'{\i }tulo 2.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 48.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 49.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 75.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 75.
+[13
 
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
+]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 97.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 97.
-[13]
+(babel)             in language  on input line 90.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 109.
+(babel)             in language  on input line 100.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2047,10 +2123,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 107.
 [14]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 128.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2058,10 +2137,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 176.
+(babel)             in language  on input line 140.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 176.
+(babel)             in language  on input line 140.
 [15]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 152.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.73512pt.
@@ -2069,9 +2151,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 216.
+(babel)             in language  on input line 179.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 216.
+(babel)             in language  on input line 179.
 [16]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2080,9 +2162,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 219.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 219.
 [17]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2091,10 +2173,38 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 304.
+(babel)             in language  on input line 259.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 304.
-[18])
+(babel)             in language  on input line 259.
+[18]
+Missing character: There is no ã in font pxi!
+Missing character: There is no ã in font pxi!
+Missing character: There is no ç in font pxr!
+Missing character: There is no ã in font pxr!
+Missing character: There is no ç in font pxr!
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 302.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 302.
+[19]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.73512pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 349.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 349.
+[20])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2105,7 +2215,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 177.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 177.
-[19]
+[21]
 \openout2 = `numeros-inteiros.aux'.
 
  (./numeros-inteiros.tex
@@ -2119,12 +2229,12 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
-[20
+[22
 
 
 
 ]
-Cap\'{\i }tulo 2.
+Cap\'{\i }tulo 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining portuges shorthand "|
@@ -2152,7 +2262,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 35.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 35.
- [21]
+ [23]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 35.
 Package babel Info: Redefining portuges shorthand "|
@@ -2168,7 +2278,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 58.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 58.
-[22]
+[24]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 71.
 
@@ -2182,7 +2292,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 94.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 94.
-[23]
+[25]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.73512pt.
@@ -2193,7 +2303,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 145.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 145.
-[24]
+[26]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 150.
 
@@ -2207,7 +2317,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 168.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 168.
-[25]
+[27]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 188.
 
@@ -2221,7 +2331,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 197.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 197.
-[26]
+[28]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 216.
 
@@ -2249,7 +2359,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 231.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 231.
-[27]
+[29]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.73512pt.
@@ -2260,7 +2370,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 254.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 254.
-[28]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 268--269
 
  []
@@ -2283,7 +2393,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 287.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 287.
-[29]
+[31]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 291.
 Package babel Info: Redefining portuges shorthand "|
@@ -2307,7 +2417,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 318.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 318.
-[30])
+[32])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2318,7 +2428,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 178.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 178.
-[31]
+[33]
 \openout2 = `relacoes-e-funcoes.aux'.
 
  (./relacoes-e-funcoes.tex
@@ -2332,12 +2442,12 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
-[32
+[34
 
 
 
 ]
-Cap\'{\i }tulo 3.
+Cap\'{\i }tulo 4.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining portuges shorthand "|
@@ -2360,7 +2470,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 28.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 28.
-[33]
+[35]
 Missing character: There is no ã in font pxi!
 Missing character: There is no ã in font pxi!
 
@@ -2381,7 +2491,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 54.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 54.
-[34]
+[36]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 66.
 
@@ -2399,7 +2509,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 86.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 86.
-[35]
+[37]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.73512pt.
@@ -2410,7 +2520,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 113.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 113.
-[36]
+[38]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 131.
 
@@ -2432,7 +2542,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 146.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 146.
-[37]
+[39]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 163.
 
@@ -2446,7 +2556,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 177.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 177.
-[38]
+[40]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2457,7 +2567,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 214.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 214.
-[39]
+[41]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 226.
 Package babel Info: Redefining portuges shorthand "|
@@ -2475,7 +2585,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 244.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 244.
-[40]
+[42]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 245.
 Package babel Info: Redefining portuges shorthand "|
@@ -2493,7 +2603,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 272.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 272.
-[41]
+[43]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.73512pt.
@@ -2504,7 +2614,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 314.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 314.
-[42])
+[44])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -2515,7 +2625,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 179.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 179.
-[43]
+[45]
 \openout2 = `operacoes-em-Zm.aux'.
 
  (./operacoes-em-Zm.tex
@@ -2529,12 +2639,12 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
-[44
+[46
 
 
 
 ]
-Cap\'{\i }tulo 4.
+Cap\'{\i }tulo 5.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
 
@@ -2571,7 +2681,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 26.
-[45]
+[47]
 Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
@@ -2591,7 +2701,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 58.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 58.
-[46]
+[48]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 67.
 
@@ -2613,7 +2723,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 88.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 88.
-[47]
+[49]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 89.
 
@@ -2659,7 +2769,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 122.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 122.
-[48]
+[50]
 Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
@@ -2712,7 +2822,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 175.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 175.
-[49]
+[51]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 23.21947pt.
@@ -2723,7 +2833,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 212.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 212.
-[50])
+[52])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 22.59529pt.
@@ -2734,7 +2844,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 180.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 180.
-[51]
+[53]
 \openout2 = `aneis.aux'.
 
  (./aneis.tex
@@ -2748,12 +2858,12 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
-[52
+[54
 
 
 
 ]
-Cap\'{\i }tulo 5.
+Cap\'{\i }tulo 6.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining portuges shorthand "|
@@ -2762,7 +2872,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 65.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 65.
-[53]
+[55]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.73512pt.
@@ -2773,7 +2883,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 110.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 110.
-[54]
+[56]
 Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
@@ -2793,7 +2903,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 154.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 154.
-[55]
+[57]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 164.
 
@@ -2807,7 +2917,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 180.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 180.
-[56]
+[58]
 Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
@@ -2835,7 +2945,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 219.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 219.
-[57]
+[59]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 251.
 
@@ -2855,7 +2965,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 256.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 256.
-[58]
+[60]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 269.
 
@@ -2869,7 +2979,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 287.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 287.
-[59]
+[61]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 297.
 Package babel Info: Redefining portuges shorthand "|
@@ -2891,7 +3001,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 313.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 313.
-[60]
+[62]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 318.
 
@@ -2905,7 +3015,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 346.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 346.
-[61]
+[63]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 348.
 Package babel Info: Redefining portuges shorthand "|
@@ -2923,7 +3033,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 376.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 376.
-[62]
+[64]
 Underfull \hbox (badness 10000) in paragraph at lines 389--390
 
  []
@@ -2938,7 +3048,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 403.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 403.
-[63])
+[65])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.73512pt.
@@ -2949,11 +3059,11 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 181.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 181.
-[64]
+[66]
 \openout2 = `grupos.aux'.
 
  (./grupos.tex
-Cap\'{\i }tulo 6.
+Cap\'{\i }tulo 7.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining portuges shorthand "|
@@ -2962,7 +3072,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 20.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 20.
-[65
+[67
 
 
 
@@ -2983,7 +3093,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 45.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 45.
-[66]
+[68]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 71.
 
@@ -2997,7 +3107,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 77.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 77.
-[67]
+[69]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 82.
 Package babel Info: Redefining portuges shorthand "|
@@ -3021,7 +3131,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 104.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 104.
-[68]
+[70]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 138.
 
@@ -3035,7 +3145,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 149.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 149.
-[69]
+[71]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 162.
 
@@ -3049,7 +3159,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 186.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 186.
-[70]
+[72]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -3060,7 +3170,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 229.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 229.
-[71]
+[73]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.73512pt.
@@ -3071,7 +3181,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 278.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 278.
-[72]
+[74]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 298.
 Package babel Info: Redefining portuges shorthand "|
@@ -3087,7 +3197,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 182.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 182.
-[73]
+[75]
 \openout2 = `bibliografia.aux'.
 
  (./bibliografia.tex
@@ -3101,7 +3211,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 5.
-[74
+[76
 
 
 
@@ -3113,7 +3223,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 183.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 183.
- [75
+ [77
 
 ]
 
@@ -3126,7 +3236,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 184.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 184.
-[76
+[78
 
 
 ]
@@ -3137,7 +3247,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 15.
- [77
+ [79
 
 
 ])
@@ -3152,12 +3262,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 189.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 189.
  ) 
 Here is how much of TeX's memory you used:
- 45085 strings out of 493706
- 932536 string characters out of 6145769
- 1207178 words of memory out of 5000000
- 47552 multiletter control sequences out of 15000+600000
+ 45088 strings out of 493706
+ 932611 string characters out of 6145769
+ 1207780 words of memory out of 5000000
+ 47555 multiletter control sequences out of 15000+600000
  59604 words of font info for 181 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  58i,17n,104p,10429b,971s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Algebra_1.pdf (77 pages).
+Output written on Algebra_1.pdf (79 pages).
