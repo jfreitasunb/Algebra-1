@@ -46,7 +46,7 @@ A = \{n \mid n \mbox{ \'e m{\'u}ltiplo de } 2\} = \{2,4,6,...\}.
 
 \section{Alguns conjuntos importantes}
 \begin{enumerate}
-\item $\n = \{1,2,3,...\}$ o conjunto do n{\'u}meros naturais.
+\item $\n = \{0,1,2,3,...\}$ o conjunto do n{\'u}meros naturais.
 \item $\Z = \{...,-2,-1,0,1,2,...\}$ o conjunto dos n{\'u}meros inteiros.
 \item $\n_0 = \{0,1,2,3,...\}$ o conjunto dos n{\'u}meros inteiros n{\~a}o negativos.
 \item $\real $ o conjunto dos n{\'u}meros reais.
@@ -123,10 +123,12 @@ Exemplo: Sejam
 \end{align*}
 
 \begin{proposicao} Sejam $A$ e $B$ dois conjuntos. Ent{\~a}o
-\begin{align*}
-	(A \cap B) \subseteq A\\
-	(A \cap B) \subseteq B.
-\end{align*}
+\begin{enumerate}
+\item $(A \cap B) \subseteq A$;
+\item $(A \cap B) \subseteq B$;
+\item $A \subseteq A \cup B$;
+\item $B \subseteq A \cup B$.
+\end{enumerate}
 \end{proposicao}
 \begin{prova}
 	Seja $x \in A \cap B$ um elemento qualquer. Da defini\c{c}\~ao de interse\c{c}\~ao de conjuntos temos $x \in A$ e $x \in B$. De $x \in A$ segue que $A \cap B \subseteq A$ e de $x \in B$ segue que $A \cap B \subseteq B$, como quer{\'\i}amos demonstrar.
