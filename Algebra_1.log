@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.1.21)  8 FEB 2017 15:35
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.1.21)  8 FEB 2017 15:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2893,9 +2893,6 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 292.
 [61]
-Missing character: There is no é in font pxi!
-Missing character: There is no ã in font pxi!
-Missing character: There is no ã in font pxi!
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 305.
 Package babel Info: Redefining portuges shorthand "|
@@ -2920,6 +2917,10 @@ Package babel Info: Redefining portuges shorthand "|
 [62]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 326.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 359.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 360.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2928,16 +2929,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 354.
+(babel)             in language  on input line 361.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 354.
+(babel)             in language  on input line 361.
 [63]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 356.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 357.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 360.
+(babel)             in language  on input line 363.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2946,11 +2943,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 384.
+(babel)             in language  on input line 393.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 384.
+(babel)             in language  on input line 393.
 [64]
-Underfull \hbox (badness 10000) in paragraph at lines 397--398
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
 
  []
 
@@ -2961,9 +2958,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 411.
+(babel)             in language  on input line 417.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 411.
+(babel)             in language  on input line 417.
 [65])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3184,6 +3181,6 @@ Here is how much of TeX's memory you used:
  47555 multiletter control sequences out of 15000+600000
  59604 words of font info for 181 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 58i,17n,104p,10429b,971s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,17n,104p,10429b,973s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on Algebra_1.pdf (79 pages).
