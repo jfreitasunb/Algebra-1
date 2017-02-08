@@ -255,7 +255,7 @@ $g(1)=\bar{1}$
 \begin{enumerate}
 \item $f(x+y)=f(x)+f(y),\forall x,y\in A$
 \item $f(xy)=f(x)f(y),\forall x,y\in A$
-\item $f(1_{A})=1_{B}$, onde $1_{A}$ {\'e} a unidade de A e $1_{B}$ {\'e} a unidade de B
+% \item $f(1_{A})=1_{B}$, onde $1_{A}$ {\'e} a unidade de A e $1_{B}$ {\'e} a unidade de B
 \end{enumerate}
 \end{definicao}
 
@@ -292,7 +292,15 @@ $f(-a)=-f(a)$.\#
 \end{enumerate}
 
 Seja $f:\mathbb{Z}\rightarrow\mathbb{Z}$ um homomorfismo. Dado $n\in\mathbb{Z},n\geq 0$. Temos da{\'\i}, \[f(n)=f(\underbrace{1+...+1}_{n\ vezes})=\underbrace{f(1)+...+f(1)}_{n\ vezes}=nf(1)=n1\]
-$f(n)=n,\forall n\in\mathbb{Z}$
+$f(n)=n$, para todo $n \in \mathbb{Z}$.
+
+\begin{proposicao}
+	Seja $f : A \to B$ um homomorfismo sobrejetor de anéis.
+	\begin{enumerate}
+		\item Se $A$ tem unidade, então $B$ tem unidade e $f(1_A) = 1_B$.
+		\item Se $A$ tem unidade e $x \in A$ possui inverso multiplicativo, então $f(x)$ tem inverso e $f(x^{-1} = (f(x))^{-1}$.
+	\end{enumerate}
+\end{proposicao}
 
 \subsection{Epimorfismo, monomorfismo e isomorfismo}
 \begin{definicao}[Epimorfismo, monomorfismo e isomorfismo] Seja $f:A\rightarrow B$ um homomorfismo, onde $A$ e $B$ s{\~a}o an{\'e}is. Dizemos que

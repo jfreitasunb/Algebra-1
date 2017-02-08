@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.1.21)  8 FEB 2017 15:30
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2016.1.21)  8 FEB 2017 15:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2889,21 +2889,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 287.
+(babel)             in language  on input line 292.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 287.
+(babel)             in language  on input line 292.
 [61]
+Missing character: There is no é in font pxi!
+Missing character: There is no ã in font pxi!
+Missing character: There is no ã in font pxi!
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 297.
+(babel)             in language  on input line 305.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 307.
+(babel)             in language  on input line 315.
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 308.
+(hyperref)                than one, level fixed on input line 316.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 308.
+(babel)             in language  on input line 316.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.73512pt.
@@ -2911,12 +2914,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 313.
+(babel)             in language  on input line 320.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 313.
+(babel)             in language  on input line 320.
 [62]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 318.
+(babel)             in language  on input line 326.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2925,16 +2928,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 346.
+(babel)             in language  on input line 354.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 346.
+(babel)             in language  on input line 354.
 [63]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 348.
+(babel)             in language  on input line 356.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 349.
+(babel)             in language  on input line 357.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 352.
+(babel)             in language  on input line 360.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2943,11 +2946,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 376.
+(babel)             in language  on input line 384.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 376.
+(babel)             in language  on input line 384.
 [64]
-Underfull \hbox (badness 10000) in paragraph at lines 389--390
+Underfull \hbox (badness 10000) in paragraph at lines 397--398
 
  []
 
@@ -2958,9 +2961,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 403.
+(babel)             in language  on input line 411.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 403.
+(babel)             in language  on input line 411.
 [65])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
