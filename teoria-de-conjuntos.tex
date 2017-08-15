@@ -235,7 +235,10 @@ A_{1} \cap \cdots \cap A_{n} = \displaystyle\bigcap_{k=1}^{n}A_{k}
 {\'e} o conjunto dos elementos $x$ que pertencem a todos os conjuntos $A_{1}$, \dots, $A_{n}$ simultaneamente.
 \end{definicao}
 
-Quando a intersec{\c c}{\~a}o de dois ou mais conjuntos {\'e} vazia, dizemos que eles s{\~a}o \textbf{conjuntos disjuntos}.
+\begin{definicao}
+	Sejam $A$ e $B$ conjuntos. Se $A \cap B = \emptyset$, dizemos que $A$ e $B$ s{\~a}o \textbf{conjuntos disjuntos}.	
+\end{definicao}
+
 
 Sejam $A$ e $B$ conjuntos tais que $C = A \cup B$ e $A \cap B = \emptyset$. Neste caso dizemos que $C$ {\'e} uma \textbf{uni{\~a}o disjunta} de $A$ e $B$. Denotamos tal fato por
 \[
@@ -249,21 +252,21 @@ C = A \sqcup B.
 \end{enumerate}
 \end{proposicao}
 \begin{prova}
-	\begin{enumerate}
+\begin{enumerate}
 \item Precisamos mostrar que
-\begin{align*}
-A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)\\
-(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C).
-\end{align*}
+\begin{enumerate}[label={\roman*})]
+\item $A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$;\label{intersecao_unicao_1}
+\item $(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C).$\label{intersecao_unicao_2}
+\end{enumerate}
 
-Seja $x\in A\cap(B\cup C)$. Logo $x\in A$ e $x\in B\cup C$. Agora, de $x\in B\cup C$, segue que $x\in B$ ou $x\in C$. Suponha que $x\in B$. Como $x\in A$, ent\~ao $x\in A\cap B$. Assim, $x\in(A\cap B)\cup(A\cap C)$, ou seja, $A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$. Por outro lado, se $x\in C$, como $x\in A$, ent{\~a}o $x\in A\cap C$ e da{\'\i} $x\in(A\cap B)\cup(A\cap C)$, logo $A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$.
+Para provar \ref{intersecao_unicao_1} seja $x\in A \cap (B \cup C)$. Logo $x\in A$ e $x\in B\cup C$. Agora, de $x\in B\cup C$, segue que $x\in B$ ou $x\in C$. Suponha que $x\in B$. Como $x\in A$ e $x \in B$, ent\~ao $x\in A\cap B$. Assim, $x\in(A\cap B)\cup(A\cap C)$, ou seja, $A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$. Por outro lado, se $x\in C$, como $x\in A$, ent{\~a}o $x\in A\cap C$ e da{\'\i} $x\in(A\cap B)\cup(A\cap C)$, logo $A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$.
 
 Portanto,
 \[
 	A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C).
 \]
 
-Agora, seja $x\in(A\cap B)\cup(A\cap C)$. Da{\'\i}, $x\in A\cap B$ ou $x\in A\cap C$. Suponha que $x\in A\cap B$. Assim, $x\in A$ e $x\in B$. Como $x\in B$, segue que $x\in B\cup C$ e ent{\~a}o $x\in A\cap(B\cup C)$, ou seja, $(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C)$. Agora, suponnha que $x\in A\cap C$. Com isso $x\in A$ e $x\in C$. Desse modo, $x\in B\cup C$ e ent{\~a}o $x\in A\cap(B\cup C)$ e da{\'\i}
+Agora para provar \ref{intersecao_unicao_2}, seja $x\in(A\cap B)\cup(A\cap C)$. Da{\'\i}, $x\in A\cap B$ ou $x\in A\cap C$. Suponha que $x\in A\cap B$. Assim, $x\in A$ e $x\in B$. Como $x\in B$, segue que $x\in B\cup C$ e ent{\~a}o $x\in A\cap(B\cup C)$, ou seja, $(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C)$. Agora, suponha que $x\in A\cap C$. Com isso $x\in A$ e $x\in C$. Desse modo, $x\in B\cup C$ e ent{\~a}o $x\in A\cap(B\cup C)$ e da{\'\i}
 \[
 	(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C).
 \]
@@ -278,17 +281,27 @@ como quer{\'\i}amos.
 \end{prova}
 
 \begin{definicao}[Diferen{\c c}a de Conjuntos]
-Dados dois conjuntos $A$ e $B$, definimos a \textbf{diferen{\c c}a} dos conjuntos $A$ e $B$, denotado $A-B$ (ou $A\backslash B)$ como sendo
+Dados dois conjuntos $A$ e $B$, definimos a \textbf{diferen{\c c}a} dos conjuntos $A$ e $B$, denotada por $A-B$ ou $A\backslash B$ como sendo o conjunto
 \[
 A - B = \{x \mid x \in A \mbox{ e } x \notin B\}.
 \]
 \end{definicao}
 
-Exemplos:
-\begin{enumerate}
-\item $A=\{1,2,3,5,4\}$, $B=\{2,3,6,8\}$, $A-B=\{1,4,5\}$, $B-A=\{6,8\}$
-\item $A=\{2,4,6,8,10,...\}$,  $B=\{3,6,9,12,15,...\}$, $A-B=\{2,4,8,10,14,16,...\}$, $B - A=\{3,9,15,21,...\}$
-\end{enumerate}
+\begin{exemplos}
+	\begin{enumerate}[label={\arabic*})]
+		\item Se $A=\{1,2,3,5,4\}$, $B=\{2,3,6,8\}$, então
+		\begin{align*}
+			A - B &= \{1,4,5\}\\
+			B - A &=\{6,8\}.
+		\end{align*}
+		\item Se $A=\{2,4,6,8,10,...\}$, $B=\{3,6,9,12,15,...\}$, então
+		\begin{align*}
+		 	A - B &= \{2,4,8,10,14,16,...\}\\
+		 	B - A &= \{3,9,15,21,...\}
+		 \end{align*}
+	\end{enumerate}
+	
+\end{exemplos}
 
 \begin{proposicao}
 	Sejam $A$, $B$ e $C$ conjuntos n\~ao vazios. Ent\~ao
@@ -305,30 +318,32 @@ Dados dois conjuntos $A$ e $E$ tais que $A\subseteq E$, definimos o \textbf{comp
 \]
 \end{definicao}
 
-Observa{\c c}{\~o}es:
-\begin{enumerate}
-\item Se $A = E$, ent{\~a}o $C_A(A) = \{ x \in A \mid x \notin A \} = \emptyset$.
-\item $(A^C)^C = \{x \in E \mid x \notin A^C\} = \{ x \in E \mid x \in A \} = A$
-\end{enumerate}
+\begin{observacoes}
+	\begin{enumerate}
+		\item Se $A = E$, ent{\~a}o $C_A(A) = \{ x \in A \mid x \notin A \} = \emptyset$.
+		\item $(A^C)^C = \{x \in E \mid x \notin A^C\} = \{ x \in E \mid x \in A \} = A$
+	\end{enumerate}
+	
+\end{observacoes}
 
-Exemplo:
-\begin{align*}
-	A &= \{1,2,3,4\}\\
-	E &= \{1,2,3,5,4,0,8,9\}\\
-	A^C &= \{0,5,8,9\}
-\end{align*}
+\begin{exemplo}
+	Sejam $A = \{1,2,3,4\}$ e $E = \{1,2,3,5,4,0,8,9\}$. Primeiro note que $A \subseteq E$, daí
+	\[
+			A^C = C_E(A) = \{0,5,8,9\}.
+	\]
+\end{exemplo}
 
 \begin{proposicao}
 	Sejam $A$, $B$ e $E$ conjuntos. Se $A\subseteq B\subseteq E$, ent{\~a}o $C_E(B)\subseteq C_E(A)$.
 \end{proposicao}
 \begin{prova}
-	Seja $x \in B^C$. Assim $x\notin B$ e como $A \subseteq B$, ent\~ao $x \notin A$. Da{\'\i} por defini\c{c}\~ao $x\in A^C$, ou seja, $B^C\subseteq A^C$.
+	Seja $x \in C_E(B)$. Assim $x\notin B$ e como $A \subseteq B$, ent\~ao $x \notin A$. Da{\'\i} por defini\c{c}\~ao $x\in C_E(A)$, ou seja, $C_E(B) \subseteq C_E(A)$.
 \end{prova}
 
 \begin{proposicao} Sejam $A$, $B$ e $E$ tr{\^e}s conjunto tais que $A\subseteq E$ e $B\subseteq E$. Ent{\~a}o:
 \begin{enumerate}
-\item $(A\cup B)^C = A^C\cap B^C$
-\item $(A\cap B)^C = A^C\cup B^C$
+	\item $(A\cup B)^C = A^C\cap B^C$
+	\item $(A\cap B)^C = A^C\cup B^C$
 \end{enumerate}
 \end{proposicao}
 \begin{prova}
@@ -338,7 +353,7 @@ Exemplo:
 			(A\cup B)^C \subseteq A^C\cap B^C.
 		\end{equation}
 
-		Por outro lado, se $x\in A^C\cap B^C$, ent{\~a}o $x\in A^C$ e $x\in B^C$. Da{\'\i}, $x\notin A$ e $x\notin B$, ou seja, $x\notin A\cup B$, logo $x\in (A\cup B)^C$. Desse modo
+		Por outro lado, se $x\in A^C\cap B^C$, ent{\~a}o $x\in A^C$ e $x\in B^C$. Com isso, $x\notin A$ e $x\notin B$, ou seja, $x\notin A\cup B$, logo $x\in (A\cup B)^C$. Desse modo
 		\begin{equation}\label{complementar_uniao-2}
 			A^C\cap B^C\subseteq(A\cup B)^C.
 		\end{equation}
@@ -372,17 +387,22 @@ Exemplo:
 	\]
 \end{definicao}
 
-Dados $(x,y)$, $(z,t) \in A\times B$, temos $(x,y) = (z,t)$ se, e somente se, $x = z$ e $y = t$.
+Dados $(x,y)$, $(z,t) \in A\times B$, temos
+\begin{center}
+	\textbf{$(x,y) = (z,t)$ se, e somente se, $x = z$ e $y = t$}.
+\end{center}
 
-Em geral, $A \times B \neq B\times A$.
-
-Exemplo:
-\begin{align*}
-	A &= \{1,2\}\\
-	B &= \{3\}\\
-	A \times B &= \{(1,3),(2,3)\}\\
-	B \times A &= \{(3,1),(3,2)\}
+\begin{exemplo}\label{exemplo_produto_cartesiano}
+	Sejam $A = \{1,2\}$ e $B = \{3,4\}$. Então
+	\begin{align*}
+		A \times B &= \{(1,3), (1,4), (2,3), (2,4)\}\\
+		B \times A &= \{(3,1), (3,2), (4,1), (4,2)\}
 \end{align*}
+\end{exemplo}
+
+\begin{observacao}
+	Do Exemplo \eqref{exemplo_produto_cartesiano} vemos que em geral $A \times B \neq B\times A$.
+\end{observacao}
 
 \begin{definicao}[Conjunto Partes]
 	Para qualquer conjunto $A$, indicamos por $\mathcal{P}(A)$ o conjunto
@@ -394,10 +414,11 @@ Exemplo:
 
 Os elementos desse conjunto s{\~a}o todos os subconjuntos de $A$. Dizer que $Y\in \mathcal{P}(A)$ significa que $Y \subseteq A$. Particularmente, temos $\emptyset\in \mathcal{P}(A)$ e $A\in \mathcal{P}(A)$.
 
-Exemplos:
-\begin{enumerate}
-\item $A = \emptyset$,$\mathcal{P}(A) = \{\emptyset\}$;
-\item $B = \{x\}$, $\mathcal{P}(B) = \{\emptyset, B\}$;
-\item $C = \{a,b,c\}$, $\mathcal{P}(C)=\{\emptyset, \{a\}, \{b\},\{c\},\{a,b\},\{a,c\},\{b,c\},C\}$;
-\item $D=\real$, $\mathcal{P}(D)=\{X\mid X \subseteq \real\}$, por exemplo $\rac\in \mathcal{P}(D)$.
-\end{enumerate}
+\begin{exemplos}
+	\begin{enumerate}
+		\item $A = \emptyset$, $\mathcal{P}(A) = \{\emptyset\}$;
+		\item $B = \{x\}$, $\mathcal{P}(B) = \{\emptyset, \{x\}\}$;
+		\item $C = \{a,b,c\}$, $\mathcal{P}(C)=\{\emptyset, \{a\}, \{b\},\{c\},\{a,b\},\{a,c\},\{b,c\},C\}$;
+		\item $D=\real$, $\mathcal{P}(D)=\{X\mid X \subseteq \real\}$, por exemplo $\rac\in \mathcal{P}(D)$.
+	\end{enumerate}	
+\end{exemplos}
