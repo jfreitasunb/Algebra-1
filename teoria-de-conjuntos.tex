@@ -152,7 +152,7 @@ Além disso,
 Quando $A$ e $B$ n{\~a}o s{\~a}o iguais, escrevemos $A \neq B$. Para que $A \neq B$ devemos ter $A \nsubseteq B$ ou $B \nsubseteq A$. Isto é, precisamos encontrar algum elemento $x \in A$ tal que $x \notin B$ ou então encontrar $y \in B$ tal que $y \notin A$.
 
 \subsection{Propriedades da contin{\^e}ncia}
-Dados conjuntos $A$, $B$ e $C$ temos:
+Dados três conjuntos $A$, $B$ e $C$ temos:
 \begin{enumerate}
 \item $A\subseteq A$ (Reflexividade)
 \item Se $A\subseteq B \mbox{ e } B\subseteq A$, ent{\~a}o $A=B$. (Antissimetria)
@@ -177,21 +177,37 @@ Neste caso, $2 \in A$ e $2 \notin B$, logo $A \nsubseteq B$. Por outro lado, $3 
 
 \section{Rela{\c c}{\~o}es entre conjuntos}
 
-\begin{definicao}[Intersec{\c c}{\~a}o]
+\begin{definicao}[Intersec{\c c}{\~a}o]\label{intersecao_conjunto}
 Sejam $A$ e $B$ dois conjuntos. Definimos a \textbf{intersec{\c c}{\~a}o} de $A$ e $B$ como sendo o conjunto $A \cap B$ cujos elementos pertencem ao conjunto $A$ e $B$ simultaneamente. Assim,
 \[
 A \cap B = \{x \mid x \in A\mbox{ e }  x \in B\}.
 \]
 \end{definicao}
 
-Exemplo: Sejam
-\begin{align*}
-	A = \{1,2,3\}\\
-	B = \{2,3,4\}\\
-	A \cap B = \{2,3\}.
-\end{align*}
+\begin{exemplo}
+	Sejam $A = \{1, 2, 3\}$, $B = \{2, 3, 4\}$ e $C = \{r, s, t\}$. Então
+	\begin{align*}
+		A \cap B &= \{2, 3\}\\
+		A \cap C &= \emptyset.
+	\end{align*}
+\end{exemplo}
 
-\begin{proposicao} Sejam $A$ e $B$ dois conjuntos. Ent{\~a}o
+\begin{definicao}[Uni{\~a}o]\label{unicao_conjuntos}
+Sejam $A$ e $B$ dois conjuntos. Definimos a \textbf{uni{\~a}o} de $A$ com $B$ como sendo o conjunto $A \cup B$, cujos elementos pertencem ao conjunto $A$ ou ao conjunto $B$. Assim,
+\[
+A \cup B = \{x \mid x \in A \mbox{ ou } x \in B\}.
+\]
+\end{definicao}
+
+\begin{exemplo}
+	Sejam $A = \{1, 2, 3\}$, $B = \{2, 3, 4\}$ e $C = \{r, s, t\}$. Então
+	\begin{align*}
+		A \cup B &= \{1,2,3,4\}\\
+		A \cup C &= \{1,2,3,r,s,t\}.
+	\end{align*}
+\end{exemplo}
+
+\begin{proposicao} Sejam $A$ e $B$ dois conjuntos. Ent{\~a}o:
 \begin{enumerate}
 \item $(A \cap B) \subseteq A$;
 \item $(A \cap B) \subseteq B$;
@@ -200,22 +216,10 @@ Exemplo: Sejam
 \end{enumerate}
 \end{proposicao}
 \begin{prova}
-	Seja $x \in A \cap B$ um elemento qualquer. Da defini\c{c}\~ao de interse\c{c}\~ao de conjuntos temos $x \in A$ e $x \in B$. De $x \in A$ segue que $A \cap B \subseteq A$ e de $x \in B$ segue que $A \cap B \subseteq B$, como quer{\'\i}amos demonstrar.
+	Para provar a primeira afirmação seja $x \in A \cap B$ um elemento qualquer. Da defini\c{c}\~ao de interse\c{c}\~ao de conjuntos, Definição \ref{intersecao_conjunto}, temos $x \in A$ e $x \in B$. Assim podemos afirmar com certeza que $x \in A$. Logo todo elemente de $A \cap B$ também está em $A$, ou seja, $A \cap B \subseteq A$. De modo análogo prova-se a segunda afirmação sobre interseção.
+
+	Para a terceira afirmação, seja $x \in A$. Da definição de união de conjuntos, Definição \ref{unicao_conjuntos}, segue que $x \in A \cup B$. Logo todo elemento de $A$ também está em $A \cup B$, ou seja, $A \subseteq (A \cup B)$. De modo análogo prova-se a quarta afirmação.
 \end{prova}
-
-\begin{definicao}[Uni{\~a}o]
-Sejam $A$ e $B$ dois conjuntos. Definimos a \textbf{uni{\~a}o} de $A$ com $B$ como sendo o conjunto $A \cup B$, cujos elementos pertencem ao conjunto $A$ ou ao conjunto $B$. Assim,
-\[
-A \cup B = \{x \mid x \in A \mbox{ ou } x \in B\}.
-\]
-\end{definicao}
-
-Exemplo: Sejam
-\begin{align*}
-	A = \{1,2,3\}\\
-	B = \{2,3,4\}\\
-	A \cup B = \{1,2,3,4\}
-\end{align*}
 
 O conceito de uni{\~a}o ($ \cup $) e intersec{\c c}{\~a}o ($ \cap $) pode ser estendido para mais de dois conjuntos.
 
