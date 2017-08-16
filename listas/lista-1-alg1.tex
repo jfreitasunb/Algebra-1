@@ -157,9 +157,9 @@ exemplo mostrando que a afirma{\c c}{\~a}o {\'e} falsa.
 
 \item Se $A \cap B = \vaz$ e $A \cup B = C$, ent{\~a}o $A = C - B$.
 
-\item Se $A\cup B = E$, ent{\~a}o $C_E(A) \sub B$.
+\item Se $A\cup B = E$, ent{\~a}o $C_E(A) \sub B$ (Aqui suponha que $A \sub E$ e $B \sub E$).
 
-\item Se $A \cap B = \vaz$, ent{\~a}o $A \cup C_E(B) = C_E(B)$.
+\item Se $A \cap B = \vaz$, ent{\~a}o $A \cup C_E(B) = C_E(B)$ (Aqui suponha que $A \sub E$ e $B \sub E$).
   
 \item $A = B$ se, e somente se, $A - B = B - A$;
 
@@ -169,9 +169,9 @@ exemplo mostrando que a afirma{\c c}{\~a}o {\'e} falsa.
 
 \item $A \cup B = A \cap B$ se, e somente se,  $A = B$;
 
-\item $C_E(A) \sub C_E(B)$ se, e somente se, $A \cup B = A$;
+\item $C_E(A) \sub C_E(B)$ se, e somente se, $A \cup B = A$ (Aqui suponha que $A \sub E$ e $B \sub E$);
 
-\item $C_E(A) \sub C_E(B)$ se, e somente se, $A \cap B = B$;
+\item $C_E(A) \sub C_E(B)$ se, e somente se, $A \cap B = B$ (Aqui suponha que $A \sub E$ e $B \sub E$);
 
 \item $A \sub B$ se, e somente se,  $A \cap B = A$.
 \end{enumerate}
@@ -180,9 +180,9 @@ exemplo mostrando que a afirma{\c c}{\~a}o {\'e} falsa.
 
 \questao Demonstre as seguintes igualdades.
 \begin{enumerate}[label={\alph*})]
-\item $A \cup (C_E(A) \cap B) = A \cup B$;
+\item $A \cup (C_E(A) \cap B) = A \cup B$ (Aqui suponha que $A \sub E$);
 
-\item $A \cap (C_E(A) \cup B) = A \cap B$;
+\item $A \cap (C_E(A) \cup B) = A \cap B$ (Aqui suponha que $A \sub E$);
 
 \item $(A - B) - C = A - (B \cup C)$;
 
@@ -208,11 +208,11 @@ exemplo mostrando que a afirma{\c c}{\~a}o {\'e} falsa.
 
 \item $A \cup (B \cap (A \cup C)) = A \cup (B \cap C)$;
 
-\item $C_E( A \cap (B \cup C)) = C_E(A) \cup (C_E(B)\cap C_E(C))$.
+\item $C_E( A \cap (B \cup C)) = C_E(A) \cup (C_E(B)\cap C_E(C))$ (Aqui suponha que $A \sub E$, $B \sub E$ e $C \sub E$).
 
-\item $C_E( A \cap B \cap C) = C_E(A) \cup C_E(B) \cup C_E(C)$.
+\item $C_E( A \cap B \cap C) = C_E(A) \cup C_E(B) \cup C_E(C)$ (Aqui suponha que $A \sub E$, $B \sub E$ e $C \sub E$).
 
-\item $C_E( A \cup B \cup C) = C_E(A) \cap C_E(B) \cap C_E(C)$.
+\item $C_E( A \cup B \cup C) = C_E(A) \cap C_E(B) \cap C_E(C)$ (Aqui suponha que $A \sub E$, $B \sub E$ e $C \sub E$).
 \end{enumerate}
 
 \vspace{.3cm}
