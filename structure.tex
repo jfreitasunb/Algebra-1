@@ -1,3 +1,5 @@
+%!TEX program = xelatex
+%!TEX root = main.tex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % The Legrand Orange Book
 % Structural Definitions File
@@ -24,11 +26,17 @@
 \usepackage{graphicx} % Required for including pictures
 \graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
 
+\usepackage{ccicons} %ícones creative commons
+
+\usepackage{amssymb,amsmath,amsfonts,amsthm,amstext}
+
+\usepackage{enumitem}
+
 \usepackage{lipsum} % Inserts dummy text
 
 \usepackage{tikz} % Required for drawing custom shapes
 
-\usepackage[english]{babel} % English language/hyphenation
+\usepackage[brazil]{babel}
 
 \usepackage{enumitem} % Customize lists
 \setlist{nolistsep} % Reduce spacing between bullet points and numbered lists
@@ -54,8 +62,8 @@
 %	BIBLIOGRAPHY AND INDEX
 %----------------------------------------------------------------------------------------
 
-\usepackage[style=numeric,citestyle=numeric,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
-\addbibresource{bibliography.bib} % BibTeX bibliography file
+% \usepackage[style=numeric,citestyle=numeric,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
+% \addbibresource{bibliography.bib} % BibTeX bibliography file
 % \defbibheading{bibempty}{}
 
 \usepackage{calc} % For simpler calculation - used for spacing the index letter headings correctly
@@ -178,6 +186,9 @@
 \newcommand{\ud}{\mathop{\mathrm{{}d}}\mathopen{}}
 \newcommand{\intff}[2]{\mathopen{[}#1\,;#2\mathclose{]}}
 \newtheorem{notation}{Notation}[chapter]
+\newtheoremstyle{dotless}{}{}{\itshape}{}{\bfseries}{}{ }{}
+\theoremstyle{dotless}
+\newtheorem*{solucao}{Solu{\c c}{\~a}o:}
 
 % Boxed/framed environments
 \newtheoremstyle{ocrenumbox}% % Theorem style name
@@ -232,17 +243,59 @@
 \newcounter{dummy} 
 \numberwithin{dummy}{section}
 \theoremstyle{ocrenumbox}
-\newtheorem{theoremeT}[dummy]{Theorem}
-\newtheorem{problem}{Problem}[chapter]
-\newtheorem{exerciseT}{Exercise}[chapter]
+\newtheorem{teoremaT}[dummy]{Teorema}
+\newtheorem{problema}{Problema}[chapter]
+\newtheorem{exercicio}{Exercício}[chapter]
 \theoremstyle{blacknumex}
-\newtheorem{exampleT}{Example}[chapter]
+\newtheorem{exemplo}{Exemplo}[chapter]
+\newtheorem{exemplos}{Exemplos}[chapter]
+\newtheorem{observacao}{Observaçao}[chapter]
+\newtheorem{observacoes}{Observações}[chapter]
 \theoremstyle{blacknumbox}
 \newtheorem{vocabulary}{Vocabulary}[chapter]
-\newtheorem{definitionT}{Definition}[section]
-\newtheorem{corollaryT}[dummy]{Corollary}
+\newtheorem{definicaoT}{Definição}[section]
+\newtheorem{corolarioT}[dummy]{Corolário}
 \theoremstyle{ocrenum}
-\newtheorem{proposition}[dummy]{Proposition}
+\newtheorem{proposicao}[dummy]{Proposição}
+\newenvironment{prova}[1][Prova]{\noindent\textbf{#1:} }{\qedsymbol}%{\ \rule{0.5em}{0.5em}}
+
+%----------------------------------------------------------------------------------------
+%	MATH COMMANDS
+%----------------------------------------------------------------------------------------
+
+
+\newcommand{\n}{\mathbb{N}}
+\newcommand{\integer}{\mathbb{Z}}
+\newcommand{\rac}{\mathbb{Q}}
+\newcommand{\im}{{\rm Im\,}}
+\newcommand{\aut}{{\rm Aut\,}}
+\newcommand{\cp}[1]{\mathbb{#1}}
+\newcommand{\sub}{\subseteq}
+\newcommand{\n}{\mathbb{N}}
+\newcommand{\integer}{\mathbb{Z}}
+\newcommand{\rac}{\mathbb{Q}}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\complex}{\mathbb{C}}
+\newcommand{\lap}[1]{\mathcal{L}\left\{#1\right\}}
+\newcommand{\lapi}[1]{\mathcal{L}^{-1}\left\{#1\right\}}
+\newcommand{\se}[1]{\displaystyle\sum_{n = 1}^\infty{#1}}
+\newcommand{\dlim}[2]{\displaystyle\lim_{#1\rightarrow #2}}
+\newcommand{\slim}{\displaystyle\lim_{n \rightarrow \infty}}
+\newcommand{\seq}[1]{\{{#1_n\}}}
+\newcommand{\seg}[1]{\displaystyle\sum_{n = 1}^\infty{#1_n}}
+\newcommand{\sei}[2]{\displaystyle\sum_{#1}^\infty{#2}}
+\newcommand{\sepc}[3]{\displaystyle\sum_{#1}^\infty{#2(x - #3)^n}}
+\newcommand{\imp}[3]{\displaystyle\int_{#1}^{+\infty}{#3}{d #2}}
+\newcommand{\dint}[4]{\displaystyle\int_{#1}^{#2}{#4}{d#3}}
+\newcommand{\inti}[2]{\displaystyle\int{#1}{d#2}}
+\newcommand{\norma}[1]{\left\lVert#1\right\rVert}
+\newcommand{\flim}[1]{\displaystyle\lim_{#1\rightarrow \infty}}
+\renewcommand{\sin}{{\rm sen\,}}
+\renewcommand{\tan}{{\rm tg\,}}
+\renewcommand{\csc}{{\rm cossec\,}}
+\renewcommand{\cot}{{\rm cotg\,}}
+\renewcommand{\sinh}{{\rm senh\,}}
+
 
 %----------------------------------------------------------------------------------------
 %	DEFINITION OF COLORED BOXES
@@ -313,17 +366,26 @@ linewidth=4pt,
 innerbottommargin=5pt]{cBox}
 
 % Creates an environment for each type of theorem and assigns it a theorem text style from the "Theorem Styles" section above and a colored box from above
-\newenvironment{theorem}{\begin{tBox}\begin{theoremeT}}{\end{theoremeT}\end{tBox}}
+\newenvironment{teorema}{\begin{tBox}\begin{theoremeT}}{\end{theoremeT}\end{tBox}}
 \newenvironment{exercise}{\begin{eBox}\begin{exerciseT}}{\hfill{\color{ocre}\tiny\ensuremath{\blacksquare}}\end{exerciseT}\end{eBox}}				  
-\newenvironment{definition}{\begin{dBox}\begin{definitionT}}{\end{definitionT}\end{dBox}}	
+\newenvironment{definicao}{\begin{dBox}\begin{definicaoT}}{\end{definicaoT}\end{dBox}}	
 \newenvironment{example}{\begin{exampleT}}{\hfill{\tiny\ensuremath{\blacksquare}}\end{exampleT}}		
-\newenvironment{corollary}{\begin{cBox}\begin{corollaryT}}{\end{corollaryT}\end{cBox}}	
+\newenvironment{corolario}{\begin{cBox}\begin{corolarioT}}{\end{corolarioT}\end{cBox}}	
 
 %----------------------------------------------------------------------------------------
 %	REMARK ENVIRONMENT
 %----------------------------------------------------------------------------------------
 
 \newenvironment{remark}{\par\vspace{10pt}\small % Vertical white space above the remark and smaller font size
+\begin{list}{}{
+\leftmargin=35pt % Indentation on the left
+\rightmargin=25pt}\item\ignorespaces % Indentation on the right
+\makebox[-2.5pt]{\begin{tikzpicture}[overlay]
+\node[draw=ocre!60,line width=1pt,circle,fill=ocre!25,font=\sffamily\bfseries,inner sep=2pt,outer sep=0pt] at (-15pt,0pt){\textcolor{ocre}{R}};\end{tikzpicture}} % Orange R in a circle
+\advance\baselineskip -1pt}{\end{list}\vskip5pt} % Tighter line spacing and white space after remark
+
+
+\newenvironment{remarks}{\par\vspace{10pt}\small % Vertical white space above the remark and smaller font size
 \begin{list}{}{
 \leftmargin=35pt % Indentation on the left
 \rightmargin=25pt}\item\ignorespaces % Indentation on the right
