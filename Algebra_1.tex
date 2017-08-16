@@ -1,193 +1,118 @@
 %!TEX program = xelatex 
 %!TEX encoding = ISO-8859-1
-\documentclass[portuguese,twoside,12pt]{book}%opcao draft remove os links
-\usepackage{amssymb,amsmath,amsfonts,amsthm,amstext}
-\usepackage[brazil]{babel}
-% \usepackage[latin1]{inputenc}
-\usepackage{fancybox}
-%\usepackage{niceframe}
-\usepackage[unicode,bookmarks=true]{hyperref}
-%\usepackage[pdftex]{graphicx}
-\usepackage{graphicx}
-\usepackage{makeidx}
-\usepackage{enumitem}
-\usepackage{multicol}
-\usepackage{tikz,circuitikz,siunitx}
-\usetikzlibrary{scopes}
-\usepackage{pstricks-add,pst-coil}
-\usepackage{ccicons}
-\usepackage{hyperref}
-\usepackage{xcolor}
-\usepackage{titlesec}
-\usepackage{gauss}
-\usepackage{xcolor} % Required for specifying colors by name
-\definecolor{ocre}{RGB}{243,102,25} % Define the orange color used for highlighting throughout the book
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The Legrand Orange Book
+% LaTeX Template
+% Version 2.3 (8/8/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Mathias Legrand (legrand.mathias@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Compiling this template:
+% This template uses biber for its bibliography and makeindex for its index.
+% When you first open the template, compile it from the command line with the 
+% commands below to make sure your LaTeX distribution is configured correctly:
+%
+% 1) pdflatex main
+% 2) makeindex main.idx -s StyleInd.ist
+% 3) biber main
+% 4) pdflatex main x 2
+%
+% After this, when you wish to update the bibliography/index use the appropriate
+% command above and make sure to compile with pdflatex several times 
+% afterwards to propagate your changes to the document.
+%
+% This template also uses a number of packages which may need to be
+% updated to the newest versions for the template to compile. It is strongly
+% recommended you update your LaTeX distribution if you have any
+% compilation errors.
+%
+% Important note:
+% Chapter heading images should have a 2:1 width:height ratio,
+% e.g. 920px width and 460px height.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\usepackage{datetime}
-%\usepackage[active,tightpage]{preview}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
 
-\setcounter{secnumdepth}{3}
-\setcounter{tocdepth}{3}
+\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
 
-%=============================================================================================
-%             Nomes para defini{\c c}{\~o}es, teoremas, etc
-%=============================================================================================
+%----------------------------------------------------------------------------------------
 
-\newtheorem{teorema}{Teorema}[chapter]
-\newtheorem{definicao}{Defini{\c c}{\~a}o}[chapter]
-\newtheorem{notacao}{Nota\c{c}\~ao}[definicao]
-\newtheorem{proposicao}{Proposi{\c c}{\~a}o}[definicao]
-\newtheorem{lema}{Lema}[proposicao]
-\newtheorem{corolario}{Corol{\'a}rio}[teorema]
-\newtheorem{observacao}{Observa{\c c}{\~a}o}[definicao]
-\newtheorem{observacoes}{Observa{\c c}{\~o}es}[definicao]
-\newtheorem{propriedades}{Propriedades}[definicao]
-\newtheorem{exemplo}{Exemplo}[definicao]
-\newtheorem{exemplos}{Exemplos}[definicao]
-\newenvironment{prova}[1][Prova]{\noindent\textbf{#1:} }{\hfill$\diamondsuit$}%{\ \rule{0.5em}{0.5em}}
-\newtheoremstyle{dotless}{}{}{\itshape}{}{\bfseries}{}{ }{}
-\theoremstyle{dotless}
-\newtheorem*{solucao}{Solu{\c c}{\~a}o:}
-%=============================================================================================
-%             Cabe{\c c}alhos
-%=============================================================================================
-
-\usepackage{fancyhdr}
-\pagestyle{fancy} \addtolength{\headwidth}{\marginparsep}
-\addtolength{\headwidth}{\marginparwidth}
-\renewcommand{\headrulewidth}{1pt}
-\renewcommand{\chaptermark}[1]{\markboth{{CAP. \thechapter\ $\bullet$ \; #1}}{}}
-\renewcommand{\sectionmark}[1]{\markright{{SE{\c C}{\~A}O \thesection\ $\bullet$ \; #1}}}
-\fancyhf{} \fancyhead[RO,RE]{\small\bfseries\textrm \thepage}
-\fancyhead[LO]{\small\bfseries\textrm \leftmark}
-\fancyhead[LE]{\small\bfseries\textrm \rightmark}
-
-%=============================================================================================
-%             Estilo dos t{\'\i}tulos de cap{\'\i}tulo, se{\c c}{\~a}o, etc
-%=============================================================================================
-\usepackage{sectsty}
-\usepackage[Conny]{fncychap}
-\sectionfont{\rmfamily\raggedright\sectionrule{0.3in}{1pt}{-0.1in}{1pt}}
-\subsectionfont{\rmfamily\raggedright}
-\chapterfont{\thispagestyle{empty}}
-\ChNameVar{\Huge\rm\bfseries} \ChTitleVar{\Huge\rm\bfseries}
-
-%=============================================================================================
-%             Medidas
-%=============================================================================================
-
-
-\setlength{\headsep}{1cm}                    % DIST{\^A}NCIA TEXTO/CABE{\c C}ALHO
-\setlength{\textwidth}{16.5 cm}              % LARGURA DO TEXTO
-\setlength{\textheight}{21.5 cm}             % ALTURA DO TEXTO
-\setlength{\oddsidemargin}{0.1 cm}           % MARGEM {\'I}MPAR
-\setlength{\evensidemargin}{0.4 cm}          % MARGEM PAR
-\setlength{\topmargin}{0 cm}                 % MARGEM SUPERIOR
-\renewcommand{\baselinestretch}{1.4}         % DIST{\^A}NCIA ENTRE LINHAS
-
-%=============================================================================================
-%             Comandos Pessoais
-%=============================================================================================
-\newcommand{\im}{{\rm Im\,}}
-\newcommand{\aut}{{\rm Aut\,}}
-\newcommand{\cp}[1]{\mathbb{#1}}
-\newcommand{\sub}{\subseteq}
-\newcommand{\n}{\mathbb{N}}
-\newcommand{\integer}{\mathbb{Z}}
-\newcommand{\rac}{\mathbb{Q}}
-\newcommand{\real}{\mathbb{R}}
-\newcommand{\complex}{\mathbb{C}}
-\newcommand{\lap}[1]{\mathcal{L}\left\{#1\right\}}
-\newcommand{\lapi}[1]{\mathcal{L}^{-1}\left\{#1\right\}}
-\newcommand{\se}[1]{\displaystyle\sum_{n = 1}^\infty{#1}}
-\newcommand{\dlim}[2]{\displaystyle\lim_{#1\rightarrow #2}}
-\newcommand{\slim}{\displaystyle\lim_{n \rightarrow \infty}}
-\newcommand{\seq}[1]{\{{#1_n\}}}
-\newcommand{\seg}[1]{\displaystyle\sum_{n = 1}^\infty{#1_n}}
-\newcommand{\sei}[2]{\displaystyle\sum_{#1}^\infty{#2}}
-\newcommand{\sepc}[3]{\displaystyle\sum_{#1}^\infty{#2(x - #3)^n}}
-\newcommand{\imp}[3]{\displaystyle\int_{#1}^{+\infty}{#3}{d #2}}
-\newcommand{\dint}[4]{\displaystyle\int_{#1}^{#2}{#4}{d#3}}
-\newcommand{\inti}[2]{\displaystyle\int{#1}{d#2}}
-\newcommand{\norma}[1]{\left\lVert#1\right\rVert}
-\newcommand{\flim}[1]{\displaystyle\lim_{#1\rightarrow \infty}}
-\renewcommand{\sin}{{\rm sen\,}}
-\renewcommand{\tan}{{\rm tg\,}}
-\renewcommand{\csc}{{\rm cossec\,}}
-\renewcommand{\cot}{{\rm cotg\,}}
-\renewcommand{\sinh}{{\rm senh\,}}
-
-
-%=============================================================================================
-%\'Indice remissivo em 3 colunas
-%=============================================================================================
-% \makeatletter
-% \renewenvironment{theindex}
-%  {\if@twocolumn
-%   \@restonecolfalse
-%  \else
-%   \@restonecoltrue
-%  \fi
-%  \setlength{\columnseprule}{0pt}
-%  \setlength{\columnsep}{35pt}
-%  \begin{multicols}{3}[\section*{\indexname}]
-%  \markboth{\MakeUppercase\indexname}%
-%    {\MakeUppercase\indexname}%
-%  \thispagestyle{plain}
-%  \setlength{\parindent}{0pt}
-%  \setlength{\parskip}{0pt plus 0.3pt}
-%  \relax
-%  \let\item\@idxitem}%
-%  {\end{multicols}\if@restonecol\onecolumn\else\clearpage\fi}
-% \makeatother
-
-\makeindex
-%=============================================================================================
-%\'Indice remissivo em 3 colunas
-%=============================================================================================
-% \makeatletter
-% \renewenvironment{theindex}
-%  {\if@twocolumn
-%   \@restonecolfalse
-%  \else
-%   \@restonecoltrue
-%  \fi
-%  \setlength{\columnseprule}{0pt}
-%  \setlength{\columnsep}{35pt}
-%  \begin{multicols}{3}[\section*{\indexname}]
-%  \markboth{\MakeUppercase\indexname}%
-%    {\MakeUppercase\indexname}%
-%  \thispagestyle{plain}
-%  \setlength{\parindent}{0pt}
-%  \setlength{\parskip}{0pt plus 0.3pt}
-%  \relax
-%  \let\item\@idxitem}%
-%  {\end{multicols}\if@restonecol\onecolumn\else\clearpage\fi}
-% \makeatother
-
-\makeindex
-
-
+\input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
 
 \begin{document}
-%\listoftodos
-\include{capa}
-\hypersetup{linkcolor=blue}
-\tableofcontents
-% \listoffigures
-\hypersetup{linkcolor=red}
-\include{prefacio-e-notacoes}
-%\include{nocoes-de-logica}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begingroup
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+\node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{background}};
+\draw (current page.center) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering Álgebra 1\\[15pt] % Book title
+{\Large Notas de Aula 2/2017}\\[20pt] % Subtitle
+{\huge Jos\'e Ant\^onio O. Freitas}\\
+{\large \today}}}; % Author name
+
+\end{tikzpicture}
+\vfill
+\endgroup
+
+%----------------------------------------------------------------------------------------
+%	COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
+
+\newpage
+~\vfill
+\thispagestyle{empty}
+
+\noindent \ccbyncsa\ Este texto est\'a licenciado sob uma \textbf{Licen\c{c}a Creative Commons Atribui\c{c}\~ao-N\~aoComercial-CompartilhaIgual 3.0 Brasil} \href{http://creativecommons.org/licenses/by-nc-sa/3.0/br/deed.pt\_BR}{\textit{http://creativecommons.org/licenses/by-nc-sa/3.0/br/deed.pt\_BR}}\\ % Copyright notice
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\usechapterimagefalse % If you don't want to include a chapter image, use this to toggle images off - it can be enabled later with \usechapterimagetrue
+
+\chapterimage{chapter_head_1.pdf} % Table of contents heading image
+
+\pagestyle{empty} % No headers
+
+\tableofcontents % Print the table of contents itself
+
+\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
+
+\pagestyle{fancy} % Print headers again
+
+
 \include{teoria-de-conjuntos}
-% \include{numeros-inteiros}
-% \include{relacoes-e-funcoes}
-% \include{operacoes-em-Zm}
-% \include{aneis}
-% \include{grupos}
 \include{bibliografia}
-% \cleardoublepage
-% \phantomsection
-% \addcontentsline{toc}{chapter}{\'Indice Remissivo}
-% \printindex
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	INDEX
+%----------------------------------------------------------------------------------------
+
+\cleardoublepage
+\phantomsection
+\setlength{\columnsep}{0.75cm}
+\addcontentsline{toc}{chapter}{\textcolor{ocre}{Index}}
+\printindex
+
+%----------------------------------------------------------------------------------------
 
 \end{document}
