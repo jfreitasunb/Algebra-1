@@ -21,18 +21,9 @@
 
 \vspace{.6cm}
 
-\questao Mostre que $C_E(A) \subseteq C_E(B)$ se, e somente se, $A \cup B = A$.
+\questao Sejam $A$ e $B$ conjuntos. Suponha que $x \in A$ e $A \nsub B$. Então $x \notin B$?
 
-\noindent\textbf{Solu\c{c}\~ao:} Temos duas afirma\c{c}\~oes para serem demonstradas:
-\begin{enumerate}
-	\item[$1^a$)] Se $C_E(A) \subseteq C_E(B)$ ent\~ao, $A \cup B = A$.
-
-	Como queremos mostrar que $A \cup B = A$ devemos mostrar que $A \cup B \subseteq A$ e que $A \subseteq A \cup B$. A inclus\~ao $A \subseteq A \cup B$ \'e consequ\^encia da defini\c{c}\~ao de uni\~ao de conjuntos. Assim seja $x \in A \cup B$. Da{\'\i} $x \in A$ ou $x \in B$. Se $x \in A$ n\~ao temos nada h\'a fazer. Suponha ent\~ao que $x \in B$. Assim $x \notin C_E(B)$ e como $C_E(A) \subseteq C_E(B)$, ent\~ao $x \notin C_E(A)$, isto \'e, $x \in A$. Logo $A \cup B \subseteq A$. Portanto $A \cup B = A$.
-
-	\item[$2^a$)] Se $A \cup B = A$, ent\~ao $C_E(A) \subseteq C_E(B)$.
-
-	Seja $x \in C_E(A)$. Ent\~ao por defini\c{c}\~ao $x \notin A$. Mas $A = A \cup B$ e assim $x \notin B$. Logo $x \in C_E(B)$. Portanto $C_E(A) \subseteq C_E(B)$.
-\end{enumerate}
+\noindent\textbf{Solu\c{c}\~ao:} Falso. Tome por exemplo $A = \{1,2,3\}$, $B = \{3,4\}$ e $x = 3$. Temos $A \nsub B$, $x \in A$ e no entanto $x \in B$.
 
 \vspace{.5cm}
 
