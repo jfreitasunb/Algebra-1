@@ -188,16 +188,18 @@ Em virtude da observação anterior a definição de relação de equivalência 
 	\end{enumerate}
 \end{exemplos}
 
-\begin{definicao}[Representante da Classe de Equival{\^e}ncia] Seja C uma classe de equival{\^e}ncia de uma rela{\c c}{\~a}o de equival{\^e}ncia R. Qualquer elemento $y\in C$ {\'e} chamado representante de C.\end{definicao}
+\begin{definicao}
+	Seja $C$ uma classe de equival{\^e}ncia de uma rela{\c c}{\~a}o de equival{\^e}ncia $R$. Qualquer elemento $y\in C$ {\'e} chamado \textbf{representante} de $C$.
+\end{definicao}
 
 \begin{proposicao}
-	Seja $X$ um conjunto n{\~a}o vazio e $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em $X$. Ent{\~a}o $X$ {\'e} a uni{\~a}o disjunta das classes $\overline{a}$, $a \in X$, ou seja,
+	Seja $A$ um conjunto n{\~a}o vazio e $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em $A$. Ent{\~a}o $A$ {\'e} a uni{\~a}o disjunta das classes $\overline{b}$, $b \in A$, ou seja,
 	\[
-		X = \displaystyle\bigsqcup_{a\in X}\overline{a}.
+		X = \bigcup_{b\in A}\overline{b}.
 	\]
 \end{proposicao}
 \begin{prova}
-	Para todo $a\in X, \overline{a}\subseteq X$, logo $\displaystyle\bigsqcup_{a\in X}\overline{a}\subseteq X$. Seja $b\in X$. Logo $b\in\overline{b}$, da{\'\i} $b\in \displaystyle\bigsqcup_{a\in X}\overline{a}$, logo $X\subseteq\displaystyle\bigsqcup_{a\in X}\overline{a}$. Portanto, $X=\displaystyle\bigsqcup_{a\in X}\overline{a}$.
+	Para todo $b\in A$ temos, pela definição de classe de equivalência, que $\overline{b}\subseteq A$. Logo $\bigcup_{b\in X}\overline{b}\subseteq X$. Agora seja $x\in A$. Logo $x \in \overline{x}$ e da{\'\i} $x\in \bigcup_{b\in A}\overline{b}$. Assim $X\subseteq\bigcup_{a\in X}\overline{a}$. Portanto, $X=\bigcup_{b\in X}\overline{b}$.
 \end{prova}
 
 Exemplo:\\
