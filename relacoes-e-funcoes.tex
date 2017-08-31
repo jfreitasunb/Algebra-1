@@ -34,7 +34,7 @@
 
 Quando $R\subseteq A \times A$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia, dizemos que $R$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia em $A$. Quando dois elementos $x$, $y \in A$ s{\~a}o tais que $(x,y) \in R$, dizemos que $x$ e $y$ \textbf{s{\~a}o relacionados} ou que $x$ e $y$ \textbf{estão relacionados}.
 
-\begin{exemplos}
+\begin{exemplos}\label{exemplos_classes_equivalencia}
 	\begin{enumerate}
 		\item Seja A=\{1,2,3,4\}. Temos
 		\begin{align*}
@@ -116,6 +116,37 @@ O conjunto das classes de equival{\^e}ncia m{\'o}dulo R ser{\'a} denotado por $X
 
 Observa{\c c}{\~a}o: Dado um conjunto $X\neq\emptyset$ e R uma rela{\c c}{\~a}o de equival{\^e}ncia em X, dado $a\in X$ como R {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia, aRa, da{\'\i} $\overline{a}\neq\emptyset$, pois $a\in\overline{a}$\\
 
+\begin{exemplos}
+	Do Exemplo \ref{exemplos_classes_equivalencia} temos
+	\begin{enumerate}
+		\item As classes de equivalência de $R_1$ são:
+		\begin{align*}
+			\overline{1} &= \{x \in A \mid (x,1) \in R_1\} = \{1,2,3,4\}\\
+			\overline{2} &= \{x \in A \mid (x,2) \in R_1\} = \{1,2,3,4\}\\
+			\overline{3} &= \{x \in A \mid (x,3) \in R_1\} = \{1,2,3,4\}\\
+			\overline{4} &= \{x \in A \mid (x,4) \in R_1\} = \{1,2,3,4\}\\
+		\end{align*}
+		Nesse caso temos somente uma classe de equivalência.
+
+		\item As classes de equivalência de $R_3$ são:
+		\begin{align*}
+			\overline{1} &= \{x \in A \mid (x,1) \in R_3\} = \{1,2\}\\
+			\overline{2} &= \{x \in A \mid (x,2) \in R_3\} = \{1,2\}\\
+			\overline{3} &= \{x \in A \mid (x,3) \in R_3\} = \{3\}\\
+			\overline{4} &= \{x \in A \mid (x,4) \in R_3\} = \{4\}\\
+		\end{align*}
+		Aqui temos três classes de equivalência diferentes.
+
+		\item As classes de equivalência de $R_4$ são:
+		\begin{align*}
+			\overline{1} &= \{x \in A \mid (x,1) \in R_4\} = \{1\}\\
+			\overline{2} &= \{x \in A \mid (x,2) \in R_4\} = \{2\}\\
+			\overline{3} &= \{x \in A \mid (x,3) \in R_4\} = \{3\}\\
+			\overline{4} &= \{x \in A \mid (x,4) \in R_4\} = \{4\}\\
+		\end{align*}
+		Aqui temos quatro classes de equivalência diferentes.
+	\end{enumerate}
+\end{exemplos}
 Exemplos:
 \begin{enumerate}
 \item Seja X=\{a,b,c\} e R=\{(a,a),(b,b),(c,c),(a,c),(c,a)\}. Temos:\\
