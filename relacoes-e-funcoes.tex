@@ -10,7 +10,7 @@ Sejam A e B dois conjuntos n{\~a}o vazios. Os subconjuntos de AxB s{\~a}o chamad
 Quando $R$ {\'e} uma rela{\c c}{\~a}o em $A \times B$, tamb{\'e}m dizemos que $R$ {\'e} uma rela{\c c}{\~a}o de A em B.
 
 Exemplos:
-\begin{enumerate}
+\begin{enumerate}[label={\arabic*})]
 \item Se A=\{0,1\} e B=\{-1,0,1\}, ent{\~a}o AxB=\{(0,-1),(0,0),(0,1),(1,-1),(1,0),(1,1,)\}\\
 S{\~a}o exemplos de rela{\c c}{\~o}es:\\
 $R_{1}=\{(0,1)\}$\\
@@ -22,12 +22,12 @@ $R=\{(x,y)\in \mathbb{R}$x$\mathbb{R}/ y\geq 0\}$
 \end{enumerate}
 
 \section{Rela{\c c}{\~o}es de equival{\^e}ncia}
-\subsubsection{Defini{\c c}{\~a}o}
+
 \begin{definicao}[Rela{\c c}{\~a}o de equival{\^e}ncia] Seja X um conjunto n{\~a}o vazio e $R\subseteq X \times X$ uma rela{\c c}{\~a}o. Dizemos que R {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia se:
-\begin{enumerate}
-\item Para todo $a \in X$, $(a,a)\in R$.
-\item Se $(a, b) \in R$, então $(b, a) \in R$.
-\item Se $(a, b) \in R$ e $(b, c) \in R$, então $(a, c)\in R$.
+\begin{enumerate}[label={\roman*})]
+\item Para todo $a \in X$, $(a,a)\in R$. \textit{(Propriedade Reflexiva)}
+\item Se $(a, b) \in R$, então $(b, a) \in R$. \textit{(Propriedade Simétrica)}
+\item Se $(a, b) \in R$ e $(b, c) \in R$, então $(a, c)\in R$. \textit{(Propriedade Transitiva)}
 \end{enumerate}
 \end{definicao}
 
@@ -85,13 +85,20 @@ $\bar{3}=\{x\in X/xR3\}=\{3\}$\\
 $\bar{4}=\{x\in X/xR4\}=\{4\}$
 \end{enumerate}
 
-\begin{proposicao} Seja R uma rela{\c c}{\~a}o de equival{\^e}ncia em um conjunto n{\~a}o vazio X, sejam a,b$\in$X. Se $\bar{a}\cap\bar{b}\neq\emptyset$, ent{\~a}o aRb.\end{proposicao}
+\begin{proposicao}
+	Seja $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em um conjunto n{\~a}o vazio $X$, sejam $a$, $b \in X$. Se $\bar{a}\cap\bar{b}\neq\emptyset$, ent{\~a}o $aRb$.
+\end{proposicao}
+\begin{prova}
+	Como  $\bar{a}\cap\bar{b}\neq\emptyset$, existe um $y\in\bar{a}\cap\bar{b}$, logo $y\in\bar{a}\wedge y\in\bar{b}$. Da defini{\c c}{\~a}o de classe de equival{\^e}ncia temos que yRa e yRb. Como R {\'e} rela{\c c}{\~a}o de equival{\^e}ncia temos que aRy e bRy. Por transitividade, aRb, como quer{\'\i}amos demonstrar.
+\end{prova}
 
-\textbf{Demonstra{\c c}{\~a}o}: Como  $\bar{a}\cap\bar{b}\neq\emptyset$, existe um $y\in\bar{a}\cap\bar{b}$, logo $y\in\bar{a}\wedge y\in\bar{b}$. Da defini{\c c}{\~a}o de classe de equival{\^e}ncia temos que yRa e yRb. Como R {\'e} rela{\c c}{\~a}o de equival{\^e}ncia temos que aRy e bRy. Por transitividade, aRb, como quer{\'\i}amos demonstrar.\#
+\begin{proposicao}
+	Se  $\bar{a}\cap\bar{b}\neq\emptyset$, ent{\~a}o $\bar{a}=\bar{b}$.
+\end{proposicao}
+\begin{prova}
+	Seja $y\in \bar{a}$. Da{\'\i} yRa. Como $\bar{a}\cap\bar{b}\neq\emptyset$, pela proposi{\c c}{\~a}o anterior, aRb. Logo, como yRa e aRb, segue que yRb, ou seja, $y\in\bar{b}$. Da{\'\i} $\bar{a}\subseteq\bar{b}$. Como no caso anterior, mostra-se que $\bar{b}\subseteq\bar{a}$. Portanto $\bar{a}=\bar{b}$.
+\end{prova}
 
-\begin{proposicao} Se  $\bar{a}\cap\bar{b}\neq\emptyset$, ent{\~a}o $\bar{a}=\bar{b}$\end{proposicao}
-
-\textbf{Demonstra{\c c}{\~a}o}: Seja $y\in \bar{a}$. Da{\'\i} yRa. Como $\bar{a}\cap\bar{b}\neq\emptyset$, pela proposi{\c c}{\~a}o anterior, aRb. Logo, como yRa e aRb, segue que yRb, ou seja, $y\in\bar{b}$. Da{\'\i} $\bar{a}\subseteq\bar{b}$. Como no caso anterior, mostra-se que $\bar{b}\subseteq\bar{a}$. Portanto $\bar{a}=\bar{b}$.\#
 
 \begin{corolario} As classes de equival{\^e}ncia s{\~a}o conjuntos disjuntos ou iguais.\end{corolario}
 
@@ -103,17 +110,22 @@ $\bar{f}=\{f,g\}$
 
 \begin{definicao}[Representante da Classe de Equival{\^e}ncia] Seja C uma classe de equival{\^e}ncia de uma rela{\c c}{\~a}o de equival{\^e}ncia R. Qualquer elemento $y\in C$ {\'e} chamado representante de C.\end{definicao}
 
-\begin{proposicao} Seja X um conjunto n{\~a}o vazio e R uma rela{\c c}{\~a}o de equival{\^e}ncia em X. Ent{\~a}o X {\'e} a uni{\~a}o disjunta das classes $\bar{a}, a\in X$, ou seja, \[X=\displaystyle\bigsqcup_{a\in X}\bar{a}\].\end{proposicao}
-
-\textbf{Demonstra{\c c}{\~a}o}: Para todo $a\in X, \bar{a}\subseteq X$, logo $\displaystyle\bigsqcup_{a\in X}\bar{a}\subseteq X$. Seja $b\in X$. Logo $b\in\bar{b}$, da{\'\i} $b\in \displaystyle\bigsqcup_{a\in X}\bar{a}$, logo $X\subseteq\displaystyle\bigsqcup_{a\in X}\bar{a}$. Portanto, $X=\displaystyle\bigsqcup_{a\in X}\bar{a}$.\#
+\begin{proposicao}
+	Seja $X$ um conjunto n{\~a}o vazio e $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em $X$. Ent{\~a}o $X$ {\'e} a uni{\~a}o disjunta das classes $\bar{a}$, $a \in X$, ou seja,
+	\[
+		X = \displaystyle\bigsqcup_{a\in X}\bar{a}.
+	\]
+\end{proposicao}
+\begin{prova}
+	Para todo $a\in X, \bar{a}\subseteq X$, logo $\displaystyle\bigsqcup_{a\in X}\bar{a}\subseteq X$. Seja $b\in X$. Logo $b\in\bar{b}$, da{\'\i} $b\in \displaystyle\bigsqcup_{a\in X}\bar{a}$, logo $X\subseteq\displaystyle\bigsqcup_{a\in X}\bar{a}$. Portanto, $X=\displaystyle\bigsqcup_{a\in X}\bar{a}$.
+\end{prova}
 
 Exemplo:\\
 Em $\mathbb{Z}$x$\mathbb{Z}$ considere a seguinte rela{\c c}{\~a}o: $R=\{(a,b)\in \mathbb{Z}$x$\mathbb{Z}/2|(a-b)\}$. Mostre que {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia e mostre suas classes de equival{\^e}ncia.
-\begin{enumerate}
+\begin{enumerate}[label={\alph*})]
 \item Dado $a\in \mathbb{Z}$, aRa pois $2|(a-a)=0$.
 \item Se aRb, ent{\~a}o $2|(a-b)$, ou seja, a-b=2k, -(a-b)=b-a=2(-k). Logo bRa.
 \item Se aRb e bRc, ent{\~a}o a-b=2k e b-c=2q. Logo a-b+b-c=2k+2q=2(k+q). Logo, aRc.
-
 \end{enumerate}
 
 Portanto R {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia.
