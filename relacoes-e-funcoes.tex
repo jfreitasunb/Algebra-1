@@ -68,13 +68,24 @@ Quando $R\subseteq A \times A$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia, d
 			Portanto $R$ é uma relação de equivalência sobre $\z$.
 		\end{solucao}
 		
-		\item Tome $R=\{(x,y)\in \z$x$\z/ 2|(x-y)\}=\{(x,y)\in\z$x$\z/ x-y=2k, k\in\z\}$\\
-		R {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia pois:
-		\begin{itemize}
-			\item $\forall x\in\z,xRx$ pois $x-x=2.0$
-			\item $xRy\rightarrow x-y=2k\Rightarrow y-x=-(x-y)=2.(-k)\Rightarrow yRx$
-			\item $xRy\wedge yRz\rightarrow x-y=2k\wedge y-z=2q\Rightarrow x+z=x-y+y-z=2k+2q=2(k+q)\rightarrow xRz$
-		\end{itemize}
+		\item Seja $A = \z$ e tome $R = \{(x,y)\in \z \times \z \mid x - y = 2k, \mbox{ para algum } k \in \z\}$. Mostre que $R$
+		é uma rela{\c c}{\~a}o de equival{\^e}ncia sobre $\z$.
+		\begin{solucao}
+			De fato,
+			\begin{itemize}
+				\item Para todo $x\in\z$ temos $x - x = 2\cdot0$ e com isso $(x,x) \in R$.
+				\item Se $(x,y) \in R$ então existe $k \in \z$ tal que $x - y = 2k$. Agora $y - x = -(x - y) = -2k = 2 (-k)$ 
+				e como $-k \in \z$ segue que $(y,x) \in R$.
+				\item Se $(x,y) \in R$ e $(y,z) \in R$, então existem $k$, $l\in \z$ tais que $x - y = 2k$ e $y - z = 2l$.
+				Somando essas duas equações obtemos
+				\begin{align*}
+					(x - y) + (y - z) &= 2k + 2l\\
+					x - z &= 2(k + l)
+				\end{align*}
+				e como $k + l \in \z$ segue que $(x,z) \in \z)$.
+			\end{itemize}
+			Assim $R$ é uma relação de equivalência.
+		\end{solucao}
 	\end{enumerate}
 \end{exemplos}
 \begin{nota}[Equival{\^e}ncia m{\'o}dulo R]
