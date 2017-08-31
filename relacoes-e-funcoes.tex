@@ -88,9 +88,20 @@ Quando $R\subseteq A \times A$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia, d
 		\end{solucao}
 	\end{enumerate}
 \end{exemplos}
-\begin{nota}[Equival{\^e}ncia m{\'o}dulo R]
-Seja R uma rela{\c c}{\~a}o de equival{\^e}ncia em X. Para dizermos que $(a,b)\in R$ usaremos a nota{\c c}{\~a}o $a\equiv b(R)$, que se l{\^e} ``a é equivalente a b m{\'o}dulo R", ou ainda a nota{\c c}{\~a}o $aRb$, com o mesmo significado anterior.
-\end{nota}
+\begin{observacao}
+	Seja $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em $A$. Para dizermos que $(x,y) \in R$ usaremos a nota{\c c}{\~a}o $x\equiv y\ (R)$, que se l{\^e} ``$x$ é equivalente a $y$ m{\'o}dulo $R$", ou ainda a nota{\c c}{\~a}o $xRy$, com o mesmo significado anterior.
+\end{observacao}
+
+Em virtude da observação anterior a definição de relação de equivalência pode ser reescrita como:
+
+\begin{definicao}
+	Seja $A$ um conjunto n{\~a}o vazio e $R\subseteq A \times A$. Dizemos que $R$ {\'e} uma \textbf{rela{\c c}{\~a}o de equival{\^e}ncia} se:
+	\begin{enumerate}[label={\roman*})]
+		\item Para todo $x \in A$, $xRx$. \textit{(Propriedade Reflexiva)}
+		\item Se $xRy$, então $yRx$. \textit{(Propriedade Simétrica)}
+		\item Se $xRy$ e $yRz$, então $xRz$. \textit{(Propriedade Transitiva)}
+	\end{enumerate}
+\end{definicao}
 
 \subsection{Classe de equival{\^e}ncia e conjunto quociente}
 \begin{definicao}[Classe de Equival{\^e}ncia] Seja R uma rela{\c c}{\~a}o de equival{\^e}ncia sobre um conjunto X. Dado $a\in X$, chamamos classe de equival{\^e}ncia determinada por a m{\'o}dulo R, denotada por $\bar{a}$ ou C(a), o subconjunto constitu{\'\i}do pelos elementos $b\in X$ tais que bRa, ou seja, $\bar{a}=C(a)=\{a\in X/ bRa\}$\end{definicao}
