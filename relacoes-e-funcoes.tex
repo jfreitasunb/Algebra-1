@@ -53,20 +53,25 @@ Quando $R\subseteq A \times A$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia, d
 
 			$R_3$ não é relação de equivalência pois, por exemplo, $(1,4) \notin R_3$.
 
-			Os demais são relacões de equivalência.
+			Os demais são exemplos de relações de equivalência.
 		\end{solucao}
 		
-		\item Seja $X=\mathbb{Z}$ e $R\subseteq \mathbb{Z}\times \mathbb{Z}$ definida por $R=\{(x,y)\in \mathbb{Z} \times \mathbb{Z} \mid x=y\}$
+		\item Seja $A = \z$ e $R\subseteq \z\times \z$ definida por $R = \{(x,y)\in \z \times \z \mid x = y\}$.
+		Então $R$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia.
+		\begin{solucao}
+			De fato,
+			\begin{itemize}
+				\item Para todo $x \in \z$ temos $x = x$ daí $(x,x) \in R$.
+				\item Se $(x,y)\in R$, então pela definição de $R$ temos $x = y$. Logo $y = x$ e então $(y,x)\in R$.
+				\item Se $(x,y) \in R$ e $(y,z) \in R$, então  $x = y$ e $y = z$. Logo $x = z$ e assim $(x,z)\in R$ como queríamos.
+			\end{itemize}
+			Portanto $R$ é uma relação de equivalência sobre $\z$.
+		\end{solucao}
+		
+		\item Tome $R=\{(x,y)\in \z$x$\z/ 2|(x-y)\}=\{(x,y)\in\z$x$\z/ x-y=2k, k\in\z\}$\\
 		R {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia pois:
 		\begin{itemize}
-			\item $\forall a \in \mathbb{Z}, (a,a) \in R$ pois a=a
-			\item $(a,b)\in R \rightarrow a=b \wedge b=a \Leftrightarrow (b,a)\in R$
-			\item $(a,b),(b,c)\in R \rightarrow a=b=c\Rightarrow (a,c)\in R$
-		\end{itemize}
-		\item Tome $R=\{(x,y)\in \mathbb{Z}$x$\mathbb{Z}/ 2|(x-y)\}=\{(x,y)\in\mathbb{Z}$x$\mathbb{Z}/ x-y=2k, k\in\mathbb{Z}\}$\\
-		R {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia pois:
-		\begin{itemize}
-			\item $\forall x\in\mathbb{Z},xRx$ pois $x-x=2.0$
+			\item $\forall x\in\z,xRx$ pois $x-x=2.0$
 			\item $xRy\rightarrow x-y=2k\Rightarrow y-x=-(x-y)=2.(-k)\Rightarrow yRx$
 			\item $xRy\wedge yRz\rightarrow x-y=2k\wedge y-z=2q\Rightarrow x+z=x-y+y-z=2k+2q=2(k+q)\rightarrow xRz$
 		\end{itemize}
@@ -134,17 +139,17 @@ $\bar{f}=\{f,g\}$
 \end{prova}
 
 Exemplo:\\
-Em $\mathbb{Z}$x$\mathbb{Z}$ considere a seguinte rela{\c c}{\~a}o: $R=\{(a,b)\in \mathbb{Z}$x$\mathbb{Z}/2|(a-b)\}$. Mostre que {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia e mostre suas classes de equival{\^e}ncia.
+Em $\z$x$\z$ considere a seguinte rela{\c c}{\~a}o: $R=\{(a,b)\in \z$x$\z/2|(a-b)\}$. Mostre que {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia e mostre suas classes de equival{\^e}ncia.
 \begin{enumerate}[label={\alph*})]
-\item Dado $a\in \mathbb{Z}$, aRa pois $2|(a-a)=0$.
+\item Dado $a\in \z$, aRa pois $2|(a-a)=0$.
 \item Se aRb, ent{\~a}o $2|(a-b)$, ou seja, a-b=2k, -(a-b)=b-a=2(-k). Logo bRa.
 \item Se aRb e bRc, ent{\~a}o a-b=2k e b-c=2q. Logo a-b+b-c=2k+2q=2(k+q). Logo, aRc.
 \end{enumerate}
 
 Portanto R {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia.
 
-Dado $a\in\mathbb{Z}$ , temos:\\
-$\bar{a}=\{b\in\mathbb{Z}/bRa\}=\{b\in\mathbb{Z}/2|(a-b)\}$ como $2|(a-b)$, temos que:\\
+Dado $a\in\z$ , temos:\\
+$\bar{a}=\{b\in\z/bRa\}=\{b\in\z/2|(a-b)\}$ como $2|(a-b)$, temos que:\\
 $a-b=2k\Leftrightarrow b=a+2r, r=-k$
 
 Assim, se a {\'e} {\'\i}mpar, b tamb{\'e}m o {\'e}. Logo:\\
