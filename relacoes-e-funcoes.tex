@@ -104,7 +104,7 @@ Em virtude da observação anterior a definição de relação de equivalência 
 \end{definicao}
 
 \begin{definicao}
-	Seja $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia sobre um conjunto $A$. Dado $b \in A$, chamamos de \textbf{classe de equival{\^e}ncia determinada por $b$ m{\'o}dulo $R$}, denotada por $\bar{b}$ ou $C(b)$, o subconjunto de $A$ dado por
+	Seja $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia sobre um conjunto $A$. Dado $b \in A$, chamamos de \textbf{classe de equival{\^e}ncia determinada por $b$ m{\'o}dulo $R$}, denotada por $\overline{b}$ ou $C(b)$, o subconjunto de $A$ dado por
 	\[
 		\overline{b} = C(b) = \{x \in A \mid (x,b) \in R\} = \{x \in A \mid xRb\}.
 	\]
@@ -114,54 +114,54 @@ Em virtude da observação anterior a definição de relação de equivalência 
 O conjunto das classes de equival{\^e}ncia m{\'o}dulo R ser{\'a} denotado por $X/R$ e {\'e} chamado conjunto quociente de X por R.
 \end{definicao}
 
-Observa{\c c}{\~a}o: Dado um conjunto $X\neq\emptyset$ e R uma rela{\c c}{\~a}o de equival{\^e}ncia em X, dado $a\in X$ como R {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia, aRa, da{\'\i} $\bar{a}\neq\emptyset$, pois $a\in\bar{a}$\\
+Observa{\c c}{\~a}o: Dado um conjunto $X\neq\emptyset$ e R uma rela{\c c}{\~a}o de equival{\^e}ncia em X, dado $a\in X$ como R {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia, aRa, da{\'\i} $\overline{a}\neq\emptyset$, pois $a\in\overline{a}$\\
 
 Exemplos:
 \begin{enumerate}
 \item Seja X=\{a,b,c\} e R=\{(a,a),(b,b),(c,c),(a,c),(c,a)\}. Temos:\\
-$\bar{a}=\{x\in X/xRa\}=\{a,c\}$\\
-$\bar{b}=\{x\in X/xRb\}=\{b\}$\\
-$\bar{c}=\{x\in X/xRc\}=\{a,c\}$
+$\overline{a}=\{x\in X/xRa\}=\{a,c\}$\\
+$\overline{b}=\{x\in X/xRb\}=\{b\}$\\
+$\overline{c}=\{x\in X/xRc\}=\{a,c\}$
 \item Seja X=\{1,2,3,4\} e a rela{\c c}{\~a}o de equival{\^e}ncia R=\{(1,1),(2,2),(3,3),(4,4)\}\\
-$\bar{1}=\{x\in X/xR1\}=\{1\}$\\
-$\bar{2}=\{x\in X/xR2\}=\{2\}$\\
-$\bar{3}=\{x\in X/xR3\}=\{3\}$\\
-$\bar{4}=\{x\in X/xR4\}=\{4\}$
+$\overline{1}=\{x\in X/xR1\}=\{1\}$\\
+$\overline{2}=\{x\in X/xR2\}=\{2\}$\\
+$\overline{3}=\{x\in X/xR3\}=\{3\}$\\
+$\overline{4}=\{x\in X/xR4\}=\{4\}$
 \end{enumerate}
 
 \begin{proposicao}
-	Seja $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em um conjunto n{\~a}o vazio $X$, sejam $a$, $b \in X$. Se $\bar{a}\cap\bar{b}\neq\emptyset$, ent{\~a}o $aRb$.
+	Seja $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em um conjunto n{\~a}o vazio $X$, sejam $a$, $b \in X$. Se $\overline{a}\cap\overline{b}\neq\emptyset$, ent{\~a}o $aRb$.
 \end{proposicao}
 \begin{prova}
-	Como  $\bar{a}\cap\bar{b}\neq\emptyset$, existe um $y\in\bar{a}\cap\bar{b}$, logo $y\in\bar{a}\wedge y\in\bar{b}$. Da defini{\c c}{\~a}o de classe de equival{\^e}ncia temos que yRa e yRb. Como R {\'e} rela{\c c}{\~a}o de equival{\^e}ncia temos que aRy e bRy. Por transitividade, aRb, como quer{\'\i}amos demonstrar.
+	Como  $\overline{a}\cap\overline{b}\neq\emptyset$, existe um $y\in\overline{a}\cap\overline{b}$, logo $y\in\overline{a}\wedge y\in\overline{b}$. Da defini{\c c}{\~a}o de classe de equival{\^e}ncia temos que yRa e yRb. Como R {\'e} rela{\c c}{\~a}o de equival{\^e}ncia temos que aRy e bRy. Por transitividade, aRb, como quer{\'\i}amos demonstrar.
 \end{prova}
 
 \begin{proposicao}
-	Se  $\bar{a}\cap\bar{b}\neq\emptyset$, ent{\~a}o $\bar{a}=\bar{b}$.
+	Se  $\overline{a}\cap\overline{b}\neq\emptyset$, ent{\~a}o $\overline{a}=\overline{b}$.
 \end{proposicao}
 \begin{prova}
-	Seja $y\in \bar{a}$. Da{\'\i} yRa. Como $\bar{a}\cap\bar{b}\neq\emptyset$, pela proposi{\c c}{\~a}o anterior, aRb. Logo, como yRa e aRb, segue que yRb, ou seja, $y\in\bar{b}$. Da{\'\i} $\bar{a}\subseteq\bar{b}$. Como no caso anterior, mostra-se que $\bar{b}\subseteq\bar{a}$. Portanto $\bar{a}=\bar{b}$.
+	Seja $y\in \overline{a}$. Da{\'\i} yRa. Como $\overline{a}\cap\overline{b}\neq\emptyset$, pela proposi{\c c}{\~a}o anterior, aRb. Logo, como yRa e aRb, segue que yRb, ou seja, $y\in\overline{b}$. Da{\'\i} $\overline{a}\subseteq\overline{b}$. Como no caso anterior, mostra-se que $\overline{b}\subseteq\overline{a}$. Portanto $\overline{a}=\overline{b}$.
 \end{prova}
 
 
 \begin{corolario} As classes de equival{\^e}ncia s{\~a}o conjuntos disjuntos ou iguais.\end{corolario}
 
-Seja R uma rela{\c c}{\~a}o de equival{\^e}ncia em $X\neq\emptyset$, dado $a\in R$. Se bRa, ent{\~a}o $\bar{b}=\bar{a}$, mais ainda, se dRa ent{\~a}o $\bar{d}=\bar{a}=\bar{b}$. Como por exemplo:\\
+Seja R uma rela{\c c}{\~a}o de equival{\^e}ncia em $X\neq\emptyset$, dado $a\in R$. Se bRa, ent{\~a}o $\overline{b}=\overline{a}$, mais ainda, se dRa ent{\~a}o $\overline{d}=\overline{a}=\overline{b}$. Como por exemplo:\\
 X=\{a,b,c,d,e,f,g\}\\
-$\bar{a}=\{a,b,c\}$\\
-$\bar{e}=\{e\}$\\
-$\bar{f}=\{f,g\}$
+$\overline{a}=\{a,b,c\}$\\
+$\overline{e}=\{e\}$\\
+$\overline{f}=\{f,g\}$
 
 \begin{definicao}[Representante da Classe de Equival{\^e}ncia] Seja C uma classe de equival{\^e}ncia de uma rela{\c c}{\~a}o de equival{\^e}ncia R. Qualquer elemento $y\in C$ {\'e} chamado representante de C.\end{definicao}
 
 \begin{proposicao}
-	Seja $X$ um conjunto n{\~a}o vazio e $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em $X$. Ent{\~a}o $X$ {\'e} a uni{\~a}o disjunta das classes $\bar{a}$, $a \in X$, ou seja,
+	Seja $X$ um conjunto n{\~a}o vazio e $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em $X$. Ent{\~a}o $X$ {\'e} a uni{\~a}o disjunta das classes $\overline{a}$, $a \in X$, ou seja,
 	\[
-		X = \displaystyle\bigsqcup_{a\in X}\bar{a}.
+		X = \displaystyle\bigsqcup_{a\in X}\overline{a}.
 	\]
 \end{proposicao}
 \begin{prova}
-	Para todo $a\in X, \bar{a}\subseteq X$, logo $\displaystyle\bigsqcup_{a\in X}\bar{a}\subseteq X$. Seja $b\in X$. Logo $b\in\bar{b}$, da{\'\i} $b\in \displaystyle\bigsqcup_{a\in X}\bar{a}$, logo $X\subseteq\displaystyle\bigsqcup_{a\in X}\bar{a}$. Portanto, $X=\displaystyle\bigsqcup_{a\in X}\bar{a}$.
+	Para todo $a\in X, \overline{a}\subseteq X$, logo $\displaystyle\bigsqcup_{a\in X}\overline{a}\subseteq X$. Seja $b\in X$. Logo $b\in\overline{b}$, da{\'\i} $b\in \displaystyle\bigsqcup_{a\in X}\overline{a}$, logo $X\subseteq\displaystyle\bigsqcup_{a\in X}\overline{a}$. Portanto, $X=\displaystyle\bigsqcup_{a\in X}\overline{a}$.
 \end{prova}
 
 Exemplo:\\
@@ -175,14 +175,14 @@ Em $\z$x$\z$ considere a seguinte rela{\c c}{\~a}o: $R=\{(a,b)\in \z$x$\z/2|(a-b
 Portanto R {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia.
 
 Dado $a\in\z$ , temos:\\
-$\bar{a}=\{b\in\z/bRa\}=\{b\in\z/2|(a-b)\}$ como $2|(a-b)$, temos que:\\
+$\overline{a}=\{b\in\z/bRa\}=\{b\in\z/2|(a-b)\}$ como $2|(a-b)$, temos que:\\
 $a-b=2k\Leftrightarrow b=a+2r, r=-k$
 
 Assim, se a {\'e} {\'\i}mpar, b tamb{\'e}m o {\'e}. Logo:\\
-$\bar{a}=\{...,-3,-1,1,3,...\}$
+$\overline{a}=\{...,-3,-1,1,3,...\}$
 
 Agora, se a {\'e} par, b tamb{\'e}m {\'e}. Logo:\\
-$\bar{a}=\{...,-2,0,2,4,...\}$
+$\overline{a}=\{...,-2,0,2,4,...\}$
 
 \section{Fun{\c c}{\~o}es}
 
