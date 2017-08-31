@@ -287,63 +287,63 @@ Logo $f$ {\'e} sobrejetora. Portanto $f$ {\'e} bijetora. Analogamente, prova-se 
 \end{enumerate}
 
 \begin{definicao}
-Seja $f : A \to B$ uma fun{\c c}{\~a}o.
-\begin{enumerate}
-\item Dado $P \sub A$, chama-se {\rm imagem direta} de $P$, segundo $f$ e indica-se por $f(P)$ o subconjunto de $F$ dado por
-\[
-f(P) = \{f(x) \mid x \in P\},
-\]
-isto {\'e}, $f(P)$ {\'e} o conjunto das imagens por $f$ dos elementos de $P$.
+	Seja $f : A \to B$ uma fun{\c c}{\~a}o.
+	\begin{enumerate}
+		\item Dado $P \sub A$, chama-se \textbf{imagem direta} de $P$  \textbf{segundo} $f$ e indica-se por $f(P)$ o subconjunto de $B$ dado por
+		\[
+			f(P) = \{f(x) \mid x \in P\},
+		\]
+		isto {\'e}, $f(P)$ {\'e} o conjunto das imagens por $f$ dos elementos de $P$.
 
-\item Dado $Q \sub B$, chama-se {\rm imagem inversa} de $Q$, segundo $f$ e indica-se por $f^{-1}(Q)$ o subconjunto de $A$ dado por
-\[
-f^{-1}(Q) = \{x \in E \mid f(x) \in Q\},
-\]
-isto {\'e}, $f^{-1}(Q)$ {\'e} o conjunto dos elementos de $A$ que tem imagem em $Q$ atrav{\'e}s de $f$.
-\end{enumerate}
+		\item Dado $Q \sub B$, chama-se \textbf{imagem inversa} de $Q$ \textbf{segundo} $f$ e indica-se por $f^{-1}(Q)$ o subconjunto de $A$ dado por
+		\[
+			f^{-1}(Q) = \{x \in E \mid f(x) \in Q\},
+		\]
+		isto {\'e}, $f^{-1}(Q)$ {\'e} o conjunto dos elementos de $A$ que tem imagem em $Q$ atrav{\'e}s de $f$.
+	\end{enumerate}
 \end{definicao}
 
 {\it Exemplos:}
 \begin{enumerate}
-\item Seja $A = \{1, 3, 5, 7, 9 \}$ e $B = \{0, 1, 2, 3, \dots, 10\}$ e $f : A \to B$ dada por $f(x) = x + 1$. Temos que
-\begin{itemize}
-\item $f(\{3, 5, 7\}) = \{f(3), f(5), f(7)\} = \{4, 6, 8\}$
+	\item Seja $A = \{1, 3, 5, 7, 9 \}$ e $B = \{0, 1, 2, 3, \dots, 10\}$ e $f : A \to B$ dada por $f(x) = x + 1$. Temos que
+	\begin{itemize}
+		\item $f(\{3, 5, 7\}) = \{f(3), f(5), f(7)\} = \{4, 6, 8\}$
 
-\item $f(A) = \{f(1), f(3), f(5), f(7), f(9)\} = \{2, 4, 6, 8, 10\}$
+		\item $f(A) = \{f(1), f(3), f(5), f(7), f(9)\} = \{2, 4, 6, 8, 10\}$
 
-\item $f(\emptyset) = \emptyset$
+		\item $f(\emptyset) = \emptyset$
 
-\item $f^{-1}(\{2, 4, 10\}) = \{x \in A \mid f(x) \in \{2, 4, 10\}\} = \{1, 3, 9\}$
+		\item $f^{-1}(\{2, 4, 10\}) = \{x \in A \mid f(x) \in \{2, 4, 10\}\} = \{1, 3, 9\}$
 
-\item $f^{-1}(\{0, 1, 3, 5, 7, 9\}) = \{x \in A \mid f(x) \in \{0, 1, 3, 5, 7, 9\}\} = \emptyset$
-\end{itemize}
+		\item $f^{-1}(\{0, 1, 3, 5, 7, 9\}) = \{x \in A \mid f(x) \in \{0, 1, 3, 5, 7, 9\}\} = \emptyset$
+	\end{itemize}
 
-\item Sejam $A = B= \real$ e $f : \real \to \real$ dada por $f(x) = x^2$. Temos
-\begin{itemize}
-\item $f(\{1, 2, 3\}) = \{1, 4, 9\}$
+	\item Sejam $A = B= \real$ e $f : \real \to \real$ dada por $f(x) = x^2$. Temos
+	\begin{itemize}
+		\item $f(\{1, 2, 3\}) = \{1, 4, 9\}$
 
-\item $f([0,2]) = \{f(x) \in \real \mid 0 \le x \le 2 \} = \{x^2 \mid 0 \le x \le 2\} = [0, 4]$
+		\item $f([0,2]) = \{f(x) \in \real \mid 0 \le x \le 2 \} = \{x^2 \mid 0 \le x \le 2\} = [0, 4]$
 
-\item $f^{-1}([1, 9]) = \{ x \in \real \mid 1 \le f(x) \le 9\} = \{x \in \real \mid 1 \le x^2 \le 9\} = [-1, -3] \cup [1, 3]$
-\end{itemize}
+		\item $f^{-1}([1, 9]) = \{ x \in \real \mid 1 \le f(x) \le 9\} = \{x \in \real \mid 1 \le x^2 \le 9\} = [-1, -3] \cup [1, 3]$
+	\end{itemize}
 \end{enumerate}
 
 \begin{proposicao}
-Seja $f : A \to B$ uma aplica{\c c}{\~a}o (ou fun{\c c}{\~a}o) e sejam $P$, $Q \sub E$, $X$, $Y \sub B$.
-\begin{enumerate}
-\item Se $P \sub Q$, ent{\~a}o $f(P) \sub f(Q)$.
+	Seja $f : A \to B$ uma fun{\c c}{\~a}o e sejam $P$, $Q \sub E$, $X$, $Y \sub B$.
+	\begin{enumerate}
+		\item Se $P \sub Q$, ent{\~a}o $f(P) \sub f(Q)$.
 
-\item $f^{-1}(X \cup Y) = f^{-1}(X) \cup f^{-1}(Y)$.
-\end{enumerate}
+		\item $f^{-1}(X \cup Y) = f^{-1}(X) \cup f^{-1}(Y)$.
+	\end{enumerate}
 \end{proposicao}
+\begin{prova}
+	\begin{enumerate}
+		\item Se $y \in f(P)$, ent{\~a}o existe $x \in P$ tal que $f(x) = y$. Mas como $P \sub Q$, ent{\~a}o $x \in Q$ e da{\'\i} $y \in f(Q)$. Logo $f(P) \sub f(Q)$.
 
-\textbf{Demonstra{\c c}{\~a}o}: 
-\begin{enumerate}
-\item Se $y \in f(P)$, ent{\~a}o existe $x \in P$ tal que $f(x) = y$. Mas como $P \sub Q$, ent{\~a}o $x \in Q$ e da{\'\i} $y \in f(Q)$. Logo $f(P) \sub f(Q)$.
+		\item Seja $z \in f^{-1}(X \cup Y)$. Ent{\~a}o $f(z) \in X \cup Y$. Se $f(z) \in X$, entao $z \in f^{-1}(X)$ e da{\'\i} $z \in f^{-1}(X) \cup f^{-1}(Y)$. Se $f(z) \in Y$, ent{\~a}o $z \in f^{-1}(Y)$ e assim $z \in f^{-1}(X) \cup f^{-1}(Y)$. Logo, $f^{-1}(X \cup Y) \sub f^{-1}(X) \cup f^{-1}(Y)$.
 
-\item Seja $z \in f^{-1}(X \cup Y)$. Ent{\~a}o $f(z) \in X \cup Y$. Se $f(z) \in X$, entao $z \in f^{-1}(X)$ e da{\'\i} $z \in f^{-1}(X) \cup f^{-1}(Y)$. Se $f(z) \in Y$, ent{\~a}o $z \in f^{-1}(Y)$ e assim $z \in f^{-1}(X) \cup f^{-1}(Y)$. Logo, $f^{-1}(X \cup Y) \sub f^{-1}(X) \cup f^{-1}(Y)$.
+		Agora, seja $z \in f^{-1}(X) \cup f^{-1}(Y)$. Se $z \in f^{-1}(X)$, ent{\~a}o $f(z) \in X$, da{\'\i} $f(z) \in X \cup Y$, isto {\'e}, $z \in f^{-1}(X \cup Y)$. Se $z \in f^{-1}(Y)$, ent{\~a}o $f(z) \in Y$ e assim $f(z) \in X \cup Y$, isto {\'e}, $z \in f^{-1}(X \cup Y)$. Logo $f^{-1}(X) \cup f^{-1}(Y) \sub f^{-1}(X \cup Y)$.
 
-Agora, seja $z \in f^{-1}(X) \cup f^{-1}(Y)$. Se $z \in f^{-1}(X)$, ent{\~a}o $f(z) \in X$, da{\'\i} $f(z) \in X \cup Y$, isto {\'e}, $z \in f^{-1}(X \cup Y)$. Se $z \in f^{-1}(Y)$, ent{\~a}o $f(z) \in Y$ e assim $f(z) \in X \cup Y$, isto {\'e}, $z \in f^{-1}(X \cup Y)$. Logo $f^{-1}(X) \cup f^{-1}(Y) \sub f^{-1}(X \cup Y)$.
-
-Portanto, $f^{-1}(X \cup Y) = f^{-1}(X) \cup f^{-1}(Y)$. \#
-\end{enumerate}
+		Portanto, $f^{-1}(X \cup Y) = f^{-1}(X) \cup f^{-1}(Y)$.
+	\end{enumerate}
+\end{prova}
