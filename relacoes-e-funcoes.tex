@@ -34,7 +34,7 @@
 
 Quando $R\subseteq A \times A$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia, dizemos que $R$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia em $A$. Quando dois elementos $x$, $y \in A$ s{\~a}o tais que $(x,y) \in R$, dizemos que $x$ e $y$ \textbf{s{\~a}o relacionados} ou que $x$ e $y$ \textbf{estão relacionados}.
 
-\begin{exemplos}\label{exemplos_classes_equivalencia}
+\begin{exemplos}\label{exemplos_relacoes_equivalencia}
 	\begin{enumerate}
 		\item Seja A=\{1,2,3,4\}. Temos
 		\begin{align*}
@@ -114,8 +114,8 @@ Em virtude da observação anterior a definição de relação de equivalência 
 	Seja $A \ne \emptyset$ e $R$ uma relação de equivalência sobre $A$. Segue da definição de relação de equivalência que para todo $b \in A$, $\overline{b} \ne \emptyset$ pois $(b,b) \in R$ logo $b \in \overline{b}$.
 \end{observacao}
 
-\begin{exemplos}
-	Do Exemplo \ref{exemplos_classes_equivalencia} temos
+\begin{exemplos}\label{exemplos_classes_equivalencia}
+	Do Exemplo \ref{exemplos_relacoes_equivalencia} temos
 	\begin{enumerate}
 		\item As classes de equivalência de $R_1$ são:
 		\begin{align*}
@@ -177,6 +177,16 @@ Em virtude da observação anterior a definição de relação de equivalência 
 \begin{definicao}
 	Seja $R$ uma relação de equivalência sobre um conjunto não vazio $A$. O conjunto de todas as classes de equival{\^e}ncia determinadas por $R$ ser{\'a} denotado por $A/R$ e {\'e} chamado de \textbf{conjunto quociente} de $A$ por $R$.
 \end{definicao}
+
+\begin{exemplos}
+	Do Exemplo \ref{exemplos_classes_equivalencia} temos:
+	\begin{enumerate}
+		\item $A/R_1 = \{\overline{1}\}$
+		\item $A/R_3 = \{\overline{1},\overline{3},\overline{4}\}$
+		\item $A/R_4 = \{\overline{1},\overline{2},\overline{3},\overline{4}\}$
+		\item $\z/R = \{\overline{0},\overline{1}\}$
+	\end{enumerate}
+\end{exemplos}
 
 
 Seja R uma rela{\c c}{\~a}o de equival{\^e}ncia em $X\neq\emptyset$, dado $a\in R$. Se bRa, ent{\~a}o $\overline{b}=\overline{a}$, mais ainda, se dRa ent{\~a}o $\overline{d}=\overline{a}=\overline{b}$. Como por exemplo:\\
