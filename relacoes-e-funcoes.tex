@@ -155,24 +155,26 @@ Em virtude da observação anterior a definição de relação de equivalência 
 	\end{enumerate}
 \end{exemplos}
 
+\begin{proposicao}
+	Seja $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em um conjunto n{\~a}o vazio $A$. Dados $a$, $b \in A$ temos:
+	\begin{enumerate}
+		\item se $\overline{a} \cap \overline{b} \ne \emptyset$, ent{\~a}o $aRb$.
+		\item se  $\overline{a} \cap \overline{b} \neq \emptyset$, ent{\~a}o $\overline{a} = \overline{b}$.
+	\end{enumerate}
+\end{proposicao}
+\begin{prova}
+	\begin{enumerate}
+		\item Como  $\overline{a} \cap \overline{b} \ne \emptyset$, existe um $y \in \overline{a} \cap \overline{b}$, logo $y \in \overline{a}$ e $y \in \overline{b}$. Da defini{\c c}{\~a}o de classe de equival{\^e}ncia temos $yRa$ e $yRb$. Como $R$ {\'e} rela{\c c}{\~a}o de equival{\^e}ncia temos $aRy$ e $bRy$. Pela propriedade transitiva segue que $aRb$, como quer{\'\i}amos.
+
+		\item Precisamos mostrar que $\overline{a} \sub \overline{b}$ e que $\overline{b} \sub \overline{a}.$ Para a primeira inclusão seja $y \in \overline{a}$. Da{\'\i} $yRa$. Mas, por hipótese, $\overline{a}\cap\overline{b}\neq\emptyset$, assim pelo item anterior segue que $aRb$. Logo, como $yRa$ e $aRb$, segue que $yRb$, ou seja, $y \in \overline{b}$. Da{\'\i} $\overline{a}\sub\overline{b}$. Agora para provar a segunda inclusão seja $x \in \overline{b}$. Então $xRb$. Novamente, $\overline{a} \cap \overline{b} \ne \emptyset$ e então pelo item anterior segue que $aRb$. Assim uma vez que $R$ é uma relação de equivalência temos $bRa$ e de $xRb$ obtemos $xRa$, ou seja, $x \in \overline{a}$. Com isso $\overline{b} \sub \overline{a}$. Portanto $\overline{a} = \overline{b}$, como queríamos.
+	\end{enumerate}
+\end{prova}
+
 \begin{definicao}
 O conjunto das classes de equival{\^e}ncia m{\'o}dulo R ser{\'a} denotado por $X/R$ e {\'e} chamado conjunto quociente de X por R.
 \end{definicao}
 
 
-\begin{proposicao}
-	Seja $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em um conjunto n{\~a}o vazio $X$, sejam $a$, $b \in X$. Se $\overline{a}\cap\overline{b}\neq\emptyset$, ent{\~a}o $aRb$.
-\end{proposicao}
-\begin{prova}
-	Como  $\overline{a}\cap\overline{b}\neq\emptyset$, existe um $y\in\overline{a}\cap\overline{b}$, logo $y\in\overline{a}\wedge y\in\overline{b}$. Da defini{\c c}{\~a}o de classe de equival{\^e}ncia temos que yRa e yRb. Como R {\'e} rela{\c c}{\~a}o de equival{\^e}ncia temos que aRy e bRy. Por transitividade, aRb, como quer{\'\i}amos demonstrar.
-\end{prova}
-
-\begin{proposicao}
-	Se  $\overline{a}\cap\overline{b}\neq\emptyset$, ent{\~a}o $\overline{a}=\overline{b}$.
-\end{proposicao}
-\begin{prova}
-	Seja $y\in \overline{a}$. Da{\'\i} yRa. Como $\overline{a}\cap\overline{b}\neq\emptyset$, pela proposi{\c c}{\~a}o anterior, aRb. Logo, como yRa e aRb, segue que yRb, ou seja, $y\in\overline{b}$. Da{\'\i} $\overline{a}\subseteq\overline{b}$. Como no caso anterior, mostra-se que $\overline{b}\subseteq\overline{a}$. Portanto $\overline{a}=\overline{b}$.
-\end{prova}
 
 
 \begin{corolario} As classes de equival{\^e}ncia s{\~a}o conjuntos disjuntos ou iguais.\end{corolario}
