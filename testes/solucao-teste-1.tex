@@ -30,12 +30,12 @@
 \questao Mostre que $A \cup ( B \cap C) = (A \cup B) \cap (A \cup C)$.
 
 \noindent\textbf{Solu\c{c}\~ao:} Para mostrar a igualdade desses conjuntos precisamos mostrar que:
-\begin{enumerate}
-	\item [$1^o$)] $A \cup ( B \cap C) \sub (A \cup B) \cap (A \cup C)$
+\begin{enumerate}[label={\roman*})]
+	\item $A \cup ( B \cap C) \sub (A \cup B) \cap (A \cup C)$
 
 	Seja $x \in A \cup ( B \cap C)$. Ent\~ao $x \in A$ ou $x \in (B \cap C)$. Se $x \in A$, ent\~ao $x \in A \cup B$ e $x \in (A \cup C)$. Assim $x \in (A \cup B) \cap (A \cup C)$. Com isso $A \cup ( B \cap C) \sub (A \cup B) \cap (A \cup C)$. Agora suponha que $x \in (B \cap C)$. Ent\~ao $x \in B$ e $x \in C$. Neste caso $x \in A \cup B$ e $x \in (A \cup C)$. Logo $x \in (A \cup B) \cap (A \cup C)$ e novamente $A \cup ( B \cap C) \sub (A \cup B) \cap (A \cup C)$. Portanto, independente do caso, sempre temos $A \cup ( B \cap C) \sub (A \cup B) \cap (A \cup C)$.
 
-	\item [$2^o$)] $(A \cup B) \cap (A \cup C) \sub A \cup ( B \cap C)$
+	\item $(A \cup B) \cap (A \cup C) \sub A \cup ( B \cap C)$
 
 	Seja $x \in (A \cup B) \cap (A \cup C)$. Assim $x \in A \cup B$ e $x \in A \cup C$. Daí $x \in A$ ou $x \in B$ e $x \in A$ ou $x \in C$. Se $x \in A$, então $x \in A \cup (B \cap C)$. Logo $(A \cup B) \cap (A \cup C) \sub A \cup ( B \cap C)$. Agora, se $x \notin A$, então $x \in B$ e $x \in C$, isto é, $x \in B \cap C$. Com isso $x \in A \cup (B \cap C)$ e então $(A \cup B) \cap (A \cup C) \sub A \cup ( B \cap C)$. Portanto, independente do caso, $(A \cup B) \cap (A \cup C) \sub A \cup ( B \cap C)$.
 \end{enumerate}
