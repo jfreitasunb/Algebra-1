@@ -20,10 +20,6 @@
 
 \vspace{.6cm}
 
-\textbf{O Exerc{\'\i}cio 2 foi corrigido para atribui\c{c}\~ao da nota.}
-
-\vspace{.6cm}
-
 \questao Mostre que $9^n - 1$ {\'e} m\'ultiplo de 8 para todo $n \ge 0$.
 
 \noindent\textbf{Solu\c{c}\~ao:} Primeiro devemos verificar que a base da indu\c{c}\~ao \'e v\'alida. Para isso tomamos $n = 0$:
@@ -48,45 +44,21 @@ ou seja, um m\'ultiplo de 8. Portanto pelo Princ{\'\i}pio da Indu\c{c}\~ao Finit
 
 \vspace{.5cm}
 
-\questao Seja $A=\z\times \z^*$, onde $\mathbb{Z}^*=\mathbb{Z}\setminus \{0\}$. Para $(x,y), (z,t) \in
-A$, considere a seguinte rela{\c c}{\~a}o
-\[
-(x,y)R(z,t) \Leftrightarrow xt = yz.
-\]
-\begin{enumerate}[label={\alph*})]
-\item Mostre que $R$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia sobre $A$.
+\questao Sejam $A = \z$, $m \in \z$, $m > 1$ fixo e $R = \{(x,y)\in \z \times \z \mid x - y = mk, \mbox{ para algum } k \in \z\}$. Mostre que $R$
+é uma rela{\c c}{\~a}o de equival{\^e}ncia sobre $\z$.
 
-\noindent\textbf{Solu\c{c}\~ao:} Para $(x,y)$, $(z,t)$ e $(r,s) \in A$ temos
-\begin{enumerate}
-	\item $(x,y)R(x,y)$ pois $xy = xy$ para todo $(x,y) \in A$. Assim $R$ \'e reflexiva.
-	\item Se $(x,y)R(z,t)$, ent\~ao $xt = yz$, ou seja, $yz = xt$. Logo $(z,t)R(x,y)$ e com isso $R$ \'e sim\'etrica.
-	\item Se $(x,y)R(z,t)$ e $(z,t)R(r,s)$ ent\~ao
-	\begin{align}
-		xt = yz\\
-		zs = tr.
-	\end{align}
-	Multiplicando a segunda equa\c{c}\~ao por $y$ e organizando os fatores obtemos:
-	\begin{align*}
-		(yz)s = t(yr)\\
-		(xt)s = t(yr)\\
-		t(xs) = t(yr)\\
-		t(xs - yr) = 0.
-	\end{align*}
-	Como $t \in \z^*$, devemos ter $xs - yr = 0$, ou seja, $xs = yr$. Logo $(x,y)R(r,s)$, e com isso $R$ \'e transitiva.
-	Portanto, $R$ \'e uma rela\c{c}\~ao de equival\^encia.
-\end{enumerate}
-
-\item Descreva a classe de equival{\^e}ncia $\overline{(0,1)}$, $\overline{(1,1)}$, $\overline{(1,2)}$, $\overline{(2,1)}$, $\overline{(2,2)}$, $\overline{(2,3)}$.
-
-\noindent\textbf{Solu\c{c}\~ao:}
-\begin{align*}
-	\overline{(0,1)} &= \{ (x, y) \in A \mid (x,y)R(0,1)\} = \{ (x,y) \in R \mid x\cdot 0 = y\cdot 1\} \\ &= \{ (x,y) \in R \mid y = 0 \} = \{(0, y) \mid y \in \z^*\} \\ &= \{ (0,1), (0,-1), (0,\pm 2) , (0, \pm 3), \cdots\}\\
-	\overline{(1,1)} &= \{ (x, y) \in A \mid (x,y)R(1,1)\} = \{ (x,y) \in R \mid x\cdot 1 = y\cdot 1\} \\ &= \{ (x,y) \in R \mid x = y \} = \{(y, y) \mid y \in \z^*\} \\ &= \{\cdots, (-2,-2), (-1,-1), (1,1), (2,2),\cdots\}\\
-	\overline{(1,2)} &= \{ (x, y) \in A \mid (x,y)R(1,2)\} = \{ (x,y) \in R \mid x\cdot 2 = y\cdot 1\} \\ &= \{ (x,y) \in R \mid 2x = y \} = \{(x, 2x) \mid x \in \z^*\} \\ &= \{\cdots, (-2,-4), (-1,-2), (1,2), (2,4), \cdots\}\\
-	\overline{(2,1)} &= \{ (x, y) \in A \mid (x,y)R(2,1)\} = \{ (x,y) \in R \mid x\cdot 1 = y\cdot 2\} \\ &= \{ (x,y) \in R \mid x = 2y \} = \{(2y, y) \mid y \in \z^*\} \\ &= \{\cdots, (-4,-2), (-2,-1), (2,1), (4,2), \cdots\}\\
-	\overline{(2,2)} &= \{ (x, y) \in A \mid (x,y)R(2,2)\} = \{ (x,y) \in R \mid x\cdot 2 = y\cdot 2\} \\ &= \{ (x,y) \in R \mid 2x = 2y \} = \{(y, y) \mid y \in \z^*\} = \overline{(1,1)}\\
-	\overline{(2,3)} &= \{ (x, y) \in A \mid (x,y)R(2,3)\} = \{ (x,y) \in R \mid x\cdot 3 = y\cdot 2\} \\ &= \{ \cdots,(-8,-12),(-4,-6(=),(-2,-3), (2,3), (4,6), (8,12), \cdots\}
-\end{align*}
-\end{enumerate}
-
+\noindent\textbf{Solu\c{c}\~ao:} De fato,
+	\begin{itemize}
+		\item Para todo $x\in \z$ temos $x - x = m\cdot0$ e com isso $(x,x) \in R$.
+		\item Se $(x,y) \in R$ então existe $k \in \z$ tal que $x - y = mk$. Agora $y - x = -(x - y) = -mk = m (-k)$ e como $-k \in \z$ segue que $(y,x) \in R$.
+		\item Se $(x,y) \in R$ e $(y,z) \in R$, então existem $k$, $l\in \z$ tais que $x - y = mk$ e $y - z = ml$.
+		Somando essas duas equações obtemos
+		\begin{align*}
+			(x - y) + (y - z) &= mk + ml\\
+			x - z &= m(k + l)
+		\end{align*}
+		e como $k + l \in \z$ segue que $(x,z) \in \z$.
+	\end{itemize}
+	
+	Assim $R$ é uma relação de equivalência.
 \end{document}
