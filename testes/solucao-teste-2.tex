@@ -20,27 +20,24 @@
 
 \vspace{.6cm}
 
-\questao Mostre que $9^n - 1$ {\'e} m\'ultiplo de 8 para todo $n \ge 0$.
+\questao Sejam $A$, $B$ e $C$ conjuntos. Mostre que $(A - B) - C = A - (B \cup C)$.
 
-\noindent\textbf{Solu\c{c}\~ao:} Primeiro devemos verificar que a base da indu\c{c}\~ao \'e v\'alida. Para isso tomamos $n = 0$:
-\[
-	9^0 - 1 = 0 = 8\cdot 0.
-\]
-Assim a base da indu\c{c}\~ao \'e verdadeira.
+\noindent\textbf{Solu\c{c}\~ao:} Precisamos mostrar que:
+\begin{enumerate}
+	\item $(A - B) - C \sub A - (B \cup C)$
+	\item $A - (B \cup C) \sub (A - B) - C$
+\end{enumerate}
 
-Agora suponha que para um certo $k \ge 0$ tenhamos:
+Para a primeira inclusão seja $x \in (A - B) - C$. Assim, da definição de diferença de conjuntos, $x \in (A - B)$ e $x \notin C$. Novamente, pela definição de diferença de conjuntos, $x \in A$ e $x \notin B$. Como $x \notin B$ e $x \notin C$, então $x \notin (B \cup C)$. Daí $x \in A$ e $x \notin (B \cup C)$, ou seja, $x \in A - (B \cup C)$. Logo $(A - B) - C \sub A - (B \cup C)$.
+
+Agora para a segunda inclusão seja $y \in A - (B \cup C)$. Daí, pela definição de diferença de conjuntos, $x \in A$ e $x \notin (B \cup C)$. Como $x \notin (B \cup C)$, então $x \notin B$ e $x \notin C$. Assim de $x \in B$ e $x \notin B$ segue que $x \in A - B$. Agora, $x \in A - B$ e $x \notin C$ logo $x \in (A - B) - C$. Logo $A - (B \cup C) \sub (A - B) - C$.
+
+Portanto
+
 \[
-	(H.I)\ 9^k - 1 = 8l
+	(A - B) - C = A - (B \cup C),
 \]
-para algum $l \in \z$. Vamos provar que para $k + 1$ tamb\'em obtemos um m\'ultiplo de 8. Temos
-\begin{align*}
-	9^{k + 1} - 1 &= 9^k\cdot 9 - 1 \\& = 9^k\cdot 9 - (9 - 8) \\ &= 9(9^k - 1) - 8
-\end{align*}
-Agora pela hip\'otese de indu\c{c}\~ao, $9^k - 1 = 8l$ assim a \'ultima equa\c{c}\~ao pode ser escrita como:
-\begin{align*}
-	9^{k + 1} - 1 &= 9\cdot 8l - 8 \\ &= 8(9l - 1),
-\end{align*}
-ou seja, um m\'ultiplo de 8. Portanto pelo Princ{\'\i}pio da Indu\c{c}\~ao Finita, a afirma\c{c}\~ao \'e verdadeira.
+como queríamos.
 
 \vspace{.5cm}
 
