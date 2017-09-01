@@ -202,6 +202,55 @@ Em virtude da observação anterior a definição de relação de equivalência 
 	Para todo $b\in A$ temos, pela definição de classe de equivalência, que $\overline{b}\subseteq A$. Logo $\bigcup_{b\in X}\overline{b}\subseteq X$. Agora seja $x\in A$. Logo $x \in \overline{x}$ e da{\'\i} $x\in \bigcup_{b\in A}\overline{b}$. Assim $X\subseteq\bigcup_{a\in X}\overline{a}$. Portanto, $X=\bigcup_{b\in X}\overline{b}$.
 \end{prova}
 
+\begin{definicao}
+	Sejam $a$, $b \in \z$, $b \neq 0$. Dizemos que $b$ \textbf{divide} $a$ quando existe um inteiro $k$ tal que $a=bk$.
+	Nesse caso escrevemos $b \mid a$. Quando $b$ \textbf{n{\~a}o divide} $a$, escrevemos $b\not{\mid}a$.
+\end{definicao}
+
+\begin{exemplos}
+	\begin{enumerate}
+		\item Os inteiros 1 e $-1$ dividem qualquer n{\'u}mero inteiro $a$, pois $a = 1 a$ e $a = (-1)(-a)$.
+		\item O n{\'u}mero 0 n{\~a}o divide nenhum inteiro $b$, pois n{\~a}o existe $a \in \z$ tal que $b = 0a$.
+		\item Para todo $b\neq 0$, $b$ divide $\pm b$.
+		\item Para todo inteiro $b\neq 0$, $b$ divide 0, pois $0 = b0$.
+		\item $3 \not{\mid} 8$.
+		\item $17 \mid 51$.
+	\end{enumerate}	
+\end{exemplos}
+
+
+\begin{proposicao}
+	\begin{enumerate}
+		\item $a\mid a$, para todo $a \in \z$.
+		\item Se $a\mid b$ e $b\mid a$, $a$, $b > 0$ então $a = b$.
+		\item Se $a\mid b$ e $b\mid c$, ent{\~a}o $a\mid c$.
+		\item Se $a\mid b$ e $a\mid c$, ent{\~a}o $a\mid (bx+cy)$, para todos $x$, $y \in \z$.
+	\end{enumerate}
+\end{proposicao}
+\begin{prova}
+	\begin{enumerate}
+		\item Imediata.
+		
+		\item De fato, existem $k$, $l \in \z $ tais que $b = ka$ e $a = lb$. Assim $b = klb$, isto é, $b(1 - kl) = 0$.
+		Como $b \ne 0$ então $1 - kl = 0$. Daí $kl = 1$ e então $k = \pm 1$ e $l = \pm 1$. Mas $a > 0$ e $b > 0$, logo $k = l =1$. Logo $a = b$.
+
+		\item De fato, existem $k$, $l \in \z$ tais que $b = ka$ e $c = bl$. Assim  $c = kal = (kl)a$, ou seja, $a\mid c$.
+
+		\item Temos $b = ka$ e $c = al$, com $k$, $l \in \z$. Daí $bx + cy = (ka)x + (al)y = a(kx + ly)$ e como $kx + ly \in \z$ segue que $a \mid (bx + cy)$.
+	\end{enumerate}
+\end{prova}
+
+
+
+
+
+
+
+
+
+
+
+
 \section{Fun{\c c}{\~o}es}
 
 \subsubsection{Defini{\c c}{\~a}o}
