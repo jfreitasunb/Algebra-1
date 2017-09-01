@@ -240,16 +240,213 @@ Em virtude da observação anterior a definição de relação de equivalência 
 	\end{enumerate}
 \end{prova}
 
+\begin{definicao}
+	Sejam $a$, $b \in\z$, dizemos que $a$ \textbf{{\'e} congruente à} $b$ \textbf{m{\'o}dulo} $m$ se $m \mid (a-b)$. Neste caso, escrevemos $a\equiv_{m} b$ ou $a\equiv b \pmod{m}$.
+\end{definicao}
 
+\begin{exemplos}
+	\begin{enumerate}
+		\item $5\equiv 2 \pmod{3}$, pois $3 \mid (5-2)$.
+		\item $3\equiv 1 \pmod{2}$, pois $2\mid (3-1)$.
+		\item $3\equiv 9 \pmod{2}$, pois $2\mid (3-9)$.
+	\end{enumerate}	
+\end{exemplos}
 
+\begin{proposicao}
+	A congru{\^e}ncia m{\'o}dulo $m$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia em $\z$.
+\end{proposicao}
+\begin{prova}
+	\begin{enumerate}
+		\item Para todo $a \in \z$, $a\equiv a\pmod{m}$ pois $m\mid (a-a)$.
+		\item Se $a\equiv b\pmod{m}$, ent{\~a}o $m\mid (a - b)$. Da{\'\i} existe $k \in \z$, tal que $(a - b) = km$. Agora, $(b - a) = -(a - b) = -(km) = (-k)m$, ou seja, $m \mid (b - a)$. Da{\'\i} $b\equiv a \pmod{m}$.
+		\item Se $a\equiv b\pmod{m}$ e $b\equiv c\pmod{m}$, ent{\~a}o $m\mid (a-b)$ e $m\mid (b-c)$. Assim, $m\mid [(a-b)+(b-c)]$. Logo, $m\mid (a-c)$, isto {\'e}, $a\equiv c\pmod{m}$.
+	\end{enumerate}
 
+	Portanto a congru{\^e}ncia m{\'o}dulo $m$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia.
+\end{prova}
 
+\begin{teorema}
+	A rela{\c c}{\~a}o de congru{\^e}ncia m{\'o}dulo $m$ satisfaz as seguintes propriedades:
+	\begin{enumerate}
+		\item $a_{1}\equiv b_{1}\pmod{m}$ se, e somente se, $a_{1}-b_{1}\equiv 0\pmod{m}$.
+		\item Se $a_{1}\equiv b_{1}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, ent{\~a}o $a_{1}+a_{2}\equiv b_{1}+b_{2}\pmod{m}$.
+		\item Se $a_{1}\equiv b_{2}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, ent{\~a}o $a_{1}a_{2}\equiv b_{1}b_{2}\pmod{m}$.
+		\item Se $a\equiv b\pmod{m}$, ent{\~a}o $ax\equiv bx\pmod{m}$, para todo $x \in \z$.
+		\item Vale a lei do cancelamento: se $d \in \z$ e $mdc(d,m) = 1$ ent{\~a}o $ad \equiv bd \pmod{m}$ implica $a\equiv b \pmod{m}$.
+	\end{enumerate}
+\end{teorema}
+\begin{prova}
+	Provemos o item 3.
+	
+	Como $a_{1}\equiv b_{2}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, existem $k$, $l \in \z$ tais que
+	\begin{align*}
+		a_1 - b_1 &= km\\
+		a_2 - b_2 &= lm,
+	\end{align*}
+	isto é,
+	\begin{align*}
+		a_1 &= b_1 + km\\
+		a_2 &= b_2 + lm,
+	\end{align*}
+	Assim
+	\begin{align*}
+		a_1a_2 &= (b_1 + km)(b_2 + lm) \\ &= b_1b_2 + b_1lm + b_2km + klm^2 \\ &= b_1b_2 + \underbrace{(lb_{1}+kb_{2}+klm)}_{\in \z}m
+	\end{align*}
+	
+	Ou seja, $a_1a_2 - b_1b_2 = pm$, onde $p = lb_1 + kb_2 + klm \in \z$. Portanto, $a_1a_2 \equiv b_1b_2 \pmod{m}$.
+\end{prova}
 
+Como a congru{\^e}ncia m{\'o}dulo $m$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia, podemos determinar suas classes de equival{\^e}ncia. Assim, dado $n \in \z$, temos
+\[
+	\overline{n} = C(n) = \{x \in \z \mid x\equiv n \pmod{m}\}.
+\]
 
+Denotaremos $C(n)$ por $R_{m}(n)$ ou $\overline{n}$, quando n{\~a}o houver possibilidade de confus{\~a}o.
 
+Por exemplo, fixando $m > 1$
+\begin{align*}
+	R_{m}(0) &= \{x \in \z \mid x\equiv 0 \pmod{m}\}=\{x\in \z \mid x = mk, k\in\z\}=m\z\\
+	R_{m}(1) &= \{x\in\z \mid x\equiv 1 \pmod{m}\}=\{x\in\z \mid x = 1 + km, k\in\z\}\\
+	R_{m}(n) &= \{x\in\z \mid x = n + km, k\in\z\}
+\end{align*}
 
+\begin{proposicao}
+	As classes de equival{\^e}ncia definidas pela congru{\^e}ncia m{\'o}dulo $m$ s{\~a}o determinadas pelos restos da divis{\~a}o inteira por $m$. Em outras palavras, $R_{m}(n)$ {\'e} o conjunto dos n{\'u}meros inteiros cujo resto na divis{\~a}o inteira por $m$ {\'e} $n$.
+\end{proposicao}
 
+\begin{corolario}
+	$R_{m}(k) = R_{m}(l)$ se, e somente se, $k\equiv l \pmod{m}$.
+\end{corolario}
 
+\begin{exemplos}
+	\begin{enumerate}
+		\item Se $m=2$, ent{\~a}o os poss{\'\i}veis restos na divis{\~a}o inteira por 2 s{\~a}o 0 e 1. Logo, existem duas classes de equival{\^e}ncia, a saber
+		\begin{align*}
+			R_{2}(0) &= \{x \in \z \mid x\equiv 0 \pmod{2}\} = \{x\in \z \mid x = 2k, k\in\z\}\\
+			R_{2}(1) &= \{x\in\z \mid x\equiv 1 \pmod{2}\} = \{x\in\z \mid x = 1 + 2k, k\in\z\}.
+		\end{align*}
+		
+		\item Se $m = 3$, ent{\~a}o os poss{\'\i}veis restos da divis{\~a}o inteira s{\~a}o 0, 1 e 2. Da{\'\i}
+		\begin{align*}
+			R_{3}(0) &= \{x \in \z \mid x\equiv 0 \pmod{3}\} = \{x\in \z \mid x = 3k, k \in \z\}\\
+			R_{3}(1) & = \{x \in \z \mid x\equiv 1 \pmod{3}\} = \{x\in\z \mid x = 3k + 1, k \in \z\}\\
+			R_{3}(2) &= \{x \in \z \mid x\equiv 2 \pmod{3}\} = \{x\in\z \mid x = 3k + 2, k \in \z\}
+		\end{align*}
+	\end{enumerate}	
+\end{exemplos}
+
+\begin{proposicao}
+	Na rela{\c c}{\~a}o de equival{\^e}ncia m{\'o}dulo $m$ existem $m$ classes de equival{\^e}ncia.
+\end{proposicao}
+\begin{prova}
+	Os poss{\'\i}veis restos na divis{\~a}o inteira por $m$ s{\~a}o $0,1,...,(m-1)$. Como cada poss{\'\i}vel resto define uma classe de equival{\^e}ncia diferente, existem exatamente $m$ classes de equival{\^e}ncia
+\end{prova}
+
+\begin{observacao}
+Fixado $m$ inteiro positivo, denotaremos
+\begin{align*}
+	R_{m}(0) &= \overline{0}\\
+	R_{m}(1) &= \overline{1}\\
+	&\vdots\\
+	R_{m}(m-1) &= \overline{m-1}
+\end{align*}
+
+O conjunto quociente desta rela{\c c}{\~a}o ser{\'a} denotado por $\displaystyle\frac{\z}{m\z}$ ou $\z_m$. Assim
+\[
+	\z_m = \displaystyle\frac{\z}{m\z}=\{\overline{0},\overline{1},...,\overline{m-1}\}.
+\]
+\end{observacao}
+
+Queremos definir um meio de somar e multiplicar os elementos de $\z_m$. Por exemplo, em $\z_2 = \{\overline{0},\overline{1}\}$ temos que a soma de pares {\'e} par, soma de par com {\'\i}mpar {\'e} {\'\i}mpar e a soma de {\'\i}mpares {\'e} par. Assim podemos escrever
+
+\begin{table}[h]
+   \centering 
+   \setlength{\arrayrulewidth}{0,5\arrayrulewidth}
+   \begin{tabular}{|c|c|c|} 
+      \hline
+      $\oplus$ & $\overline{0}$ & $\overline{1}$\\
+      \hline
+      $\overline{0}$ & $\overline{0}$ & $\overline{1}$ \\
+      \hline
+      $\overline{1}$ & $\overline{1}$ & $\overline{0}$ \\
+      \hline
+   \end{tabular}
+\end{table}
+
+Para multiplica{\c c}{\~a}o, temos
+
+\begin{table}[h]
+   \centering 
+   \setlength{\arrayrulewidth}{0,5\arrayrulewidth}
+   \begin{tabular}{|c|c|c|} 
+      \hline
+      $\otimes$ & $\overline{0}$ & $\overline{1}$\\
+      \hline
+      $\overline{0}$ & $\overline{0}$ & $\overline{0}$ \\
+      \hline
+      $\overline{1}$ & $\overline{0}$ & $\overline{1}$ \\
+      \hline
+   \end{tabular}
+\end{table}
+
+\begin{definicao}
+	Dados $\overline{a}$, $\overline{b} \in \z_m$ definimos
+	\begin{align}
+		\overline{a}\oplus\overline{b} &= \overline{a + b}\label{soma_modulo_m}\\
+		\overline{a}\otimes\overline{b} &= \overline{ab}.\label{multiplicacao_modulo_m}
+	\end{align}
+\end{definicao}
+
+\begin{proposicao}
+	As opera{\c c}{\~o}es de soma e produto definidas em \eqref{soma_modulo_m} e \eqref{multiplicacao_modulo_m} s{\~a}o independentes dos representantes das classes.
+\end{proposicao}
+\begin{prova}
+	Dadas duas classes em $\z_m$ com representantes diferentes, $\overline{a}_{1} = \overline{a}_{2}$, $\overline{b}_{1} = \overline{b}_{2}$, com $a_{1}\ne a_{2}$ e $b_{1}\ne b_{2}$, temos:
+	\begin{align*}
+		\overline{a}_{1}\oplus \overline{b}_{1} &= \overline{a_{1}+b_{1}} = \overline{a_{2} + b_{2}} =  \overline{a}_{2}\oplus \overline{b}_{2}\\
+		\overline{a}_{1}\otimes \overline{b}_{1} &= \overline{a_{1}b_{1}} = \overline{a_{2}b_{2}} = \overline{a}_{2}\otimes\overline{b}_{2}.
+	\end{align*}
+\end{prova}
+
+\begin{exemplo}
+	A some e a multiplica{\c c}{\~a}o em $\z_4 = \{\overline{0},\overline{1},\overline{2},\overline{3}\}$
+	são dadas nas tabelas abaixo:
+		\begin{table}[!htb]
+		  \caption{Soma e multiplicação em $\z_4$}
+		  \begin{minipage}{.5\linewidth}
+		    \centering
+		 	\begin{tabular}{|c|c|c|c|c|} 
+			    \hline
+			    $\oplus$ & $\overline{0}$ & $\overline{1}$ & $\overline{2}$ & $\overline{3}$ \\
+			    \hline
+			    $\overline{0}$ & $\overline{0}$ & $\overline{1}$ & $\overline{2}$ & $\overline{3}$ \\
+			    \hline
+			    $\overline{1}$ & $\overline{1}$ & $\overline{2}$ & $\overline{3}$ & $\overline{0}$ \\
+			    \hline
+			    $\overline{2}$ & $\overline{2}$ & $\overline{3}$ & $\overline{0}$ & $\overline{1}$ \\
+			    \hline
+			    $\overline{3}$ & $\overline{3}$ & $\overline{0}$ & $\overline{1}$ & $\overline{2}$ \\
+			    \hline
+			\end{tabular}
+		  \end{minipage}
+		  \begin{minipage}{.5\linewidth}
+		  \centering
+		    \begin{tabular}{|c|c|c|c|c|} 
+		      \hline
+		      $\otimes$ & $\overline{0}$ & $\overline{1}$ & $\overline{2}$ & $\overline{3}$ \\
+		      \hline
+		      $\overline{0}$ & $\overline{0}$ & $\overline{0}$ & $\overline{0}$ & $\overline{0}$ \\
+		      \hline
+		      $\overline{1}$ & $\overline{0}$ & $\overline{1}$ & $\overline{2}$ & $\overline{3}$ \\
+		      \hline
+		      $\overline{2}$ & $\overline{0}$ & $\overline{2}$ & $\overline{0}$ & $\overline{2}$ \\
+		      \hline
+		      $\overline{3}$ & $\overline{0}$ & $\overline{3}$ & $\overline{2}$ & $\overline{1}$ \\
+		      \hline
+			\end{tabular}
+		\end{minipage}
+	\end{table}
+\end{exemplo}
 
 \section{Fun{\c c}{\~o}es}
 
