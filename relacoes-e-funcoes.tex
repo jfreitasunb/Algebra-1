@@ -117,7 +117,7 @@ Em virtude da observação anterior a definição de relação de equivalência 
 
 \begin{exemplos}\label{exemplos_classes_equivalencia}
 	Do Exemplo \ref{exemplos_relacoes_equivalencia} temos
-	\begin{enumerate}
+	\begin{enumerate}[label={\arabic*})]
 		\item As classes de equivalência de $R_1$ são:
 		\begin{align*}
 			\overline{1} &= \{x \in A \mid (x,1) \in R_1\} = \{1,2,3,4\}\\
@@ -158,13 +158,13 @@ Em virtude da observação anterior a definição de relação de equivalência 
 
 \begin{proposicao}
 	Seja $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em um conjunto n{\~a}o vazio $A$. Dados $a$, $b \in A$ temos:
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item se $\overline{a} \cap \overline{b} \ne \emptyset$, ent{\~a}o $aRb$.
 		\item se  $\overline{a} \cap \overline{b} \neq \emptyset$, ent{\~a}o $\overline{a} = \overline{b}$.
 	\end{enumerate}
 \end{proposicao}
 \begin{prova}
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item Como  $\overline{a} \cap \overline{b} \ne \emptyset$, existe um $y \in \overline{a} \cap \overline{b}$, logo $y \in \overline{a}$ e $y \in \overline{b}$. Da defini{\c c}{\~a}o de classe de equival{\^e}ncia temos $yRa$ e $yRb$. Como $R$ {\'e} rela{\c c}{\~a}o de equival{\^e}ncia temos $aRy$ e $bRy$. Pela propriedade transitiva segue que $aRb$, como quer{\'\i}amos.
 
 		\item Precisamos mostrar que $\overline{a} \sub \overline{b}$ e que $\overline{b} \sub \overline{a}.$ Para a primeira inclusão seja $y \in \overline{a}$. Da{\'\i} $yRa$. Mas, por hipótese, $\overline{a}\cap\overline{b}\neq\emptyset$, assim pelo item anterior segue que $aRb$. Logo, como $yRa$ e $aRb$, segue que $yRb$, ou seja, $y \in \overline{b}$. Da{\'\i} $\overline{a}\sub\overline{b}$. Agora para provar a segunda inclusão seja $x \in \overline{b}$. Então $xRb$. Novamente, $\overline{a} \cap \overline{b} \ne \emptyset$ e então pelo item anterior segue que $aRb$. Assim uma vez que $R$ é uma relação de equivalência temos $bRa$ e de $xRb$ obtemos $xRa$, ou seja, $x \in \overline{a}$. Com isso $\overline{b} \sub \overline{a}$. Portanto $\overline{a} = \overline{b}$, como queríamos.
@@ -181,7 +181,7 @@ Em virtude da observação anterior a definição de relação de equivalência 
 
 \begin{exemplos}
 	Do Exemplo \ref{exemplos_classes_equivalencia} temos:
-	\begin{enumerate}
+	\begin{enumerate}[label={\arabic*})]
 		\item $A/R_1 = \{\overline{1}\}$
 		\item $A/R_3 = \{\overline{1},\overline{3},\overline{4}\}$
 		\item $A/R_4 = \{\overline{1},\overline{2},\overline{3},\overline{4}\}$
@@ -209,7 +209,7 @@ Em virtude da observação anterior a definição de relação de equivalência 
 \end{definicao}
 
 \begin{exemplos}
-	\begin{enumerate}
+	\begin{enumerate}[label={\arabic*})]
 		\item Os inteiros 1 e $-1$ dividem qualquer n{\'u}mero inteiro $a$, pois $a = 1 a$ e $a = (-1)(-a)$.
 		\item O n{\'u}mero 0 n{\~a}o divide nenhum inteiro $b$, pois n{\~a}o existe $a \in \z$ tal que $b = 0a$.
 		\item Para todo $b\neq 0$, $b$ divide $\pm b$.
@@ -221,7 +221,7 @@ Em virtude da observação anterior a definição de relação de equivalência 
 
 
 \begin{proposicao}
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item $a\mid a$, para todo $a \in \z$.
 		\item Se $a\mid b$ e $b\mid a$, $a$, $b > 0$ então $a = b$.
 		\item Se $a\mid b$ e $b\mid c$, ent{\~a}o $a\mid c$.
@@ -229,7 +229,7 @@ Em virtude da observação anterior a definição de relação de equivalência 
 	\end{enumerate}
 \end{proposicao}
 \begin{prova}
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item Imediata.
 		
 		\item De fato, existem $k$, $l \in \z $ tais que $b = ka$ e $a = lb$. Assim $b = klb$, isto é, $b(1 - kl) = 0$.
@@ -246,7 +246,7 @@ Em virtude da observação anterior a definição de relação de equivalência 
 \end{definicao}
 
 \begin{exemplos}
-	\begin{enumerate}
+	\begin{enumerate}[label={\arabic*})]
 		\item $5\equiv 2 \pmod{3}$, pois $3 \mid (5-2)$.
 		\item $3\equiv 1 \pmod{2}$, pois $2\mid (3-1)$.
 		\item $3\equiv 9 \pmod{2}$, pois $2\mid (3-9)$.
@@ -257,7 +257,7 @@ Em virtude da observação anterior a definição de relação de equivalência 
 	A congru{\^e}ncia m{\'o}dulo $m$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia em $\z$.
 \end{proposicao}
 \begin{prova}
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item Para todo $a \in \z$, $a\equiv a\pmod{m}$ pois $m\mid (a-a)$.
 		\item Se $a\equiv b\pmod{m}$, ent{\~a}o $m\mid (a - b)$. Da{\'\i} existe $k \in \z$, tal que $(a - b) = km$. Agora, $(b - a) = -(a - b) = -(km) = (-k)m$, ou seja, $m \mid (b - a)$. Da{\'\i} $b\equiv a \pmod{m}$.
 		\item Se $a\equiv b\pmod{m}$ e $b\equiv c\pmod{m}$, ent{\~a}o $m\mid (a-b)$ e $m\mid (b-c)$. Assim, $m\mid [(a-b)+(b-c)]$. Logo, $m\mid (a-c)$, isto {\'e}, $a\equiv c\pmod{m}$.
@@ -268,16 +268,16 @@ Em virtude da observação anterior a definição de relação de equivalência 
 
 \begin{teorema}
 	A rela{\c c}{\~a}o de congru{\^e}ncia m{\'o}dulo $m$ satisfaz as seguintes propriedades:
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item $a_{1}\equiv b_{1}\pmod{m}$ se, e somente se, $a_{1}-b_{1}\equiv 0\pmod{m}$.
 		\item Se $a_{1}\equiv b_{1}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, ent{\~a}o $a_{1}+a_{2}\equiv b_{1}+b_{2}\pmod{m}$.
-		\item Se $a_{1}\equiv b_{2}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, ent{\~a}o $a_{1}a_{2}\equiv b_{1}b_{2}\pmod{m}$.
+		\item Se $a_{1}\equiv b_{2}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, ent{\~a}o $a_{1}a_{2}\equiv b_{1}b_{2}\pmod{m}$.\label{item_provado}
 		\item Se $a\equiv b\pmod{m}$, ent{\~a}o $ax\equiv bx\pmod{m}$, para todo $x \in \z$.
 		\item Vale a lei do cancelamento: se $d \in \z$ e $mdc(d,m) = 1$ ent{\~a}o $ad \equiv bd \pmod{m}$ implica $a\equiv b \pmod{m}$.
 	\end{enumerate}
 \end{teorema}
 \begin{prova}
-	Provemos o item 3.
+	Provemos o item \ref{item_provado}.
 	
 	Como $a_{1}\equiv b_{2}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, existem $k$, $l \in \z$ tais que
 	\begin{align*}
@@ -320,7 +320,7 @@ Por exemplo, fixando $m > 1$
 \end{corolario}
 
 \begin{exemplos}
-	\begin{enumerate}
+	\begin{enumerate}[label={\arabic*})]
 		\item Se $m=2$, ent{\~a}o os poss{\'\i}veis restos na divis{\~a}o inteira por 2 s{\~a}o 0 e 1. Logo, existem duas classes de equival{\^e}ncia, a saber
 		\begin{align*}
 			R_{2}(0) &= \{x \in \z \mid x\equiv 0 \pmod{2}\} = \{x\in \z \mid x = 2k, k\in\z\}\\
