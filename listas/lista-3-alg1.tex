@@ -17,13 +17,44 @@
 
 \vspace{.6cm}
 
-\questao Seja $f:E\to F$ uma fun{\c c}{\~a}o e sejam $A$ e $B$ subconjuntos de $E$. Mostre que:
+\questao Sejam $X$ um conjunto e $\mathcal{P}(X)$ o conjunto de todas as partes de $X$. Se $A \in \mathcal{P}(X)$ e $B \in \mathcal{P}(X)$, definimos a relação $R$ como
+\[
+	ARB \mbox{ se, e só se, } A \sub B.
+\]
+Mostre que $R$ é uma relação de ordem em $\mathcal{P}(X)$.
+
+\vesp
+
+\questao Se $a$, $b \in \z$ definimos
+\[
+	aRb \mbox{ se , e somente se, } b - a \in \n.
+\]
+Mostre que $R$ é uma relação de ordem sobre $\z$. O conjunto $\z$ é totalmente ordenado por $R$?
+
+\vesp
+
+\questao Seja $\complex$ o conjunto dos números complexos e sejam $x = a + bi$ e $y = c + di$ dois elementos de $\complex$.
+Mostre que o conjunto $R$ definido por
+\[
+	xRy \mbox{ se, e somente se, } a \leqslant c \mbox{ e } b \leqslant d
+\]
+é uma relação de ordem parcial em $\complex$.
+
+\vesp
+
+\questao Em $\n \times n$ defina $(a,b) \leqslant (c, d)$ se, e somente se, $a \mid c$ e $b \leqslant d$.
+\begin{enumerate}
+	\item Mostre que $\leqslant$ é uma relação de ordem parcial em $\n \times \n$.
+	\item Sendo $A = \{(2,1);(1,2)\}$ ache os limites superiores, limites inferiores, máximo e mínimo de $A$.
+\end{enumerate}
+
+\vesp
+
+\questao Considere $\n$ com a divisibilidade. Determine se os seguintes subconjuntos são ou não totalmente ordenados:
 \begin{enumerate}[label={\alph*})]
-\item Se $A\subset B$, ent{\~a}o $f(A)\subset f(B)$.
-\item $f(A\cup B)=f(A)\cup f(B)$.
-\item $f(A\cap B)\subset f(A)\cap f(B)$.
-\item Se $f$ {\'e} injetora, ent{\~a}o $f(A\cap B) =  f(A)\cap f(B)$.
-\item $f$ {\'e} bijetora se, e somente se, $f(A^C) = (f(A))^C$ para todo $A \sub E$.
+	\item $A = \{24,2,6\}$
+	\item $B = \{3,15,5\}$
+	\item $C = \{15,5,30\}$
 \end{enumerate}
 
 \vesp
