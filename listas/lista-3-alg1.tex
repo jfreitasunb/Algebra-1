@@ -2,72 +2,15 @@
 %!TEX encoding = ISO-8859-1
 \documentclass[12pt]{article}
 
-\usepackage{amssymb}
-\usepackage{amsmath,amsfonts,amsthm,amstext,mathabx}
-\usepackage[brazil]{babel}
-%\usepackage[latin1]{inputenc}
-\usepackage{graphicx}
-\graphicspath{{/home/jfreitas/Dropbox/imagens-latex/}{/Volumes/Vader/Dropbox/imagens-latex/}{D:/Dropbox/imagens-latex/}}
-\usepackage{enumitem}
-\usepackage{multicol}
-\usepackage[all]{xy}
-
-\setlength{\topmargin}{-1.0in}
-\setlength{\oddsidemargin}{0in}
-\setlength{\textheight}{10.1in}
-\setlength{\textwidth}{6.5in}
-\setlength{\baselineskip}{12mm}
-
-\newcounter{exercicios}
-\setcounter{exercicios}{0}
-\newcommand{\questao}{
-\addtocounter{exercicios}{1}
-\noindent{\bf Exerc{\'\i}cio \arabic{exercicios}: }}
-
-\newcommand{\equi}{\Leftrightarrow}
-\newcommand{\bic}{\leftrightarrow}
-\newcommand{\cond}{\rightarrow}
-\newcommand{\impl}{\Rightarrow}
-\newcommand{\nao}{\sim}
-\newcommand{\sub}{\subseteq}
-\newcommand{\e}{\ \wedge\ }
-\newcommand{\ou}{\ \vee\ }
-\newcommand{\vaz}{\emptyset}
-\newcommand{\nsub}{\nsubset}
-\renewcommand{\sin}{{\rm sen\,}}
-
-\newcommand{\n}{\mathbb{N}}
-\newcommand{\z}{\mathbb{Z}}
-\newcommand{\q}{\mathbb{Q}}
-\newcommand{\cmp}{\mathbb{C}}
-\newcommand{\real}{\mathbb{R}}
-\newcommand{\vesp}{\vspace{0.2cm}}
-\newcommand{\subne}{\subsetneqq}
-
-
-\newcommand{\compcent}[1]{\vcenter{\hbox{$#1\circ$}}}
-\newcommand{\comp}{\mathbin{\mathchoice
-{\compcent\scriptstyle}{\compcent\scriptstyle}
-{\compcent\scriptscriptstyle}{\compcent\scriptscriptstyle}}}
+\include{configuracoes/estrutura_listas}
 
 \begin{document}
-\pagestyle{empty}
 
-\begin{figure}[h]
-        \begin{minipage}[c]{1.7cm}
-        \includegraphics[width=1.7cm]{unb.pdf}
-        \end{minipage}%
-        \hspace{0pt}
-        \begin{minipage}[c]{4in}
-          {Universidade de Bras{\'\i}lia} \\
-          {Departamento de Matem{\'a}tica}
-\end{minipage}
-\end{figure}
-\vspace{-1cm}\hrule
+\input{configuracoes/cabecalho_listas}
 
 \begin{center}
-{\Large\bf {\'A}lgebra 1 - Turma D -- 2$^{o}$/2016} \\ \vspace{9pt} {\large\bf
-  $3^{\underline{a}}$ Lista de Exerc{\'\i}cios -- Fun\c{c}\~oes}\\
+{\Large\bf {\'A}lgebra 1 - Turma D -- 2$^{o}$/2017} \\ \vspace{9pt} {\large\bf
+  $2^{\underline{a}}$ Lista de Exerc{\'\i}cios -- Rela\c{c}\~oes de equival{\^e}ncia}\\
 \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
 \end{center}
 \hrule
