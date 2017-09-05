@@ -563,6 +563,24 @@ Para denotar que $(x,y) \in R$ e que $x \ne y$ usaremos a notação $x \prec y\ 
 	\end{enumerate}
 \end{definicoes}
 
+\begin{proposicao}
+	Seja $B$ é um subconjunto não vazio do conjunto parcialmente ordenado $A$. Se $B$ possui um máximo, ou mínimo, então ele é único.
+\end{proposicao}
+\begin{prova}
+	Faremos a demonstração somente para o máximo. O caso do mínimo é análogo.
+
+	Como $A$ é parcialmente ordenado, existe $R \sub A \times A$ que é uma relação de ordem parcial em $A$.
+	Suponha que $\alpha_1$ e $\alpha_2$ sejam máximos de $B$. Então como $\alpha_1$ é máximo de $B$ e $\alpha_2 \in B$, então
+	\begin{align*}
+		\alpha_2 \preceq \alpha_1.
+	\end{align*}
+	Agora, como $\alpha_2$ é máximo de $B$ e $\alpha_1 \in B$, então
+	\begin{align*}
+		\alpha_1 \preceq \alpha_2.
+	\end{align*}
+	Ou seja, $\alpha_1 R \alpha_2$ e $\alpha_2R\alpha_1$ e como $R$ é relação de ordem parcial segue que $\alpha_1 = \alpha_2$, ou seja, o máximo de $B$ é único.
+\end{prova}
+
 % section relações_de_ordem (end)
 
 % \section{Fun{\c c}{\~o}es}
