@@ -454,7 +454,7 @@ Para multiplica{\c c}{\~a}o, temos
 
 \begin{definicao}
 	Seja $A \ne \emptyset$ e $R \sub A \times A$. Dizemos que $R$ é uma \textbf{relação de ordem parcial sobre} $A$ se:
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item Para todo $x \in A$, $xRx$.
 		\item Se $xRy$ e $yRx$, então $x = y$.
 		\item Se $xRy$ e $yRz$, então $xRz$.
@@ -466,7 +466,7 @@ Quando $R$ é uma relação de ordem parcial sobre $A$, para dizer que $(x,y) \i
 Para denotar que $(x,y) \in R$ e que $x \ne y$ usaremos a notação $x \prec y\ (R)$ significando ``$x$ \textit{precede estritamente $y$ na relação $R$}''.
 
 \begin{exemplos}\label{exemplos_relacoes_de_ordem}
-	\begin{enumerate}
+	\begin{enumerate}[label={\arabic*})]
 		\item Seja $A = \{a,b,c,d\}$. Quais dos seguintes cojuntos são relações de ordem?
 		\begin{align*}
 			R_1 &= \{(a,a);(b,b);(c,c)\}\\
@@ -489,7 +489,7 @@ Para denotar que $(x,y) \in R$ e que $x \ne y$ usaremos a notação $x \prec y\ 
 		é uma relação de ordem sobre $\real$.
 		\begin{solucao}
 			De fato,
-			\begin{enumerate}
+			\begin{enumerate}[label={\roman*})]
 				\item Para todo $x \in \real$, $x \leqslant x$, isto é, $xRx$.
 				\item Se $xRy$ e $yRx$, então $x \leqslant y$ e $y \leqslant x$. Logo $x = y$.
 				\item Se $xRy$ e $yRz$, então $x \leqslant y$ e $y \leqslant z$. Logo $x \leqslant z$, isto é, $xRz$.
@@ -503,7 +503,7 @@ Para denotar que $(x,y) \in R$ e que $x \ne y$ usaremos a notação $x \prec y\ 
 		Então $R$ é uma relação de ordem sobre $\n$.
 		\begin{solucao}
 			De fato,
-			\begin{enumerate}
+			\begin{enumerate}[label={\roman*})]
 				\item Para todo $x \in \n$, $x \mid x$. Logo $(x,x) \in R$.
 				\item Se $(x,y)\in R$ e $(y,x) \in R$, então $x \mid y$ e $y \mid x$. Como $x$, $y \in \n$ então $x = y$.
 				\item Se $(x,y) \in R$ e $(y,z) \in R$, então $x \mid y$ e $y \mid z$. Logo $x \mid z$, isto é, $xRz$.
@@ -514,7 +514,7 @@ Para denotar que $(x,y) \in R$ e que $x \ne y$ usaremos a notação $x \prec y\ 
 
 \begin{definicoes}
 	Seja $A \ne \emptyset$ e $R$ uma relação de ordem sobre $A$.
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item Um \textbf{conjunto parcialmente ordenador} é um conjunto sobre o qual se definiu uma certa relação de ordem parcial.
 		\item Dados $x$, $y \in A$ dizemos que $x$ e $y$ são \textbf{comparáveis mediante} $R$ se $x \preceq y$ ou $y \preceq x$.
 		\item Se quaisquer dois elementos de $A$ forem comparáveis mediante $R$, então $R$ é chamada de \textbf{relação de ordem total sobre} $A$. Nesse caso dizemos que $A$ é um \textbf{conjunto totalmente ordenado}.
@@ -523,7 +523,7 @@ Para denotar que $(x,y) \in R$ e que $x \ne y$ usaremos a notação $x \prec y\ 
 
 \begin{exemplos}
 	No Exemplo \ref{exemplos_relacoes_de_ordem} temos:
-	\begin{enumerate}
+	\begin{enumerate}[label={\arabic*})]
 		\item $R_4$ é uma relação de ordem total sobre $A$.
 		\item $R$ é uma relação de ordem total sobre $\real$.
 		\item A relação de divibilidade sobre $\n$ não é uma ordem total pois, por exemplo, $2 \not{\mid} 3$ e $3 \not{\mid} 2$.
@@ -532,7 +532,7 @@ Para denotar que $(x,y) \in R$ e que $x \ne y$ usaremos a notação $x \prec y\ 
 
 \begin{definicoes}
 	Seja $A$ um conjunto parcialmente ordenado mediante a relação $\preceq$. Seja $B \sub A$ com $B \ne \emptyset$.
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item Um elemento $l \in A$ é um \textbf{limite superior} de $B$ se para todo $x \in B$ temos $x \preceq l$.
 		\item Um elemento $m \in A$ é um \textbf{limite inferior} de $B$ se para todo $x \in B$, $m \preceq x$.
 	\end{enumerate}
@@ -540,7 +540,7 @@ Para denotar que $(x,y) \in R$ e que $x \ne y$ usaremos a notação $x \prec y\ 
 
 \begin{exemplo}
 	Considere $\real$ com a ordem $\leqslant$.
-	\begin{enumerate}
+	\begin{enumerate}[label={\arabic*})]
 		\item Seja $A = \{x \in \real \mid x < 2\}$. Então $l = 2$ é um limite superior para $A$. Assim como qualquer número real maior ou igaul a 2 também será. Note que $A$ não possui limite inferior.
 		\item Seja $B = \{x \in \real \mid x \geqslant -3\}$. Então $m = -3$ é um limite inferior para $B$. Nesse caso não existe limite superior para $B$.
 		\item Seja $C = [2,3)$. Aqui $m = 2$ é um limite inferior para $C$ e $l = 3$ é um limite superior para $C$.
@@ -549,7 +549,7 @@ Para denotar que $(x,y) \in R$ e que $x \ne y$ usaremos a notação $x \prec y\ 
 
 \begin{exemplo}
 	Seja $A = \n$ com a relação de ordem parcial $x \mid y$.
-	\begin{enumerate}
+	\begin{enumerate}[label={\arabic*})]
 		\item Seja $A = \{2,4,8,16\}$. Aqui $l = 32$ é um limite superior para $A$ pois $x\mid 32$ para todo $x \in A$. Além disso, $m = 2$ é um limite inferior para $A$ pois $2 \mid y$ para todo $y \in A$.
 		\item Seja $B = \{1,3,5,7,9,\dots\}$. Aqui $m = 1$ é um limite inferior para $B$ mas não existe limite superior.
 	\end{enumerate}
@@ -557,7 +557,7 @@ Para denotar que $(x,y) \in R$ e que $x \ne y$ usaremos a notação $x \prec y\ 
 
 \begin{definicoes}
 	Seja $B$ um subconjunto não vazio de um conjunto parcialmente ordenado $A$ pela relação $\preceq$.
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item Um elemento $\alpha \in B$ é um \textbf{máximo} de $B$ se para todo $x \in B$, temos $x \preceq \alpha$, isto é, quando $\alpha$ é um limite superior de $B$ e pertence a $B$.
 		\item Um elemento $\beta \in B$ é um \textbf{mínimo} de $B$ se para todo $y \in B$, temos $\beta \preceq y$, isto é, quando $\beta$ é um limite inferior de $B$ e pertence a $B$.
 	\end{enumerate}
