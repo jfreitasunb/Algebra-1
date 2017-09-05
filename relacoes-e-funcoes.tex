@@ -531,12 +531,29 @@ Para denotar que $(x,y) \in R$ e que $x \ne y$ usaremos a notação $x \prec y\ 
 \end{exemplos}
 
 \begin{definicoes}
-	Seja $A$ um conjunto parcialmente ordenado mediante a relação $\preceq$. Seja $B \sub A$, $B \ne \emptyset$.
+	Seja $A$ um conjunto parcialmente ordenado mediante a relação $\preceq$. Seja $B \sub A$ com $B \ne \emptyset$.
 	\begin{enumerate}
 		\item Um elemento $l \in A$ é um \textbf{limite superior} de $B$ se para todo $x \in B$ temos $x \preceq l$.
 		\item Um elemento $m \in A$ é um \textbf{limite inferior} de $B$ se para todo $x \in B$, $m \preceq x$.
 	\end{enumerate}
 \end{definicoes}
+
+\begin{exemplo}
+	Considere $\real$ com a ordem $\leqslant$.
+	\begin{enumerate}
+		\item Seja $A = \{x \in \real \mid x < 2\}$. Então $l = 2$ é um limite superior para $A$. Assim como qualquer número real maior ou igaul a 2 também será. Note que $A$ não possui limite inferior.
+		\item Seja $B = \{x \in \real \mid x >= -3\}$. Então $m = -3$ é um limite inferior para $B$. Nesse caso não existe limite superior para $B$.
+		\item Seja $C = [2,3)$. Aqui $m = 2$ é um limite inferior para $C$ e $l = 3$ é um limite superior para $C$.
+	\end{enumerate}
+\end{exemplo}
+
+\begin{exemplo}
+	Seja $A = \n$ com a relação de ordem parcial $x \mid y$.
+	\begin{enumerate}
+		\item Seja $A = \{2,4,8,16\}$. Aqui $l = 32$ é um limite superior para $A$ pois $x\mid 32$ para todo $x \in A$. Além disso, $m = 2$ é um limite inferior para $A$ pois $2 \mid y$ para todo $y \in A$.
+		\item Seja $B = \{1,3,5,7,9,\dots\}$. Aqui $m = 1$ é um limite inferior para $B$ mas não existe limite superior.
+	\end{enumerate}
+\end{exemplo}
 
 % section relações_de_ordem (end)
 
