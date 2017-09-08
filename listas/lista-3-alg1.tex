@@ -10,90 +10,90 @@
 
 \begin{center}
 {\Large\bf {\'A}lgebra 1 - Turma D -- 2$^{o}$/2017} \\ \vspace{9pt} {\large\bf
-  $3^{\underline{a}}$ Lista de Exerc{\'\i}cios -- Rela\c{c}\~oes de Ordem}\\
+  $3^{\underline{a}}$ Lista de Exerc{\'\i}cios -- Operações em $\z_m$}\\
 \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
 \end{center}
 \hrule
 
 \vspace{.6cm}
 
-\questao Sejam $X$ um conjunto e $\mathcal{P}(X)$ o conjunto de todas as partes de $X$. Se $A \in \mathcal{P}(X)$ e $B \in \mathcal{P}(X)$, definimos a relação $R$ como
-\[
-	ARB \mbox{ se, e só se, } A \sub B.
-\]
-Mostre que $R$ é uma relação de ordem em $\mathcal{P}(X)$.
+\questao Construa a tabela de soma, $\oplus$, e multiplicação, $\otimes$, nos seguintes conjuntos:
+\begin{multicols}{2}
+	\begin{enumerate}[label=({\alph*})]
+		\item $\z_5$
+		\item $\z_8$
+		\item $\z_9$
+		\item $\z_{11}$
+	\end{enumerate}
+\end{multicols}
 
 \vesp
 
-\questao Se $a$, $b \in \z$ definimos
-\[
-	aRb \mbox{ se , e somente se, } b - a \in \n.
-\]
-Mostre que $R$ é uma relação de ordem sobre $\z$. O conjunto $\z$ é totalmente ordenado por $R$?
+\questao Considere os seguintes subconjuntos $G$ de $\z_{12}$:
+\begin{multicols}{2}
+	\begin{enumerate}[label=({\alph*})]
+		\item $G=\{\overline{1},\overline{11}\}$;
 
-\vesp
+		\item $G=\{\overline{0},\overline{4},\overline{8}\}$;
 
-\questao Seja $\complex$ o conjunto dos números complexos e sejam $x = a + bi$ e $y = c + di$ dois elementos de $\complex$.
-Mostre que o conjunto $R$ definido por
-\[
-	xRy \mbox{ se, e somente se, } a \leqslant c \mbox{ e } b \leqslant d
-\]
-é uma relação de ordem parcial em $\complex$. O conjunto $\complex$ é totalmente ordenado com essa relação de ordem?
+		\item $G=\{\overline{0},\overline{2},\overline{4},\overline{6},\overline{8},\overline{10}\}$
+		\item $G=\{\overline{1}, \overline{3},\overline{5},\overline{7},\overline{9},\overline{11}\}$.
+	\end{enumerate}
+\end{multicols}
 
-\vesp
-
-\questao Em $\n \times \n$ defina $(a,b) \leqslant (c, d)$ se, e somente se, $a \mid c$ e $b \leqslant d$.
-\begin{enumerate}[label={\alph*})]
-	\item Mostre que $\leqslant$ é uma relação de ordem parcial em $\n \times \n$.
-	\item Sendo $A = \{(2,1);(1,2)\}$ ache os limites superiores, limites inferiores, máximo e mínimo de $A$.
+Para quais desses conjuntos vale as duas propriedades seguintes:
+\begin{enumerate}[label=({\roman*})]
+	\item $x \oplus y \in G$, para todos $x$, $y \in G$;
+	\item Para todo $x \in G$, existe $y \in G$ tal que $x \oplus y = \overline{0}$.
 \end{enumerate}
 
 \vesp
 
-\questao Seja $\n$ ordenado pela relação de ordem $R$ dada por $xRy$ se, e somente se, $x \mid y$.
-\begin{enumerate}[label={\alph*})]
-	\item Determine se os pares de números a seguir são ou não comparáveis:
-	\begin{multicols}{2}
-		\begin{enumerate}[label={\roman*})]
-			\item 2 e 8
-			\item 9 e 3
-			\item 18 e 24
-			\item 5 e 15
-			\item 18 e 6
-			\item 11 e 121
-			\item 15 e 51
-			\item 17 e 149
-		\end{enumerate}
-	\end{multicols}
-	\item Determine se os seguintes conjuntos são ou não totalmente ordenados:
-	\begin{multicols}{2}
-		\begin{enumerate}[label={\roman*})]
-			\item $A = \{2,8,24\}$
-			\item $B = \{3,6,8\}$
-			\item $C = \{3,5,15\}$
-			\item $D = \{7,49,147\}$
-			\item $E = \{13\}$
-			\item $F = \{3,51\}$
-		\end{enumerate}
-	\end{multicols}
+\questao Considere os seguintes subconjuntos $G$ de $\z_{13}$:
+\begin{multicols}{2}
+	\begin{enumerate}[label=({\alph*})]
+		\item $G=\{\overline{1},\overline{12}\}$;
+
+		\item $G=\{\overline{1},\overline{5},\overline{8},\overline{12}\}$;
+
+		\item $G=\{\overline{1},\overline{2},\overline{3},\overline{4}, \overline{5},\overline{6},\overline{7},
+		 \overline{8},\overline{9},\overline{10},\overline{11},\overline{12}\}$
+		\item $G=\{\overline{1}, \overline{3},\overline{5},\overline{7},\overline{9},\overline{11}\}$.
+	\end{enumerate}
+\end{multicols}
+
+Para quais desses conjuntos vale as duas propriedades seguintes:
+\begin{enumerate}[label=({\roman*})]
+	\item $x \otimes y \in G$, para todos $x$, $y \in G$;
+	\item Para todo $x \in G$, existe $y \in G$ tal que $x \otimes y = \overline{1}$
 \end{enumerate}
 
 \vesp
 
-\questao Mostre que
-\[
-	R = \{(a + bi, c + di) \in \complex \times \complex \mid a < c \mbox{ ou } (a = c \mbox{ e } b \leqslant d)\}
-\]
-é uma relação de ordem total em $\complex$.
+\questao Resolva as seguintes equa\c{c}\~oes:
+\begin{enumerate}[label={\alph*})]
+	\item $x \oplus \overline{2} = \overline{0}$ no conjunto $\z_4$;
+	\item $x^2 \oplus \overline{2}x = \overline{2}$ no conjunto $\z_5$;
+	\item $x^3 \oplus \overline{2}x = \overline{3}$ no conjunto $\z_7$.
+\end{enumerate}
 
 \vesp
 
-\questao Considere a relação $R$ definida em $\n \times \n$ por
-\[
-	(x,y)R(z,t) \mbox{ se, e somente se, } a \mid c \mbox{ e } b \mid d.
-\]
-\begin{enumerate}[label={\alph*})]
-	\item Mostre que $R$ é uma relação de ordem em $\n \times \n$.
-	\item $\n \times \n$ é totalmente ordendo por $R$?
-\end{enumerate}
+\questao Resolva o sistema de equa\c{c}\~oes
+  \[
+    \begin{cases}
+      x \oplus y = \overline{0}\\
+      \overline{2}x \oplus y = \overline{2}
+    \end{cases}
+  \]
+no conjunto $\z_4$. Este sistema possui solu\c{c}\~ao em $\z_3$?
+
+\vesp
+
+\questao Resolva a equa\c{c}\~ao $x^2 \oplus \overline{2}x \oplus \overline{1} = \overline{0}$ nos conjuntos $\z_7$ e $\z_{11}$, caso ela tenha ra{\'\i}zes.
+
+\vesp
+
+\questao Para quais valores de $\overline{c}$ a equa\c{c}\~ao $\overline{2}\otimes x = \overline{c}$ tem solu\c{c}\~ao no conjunto $\z_5$.
+
 \end{document}
