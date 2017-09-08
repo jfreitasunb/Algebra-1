@@ -480,41 +480,41 @@ Para multiplica{\c c}{\~a}o, temos
 \end{prova}
 
 \begin{definicao}
-	Um elemento $\bar{a}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$ {\'e} invers{\'\i}vel se, e somente se, existem $\bar{b}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$ tal que $\bar{a}\odot\bar{b}=\bar{1}$. Neste caso, $\bar{b}$ {\'e} chamado inverso de $\bar{a}$ e denotaremos $\bar{b}=(\bar{a})^{-1}$.
+	Um elemento $\overline{a} \in \z_m$ {\'e} \textbf{invers{\'\i}vel} se, e somente se, existe $\overline{b} \in \z_m$ tal que $\overline{a} \otimes \overline{b} = \overline{1}$. Neste caso, $\overline{b}$ {\'e} chamado \textbf{inverso} de $\overline{a}$ e denotaremos $\overline{b} = (\overline{a})^{-1}$.
 \end{definicao}
 
-
 \begin{proposicao}
-	
+	Se o inverso existe, então ele {\'e} {\'u}nico.
 \end{proposicao}
-Quando $\bar{b}$ existe, ele {\'e} {\'u}nico. De fato, dado $\bar{a}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$, se existem $\bar{b},\bar{d}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$ tais que $\bar{a}\odot\bar{b}=\bar{1}=\bar{a}\odot\bar{d}$, ent{\~a}o $\bar{b}=\bar{b}\odot\bar{1}=\bar{b}\odot (\bar{a}\odot\bar{d})=(\bar{b}\odot\bar{a})\odot\bar{d}=\bar{1}\odot\bar{d}=\bar{d}$.
+\begin{prova}
+	De fato, dado $\overline{a} \in \z_m$, suponha que existem $\overline{b}$, $\overline{d} \in \z_m$ tais que $\overline{a} \otimes \overline{b} = \overline{1} = \overline{a} \otimes \overline{d}$, ent{\~a}o $\overline{b} = \overline{b} \otimes \overline{1} = \overline{b} \otimes (\overline{a} \otimes \overline{d}) = (\overline{b} \otimes \overline{a}) \otimes \overline{d} = \overline{1} \otimes \overline{d} = \overline{d}$.	
+\end{prova}
 
 \begin{proposicao}
-	Um elemento $\bar{a}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$ {\'e} invers{\'\i}vel se, e somente se,
+	Um elemento $\overline{a} \in \z_m$ {\'e} invers{\'\i}vel se, e somente se,
  	\[
- 		mdc(a,m)=1
+ 		mdc(a,m)=1.
  	\]
 \end{proposicao}
 
 \begin{corolario}
-	Se $m$ é um número primo, então para todo $\overline{x} \in \z_m$, $\overline{x} \ne \overline{0}$, existe inverso multiplicativo.
+	Se $m$ é um número primo, então para todo $\overline{x} \in \z_m$, $\overline{x} \ne \overline{0}$, existe inverso.
 \end{corolario}
-
 
 \begin{exemplos}
 	\begin{enumerate}
-		\item Em $\displaystyle\frac{\mathbb{Z}}{4\mathbb{Z}}$ existem dois elementos invers{\'\i}veis que s{\~a}o $\bar{1}$, cujo inverso {\'e} $\bar{1}$, e o $\bar{3}$, cujo inverso {\'e} $\bar{3}$.
-		\item Em $\displaystyle\frac{\mathbb{Z}}{11\mathbb{Z}} $, todos elementos, exceto $\bar{0}$, possuem inverso:
+		\item Em $\z_4$ existem dois elementos invers{\'\i}veis que s{\~a}o $\overline{1}$, cujo inverso {\'e} $\overline{1}$, e o $\overline{3}$, cujo inverso {\'e} $\overline{3}$.
+		\item Em $\z_{11}$, todos elementos, exceto $\overline{0}$, possuem inverso:
 
 		\begin{table}[h]
    			\centering 
    			\setlength{\arrayrulewidth}{0,5\arrayrulewidth}
-   			\caption{\it Inversos em $\displaystyle\frac{\mathbb{Z}}{11\mathbb{Z}}$}
+   			\caption{\it Inversos em $\z_{11}$}
 		   \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|} 
 		    	\hline
-		      	Elemento & $\bar{1}$ & $\bar{2}$ & $\bar{3}$ & $\bar{4}$ & $\bar{5}$ & $\bar{6}$ & $\bar{7}$ & $\bar{8}$ & $\bar{9}$ & $\bar{10}$ \\
+		      	Elemento & $\overline{1}$ & $\overline{2}$ & $\overline{3}$ & $\overline{4}$ & $\overline{5}$ & $\overline{6}$ & $\overline{7}$ & $\overline{8}$ & $\overline{9}$ & $\overline{10}$\T \\
 		      	\hline
-		      	Inverso & $\bar{1}$ & $\bar{6}$ & $\bar{4}$ & $\bar{3}$ & $\bar{9}$ & $\bar{2}$ & $\bar{8}$ & $\bar{7}$ & $\bar{5}$ & $\bar{10}$ \\
+		      	Inverso & $\overline{1}$ & $\overline{6}$ & $\overline{4}$ & $\overline{3}$ & $\overline{9}$ & $\overline{2}$ & $\overline{8}$ & $\overline{7}$ & $\overline{5}$ & $\overline{10}$\T \\
 		      	\hline
 		   \end{tabular}
 		\end{table}
