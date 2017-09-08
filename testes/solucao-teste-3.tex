@@ -36,23 +36,45 @@ Portanto $R$ é uma relação de equivalência sobre $\q$.
 	(a,b)R(c,d) \mbox{ quando } ad=bc.
 \].
 
-\begin{enumerate}
+\begin{enumerate}[label={\alph*})]
 	\item Mostre que $R$ é uma rela{\c c}{\~a}o de equival{\^e}ncia sobre $A$.
 	\item Encontre a classe de equivalência $\overline{(2,1)}$ e exiba 5 elementos.
 \end{enumerate}
 
 \noindent\textbf{Solu\c{c}\~ao:} De fato,
-	\begin{itemize}
-		\item Para todo $x\in \z$ temos $x - x = m\cdot0$ e com isso $(x,x) \in R$.
-		\item Se $(x,y) \in R$ então existe $k \in \z$ tal que $x - y = mk$. Agora $y - x = -(x - y) = -mk = m (-k)$ e como $-k \in \z$ segue que $(y,x) \in R$.
-		\item Se $(x,y) \in R$ e $(y,z) \in R$, então existem $k$, $l\in \z$ tais que $x - y = mk$ e $y - z = ml$.
-		Somando essas duas equações obtemos
+	\begin{enumerate}[label={\alph*})]
+		\item Primeiro observe que
+		\[
+			R = \{((a,b);(c,d)) \in A \times A \mid ad = bc\}
+		\]
+		Assim um elemento $x \in A = \z\times\z^*$ é da forma $x = (a,b)$.
+		\begin{enumerate}[label={\roman*})]
+			\item Para $(a,b) \in A$, $ab = ab$ logo $(a,b)R(a,b)$.
+			\item Se $(a,b)R(c,d)$, então $ad = bc$. Assim $bc = ad$, isto é, $(c,d)R(a,b)$.
+			\item Se $(a,b)R(c,d)$ e $(c,d)R(e,f)$ então
+			\begin{align}
+				ad &= bc\label{primeira_equacao)}\\
+				cf &= de\label{segunda_equacao)}
+			\end{align}
+			Multiplicando a equação \eqref{primeira_equacao)} por $f$ obtemos
+			\[
+				adf = bcf.
+			\]
+			Substituindo $cf$ da equação \eqref{segunda_equacao)} nessa última obtemos
+			\begin{align*}
+				adf &= bde\\
+				adf - bde &= 0\\
+				d(af - be) &= 0.
+			\end{align*}
+			Como $d \in \z^*$, $d \ne 0$, logo $af - be = 0$. Assim $af = be$ e com isso $(a,b)R(e,f)$.
+		\end{enumerate}
+
+		Portanto $R$ é uma relação de equivalência sobre $A$.
+
+		\item A classe de equivalência de $\overline{(2,1)}$ é dada por:
 		\begin{align*}
-			(x - y) + (y - z) &= mk + ml\\
-			x - z &= m(k + l)
+			\overline{(2,1)} &= \{(x,y) \in A \mid (x,y)R(2,1)\} = \{(x,y) \in A \mid x = 2y\} \\
+			&= \{\cdots; (2,1); (4,2); (-2,-1);(-4,-2);(6,3);\cdots\}.
 		\end{align*}
-		e como $k + l \in \z$ segue que $(x,z) \in \z$.
-	\end{itemize}
-	
-	Assim $R$ é uma relação de equivalência.
+	\end{enumerate}
 \end{document}
