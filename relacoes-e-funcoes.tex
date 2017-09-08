@@ -465,15 +465,15 @@ Para multiplica{\c c}{\~a}o, temos
 	\begin{enumerate}[label={\roman*})]
 		\item $\overline{x} \oplus \overline{y} = \overline{x + y} = \overline{y + x} = \overline{y} \oplus \overline{x}$.
 		
-		\item $(\overline{x} \oplus \overline{y}) \oplus \overline{z} = \overline{x + y} \oplus \overline{z} = \overline{(x + y) + z} = \overline{x + (y + z)} = \overline{x} \oplus \overline{y + z} = \overline{x} \oplus (\overline{y} \oplus \overline{z}) = \overline{x} \oplus (\overline{y} \oplus \overline{z})$.
+		\item $(\overline{x} \oplus \overline{y}) \oplus \overline{z} = \overline{x + y} \oplus \overline{z} = \overline{(x + y) + z} = \overline{x + (y + z)} = \overline{x} \oplus \overline{y + z} = \overline{x} \oplus (\overline{y} \oplus \overline{z})$.
 
 		\item $\overline{x} \oplus \overline{0} = \overline{x + 0} = \overline{x}$.
 
-		\item Dado $\overline{x} \in \z_m$ escolha $\overline{y} = \overline{m - x} \in \z_m$. Assim $\overline{x} + \overline{y} = \overline{x} + \overline{m - x} = \overline{x + (m - x)} = \overline{m} = \overline{0}$.
+		\item Dado $\overline{x} \in \z_m$ escolha $\overline{y} = \overline{m - x} \in \z_m$. Assim $\overline{x} \oplus \overline{y} = \overline{x} \oplus \overline{m - x} = \overline{x + (m - x)} = \overline{m} = \overline{0}$.
 
 		\item $\overline{x} \otimes \overline{y} = \overline{x \cdot y} = \overline{y \cdot x} = \overline{y} \otimes \overline{x}$.
 
-		\item $(\overline{x} \otimes \overline{y}) \otimes \overline{z} = \overline{x \cdot y} \otimes \overline{z} = \overline{(x \cdot y)\cdot z} = \overline{x\cdot(y \cdot z)} = \overline{x} \otimes \overline{y \cdot z} = \overline{x} \otimes (\overline{y}\otimes \overline{z})\overline{x} \otimes (\overline{y} \otimes \overline{z})$.
+		\item $(\overline{x} \otimes \overline{y}) \otimes \overline{z} = \overline{x \cdot y} \otimes \overline{z} = \overline{(x \cdot y)\cdot z} = \overline{x\cdot(y \cdot z)} = \overline{x} \otimes \overline{y \cdot z} = \overline{x} \otimes (\overline{y}\otimes \overline{z})$.
 
 		\item $\overline{x} \otimes \overline{1} = \overline{x \cdot 1} = \overline{x}$.
 	\end{enumerate}
