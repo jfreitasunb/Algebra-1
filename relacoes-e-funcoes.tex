@@ -479,7 +479,47 @@ Para multiplica{\c c}{\~a}o, temos
 	\end{enumerate}
 \end{prova}
 
+\begin{definicao}
+	Um elemento $\bar{a}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$ {\'e} invers{\'\i}vel se, e somente se, existem $\bar{b}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$ tal que $\bar{a}\odot\bar{b}=\bar{1}$. Neste caso, $\bar{b}$ {\'e} chamado inverso de $\bar{a}$ e denotaremos $\bar{b}=(\bar{a})^{-1}$.
+\end{definicao}
 
+
+\begin{proposicao}
+	
+\end{proposicao}
+Quando $\bar{b}$ existe, ele {\'e} {\'u}nico. De fato, dado $\bar{a}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$, se existem $\bar{b},\bar{d}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$ tais que $\bar{a}\odot\bar{b}=\bar{1}=\bar{a}\odot\bar{d}$, ent{\~a}o $\bar{b}=\bar{b}\odot\bar{1}=\bar{b}\odot (\bar{a}\odot\bar{d})=(\bar{b}\odot\bar{a})\odot\bar{d}=\bar{1}\odot\bar{d}=\bar{d}$.
+
+\begin{proposicao}
+	Um elemento $\bar{a}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$ {\'e} invers{\'\i}vel se, e somente se,
+ 	\[
+ 		mdc(a,m)=1
+ 	\]
+\end{proposicao}
+
+\begin{corolario}
+	Se $m$ é um número primo, então para todo $\overline{x} \in \z_m$, $\overline{x} \ne \overline{0}$, existe inverso multiplicativo.
+\end{corolario}
+
+
+\begin{exemplos}
+	\begin{enumerate}
+		\item Em $\displaystyle\frac{\mathbb{Z}}{4\mathbb{Z}}$ existem dois elementos invers{\'\i}veis que s{\~a}o $\bar{1}$, cujo inverso {\'e} $\bar{1}$, e o $\bar{3}$, cujo inverso {\'e} $\bar{3}$.
+		\item Em $\displaystyle\frac{\mathbb{Z}}{11\mathbb{Z}} $, todos elementos, exceto $\bar{0}$, possuem inverso:
+
+		\begin{table}[h]
+   			\centering 
+   			\setlength{\arrayrulewidth}{0,5\arrayrulewidth}
+   			\caption{\it Inversos em $\displaystyle\frac{\mathbb{Z}}{11\mathbb{Z}}$}
+		   \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|} 
+		    	\hline
+		      	Elemento & $\bar{1}$ & $\bar{2}$ & $\bar{3}$ & $\bar{4}$ & $\bar{5}$ & $\bar{6}$ & $\bar{7}$ & $\bar{8}$ & $\bar{9}$ & $\bar{10}$ \\
+		      	\hline
+		      	Inverso & $\bar{1}$ & $\bar{6}$ & $\bar{4}$ & $\bar{3}$ & $\bar{9}$ & $\bar{2}$ & $\bar{8}$ & $\bar{7}$ & $\bar{5}$ & $\bar{10}$ \\
+		      	\hline
+		   \end{tabular}
+		\end{table}
+	\end{enumerate}
+\end{exemplos}
 
 
 \section{Relações de Ordem} % (fold)
