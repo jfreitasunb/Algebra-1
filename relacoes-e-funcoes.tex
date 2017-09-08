@@ -487,14 +487,14 @@ Para multiplica{\c c}{\~a}o, temos
 	Se o inverso existe, então ele {\'e} {\'u}nico.
 \end{proposicao}
 \begin{prova}
-	De fato, dado $\overline{a} \in \z_m$, suponha que existem $\overline{b}$, $\overline{d} \in \z_m$ tais que $\overline{a} \otimes \overline{b} = \overline{1} = \overline{a} \otimes \overline{d}$, ent{\~a}o $\overline{b} = \overline{b} \otimes \overline{1} = \overline{b} \otimes (\overline{a} \otimes \overline{d}) = (\overline{b} \otimes \overline{a}) \otimes \overline{d} = \overline{1} \otimes \overline{d} = \overline{d}$.	
+	De fato, dado $\overline{a} \in \z_m$, suponha que existem $\overline{b}$, $\overline{d} \in \z_m$ tais que $\overline{a} \otimes \overline{b} = \overline{1} = \overline{a} \otimes \overline{d}$, ent{\~a}o
+	\begin{align*}
+		\overline{b} &= \overline{b} \otimes \overline{1} = \overline{b} \otimes (\overline{a} \otimes \overline{d})\\ &= (\overline{b} \otimes \overline{a}) \otimes \overline{d} = \overline{1} \otimes \overline{d} = \overline{d}
+	\end{align*}
 \end{prova}
 
 \begin{proposicao}
-	Um elemento $\overline{a} \in \z_m$ {\'e} invers{\'\i}vel se, e somente se,
- 	\[
- 		mdc(a,m)=1.
- 	\]
+	Um elemento $\overline{a} \in \z_m$ {\'e} invers{\'\i}vel se, e somente se, $mdc(a,m)=1$.
 \end{proposicao}
 
 \begin{corolario}
