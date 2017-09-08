@@ -453,12 +453,12 @@ Para multiplica{\c c}{\~a}o, temos
 	As operações de soma $\oplus$ e multiplicação $\otimes$ em $\z_m$ satisfazem as seguintes propriedades:
 	\begin{enumerate}
 		\item Para todos $\overline{x}$, $\overline{y} \in \z_m$: $\overline{x} \oplus \overline{y} = \overline{y} \oplus \overline{x}$.
-		\item Para todos $\overline{x}$, $\overline{y}$ e $\overline{z} \in \z$: $(\overline{x} \oplus \overline{y}) \oplus \overline{z} = \overline{x} \oplus (\overline{y} \oplus \overline{z})$.
+		\item Para todos $\overline{x}$, $\overline{y}$ e $\overline{z} \in \z_m$: $(\overline{x} \oplus \overline{y}) \oplus \overline{z} = \overline{x} \oplus (\overline{y} \oplus \overline{z})$.
 		\item Para todo $\overline{x} \in \z_m$, $\overline{x} \oplus \overline{0} = \overline{x}$.
 		\item Para todo $\overline{x} \in \z$, existe $\overline{y} \in \z$ tal que $\overline{x} \oplus \overline{y} = \overline{0}$.
-		\item Para todos $\overline{x}$, $\overline{y} \in \z_m$: $\overline{x} \otimes \overline{y} = \overline{y} \oplus \overline{x}$.
-		\item Para todos $\overline{x}$, $\overline{y}$ e $\overline{z} \in \z_m$: $(\overline{x} \oplus \overline{y}) \oplus \overline{z} = \overline{x} \oplus (\overline{y} \oplus \overline{z})$.
-		\item Para todo $\overline{x} \in \z_n$: $\overline{x} \oplus \overline{1} = \overline{x}$.
+		\item Para todos $\overline{x}$, $\overline{y} \in \z_m$: $\overline{x} \otimes \overline{y} = \overline{y} \otimes \overline{x}$.
+		\item Para todos $\overline{x}$, $\overline{y}$ e $\overline{z} \in \z_m$: $(\overline{x} \otimes \overline{y}) \otimes \overline{z} = \overline{x} \otimes (\overline{y} \otimes \overline{z})$.
+		\item Para todo $\overline{x} \in \z_m$: $\overline{x} \otimes \overline{1} = \overline{x}$.
 	\end{enumerate}
 \end{proposicao}
 \section{Relações de Ordem} % (fold)
