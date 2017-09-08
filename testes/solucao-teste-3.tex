@@ -1,0 +1,55 @@
+%!TEX program = xelatex
+%!TEX encoding = ISO-8859-1
+\documentclass[12pt]{article}
+
+\include{configuracoes/estrutura_listas}
+
+\begin{document}
+
+\input{configuracoes/cabecalho_listas}
+
+\begin{center}
+{\Large\bf {\'A}lgebra 1 - Turma D -- 2$^{o}$/2017} \\ \vspace{9pt} {\large\bf
+  $3^{\underline{o}}$ Teste - Resolu\c{c}\~ao}\\
+\vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+\end{center}
+\hrule
+
+\vspace{.6cm}
+
+\questao Seja $R \sub \rac \times \rac$ definido por $xRy$ quando $x - y \in \z$. Mostre que $R$ é uma relação de equivalência sobre $\rac$.
+
+\noindent\textbf{Solu\c{c}\~ao:} Precisamos mostrar que:
+\begin{enumerate}[label={\roman*})]
+	\item $(A - B) - C \sub A - (B \cup C)$
+	\item $A - (B \cup C) \sub (A - B) - C$
+\end{enumerate}
+
+
+\vspace{.5cm}
+
+\questao Seja $A = \z \times \z^*$, onde $\z^* = \z - \{0\}$. Para $(a,b)$, $(c,d) \in A$ defina
+\[
+	(a,b)R(c,d) \mbox{ quando } ad=bc.
+\].
+
+\begin{enumerate}
+	\item Mostre que $R$ é uma rela{\c c}{\~a}o de equival{\^e}ncia sobre $A$.
+	\item Encontre a classe de equivalência $\overline{(2,1)}$ e exiba 5 elementos.
+\end{enumerate}
+
+\noindent\textbf{Solu\c{c}\~ao:} De fato,
+	\begin{itemize}
+		\item Para todo $x\in \z$ temos $x - x = m\cdot0$ e com isso $(x,x) \in R$.
+		\item Se $(x,y) \in R$ então existe $k \in \z$ tal que $x - y = mk$. Agora $y - x = -(x - y) = -mk = m (-k)$ e como $-k \in \z$ segue que $(y,x) \in R$.
+		\item Se $(x,y) \in R$ e $(y,z) \in R$, então existem $k$, $l\in \z$ tais que $x - y = mk$ e $y - z = ml$.
+		Somando essas duas equações obtemos
+		\begin{align*}
+			(x - y) + (y - z) &= mk + ml\\
+			x - z &= m(k + l)
+		\end{align*}
+		e como $k + l \in \z$ segue que $(x,z) \in \z$.
+	\end{itemize}
+	
+	Assim $R$ é uma relação de equivalência.
+\end{document}
