@@ -11,28 +11,36 @@ Uma \textbf{fun{\c c}{\~a}o} $f$ de um conjunto $A$ em um conjunto $B$ {\'e} uma
 Nesse caso $y$ é chamado de \textbf{imagem} de $x$ segundo $f$.
 \end{definicao}
 
-O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e será denotado por $dom(f)$.O conjunto $B$ {\'e} chamado de \textbf{contra-dom{\'\i}nio} de $f$. O conjunto
+O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e será denotado por $\dom(f)$.O conjunto $B$ {\'e} chamado de \textbf{contra-dom{\'\i}nio} de $f$. O conjunto
 \[
-	im(f) = \{f(x) \mid x \in A\} \sub B
+	\im(f) = \{f(x) \mid x \in A\} \sub B
 \]
 é chamado \textbf{imagem} de $f$.
 
-Se $f:A\rightarrow B$ {\'e} uma fun{\c c}{\~a}o, escrevemos $f(a)=b$ para dizer que $(a,b)\in f$
 
-Exemplos:
-\begin{enumerate}
-\item Sejam A=\{0,1,2,3\} e B=\{4,5,6,7,8\}. Quais das seguintes rela{\c c}{\~o}es s{\~a}o fun{\c c}{\~o}es?
-\begin{itemize}
-\item $R_{1}=\{(0,5),(1,6),(2,7)\}$ - N{\~a}o {\'e} fun{\c c}{\~a}o pois o n{\'u}mero 3 n{\~a}o t{\^e}m valor associado {\`a} ele.
-\item $R_{2}=\{(0,4),(1,5),(1,6),(2,7),(3,8)\}$ - N{\~a}o {\'e} fun{\c c}{\~a}o pois o valor 1 tem mais de um valor diferente associado {\`a} ele.
-\item $R_{3}=\{(0,4),(1,5),(2,7),(3,8)\}$ - {\'E} fun{\c c}{\~a}o
-\item $R_{4}=\{(0,5),(1,5),(2,6),(3,7)\}$ - {\'E} fun{\c c}{\~a}o
+\begin{exemplos}
+	\begin{enumerate}
+	\item Sejam $A = \{0,1,2,3\}$ e $B = \{4,5,6,7,8\}$. Quais das seguintes rela{\c c}{\~o}es s{\~a}o fun{\c c}{\~o}es?
+	\begin{enumerate}
+		\item $R_{1}=\{(0,5),(1,6),(2,7)\}$
+		\item $R_{2}=\{(0,4),(1,5),(1,6),(2,7),(3,8)\}$
+		\item $R_{3}=\{(0,4),(1,5),(2,7),(3,8)\}$
+		\item $R_{4}=\{(0,5),(1,5),(2,6),(3,7)\}$
+	\end{enumerate}
+	\begin{solucao}
+		\begin{enumerate}
+			\item Não é função pois $3 \in A$ e $3$ não está associado {\`a} nenhum elemento de $B$.
+			\item Não é função pois $1 \in A$ está associado a dois elementos diferentes em $B$.
+			\item É uma função.
+			\item É uma função.
+		\end{enumerate}
+	\end{solucao}
+	\item $R_{5}=\{(x,y)\in\mathbb{R}$x$\mathbb{R}/y^{2}=x^{2}\}$ - N{\~a}o {\'e} fun{\c c}{\~a}o, pois $x=\pm \sqrt{y}$
+	\item $R_{6}=\{(x,y)\in\mathbb{R}$x$\mathbb{R}/x^{2}+y^{2}=1\}$ - N{\~a}o {\'e} fun{\c c}{\~a}o pois quando\\ $x=0,y=1\wedge y=-1$
+	\item  $R_{7}=\{(x,y)\in\mathbb{R}$x$\mathbb{R}/y=x^{2}\}$ - {\'E} fun{\c c}{\~a}o
+\end{enumerate}	
+\end{exemplos}
 
-\end{itemize}
-\item $R_{5}=\{(x,y)\in\mathbb{R}$x$\mathbb{R}/y^{2}=x^{2}\}$ - N{\~a}o {\'e} fun{\c c}{\~a}o, pois $x=\pm \sqrt{y}$
-\item $R_{6}=\{(x,y)\in\mathbb{R}$x$\mathbb{R}/x^{2}+y^{2}=1\}$ - N{\~a}o {\'e} fun{\c c}{\~a}o pois quando\\ $x=0,y=1\wedge y=-1$
-\item  $R_{7}=\{(x,y)\in\mathbb{R}$x$\mathbb{R}/y=x^{2}\}$ - {\'E} fun{\c c}{\~a}o
-\end{enumerate}
 
 \subsection{Tipos de fun{\c c}{\~o}es}
 
