@@ -114,6 +114,22 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e será denotado po
 	Sejam $f : A \to B$ e $g : B \to C$ funções. Definimos a \textbf{função composta} de $g$ com $f$ como sendo a função denotada por $g \circ f : A \to C$ tal que $(g\circ f)(x) = g(f(x))$ para todo $x \in A$.
 \end{definicao}
 
+\begin{exemplos}
+	\begin{enumerate}
+		\item Sejam $f : \real \to \real$ e $g : \real \to \real$ dadas por $f(x) = x^2$ e $g(x) = x + 1$. Assim podemos definir $g \circ f$ e $f \circ g$ e
+		\begin{align*}
+			(g\circ f)(x) = g(f(x)) = g(x^2) = x^2 + 1\\
+			(f\circ g)(x) = f(g(x)) = f(x + 1) = (x + 1)^2
+		\end{align*}
+		Assim em geral $f \circ g \ne g \circ f$.
+
+		\item $f : \real_- \to \real^*_+$ e $g : \real^*_+ \to \real$ dadas por $f(x) = x^2 + 1$ e $g(x) = \ln x$. Nesse caso só podemos definir $g \circ f : \real_- \to \real$ e
+		\[
+			(g\circ f)(x) = g(f(x)) = g(x^2 + 1) = \ln(x^2 + 1).
+		\]
+	\end{enumerate}
+\end{exemplos}
+
 Temos ent{\~a}o que $(g\circ f)(x)=g(f(x)), \forall x\in A$.
 
 Observa{\c c}{\~a}o: Se $f:A\rightarrow B$ e $g:B\rightarrow A$ ent{\~a}o existem $f\circ g$ e $g\circ f$. Por{\'e}m, em geral, $f\circ g\neq g\circ f$.
