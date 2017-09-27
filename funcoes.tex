@@ -54,32 +54,55 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e será denotado po
 \begin{definicao}
 	Seja $f : A \to B$ uma função.
 	\begin{enumerate}
-		\item Dizemos que $f$ é \textbf{injetora} se dados $x_1$, $x_2 \in A$ tais que $f(x_1) = f(x_2)$, então $x_1 = x_1$. De modo equivalente, dizemos que $f$ e \textbf{injerota} se dados $x_1$, $x_2 \in A$ tais que $x_1 \ne x_2$, então $f(x_1) \ne f(x_2)$.
+		\item Dizemos que $f$ é \textbf{injetora} se dados $x_1$, $x_2 \in A$ tais que $f(x_1) = f(x_2)$, então $x_1 = x_2$. De modo equivalente, dizemos que $f$ e \textbf{injerota} se dados $x_1$, $x_2 \in A$ tais que $x_1 \ne x_2$, então $f(x_1) \ne f(x_2)$.
 		\item Dizemos que $f$ é \textbf{sobrejetora} se para todo $y \in B$, existe $x \in A$ tal que $f(x) = y$.
 		\item Dizemos que $f$ e \textbf{bijetora} se $f$ for \textbf{injetora} e \textbf{sobrejtora} simultaneamente.
 	\end{enumerate}
 \end{definicao}
 
-Exemplos:
-\begin{enumerate}
-\item A fun{\c c}{\~a}o $f:\mathbb{R}\rightarrow\mathbb{R}$ dada por $f(x)=3x+1$ {\'e} injetora e sobrejetora.
+\begin{exemplos}
+	Verifique se as seguintes funções são injetoras ou sobrejetoras:
+	\begin{enumerate}
+		\item $f : \z \to \z$ dada por $f(x) = 3x + 1$
+		\begin{solucao}
+			De fato, dados $x_1$, $x_2 \in \z$ tais que $f(x_1) = f(x_2)$ temos
+			\begin{align*}
+				f(x_1) &= f(x_2)\\
+				3x_1 + 1 &= 3x_2 + 1\\
+				3x_1 &= 3x_2\\
+				3(x_1 - x_2) &= 0.
+			\end{align*}
+			Assim $x_1 - x_2 = 0$, isto é, $x_1 = x_2$. Logo $f$ é injetora.
 
-Dados $x_{1}, x_{2}\in\mathbb{R}$ tais que $f(x_{1})=f(x_{2})$, temos:
-\[3x_{1}+1=3x_{2}+1\]
-\[x_{1}=x_{2}\]
+			Para determinar se $f$ é sobrejetora seja $y \in \z$. Precisamos determinar se é possível encontrar algum $x \in \z$ tal que $f(x) = y$. Ou seja, precisamos saber se a equação $3x + 1 = y$ tem solução em $\z$ para qualquer valor de $y$.
 
-Logo $f$ {\'e} injetora
+			Se tomarmos $y = 2$ temos
+			\begin{align*}
+				3x + 1 &= 2\\
+				3x = 1
+			\end{align*}
+			e essa última equação não possui solução em $\z$. Logo para $y = 2$ \textbf{não} existe $x \in \z$ de modo que $f(x) = 2$. Logo $f$ não é sobrejetora.
+		\end{solucao}
 
-Para verificar se $f$ {\'e} sobrejetora precisamos verificar se dado $y\in\mathbb{R}\\ \ \exists x\in\mathbb{R}/f(x)=y$.
+		Dados $x_{1}, x_{2}\in\mathbb{R}$ tais que $f(x_{1})=f(x_{2})$, temos:
+		\[3x_{1}+1=3x_{2}+1\]
+		\[x_{1}=x_{2}\]
 
-Tome $x=\displaystyle\frac{y-1}{3}\in\mathbb{R}$. Da{\'\i}, $f(x)=y$. Logo $f$ {\'e} sobrejetora.
-\item A fun{\c c}{\~a}o $f:\mathbb{R}\rightarrow\mathbb{R}$ dada por $f(x)=x^{2}$ {\'e} injetora? E sobrejetora?
+		Logo $f$ {\'e} injetora
 
-N{\~a}o {\'e} injetora pois $f(-1)=f(1)\wedge 1\neq -1$
+		Para verificar se $f$ {\'e} sobrejetora precisamos verificar se dado $y\in\mathbb{R}\\ \ \exists x\in\mathbb{R}/f(x)=y$.
 
-N{\~a}o {\'e} sobrejetora pois $\nexists x\in\mathbb{R}/x^{2}=-1$
+		Tome $x=\displaystyle\frac{y-1}{3}\in\mathbb{R}$. Da{\'\i}, $f(x)=y$. Logo $f$ {\'e} sobrejetora.
+		
+		\item A fun{\c c}{\~a}o $f:\mathbb{R}\rightarrow\mathbb{R}$ dada por $f(x)=x^{2}$ {\'e} injetora? E sobrejetora?
 
-\end{enumerate}
+		N{\~a}o {\'e} injetora pois $f(-1)=f(1)\wedge 1\neq -1$
+
+		N{\~a}o {\'e} sobrejetora pois $\nexists x\in\mathbb{R}/x^{2}=-1$
+
+		\end{enumerate}
+\end{exemplos}
+
 
 Dado $f:A\rightarrow B$ uma fun{\c c}{\~a}o, considere a rela{\c c}{\~a}o $f^{-1}\subseteq B$x$A$ tal que $(b,a)\in f^{-1}$ se $(a,b)\in f$, ou seja, $f^{-1}(b)=a$ se $f(a)=b$.
 
