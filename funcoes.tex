@@ -1,0 +1,209 @@
+%!TEX program = xelatex
+%!TEX root = Algebra_1.tex
+\chapter{Fun{\c c}{\~o}es}
+
+\subsubsection{Defini{\c c}{\~a}o}
+\begin{definicao}[Fun{\c c}{\~a}o] Uma fun{\c c}{\~a}o $f$ de um conjunto A em um conjunto B {\'e} uma rela{\c c}{\~a}o $f\subseteq A\times B$ satisfazendo:
+\begin{enumerate}
+\item $\forall x\in A,\exists y\in B/(x,y)\in f$
+\item $(x_{1},y_{1}),(x_{1},y_{2})\in f \rightarrow y_{1}=y_{2}$
+\end{enumerate}
+\end{definicao}
+
+Geralmente, para dizer que $f$ {\'e} uma fun{\c c}{\~a}o de A em B escrevemos $f:A\rightarrow B$.
+
+\subsubsection{Dom{\'\i}nio e contra-dom{\'\i}nio}
+O conjunto A {\'e} chamado de Dom{\'\i}nio de $f$ e o conjunto B {\'e} chamado de contra-dom{\'\i}nio.
+
+Se $f:A\rightarrow B$ {\'e} uma fun{\c c}{\~a}o, escrevemos $f(a)=b$ para dizer que $(a,b)\in f$
+
+Exemplos:
+\begin{enumerate}
+\item Sejam A=\{0,1,2,3\} e B=\{4,5,6,7,8\}. Quais das seguintes rela{\c c}{\~o}es s{\~a}o fun{\c c}{\~o}es?
+\begin{itemize}
+\item $R_{1}=\{(0,5),(1,6),(2,7)\}$ - N{\~a}o {\'e} fun{\c c}{\~a}o pois o n{\'u}mero 3 n{\~a}o t{\^e}m valor associado {\`a} ele.
+\item $R_{2}=\{(0,4),(1,5),(1,6),(2,7),(3,8)\}$ - N{\~a}o {\'e} fun{\c c}{\~a}o pois o valor 1 tem mais de um valor diferente associado {\`a} ele.
+\item $R_{3}=\{(0,4),(1,5),(2,7),(3,8)\}$ - {\'E} fun{\c c}{\~a}o
+\item $R_{4}=\{(0,5),(1,5),(2,6),(3,7)\}$ - {\'E} fun{\c c}{\~a}o
+
+\end{itemize}
+\item $R_{5}=\{(x,y)\in\mathbb{R}$x$\mathbb{R}/y^{2}=x^{2}\}$ - N{\~a}o {\'e} fun{\c c}{\~a}o, pois $x=\pm \sqrt{y}$
+\item $R_{6}=\{(x,y)\in\mathbb{R}$x$\mathbb{R}/x^{2}+y^{2}=1\}$ - N{\~a}o {\'e} fun{\c c}{\~a}o pois quando\\ $x=0,y=1\wedge y=-1$
+\item  $R_{7}=\{(x,y)\in\mathbb{R}$x$\mathbb{R}/y=x^{2}\}$ - {\'E} fun{\c c}{\~a}o
+\end{enumerate}
+
+\subsection{Tipos de fun{\c c}{\~o}es}
+
+\begin{definicao}[Fun{\c c}{\~a}o sobrejetora]  Uma fun{\c c}{\~a}o $f:A\rightarrow B$ {\'e} sobrejetora se, e somente se, para todo $y\in B$ exista um $x\in A$ tal que $f(x)=y$\end{definicao}
+
+\begin{definicao}[Fun{\c c}{\~a}o injetora] Uma fun{\c c}{\~a}o $f:A\rightarrow B$ {\'e} injetora se, e somente se, para $a_{1}\neq a_{2}$, temos $f(a_{1})\neq f(a_{2}), \forall a_{1},a_{2}\in A$\end{definicao}
+
+\begin{definicao}[Fun{\c c}{\~a}o bijetora] Uma fun{\c c}{\~a}o $f:A\rightarrow B$ que {\'e} simultaneamente injetora e sobrejetora {\'e} chamada de bijetora ou bijetiva.
+\end{definicao}
+
+Exemplos:
+\begin{enumerate}
+\item A fun{\c c}{\~a}o $f:\mathbb{R}\rightarrow\mathbb{R}$ dada por $f(x)=3x+1$ {\'e} injetora e sobrejetora.
+
+Dados $x_{1}, x_{2}\in\mathbb{R}$ tais que $f(x_{1})=f(x_{2})$, temos:
+\[3x_{1}+1=3x_{2}+1\]
+\[x_{1}=x_{2}\]
+
+Logo $f$ {\'e} injetora
+
+Para verificar se $f$ {\'e} sobrejetora precisamos verificar se dado $y\in\mathbb{R}\\ \ \exists x\in\mathbb{R}/f(x)=y$.
+
+Tome $x=\displaystyle\frac{y-1}{3}\in\mathbb{R}$. Da{\'\i}, $f(x)=y$. Logo $f$ {\'e} sobrejetora.
+\item A fun{\c c}{\~a}o $f:\mathbb{R}\rightarrow\mathbb{R}$ dada por $f(x)=x^{2}$ {\'e} injetora? E sobrejetora?
+
+N{\~a}o {\'e} injetora pois $f(-1)=f(1)\wedge 1\neq -1$
+
+N{\~a}o {\'e} sobrejetora pois $\nexists x\in\mathbb{R}/x^{2}=-1$
+
+\end{enumerate}
+
+Dado $f:A\rightarrow B$ uma fun{\c c}{\~a}o, considere a rela{\c c}{\~a}o $f^{-1}\subseteq B$x$A$ tal que $(b,a)\in f^{-1}$ se $(a,b)\in f$, ou seja, $f^{-1}(b)=a$ se $f(a)=b$.
+
+Pode ocorrer que $f^{-1}$ n{\~a}o seja fun{\c c}{\~a}o, mesmo $f$ sendo uma fun{\c c}{\~a}o. Por exemplo:
+
+$f:\{0,1,2,3\}\rightarrow\{4,5,6,7,8\}$ dada por:\\
+$f(0)=5$\\
+$f(1)=5$\\
+$f(2)=6$\\
+$f(3)=7$
+
+Neste caso, $f^{-1}$ {\'e} dado por:\\
+$f^{-1}(5)=0$\\
+$f^{-1}(5)=1$\\
+$f^{-1}(6)=2$\\
+$f^{-1}(7)=3$
+
+\begin{teorema}
+Dada $f:A\rightarrow B$ fun{\c c}{\~a}o tome $f^{-1}:B\rightarrow A$. Definida com o $f^{-1}(b)=a$ se $f(a)=b$. Ent{\~a}o $f^{-1}$ {\'e} uma fun{\c c}{\~a}o se, e somente se, $f$ {\'e} bijetora.
+\end{teorema}
+
+\textbf{Demonstra{\c c}{\~a}o}: Suponha $f^{-1}$ {\'e} fun{\c c}{\~a}o. Precisamos provar que $f$ {\'e} injetora e sobrejetora.
+
+Dados $a_{1},a_{2}\in A$ tais que $f(a_{1})=b=f(a_{2})$. Como $f(a_{1})=b$ temos $f^{-1}(b)=a_{1}$, al{\'e}m disso, $f^{-1}(b)=a_{2}$. Mas $f^{-1}$ {\'e} fun{\c c}{\~a}o, da{\'\i} $a_{1}=a_{2}$, ou seja, $f$ {\'e} injetora.
+
+Dado $b\in B$, como $f^{-1}$ {\'e} uma fun{\c c}{\~a}o, $\forall b\in B, f^{-1}(b)=a\in A$, logo $f(a)=b$ e assim $f$ {\'e} sobrejetora.
+
+Portanto $f$ {\'e} bijetora.
+
+Agora suponha que $f$ {\'e} bijetora.
+
+Primeiramente, dado $b\in B$, como $f$ {\'e} sobrejetora, existe $a\in A$ tal que $f(a)=b$, ou seja, $f^{-1}(b)=a\in A$.
+
+Suponha que $f^{-1}(b)=a_{1}$ e $f^{-1}(b)=a_{2}$. Da{\'\i}, $f(a_{1})=b\wedge f(a_{2})=b$. Mas $f$ {\'e} injetora, assim $a_{1}=a_{2}$ e ent{\~a}o $f^{-1}(b)=a_{1}=a_{2}$.
+
+Portanto $f^{-1}$ {\'e} fun{\c c}{\~a}o. \#
+\subsection{Composi{\c c}{\~a}o de fun{\c c}{\~o}es}
+
+\subsubsection{Defini{\c c}{\~a}o}
+
+\begin{definicao}[Fun{\c c}{\~a}o Composta] Sejam $f:A\rightarrow B$ e $g:B\rightarrow C$ fun{\c c}{\~o}es. Chama-se composta de $g$ e $f$ a fun{\c c}{\~a}o de A em C, denotada $g\circ f$, definida por $g\circ f:A\rightarrow C$.\end{definicao}
+
+Temos ent{\~a}o que $(g\circ f)(x)=g(f(x)), \forall x\in A$.
+
+Observa{\c c}{\~a}o: Se $f:A\rightarrow B$ e $g:B\rightarrow A$ ent{\~a}o existem $f\circ g$ e $g\circ f$. Por{\'e}m, em geral, $f\circ g\neq g\circ f$.
+
+\subsubsection{Propriedades}
+\begin{proposicao} Se $f:A\rightarrow B$ e $g:B\rightarrow C$ s{\~a}o fun{\c c}{\~o}es injetoras, ent{\~a}o $g\circ f$ {\'e} injetora.\end{proposicao}
+
+\textbf{Demonstra{\c c}{\~a}o}: Dados $x_{1},x_{2}\in A$ tais que $(g\circ f)(x_{1})=(g\circ f)(x_{2})$ temos que $g(f(x_{1}))=g(f(x_{2}))$. Como $g$ {\'e} injetora, $f(x_{1})=f(x_{2})$. Mas $f$ {\'e} injetora, da{\'\i} $x_{1}=x_{2}$. Logo $g\circ f$ {\'e} injetora.\#
+
+\begin{proposicao} Se $f:A\rightarrow B$ e $g:B\rightarrow C$ s{\~a}o sobrejetoras, ent{\~a}o $g\circ f$ {\'e} sobrejetora.\end{proposicao}
+
+\textbf{Demonstra{\c c}{\~a}o}: Temos que $g\circ f:A\rightarrow C$. Dado $z\in C$. Como $g$ {\'e} sobrejetora, $\exists y\in B/g(y)=z$. Como $f$ {\'e} sobrejetora, $\exists x\in A/f(x)=y$. Assim, $z=g(y)=g(f(x))=(g\circ f)(x)$. Logo $g\circ f$ {\'e} sobrejetora.\#
+
+\subsection{Fun{\c c}{\~a}o Identidade}
+\subsubsection{Defini{\c c}{\~a}o}
+\begin{definicao}[Fun{\c c}{\~a}o Identidade] Dado um conjunto $A\neq\emptyset$, a fun{\c c}{\~a}o $i_{A}:A\rightarrow A$ dada por $i_{A}(x)=(x)$ {\'e} chamada de fun{\c c}{\~a}o identidade.\end{definicao}
+
+\begin{proposicao}
+Se $f:A\rightarrow B$ {\'e} bijetora, ent{\~a}o $f\circ f^{-1}=i_{B}\wedge f^{-1}\circ f=i_{A}$.
+\end{proposicao}
+
+\textbf{Demonstra{\c c}{\~a}o}: Temos $i_{F}:F\rightarrow F$ e $i_{E}:E\rightarrow E$. Al{\'e}m disso, $f\circ f^{-1}:F\rightarrow F$ e $f^{-1}\circ f:E\rightarrow E$, da{\'\i} $D(f\circ f^{-1})=D(i_{F})$\footnote{$D(f(x))$ {\'e} o dom{\'\i}nio da fun{\c c}{\~a}o $f$} e $D(f^{-1}\circ f)=D(i_{E})$. Dado $x\in F, (f\circ f^{-1})(x)=f(f^{-1}(x))=x=i_{F}(x)$. Dado $x\in E, (f^{-1}\circ f)(x)=f^{-1}(f(x))=x=i_{E}(x)$.\#
+
+\subsubsection{Propriedades}
+\begin{proposicao} Se $f:A\rightarrow B$ e $g:B\rightarrow A$ s{\~a}o fun{\c c}{\~o}es, ent{\~a}o:
+\begin{enumerate}
+\item $f\circ i_{A}=f, i_{B}\circ f=f, g\circ i_{B}=g, i_{E}\circ g=g$
+\item Se $g\circ f=i_{A}$, e $f\circ g=i_{B}$, ent{\~a}o $f$ e $g$ s{\~a}o bijetoras e $g=f^{-1}$
+\end{enumerate}
+\end{proposicao}
+
+\textbf{Demonstra{\c c}{\~a}o}:
+\begin{enumerate}
+\item Provemos que $f\circ i_{A}=f$.\\
+Primeiro temos $f:A\rightarrow B$ e $i_{A}:A\rightarrow A$. Da{\'\i}, $f\circ i_{A}:A\rightarrow B$, ou seja, $D(f\circ i_{A})=D(f)$. Dado $x\in A$, temos $(f\circ i_{A})(x)=f(i_{A}(x))=f(x)$. Portanto, $f\circ i_{A}=f$.
+\item Provemos que $f$ {\'e} bijetora.\\
+Dados $x_{1}$, $x_{2}\in B$ tais que $f(x_{1})=f(x_{2})$. Como $f:A\rightarrow B$ e $g:B\rightarrow A$, ent{\~a}o $g(f(x_{1}))=g(f(x_{2}))$, ou seja, $(g\circ f)(x_{1})=(g\circ f)(x_{2})$. Da{\'\i}, $i_{A}(x_{1})=i_{A}(x_{2})$. Logo, $x_{1}=x_{2}$, isto {\'e}, $f$ {\'e} injetora.
+
+Agora, dado $y\in B$, segue que $y=i_{B}(y)$. Mas $i_{B}=f\circ g$. Da{\'\i}, $y=i_{B}(y)=(f\circ g)(y)=f(g(y))$. Assim, $x=g(y)\in A$ e $f(x)=y$.
+
+Logo $f$ {\'e} sobrejetora. Portanto $f$ {\'e} bijetora. Analogamente, prova-se que g {\'e} bijetora. Provemos que $g=f^{-1}$. Temos  $f^{-1}:B\rightarrow A$, da{\'\i}, $D(g) = B = D(f^{-1})$. Agora, $f\circ g = i_{B} = f\circ f^{-1}$. Assim, para todo $x\in F$, $(f\circ g)(x)=(f\circ f^{-1})(x)$. Isto {\'e}, $f(g(x))=f(f^{-1}(x))$. Portanto, $g(x)=f^{-1}(x)\forall x\in B$. Logo, $g=f^{-1}$. \#
+\end{enumerate}
+
+\begin{definicao}
+	Seja $f : A \to B$ uma fun{\c c}{\~a}o.
+	\begin{enumerate}
+		\item Dado $P \sub A$, chama-se \textbf{imagem direta} de $P$  \textbf{segundo} $f$ e indica-se por $f(P)$ o subconjunto de $B$ dado por
+		\[
+			f(P) = \{f(x) \mid x \in P\},
+		\]
+		isto {\'e}, $f(P)$ {\'e} o conjunto das imagens por $f$ dos elementos de $P$.
+
+		\item Dado $Q \sub B$, chama-se \textbf{imagem inversa} de $Q$ \textbf{segundo} $f$ e indica-se por $f^{-1}(Q)$ o subconjunto de $A$ dado por
+		\[
+			f^{-1}(Q) = \{x \in E \mid f(x) \in Q\},
+		\]
+		isto {\'e}, $f^{-1}(Q)$ {\'e} o conjunto dos elementos de $A$ que tem imagem em $Q$ atrav{\'e}s de $f$.
+	\end{enumerate}
+\end{definicao}
+
+{\it Exemplos:}
+\begin{enumerate}
+	\item Seja $A = \{1, 3, 5, 7, 9 \}$ e $B = \{0, 1, 2, 3, \dots, 10\}$ e $f : A \to B$ dada por $f(x) = x + 1$. Temos que
+	\begin{itemize}
+		\item $f(\{3, 5, 7\}) = \{f(3), f(5), f(7)\} = \{4, 6, 8\}$
+
+		\item $f(A) = \{f(1), f(3), f(5), f(7), f(9)\} = \{2, 4, 6, 8, 10\}$
+
+		\item $f(\emptyset) = \emptyset$
+
+		\item $f^{-1}(\{2, 4, 10\}) = \{x \in A \mid f(x) \in \{2, 4, 10\}\} = \{1, 3, 9\}$
+
+		\item $f^{-1}(\{0, 1, 3, 5, 7, 9\}) = \{x \in A \mid f(x) \in \{0, 1, 3, 5, 7, 9\}\} = \emptyset$
+	\end{itemize}
+
+	\item Sejam $A = B= \real$ e $f : \real \to \real$ dada por $f(x) = x^2$. Temos
+	\begin{itemize}
+		\item $f(\{1, 2, 3\}) = \{1, 4, 9\}$
+
+		\item $f([0,2]) = \{f(x) \in \real \mid 0 \le x \le 2 \} = \{x^2 \mid 0 \le x \le 2\} = [0, 4]$
+
+		\item $f^{-1}([1, 9]) = \{ x \in \real \mid 1 \le f(x) \le 9\} = \{x \in \real \mid 1 \le x^2 \le 9\} = [-1, -3] \cup [1, 3]$
+	\end{itemize}
+\end{enumerate}
+
+\begin{proposicao}
+	Seja $f : A \to B$ uma fun{\c c}{\~a}o e sejam $P$, $Q \sub E$, $X$, $Y \sub B$.
+	\begin{enumerate}
+		\item Se $P \sub Q$, ent{\~a}o $f(P) \sub f(Q)$.
+
+		\item $f^{-1}(X \cup Y) = f^{-1}(X) \cup f^{-1}(Y)$.
+	\end{enumerate}
+\end{proposicao}
+\begin{prova}
+	\begin{enumerate}
+		\item Se $y \in f(P)$, ent{\~a}o existe $x \in P$ tal que $f(x) = y$. Mas como $P \sub Q$, ent{\~a}o $x \in Q$ e da{\'\i} $y \in f(Q)$. Logo $f(P) \sub f(Q)$.
+
+		\item Seja $z \in f^{-1}(X \cup Y)$. Ent{\~a}o $f(z) \in X \cup Y$. Se $f(z) \in X$, entao $z \in f^{-1}(X)$ e da{\'\i} $z \in f^{-1}(X) \cup f^{-1}(Y)$. Se $f(z) \in Y$, ent{\~a}o $z \in f^{-1}(Y)$ e assim $z \in f^{-1}(X) \cup f^{-1}(Y)$. Logo, $f^{-1}(X \cup Y) \sub f^{-1}(X) \cup f^{-1}(Y)$.
+
+		Agora, seja $z \in f^{-1}(X) \cup f^{-1}(Y)$. Se $z \in f^{-1}(X)$, ent{\~a}o $f(z) \in X$, da{\'\i} $f(z) \in X \cup Y$, isto {\'e}, $z \in f^{-1}(X \cup Y)$. Se $z \in f^{-1}(Y)$, ent{\~a}o $f(z) \in Y$ e assim $f(z) \in X \cup Y$, isto {\'e}, $z \in f^{-1}(X \cup Y)$. Logo $f^{-1}(X) \cup f^{-1}(Y) \sub f^{-1}(X \cup Y)$.
+
+		Portanto, $f^{-1}(X \cup Y) = f^{-1}(X) \cup f^{-1}(Y)$.
+	\end{enumerate}
+\end{prova}
