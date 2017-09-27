@@ -19,26 +19,35 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e será denotado po
 
 
 \begin{exemplos}
-	\begin{enumerate}
+	\begin{enumerate}[label={\arabic*})]
 	\item Sejam $A = \{0,1,2,3\}$ e $B = \{4,5,6,7,8\}$. Quais das seguintes rela{\c c}{\~o}es s{\~a}o fun{\c c}{\~o}es?
-	\begin{enumerate}
-		\item $R_{1}=\{(0,5),(1,6),(2,7)\}$
-		\item $R_{2}=\{(0,4),(1,5),(1,6),(2,7),(3,8)\}$
-		\item $R_{3}=\{(0,4),(1,5),(2,7),(3,8)\}$
-		\item $R_{4}=\{(0,5),(1,5),(2,6),(3,7)\}$
+	\begin{enumerate}[label={\alph*})]
+		\item $R_{1} = \{(0,5),(1,6),(2,7)\}$
+		\item $R_{2} = \{(0,4),(1,5),(1,6),(2,7),(3,8)\}$
+		\item $R_{3} = \{(0,4),(1,5),(2,7),(3,8)\}$
+		\item $R_{4} = \{(0,5),(1,5),(2,6),(3,7)\}$
 	\end{enumerate}
 	\begin{solucao}
-		\begin{enumerate}
+		\begin{enumerate}[label={\alph*})]
 			\item Não é função pois $3 \in A$ e $3$ não está associado {\`a} nenhum elemento de $B$.
 			\item Não é função pois $1 \in A$ está associado a dois elementos diferentes em $B$.
 			\item É uma função.
 			\item É uma função.
 		\end{enumerate}
 	\end{solucao}
-	\item $R_{5}=\{(x,y)\in\mathbb{R}$x$\mathbb{R}/y^{2}=x^{2}\}$ - N{\~a}o {\'e} fun{\c c}{\~a}o, pois $x=\pm \sqrt{y}$
-	\item $R_{6}=\{(x,y)\in\mathbb{R}$x$\mathbb{R}/x^{2}+y^{2}=1\}$ - N{\~a}o {\'e} fun{\c c}{\~a}o pois quando\\ $x=0,y=1\wedge y=-1$
-	\item  $R_{7}=\{(x,y)\in\mathbb{R}$x$\mathbb{R}/y=x^{2}\}$ - {\'E} fun{\c c}{\~a}o
-\end{enumerate}	
+	\item $R_{5} = \{(x,y)\in\mathbb{R} \times \mathbb{R} \mid y^{2} = x^{2}\}$
+	\begin{solucao}
+	 	Não é função pois, por exemplo, para $x = 1$ temos $y = -1$ ou $y = 1$.
+	 \end{solucao}
+	\item $R_{6} = \{(x,y)\in\mathbb{R} \times \mathbb{R} \mid x^{2}+y^{2}=1\}$.
+	\begin{solucao}
+	 	Não é função pois, por exemplo, para $x = 0$ temos $y = 1$ ou $y = -1$.
+	 \end{solucao}
+	\item  $R_{7} = \{(x,y)\in\mathbb{R} \times \mathbb{R}/y=x^{2}\}$
+	\begin{solucao}
+	 	É uma função.
+	\end{solucao}
+	\end{enumerate}	
 \end{exemplos}
 
 
