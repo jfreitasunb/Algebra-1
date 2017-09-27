@@ -2,18 +2,20 @@
 %!TEX root = Algebra_1.tex
 \chapter{Fun{\c c}{\~o}es}
 
-\subsubsection{Defini{\c c}{\~a}o}
-\begin{definicao}[Fun{\c c}{\~a}o] Uma fun{\c c}{\~a}o $f$ de um conjunto A em um conjunto B {\'e} uma rela{\c c}{\~a}o $f\subseteq A\times B$ satisfazendo:
-\begin{enumerate}
-\item $\forall x\in A,\exists y\in B/(x,y)\in f$
-\item $(x_{1},y_{1}),(x_{1},y_{2})\in f \rightarrow y_{1}=y_{2}$
-\end{enumerate}
+\begin{definicao}
+Uma \textbf{fun{\c c}{\~a}o} $f$ de um conjunto $A$ em um conjunto $B$ {\'e} uma rela{\c c}{\~a}o de $A$ em $B$ satisfazendo:
+	\begin{enumerate}
+		\item Para todo $x \in A$, existe $y \in B$ tal que $f(x) = y$.
+		\item  Se $x \in A$ é tal que $f(x) = y_{1}$ e $f(x) = y_{2}$ com $y_1$, $y_2 \in B$, então $y_{1} = y_{2}$.
+	\end{enumerate}
+Nesse caso $y$ é chamado de \textbf{imagem} de $x$ segundo $f$.
 \end{definicao}
 
-Geralmente, para dizer que $f$ {\'e} uma fun{\c c}{\~a}o de A em B escrevemos $f:A\rightarrow B$.
-
-\subsubsection{Dom{\'\i}nio e contra-dom{\'\i}nio}
-O conjunto A {\'e} chamado de Dom{\'\i}nio de $f$ e o conjunto B {\'e} chamado de contra-dom{\'\i}nio.
+O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e será denotado por $dom(f)$.O conjunto $B$ {\'e} chamado de \textbf{contra-dom{\'\i}nio} de $f$. O conjunto
+\[
+	im(f) = \{f(x) \mid x \in A\} \sub B
+\]
+é chamado \textbf{imagem} de $f$.
 
 Se $f:A\rightarrow B$ {\'e} uma fun{\c c}{\~a}o, escrevemos $f(a)=b$ para dizer que $(a,b)\in f$
 
