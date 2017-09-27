@@ -84,6 +84,23 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e será denotado po
 			e essa última equação não possui solução em $\z$. Logo para $y = 2$ \textbf{não} existe $x \in \z$ de modo que $f(x) = 2$. Logo $f$ não é sobrejetora.
 		\end{solucao}
 
+		\item $g : \rac \to \rac$ dada por $f(x) = 3x + 1$
+		\begin{solucao}
+			A prova que $g$ é injetora é idêntica ao caso anterior.
+
+			Para determinar se $g$ é sobrejetora seja $y \in \rac$. Precisamos determinar se é possível encontrar algum $x \in \rac$ tal que $g(x) = y$. Ou seja, precisamos saber se a equação $3x + 1 = y$ tem solução em $\rac$ para qualquer valor de $y$. Mas
+			\begin{align*}
+				&3x + 1 = y\\
+				&3x = y - 1\\
+				&x = \dfrac{y - 1}{3} \in \rac
+			\end{align*}
+			para qualquer valor de $y \in \rac$. Assim dado $y \in \rac$ tome $x = (y - 1)/3 \in \rac$. Daí
+			\[
+				g(x) = g\left(\dfrac{y - 1}{3}\right) = 3\left(\dfrac{y - 1}{3}\right) + 1 = y - 1 + 1 = y. 
+			\]
+			Logo $g$ é sobrejetora.
+		\end{solucao}
+
 		Dados $x_{1}, x_{2}\in\mathbb{R}$ tais que $f(x_{1})=f(x_{2})$, temos:
 		\[3x_{1}+1=3x_{2}+1\]
 		\[x_{1}=x_{2}\]
