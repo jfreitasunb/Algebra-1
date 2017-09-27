@@ -130,24 +130,22 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e será denotado po
 	\end{enumerate}
 \end{exemplos}
 
-Temos ent{\~a}o que $(g\circ f)(x)=g(f(x)), \forall x\in A$.
+\begin{proposicao}
+	Se $f : A \to B$ e $g:B \to C$ s{\~a}o fun{\c c}{\~o}es injetoras, ent{\~a}o $g\circ f$ {\'e} injetora.
+\end{proposicao}
+\begin{prova}
+	Dados $x_{1},x_{2}\in A$ tais que $(g\circ f)(x_{1})=(g\circ f)(x_{2})$ temos que $g(f(x_{1}))=g(f(x_{2}))$. Como $g$ {\'e} injetora, $f(x_{1})=f(x_{2})$. Mas $f$ {\'e} injetora, da{\'\i} $x_{1}=x_{2}$. Logo $g\circ f$ {\'e} injetora.	
+\end{prova}
 
-Observa{\c c}{\~a}o: Se $f:A\rightarrow B$ e $g:B\rightarrow A$ ent{\~a}o existem $f\circ g$ e $g\circ f$. Por{\'e}m, em geral, $f\circ g\neq g\circ f$.
+\begin{proposicao} Se $f:A \to B$ e $g:B \to C$ s{\~a}o sobrejetoras, ent{\~a}o $g\circ f$ {\'e} sobrejetora.\end{proposicao}
 
-\subsubsection{Propriedades}
-\begin{proposicao} Se $f:A\rightarrow B$ e $g:B\rightarrow C$ s{\~a}o fun{\c c}{\~o}es injetoras, ent{\~a}o $g\circ f$ {\'e} injetora.\end{proposicao}
+\textbf{Demonstra{\c c}{\~a}o}: Temos que $g\circ f:A \to C$. Dado $z\in C$. Como $g$ {\'e} sobrejetora, $\exists y\in B/g(y)=z$. Como $f$ {\'e} sobrejetora, $\exists x\in A/f(x)=y$. Assim, $z=g(y)=g(f(x))=(g\circ f)(x)$. Logo $g\circ f$ {\'e} sobrejetora.\#
 
-\textbf{Demonstra{\c c}{\~a}o}: Dados $x_{1},x_{2}\in A$ tais que $(g\circ f)(x_{1})=(g\circ f)(x_{2})$ temos que $g(f(x_{1}))=g(f(x_{2}))$. Como $g$ {\'e} injetora, $f(x_{1})=f(x_{2})$. Mas $f$ {\'e} injetora, da{\'\i} $x_{1}=x_{2}$. Logo $g\circ f$ {\'e} injetora.\#
-
-\begin{proposicao} Se $f:A\rightarrow B$ e $g:B\rightarrow C$ s{\~a}o sobrejetoras, ent{\~a}o $g\circ f$ {\'e} sobrejetora.\end{proposicao}
-
-\textbf{Demonstra{\c c}{\~a}o}: Temos que $g\circ f:A\rightarrow C$. Dado $z\in C$. Como $g$ {\'e} sobrejetora, $\exists y\in B/g(y)=z$. Como $f$ {\'e} sobrejetora, $\exists x\in A/f(x)=y$. Assim, $z=g(y)=g(f(x))=(g\circ f)(x)$. Logo $g\circ f$ {\'e} sobrejetora.\#
-
-Dado $f:A\rightarrow B$ uma funç{\~a}o, considere a relaç{\~a}o $f^{-1}\subseteq B$x$A$ tal que $(b,a)\in f^{-1}$ se $(a,b)\in f$, ou seja, $f^{-1}(b)=a$ se $f(a)=b$.
+Dado $f:A \to B$ uma funç{\~a}o, considere a relaç{\~a}o $f^{-1}\subseteq B$x$A$ tal que $(b,a)\in f^{-1}$ se $(a,b)\in f$, ou seja, $f^{-1}(b)=a$ se $f(a)=b$.
 
 Pode ocorrer que $f^{-1}$ n{\~a}o seja funç{\~a}o, mesmo $f$ sendo uma funç{\~a}o. Por exemplo:
 
-$f:\{0,1,2,3\}\rightarrow\{4,5,6,7,8\}$ dada por:\\
+$f:\{0,1,2,3\} \to\{4,5,6,7,8\}$ dada por:\\
 $f(0)=5$\\
 $f(1)=5$\\
 $f(2)=6$\\
