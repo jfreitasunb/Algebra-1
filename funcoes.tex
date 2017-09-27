@@ -107,12 +107,25 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e será denotado po
 
 			A função $h$ não é sobrejetora pois, por exemplo, para $y = -1$ \textbf{não} existe $x\in\mathbb{R}$ tal que $h(x) = -1$.
 		\end{solucao}
-
-		
-
 		\end{enumerate}
 \end{exemplos}
 
+\begin{definicao}
+	Sejam $f : A \to B$ e $g : B \to C$ funções. Definimos a \textbf{função composta} de $g$ com $f$ como sendo a função denotada por $g \circ f : A \to C$ tal que $(g\circ f)(x) = g(f(x))$ para todo $x \in A$.
+\end{definicao}
+
+Temos ent{\~a}o que $(g\circ f)(x)=g(f(x)), \forall x\in A$.
+
+Observa{\c c}{\~a}o: Se $f:A\rightarrow B$ e $g:B\rightarrow A$ ent{\~a}o existem $f\circ g$ e $g\circ f$. Por{\'e}m, em geral, $f\circ g\neq g\circ f$.
+
+\subsubsection{Propriedades}
+\begin{proposicao} Se $f:A\rightarrow B$ e $g:B\rightarrow C$ s{\~a}o fun{\c c}{\~o}es injetoras, ent{\~a}o $g\circ f$ {\'e} injetora.\end{proposicao}
+
+\textbf{Demonstra{\c c}{\~a}o}: Dados $x_{1},x_{2}\in A$ tais que $(g\circ f)(x_{1})=(g\circ f)(x_{2})$ temos que $g(f(x_{1}))=g(f(x_{2}))$. Como $g$ {\'e} injetora, $f(x_{1})=f(x_{2})$. Mas $f$ {\'e} injetora, da{\'\i} $x_{1}=x_{2}$. Logo $g\circ f$ {\'e} injetora.\#
+
+\begin{proposicao} Se $f:A\rightarrow B$ e $g:B\rightarrow C$ s{\~a}o sobrejetoras, ent{\~a}o $g\circ f$ {\'e} sobrejetora.\end{proposicao}
+
+\textbf{Demonstra{\c c}{\~a}o}: Temos que $g\circ f:A\rightarrow C$. Dado $z\in C$. Como $g$ {\'e} sobrejetora, $\exists y\in B/g(y)=z$. Como $f$ {\'e} sobrejetora, $\exists x\in A/f(x)=y$. Assim, $z=g(y)=g(f(x))=(g\circ f)(x)$. Logo $g\circ f$ {\'e} sobrejetora.\#
 
 Dado $f:A\rightarrow B$ uma funç{\~a}o, considere a relaç{\~a}o $f^{-1}\subseteq B$x$A$ tal que $(b,a)\in f^{-1}$ se $(a,b)\in f$, ou seja, $f^{-1}(b)=a$ se $f(a)=b$.
 
@@ -149,24 +162,8 @@ Primeiramente, dado $b\in B$, como $f$ {\'e} sobrejetora, existe $a\in A$ tal qu
 Suponha que $f^{-1}(b)=a_{1}$ e $f^{-1}(b)=a_{2}$. Da{\'\i}, $f(a_{1})=b\wedge f(a_{2})=b$. Mas $f$ {\'e} injetora, assim $a_{1}=a_{2}$ e ent{\~a}o $f^{-1}(b)=a_{1}=a_{2}$.
 
 Portanto $f^{-1}$ {\'e} fun{\c c}{\~a}o. \#
-\subsection{Composi{\c c}{\~a}o de fun{\c c}{\~o}es}
 
-\subsubsection{Defini{\c c}{\~a}o}
 
-\begin{definicao}[Fun{\c c}{\~a}o Composta] Sejam $f:A\rightarrow B$ e $g:B\rightarrow C$ fun{\c c}{\~o}es. Chama-se composta de $g$ e $f$ a fun{\c c}{\~a}o de A em C, denotada $g\circ f$, definida por $g\circ f:A\rightarrow C$.\end{definicao}
-
-Temos ent{\~a}o que $(g\circ f)(x)=g(f(x)), \forall x\in A$.
-
-Observa{\c c}{\~a}o: Se $f:A\rightarrow B$ e $g:B\rightarrow A$ ent{\~a}o existem $f\circ g$ e $g\circ f$. Por{\'e}m, em geral, $f\circ g\neq g\circ f$.
-
-\subsubsection{Propriedades}
-\begin{proposicao} Se $f:A\rightarrow B$ e $g:B\rightarrow C$ s{\~a}o fun{\c c}{\~o}es injetoras, ent{\~a}o $g\circ f$ {\'e} injetora.\end{proposicao}
-
-\textbf{Demonstra{\c c}{\~a}o}: Dados $x_{1},x_{2}\in A$ tais que $(g\circ f)(x_{1})=(g\circ f)(x_{2})$ temos que $g(f(x_{1}))=g(f(x_{2}))$. Como $g$ {\'e} injetora, $f(x_{1})=f(x_{2})$. Mas $f$ {\'e} injetora, da{\'\i} $x_{1}=x_{2}$. Logo $g\circ f$ {\'e} injetora.\#
-
-\begin{proposicao} Se $f:A\rightarrow B$ e $g:B\rightarrow C$ s{\~a}o sobrejetoras, ent{\~a}o $g\circ f$ {\'e} sobrejetora.\end{proposicao}
-
-\textbf{Demonstra{\c c}{\~a}o}: Temos que $g\circ f:A\rightarrow C$. Dado $z\in C$. Como $g$ {\'e} sobrejetora, $\exists y\in B/g(y)=z$. Como $f$ {\'e} sobrejetora, $\exists x\in A/f(x)=y$. Assim, $z=g(y)=g(f(x))=(g\circ f)(x)$. Logo $g\circ f$ {\'e} sobrejetora.\#
 
 \subsection{Fun{\c c}{\~a}o Identidade}
 \subsubsection{Defini{\c c}{\~a}o}
