@@ -130,7 +130,7 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e será denotado po
 \end{exemplos}
 
 \begin{proposicao}
-	Se $f : A \to B$ e $g : B \to C$ s{\~a}o fun{\c c}{\~o}es injetoras, ent{\~a}o $g\circ f$ {\'e} injetora.
+	Se $f : A \to B$ e $g : B \to C$ s{\~a}o fun{\c c}{\~o}es injetoras, ent{\~a}o $g\circ f : A \to C$ {\'e} injetora.
 \end{proposicao}
 \begin{prova}
 	Dados $x_{1}$, $x_{2} \in A$ tais que $(g\circ f)(x_{1}) = (g\circ f)(x_{2})$ queremos mostrar que $x_1 = x_2$. Temos:
@@ -142,10 +142,10 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e será denotado po
 \end{prova}
 
 \begin{proposicao}
-	Se $f : A \to B$ e $g : B \to C$ s{\~a}o funções sobrejetoras, ent{\~a}o $g\circ f$ {\'e} sobrejetora.
+	Se $f : A \to B$ e $g : B \to C$ s{\~a}o funções sobrejetoras, ent{\~a}o $g\circ f : A \to C$ {\'e} sobrejetora.
 \end{proposicao}
 \begin{prova}
- 	Para mostrar que $g \circ f$ é sobrejetora, precisamos mostrar que para todo $y \in C$, existe $x \in A$ tal que $(g\circ f)(x) = y$.
+ 	Para mostrar que $g \circ f : A \to C$ é sobrejetora, precisamos mostrar que para todo $y \in C$, existe $x \in A$ tal que $(g\circ f)(x) = y$.
 
  	Assim seja $y \in C$. Como $g : B \to C$ é sobrejetora, existe $z \in A$ tal que $g(z) = y$. Mas $z \in B$ e $f : A \to B$ é sobrejetora e assim existe $x \in A$ tal que $f(x) = z$. Logo
  	\[
