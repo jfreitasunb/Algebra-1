@@ -141,9 +141,18 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e será denotado po
 	Como por hipótese $g$ é injetora, dessa última igualdade segue que $f(x_1) = f(x_2)$. Mas $f$ também é injetora, por hipótese, daí $x_1 = x_2$, como queríamos. Portanto $g\circ f$ é injetora.
 \end{prova}
 
-\begin{proposicao} Se $f:A \to B$ e $g:B \to C$ s{\~a}o sobrejetoras, ent{\~a}o $g\circ f$ {\'e} sobrejetora.\end{proposicao}
+\begin{proposicao}
+	Se $f : A \to B$ e $g : B \to C$ s{\~a}o funções sobrejetoras, ent{\~a}o $g\circ f$ {\'e} sobrejetora.
+\end{proposicao}
+\begin{prova}
+ 	Para mostrar que $g \circ f$ é sobrejetora, precisamos mostrar que para todo $y \in C$, existe $x \in A$ tal que $(g\circ f)(x) = y$.
 
-\textbf{Demonstra{\c c}{\~a}o}: Temos que $g\circ f:A \to C$. Dado $z\in C$. Como $g$ {\'e} sobrejetora, $\exists y\in B/g(y)=z$. Como $f$ {\'e} sobrejetora, $\exists x\in A/f(x)=y$. Assim, $z=g(y)=g(f(x))=(g\circ f)(x)$. Logo $g\circ f$ {\'e} sobrejetora.\#
+ 	Assim seja $y \in C$. Como $g : B \to C$ é sobrejetora, existe $z \in A$ tal que $g(z) = y$. Mas $z \in B$ e $f : A \to B$ é sobrejetora e assim existe $x \in A$ tal que $f(x) = z$. Logo
+ 	\[
+ 		(g\circ f)(x) = g(f(x)) = g(z) = y.
+ 	\]
+ 	Portanto $g \circ f$ é sobrejetora.
+ \end{prova}
 
 Dado $f:A \to B$ uma funç{\~a}o, considere a relaç{\~a}o $f^{-1}\subseteq B$x$A$ tal que $(b,a)\in f^{-1}$ se $(a,b)\in f$, ou seja, $f^{-1}(b)=a$ se $f(a)=b$.
 
