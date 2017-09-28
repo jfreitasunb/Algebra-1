@@ -299,23 +299,18 @@ Portanto para que a condição \eqref{condicao_funcao_inversa} defina uma funç�
 \end{definicao}
 
 
-
-
-
-
-
-\subsection{Fun{\c c}{\~a}o Identidade}
-\subsubsection{Defini{\c c}{\~a}o}
-\begin{definicao}[Fun{\c c}{\~a}o Identidade] Dado um conjunto $A\neq\emptyset$, a fun{\c c}{\~a}o $i_{A}:A\rightarrow A$ dada por $i_{A}(x)=(x)$ {\'e} chamada de fun{\c c}{\~a}o identidade.\end{definicao}
+\begin{definicao}
+	Dado um conjunto $A\neq\emptyset$, a fun{\c c}{\~a}o $i_{A}: A \to A$ dada por $i_{A}(x)=(x)$ {\'e} chamada de fun{\c c}{\~a}o identidade.
+\end{definicao}
 
 \begin{proposicao}
-Se $f:A\rightarrow B$ {\'e} bijetora, ent{\~a}o $f\circ f^{-1}=i_{B}\wedge f^{-1}\circ f=i_{A}$.
+Se $f:A \to B$ {\'e} bijetora, ent{\~a}o $f\circ f^{-1}=i_{B}\wedge f^{-1}\circ f=i_{A}$.
 \end{proposicao}
 
-\textbf{Demonstra{\c c}{\~a}o}: Temos $i_{F}:F\rightarrow F$ e $i_{E}:E\rightarrow E$. Al{\'e}m disso, $f\circ f^{-1}:F\rightarrow F$ e $f^{-1}\circ f:E\rightarrow E$, da{\'\i} $D(f\circ f^{-1})=D(i_{F})$\footnote{$D(f(x))$ {\'e} o dom{\'\i}nio da fun{\c c}{\~a}o $f$} e $D(f^{-1}\circ f)=D(i_{E})$. Dado $x\in F, (f\circ f^{-1})(x)=f(f^{-1}(x))=x=i_{F}(x)$. Dado $x\in E, (f^{-1}\circ f)(x)=f^{-1}(f(x))=x=i_{E}(x)$.\#
+\textbf{Demonstra{\c c}{\~a}o}: Temos $i_{F}:F \to F$ e $i_{E}:E \to E$. Al{\'e}m disso, $f\circ f^{-1}:F \to F$ e $f^{-1}\circ f:E \to E$, da{\'\i} $D(f\circ f^{-1})=D(i_{F})$\footnote{$D(f(x))$ {\'e} o dom{\'\i}nio da fun{\c c}{\~a}o $f$} e $D(f^{-1}\circ f)=D(i_{E})$. Dado $x\in F, (f\circ f^{-1})(x)=f(f^{-1}(x))=x=i_{F}(x)$. Dado $x\in E, (f^{-1}\circ f)(x)=f^{-1}(f(x))=x=i_{E}(x)$.\#
 
 \subsubsection{Propriedades}
-\begin{proposicao} Se $f:A\rightarrow B$ e $g:B\rightarrow A$ s{\~a}o fun{\c c}{\~o}es, ent{\~a}o:
+\begin{proposicao} Se $f:A \to B$ e $g:B \to A$ s{\~a}o fun{\c c}{\~o}es, ent{\~a}o:
 \begin{enumerate}
 \item $f\circ i_{A}=f, i_{B}\circ f=f, g\circ i_{B}=g, i_{E}\circ g=g$
 \item Se $g\circ f=i_{A}$, e $f\circ g=i_{B}$, ent{\~a}o $f$ e $g$ s{\~a}o bijetoras e $g=f^{-1}$
@@ -325,11 +320,11 @@ Se $f:A\rightarrow B$ {\'e} bijetora, ent{\~a}o $f\circ f^{-1}=i_{B}\wedge f^{-1
 \textbf{Demonstra{\c c}{\~a}o}:
 \begin{enumerate}
 \item Provemos que $f\circ i_{A}=f$.\\
-Primeiro temos $f:A\rightarrow B$ e $i_{A}:A\rightarrow A$. Da{\'\i}, $f\circ i_{A}:A\rightarrow B$, ou seja, $D(f\circ i_{A})=D(f)$. Dado $x\in A$, temos $(f\circ i_{A})(x)=f(i_{A}(x))=f(x)$. Portanto, $f\circ i_{A}=f$.
+Primeiro temos $f:A \to B$ e $i_{A}:A \to A$. Da{\'\i}, $f\circ i_{A}:A \to B$, ou seja, $D(f\circ i_{A})=D(f)$. Dado $x\in A$, temos $(f\circ i_{A})(x)=f(i_{A}(x))=f(x)$. Portanto, $f\circ i_{A}=f$.
 \item Provemos que $f$ {\'e} bijetora.\\
-Dados $x_{1}$, $x_{2}\in B$ tais que $f(x_{1})=f(x_{2})$. Como $f:A\rightarrow B$ e $g:B\rightarrow A$, ent{\~a}o $g(f(x_{1}))=g(f(x_{2}))$, ou seja, $(g\circ f)(x_{1})=(g\circ f)(x_{2})$. Da{\'\i}, $i_{A}(x_{1})=i_{A}(x_{2})$. Logo, $x_{1}=x_{2}$, isto {\'e}, $f$ {\'e} injetora.
+Dados $x_{1}$, $x_{2}\in B$ tais que $f(x_{1})=f(x_{2})$. Como $f:A \to B$ e $g:B \to A$, ent{\~a}o $g(f(x_{1}))=g(f(x_{2}))$, ou seja, $(g\circ f)(x_{1})=(g\circ f)(x_{2})$. Da{\'\i}, $i_{A}(x_{1})=i_{A}(x_{2})$. Logo, $x_{1}=x_{2}$, isto {\'e}, $f$ {\'e} injetora.
 
 Agora, dado $y\in B$, segue que $y=i_{B}(y)$. Mas $i_{B}=f\circ g$. Da{\'\i}, $y=i_{B}(y)=(f\circ g)(y)=f(g(y))$. Assim, $x=g(y)\in A$ e $f(x)=y$.
 
-Logo $f$ {\'e} sobrejetora. Portanto $f$ {\'e} bijetora. Analogamente, prova-se que g {\'e} bijetora. Provemos que $g=f^{-1}$. Temos  $f^{-1}:B\rightarrow A$, da{\'\i}, $D(g) = B = D(f^{-1})$. Agora, $f\circ g = i_{B} = f\circ f^{-1}$. Assim, para todo $x\in F$, $(f\circ g)(x)=(f\circ f^{-1})(x)$. Isto {\'e}, $f(g(x))=f(f^{-1}(x))$. Portanto, $g(x)=f^{-1}(x)\forall x\in B$. Logo, $g=f^{-1}$. \#
+Logo $f$ {\'e} sobrejetora. Portanto $f$ {\'e} bijetora. Analogamente, prova-se que g {\'e} bijetora. Provemos que $g=f^{-1}$. Temos  $f^{-1}:B \to A$, da{\'\i}, $D(g) = B = D(f^{-1})$. Agora, $f\circ g = i_{B} = f\circ f^{-1}$. Assim, para todo $x\in F$, $(f\circ g)(x)=(f\circ f^{-1})(x)$. Isto {\'e}, $f(g(x))=f(f^{-1}(x))$. Portanto, $g(x)=f^{-1}(x)\forall x\in B$. Logo, $g=f^{-1}$. \#
 \end{enumerate}
