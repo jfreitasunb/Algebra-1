@@ -61,7 +61,7 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e será denotado po
 
 \begin{exemplos}
 	Verifique se as seguintes funções são injetoras ou sobrejetoras:
-	\begin{enumerate}
+	\begin{enumerate}[label={\arabic*})]
 		\item $f : \z \to \z$ dada por $f(x) = 3x + 1$
 		\begin{solucao}
 			De fato, dados $x_1$, $x_2 \in \z$ tais que $f(x_1) = f(x_2)$ temos
@@ -114,7 +114,7 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e será denotado po
 \end{definicao}
 
 \begin{exemplos}
-	\begin{enumerate}
+	\begin{enumerate}[label={\arabic*})]
 		\item Sejam $f : \real \to \real$ e $g : \real \to \real$ dadas por $f(x) = x^2$ e $g(x) = x + 1$. Assim podemos definir $g \circ f$ e $f \circ g$ e
 		\begin{align*}
 			(g\circ f)(x) = g(f(x)) = g(x^2) = x^2 + 1\\
@@ -172,7 +172,7 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e será denotado po
 \end{definicao}
 
 \begin{exemplos}
-	\begin{enumerate}
+	\begin{enumerate}[label={\arabic*})]
 		\item Seja $A = \{1, 3, 5, 7, 9 \}$ e $B = \{0, 1, 2, 3, \dots, 10\}$ e $f : A \to B$ dada por $f(x) = x + 1$. Temos:
 		\begin{itemize}
 			\item $f(\{1\}) = \{f(1)\} = \{2\}$
@@ -201,14 +201,14 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e será denotado po
 
 \begin{proposicao}
 	Seja $f : A \to B$ uma fun{\c c}{\~a}o e sejam $P$, $Q \sub A$, $X$, $Y \sub B$.
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item Se $P \sub Q$, ent{\~a}o $f(P) \sub f(Q)$.
 
 		\item $f^{-1}(X \cup Y) = f^{-1}(X) \cup f^{-1}(Y)$.
 	\end{enumerate}
 \end{proposicao}
 \begin{prova}
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item Se $y \in f(P)$, ent{\~a}o existe $x \in P$ tal que $f(x) = y$. Mas como $P \sub Q$, ent{\~a}o $x \in Q$ e da{\'\i} $y \in f(Q)$. Logo $f(P) \sub f(Q)$.
 
 		\item Seja $z \in f^{-1}(X \cup Y)$. Ent{\~a}o $f(z) \in X \cup Y$. Se $f(z) \in X$, então $z \in f^{-1}(X)$ e da{\'\i} $z \in f^{-1}(X) \cup f^{-1}(Y)$. Se $f(z) \in Y$, ent{\~a}o $z \in f^{-1}(Y)$ e assim $z \in f^{-1}(X) \cup f^{-1}(Y)$. Logo, $f^{-1}(X \cup Y) \sub f^{-1}(X) \cup f^{-1}(Y)$.
@@ -290,7 +290,7 @@ Logo $f$ {\'e} sobrejetora. Portanto $f$ {\'e} bijetora. Analogamente, prova-se 
 
 \begin{definicao}
 	Seja $f : A \to B$ uma fun{\c c}{\~a}o.
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item Dado $P \sub A$, chama-se \textbf{imagem direta} de $P$  \textbf{segundo} $f$ e indica-se por $f(P)$ o subconjunto de $B$ dado por
 		\[
 			f(P) = \{f(x) \mid x \in P\},
@@ -305,8 +305,7 @@ Logo $f$ {\'e} sobrejetora. Portanto $f$ {\'e} bijetora. Analogamente, prova-se 
 	\end{enumerate}
 \end{definicao}
 
-{\it Exemplos:}
-\begin{enumerate}
+\begin{enumerate}[label={\arabic*})]
 	\item Seja $A = \{1, 3, 5, 7, 9 \}$ e $B = \{0, 1, 2, 3, \dots, 10\}$ e $f : A \to B$ dada por $f(x) = x + 1$. Temos que
 	\begin{itemize}
 		\item $f(\{3, 5, 7\}) = \{f(3), f(5), f(7)\} = \{4, 6, 8\}$
@@ -332,14 +331,14 @@ Logo $f$ {\'e} sobrejetora. Portanto $f$ {\'e} bijetora. Analogamente, prova-se 
 
 \begin{proposicao}
 	Seja $f : A \to B$ uma fun{\c c}{\~a}o e sejam $P$, $Q \sub E$, $X$, $Y \sub B$.
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item Se $P \sub Q$, ent{\~a}o $f(P) \sub f(Q)$.
 
 		\item $f^{-1}(X \cup Y) = f^{-1}(X) \cup f^{-1}(Y)$.
 	\end{enumerate}
 \end{proposicao}
 \begin{prova}
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item Se $y \in f(P)$, ent{\~a}o existe $x \in P$ tal que $f(x) = y$. Mas como $P \sub Q$, ent{\~a}o $x \in Q$ e da{\'\i} $y \in f(Q)$. Logo $f(P) \sub f(Q)$.
 
 		\item Seja $z \in f^{-1}(X \cup Y)$. Ent{\~a}o $f(z) \in X \cup Y$. Se $f(z) \in X$, entao $z \in f^{-1}(X)$ e da{\'\i} $z \in f^{-1}(X) \cup f^{-1}(Y)$. Se $f(z) \in Y$, ent{\~a}o $z \in f^{-1}(Y)$ e assim $z \in f^{-1}(X) \cup f^{-1}(Y)$. Logo, $f^{-1}(X \cup Y) \sub f^{-1}(X) \cup f^{-1}(Y)$.

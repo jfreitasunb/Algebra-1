@@ -153,7 +153,7 @@ Quando $A$ e $B$ n{\~a}o s{\~a}o iguais, escrevemos $A \neq B$. Para que $A \neq
 
 \begin{proposicao}
 	Dados três conjuntos $A$, $B$ e $C$ temos:
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item $A\subseteq A$ (Reflexividade)
 		\item Se $A\subseteq B \mbox{ e } B\subseteq A$, ent{\~a}o $A=B$. (Antissimetria)
 		\item Se $A\subseteq B$ e $B\subseteq C$, ent{\~a}o $A\subseteq C$. (Transitividade)
@@ -179,7 +179,7 @@ Neste caso, $2 \in A$ e $2 \notin B$, logo $A \nsubseteq B$. Por outro lado, $3 
 
 \section{Rela{\c c}{\~o}es entre conjuntos}
 
-\begin{definicao}[Intersec{\c c}{\~a}o]\label{intersecao_conjunto}
+\begin{definicao}\label{intersecao_conjunto}
 Sejam $A$ e $B$ dois conjuntos. Definimos a \textbf{intersec{\c c}{\~a}o} de $A$ e $B$ como sendo o conjunto $A \cap B$ cujos elementos pertencem ao conjunto $A$ e $B$ simultaneamente. Assim,
 \[
 A \cap B = \{x \mid x \in A\mbox{ e }  x \in B\}.
@@ -194,7 +194,7 @@ A \cap B = \{x \mid x \in A\mbox{ e }  x \in B\}.
 	\end{align*}
 \end{exemplo}
 
-\begin{definicao}[Uni{\~a}o]\label{unicao_conjuntos}
+\begin{definicao}\label{unicao_conjuntos}
 Sejam $A$ e $B$ dois conjuntos. Definimos a \textbf{uni{\~a}o} de $A$ com $B$ como sendo o conjunto $A \cup B$, cujos elementos pertencem ao conjunto $A$ ou ao conjunto $B$. Assim,
 \[
 A \cup B = \{x \mid x \in A \mbox{ ou } x \in B\}.
@@ -210,12 +210,12 @@ A \cup B = \{x \mid x \in A \mbox{ ou } x \in B\}.
 \end{exemplo}
 
 \begin{proposicao} Sejam $A$ e $B$ dois conjuntos. Ent{\~a}o:
-\begin{enumerate}
-\item $(A \cap B) \subseteq A$;
-\item $(A \cap B) \subseteq B$;
-\item $A \subseteq A \cup B$;
-\item $B \subseteq A \cup B$.
-\end{enumerate}
+	\begin{enumerate}[label={\roman*})]
+		\item $(A \cap B) \subseteq A$;
+		\item $(A \cap B) \subseteq B$;
+		\item $A \subseteq A \cup B$;
+		\item $B \subseteq A \cup B$.
+	\end{enumerate}
 \end{proposicao}
 \begin{prova}
 	Para provar a primeira afirmação seja $x \in A \cap B$ um elemento qualquer. Da defini\c{c}\~ao de interse\c{c}\~ao de conjuntos, Definição \ref{intersecao_conjunto}, temos $x \in A$ e $x \in B$. Assim podemos afirmar com certeza que $x \in A$. Logo todo elemente de $A \cap B$ também está em $A$, ou seja, $A \cap B \subseteq A$. De modo análogo prova-se a segunda afirmação sobre interseção.
@@ -225,7 +225,7 @@ A \cup B = \{x \mid x \in A \mbox{ ou } x \in B\}.
 
 O conceito de uni{\~a}o ($ \cup $) e intersec{\c c}{\~a}o ($ \cap $) pode ser estendido para mais de dois conjuntos.
 
-\begin{definicao}[Uni{\~a}o e Intersec{\c c}{\~a}o finita de conjuntos]
+\begin{definicao}
 Sejam $A_{1}$, \dots, $A_{n}$ conjuntos. Ent{\~a}o
 \[
 A_{1} \cup A_{2} \cup \cdots \cup A_{n}= \displaystyle\bigcup_{k=1}^n A_{k}
@@ -248,45 +248,45 @@ C = A \sqcup B.
 \]
 
 \begin{proposicao} Sejam $A,\ B$ e $C$ tr{\^e}s conjuntos, ent{\~a}o:
-\begin{enumerate}
-\item $A\cap(B\cup C)=(A\cap B)\cup(A\cap C)$
-\item $A\cup(B\cap C)=(A\cup B)\cap(A\cup C)$
-\end{enumerate}
+	\begin{enumerate}[label={\roman*})]
+		\item $A\cap(B\cup C)=(A\cap B)\cup(A\cap C)$
+		\item $A\cup(B\cap C)=(A\cup B)\cap(A\cup C)$
+	\end{enumerate}
 \end{proposicao}
 \begin{prova}
-\begin{enumerate}
-\item Precisamos mostrar que
-\begin{enumerate}[label={\roman*})]
-\item $A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$;\label{intersecao_unicao_1}
-\item $(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C).$\label{intersecao_unicao_2}
-\end{enumerate}
+	\begin{enumerate}[label={\roman*})]
+		\item Precisamos mostrar que
+		\begin{enumerate}[label={\roman*})]
+			\item $A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$;\label{intersecao_unicao_1}
+			\item $(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C).$\label{intersecao_unicao_2}
+		\end{enumerate}
 
-Para provar \ref{intersecao_unicao_1} seja $x\in A \cap (B \cup C)$. Logo $x\in A$ e $x\in B\cup C$. Agora, de $x\in B\cup C$, segue que $x\in B$ ou $x\in C$. Suponha que $x\in B$. Como $x\in A$ e $x \in B$, ent\~ao $x\in A\cap B$. Assim, $x\in(A\cap B)\cup(A\cap C)$, ou seja, $A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$. Por outro lado, se $x\in C$, como $x\in A$, ent{\~a}o $x\in A\cap C$ e da{\'\i} $x\in(A\cap B)\cup(A\cap C)$, logo $A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$.
+		Para provar \ref{intersecao_unicao_1} seja $x\in A \cap (B \cup C)$. Logo $x\in A$ e $x\in B\cup C$. Agora, de $x\in B\cup C$, segue que $x\in B$ ou $x\in C$. Suponha que $x\in B$. Como $x\in A$ e $x \in B$, ent\~ao $x\in A\cap B$. Assim, $x\in(A\cap B)\cup(A\cap C)$, ou seja, $A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$. Por outro lado, se $x\in C$, como $x\in A$, ent{\~a}o $x\in A\cap C$ e da{\'\i} $x\in(A\cap B)\cup(A\cap C)$, logo $A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$.
 
-Portanto,
-\[
-	A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C).
-\]
+		Portanto,
+		\[
+			A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C).
+		\]
 
-Agora para provar \ref{intersecao_unicao_2}, seja $x\in(A\cap B)\cup(A\cap C)$. Da{\'\i}, $x\in A\cap B$ ou $x\in A\cap C$. Suponha que $x\in A\cap B$. Assim, $x\in A$ e $x\in B$. Como $x\in B$, segue que $x\in B\cup C$ e ent{\~a}o $x\in A\cap(B\cup C)$, ou seja, $(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C)$. Agora, suponha que $x\in A\cap C$. Com isso $x\in A$ e $x\in C$. Desse modo, $x\in B\cup C$ e ent{\~a}o $x\in A\cap(B\cup C)$ e da{\'\i}
-\[
-	(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C).
-\]
+		Agora para provar \ref{intersecao_unicao_2}, seja $x\in(A\cap B)\cup(A\cap C)$. Da{\'\i}, $x\in A\cap B$ ou $x\in A\cap C$. Suponha que $x\in A\cap B$. Assim, $x\in A$ e $x\in B$. Como $x\in B$, segue que $x\in B\cup C$ e ent{\~a}o $x\in A\cap(B\cup C)$, ou seja, $(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C)$. Agora, suponha que $x\in A\cap C$. Com isso $x\in A$ e $x\in C$. Desse modo, $x\in B\cup C$ e ent{\~a}o $x\in A\cap(B\cup C)$ e da{\'\i}
+		\[
+			(A\cap B)\cup(A\cap C)\subseteq A\cap(B\cup C).
+		\]
 
-Portanto
-\[
-	A\cap(B\cup C)=(A\cap B)\cup(A\cap C),
-\]
-como quer{\'\i}amos.
-\item An\'aloga ao caso anterior.
-\end{enumerate}
+		Portanto
+		\[
+			A\cap(B\cup C)=(A\cap B)\cup(A\cap C),
+		\]
+		como quer{\'\i}amos.
+		\item An\'aloga ao caso anterior.
+	\end{enumerate}
 \end{prova}
 
-\begin{definicao}[Diferen{\c c}a de Conjuntos]
-Dados dois conjuntos $A$ e $B$, definimos a \textbf{diferen{\c c}a} dos conjuntos $A$ e $B$, denotada por $A-B$ ou $A\backslash B$ como sendo o conjunto
-\[
-A - B = \{x \mid x \in A \mbox{ e } x \notin B\}.
-\]
+\begin{definicao}
+	Dados dois conjuntos $A$ e $B$, definimos a \textbf{diferen{\c c}a} dos conjuntos $A$ e $B$, denotada por $A-B$ ou $A\backslash B$ como sendo o conjunto
+	\[
+		A - B = \{x \mid x \in A \mbox{ e } x \notin B\}.
+	\]
 \end{definicao}
 
 \begin{exemplos}
