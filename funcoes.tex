@@ -220,41 +220,83 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e será denotado po
 \end{prova}
 
 
-Dado $f:A \to B$ uma funç{\~a}o, considere a relaç{\~a}o $f^{-1}\subseteq B$x$A$ tal que $(b,a)\in f^{-1}$ se $(a,b)\in f$, ou seja, $f^{-1}(b)=a$ se $f(a)=b$.
+Dado $f : A \to B$ uma funç{\~a}o, queremos construir uma função $g : B \to A$ de modo que
+\[
+	g(f(x)) = x
+\]
+para todo $x \in A$. Mas $f(x) = y$ com $y \in B$. Assim podemos tentar definir $g$ como
+\begin{align}\label{condicao_funcao_inversa}
+	g(y) = x,\ y \in B \mbox{ se, e somente se, } f(x) = y.
+\end{align}
+Com essa definição $g$ é uma função? Vejamos um exemplo: definia $f : \{0,1,2,3\} \to \{4,5,6,7,8\}$ por:
+\begin{align*}
+	f(0) &= 5\\
+	f(1) &= 5\\
+	f(2) &= 6\\
+	f(3) &= 7.	
+\end{align*}
 
-Pode ocorrer que $f^{-1}$ n{\~a}o seja funç{\~a}o, mesmo $f$ sendo uma funç{\~a}o. Por exemplo:
+A partir da definição \eqref{condicao_funcao_inversa} temos
+\begin{align*}
+	g(5) &= 0\\
+	g(5) &= 1\\
+	g(6) &= 2\\
+	g(7) &= 3.
+\end{align*}
 
-$f:\{0,1,2,3\} \to\{4,5,6,7,8\}$ dada por:\\
-$f(0)=5$\\
-$f(1)=5$\\
-$f(2)=6$\\
-$f(3)=7$
+Assim $g$ definida pela condição \eqref{condicao_funcao_inversa} não é uma função pois $g$ atribui ao número 5 dois possíveis valores: 0 e 1. Isso ocorre pois $f$ não é injetora. Vamos então redefinir $f$ de modo a torná-la injetora:
+\begin{align*}
+	f(0) &= 5\\
+	f(1) &= 4\\
+	f(2) &= 6\\
+	f(3) &= 7.	
+\end{align*}
 
-Neste caso, $f^{-1}$ {\'e} dado por:\\
-$f^{-1}(5)=0$\\
-$f^{-1}(5)=1$\\
-$f^{-1}(6)=2$\\
-$f^{-1}(7)=3$
+Agora $g$ torna-se:
+\begin{align*}
+	g(5) &= 0\\
+	g(4) &= 1\\
+	g(6) &= 2\\
+	g(7) &= 3.
+\end{align*}
+
+Ainda assim $g$ não é função pois $g$ não associa $8 \in B$ com nenhum elemento em $A$. Isso ocorre pois $f$ não é sobrejetora.
+
+Portanto para que a condição \eqref{condicao_funcao_inversa} defina uma função é necessário que $f$ seja bijetora. Temos então o seguinte teorema:
 
 \begin{teorema}
-Dada $f:A\rightarrow B$ fun{\c c}{\~a}o tome $f^{-1}:B\rightarrow A$. Definida com o $f^{-1}(b)=a$ se $f(a)=b$. Ent{\~a}o $f^{-1}$ {\'e} uma fun{\c c}{\~a}o se, e somente se, $f$ {\'e} bijetora.
+	Seja $f: A \to B$ fun{\c c}{\~a}o. Defina $g : B \to A$ por
+	\begin{align}\label{funcao_inversa}
+		g(y) = x,\ y \in B \mbox{ se, e somente se, } f(x) = y.
+	\end{align}
+	Ent{\~a}o $g$ {\'e} uma fun{\c c}{\~a}o se, e somente se, $f$ {\'e} bijetora.
 \end{teorema}
+\begin{prova}
+	Precisamos mostrar que:
+	\begin{enumerate}
+		\item Se $g$ definida por \eqref{funcao_inversa} é uma função, então $f$ é bijetora.
+		\item Se $f$ é bijetora, então $g$ definida por \eqref{funcao_inversa} é uma função.
+	\end{enumerate}
 
-\textbf{Demonstra{\c c}{\~a}o}: Suponha $f^{-1}$ {\'e} fun{\c c}{\~a}o. Precisamos provar que $f$ {\'e} injetora e sobrejetora.
+	Provemos a primeira afirmação: suponha que $g$ é uma função. Precisamos provar que $f$ {\'e} injetora e sobrejetora.
 
-Dados $a_{1},a_{2}\in A$ tais que $f(a_{1})=b=f(a_{2})$. Como $f(a_{1})=b$ temos $f^{-1}(b)=a_{1}$, al{\'e}m disso, $f^{-1}(b)=a_{2}$. Mas $f^{-1}$ {\'e} fun{\c c}{\~a}o, da{\'\i} $a_{1}=a_{2}$, ou seja, $f$ {\'e} injetora.
+	Sejam $x_1$, $x_2 \in A$ tais que $f(x_1) = y = f(x_2)$. Como $f(x_1) = y$ temos $g(y) = x_1$, al{\'e}m disso, $g(y) = x_2$. Mas $g$ {\'e} uma fun{\c c}{\~a}o, da{\'\i} $x_1 = x_2$, ou seja, $f$ {\'e} injetora.
 
-Dado $b\in B$, como $f^{-1}$ {\'e} uma fun{\c c}{\~a}o, $\forall b\in B, f^{-1}(b)=a\in A$, logo $f(a)=b$ e assim $f$ {\'e} sobrejetora.
+	Dado $y \in B$, como $g$ {\'e} uma fun{\c c}{\~a}o, existe $x \in A$, tal que $g(y) = x$, logo $f(x) = y$ e assim $f$ {\'e} sobrejetora.
 
-Portanto $f$ {\'e} bijetora.
+	Portanto $f$ {\'e} bijetora.
 
-Agora suponha que $f$ {\'e} bijetora.
+	Agora vamos provar a segunda afirmação: suponha que $f$ é bijetora. Precisamos mostrar que $g$ é uma função. Primeiramente, dado $y \in B$, como $f$ {\'e} sobrejetora, existe $x \in A$ tal que $f(x) = y$. Logo por \eqref{funcao_inversa} segue que $g(y) = x \in A$. Logo $g$ associa cada elemento de $B$ com algum elemento em $A$.
 
-Primeiramente, dado $b\in B$, como $f$ {\'e} sobrejetora, existe $a\in A$ tal que $f(a)=b$, ou seja, $f^{-1}(b)=a\in A$.
+	Suponha que $g(y) = x_1$ e que $g(y) = x_2$. Da{\'\i}, de \eqref{funcao_inversa} temos $f(x_1) = y$ e $f(x_2) = y$. Mas $f$ {\'e} injetora, logo $x_1 = x_2$ e ent{\~a}o $g(y) = x_1 = x_2$. Assim $g$ associa cada elemento de $B$ com somente um elemento em $A$.
 
-Suponha que $f^{-1}(b)=a_{1}$ e $f^{-1}(b)=a_{2}$. Da{\'\i}, $f(a_{1})=b\wedge f(a_{2})=b$. Mas $f$ {\'e} injetora, assim $a_{1}=a_{2}$ e ent{\~a}o $f^{-1}(b)=a_{1}=a_{2}$.
+	Portanto $g$ {\'e} fun{\c c}{\~a}o.
+\end{prova}
 
-Portanto $f^{-1}$ {\'e} fun{\c c}{\~a}o. \#
+
+
+
+
 
 
 
