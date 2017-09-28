@@ -6,7 +6,7 @@
 Uma \textbf{fun{\c c}{\~a}o} $f$ de um conjunto $A$ em um conjunto $B$ {\'e} uma rela{\c c}{\~a}o de $A$ em $B$ satisfazendo:
 	\begin{enumerate}
 		\item Para todo $x \in A$, existe $y \in B$ tal que $f(x) = y$.
-		\item  Se $x \in A$ é tal que $f(x) = y_{1}$ e $f(x) = y_{2}$ com $y_1$, $y_2 \in B$, então $y_{1} = y_{2}$.
+		\item  Se $x \in A$ é tal que $f(x) = y_1$ e $f(x) = y_2$ com $y_1$, $y_2 \in B$, então $y_1 = y_2$.
 	\end{enumerate}
 Nesse caso $y$ é chamado de \textbf{imagem} de $x$ segundo $f$.
 \end{definicao}
@@ -21,10 +21,10 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e será denotado po
 	\begin{enumerate}[label={\arabic*})]
 	\item Sejam $A = \{0,1,2,3\}$ e $B = \{4,5,6,7,8\}$. Quais das seguintes rela{\c c}{\~o}es s{\~a}o fun{\c c}{\~o}es?
 	\begin{enumerate}[label={\alph*})]
-		\item $R_{1} = \{(0,5),(1,6),(2,7)\}$
-		\item $R_{2} = \{(0,4),(1,5),(1,6),(2,7),(3,8)\}$
-		\item $R_{3} = \{(0,4),(1,5),(2,7),(3,8)\}$
-		\item $R_{4} = \{(0,5),(1,5),(2,6),(3,7)\}$
+		\item $R_1 = \{(0,5),(1,6),(2,7)\}$
+		\item $R_2 = \{(0,4),(1,5),(1,6),(2,7),(3,8)\}$
+		\item $R_3 = \{(0,4),(1,5),(2,7),(3,8)\}$
+		\item $R_4 = \{(0,5),(1,5),(2,6),(3,7)\}$
 	\end{enumerate}
 	\begin{solucao}
 		\begin{enumerate}[label={\alph*})]
@@ -133,9 +133,9 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e será denotado po
 	Se $f : A \to B$ e $g : B \to C$ s{\~a}o fun{\c c}{\~o}es injetoras, ent{\~a}o $g\circ f : A \to C$ {\'e} injetora.
 \end{proposicao}
 \begin{prova}
-	Dados $x_{1}$, $x_{2} \in A$ tais que $(g\circ f)(x_{1}) = (g\circ f)(x_{2})$ queremos mostrar que $x_1 = x_2$. Temos:
+	Dados $x_1$, $x_2 \in A$ tais que $(g\circ f)(x_1) = (g\circ f)(x_2)$ queremos mostrar que $x_1 = x_2$. Temos:
 	\begin{align*}
-		(g\circ f)(x_{1}) &= (g\circ f)(x_{2})\\
+		(g\circ f)(x_1) &= (g\circ f)(x_2)\\
 		g(f(x_1)) &= g(f(x_2)).
 	\end{align*}
 	Como por hipótese $g$ é injetora, dessa última igualdade segue que $f(x_1) = f(x_2)$. Mas $f$ também é injetora, por hipótese, daí $x_1 = x_2$, como queríamos. Portanto $g\circ f$ é injetora.
@@ -273,7 +273,7 @@ Portanto para que a condição \eqref{condicao_funcao_inversa} defina uma funç�
 \end{teorema}
 \begin{prova}
 	Precisamos mostrar que:
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item Se $g$ definida por \eqref{funcao_inversa} é uma função, então $f$ é bijetora.
 		\item Se $f$ é bijetora, então $g$ definida por \eqref{funcao_inversa} é uma função.
 	\end{enumerate}
@@ -300,31 +300,38 @@ Portanto para que a condição \eqref{condicao_funcao_inversa} defina uma funç�
 
 
 \begin{definicao}
-	Dado um conjunto $A\neq\emptyset$, a fun{\c c}{\~a}o $i_{A}: A \to A$ dada por $i_{A}(x)=(x)$ {\'e} chamada de fun{\c c}{\~a}o identidade.
+	Dado um conjunto $A \ne \emptyset$, a fun{\c c}{\~a}o $i_{A}: A \to A$ dada por $i_{A}(x)=(x)$ {\'e} chamada de \textbf{fun{\c c}{\~a}o identidade}.
 \end{definicao}
 
 \begin{proposicao}
-Se $f:A \to B$ {\'e} bijetora, ent{\~a}o $f\circ f^{-1}=i_{B}\wedge f^{-1}\circ f=i_{A}$.
+	Se $f : A \to B$ {\'e} bijetora, ent{\~a}o $f\circ f^{-1} = i_{B}$ e $f^{-1}\circ f = i_{A}$.
 \end{proposicao}
+\begin{prova}
+	Temos $i_{B} : B \to B$ e $i_{A} : A \to A$. Al{\'e}m disso, $f\circ f^{-1} : B \to B$ e $f^{-1}\circ f : A \to A$, da{\'\i} $\dom(f\circ f^{-1}) = \dom(i_{B})$ e $\dom(f^{-1}\circ f) = \dom(i_{A})$. Agora, $y \in B$, $(f\circ f^{-1})(y) = f(f^{-1}(y)) = x = i_{B}(y)$. E se $x \in A$, $(f^{-1}\circ f)(x) = f^{-1}(f(x)) = x = i_{A}(x)$. Portanto $f\circ f^{-1} = i_{B}$ e $f^{-1}\circ f = i_{A}$ como queríamos.
+\end{prova}
 
-\textbf{Demonstra{\c c}{\~a}o}: Temos $i_{F}:F \to F$ e $i_{E}:E \to E$. Al{\'e}m disso, $f\circ f^{-1}:F \to F$ e $f^{-1}\circ f:E \to E$, da{\'\i} $D(f\circ f^{-1})=D(i_{F})$\footnote{$D(f(x))$ {\'e} o dom{\'\i}nio da fun{\c c}{\~a}o $f$} e $D(f^{-1}\circ f)=D(i_{E})$. Dado $x\in F, (f\circ f^{-1})(x)=f(f^{-1}(x))=x=i_{F}(x)$. Dado $x\in E, (f^{-1}\circ f)(x)=f^{-1}(f(x))=x=i_{E}(x)$.\#
-
-\subsubsection{Propriedades}
-\begin{proposicao} Se $f:A \to B$ e $g:B \to A$ s{\~a}o fun{\c c}{\~o}es, ent{\~a}o:
-\begin{enumerate}
-\item $f\circ i_{A}=f, i_{B}\circ f=f, g\circ i_{B}=g, i_{E}\circ g=g$
-\item Se $g\circ f=i_{A}$, e $f\circ g=i_{B}$, ent{\~a}o $f$ e $g$ s{\~a}o bijetoras e $g=f^{-1}$
-\end{enumerate}
+\begin{proposicao}
+	Se $f : A \to B$ e $g : B \to A$ s{\~a}o fun{\c c}{\~o}es, ent{\~a}o:
+	\begin{enumerate}[label={\roman*})]
+		\item $f\circ i_{A} = f$
+		\item $i_{B}\circ f = f$
+		\item $g\circ i_{B} = g$
+		\item $i_{A}\circ g = g$
+		\item Se $g\circ f = i_{A}$ e $f\circ g = i_{B}$, ent{\~a}o $f$ e $g$ s{\~a}o bijetoras e $g=f^{-1}$
+	\end{enumerate}
 \end{proposicao}
+\begin{prova}
+	\begin{enumerate}[label={\roman*})]
+		\item Primeiro temos $f: A \to B$ e $i_{A} : A \to A$ e $f\circ i_{A} : A \to B$. Assim $\dom(f\circ i_{A}) = \dom(f)$. Agora dado $x \in A$, temos $(f\circ i_{A})(x) = f(i_{A}(x)) = f(x)$. Portanto, $f\circ i_{A} = f$.
+		\item Segue de forma semelhante ao caso anteiror.
+		\item Segue de forma semelhante ao primeiro caso.
+		\item Segue de forma semelhante ao primeiro caso.
+		\item Provemos que $f$ é bijetora: sejam $x_1$, $x_2 \in B$ tais que $f(x_1) = f(x_2)$. Como $f : A \to B$ e $g : B \to A$, ent{\~a}o $g(f(x_1)) = g(f(x_2))$, ou seja, $(g\circ f)(x_1) = (g\circ f)(x_2)$. Da{\'\i}, $i_{A}(x_1) = i_{A}(x_2)$. Logo, $x_1 = x_2$. Logo $f$ {\'e} injetora.
 
-\textbf{Demonstra{\c c}{\~a}o}:
-\begin{enumerate}
-\item Provemos que $f\circ i_{A}=f$.\\
-Primeiro temos $f:A \to B$ e $i_{A}:A \to A$. Da{\'\i}, $f\circ i_{A}:A \to B$, ou seja, $D(f\circ i_{A})=D(f)$. Dado $x\in A$, temos $(f\circ i_{A})(x)=f(i_{A}(x))=f(x)$. Portanto, $f\circ i_{A}=f$.
-\item Provemos que $f$ {\'e} bijetora.\\
-Dados $x_{1}$, $x_{2}\in B$ tais que $f(x_{1})=f(x_{2})$. Como $f:A \to B$ e $g:B \to A$, ent{\~a}o $g(f(x_{1}))=g(f(x_{2}))$, ou seja, $(g\circ f)(x_{1})=(g\circ f)(x_{2})$. Da{\'\i}, $i_{A}(x_{1})=i_{A}(x_{2})$. Logo, $x_{1}=x_{2}$, isto {\'e}, $f$ {\'e} injetora.
+		Agora, dado $y \in B$, segue que $y = i_{B}(y)$. Mas $i_{B} = f\circ g$. Da{\'\i}, $y = i_{B}(y) = (f\circ g)(y) = f(g(y))$. Assim, $x = g(y)\in A$ e $f(x) = y$. Logo $f$ {\'e} sobrejetora.
 
-Agora, dado $y\in B$, segue que $y=i_{B}(y)$. Mas $i_{B}=f\circ g$. Da{\'\i}, $y=i_{B}(y)=(f\circ g)(y)=f(g(y))$. Assim, $x=g(y)\in A$ e $f(x)=y$.
+		Portanto $f$ {\'e} bijetora. Analogamente, prova-se que g {\'e} bijetora. 
 
-Logo $f$ {\'e} sobrejetora. Portanto $f$ {\'e} bijetora. Analogamente, prova-se que g {\'e} bijetora. Provemos que $g=f^{-1}$. Temos  $f^{-1}:B \to A$, da{\'\i}, $D(g) = B = D(f^{-1})$. Agora, $f\circ g = i_{B} = f\circ f^{-1}$. Assim, para todo $x\in F$, $(f\circ g)(x)=(f\circ f^{-1})(x)$. Isto {\'e}, $f(g(x))=f(f^{-1}(x))$. Portanto, $g(x)=f^{-1}(x)\forall x\in B$. Logo, $g=f^{-1}$. \#
-\end{enumerate}
+		Provemos agora que $g = f^{-1}$. Para isso, primeiro temos  $f^{-1} : B \to A$ e então $\dom(g) = B = \dom(f^{-1})$. Agora, $f\circ g = i_{B} = f\circ f^{-1}$. Assim, para todo $x \in B$, $(f\circ g)(x) = (f\circ f^{-1})(x)$. Isto {\'e}, $f(g(x)) = f(f^{-1}(x))$. Portanto como $f$ é injetora, $g(x) = f^{-1}(x)$ para todo $x\in B$. Logo $g = f^{-1}$ como queríamos.
+	\end{enumerate}
+\end{prova}
