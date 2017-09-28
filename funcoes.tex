@@ -17,7 +17,6 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e será denotado po
 \]
 é chamado \textbf{imagem} de $f$.
 
-
 \begin{exemplos}
 	\begin{enumerate}[label={\arabic*})]
 	\item Sejam $A = \{0,1,2,3\}$ e $B = \{4,5,6,7,8\}$. Quais das seguintes rela{\c c}{\~o}es s{\~a}o fun{\c c}{\~o}es?
@@ -131,10 +130,15 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e será denotado po
 \end{exemplos}
 
 \begin{proposicao}
-	Se $f : A \to B$ e $g:B \to C$ s{\~a}o fun{\c c}{\~o}es injetoras, ent{\~a}o $g\circ f$ {\'e} injetora.
+	Se $f : A \to B$ e $g : B \to C$ s{\~a}o fun{\c c}{\~o}es injetoras, ent{\~a}o $g\circ f$ {\'e} injetora.
 \end{proposicao}
 \begin{prova}
-	Dados $x_{1},x_{2}\in A$ tais que $(g\circ f)(x_{1})=(g\circ f)(x_{2})$ temos que $g(f(x_{1}))=g(f(x_{2}))$. Como $g$ {\'e} injetora, $f(x_{1})=f(x_{2})$. Mas $f$ {\'e} injetora, da{\'\i} $x_{1}=x_{2}$. Logo $g\circ f$ {\'e} injetora.	
+	Dados $x_{1}$, $x_{2} \in A$ tais que $(g\circ f)(x_{1}) = (g\circ f)(x_{2})$ queremos mostrar que $x_1 = x_2$. Temos:
+	\begin{align*}
+		(g\circ f)(x_{1}) &= (g\circ f)(x_{2})\\
+		g(f(x_1)) &= g(f(x_2)).
+	\end{align*}
+	Como por hipótese $g$ é injetora, dessa última igualdade segue que $f(x_1) = f(x_2)$. Mas $f$ também é injetora, por hipótese, daí $x_1 = x_2$, como queríamos. Portanto $g\circ f$ é injetora.
 \end{prova}
 
 \begin{proposicao} Se $f:A \to B$ e $g:B \to C$ s{\~a}o sobrejetoras, ent{\~a}o $g\circ f$ {\'e} sobrejetora.\end{proposicao}
