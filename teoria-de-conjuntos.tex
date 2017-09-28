@@ -15,7 +15,7 @@
 
 \begin{exemplos}
 	Julgue se as seguintes sentenças são ou não proposições:
-	\begin{enumerate}
+	\begin{enumerate}[label={\arabic*})]
 		\item Todo número primo é ímpar.
 		Essa setença é uma proposição de valor lógico "Falsidade."
 		\item $x^2 + y^2 \ge 0$ para todos $x$, $y \in \real$.
@@ -28,7 +28,7 @@
 
 \section{Princ{\'\i}pio da n\~ao contradi\c{c}\~ao e do terceiro exclu{\'\i}do} % (fold)
 \label{sec:principio_da_nao_contradicao_e_do_3}
-\begin{enumerate}
+\begin{enumerate}[label={\roman*})]
 	\item Uma proposi\c{c}\~ao n\~ao pode ser verdadeira e falsa ao mesmo tempo.
 	\item Toda proposi\c{c}\~ao ou \'e verdadeira ou \'e falsa, isto \'e, verifica-se sempre um destes casos e nunca um terceiro.
 \end{enumerate}
@@ -39,7 +39,7 @@ Assim esses princ{\'\i}pios afirmam que:
 \end{center}
 
 De modo geral vamos trabalhar com proposi\c{c}\~oes da forma:
-\begin{enumerate}
+\begin{enumerate}[label={\roman*})]
 	\item Se $\mathcal{H}$, ent\~ao $\mathcal{T}$.
 
 	Aqui $\mathcal{H}$ \'e chamado de hip\'otese e $\mathcal{T}$ de tese. Neste tipo de proposi\c{c}\~ao iremos admitir que $\mathcal{H}$ \'e uma verdade e precisaremos provar que $\mathcal{T}$ \'e verdade. Ou seja precisamos construir um argumento que justifique $\mathcal{T}$ ser verdadeira \`a partir do fato de $\mathcal{H}$ ser verdadeira.
@@ -47,7 +47,7 @@ De modo geral vamos trabalhar com proposi\c{c}\~oes da forma:
 	\item $\mathcal{H}$ se, e somente se, $\mathcal{T}$ ou $\mathcal{H}$ se, e s\'o se, $\mathcal{T}$.
 
 	Esse tipo de proposi\c{c}\~ao ser\'a decomposta em duas proposi\c{c}\~oes no formato anterior. Isto \'e:
-	\begin{enumerate}
+	\begin{enumerate}[label={\alph*})]
 		\item Se $\mathcal{H}$, ent\~ao $\mathcal{T}$.
 		\item Se $\mathcal{T}$, ent\~ao $\mathcal{H}$.
 	\end{enumerate}
@@ -101,13 +101,13 @@ A = \{n \mid n \mbox{ \'e m{\'u}ltiplo de } 2\} = \{2,4,6,...\}.
 \]
 
 \section{Alguns conjuntos importantes}
-\begin{enumerate}
-\item $\n = \{0,1,2,3,...\}$ o conjunto do n{\'u}meros naturais.
-\item $\z = \{...,-2,-1,0,1,2,...\}$ o conjunto dos n{\'u}meros inteiros.
-\item $\n_0 = \{0,1,2,3,...\}$ o conjunto dos n{\'u}meros inteiros n{\~a}o negativos.
-\item $\real $ o conjunto dos n{\'u}meros reais.
-\item $\real^*$ o conjunto dos n{\'u}meros reais n{\~a}o nulos.
-\item $\rac = \left\{\dfrac{p}{q} \mid p,q \in \z, q \neq 0 \right\}$ o conjunto dos n{\'u}meros racionais.
+\begin{enumerate}[label={\arabic*})]
+	\item $\n = \{0,1,2,3,...\}$ o conjunto do n{\'u}meros naturais.
+	\item $\z = \{...,-2,-1,0,1,2,...\}$ o conjunto dos n{\'u}meros inteiros.
+	\item $\n_0 = \{0,1,2,3,...\}$ o conjunto dos n{\'u}meros inteiros n{\~a}o negativos.
+	\item $\real $ o conjunto dos n{\'u}meros reais.
+	\item $\real^*$ o conjunto dos n{\'u}meros reais n{\~a}o nulos.
+	\item $\rac = \left\{\dfrac{p}{q} \mid p,q \in \z, q \neq 0 \right\}$ o conjunto dos n{\'u}meros racionais.
 \end{enumerate}
 
 \section{Propriedades dos conjuntos}
@@ -117,9 +117,11 @@ A = \{n \mid n \mbox{ \'e m{\'u}ltiplo de } 2\} = \{2,4,6,...\}.
 \end{definicao}
 
 Se $A$ e $B$ s{\~a}o iguais, escrevemos $A = B$
-\[ \{1,2,3,4\} = \{3,2,1,4\} \]
-\[ \{1,2,3\} \neq \{2,3\} \]
-
+\begin{align*}
+	\{1,2,3,4\} &= \{3,2,1,4\}\\
+	\{1,2,3\} &\ne \{2,3\} 
+\end{align*}
+	
 \begin{definicao}
 	Se $A$ e $B$ s{\~a}o dois conjuntos, dizemos que $A$ {\'e} um \textbf{subconjunto} de $B$ ou que $A$ \textbf{est\'a contido} em $B$ ou que $B$ \textbf{cont\'em} $A$ se todo elemento de $A$ for elemento de $B$. Ou seja, se para todo elemento $x \in A$, temos $x \in B$. Nesse caso, escrevemos $A \subseteq B$ ou $B \supseteq A$.
 \end{definicao}
@@ -313,7 +315,7 @@ C = A \sqcup B.
 	Segue da defini\c{c}\~ao de diferen\c{c}a de conjuntos.
 \end{prova}
 
-\begin{definicao}[Complementar]
+\begin{definicao}
 Dados dois conjuntos $A$ e $E$ tais que $A\subseteq E$, definimos o \textbf{complementar} de $A$ em $E$, denotado $A^C$ ou $C_E(A)$, como
 \[
 	C_E(A) = \{ x \in E \mid x \notin A \}.
@@ -321,7 +323,7 @@ Dados dois conjuntos $A$ e $E$ tais que $A\subseteq E$, definimos o \textbf{comp
 \end{definicao}
 
 \begin{observacoes}
-	\begin{enumerate}
+	\begin{enumerate}[label={\arabic*})]
 		\item Se $A = E$, ent{\~a}o $C_A(A) = \{ x \in A \mid x \notin A \} = \emptyset$.
 		\item $(A^C)^C = \{x \in E \mid x \notin A^C\} = \{ x \in E \mid x \in A \} = A$
 	\end{enumerate}
@@ -343,13 +345,13 @@ Dados dois conjuntos $A$ e $E$ tais que $A\subseteq E$, definimos o \textbf{comp
 \end{prova}
 
 \begin{proposicao} Sejam $A$, $B$ e $E$ tr{\^e}s conjunto tais que $A\subseteq E$ e $B\subseteq E$. Ent{\~a}o:
-\begin{enumerate}
+\begin{enumerate}[label={\roman*})]
 	\item $(A\cup B)^C = A^C\cap B^C$
 	\item $(A\cap B)^C = A^C\cup B^C$
 \end{enumerate}
 \end{proposicao}
 \begin{prova}
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item Seja $x \in (A\cup B)^C$. Logo $x\notin A\cup B$, assim $x\notin A$ e $x\notin B$. Da{\'\i}, $x\in A^C$ e $x\in B^C$, isto {\'e}, $x\in A^C\cap B^C$. Desse modo,
 		\begin{equation}\label{complementar_uniao-1}
 			(A\cup B)^C \subseteq A^C\cap B^C.
@@ -382,7 +384,7 @@ Dados dois conjuntos $A$ e $E$ tais que $A\subseteq E$, definimos o \textbf{comp
 	\end{enumerate}
 \end{prova}
 
-\begin{definicao}[Produto Cartesiano]
+\begin{definicao}
 	Dados dois conjuntos $A$ e $B$, definimos o \textbf{produto cartesiano} de $A$ por $B$ como sendo o conjunto
 	\[
 		A \times B = \{(x,y) \mid x\in A, y\in B\}.
@@ -406,7 +408,7 @@ Dados $(x,y)$, $(z,t) \in A\times B$, temos
 	Do Exemplo \eqref{exemplo_produto_cartesiano} vemos que em geral $A \times B \neq B\times A$.
 \end{observacao}
 
-\begin{definicao}[Conjunto Partes]
+\begin{definicao}
 	Para qualquer conjunto $A$, indicamos por $\mathcal{P}(A)$ o conjunto
 	\[
 		\mathcal{P}(A) = \{ X \mid X\subseteq A\}
@@ -417,7 +419,7 @@ Dados $(x,y)$, $(z,t) \in A\times B$, temos
 Os elementos desse conjunto s{\~a}o todos os subconjuntos de $A$. Dizer que $Y\in \mathcal{P}(A)$ significa que $Y \subseteq A$. Particularmente, temos $\emptyset\in \mathcal{P}(A)$ e $A\in \mathcal{P}(A)$.
 
 \begin{exemplos}
-	\begin{enumerate}
+	\begin{enumerate}[label={\arabic*})]
 		\item $A = \emptyset$, $\mathcal{P}(A) = \{\emptyset\}$;
 		\item $B = \{x\}$, $\mathcal{P}(B) = \{\emptyset, \{x\}\}$;
 		\item $C = \{a,b,c\}$, $\mathcal{P}(C)=\{\emptyset, \{a\}, \{b\},\{c\},\{a,b\},\{a,c\},\{b,c\},C\}$;
