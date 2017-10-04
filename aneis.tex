@@ -2,35 +2,32 @@
 %!TEX root = Algebra_1.tex
 \chapter{An{\'e}is}
 
-% \section{Conjunto munido de uma opera{\c c}{\~a}o bin{\'a}ria}
-% \subsection{Defini{\c c}{\~a}o}
+\begin{definicao}
+	Seja $A$ um conjunto n{\~a}o vazio. Dizemos que $A$ est{\'a} munido (ou equipado) de uma \textbf{opera{\c c}{\~a}o bin{\'a}ria} quando existe uma fun{\c c}{\~a}o
+	\begin{align*}
+		\Delta &: A \times A \to A\\
+		(a,b) &\longmapsto a\Delta b		
+	\end{align*}
+	Uma opera{\c c}{\~a}o bin{\'a}ria tamb{\'e}m {\'e} chamada de uma \textbf{opera{\c c}{\~a}o interna} em $A$.
+\end{definicao}
 
-% \begin{definicao}[Conjunto munido de uma opera{\c c}{\~a}o bin{\'a}ria] Seja C um conjunto n{\~a}o vazio. Dizemos que C est{\'a} munido (ou equipado) de uma opera{\c c}{\~a}o bin{\'a}ria quando existe uma fun{\c c}{\~a}o
-% \begin{center}
-% $\Delta:C \times C\rightarrow C$\\
-% $(a,b)\longmapsto a\Delta b$
-% \end{center}
-% \end{definicao}
+Exemplos:
+\begin{enumerate}
+\item A soma dos n{\'u}meros dos conjuntos $\mathbb{Z}$ e $\mathbb{Q}$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria
+\item O produto dos $\mathbb{Z}$ e $\mathbb{Q}$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria
+\item $\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}=\{\bar{0},\bar{1},...,\overline{m-1}\}$\\
+$\bar{a},\bar{b}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$\\
+$\bar{a}\oplus\bar{b}=\overline{a+b}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$\\
+$\bar{a}\odot\bar{b}=\overline{ab}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$
+\item $U(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}})=\{\bar{a}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}/\exists\bar{b}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}/\bar{a}\odot\bar{b}=1\}$\\
+"$\odot$" em $U(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}})$ {\'e}  uma opera{\c c}{\~a}o bin{\'a}ria\\
+$U(\displaystyle\frac{\mathbb{Z}}{4\mathbb{Z}})=\{\bar{1},\bar{3}\}$\\
+$\bar{1}\oplus\bar{3}=\bar{0}\notin U(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}})$\\
+"$\oplus$" em $U(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}})$ n{\~a}o {\'e} opera{\c c}{\~a}o bin{\'a}ria.
+\item ``$\div$" em $\mathbb{Q}^{*}$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria
+\item ``$\div$" em $\mathbb{N}, \mathbb{Z}, \mathbb{Z}^{*}, \mathbb{Q}$ n{\~a}o {\'e} opera{\c c}{\~a}o bin{\'a}ria
 
-% A opera{\c c}{\~a}o bin{\'a}ria tamb{\'e}m {\'e} chamada de opera{\c c}{\~a}o interna.
-
-% Exemplos:
-% \begin{enumerate}
-% \item A soma dos n{\'u}meros dos conjuntos $\mathbb{Z}$ e $\mathbb{Q}$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria
-% \item O produto dos $\mathbb{Z}$ e $\mathbb{Q}$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria
-% \item $\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}=\{\bar{0},\bar{1},...,\overline{m-1}\}$\\
-% $\bar{a},\bar{b}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$\\
-% $\bar{a}\oplus\bar{b}=\overline{a+b}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$\\
-% $\bar{a}\odot\bar{b}=\overline{ab}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$
-% \item $U(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}})=\{\bar{a}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}/\exists\bar{b}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}/\bar{a}\odot\bar{b}=1\}$\\
-% "$\odot$" em $U(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}})$ {\'e}  uma opera{\c c}{\~a}o bin{\'a}ria\\
-% $U(\displaystyle\frac{\mathbb{Z}}{4\mathbb{Z}})=\{\bar{1},\bar{3}\}$\\
-% $\bar{1}\oplus\bar{3}=\bar{0}\notin U(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}})$\\
-% "$\oplus$" em $U(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}})$ n{\~a}o {\'e} opera{\c c}{\~a}o bin{\'a}ria.
-% \item ``$\div$" em $\mathbb{Q}^{*}$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria
-% \item ``$\div$" em $\mathbb{N}, \mathbb{Z}, \mathbb{Z}^{*}, \mathbb{Q}$ n{\~a}o {\'e} opera{\c c}{\~a}o bin{\'a}ria
-
-% \end{enumerate}
+\end{enumerate}
 
 \section{Defini{\c c}{\~o}es}
 
