@@ -24,64 +24,62 @@
 \end{enumerate}	
 \end{exemplos}
 
+\begin{definicao}
+	Seja $A$ um conjunto n{\~a}o vazio $A$ no qual estão definidas duas opera{\c c}{\~o}es binárias $\oplus$ e $\otimes$, chamadas \textit{soma} e \textit{produto}.  Dizemos que $(A, \oplus, \otimes)$ {\'e} um \textbf{anel} quando as seguintes condi{\c c}{\~o}es s{\~a}o verdadeiras:
+	\begin{enumerate}
+		\item \textbf{Associatividade}: para todos $x$, $y$, $x\in A$ vale que
+		\[
+			(x \oplus y) \oplus z = x \oplus (y \oplus z)
+		\]
+		Essa propriedade {\'e} chamada \textbf{propriedade associativa} da soma.
 
-\section{Defini{\c c}{\~o}es}
+		\item \textbf{Comutatividade}: Para todos $x$, $y \in A$ vale
+		\[
+			x \oplus y = y \oplus x
+		\]
 
-\begin{definicao} Um conjunto n{\~a}o vazio $A$ munido de duas opera{\c c}{\~o}es ``+" e ``$\cdot$", chamados soma e produto, {\'e} chamado de \textbf{anel} quando as seguintes condi{\c c}{\~o}es s{\~a}o verdadeiras:
-\begin{enumerate}
-\item \textbf{Elemento Neutro}: Existe em $A$ um elemento denotado por 0 (zero) ou $0_{A}$ tal que para todo elemento $a\in A$ vale
-\[
-	a + 0 = 0 + a = a.
-\]
+		\item \textbf{Elemento Neutro}: Existe em $A$ um elemento denotado por $0$ (zero) ou $0_{A}$ tal que para todo elemento $x \in A$ vale
+		\[
+			x \oplus 0_A = x = 0_A \oplus x
+		\]
+		Tal elemento $0_A$ é chamado de \textbf{elemento neutro da soma} ou simplesmente \textbf{elemento neutro}.
 
-\item \textbf{Elemento Oposto}: Para cada elemento $a\in A$, existe $b\in A$ tal que
-\[
-	a + b = b + a = 0_A.
-\]
+		\item \textbf{Elemento Oposto}: Para cada elemento $x \in A$, existe $y \in A$ tal que
+		\[
+			x \oplus y = 0_A = y \oplus x
+		\]
+		Tal elemento $y$ é chamado de \textbf{oposto aditivo} de $x$ ou simplesmente \textbf{oposto} de $x$.
 
-\item \textbf{Associatividade}: para todos $a$, $b$, $c\in A$ vale que
-\[
-	(a + b) + c = a + (b + c).
-\]
-Essa propriedade {\'e} chamada \textbf{propriedade associativa} da soma.
+		\item \textbf{Associatividade}: Para todos $x$, $y$, $z \in A$, vale que
+		\[
+			x\otimes (y\otimes z) = x\otimes (y\otimes z)
+		\]
 
-\item \textbf{Comutatividade}: Para todos $a$, $b \in A$ vale
-\[
-	a + b = b + a.
-\]
-
-\item \textbf{Distributividade}: Para todos $a$, $b$, $c \in A$ vale
-\[
-	(a + b)\cdot c = a\cdot c + b\cdot c.
-\]
-Essa propriedade {\'e} chamada \textbf{distributiva em rela{\c c}{\~a}o ao produto}.
-
-\item \textbf{Distributividade}: Para todos $a$, $b$, $c\in A$ vale
-\[
-	a\cdot(b + c) = a\cdot b + a\cdot c.
-\]
-Essa {\'e} a propriedade \textbf{distributiva do produto em rela{\c c}{\~a}o {\`a} soma}.
-
-Al{\'e}m disso, se $A$ satisfizer
-\item \textbf{Comutatividade}: Para todos $a$, $b\in A$ vale
-\[
-	a\cdot b = b\cdot a.
-\]
-Dizemos que $A$ {\'e} um \textbf{anel comutativo}.
-
-\item \textbf{Elemento um}: Se existe em $A$ um elemento denotado por $1$ ou $1_{A}$ tal que
-\[
-	a\cdot 1 = 1\cdot a = a.
-\]
-Para todo $a\in A$, ent{\~a}o chamamos de anel com unidade ou anel unit{\'a}rio. O elemento 1 {\'e} chamado de \textbf{unidade} de $A$ e $A$ \'e chamado de \textbf{anel com unidade} ou \textbf{anel unit\'ario}.
-
-\item \textbf{Associatividade}: Se para todos $a$, $b$, $c\in A$, vale que
-\[
-	a\cdot (b\cdot c) = (a\cdot b)\cdot c.
-\]
-Dizemos que $A$ {\'e} um \textbf{anel associativo}.
-\end{enumerate}
+		\item \textbf{Distributividade}: Para todos $x$, $y$, $x \in A$ vale
+		\[
+			(x \oplus y)\otimes z = x\otimes z \oplus y\otimes z
+		\]
+		Essa propriedade {\'e} chamada \textbf{distributiva da soma em rela{\c c}{\~a}o ao produto}.
+		
+		\item \textbf{Distributividade}: Para todos $x$, $y$, $z \in A$ vale
+		\[
+			x\otimes(y \oplus z) = x\otimes y \oplus x\otimes z.
+		\]
+		Essa {\'e} a propriedade \textbf{distributiva do produto em rela{\c c}{\~a}o {\`a} soma}.
+	\end{enumerate}
 \end{definicao}
+
+% \item \textbf{Comutatividade}: Para todos $a$, $b\in A$ vale
+% 		\[
+% 			a\cdot b = b\cdot a.
+% 		\]
+% 		Dizemos que $A$ {\'e} um \textbf{anel comutativo}.
+
+% 		\item \textbf{Elemento um}: Se existe em $A$ um elemento denotado por $1$ ou $1_{A}$ tal que
+% 		\[
+% 			a\cdot 1 = 1\cdot a = a.
+% 		\]
+% 		Para todo $a\in A$, ent{\~a}o chamamos de anel com unidade ou anel unit{\'a}rio. O elemento 1 {\'e} chamado de \textbf{unidade} de $A$ e $A$ \'e chamado de \textbf{anel com unidade} ou \textbf{anel unit\'ario}.
 
 Quando A, munido de duas opera{\c c}{\~o}es ``+'' e ``$\cdot$'' {\'e} um anel, ele ser{\'a} denotado $(A,+,\cdot)$, para indicar claramente as opera{\c c}{\~o}es bin{\'a}rias em $A$.
 
