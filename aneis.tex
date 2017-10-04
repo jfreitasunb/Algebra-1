@@ -5,22 +5,22 @@
 \begin{definicao}
 	Seja $A$ um conjunto n{\~a}o vazio. Dizemos que $A$ est{\'a} munido (ou equipado) de uma \textbf{opera{\c c}{\~a}o bin{\'a}ria} quando existe uma fun{\c c}{\~a}o
 	\begin{align*}
-		\Delta &: A \times A \to A\\
-		(a,b) &\longmapsto a\Delta b		
+		&\Delta : A \times A \to A\\
+		&(a,b) \longmapsto a\Delta b		
 	\end{align*}
 	Uma opera{\c c}{\~a}o bin{\'a}ria tamb{\'e}m {\'e} chamada de uma \textbf{opera{\c c}{\~a}o interna} em $A$.
 \end{definicao}
 
 \begin{exemplos}
-	\begin{enumerate}
-		\item A soma usual nos conjuntos $\mathbb{Z}$, $\mathbb{Q}$, $\real$ e $\complex$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
+	\begin{enumerate}[label={\arabic*})]
+		\item A soma usual nos conjuntos $\z$, $\rac$, $\real$ e $\complex$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
 
-		\item A multiplicação usual nos conjuntos dos $\mathbb{Z}$, $\mathbb{Q}$, $\real$ e $\complex$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
+		\item A multiplicação usual nos conjuntos dos $\z$, $\rac$, $\real$ e $\complex$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
 
 		\item Seja $m > 1$, $m \in \z$ fixo. A soma \eqref{soma_modulo_m} e a multiplicação \eqref{multiplicacao_modulo_m} definidos em $\z_m = \{\overline{0},\overline{1},...,\overline{m-1}\}$ é uma operação binária.
 
-		\item A operação $\div$ em $\mathbb{Q}^{*}$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
-		\item Já em $\mathbb{N}$, $\mathbb{Z}$, $\mathbb{Z}^{*}$ e em $\mathbb{Q}$ a operação $\div$ n{\~a}o {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
+		\item A operação $\div$ em $\rac^{*}$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
+		\item Já em $\n$, $\z$, $\z^{*}$ e em $\rac$ a operação $\div$ n{\~a}o {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
 \end{enumerate}	
 \end{exemplos}
 
@@ -101,21 +101,21 @@ Quando A, munido de duas opera{\c c}{\~o}es ``+'' e ``$\cdot$'' {\'e} um anel, e
 	\begin{solucao}
 		De fato,
 		\begin{enumerate}
-		\item $A\in M_{2}(\mathbb{R})$, existe $0_{2}\in M_{2}(\mathbb{R})$ tal que $A+0_{2}=0_{2}+A$. A saber:\\
+		\item $A\in M_{2}(\real)$, existe $0_{2}\in M_{2}(\real)$ tal que $A+0_{2}=0_{2}+A$. A saber:\\
 		\[0_{2}=\left[\begin{array}{cc}
 		0 & 0\\
 		0 & 0
 		\end{array}\right]\]
 		
-		\item Para todo $A\in M_{2}(\mathbb{R})$ existe $B\in M_{2}(\mathbb{R})$ tal que $A+B=B+A=0_{2}$. A saber:\\
+		\item Para todo $A\in M_{2}(\real)$ existe $B\in M_{2}(\real)$ tal que $A+B=B+A=0_{2}$. A saber:\\
 		\[B=\left[\begin{array}{cc}
 	     -a & -b\\
 	    -c & -d
 		\end{array}\right]\]
 		
-		\item $(A+B)+C=A+(B+C)$ pois em $\mathbb{R}$ vale a associatividade
+		\item $(A+B)+C=A+(B+C)$ pois em $\real$ vale a associatividade
 		
-		\item $A+B=B+A$, pois em $\mathbb{R}$ a soma {\'e} comutativa
+		\item $A+B=B+A$, pois em $\real$ a soma {\'e} comutativa
 		
 		\item $[(A+B),C]=(A+B)C-C(A+B)$\\
 		$=AC+BC-CA-CB=AC-CA+BC-CB=[A,C]+[B,C]$
@@ -134,19 +134,19 @@ Quando A, munido de duas opera{\c c}{\~o}es ``+'' e ``$\cdot$'' {\'e} um anel, e
 
 Exemplos:
 \begin{enumerate}
-\item $(\mathbb{Z},+,.),(\mathbb{Q},+,.),(\mathbb{R},+,.),(\mathbb{C},+,.),\left(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}\right)$\\
-S{\~a}o an{\'e}is associativos, comutativos e com unidade em $\left(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}\right)$, o elemento neutro {\'e} a classe $\bar{0}$ e a unidade {\'e} a classe $\bar{1}$.
-\item  Seja $A=\mathbb{Z}=\{f:\mathbb{Z}\rightarrow\mathbb{Z}/f$ {\'e} fun{\c c}{\~a}o$\}$. Dadas duas fun{\c c}{\~o}es quaisquer $f,g\in\mathbb{Z}$x$\mathbb{Z}$, definimos $f\oplus g:\mathbb{Z}\rightarrow\mathbb{Z}$ e $f\odot g:\mathbb{Z}\rightarrow\mathbb{Z}$ como:
+\item $(\z,+,.),(\rac,+,.),(\real,+,.),(\mathbb{C},+,.),\left(\displaystyle\frac{\z}{m\z}\right)$\\
+S{\~a}o an{\'e}is associativos, comutativos e com unidade em $\left(\displaystyle\frac{\z}{m\z}\right)$, o elemento neutro {\'e} a classe $\bar{0}$ e a unidade {\'e} a classe $\bar{1}$.
+\item  Seja $A=\z=\{f:\z\rightarrow\z/f$ {\'e} fun{\c c}{\~a}o$\}$. Dadas duas fun{\c c}{\~o}es quaisquer $f,g\in\z$x$\z$, definimos $f\oplus g:\z\rightarrow\z$ e $f\odot g:\z\rightarrow\z$ como:
 
 
 $(f\oplus g)=f(x)+g(x)$\\
 $(f\odot g)=f(x)g(x)$
 \begin{enumerate}
-\item Dado $x\in\mathbb{Z}$\\
+\item Dado $x\in\z$\\
 $(f\oplus g)(x)=f(x)+g(x)=g(x)+f(x)=(g\oplus f)(x)$, portanto $f\oplus g=g\oplus f$
-\item Dado $x\in\mathbb{Z}$\\
+\item Dado $x\in\z$\\
 $(f\odot g)(x)=f(x)g(x)=g(x)f(x)=(g\odot f)(x)$, portanto $f\odot g=g\odot f$
-\item Definida $0\mathbb{Z}\rightarrow\mathbb{Z}$ como $0(x)=0,\forall x\in\mathbb{Z}$, temos\\
+\item Definida $0\z\rightarrow\z$ como $0(x)=0,\forall x\in\z$, temos\\
 $(f(x)\oplus 0)(x)=f(x)\oplus 0(x)=0(x)\oplus f(x)=f(x)$
 
 \end{enumerate}
@@ -183,9 +183,9 @@ Se $a$ e $b$ s{\~a}o elementos n{\~a}o nulos de um anel $A$ tais que $ab=0$, ent
 
 Exemplos:
 \begin{enumerate}
-\item Os an{\'e}is $\mathbb{Z},\mathbb{Q},\mathbb{R},\mathbb{C}$ s{\~a}o an{\'e}is de integridade.
-\item Em geral, $\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$ n{\~a}o {\'e} anel de integridade, por exemplo, em $\displaystyle\frac{\mathbb{Z}}{4\mathbb{Z}},\ \bar{2}\neq\bar{0}$, no entanto $\bar{2}\odot\bar{2}=\bar{4}=\bar{0}$
-\item $M_{n}(\mathbb{R})$ n{\~a}o {\'e} um anel de integridade, por exemplo, em $M_{2}(\mathbb{R})$\\
+\item Os an{\'e}is $\z,\rac,\real,\mathbb{C}$ s{\~a}o an{\'e}is de integridade.
+\item Em geral, $\displaystyle\frac{\z}{m\z}$ n{\~a}o {\'e} anel de integridade, por exemplo, em $\displaystyle\frac{\z}{4\z},\ \bar{2}\neq\bar{0}$, no entanto $\bar{2}\odot\bar{2}=\bar{4}=\bar{0}$
+\item $M_{n}(\real)$ n{\~a}o {\'e} um anel de integridade, por exemplo, em $M_{2}(\real)$\\
 \[A=\left[\begin{array}{cc}
 1 & 0\\
 0 & 0
@@ -206,9 +206,9 @@ Exemplos:
 
 \end{enumerate}
 
-Suponha que $m=nk,\ m>n>1$ e $m>k>$. Logo, em $\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}, \bar{n}\neq\bar{0}$ e $\bar{k}\neq\bar{0}$. Logo, se $m$ n{\~a}o {\'e} primo, ent{\~a}o $\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$ n{\~a}o {\'e} um anel de integridade.
+Suponha que $m=nk,\ m>n>1$ e $m>k>$. Logo, em $\displaystyle\frac{\z}{m\z}, \bar{n}\neq\bar{0}$ e $\bar{k}\neq\bar{0}$. Logo, se $m$ n{\~a}o {\'e} primo, ent{\~a}o $\displaystyle\frac{\z}{m\z}$ n{\~a}o {\'e} um anel de integridade.
 
-Agora, suponha que $m=p$ primo. Sejam $\bar{a},\bar{b}\in\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$ tais que $\bar{a}\odot\bar{b}=\bar{0}$, ou seja, $ab\equiv 0(mod\ p)$. Da{\'\i} $p|ab$. Logo $p|a\vee p|b$. Portanto, $\bar{a}=\bar{0}\vee \bar{b}=\bar{0}$. Assim, $\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$ {\'e} anel de integridade se, e somente se, m {\'e} primo.
+Agora, suponha que $m=p$ primo. Sejam $\bar{a},\bar{b}\in\displaystyle\frac{\z}{m\z}$ tais que $\bar{a}\odot\bar{b}=\bar{0}$, ou seja, $ab\equiv 0(mod\ p)$. Da{\'\i} $p|ab$. Logo $p|a\vee p|b$. Portanto, $\bar{a}=\bar{0}\vee \bar{b}=\bar{0}$. Assim, $\displaystyle\frac{\z}{m\z}$ {\'e} anel de integridade se, e somente se, m {\'e} primo.
 
 
 \begin{definicao}
@@ -219,7 +219,7 @@ Exemplos:
 \begin{enumerate}
 \item Todo anel $A$ sempre tem dois suban{\'e}is: $\{0_{A}\}$ e $A$, que s{\~a}o chamados de \textbf{suban{\'e}is triviais}.
 \item Em $(\z_4,\oplus,\odot)$ o conjunto $B = \{\overline{0}, \overline{2}\}$ \'e um subanel.
-\item No anel $\mathbb{Z}$, o conjunto $m\mathbb{Z}$, $m > 1$ {\'e} um subanel de $\mathbb{Z}$.
+\item No anel $\z$, o conjunto $m\z$, $m > 1$ {\'e} um subanel de $\z$.
 \end{enumerate}
 
 \begin{proposicao}
@@ -229,7 +229,7 @@ Exemplos:
 $(A,+,.),(B,\oplus,\odot)$ An{\'e}is\\
 $f:A\rightarrow B$\\
 $a\rightarrow f(a)$\\
-$g:\mathbb{Z}\rightarrow \displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$\\
+$g:\z\rightarrow \displaystyle\frac{\z}{m\z}$\\
 $x\rightarrow\bar{x}$
 
 $g(x+y)=\overline{x+y}=\bar{x}\oplus\bar{y}=g(x)\oplus g(y)$\\
@@ -282,8 +282,8 @@ $-f(a)=f(-a)\oplus(f(a)\oplus(-f(a)))$\\
 $f(-a)=-f(a)$.\#
 \end{enumerate}
 
-Seja $f:\mathbb{Z}\rightarrow\mathbb{Z}$ um homomorfismo. Dado $n\in\mathbb{Z},n\geq 0$. Temos da{\'\i}, \[f(n)=f(\underbrace{1+...+1}_{n\ vezes})=\underbrace{f(1)+...+f(1)}_{n\ vezes}=nf(1)=n1\]
-$f(n)=n$, para todo $n \in \mathbb{Z}$.
+Seja $f:\z\rightarrow\z$ um homomorfismo. Dado $n\in\z,n\geq 0$. Temos da{\'\i}, \[f(n)=f(\underbrace{1+...+1}_{n\ vezes})=\underbrace{f(1)+...+f(1)}_{n\ vezes}=nf(1)=n1\]
+$f(n)=n$, para todo $n \in \z$.
 
 \begin{proposicao}
 	Seja $f : A \to B$ um homomorfismo sobrejetor de an\'eis.
@@ -332,14 +332,14 @@ Assim, dado $a\in I,\ a0_{A}=0_{A}\in I$.\#
 
 Exemplos:
 \begin{enumerate}
-\item Em $\mathbb{Z}$ todos os ideais n{\~a}o triviais s{\~a}o da forma $m\mathbb{Z},m>1$
-\item No anel $\displaystyle\frac{\mathbb{Z}}{p\mathbb{Z}}$, onde $p$ {\'e} um n{\'u}mero primo, os {\'u}nicos ideais  s{\~a}o os triviais $\{\bar{0}\}$ e $\displaystyle\frac{\mathbb{Z}}{p\mathbb{Z}}$.
+\item Em $\z$ todos os ideais n{\~a}o triviais s{\~a}o da forma $m\z,m>1$
+\item No anel $\displaystyle\frac{\z}{p\z}$, onde $p$ {\'e} um n{\'u}mero primo, os {\'u}nicos ideais  s{\~a}o os triviais $\{\bar{0}\}$ e $\displaystyle\frac{\z}{p\z}$.
 
-\textbf{Demonstra{\c c}{\~a}o}: Seja $I\subseteq\displaystyle\frac{\mathbb{Z}}{p\mathbb{Z}}$ um ideal, $I\neq\{\bar{0}\}$. Provemos que 
-$I=\displaystyle\frac{\mathbb{Z}}{p\mathbb{Z}}$. Para isso, vamos provar que $\bar{1}\in I$. Seja $\bar{a}\in I, \bar{a}\neq \bar{0}$, pois $I\neq\{\bar{0}\}$. Mas como $p$ {\'e} primo, $mdc(a,p)=1$, da{\'\i} existe $\bar{b}\in\displaystyle\frac{\mathbb{Z}}{p\mathbb{Z}},\bar{b}\neq\bar{0}$, tal que $\bar{1}=\bar{a}\bar{b}$. Mas $I$ {\'e} ideal e $\bar{a}\in I$, logo $\bar{1}=\bar{a}\bar{b}\in I$.
+\textbf{Demonstra{\c c}{\~a}o}: Seja $I\subseteq\displaystyle\frac{\z}{p\z}$ um ideal, $I\neq\{\bar{0}\}$. Provemos que 
+$I=\displaystyle\frac{\z}{p\z}$. Para isso, vamos provar que $\bar{1}\in I$. Seja $\bar{a}\in I, \bar{a}\neq \bar{0}$, pois $I\neq\{\bar{0}\}$. Mas como $p$ {\'e} primo, $mdc(a,p)=1$, da{\'\i} existe $\bar{b}\in\displaystyle\frac{\z}{p\z},\bar{b}\neq\bar{0}$, tal que $\bar{1}=\bar{a}\bar{b}$. Mas $I$ {\'e} ideal e $\bar{a}\in I$, logo $\bar{1}=\bar{a}\bar{b}\in I$.
 
-Portanto $I=\displaystyle\frac{\mathbb{Z}}{p\mathbb{Z}}$.\#
-\item Os {\'u}nicos ideais n{\~a}o triviais de $\displaystyle\frac{\mathbb{Z}}{8\mathbb{Z}}=\{\bar{0},\bar{1},\bar{2},\bar{3},\bar{4},\bar{5},\bar{6},\bar{7}\}$ s{\~a}o:\\
+Portanto $I=\displaystyle\frac{\z}{p\z}$.\#
+\item Os {\'u}nicos ideais n{\~a}o triviais de $\displaystyle\frac{\z}{8\z}=\{\bar{0},\bar{1},\bar{2},\bar{3},\bar{4},\bar{5},\bar{6},\bar{7}\}$ s{\~a}o:\\
 $I_{1}=\{\bar{0},\bar{2},\bar{4},\bar{6}\}$ e $I_{2}=\{\bar{0},\bar{4}\}$ 
 
 \end{enumerate}
@@ -388,11 +388,11 @@ $0_{A}+I=\{t/t\in I_{2}=A\}$\\
 $\displaystyle\frac{A}{I_{2}}=\{0_{A}+I\}$\\
 Apenas uma classe de equival{\^e}ncia
 \end{enumerate}
-\item Seja $A=\mathbb{Z}$. Sabemos que os ideais de $\mathbb{Z}$ s{\~a}o da forma $m\mathbb{Z},m>1$. Seja $I=m\mathbb{Z}$ um ideal de $\mathbb{Z}$. Ent{\~a}o\\
-\[x\equiv y(mod\ I)\Leftrightarrow x-y\in I \Leftrightarrow x-y=mk,k\in\mathbb{Z}\Leftrightarrow m|(x-y)
+\item Seja $A=\z$. Sabemos que os ideais de $\z$ s{\~a}o da forma $m\z,m>1$. Seja $I=m\z$ um ideal de $\z$. Ent{\~a}o\\
+\[x\equiv y(mod\ I)\Leftrightarrow x-y\in I \Leftrightarrow x-y=mk,k\in\z\Leftrightarrow m|(x-y)
 \Leftrightarrow x\equiv y(mod\ m)\]
 
-Portanto, $\displaystyle\frac{\mathbb{Z}}{I}=\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}$.
+Portanto, $\displaystyle\frac{\z}{I}=\displaystyle\frac{\z}{m\z}$.
 \end{enumerate}
 
 Agora seja $I$ ideal e $A$ anel. \[\displaystyle\frac{A}{I}\{y+I/y\in A\}\] \[y+I=\{y+t/t\in I\}\]
