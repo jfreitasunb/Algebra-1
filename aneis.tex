@@ -454,21 +454,56 @@ Assim,
 \end{exemplos}
 
 
-Agora seja $I$ ideal e $A$ anel. \[\displaystyle\frac{A}{I}\{y+I/y\in A\}\] \[y+I=\{y+t/t\in I\}\]
+Agora seja $I$ ideal e $A$ um anel. Temos
+\[
+	\dfrac{A}{I} = \{y + I \mid y \in A\}\\
+\]
+onde $y + I = \{y + t \mid t \in I\}$ e $y \in A$.
 
-Vamos definir uma soma $\oplus$ e um produto $\odot$ em $\displaystyle\frac{A}{I}$ por \[(x+I)\oplus(y+I)=(x+y)+I\] \[(x+I)\odot(y+I)=(xy)+I\]
+Vamos definir uma soma $\oplus$ e um produto $\otimes$ em $\dfrac{A}{I}$ por
+\begin{align*}
+	(x + I)\oplus(y + I) &= (x + y) + I\\
+	(x + I)\odot(y + I) &= (xy) + I
+\end{align*}
+para $x + I$, $y + I \in \dfrac{A}{I}$.
 
-Verifiquemos que a soma e o produto em $\displaystyle\frac{A}{I}$ n{\~a}o dependem do representante da classe de equival{\^e}ncia. Dados $x+I, x_{1}+I,y+I,y_{1}+I\in\displaystyle\frac{A}{I}$ tais que \[x+I=x_{1}+I\] \[y+I=y_{1}+I\]
+Verifiquemos que a soma e o produto em $\dfrac{A}{I}$ n{\~a}o dependem do representante da classe de equival{\^e}ncia.
+Para isso sejam $x_1 + I$, $x_2 + I$, $y_1 + I$, $y_2 + I \in \dfrac{A}{I}$ tais que
+\begin{align*}
+	x_1 + I &= x_2 + I\\
+	y_1 + I &= y_2 + I	
+\end{align*}
 
 Ent{\~a}o
-\[(x+I)\oplus(y+I)=(x+y)+I\]
-\[(x_{1}+I)\oplus(y_{1}+I)=(x_{1}+y_{1})+I\]
+\begin{align*}
+	(x_1 + I) \oplus (y_1 + I) &= (x_1 + y_1) + I\\
+	(x_2 + I) \oplus (y_2 + I) &= (x_2 + y_2) + I
+\end{align*}
 
-Como $x+I=x_{1}+I$, ent{\~a}o $x-x_{1}\in I$ e como $y+I=y_{1}+I$, ent{\~a}o $y=y_{1}\in I$. Mas $I$ {\'e} ideal, logo $(x-x_{1})+(y-y_{1})=(x+y)-(x_{1}+y_{1})\in I$, ou seja \[(x+I)\oplus(y+I)=(x_{1}+I)\oplus(y_{1}+I)\]
+Como $x_1 + I = x_2 + I$, ent{\~a}o $x_1 - x_2 \in I$ e como $y_1 + I = y_2 + I$, ent{\~a}o $y_1 = y_2 \in I$. Mas $I$ {\'e} ideal, logo $(x_1 - x_2) + (y_1 - y_2) = (x_1 + y_1) - (x_2 + y_2) \in I$, ou seja
+\[
+	(x_1 + I) \oplus (y_1 + I) = (x_2 + I) \oplus (y_2 + I).
+\]
 
-Agora, \[(x+I)\odot(y+I)=(xy)+I\] \[(x_{1}+I)\odot(y_{1}+I)=(x_{1}y_{1})+I\]
+Agora,
+\begin{align*}
+	(x_1 + I) \odot (y_1 + I) &= (x_1y_1) + I\\
+	(x_2 + I) \odot (y_2 + I) &= (x_2y_2) + I
+\end{align*}
 
-Como $(x-x_{1})y\in I$ e $(y-y_{1})x_{1}\in I$. Logo, \[(x-x_{1})y+(y-y_{1})x_{1}\in I\] \[xy-\underbrace{x_{1}y+yx_{1}}_{=0}-y_{1}x_{1}\in I\]
-\[xy-x_{1}y_{1}\in I\], ou seja, $xy+I+x_{1}y_{1}+I$. Portanto, \[(x+I)\odot(y-I)=(x_{1}+I)\odot(y_{1}+I)\]
+Como $(x_1 - x_2)y \in I$ e $(y_1 - y_2)x_2 \in I$ então
+\begin{align*}
+	&(x_1 - x_2)y_1 + (y_1 - y_2)x_2 \in I\\
+	&x_1y_2-\underbrace{x_2y_1 + y_1x_2}_{= 0} - y_2x_2 \in I\\
+	&x_1y_1 - x_2y_2\in I,
+\end{align*}
+ou seja, $xy + I = x_2y_2 + I$. Portanto,
+\[
+	(x_1 + I) \odot (y + I) = (x_2 + I) \odot (y_2 + I).
+\]
 
-\begin{teorema} Seja $(A,+,.)$ um anel associativo, comutativo e com unidade. Ent{\~a}o, se $I$ {\'e} um ideal de $A$, o quociente $\displaystyle\frac{A}{I}$ com as opera{\c c}{\~o}es $\oplus$ e $\odot$ {\'e} um anel associativo, comutativo e com unidade. O elemento zero desse anel {\'e} a classe $0_{A}+I$ e o elemento um de $\displaystyle\frac{A}{I}$ {\'e} $1_{A}+I$. \end{teorema}
+\begin{teorema}
+	Seja $(A, +, \cdot)$ um anel associativo, comutativo e com unidade. Ent{\~a}o, se $I$ {\'e} um ideal de $A$,
+	o quociente $\dfrac{A}{I}$ com as opera{\c c}{\~o}es $\oplus$ e $\odot$ {\'e} um anel associativo,
+	comutativo e com unidade. O elemento neutro da soma {\'e} a classe $0_{A} + I$ e unidade do produto {\'e} $1_{A} + I$.
+\end{teorema}
