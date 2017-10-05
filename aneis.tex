@@ -402,16 +402,20 @@
 	Seja $I$ um ideal de um anel $(A, +, \cdot)$. Dados $x$, $y \in A$ dizemos que $x$ \textbf{é congruente a} $y$ \textbf{módulo} $I$ quando $x-y \in I$. Neste caso, escrevemos $x\equiv y \pmod I$.
 \end{definicao}
 
-\subsubsection{Propriedades}
-\begin{proposicao} A congru{\^e}ncia M{\'o}dulo $I$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia em $A \ times A$($A$ anel unit{\'a}rio).\end{proposicao}
+\begin{proposicao}
+	A congru{\^e}ncia m{\'o}dulo $I$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia em $A \times A$, onde $A$ anel unit{\'a}rio.
+\end{proposicao}
+\begin{prova}
+	Como $0 = 0_{A} \in I$ e para todo $x \in I$, $x - x = 0 \in I$, ent{\~a}o $x \equiv x \pmod I$.
 
-\textbf{Demonstra{\c c}{\~a}o}: Como $0=0_{A}\in I$ e para todo $x\in I$, $x-x=0\in I$, ent{\~a}o $x\equiv x(mod\ I)$.
+	Suponha que $x\equiv y \pmod I$. Ent{\~a}o $x - y \in I$. Como $-1 \in A$, $y - x = -(x - y) = -[(x - y)1] = (x - y)(-1) \in I$, ou seja, $y\equiv x \pmod I$.
 
-Suponha que $x\equiv y(mod\ I)$. Ent{\~a}o $x-y\in I$. Como $-1\in A$,$y-x=-(x-y)=-[(x-y)1]=(x-y)(-1)\in I$, ou seja, $y\equiv x(mod\ I)$.
+	Agora, se $x\equiv y \pmod I$ e $y\equiv z \pmod I$, ent{\~a}o $x - y \in I$ e $y - z \in I$. Da{\'\i}, $x - z = (x - z) + (y - z)\in I$, ou seja, $x\equiv z \pmod I$.
 
-Agora,s e $x\equiv y(mod\ I)$ e $y\equiv z(mod\ I)$, ent{\~a}o $x-y\in I$ e $y-z\in I$. Da{\'\i}, $x-z=(x-z)+(y-z)\in I$, ou seja, $x\equiv z(mod\ I)$.
+	Logo, {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia.
+\end{prova}
 
-Logo, {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia.\#
+
 
 Seja $y\in A$. A classe de equival{\^e}ncia m{\'o}dulo $I$ {\'e}
 \[C(y)=\{x\in A/x\equiv y(mod\ I)\}=\{x\in A/x-y\in I\}\]
