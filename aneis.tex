@@ -90,74 +90,74 @@
 	\end{enumerate}
 \end{observacoes}
 
+\begin{exemplos}
+	\begin{enumerate}
+		\item $(\z,+,.)$, $(\rac,+,.)$, $(\real,+,.)$, $(\complex,+,.)$, $(\z_m, \oplus, \otimes)$ s{\~a}o an{\'e}is associativos, comutativos e com unidade.
 
+		\item  Seja $A = \z =\{f : \z \to \z \mid f \mbox{ {\'e} uma fun{\c c}{\~a}o}\}$. Dadas duas fun{\c c}{\~o}es quaisquer $f$, $g \in \A$, definimos $f\oplus g:\z \to \z$ e $f \otimes g:\z \to \z$ como:
+		\begin{align*}
+			(f\oplus g)(x) &= f(x) + g(x)\\
+			(f\otimes g)(x) = f(x)g(x)
+		\end{align*}
+		para todo $x \in \z$. Assim $(A, \oplus, \otimes)$ é um anel. De fato:
+		\begin{enumerate}[label={\roman*})]
+			\item Para todo $x \in \z$
+			\begin{align*}
+				[(f + g) + h](x) = (f + g)(x) + h(x) = (f(x) + g(x)) + h(x) = f(x) + (g(x) + h(x)) = f(x) + (g + h)(x) = [f + (g + h)](x)
+			\end{align*}
+			para todos $f$, $g$ e $h \in A$.
+			
+			\item Para todo $x \in \z$
+			\[
+				(f\oplus g)(x) = f(x) + g(x) = g(x) + f(x) = (g\oplus f)(x),
+			\]
+			portanto $f\oplus g = g\oplus f$ para todos $f$, $g \in A$.
 
-\begin{exemplo}
-	Em
-	\[
-		M_{2}(\real) = \left\{\left[\begin{array}{cc}
-		a & b\\
-		c & d
-		\end{array}\right]\mid a, b, c, d \in \real\right\}
-	\]
-	defina a soma como a soma usual de matrizes e defina o produto do seguinte modo: dados $A$ e $B\in M_{2}(\real)$
-	\[
-		[A, B] = AB - BA,
-	\]
-	onde $AB$ denota o produto usual de matrizes. Verifique que $M_{2}(\real)$ com a soma usual de matrizes e produto $[,]$ {\'e} um anel, mas n{\~a}o {\'e} associativo.
-	\begin{solucao}
-		De fato,
-		\begin{enumerate}
-		\item $A\in M_{2}(\real)$, existe $0_{2}\in M_{2}(\real)$ tal que $A+0_{2}=0_{2}+A$. A saber:\\
-		\[0_{2}=\left[\begin{array}{cc}
-		0 & 0\\
-		0 & 0
-		\end{array}\right]\]
-		
-		\item Para todo $A\in M_{2}(\real)$ existe $B\in M_{2}(\real)$ tal que $A+B=B+A=0_{2}$. A saber:\\
-		\[B=\left[\begin{array}{cc}
-	     -a & -b\\
-	    -c & -d
-		\end{array}\right]\]
-		
-		\item $(A+B)+C=A+(B+C)$ pois em $\real$ vale a associatividade
-		
-		\item $A+B=B+A$, pois em $\real$ a soma {\'e} comutativa
-		
-		\item $[(A+B),C]=(A+B)C-C(A+B)$\\
-		$=AC+BC-CA-CB=AC-CA+BC-CB=[A,C]+[B,C]$
-		
-		\item $[A,B]=AB-BA, [B,A]=BA-AB \Rightarrow [A,B]=-[B,A]$
-\end{enumerate}
-	\end{solucao}
-\end{exemplo}
+			\item $0_A : \z \to \z$ dada por $0_A(x) = 0$ para todo $x \in \z$. Daí para todo $x \in \z$
+			\[
+				(f + 0_A)(x) = f(x) + 0_A(x) = f(x) + 0 = f(x)
+			\]
+			para todo $f \in A$. Logo $f + 0_A = f$ para todo $f \in A$. Logo $0_A$ é o elemento neutro da soma em $A$.
 
+			\item Dada $f \in A$, defina $g : \z \to \z$ por $g(x) = -f(x)$ para todo $x \in \z$. Daí para todo $x \in \z$ temos
+			\[
+				(f + g)(x) = f(x) + g(x) = f(x) + (-f(x)) = 0.
+			\]
+			Logo $g(x) = -f(x)$ é o oposto de $f \in A$.
 
-\[[[A,B],C]\neq [A,[B,C]]\]
+			\item Para todo $x \in \z$
+			\[
+				[(f \otimes g)\otimes h](x) = (f \otimes g)(x)h(x) = (f(x)g(x))h(x) = f(x)(g(x)h(x)) = f(x)(g \otimes h)(x) = [f\otimes (g \otimes h)](x)
+			\]
+			para todos $f$, $g$ e $h \in \z$.
 
+			\item Para todo $x \in \z$
+			\begin{align*}
+				[(f \oplus g)\otimes h](x) = (f \oplus g)(x)h(x) = (f(x) + g(x))h(x) = f(x)h(x) + g(x)h(x) = (f\otimes g)(x) + (g \otimes h)(x) = [(f \otimes g) \oplus (g \otimes h)](x)
+			\end{align*}
+			para todos $f$, $g$ e $h \in A$.
 
+			\item Para todo $x \in \z$
+			\begin{align*}
+				[f\otimes (g \oplus h)](x) = f(x)(g\oplus h)(x) = f(x)(g(x) + h(x)) = f(x)g(x) + f(x)h(x) = (f\otimes g)(x) + (f\otimes h)(x) = [(f \otimes g) \oplus (f\otimes h)](x)
+			\end{align*}
+			para todos $f$, $g$ e $h \in A$.
+		\end{enumerate}
+		Assim $(A, \oplus, \otimes)$ é um anel. Além disso, para todo $x \in \z$
+		\[
+			(f\otimes g)(x) = f(x)g(x) = g(x)f(x) = (g\otimes f)(x)
+		\]
+		para todos $f$, $g \in A$. Assim a operação $\otimes$ é comutativa.
 
+		Mais ainda, definindo $1_A : \z \to \z$ como $1_A(x) = 1$ para todo $x \in \z$ temos
+		\[
+			(f \otimes 1_A)(x) = f(x)1_A(x) = f(x)\cdot 1 = f(x)
+		\]
+		para todo $f \in A$. Logo $1_A$ é a unidade de $A$.
 
-
-Exemplos:
-\begin{enumerate}
-\item $(\z,+,.),(\rac,+,.),(\real,+,.),(\mathbb{C},+,.),\left(\displaystyle\frac{\z}{m\z}\right)$\\
-S{\~a}o an{\'e}is associativos, comutativos e com unidade em $\left(\displaystyle\frac{\z}{m\z}\right)$, o elemento neutro {\'e} a classe $\bar{0}$ e a unidade {\'e} a classe $\bar{1}$.
-\item  Seja $A=\z=\{f:\z\rightarrow\z/f$ {\'e} fun{\c c}{\~a}o$\}$. Dadas duas fun{\c c}{\~o}es quaisquer $f,g\in\z$x$\z$, definimos $f\oplus g:\z\rightarrow\z$ e $f\odot g:\z\rightarrow\z$ como:
-
-
-$(f\oplus g)=f(x)+g(x)$\\
-$(f\odot g)=f(x)g(x)$
-\begin{enumerate}
-\item Dado $x\in\z$\\
-$(f\oplus g)(x)=f(x)+g(x)=g(x)+f(x)=(g\oplus f)(x)$, portanto $f\oplus g=g\oplus f$
-\item Dado $x\in\z$\\
-$(f\odot g)(x)=f(x)g(x)=g(x)f(x)=(g\odot f)(x)$, portanto $f\odot g=g\odot f$
-\item Definida $0\z\rightarrow\z$ como $0(x)=0,\forall x\in\z$, temos\\
-$(f(x)\oplus 0)(x)=f(x)\oplus 0(x)=0(x)\oplus f(x)=f(x)$
-
-\end{enumerate}
-\end{enumerate}
+		Portanto $(A, \oplus, \otimes)$ é um anel comutativo com unidade.
+	\end{enumerate}
+\end{exemplos}
 
 \section{Propriedades de um Anel}
 \begin{enumerate}
