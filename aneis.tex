@@ -69,19 +69,28 @@
 	\end{enumerate}
 \end{definicao}
 
-% \item \textbf{Comutatividade}: Para todos $a$, $b\in A$ vale
-% 		\[
-% 			a\cdot b = b\cdot a.
-% 		\]
-% 		Dizemos que $A$ {\'e} um \textbf{anel comutativo}.
+\begin{observacao}
+	Seja $(A, \oplus, \otimes)$ uma anel.
+	\begin{enumerate}
+		\item \textbf{Comutatividade}: Se para todos $x$, $y \in A$ vale
+		\[
+			x \otimes y = y \otimes x
+		\]
+		Dizemos que $(A, \oplus, \otimes)$ {\'e} um \textbf{anel comutativo}.
 
-% 		\item \textbf{Elemento um}: Se existe em $A$ um elemento denotado por $1$ ou $1_{A}$ tal que
-% 		\[
-% 			a\cdot 1 = 1\cdot a = a.
-% 		\]
-% 		Para todo $a\in A$, ent{\~a}o chamamos de anel com unidade ou anel unit{\'a}rio. O elemento 1 {\'e} chamado de \textbf{unidade} de $A$ e $A$ \'e chamado de \textbf{anel com unidade} ou \textbf{anel unit\'ario}.
+		\item \textbf{Unidade}: Se existe em $A$ um elemento denotado por $1$ ou $1_{A}$ tal que
+		\[
+			x \otimes 1 = x = 1 \otimes x,
+		\]
+		para todo $x \in A$, ent{\~a}o dizemos que $(A, \oplus, \otimes)$ é um \textbf{anel com unidade} ou um \textbf{anel unit{\'a}rio}. O elemento $1_A$ {\'e} chamado de \textbf{unidade} de $A$ ou \textbf{elemento neutro da multiplicação} de $A$.
 
-Quando A, munido de duas opera{\c c}{\~o}es ``+'' e ``$\cdot$'' {\'e} um anel, ele ser{\'a} denotado $(A,+,\cdot)$, para indicar claramente as opera{\c c}{\~o}es bin{\'a}rias em $A$.
+		\item Se um anel $(A, \oplus, \otimes)$ satisfaz as duas propriedades anteriores dizemos que $(A, \oplus, \otimes)$ é um \textbf{anel comutativo com unidade} ou um \textbf{anel comutativo unitário}.
+
+		\item Seja $(A, \oplus, \otimes)$ uma anel. Quando não houver chance de confusão com relação às operações envolvidas diremos simplesmente que $A$ é uma anel.
+	\end{enumerate}
+\end{observacao}
+
+
 
 \begin{exemplo}
 	Em
