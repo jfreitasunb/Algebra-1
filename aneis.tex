@@ -91,19 +91,20 @@
 \end{observacoes}
 
 \begin{exemplos}
-	\begin{enumerate}
+	\begin{enumerate}[label={\arabic*})]
 		\item $(\z,+,.)$, $(\rac,+,.)$, $(\real,+,.)$, $(\complex,+,.)$, $(\z_m, \oplus, \otimes)$ s{\~a}o an{\'e}is associativos, comutativos e com unidade.
 
-		\item  Seja $A = \z =\{f : \z \to \z \mid f \mbox{ {\'e} uma fun{\c c}{\~a}o}\}$. Dadas duas fun{\c c}{\~o}es quaisquer $f$, $g \in \A$, definimos $f\oplus g:\z \to \z$ e $f \otimes g:\z \to \z$ como:
+		\item  Seja $A = \z =\{f : \z \to \z \mid f \mbox{ {\'e} uma fun{\c c}{\~a}o}\}$. Dadas duas fun{\c c}{\~o}es quaisquer $f$, $g \in A$, definimos $f\oplus g:\z \to \z$ e $f \otimes g:\z \to \z$ como:
 		\begin{align*}
 			(f\oplus g)(x) &= f(x) + g(x)\\
-			(f\otimes g)(x) = f(x)g(x)
+			(f\otimes g)(x) &= f(x)g(x)
 		\end{align*}
 		para todo $x \in \z$. Assim $(A, \oplus, \otimes)$ é um anel. De fato:
 		\begin{enumerate}[label={\roman*})]
 			\item Para todo $x \in \z$
 			\begin{align*}
-				[(f + g) + h](x) = (f + g)(x) + h(x) = (f(x) + g(x)) + h(x) = f(x) + (g(x) + h(x)) = f(x) + (g + h)(x) = [f + (g + h)](x)
+				[(f \oplus g) \oplus h](x) &= (f \oplus g)(x) + h(x) = (f(x) + g(x)) + h(x)\\ 
+				&= f(x) + (g(x) + h(x)) = f(x) + (g \oplus h)(x)\\ &= [f \oplus (g \oplus h)](x)
 			\end{align*}
 			para todos $f$, $g$ e $h \in A$.
 			
@@ -115,31 +116,35 @@
 
 			\item $0_A : \z \to \z$ dada por $0_A(x) = 0$ para todo $x \in \z$. Daí para todo $x \in \z$
 			\[
-				(f + 0_A)(x) = f(x) + 0_A(x) = f(x) + 0 = f(x)
+				(f \oplus 0_A)(x) = f(x) + 0_A(x) = f(x) + 0 = f(x)
 			\]
 			para todo $f \in A$. Logo $f + 0_A = f$ para todo $f \in A$. Logo $0_A$ é o elemento neutro da soma em $A$.
 
 			\item Dada $f \in A$, defina $g : \z \to \z$ por $g(x) = -f(x)$ para todo $x \in \z$. Daí para todo $x \in \z$ temos
 			\[
-				(f + g)(x) = f(x) + g(x) = f(x) + (-f(x)) = 0.
+				(f \oplus g)(x) = f(x) + g(x) = f(x) + (-f(x)) = 0.
 			\]
 			Logo $g(x) = -f(x)$ é o oposto de $f \in A$.
 
 			\item Para todo $x \in \z$
-			\[
-				[(f \otimes g)\otimes h](x) = (f \otimes g)(x)h(x) = (f(x)g(x))h(x) = f(x)(g(x)h(x)) = f(x)(g \otimes h)(x) = [f\otimes (g \otimes h)](x)
-			\]
+			\begin{align*}
+				[(f \otimes g)\otimes h](x) &= (f \otimes g)(x)h(x) = (f(x)g(x))h(x)\\ &= f(x)(g(x)h(x)) = f(x)(g \otimes h)(x)\\ &= [f\otimes (g \otimes h)](x)
+			\end{align*}
 			para todos $f$, $g$ e $h \in \z$.
 
 			\item Para todo $x \in \z$
 			\begin{align*}
-				[(f \oplus g)\otimes h](x) = (f \oplus g)(x)h(x) = (f(x) + g(x))h(x) = f(x)h(x) + g(x)h(x) = (f\otimes g)(x) + (g \otimes h)(x) = [(f \otimes g) \oplus (g \otimes h)](x)
+				[(f \oplus g)\otimes h](x) &= (f \oplus g)(x)h(x) = (f(x) + g(x))h(x) \\ &= f(x)h(x) + g(x)h(x)
+				= (f\otimes g)(x) + (g \otimes h)(x)\\
+				&= [(f \otimes g) \oplus (g \otimes h)](x)
 			\end{align*}
 			para todos $f$, $g$ e $h \in A$.
 
 			\item Para todo $x \in \z$
 			\begin{align*}
-				[f\otimes (g \oplus h)](x) = f(x)(g\oplus h)(x) = f(x)(g(x) + h(x)) = f(x)g(x) + f(x)h(x) = (f\otimes g)(x) + (f\otimes h)(x) = [(f \otimes g) \oplus (f\otimes h)](x)
+				[f\otimes (g \oplus h)](x) &= f(x)(g\oplus h)(x) = f(x)(g(x) + h(x))\\ 
+				&= f(x)g(x) + f(x)h(x) = (f\otimes g)(x) + (f\otimes h)(x)\\
+				&= [(f \otimes g) \oplus (f\otimes h)](x)
 			\end{align*}
 			para todos $f$, $g$ e $h \in A$.
 		\end{enumerate}
