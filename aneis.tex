@@ -232,41 +232,48 @@
 	\end{enumerate}
 \end{prova}
 
-\section{Anel de Integridade}
-\subsubsection{Defini{\c c}{\~a}o}
+\begin{definicao}
+	Um anel comutativo $(A, + , \cdot)$ {\'e} dito ser um \textbf{anel de integridade} quando para todos 
+	$x$, $y \in A$, se $xy = 0_A$, ent{\~a}o $x = 0_A$ ou $y = 0_a$. Um anel de integridade tamb{\'e}m {\'e} chamado de \textbf{dom{\'\i}nio de integridade} ou simplesmente de \textbf{dom{\'\i}nio}.
+\end{definicao}
 
-\begin{definicao}[Anel de Integridade] Um anel comutativo A {\'e} um anel de integridade quando para todos $a,b\in A$, se $ab=0$,ent{\~a}o $a=0\vee b=0$. Um anel de integridade tamb{\'e}m {\'e} chamado de dom{\'\i}nio de integridade ou simplesmente de dom{\'\i}nio.\end{definicao}
+\begin{observacao}
+	Se $x$ e $y$ s{\~a}o elementos n{\~a}o nulos de um anel $A$ tais que $xy = 0_A$, ent{\~a}o $x$ e $y$ s{\~a}o chamados de \textbf{divisores pr{\'o}prios de zero}.
+\end{observacao}
 
-Se $a$ e $b$ s{\~a}o elementos n{\~a}o nulos de um anel $A$ tais que $ab=0$, ent{\~a}o $a$ e $b$ s{\~a}o chamados de divisores pr{\'o}prios de zero.
 
-Exemplos:
-\begin{enumerate}
-\item Os an{\'e}is $\z,\rac,\real,\mathbb{C}$ s{\~a}o an{\'e}is de integridade.
-\item Em geral, $\displaystyle\frac{\z}{m\z}$ n{\~a}o {\'e} anel de integridade, por exemplo, em $\displaystyle\frac{\z}{4\z},\ \bar{2}\neq\bar{0}$, no entanto $\bar{2}\odot\bar{2}=\bar{4}=\bar{0}$
-\item $M_{n}(\real)$ n{\~a}o {\'e} um anel de integridade, por exemplo, em $M_{2}(\real)$\\
-\[A=\left[\begin{array}{cc}
-1 & 0\\
-0 & 0
-\end{array}\right]\neq\left[\begin{array}{cc}
-0 & 0\\
-0 & 0
-\end{array}\right],\ B=\left[\begin{array}{cc}
-0 & 0\\
-1 & 0
-\end{array}\right]\neq\left[\begin{array}{cc}
-0 & 0\\
-0 & 0
-\end{array}\right]\]
-\[AB=\left[\begin{array}{cc}
-0 & 0\\
-0 & 0
-\end{array}\right]\]
+\begin{exemplos}
+	\begin{enumerate}[label={\arabic*})]
+		\item Os an{\'e}is $\z$, $\rac$, $\real$, $\complex$ s{\~a}o an{\'e}is de integridade.
+		
+		\item Em geral, $\z_m$ n{\~a}o {\'e} anel de integridade, por exemplo, em $\z_4$, $\overline{2} \neq \overline{0}$, no entanto $\overline{2}\otimes \overline{2} = \overline{4} = \overline{0}$.
+		
+		\item $M_{n}(\real)$ n{\~a}o {\'e} um anel de integridade, por exemplo, em $M_{2}(\real)$
+		\begin{align*}
+			A &= \begin{bmatrix}
+				1 & 0\\
+				0 & 0
+			\end{bmatrix} \neq \begin{bmatrix}
+				0 & 0\\
+				0 & 0		
+			\end{bmatrix},\qquad 
+			B = \begin{bmatrix}
+				0 & 0\\
+				1 & 0
+			\end{bmatrix} \neq \begin{bmatrix}
+				0 & 0\\
+				0 & 0
+			\end{bmatrix}\\
+			AB & =\begin{bmatrix}
+				0 & 0\\
+				0 & 0
+			\end{bmatrix}
+		\end{align*}
 
-\end{enumerate}
+		\item Suponha que $m = nk$, $m > n > 1$ e $m > k > 1$. Logo, em $\z_m$, $\overnline{n} \neq \overnline{0}$ e $\overnline{k} \neq \overnline{0}$ e no entanto $\overnline{n} \otimes \overnline{k} = \overnline{m} = \overnline{0}$. Logo, se $m$ n{\~a}o {\'e} primo, ent{\~a}o $\z_m$ n{\~a}o {\'e} um anel de integridade. Agora, suponha que $m = p$ primo. Sejam $\overnline{x}$, $\overnline{y} \in \z_m$ tais que $\overnline{x}\otimes \overnline{y} = \overnline{0}$, ou seja, $xy \equiv 0 \pmod(p)$. Da{\'\i} $p\mid xy$. Logo $p\mid x$ ou $p\mid y$. Portanto, $\overnline{x} = \overnline{0}$ ou $\overnline{y} = \bar{0}$. Assim, $\z_m$ {\'e} anel de integridade se, e somente se, $m$ {\'e} primo.
+	\end{enumerate}
+\end{exemplos}
 
-Suponha que $m=nk,\ m>n>1$ e $m>k>$. Logo, em $\displaystyle\frac{\z}{m\z}, \bar{n}\neq\bar{0}$ e $\bar{k}\neq\bar{0}$. Logo, se $m$ n{\~a}o {\'e} primo, ent{\~a}o $\displaystyle\frac{\z}{m\z}$ n{\~a}o {\'e} um anel de integridade.
-
-Agora, suponha que $m=p$ primo. Sejam $\bar{a},\bar{b}\in\displaystyle\frac{\z}{m\z}$ tais que $\bar{a}\odot\bar{b}=\bar{0}$, ou seja, $ab\equiv 0(mod\ p)$. Da{\'\i} $p|ab$. Logo $p|a\vee p|b$. Portanto, $\bar{a}=\bar{0}\vee \bar{b}=\bar{0}$. Assim, $\displaystyle\frac{\z}{m\z}$ {\'e} anel de integridade se, e somente se, m {\'e} primo.
 
 
 \begin{definicao}
