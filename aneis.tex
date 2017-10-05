@@ -304,27 +304,27 @@
 
 \begin{proposicao}
 	Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ anéis e seja $f : A \to B$ um homomorfismo. Ent{\~a}o:
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item $f(0_{A}) = 0_{B}$
 		\item $f(-x) = -f(x)$, para todo $x \in A$.
 	\end{enumerate}
 \end{proposicao}
 \begin{prova}
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item Fazendo $x = y = 0_{A}$, temos
 		\[
 			f(0_A) = f(0_A + 0_A) = f(0_A) \oplus f(0_A)
 		\]
 		Somando $-f(0_A)$ em ambos os lados obtemos
 		\begin{align*}
-			f(0_A) \oplus (-f(0_A)) &= (f(0_A) + f(0_A)) + (-f(0_A))\\
+			f(0_A) \oplus (-f(0_A)) &= (f(0_A)\oplus f(0_A)) \oplus (-f(0_A))\\
 			0_B &= f(0_A) \oplus 0_B\\
-			f(0_A) = 0_B
+			f(0_A) &= 0_B
 		\end{align*}
 
 		\item Temos $0_B = f(0_A) = f(x + (-x)) = f(x)\oplus f(-x)$. Assim somando $-f(x)$ em ambos os lados obtemos
 		\begin{align*}
-			0_B\oplus(-f(a)) &= [f(a)\oplus f(-a)]+(-f(a))\\
+			0_B\oplus(-f(x)) &= [f(x)\oplus f(-x)] + (-f(x))\\
 			-f(x) &= f(-x) \oplus (f(x) \oplus (-f(x)))\\
 			f(-x) &= -f(x)
 		\end{align*}
