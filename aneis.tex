@@ -164,27 +164,45 @@
 	\end{enumerate}
 \end{exemplos}
 
-\section{Propriedades de um Anel}
-\begin{enumerate}
-\item O elemento neutro {\'e} {\'u}nico.\\
-Suponha que exista $0_{1},0_{2}\in A$ tais que\\
-$a+0_{1}=0_{1}+a=a;\ b+0_{2}=0_{2}+b=b$, da{\'\i} $0_{1}=0_{1}+0_{2}=0_{2}$
-\item Para cada $a\in A$ existe um {\'u}nico oposto.\\
-De fato, suponha que existam $b_{1},b_{2}\in A$ tais que\\
-$a+b_{1}=0;\ a+b_{2}=0$. Da{\'\i} $b_{1}=b_{2}+0=b_{1}+(a+b_{2})=(b_{1}+a)+b_{2}=0+b_{2}=b_{1}=b_{2}$
-\item Para todo $a\in A, -(-a)=a$\\
-Dado $a\in A,-a$ {\'e} oposto de $a$, isto {\'e}, $a+(-a)=0$. Logo o oposto de $(-a)$ {\'e} $a$, da{\'\i} $-(-a)=a$.
-\item Dados $a_{1},a_{2},...,a_{n}\in A, n\leq 2$, ent{\~a}o\\
-$-(a_{1}+a_{2}+...+a_{n})=(-a_{1})+(-a_{2})+...+(-a_{n})$
-\item Para todo $a,x,y\in A$, se $a+x=a+y$, ent{\~a}o $x=y$
-\item Para todo $a\in A,\ a0=0a=0$\\
-Temos $0+0.0=a0=a(0+0)=a0+a0$, da{\'\i}\\
-$\underbrace{0.0}_{a0}+0=\underbrace{0.0}_{a0}+a0$. Pela propriedade 5 $a0=0$
-\item Para todo $a,b\in A$, temos $a(-b)=-ab$\\
-Provemos que $a(-b)=-ab$\\
-$a(-b)+ab=a((-b)+b)=a0=0$, portanto $-ab=a(-b)$
-\item Para todo $a,b\in A,\ ab=(-a)(-b)$\\
-\end{enumerate}
+\begin{observacao}
+	Seja $(A, \oplus, \cdot)$ um anel. Para simplificar a notação vamos denotar a operação $\oplus$
+	por $+$ e a operação $\otimes$ por $\cdot$ e assim escrever simplesmente que $(A, +, \cdot)$ é um anel.
+\end{observacao}
+
+\begin{proposicao}
+	Seja $(A, + , \cdot)$ uma anel. Então:
+	\begin{enumerate}[label={\roman*})]
+		\item O elemento neutro {\'e} {\'u}nico.
+		\item Para cada $x \in A$ existe um {\'u}nico oposto.
+		\item Para todo $x \in A$, $-(-x) = x$.
+		\item Dados $x_{1}$, $x_{2}$, \dots, $x_n \in A$, $n\leq 2$, ent{\~a}o
+		\[
+			-(x_1 + x_2 + \dots + x_n) = (-x_1) + (-x_2) + \dots + (-x_n).
+		\]
+		\item Para todos $a$, $x$, $y \in A$, se $a + x = a + y$, ent{\~a}o $x = y$.
+		\item Para todo $x \in A$, $x\cdot 0_A = 0_A = 0_A\cdot x$.
+		\item Para todos $x$, $y \in A$, temos $x(-y) = (-x)y = -(xy)$.
+		\item Para todos $x$, $y \in A$, $xy = (-x)(-y)$.
+	\end{enumerate}
+\end{proposicao}
+\begin{prova}
+	Suponha que exista $0_{1},0_{2}\in A$ tais que\\
+		$a+0_{1}=0_{1}+a=a;\ b+0_{2}=0_{2}+b=b$, da{\'\i} $0_{1}=0_{1}+0_{2}=0_{2}$
+		
+		De fato, suponha que existam $b_{1},b_{2}\in A$ tais que\\
+		$a+b_{1}=0;\ a+b_{2}=0$. Da{\'\i} $b_{1}=b_{2}+0=b_{1}+(a+b_{2})=(b_{1}+a)+b_{2}=0+b_{2}=b_{1}=b_{2}$
+		
+		Dado $a\in A,-a$ {\'e} oposto de $a$, isto {\'e}, $a+(-a)=0$. Logo o oposto de $(-a)$ {\'e} $a$, da{\'\i} $-(-a)=a$.
+		
+		
+		
+		Temos $0+0.0=a0=a(0+0)=a0+a0$, da{\'\i}\\
+		$\underbrace{0.0}_{a0}+0=\underbrace{0.0}_{a0}+a0$. Pela propriedade 5 $a0=0$
+		
+		Provemos que $a(-b)=-ab$\\
+		$a(-b)+ab=a((-b)+b)=a0=0$, portanto $-ab=a(-b)$
+		
+\end{prova}
 
 \section{Anel de Integridade}
 \subsubsection{Defini{\c c}{\~a}o}
