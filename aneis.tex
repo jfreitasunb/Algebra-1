@@ -379,22 +379,24 @@
 	\end{enumerate}
 \end{prova}
 
-\textbf{Demonstra{\c c}{\~a}o}: 
+\begin{exemplos}
+	\begin{enumerate}[label={\arabic*})]
+		\item Em $\z$ todos os ideais n{\~a}o triviais s{\~a}o da forma $m\z$, $m > 1$.
+		\item No anel $\z_p$, onde $p$ {\'e} um n{\'u}mero primo, os {\'u}nicos ideais  s{\~a}o os triviais $\{\overline{0}\}$ e $\z_p$.
+		
+		De fato, seja $I \sub \z_p$ um ideal, $I \neq \{\overline{0}\}$. Provemos que $I = \z_p$. Para isso,
+		vamos provar que $\overline{1} \in I$. Seja $\overline{a} \in I$, $\overline{a} \neq \overline{0}$, pois $I \neq \{\overline{0}\}$. Como $p$ {\'e} primo, $mdc(a,p) = 1$, da{\'\i} existe $\overline{b} \in \z_p$, $\overline{b} \neq \overline{0}$, tal que $\overline{1} = \overline{a}\overline{b}$. Mas $I$ {\'e} ideal e $\overline{a} \in I$, logo $\overline{1} = \overline{a}\overline{b} \in I$.
 
+		Portanto $I = \z_p$.
 
-Exemplos:
-\begin{enumerate}
-\item Em $\z$ todos os ideais n{\~a}o triviais s{\~a}o da forma $m\z,m>1$
-\item No anel $\displaystyle\frac{\z}{p\z}$, onde $p$ {\'e} um n{\'u}mero primo, os {\'u}nicos ideais  s{\~a}o os triviais $\{\bar{0}\}$ e $\displaystyle\frac{\z}{p\z}$.
+		\item Os {\'u}nicos ideais n{\~a}o triviais de $\z_8 = \{\overline{0}, \overline{1}, \overline{2}, \overline{3}, \overline{4}, \overline{5}, \overline{6}, \overline{7}\}$ s{\~a}o:
+		\begin{align*}
+			I_1 &= \{\overline{0}, \overline{2}, \overline{4}, \overline{6}\}\\
+			I_2 &=\{\overline{0}, \overline{4}\}
+		\end{align*}
+	\end{enumerate}	
+\end{exemplos}
 
-\textbf{Demonstra{\c c}{\~a}o}: Seja $I\subseteq\displaystyle\frac{\z}{p\z}$ um ideal, $I\neq\{\bar{0}\}$. Provemos que 
-$I=\displaystyle\frac{\z}{p\z}$. Para isso, vamos provar que $\bar{1}\in I$. Seja $\bar{a}\in I, \bar{a}\neq \bar{0}$, pois $I\neq\{\bar{0}\}$. Mas como $p$ {\'e} primo, $mdc(a,p)=1$, da{\'\i} existe $\bar{b}\in\displaystyle\frac{\z}{p\z},\bar{b}\neq\bar{0}$, tal que $\bar{1}=\bar{a}\bar{b}$. Mas $I$ {\'e} ideal e $\bar{a}\in I$, logo $\bar{1}=\bar{a}\bar{b}\in I$.
-
-Portanto $I=\displaystyle\frac{\z}{p\z}$.\#
-\item Os {\'u}nicos ideais n{\~a}o triviais de $\displaystyle\frac{\z}{8\z}=\{\bar{0},\bar{1},\bar{2},\bar{3},\bar{4},\bar{5},\bar{6},\bar{7}\}$ s{\~a}o:\\
-$I_{1}=\{\bar{0},\bar{2},\bar{4},\bar{6}\}$ e $I_{2}=\{\bar{0},\bar{4}\}$ 
-
-\end{enumerate}
 
 Observa{\c c}{\~a}o: Num anel $(A,+,.)$, a diferen{\c c}a $a-b$ {\'e} definida como
 \[a-b=a+(-b),\ a,b\in A\]
