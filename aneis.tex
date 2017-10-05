@@ -186,22 +186,41 @@
 	\end{enumerate}
 \end{proposicao}
 \begin{prova}
-	Suponha que exista $0_{1},0_{2}\in A$ tais que\\
-		$a+0_{1}=0_{1}+a=a;\ b+0_{2}=0_{2}+b=b$, da{\'\i} $0_{1}=0_{1}+0_{2}=0_{2}$
+	\begin{enumerate}[label={\roman*})]
+		\item Suponha que existam $0_1$, $0_2\in A$ elementos neutros de $A$. Assim
+		\[
+			x + 0_1 = x \quad \mbox{e}\quad x + 0_2 = x	
+		\]
+		para todo $x \in A$. Assim
+		\[
+			0_1 = 0_1 + 0_2 = 0_2
+		\]
+		e portanto o elemento neutro é único.
+
+		\item De fato, dado $x \in A$ suponha que existam $y_1$, $y_2\in A$ tais que
+		\[
+			x + y_1 = 0_A \quad \mbox{e}\quad x + y_2 = 0_A.
+		\]
+		Daí
+		\[
+			y_1 = y_2 + 0_A = y_1 + (x + y_2) = (y_1 + x) + y_2 = 0_A + y_2 =y_2.
+		\]
+		Logo o oposto de $x$ é único  e daí será denotado por $-x$.
 		
-		De fato, suponha que existam $b_{1},b_{2}\in A$ tais que\\
-		$a+b_{1}=0;\ a+b_{2}=0$. Da{\'\i} $b_{1}=b_{2}+0=b_{1}+(a+b_{2})=(b_{1}+a)+b_{2}=0+b_{2}=b_{1}=b_{2}$
-		
-		Dado $a\in A,-a$ {\'e} oposto de $a$, isto {\'e}, $a+(-a)=0$. Logo o oposto de $(-a)$ {\'e} $a$, da{\'\i} $-(-a)=a$.
-		
-		
-		
-		Temos $0+0.0=a0=a(0+0)=a0+a0$, da{\'\i}\\
-		$\underbrace{0.0}_{a0}+0=\underbrace{0.0}_{a0}+a0$. Pela propriedade 5 $a0=0$
-		
-		Provemos que $a(-b)=-ab$\\
-		$a(-b)+ab=a((-b)+b)=a0=0$, portanto $-ab=a(-b)$
-		
+		\item Dado $x \in A$, então $-x$ {\'e} oposto de $x$, isto {\'e}, $x + (-x) = 0_A$. Logo o oposto de $(-x)$ {\'e} $x$, ou seja, $-(-x) = x$.
+
+		\item Segue usando indução sobre $n$.
+
+		\item Temos $0_A + x\cdot 0_A = a\codt 0_A = a(0_A + 0_A) = a\cdot 0_A + a\cdot 0_A$. Assim do item anterior segue que $x\cdot 0_A = 0_A$.
+
+		\item Provemos que $x(-y) = -(xy)$:
+		\[
+			x(-y) + xy = x((-y) + y) = x\cdot 0_A = 0_A,
+		\]
+		portanto $-xy = x(-y)$.
+
+		\item Basta usar o caso anterior.
+	\end{enumerate}
 \end{prova}
 
 \section{Anel de Integridade}
