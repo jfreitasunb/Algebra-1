@@ -331,38 +331,34 @@
 	\end{enumerate}
 \end{prova}
 
-
-Seja $f:\z\rightarrow\z$ um homomorfismo. Dado $n\in\z,n\geq 0$. Temos da{\'\i}, \[f(n)=f(\underbrace{1+...+1}_{n\ vezes})=\underbrace{f(1)+...+f(1)}_{n\ vezes}=nf(1)=n1\]
-$f(n)=n$, para todo $n \in \z$.
+\begin{definicao}Seja $f:A\rightarrow B$ um homomorfismo, onde $A$ e $B$ s{\~a}o an{\'e}is. Dizemos que
+	\begin{enumerate}[label={\roman*})]
+		\item $f$ {\'e} um epimorfismo se $f$ for sobrejetora
+		\item $f$ {\'e} um monomorfismo se $f$ for injetora
+		\item $f$ {\'e} um isomorfismo se $f$ for bijetora
+		\item Quando $A=B$ e $f$ {\'e} um isomorfismo, ent{\~a}o $f$ {\'e} um automorfismo
+	\end{enumerate}
+\end{definicao}
 
 \begin{proposicao}
-	Seja $f : A \to B$ um homomorfismo sobrejetor de an\'eis.
-	\begin{enumerate}
-		\item Se $A$ tem unidade, ent\~ao $B$ tem unidade e $f(1_A) = 1_B$.
-		\item Se $A$ tem unidade e $x \in A$ possui inverso multiplicativo, ent\~ao $f(x)$ tem inverso e $f(x^{-1} = (f(x))^{-1}$.
+	Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ anéis e seja $f : A \to B$ um homomorfismo sobrejetor de an\'eis.
+	\begin{enumerate}[label={\roman*})]
+		\item Se $A$ tem unidade, então $B$ tem unidade e $f(1_A) = 1_B$.
+		\item Se $A$ tem unidade e $x \in A$ possui inverso multiplicativo, então $f(x)$ tem inverso e $f(x^{-1}) = (f(x))^{-1}$.
 	\end{enumerate}
 \end{proposicao}
 
-\subsection{Epimorfismo, monomorfismo e isomorfismo}
-\begin{definicao}[Epimorfismo, monomorfismo e isomorfismo] Seja $f:A\rightarrow B$ um homomorfismo, onde $A$ e $B$ s{\~a}o an{\'e}is. Dizemos que
-\begin{enumerate}
-\item $f$ {\'e} um epimorfismo se $f$ for sobrejetora
-\item $f$ {\'e} um monomorfismo se $f$ for injetora
-\item $f$ {\'e} um isomorfismo se $f$ for bijetora
-\item Quando $A=B$ e $f$ {\'e} um isomorfismo, ent{\~a}o $f$ {\'e} um automorfismo
-\end{enumerate}
+\begin{definicao}
+	Seja $(A, +, \cdot)$ um anel comutativo. Um subconjunto não-vazio $I \sub A$ {\'e} chamado de \textbf{ideal} de $A$ se:
+	\begin{enumerate}[label={\roman*})]
+		\item para todos $x$, $y \in I$, temos $x - y \in I$.
+		\item Para todo $\alpha \in A$ e todo $x \in I$, temos $\alpha x \in I$.
+	\end{enumerate}
 \end{definicao}
 
-\section{Ideal de um anel}
-\subsubsection{Defini{\c c}{\~a}o}
-\begin{definicao}[Ideal em um anel] Seja $(A,+,.)$ um anel comutativo. Um ideal em $A$ {\'e} um conjunto n{\~a}o vazio $I$ tal que:
-\begin{enumerate}
-\item Para todo $a$, $b\in I$, devemos ter $a - b \in I$.
-\item Para todo $b\in A$ e todo $x \in I$, $bx \in I$.
-\end{enumerate}
-\end{definicao}
-
-Quando $I=A$ ou $I=\{0_A\},\ I$ {\'e} chamado de ideal trivial.
+\begin{observacao}
+	Quando $I = A$ ou $I = \{0_A\}$, dizemos que $I$ {\'e} um \textbf{ideal trivial}.
+\end{observacao}
 
 \subsubsection{Propriedades}
 \begin{proposicao} Seja $A$ um anel comutativo e $I$ um ideal de $A$. Ent{\~a}o:
