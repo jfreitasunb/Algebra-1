@@ -415,40 +415,45 @@
 	Logo, {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia.
 \end{prova}
 
+Seja $y \in A$. A classe de equival{\^e}ncia m{\'o}dulo $I$ de $y$ {\'e}
+\[
+	C(y) = \{x \in A \mid x\equiv y \pmod I\} = \{x \in A \mid x - y \in I\}.
+\]
 
-
-Seja $y\in A$. A classe de equival{\^e}ncia m{\'o}dulo $I$ {\'e}
-\[C(y)=\{x\in A/x\equiv y(mod\ I)\}=\{x\in A/x-y\in I\}\]
-
-
-Agora, $x-y\in I$ significa que existe $t\in I$, tal que $x-y=t$. Logo, $x=y+t$, onde $t\in I$.
+Agora, $x - y \in I$ significa que existe $t \in I$, tal que $x - y = t$. Logo, $x = y + t$, onde $t \in I$.
 
 Assim,
-\[C(y)=\{y+t,t\in I\}=y+I\]
+\[
+	C(y) = \{y + t\mid t \in I\} = y + I.
+\]
 
-\begin{nota}[Congru{\^e}ncia M{\'o}dulo I] Denotamos por $y+I$ (ou $I+y$) a classe de equival{\^e}ncia m{\'o}dulo $I$. Denotamos por $\displaystyle\frac{A}{I}$ o conjunto de todas as classes de equival{\^e}ncia, tal conjunto {\'e} chamado quociente do anel $A$ pelo ideal $I$.\end{nota}
+\begin{observacao}
+	Denotamos por $y + I$ (ou $I + y$) a classe de equival{\^e}ncia m{\'o}dulo $I$ de $y \in A$. Denotamos por $\dfrac{A}{I}$ o conjunto de todas as classes de equival{\^e}ncia, tal conjunto {\'e} chamado de \textbf{quociente do anel $A$ pelo ideal $I$}.
+\end{observacao}
 
-Exemplos:
-\begin{enumerate}
-\item A anel e $I_{1}=\{0\}$ e $I_{2}=A$ ideais.
-\begin{enumerate}
-\item $\displaystyle\frac{A}{I_{1}};a\in A$\\
-$C(a)=a+I_{1}=\{a+0\}=\{a\}$\\
-$\displaystyle\frac{A}{I_{1}}=\{a+I, a\in A\}$\\
-Tantas classes de equival{\^e}ncia quantos elementos em $A$
-\item $\displaystyle\frac{A}{I_{2}}; a\in A, I_{2}=A$\\
-$C(a)=a+I=\{a+t/t\in I_{2}\}$\\
-$C(0_{A})=0_{A}+I]\{0_{A}+t/t\in I_{2}\}$\\
-$0_{A}+I=\{t/t\in I_{2}=A\}$\\
-$\displaystyle\frac{A}{I_{2}}=\{0_{A}+I\}$\\
-Apenas uma classe de equival{\^e}ncia
+\begin{exemplos}
+	\begin{enumerate}[label={\arabic*})]
+		\item Seja $A$ um anel com unidade e $I_{1} = \{0\}$ e $I_{2} = A$ ideais. Então:
+		\begin{enumerate}[label={\roman*})]
+		\item Dado $x \in A$:
+		\[
+			C(x) = x + I_{1} = \{x + 0\} = \{x\}.
+		\]
+		Assim $\dfrac{A}{I_{1}} = \{x + I \mid x \in A\}$, logo existem tantas classes de equival{\^e}ncia quantos forem os elementos de $A$.
+
+		\item Para $I_{2} = A$ temos:
+		\[
+			C(0_A) = 0_A + I = \{0_A + t \mid t \in I_{2}\}.
+		\]
+		Como $I_2 = A$, para todo $x \in A$ temos $x \in C(0_A)$ logo existem uma única classe de equivalência
+		e $\dfrac{A}{I_{2}} = \{0_{A} + I\}$.
+	\end{enumerate}
+
+	\item Seja $A = \z$. Sabemos que os ideais de $\z$ s{\~a}o da forma $m\z$, $m > 1$. Seja $I = m\z$ um ideal de $\z$. Assim $x\equiv y \pmod I$ se, e só se, $x - y \in I$. Mais isso ocorre se, e somente se, $x - y = mk $, para algum $k \in \z$. Logo $x\equiv y \pmod I$ se, e só se, $m\mid (x - y)$. Portanto, $\dfrac{\z}{I} = \z_m$.
+	\end{align*}
 \end{enumerate}
-\item Seja $A=\z$. Sabemos que os ideais de $\z$ s{\~a}o da forma $m\z,m>1$. Seja $I=m\z$ um ideal de $\z$. Ent{\~a}o\\
-\[x\equiv y(mod\ I)\Leftrightarrow x-y\in I \Leftrightarrow x-y=mk,k\in\z\Leftrightarrow m|(x-y)
-\Leftrightarrow x\equiv y(mod\ m)\]
+\end{exemplos}
 
-Portanto, $\displaystyle\frac{\z}{I}=\displaystyle\frac{\z}{m\z}$.
-\end{enumerate}
 
 Agora seja $I$ ideal e $A$ anel. \[\displaystyle\frac{A}{I}\{y+I/y\in A\}\] \[y+I=\{y+t/t\in I\}\]
 
