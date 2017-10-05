@@ -352,7 +352,7 @@
 	Seja $(A, +, \cdot)$ um anel comutativo. Um subconjunto não-vazio $I \sub A$ {\'e} chamado de \textbf{ideal} de $A$ se:
 	\begin{enumerate}[label={\roman*})]
 		\item para todos $x$, $y \in I$, temos $x - y \in I$.
-		\item Para todo $\alpha \in A$ e todo $x \in I$, temos $\alpha x \in I$.
+		\item Para todo $\alpha \in A$ e todo $x \in I$, temos $\alpha\cdot x \in I$.
 	\end{enumerate}
 \end{definicao}
 
@@ -360,20 +360,26 @@
 	Quando $I = A$ ou $I = \{0_A\}$, dizemos que $I$ {\'e} um \textbf{ideal trivial}.
 \end{observacao}
 
-\subsubsection{Propriedades}
-\begin{proposicao} Seja $A$ um anel comutativo e $I$ um ideal de $A$. Ent{\~a}o:
-\begin{enumerate}
- 	\item $0_{A}\in I$.
- 	\item $-a \in I$ para todo $a \in I$.
- 	\item Se $1_A \in I$, ent\~ao $I = A$.
- \end{enumerate}
+\begin{proposicao}
+	Seja $A$ um anel comutativo e $I$ um ideal de $A$. Ent{\~a}o:
+	\begin{enumerate}[label={\roman*})]
+	 	\item $0_{A}\in I$.
+	 	\item $-x \in I$ para todo $x \in I$.
+	 	\item Se $1_A \in I$, então $I = A$.
+	\end{enumerate}
 \end{proposicao}
+\begin{prova}
+	\begin{enumerate}[label={\roman*})]
+		\item Da definição de ideal temos $\alpha \cdot x \in I$ para todo $x \in I$ e todo $\alpha \in A$.
+		Assim dado $x \in I$ $0_A = 0_A \cdot x \in I$.
 
-\textbf{Demonstra{\c c}{\~a}o}: Temos que da defini{\c c}{\~a}o de ideal, $ab\in I$, para todo $a,b\in I$.
+		\item Como $0_A \in I$, dado $x \in I$ da definição de ideal segue que $0_A - x \in I$, isto é, $-x \in I$.
 
-Assim, dado $a\in I,\ a0_{A}=0_{A}\in I$.\#
+		\item Suponha que $1_A \in I$. Como $I$ {\'e} ideal, para todo $\alpha \in A$ e todo $x \in I$ devemos ter $\alpha\cdot x \in I$. Assim, em particular, $1_A \cdot x \in I$ para todo $x \in A$. Logo, $A\sub I$ e como $I\sub A$, ent{\~a}o $I = A$.
+	\end{enumerate}
+\end{prova}
 
-\textbf{Demonstra{\c c}{\~a}o}: Como $I$ {\'e} ideal, $1_{A}x\in I$, para todo $x\in A$, ou seja, $x=1_{A}x\in I$ para qualquer $x\in A$, logo, $A\subseteq I$. Como $I\subseteq A$, ent{\~a}o $I=A$.\#
+\textbf{Demonstra{\c c}{\~a}o}: 
 
 
 Exemplos:
