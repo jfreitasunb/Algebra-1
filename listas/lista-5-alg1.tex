@@ -1,5 +1,5 @@
-%!TEX program = xelatex
-%!TEX encoding = ISO-8859-1
+%!TEX program = xelatex 
+% !TEX encoding = ISO-8859-1
 \documentclass[12pt]{article}
 
 \usepackage{amssymb}
@@ -7,9 +7,10 @@
 \usepackage[brazil]{babel}
 %\usepackage[latin1]{inputenc}
 \usepackage{graphicx}
-\graphicspath{{/home/jfreitas/Dropbox/imagens-latex/}{/Volumes/Vader/Dropbox/imagens-latex/}{D:/Dropbox/imagens-latex/}}
+\graphicspath{{/home/jfreitas/Dropbox/imagens-latex/}{/Users/jfreitas/Dropbox/imagens-latex/}{D:/Dropbox/imagens-latex/}}
 \usepackage{enumitem}
 \usepackage{multicol}
+\usepackage{color}
 \usepackage[all]{xy}
 
 \setlength{\topmargin}{-1.0in}
@@ -39,8 +40,6 @@
 \newcommand{\z}{\mathbb{Z}}
 \newcommand{\n}{\mathbb{N}}
 \newcommand{\q}{\mathbb{Q}}
-\newcommand{\complex}{\mathbb{C}}
-\renewcommand{\sin}{{\rm sen\,}}
 \newtheorem{defin}{Defini{\c c}{\~a}o}
 
 \newcommand{\compcent}[1]{\vcenter{\hbox{$#1\circ$}}}
@@ -65,269 +64,266 @@
 
 \begin{center}
  {\Large\bf {\'A}lgebra 1 - Turma D -- 2$^{o}$/2016} \\
- \vspace{9pt} {\large\bf $5^{\underline{a}}$ Lista de Exerc{\'\i}cios -- Grupos: continua\c{c}\~ao}\\
+ \vspace{9pt} {\large\bf $6^{\underline{a}}$ Lista de Exerc{\'\i}cios -- An\'eis}\\
  \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
 \end{center}
 \hrule
 
-\vspace{0.6cm}
+\begin{center}
+\Large{\bf An{\'e}is}
+\end{center}
 
-\questao Quais dos seguintes subconjuntos $G$ de $\z_{13}$ s{\~a}o grupos
-com a opera{\c c}{\~a}o de multiplica{\c c}{\~a}o?
-\begin{multicols}{2}
-\begin{enumerate}[label=({\alph*})]
-\item $G=\{\overline{1},\overline{12}\}$;
+\vspace{.6cm}
 
-\item $G=\{\overline{1},\overline{5},\overline{8},\overline{12}\}$;
-
-\item $G=\{\overline{1},\overline{2},\overline{3},\overline{4}, \overline{5},\overline{6},\overline{7},
- \overline{8},\overline{9},\overline{10},\overline{11},\overline{12}\}$
-\item $G=\{\overline{1}, \overline{3},\overline{5},\overline{7},\overline{9},\overline{11}\}$.
-\end{enumerate}
-\end{multicols}
-
-\vesp
-
-\questao Determine $f$, $g \in S_3$ tais que:
-\begin{enumerate}[label=({\alph*})]
-	\item $(f \comp g)^3 \ne f^3\comp g^3$
-	\item $(f \comp g)^2 \ne f^2\comp g^2$
-\end{enumerate}
-
-\vesp
-
-\questao Considere o grupo $S_3$:
-\begin{enumerate}[label=({\alph*})]
-	\item Determine todos os elementos $f \in S_3$ tais que $f^2 = Id$ e $f \ne Id$.
-	\item Determine todos os elementos $g \in S_3$ tais que $g^3 = Id$ e $g \ne Id$.
-\end{enumerate}
-
-\vesp
-
-\questao Seja $V = \{1, f, g, h\}$ o seguinte subconjunto do grupo $S_4$:
+\questao Consideremos em $\z \times \z$ as opera\c{c}\~oes $\oplus$ e $\otimes$ definidas por
 \begin{align*}
-	1 = \begin{pmatrix}
-		1 & 2 & 3 & 4\\
-		1 & 2 & 3 & 4
-	\end{pmatrix}; \quad f = \begin{pmatrix}
-		1 & 2 & 3 & 4\\
-		2 & 1 & 4 & 3
-	\end{pmatrix}\\
-	g = \begin{pmatrix}
-		1 & 2 & 3 & 4\\
-		3 & 4 & 1 & 2
-	\end{pmatrix}; \quad h = \begin{pmatrix}
-		1 & 2 & 3 & 4\\
-		4 & 3 & 2 & 1
-	\end{pmatrix}.
+	(a, b) \oplus (c, d) = (a + c, b + d)\\
+	(a ,b) \otimes (c, d) = (ac - bd, ad + bc).
 \end{align*}
-\begin{enumerate}[label=({\alph*})]
-	\item Prove que $(V, \comp)$ \'e um grupo contendo 4 elementos, onde $\comp$ \'e a opera\c{c}\~ao de $S_4$.
-	\item Prove que $(V, \comp)$ \'e um grupo abeliano.
-\end{enumerate}
+Mostre que $(\z \times \z, \oplus, \otimes)$ \'e um anel comutativo e com unidade.
 
 \vesp
 
-\questao Considere o grupo $S_7$ e sejam
+\questao Considere as opera\c{c}\~oes $\star$ e $\odot$ em $\q$ definidas por
 \begin{align*}
-	1 &= \begin{pmatrix}
-		1 & 2 & 3 & 4 & 5 & 6 & 7\\
-		1 & 2 & 3 & 4 & 5 & 6 & 7
-	\end{pmatrix}\\
-	\sigma &= \begin{pmatrix}
-	 		1 & 2 & 3 & 4 & 5 & 6 & 7\\
-	 		3 & 4 & 2 & 6 & 7 & 5 & 1
-	 	\end{pmatrix}.\\
-	\beta &= \begin{pmatrix}
-	 		1 & 2 & 3 & 4 & 5 & 6 & 7\\
-	 		3 & 1 & 2 & 6 & 7 & 4 & 5
-	 	\end{pmatrix}.
-\end{align*}.
-\begin{enumerate}[label=({\alph*})]
-	\item Encontre o menor $l \ge 0$ tal que $\sigma^l = 1$.
-	\item Encontre $\delta \in S_7$ tal que $\sigma\comp\delta = 1$.
-	\item Encontre o menor $k \ge 0$ tal que $\beta^k = 1$.
-	\item Encontre $\gamma \in S_7$ tal que $\gamma\comp\beta = 1$.
+	x \star y = x + y - 3\\
+	x \odot y = x + y - \dfrac{xy}{3}.
+\end{align*}
+Mostre que $(\q, \star, \odot)$ \'e um anel comutativo e com unidade.
+
+\vesp
+
+\questao Prove que s\~ao an\'eis:
+\begin{enumerate}[label={\alph*})]
+	\item O conjunto $\z$ com a adi\c{c}\~ao usual e o produto $x \otimes y = 0$, para todo $x$, $y \in \z$.
+	\item O conjunto $\q$ com as opera\c{c}\~oes $x \oplus y = x + y - 1$ e $x \odot y = x + y - xy$.
+	\item O conjunto $\z \times \z$ com as opera\c{c}\~oes:
+	\begin{align*}
+		(a, b) \oplus (c, d) = (a + c, b + d)\\
+		(a ,b) \otimes (c, d) = (ac, ad + bc).
+	\end{align*}
 \end{enumerate}
+Quais destes an\'eis s\~ao comutativos? Quais t\^em unidade?
 
 \vesp
 
-\questao Seja $(G,*)$ um grupo com elemento neutro $e$. Para $x\in
-G$, considere a nota{\c c}{\~a}o $x^n=x*x*\cdots *x$ ($n$ vezes).
-\begin{enumerate}[label=({\alph*})]
-\item Seja $G$ um grupo tendo $e$ como elemento neutro. Prove que se
-$x^2=e$, para todo $x\in G$, ent{\~a}o $G$ {\'e} um grupo abeliano.
-\item Mostre que se $x\in G$ {\'e} tal que $x^2=x$, ent{\~a}o $x$ {\'e} o elemento neutro.
-\end{enumerate}
-
-\vesp
-
-\questao Verifique se s\~ao subgrupos:
-\begin{enumerate}[label=({\alph*})]
-	\item $H = \{x \in \q \mid x > 0\}$ de $(\q^*,\cdot)$.
-	\item $H = \left\{\dfrac{1 + 2m}{1 + 2n} \mid m, n \in \z\right\}$ de $(\q^*,\cdot)$.
-	\item $H = \{\cos\theta + i\sin\theta \mid \theta \in \q\}$ de $(\complex^*,\cdot)$.
-	\item $H = \{0, \pm 2, \pm 4, \pm 6, \dots\}$ de $(\z,+)$.
-	\item $H = \{0, \pm 2, \pm 4, \pm 6, \dots\}$ do grupo $(\q - \{1\},\star)$ onde $\star$ \'e definida como $x \star y = x + y - xy$.
-	\item $H = \{a + b\sqrt{2} \mid a, b \in \q\}$ de $(\real,+)$.
-	\item $H = \{a + b\sqrt{2} \in \real^* \mid a, b \in \q\}$ de $(\real^*,\cdot)$.
-	\item $H = \{a + b\sqrt[3]{2} \mid a, b \in \q\}$ de $(\real,+)$.
-	\item $H = \{a + b\sqrt[3]{2} \in \real^* \mid a, b \in \q\}$ de $(\real^*,\cdot)$.
-\end{enumerate}
-
-\vesp
-
-\questao Determine todos os subgrupos do grupo aditivo $\z_4$.
-
-\vesp
-
-\questao Determine todos os subgrupos de $S_3$.
-
-\vesp
-
-\questao Seja
-\[
-	GL_2(\real) = \left\{A = \begin{pmatrix}
-		x & y\\z & t
-	\end{pmatrix} \mid x, y, z, t \in \real,\ \det(A) \ne 0\right\}.
-\]
-\begin{enumerate}[label=({\alph*})]
-	\item Mostre que $GL_2(\real)$ com a opera\c{c}\~ao de multiplica\c{c}\~ao de matrizes \'e um grupo. Esse grupo \'e abeliano?
-	\item Seja
-	\[
-		H = \left\{ A = \begin{pmatrix}
-			\cos a & \sin a\\ -\sin a & \cos a
-		\end{pmatrix} \mid a \in \real\right\}.
-	\]
-	Mostre que $H$ \'e um subgrupo de $GL_2(\real)$.
-	\item Seja
-	\[
-		K = \left\{ A = \begin{pmatrix}
-			a & b\\ -b & a
-		\end{pmatrix} \mid a, b \in \real \mbox{ e n\~ao nulos simultaneamente}\right\}.
-	\]
-	Mostre que $K$ \'e um subgrupo de $GL_2(\real)$.
-\end{enumerate}
-
-\vesp
-
-\questao Sejam $G$ um grupo e $x$, $y$, $z \in G$. Prove que:
-\begin{enumerate}[label=({\alph*})]
-	\item Se $xy = xz$, ent\~ao $y = z$.
-	\item Se $yx = zx$, ent\~ao $y = z$.
-\end{enumerate}
-
-\vesp
-
-\questao Sejam $H$ e $K$ subgrupos de um grupo $G$ (com nota{\c c}{\~a}o
-multiplicativa).
-\begin{enumerate}[label=({\alph*})]
-\item Mostre que $H\cap K$ tamb{\'e}m {\'e} subgrupo de $G$.
-\item Seja $g\in G$ um elemento fixado. Mostre que o conjunto
-$g^{-1}Hg=\{ g^{-1}xg \mid x\in H \} $ {\'e} um subgrupo de $G$.
-\item Prove que $H\cup K$ {\'e} subgrupo de $G$ se, e somente se,
-$H\subseteq K$ ou $K\subseteq H$.
-%\item Demonstre que $HK=\{hk \mid h\in H, k\in K\}$ {\'e} subgrupo
-%de $G$ se, e somente se, $HK=KH$.
-
-%[\emph{Nota: $HK=KH$ \textbf{n{\~a}o} quer dizer que $hk=kh$,
-%para todo $h\in H, k\in K$; significa que $hk=k_1h_1 \in KH$ e $kh=h_2k_2 \in
-%HK$, para todo $h\in H, k\in K$.}]
-\end{enumerate}
+% \questao Seja $(A, + , \cdot)$ um anel. Mostre que subconjunto n{\~a}o vazio $C\subseteq A$ {\'e} um \textbf{subanel} de $A$ se, e somente se, $x - y \in C$ e $x\cdot y \in C$ para todos $x$, $y \in C$.
 
 % \vesp
 
-% \questao Sabendo que $G = \{e, a, b, c, d, f\}$ {\'e} um grupo multiplicativo isomorfo ao grupo $(\z_6, +)$, pede-se:
-% \begin{enumerate}[label=({\alph*})]
-% \item construir uma tabela de multiplica{\c c}{\~a}o para $G$;
-% \item calcular $a^2$, $b^{-2}$ e $c^{-3}$;
-% \item obter $x \in G$ tal que $dxf = a^{-1}$.
+\questao Ache os elementos invers{\'\i}veis dos seguintes an\'eis:
+\begin{enumerate}[label={\alph*})]
+	\item $(\q, \oplus, \otimes)$ onde $a \oplus b = a + b - 1$ e $a \otimes b = a + b - ab$;
+	\item $(\z \times \z, \star, \odot)$ onde $(a, b) \star (c, d) = (a + c, b + d)$ e $(a, b) \odot (c, d) = (ac, ad + bc)$.
+\end{enumerate}
+
+\vesp
+
+\questao Determinar quais dos seguintes subconjuntos de $\q$ s{\~a}o suban{\'e}is:
+	\begin{multicols}{2}
+		\begin{enumerate}[label=({\alph*})]
+			\item $\z$
+			\item $B = \{x \in \q \mid x \notin \z\}$
+			\item $C = \left\{\dfrac{a}{b} \in \q \mid a \in \z,\ b \in \z,\ 2 |b \right\}$
+			\item $D = \left\{\dfrac{a}{2^n} \in \q \mid a \in \z \mbox{ e } n \in \z \right\}$
+		\end{enumerate}
+	\end{multicols}
+
+\vesp
+
+\questao Quais dos conjuntos abaixo s\~ao suban\'eis de $M_2(\real)$?
+\begin{align*}
+	L_1 &= \left\{\begin{pmatrix}
+		a & 0\\
+		b & 0
+	\end{pmatrix} \mid a, b \in \real\right\}\\
+	L_2 &= \left\{\begin{pmatrix}
+		a & b\\
+		0 & c
+	\end{pmatrix} \mid a, b, c \in \real\right\}\\
+	L_3 &= \left\{\begin{pmatrix}
+		a & 0\\
+		0 & b
+	\end{pmatrix} \mid a, b \in \real\right\}\\
+	L_4 &= \left\{\begin{pmatrix}
+		0 & a\\
+		c & b
+	\end{pmatrix} \mid a, b, c \in \real\right\}
+\end{align*}
+
+\vesp
+
+\questao Determine todos os suban\'eis do anel $(\z_{16}, \oplus, \otimes)$.
+
+\vesp
+
+\questao Verifique se $L = \{ a + b\sqrt{2} \mid a, b \in \q\}$ {\'e} um subanel
+do anel $\mathbb{R}$.
+
+\vesp
+
+\questao Ache todos os ideais do anel $\z_4$, do anel $\z_{12}$ e do anel
+$\z_{16}$.
+
+\vesp
+
+\questao Mostre que a interse{\c c}{\~a}o de quaisquer dois ideais de um anel
+comutativo {\'e} sempre um conjunto n{\~a}o vazio. Mostre que esse conjunto n{\~a}o
+vazio {\'e} um ideal tamb{\'e}m.
+
+\vesp
+
+\questao Ache os ideais primos dos an{\'e}is $\z_2$, $\z_4$, $\z_5$,
+$\z_8$ e $\z_{10}$. O ideal $\{\overline{0}\}$ do anel $\z_4$ {\'e} primo?
+
+\vesp
+
+% \questao Seja $I$ um ideal de $\z$. Mostre que se todos os elementos n{\~a}o
+% nulos de $\z/I$ s{\~a}o invers{\'\i}veis, ent{\~a}o $I$ {\'e} um ideal primo.
+
+% \vesp
+
+% \questao As seguintes afirma{\c c}{\~o}es s{\~a}o verdadeiras ou falsas?
+% \begin{multicols}{2}
+% \begin{enumerate}[label={\alph*})]
+% \item $2\z \sub 4\z$;
+% \item$3\z \sub 7\z$;
+% \item$8\z \sub 2\z$;
+% \item$2\z \cap 8\z = 8\z$;
+% \item$3\z \cap 7\z = 21\z$;
+% \item$n\z \cap m\z = mn\z$;
+% \item$2\z \cup 3\z = 6\z$;
+% \item$2\z \cup 8\z = 2\z$;
+% %\item$n\z \cup m\z = mdc(m,n)\z$.
 % \end{enumerate}
+% \end{multicols}
+
+% \vesp
+
+\questao Seja $p$ um n{\'u}mero primo. Seja $A$ um ideal de $\z$, tal que $p\z
+\sub A$. Mostre que $A = \z$ ou $A = p\z$.
 
 \vesp
 
-\questao Seja $G$ um grupo com nota\c{c}\~ao multiplicativa e $a$ um elemento de $G$. Prove que $N(a) = \{x \in G \mid ax = xa\}$ \'e um subgrupo de $G$.
+\questao Sejam $m$, $n$ inteiros positivos. Mostre que a interse{\c c}{\~a}o $m\z
+\cap n\z$ {\'e} um ideal de $\z$.
 
 \vesp
 
-\questao Seja $G$ um grupo com nota\c{c}\~ao multiplicativa. Considere o subconjunto $Z(G) = \{x \in G \mid xg = gx, \mbox{ para todo } x \in G\}$. Mostre que:
+\questao {\'E} verdadeiro ou falso que a uni{\~a}o de dois ideais de $\z$ {\'e} um ideal
+de $\z$?
+
+\vesp
+
+\questao Sejam $A$ e $B$ dois ideais de $\z$. Definimos a {\bf soma de
+  ideais}
+\[
+A + B = \{ a + b \mid a \in A, b \in B\}
+\]
+quando $a$ varia sobre todos os elementos de $A$ e $b$ varia sobre todos os
+elementos de $B$. Mostre que a soma de dois ideais de $\z$ {\'e} um ideal de $\z$.
+
+\vesp
+
+\questao Considere os an{\'e}is $\z$ e $\z\times \z$. Verifique se s{\~a}o homomorfismos:
 \begin{enumerate}[label=({\alph*})]
-	\item $Z(G)$ \'e um subgrupo de $G$.
-	\item $G$ \'e abeliano se, e somente se, $Z(G) = G$.
+\item $f : \z\times\z \to \z\times\z$ dado por $f(x,y) = (0,y)$
+\item $f : \z\times\z \to \z$ dado por $f(x,y) = y$
+\item $f : \z\to \z\times\z$ dado por $f(x) = (2x,0)$
+\item $f : \z\times\z \to \z\times\z$ dado por $f(x,y) = (-y,-x)$
+\item $f : \z \to \z\times\z$ dado por $f(x) = (0,x)$
 \end{enumerate}
 
 \vesp
 
-\questao Verificar em cada caso se $f$ \'e um homomorfismo de grupos.
+\questao Determine o kernel dos homomorfismos do Exerc{\'i}cio 17.
+
+\vesp
+
+\questao Seja $f: A \to B$ um homomorfismo de an{\'e}is. Mostre que:
 \begin{enumerate}[label=({\alph*})]
-	\item $f: \z \to \z$ dada por $f(x) = kx$, sendo $\z$ o grupo aditivo dos inteiros e $k$ um n\'umero inteiro fixo.
-	\item $f: \real^* \to \real^*$ dada por $f(x) = |x|$ sendo $\real^*$ o grupo multiplicativo dos reais.
-	\item $f: \real \to \real$ dada por $f(x) = x + 1$, onde $\real$ \'e o grupo aditivo dos reais.
-	\item $f: \z \to \z \times \z$ dada por $f(x) = (x, 0)$, onde $\z$ e $\z \times \z$ denotam grupos aditivos.
-	\item $f: \z \times \z \to \z$ dada por $f(x,y) = x$, onde $\z \times \z$ e $\z$ s\~ao grupos aditivos.
-	\item $f: \z \to \real^*_+$ dada por $f(x) = 2^x$, onde $\z$ \'e grupo aditivo e $\real^*_+$ \'e grupo multiplicativo.
+\item Se $C$  {\'e} um subanel de $A$, ent{\~a}o $f(C)$ {\'e} um subanel de $B$.
+\item Se $D$ {\'e} um subanel de $B$, ent{\~a}o $f^{-1}(D)$ {\'e} um subanel de $A$.
+\item Se $I$ {\'e} um ideal de $A$, ent{\~a}o $f(I)$ {\'e} um ideal de $B$.
+\item Se $J$ {\'e} um ideal de $B$, ent{\~a}o $f^{-1}(J)$ {\'e} um ideal de $A$.
 \end{enumerate}
 
 \vesp
 
-\questao Determinar os homomorfismos injetores e os sobrejetores do exerc{\'\i}cio anterior.
+\questao D{\^e} um exemplo de an{\'e}is $A$ e $B$ e um homomorfismo $f : A \to B$ tal que $f(1_A) \ne 1_B$.
 
 \vesp
 
-\questao Determine o n\'ucleo em cada homomorfismo do \textbf{Exerc{\'\i}cio 21}.
+%\questao Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ dois an{\'e}is e $f: A
+%\to B$ um homomorfismo. Definimos o {\it n{\'u}cleo} ou o {\it
+%  kernel} de $f$ como o conjunto
+%  \[
+%  Ker(f) = \{a \in A \mid f(a) = 0_B\}.
+%  \]
+%Mostre que o kernel {\'e} um ideal de $A$.
 
-\vesp
+%\vesp
 
-\questao Seja $f: \z \times \z \to \z \times \z$ definida por $f(x, y) = (x - y, 0)$. Provar que $f$ \'e um homomorfimo do grupo aditivo $\z \times \z$ em si pr\'oprio. Obter $\ker(f)$.
+% \questao Mostre que o kernel de $f$ pode ser considerado como a imagem
+% inversa do subconjunto $\{0_B\}$ pela fun{\c c}{\~a}o $f$.
 
-\vesp
+% {\it Sugest{\~a}o: Seja $f: X \to Y$ uma fun{\c c}{\~a}o}. A imagem inversa {\it
+%   de um subconjunto $U \sub Y$ {\'e} o subconjunto $X$ definido por $f^{-1}(U) = \{x \in X \mid f(x) \in U\}$. }
 
-\questao Seja $G$ um grupo finito com elemento
-neutro $e$ e suponha que $H$ e $K$ s{\~a}o subgrupos de $G$ tais que
-$|H|=p$ e $|K|=q$, onde $p$ e $q$ s{\~a}o primos distintos. Mostre que
-$H\cap K=\{e\}$.
+%\vesp
 
-\vesp
+%\questao Mostre que um homomorfismo do anel $A$ no anel $B$ {\'e} um
+%monomorfismo se, e somente se, $Ker(f) = \{0_A\}$.
 
-\questao Sejam $G$ e $J$ grupos multiplicativos, $f : G \to J$ um homomorfismo de grupos e $H$ um subgrupo de $J$. Mostre que $f^{-1}(H) = \{ x \in G \mid f(x) \in H\}$ {\'e} um subgrupo de $G$.
+%\vesp
 
-\vesp
-
-\questao Seja $(G, *)$ um grupo e $g\in G$ um elemento fixado e $g^{-1}$
-seu inverso. Mostre que a aplica{\c c}{\~a}o $i_g: G\to G$ definida por
-$i_g(x)=g^{-1}*x*g$, para todo $x \in G$, {\'e} um isomorfismo.
-
-\vesp
-
-\questao Sejam $f:G\to H$ e $g:H\to J$ isomorfismos de grupos. Mostre
-que
+\questao Sejam os an{\'e}is $A = \{ a + b\sqrt{-2} \mid a,\ b \in \q\}$ e $B = M_2(\q)$.
 \begin{enumerate}[label=({\alph*})]
-\item $g\circ f$ {\'e} tamb{\'e}m isomorfismo de grupos;
-\item $f^{-1}$ {\'e} isomorfismo de grupos.
+\item Mostre que $f : A \to B$ dada por
+\[
+f(a + b\sqrt{-2}) =
+\begin{pmatrix}
+a & -2b\\
+b & a
+\end{pmatrix}
+\]
+{\'e} um homomorfismo.
+\item $f$ {\'e} um isomorfimo?
 \end{enumerate}
 
-\vesp
-
-
-\questao Prove que um grupo $G$ {\'e} abeliano se, e somente se, $f : G \to G$ definada por $f(x) = x^{-1}$ {\'e} um homomorfismo.
+\questao {\'E} verdadeiro ou falso: $\z$ e $\z_{m}$ para $m > 1$ s{\~a}o an{\'e}is
+isomorfos.
 
 \vesp
 
-\questao Seja $f: G\to H$ um
-homomorfismo de grupos e $K$ um subgrupo de $H$.
-\begin{enumerate}[label=({\alph*})]
-\item Mostre que $f^{-1}(K)$ {\'e} um subgrupo de $G$, onde $f^{-1}(K)$ {\'e} a imagem inversa de $K$.
-\item Mostre que o n{\'u}cleo Ker$(f)$ de $f$ {\'e} um subgrupo de
-$G$  e que Ker$(f)\subset f^{-1}(K)$.
-\end{enumerate}
+\questao Considere os seguintes an{\'e}is: $(\real, +, \cdot)$ e $(\real, \oplus, \odot)$, sendo $a \oplus b = a + b + 1$ e $a \odot b = a + b + ab$. Mostre que $f : \real \to \real$ dado por $f(x) = x + 1$, para todo $x \in \real$, {\'e} um isomorfimos de $(\real, \oplus, \odot)$ em $(\real, +, \cdot)$.
 
 \vesp
 
-\questao Seja $f: G \to J$ um homomorfismo de grupos e $g\in G$ tal que $o(g)=n$.
-\begin{enumerate}[label=({\alph*})]
-\item Mostre que $f(g)$ tem ordem positiva e que a ordem de $f(g)$ divide $n$.
-\item Mostre que se $f$ {\'e} isomorfismo, ent{\~a}o $o(f(g))=n$.
-\end{enumerate}
+\questao Seja $A$ um anel de integridade. Mostre que se $x \in A$ \'e tal que $x^2 = 1$, ent\~ao $x = 1$ ou $x = -1$.
 
+\vesp
+
+\questao Seja $A$ \'e um anel de integridade. Mostre que se $x \in A$ \'e tal que $x ^2 = x$, ent\~ao $x = 0$ ou $x = 1$.
+
+\vesp
+
+\questao Seja $A$ um anel com unidade tal que $x^2 = x$ para todo $x \in A$. Mostre que $A$ \'e um anel de integridade se, e somente se, $A = \{0, 1\}$.
+
+% \questao Mostre que nenhuma aplica{\c c}{\~a}o $f : A \to B$, onde $A = \{ x + y\sqrt{2} \mid x,\ y \in \q\}$ e $B = \{ x + y\sqrt{3} \mid x,\ y \in \q\}$ {\'e} isomorfismo.
+
+% {\it Sugest{\~a}o: Observe que se $f$ fosse um isomorfimo de $A$ em $B$, ent{\~a}o $f(\sqrt{2}) = a + b\sqrt{3}$. Calcule a seguir $f(2) = 2$ a partir de $f(\sqrt{2}) = a + b\sqrt{3}$}
+
+% \vesp
+
+% \questao Seja $I$ um ideal de um anel $A$. Mostre que se $A$ possui unidade, ent{\~a}o $A/I$ tamb{\'e}m possui unidade.
+
+% \vesp
+
+% \questao Suponha que $A$ {\'e} um anel com unidade e $I$ um ideal de $A$. Mostre que $a + I \in A/I$ {\'e} invers{\'\i}vel se, e somente se, existe $r \in A$ de modo que $ar - 1 \in I$.
+
+% \vesp
+
+% \questao D{\^e} um exemplo de um anel de integridade $A$ e de um ideal $I$ em $A$ tal que $A/I$ n{\~a}o {\'e} de integridade.
 
 \end{document}
