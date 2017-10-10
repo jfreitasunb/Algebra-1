@@ -1,73 +1,20 @@
-%!TEX program = xelatex 
-% !TEX encoding = ISO-8859-1
+%!TEX program = xelatex
+%!TEX encoding = ISO-8859-1
 \documentclass[12pt]{article}
 
-\usepackage{amssymb}
-\usepackage{amsmath,amsfonts,amsthm,amstext}
-\usepackage[brazil]{babel}
-%\usepackage[latin1]{inputenc}
-\usepackage{graphicx}
-\graphicspath{{/home/jfreitas/Dropbox/imagens-latex/}{/Users/jfreitas/Dropbox/imagens-latex/}{D:/Dropbox/imagens-latex/}}
-\usepackage{enumitem}
-\usepackage{multicol}
-\usepackage{color}
-\usepackage[all]{xy}
-
-\setlength{\topmargin}{-1.0in}
-\setlength{\oddsidemargin}{0in}
-\setlength{\textheight}{10.1in}
-\setlength{\textwidth}{6.5in}
-\setlength{\baselineskip}{12mm}
-
-\newcounter{exercicios}
-\setcounter{exercicios}{0}
-\newcommand{\questao}{
-\addtocounter{exercicios}{1}
-\noindent{\bf Exerc{\'\i}cio \arabic{exercicios}: }}
-
-\newcommand{\equi}{\Leftrightarrow}
-\newcommand{\bic}{\leftrightarrow}
-\newcommand{\cond}{\rightarrow}
-\newcommand{\impl}{\Rightarrow}
-\newcommand{\nao}{\sim}
-\newcommand{\sub}{\subseteq}
-\newcommand{\e}{\ \wedge\ }
-\newcommand{\ou}{\ \vee\ }
-\newcommand{\vaz}{\emptyset}
-
-\newcommand{\real}{\mathbb{R}}
-\newcommand{\vesp}{\vspace{0.2cm}}
-\newcommand{\z}{\mathbb{Z}}
-\newcommand{\n}{\mathbb{N}}
-\newcommand{\q}{\mathbb{Q}}
-\newtheorem{defin}{Defini{\c c}{\~a}o}
-
-\newcommand{\compcent}[1]{\vcenter{\hbox{$#1\circ$}}}
-\newcommand{\comp}{\mathbin{\mathchoice
-{\compcent\scriptstyle}{\compcent\scriptstyle}
-{\compcent\scriptscriptstyle}{\compcent\scriptscriptstyle}}}
+\include{configuracoes/estrutura_listas}
 
 \begin{document}
-\pagestyle{empty}
 
-\begin{figure}[h]
-        \begin{minipage}[c]{1.7cm}
-        \includegraphics[width=1.7cm]{unb.pdf}
-        \end{minipage}%
-        \hspace{0pt}
-        \begin{minipage}[c]{4in}
-          {Universidade de Bras{\'\i}lia} \\
-          {Departamento de Matem{\'a}tica}
-\end{minipage}
-\end{figure}
-\vspace{-1cm}\hrule
+\input{configuracoes/cabecalho_listas}
 
 \begin{center}
- {\Large\bf {\'A}lgebra 1 - Turma D -- 2$^{o}$/2016} \\
+ {\Large\bf {\'A}lgebra 1 - Turma D -- 2$^{o}$/2017} \\
  \vspace{9pt} {\large\bf $6^{\underline{a}}$ Lista de Exerc{\'\i}cios -- An\'eis}\\
  \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
 \end{center}
 \hrule
+
 
 \begin{center}
 \Large{\bf An{\'e}is}
