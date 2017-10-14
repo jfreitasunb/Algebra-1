@@ -1,0 +1,61 @@
+%!TEX program = xelatex
+%!TEX encoding = ISO-8859-1
+\documentclass[12pt]{article}
+
+\include{configuracoes/estrutura_listas}
+
+\begin{document}
+
+\input{configuracoes/cabecalho_listas}
+
+\begin{center}
+{\Large\bf {\'A}lgebra 1 - Turma D -- 2$^{o}$/2017} \\ \vspace{9pt} {\large\bf
+  $2^{\underline{o}}$ - Teste Módulo 2 - Resolu\c{c}\~ao}\\
+\vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+\end{center}
+\hrule
+
+\vspace{.6cm}
+
+\questao Defina em $\q$ as seguintes operações
+\begin{align*}
+	x \oplus y &= x + y - 1\\
+	x \odot y &= x + y - xy
+\end{align*}
+para todos $x$, $y \in \q$. Mostre que $(\q, \otimes, \odot)$ é um anel. Esse anel é comutativo? Possui unidade?
+
+\noindent\textbf{Solu\c{c}\~ao:}
+\begin{enumerate}
+	\item Sejam $x$, $y$, $z \ in \q$. Temos
+	\begin{align*}
+		(x \oplus y) \oplus z &= (x + y - 1) \oplus z = (x + y - 1) + z + 1 = x + y + z - 2\\
+		x \oplus (y \oplus z) &= x \oplus (y + z - 1) = x + (y + z - 1) - 1 = x + y + z - 2
+	\end{align*}
+	Comparando esses dois resultados vemos que $(x \oplus y) \oplus z = x \ oplus (y \oplus z)$
+\end{enumerate}
+
+\vspace{.5cm}
+
+\questao $f$ é sobrejetora?
+
+\noindent\textbf{Solu\c{c}\~ao:} A função $f$ será sobrejetora se para todo $y \in \real$ existir $x \in \real$ tal que $f(x) = y$. Assim precisamos determinar se a equação $f(x) = y$ tem solução para todo $y \in \real$.
+Temos
+\begin{align*}
+	f(x) &= y\\
+	\dfrac{4x + 3}{3 - x} &= y\\
+	4x + 3 &= y(3 - x)\\
+	4x + 3 &= 3y - yx\\
+	x(4 + y) &= 3y - 3
+\end{align*}
+Mas na última equação só podemos isolar $x$ se $y \ne -4$ e como $-4 \in \real$ isso indica que essa função não será sobrejetora.
+
+Tome então $y = -4$ se existisse $x \in \real - \{3\}$ tal que $f(x) = -4$ teríamos
+\begin{align*}
+	f(x) &= -4\\
+	\dfrac{4x + 3}{3 - x} &= -4\\
+	4x + 3 &= -4(3 - x)\\
+	4x + 3 &= -12 + 4x
+\end{align*}
+e então $3 = -12$, o que é falso. Portanto não existe $x \ in \real - \{3\}$ tal que $f(x) = 4$ e com isso $f$ não é sobrejetora.
+
+\end{document}
