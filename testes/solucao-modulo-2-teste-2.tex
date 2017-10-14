@@ -78,6 +78,13 @@ para todos $x$, $y \in \q$. Mostre que $(\q, \otimes, \odot)$ é um anel. Esse a
 	\end{align*}
 
 	Comparando esses dois últimos resultados vemos que $(x \oplus y)\odot z = (x \odot z) \oplus (y \odot z)$.
+
+	\item Sejam $x$, $y$ e $z \in \q$. Temos
+	\begin{align*}
+		x \odot (y \oplus z) = x \odot (y + z - 1) = x + (y + z - 1) - x(y + z - 1) = x + y + z - xy - xz + x - 1\\
+		(x \odot y) \oplus (x \odot z) = (x + y - xy) \oplus (x + z - xz) = (x + y - xy) + (x + z - xz) - 1 = x + y + z - xy - xz + x - 1
+	\end{align*}
+	Comparando esses dois últimos resultados vemos que $x \odot (y \oplus z) = (x \odot y) \oplus (x \odot z)$.
 \end{enumerate}
 
 \vspace{.5cm}
