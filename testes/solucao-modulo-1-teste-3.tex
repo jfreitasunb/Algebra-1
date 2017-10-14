@@ -1,0 +1,80 @@
+%!TEX program = xelatex
+%!TEX encoding = ISO-8859-1
+\documentclass[12pt]{article}
+
+\include{configuracoes/estrutura_listas}
+
+\begin{document}
+
+\input{configuracoes/cabecalho_listas}
+
+\begin{center}
+{\Large\bf {\'A}lgebra 1 - Turma D -- 2$^{o}$/2017} \\ \vspace{9pt} {\large\bf
+  $3^{\underline{o}}$ Teste - Resolu\c{c}\~ao}\\
+\vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+\end{center}
+\hrule
+
+\vspace{.6cm}
+
+\questao Seja $R \sub \q \times \q$ definido por $xRy$ quando $x - y \in \z$. Mostre que $R$ é uma relação de equivalência sobre $\q$.
+
+\noindent\textbf{Solu\c{c}\~ao:} Temos
+\begin{enumerate}[label={\roman*})]
+	\item $xRx$ pois $x - x = 0 \in \z$.
+	\item Se $xRy$, então $x - y = k$, com $k \in \z$. Assim $y - x = -(x - y) = -k \in \z$. Logo $yRx$.
+	\item Se $xRy$ e $yRz$, então $x - y = k$ e $y - z = l$, com $k$, $l \in \z$. Assim $x - z = (x - y) + (y - z) = k + l \in \z$. Logo $xRz$.
+\end{enumerate}
+
+Portanto $R$ é uma relação de equivalência sobre $\q$.
+
+
+\vspace{.5cm}
+
+\questao Seja $A = \z \times \z^*$, onde $\z^* = \z - \{0\}$. Para $(a,b)$, $(c,d) \in A$ defina
+\[
+	(a,b)R(c,d) \mbox{ quando } ad=bc.
+\]
+
+\begin{enumerate}[label={\alph*})]
+	\item Mostre que $R$ é uma rela{\c c}{\~a}o de equival{\^e}ncia sobre $A$.
+	\item Encontre a classe de equivalência $\overline{(2,1)}$ e exiba 5 elementos.
+\end{enumerate}
+
+\noindent\textbf{Solu\c{c}\~ao:} De fato,
+	\begin{enumerate}[label={\alph*})]
+		\item Primeiro observe que
+		\[
+			R = \{((a,b);(c,d)) \in A \times A \mid ad = bc\}
+		\]
+		Assim um elemento $x \in A = \z\times\z^*$ é da forma $x = (a,b)$.
+		\begin{enumerate}[label={\roman*})]
+			\item Para $(a,b) \in A$, $ab = ab$ logo $(a,b)R(a,b)$.
+			\item Se $(a,b)R(c,d)$, então $ad = bc$. Assim $bc = ad$, isto é, $(c,d)R(a,b)$.
+			\item Se $(a,b)R(c,d)$ e $(c,d)R(e,f)$ então
+			\begin{align}
+				ad &= bc\label{primeira_equacao}\\
+				cf &= de.\label{segunda_equacao}
+			\end{align}
+			Multiplicando a equação \eqref{primeira_equacao} por $f$ obtemos
+			\begin{align}\label{terceira_equacao}
+				adf = bcf.
+			\end{align}
+			Substituindo o valor de $cf$ da equação \eqref{segunda_equacao} na equação \eqref{terceira_equacao} obtemos
+			\begin{align*}
+				adf &= bde\\
+				adf - bde &= 0\\
+				d(af - be) &= 0.
+			\end{align*}
+			Como $d \in \z^*$, $d \ne 0$, logo $af - be = 0$. Assim $af = be$ e com isso $(a,b)R(e,f)$.
+		\end{enumerate}
+
+		Portanto $R$ é uma relação de equivalência sobre $A$.
+
+		\item A classe de equivalência de $\overline{(2,1)}$ é dada por:
+		\begin{align*}
+			\overline{(2,1)} &= \{(x,y) \in A \mid (x,y)R(2,1)\} = \{(x,y) \in A \mid x = 2y\} \\
+			&= \{\cdots; (2,1); (4,2); (-2,-1);(-4,-2);(6,3);\cdots\}.
+		\end{align*}
+	\end{enumerate}
+\end{document}
