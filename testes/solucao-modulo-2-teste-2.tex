@@ -72,19 +72,19 @@ para todos $x$, $y \in \q$. Mostre que $(\q, \otimes, \odot)$ é um anel. Esse a
 	Comparando \eqref{final_associatividade_1} e \eqref{final_associatividade_2} vemos que $(x \odot y) \odot z = x \odot (y \odot z)$.
 
 	\item Sejam $x$, $y$ e $z \in \q$. Temos
-	\begin{align*}
-		(x \oplus y)\odot z &= (x + y - 1) \odot z = (x + y - 1) + z - (x + y - 1)z = x + y + z - xz - yz + z - 1\\
-		(x \odot z) \oplus (y \odot z) = (x + z - xz) \oplus (y + z - yz) = (x + z - xz) + (y + z - yz) - 1 = x + y + z - xz - yz + z - 1
-	\end{align*}
+	\begin{align}
+		(x \oplus y)\odot z &= (x + y - 1) \odot z = (x + y - 1) + z - (x + y - 1)z\nonumber \\ &= x + y + z - xz - yz + z - 1\label{final_distributividade_1}\\
+		(x \odot z) \oplus (y \odot z) &= (x + z - xz) \oplus (y + z - yz)\nonumber \\ &= (x + z - xz) + (y + z - yz) - 1\nonumber \\ &= x + y + z - xz - yz + z - 1\label{final_distributividade_2}
+	\end{align}
 
-	Comparando esses dois últimos resultados vemos que $(x \oplus y)\odot z = (x \odot z) \oplus (y \odot z)$.
+	Comparando \eqref{final_distributividade_1} e \eqref{final_distributividade_2} vemos que $(x \oplus y)\odot z = (x \odot z) \oplus (y \odot z)$.
 
 	\item Sejam $x$, $y$ e $z \in \q$. Temos
-	\begin{align*}
-		x \odot (y \oplus z) = x \odot (y + z - 1) = x + (y + z - 1) - x(y + z - 1) = x + y + z - xy - xz + x - 1\\
-		(x \odot y) \oplus (x \odot z) = (x + y - xy) \oplus (x + z - xz) = (x + y - xy) + (x + z - xz) - 1 = x + y + z - xy - xz + x - 1
-	\end{align*}
-	Comparando esses dois últimos resultados vemos que $x \odot (y \oplus z) = (x \odot y) \oplus (x \odot z)$.
+	\begin{align}
+		x \odot (y \oplus z) &= x \odot (y + z - 1) = x + (y + z - 1) - x(y + z - 1)\nonumber \\ &= x + y + z - xy - xz + x - 1\label{final_distributividade_3}\\
+		(x \odot y) \oplus (x \odot z) &= (x + y - xy) \oplus (x + z - xz)\nonumber \\ & = (x + y - xy) + (x + z - xz) - 1\nonumber \\ &= x + y + z - xy - xz + x - 1\label{final_distributividade_4}
+	\end{align}
+	Comparando \eqref{final_distributividade_3} e \eqref{final_distributividade_4} vemos que $x \odot (y \oplus z) = (x \odot y) \oplus (x \odot z)$.
 \end{enumerate}
 
 Portanto $(\q, \oplus, \odot)$ é um anel.
