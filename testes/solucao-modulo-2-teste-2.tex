@@ -63,6 +63,13 @@ para todos $x$, $y \in \q$. Mostre que $(\q, \otimes, \odot)$ é um anel. Esse a
 		x \oplus y = x \oplus (2 - x) = x + (2 - x) - 1 = 2 = 1
 	\]
 	Logo $y = 2 - x$ é o oposto de $x$ na operação $\oplus$ definida em $\q$.
+
+	\item Sejam $x$, $y$ e $z \in \q$. Temos
+	\begin{align*}
+		(x \odot y) \odot z &= (x + y - xy) \odot z = (x + y - xy) + z - (x + y - xy)z = x + y + z - xy - xz - yz + xyz\\
+		x \odot (y \odot z) &= x \odot (y + z - yz) = x + (y + z - yz) - x(y + z - yz) = x + y + z - xy - xz - yz + xyz
+	\end{align*}
+	Comparando esses dois resultados vemos que $(x \odot y) \odot z = x \odot (y \odot z)$.
 \end{enumerate}
 
 \vspace{.5cm}
