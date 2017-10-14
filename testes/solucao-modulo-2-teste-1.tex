@@ -39,16 +39,25 @@ Logo $x_1 = x_2$. Portanto $f$ é injetora.
 
 \questao $f$ é sobrejetora?
 
-\noindent\textbf{Solu\c{c}\~ao:} Para mostrar a igualdade desses conjuntos precisamos mostrar que:
-\begin{enumerate}[label={\roman*})]
-	\item $A \cup ( B \cap C) \sub (A \cup B) \cap (A \cup C)$
+\noindent\textbf{Solu\c{c}\~ao:} Para $f$ ser sobrejota dever ter que para todo $y \in \real$ é preciso existir $x \in \real$ tal que $f(x) = y$. Assim precisamos determinar se a equação $f(x) = y$ tem solução para todo $y \in \real$.
+Temos
+\begin{align*}
+	f(x) &= y\\
+	\dfrac{4x + 3}{3 - x} &= y\\
+	4x + 3 &= y(3 - x)\\
+	4x + 3 &= 3y - yx\\
+	x(4 + y) &= 3y - 3
+\end{align*}
+Mas na última equação só podemos isolar $x$ se $y \ne -4$ e como $-4 \in \real$ isso indica que essa função não será sobrejetora.
 
-	Seja $x \in A \cup ( B \cap C)$. Ent\~ao $x \in A$ ou $x \in (B \cap C)$. Se $x \in A$, ent\~ao $x \in A \cup B$ e $x \in (A \cup C)$. Assim $x \in (A \cup B) \cap (A \cup C)$. Com isso $A \cup ( B \cap C) \sub (A \cup B) \cap (A \cup C)$. Agora suponha que $x \in (B \cap C)$. Ent\~ao $x \in B$ e $x \in C$. Neste caso $x \in A \cup B$ e $x \in (A \cup C)$. Logo $x \in (A \cup B) \cap (A \cup C)$ e novamente $A \cup ( B \cap C) \sub (A \cup B) \cap (A \cup C)$. Portanto, independente do caso, sempre temos $A \cup ( B \cap C) \sub (A \cup B) \cap (A \cup C)$.
-
-	\item $(A \cup B) \cap (A \cup C) \sub A \cup ( B \cap C)$
-
-	Seja $x \in (A \cup B) \cap (A \cup C)$. Assim $x \in A \cup B$ e $x \in A \cup C$. Daí $x \in A$ ou $x \in B$ e $x \in A$ ou $x \in C$. Se $x \in A$, então $x \in A \cup (B \cap C)$. Logo $(A \cup B) \cap (A \cup C) \sub A \cup ( B \cap C)$. Agora, se $x \notin A$, então $x \in B$ e $x \in C$, isto é, $x \in B \cap C$. Com isso $x \in A \cup (B \cap C)$ e então $(A \cup B) \cap (A \cup C) \sub A \cup ( B \cap C)$. Portanto, independente do caso, $(A \cup B) \cap (A \cup C) \sub A \cup ( B \cap C)$.
-\end{enumerate}
-Com isso provamos que $A \cup ( B \cap C) = (A \cup B) \cap (A \cup C)$, como quer{\'\i}amos.
+Logo $f$ não é sobrejetora pois, por exemplo, para $y = -4$ se existisse $x \in \real - \{3\}$ tal que $f(x) = -4$ teríamos
+\begin{align*}
+	f(x) &= -4\\
+	\dfrac{4x + 3}{3 - x} &= -4\\
+	4x + 3 &= -4(3 - x)\\
+	4x + 3 &= -12 + 4x
+\end{align*}
+e então $3 = -12$, o que é falso.
+Portanto $f$ não é sobrejetora.
 
 \end{document}
