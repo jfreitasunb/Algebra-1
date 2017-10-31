@@ -1,0 +1,528 @@
+%!TEX program = xelatex
+%!TEX encoding = ISO-8859-1
+\documentclass[12pt]{article}
+
+\include{configuracoes/estrutura_listas}
+
+\begin{document}
+
+\input{configuracoes/cabecalho_listas}
+
+\begin{center}
+{\Large\bf {\'A}lgebra 1 - Turma D -- 2$^{o}$/2017} \\ \vspace{9pt} {\large\bf
+  $7^{\underline{a}}$ Lista de Exerc{\'\i}cios -- Grupos}\\
+\vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+\end{center}
+\hrule
+
+\vspace{.6cm}
+\questao Verifique se os seguintes conjuntos com a opera\c{c}\~ao dada \'e ou n\~ao um grupo. Em caso afirmativo, o grupo \'e comutativo?
+\begin{enumerate}[label=({\alph*})]
+	\item $(\z, \star)$, onde $x \star y = x + xy$, para $x$, $y \in \z$;
+	\item $(\z, \star)$, onde $x \star y = x + y + xy$, para $x$, $y \in \z$;
+	\item $(\z, \star)$, onde $x \star y = xy + 2x$, para $x$, $y \in \z$;
+	\item $(\q, \star)$, onde $x \star y = x + xy$, para $x$, $y \in \q$;
+	\item $(\real^*, \star)$, onde $x \star y = \dfrac{x}{y}$, para $x$, $y \in \real$;
+	\item $(\real_+, \star)$, onde $x \star y = \sqrt{x^2 + y^2}$, para $x$, $y \in \real_+$;
+	\item $(\real, \star)$, onde $x \star y = \sqrt[3]{x^3 + y^3}$, para $x$, $y \in \real$.
+	\item $(G, \cdot)$, onde $G = \{x \in \q \mid x > 0\}$ e $\cdot$ \'e a multiplica\c{c}\~ao de n\'umeros racionais.
+	\item $(G, \cdot)$, onde $G = \left\{\dfrac{1 + 2m}{1 + 2n} \mid m, n \in \z\right\}$ e $\cdot$ \'e a multiplica\c{c}\~ao de n\'umeros racionais.
+	\item $(G, +)$, onde $G = \{0, \pm 2, \pm 4, \pm 6, \dots\}$ e $+$ \'e a soma de n\'umeros inteiros.
+	\item $(G, \star)$, onde $G = \{0, \pm 2, \pm 4, \pm 6, \dots\}$ e $\star$ \'e definida como $x \star y = x + y - xy$.
+	\item $(G, +)$, onde $G = \{a + b\sqrt{2} \mid a, b \in \q\}$ e $+$ \'e a soma de n\'umeros reais.
+	\item $(G, \cdot)$, onde $G = \{a + b\sqrt{2} \in \real^* \mid a, b \in \q\}$ e $\cdot$ \'e a multipli\c{c}\~ao de n\'umeros reais.
+	\item $(G, +)$, onde $G = \{a + b\sqrt[3]{2} \mid a, b \in \q\}$ e $+$ \'e a soma de n\'umeros reais.
+	\item $(G, \cdot)$, onde $G = \{a + b\sqrt[3]{2} \in \real^* \mid a, b \in \q\}$ e $\cdot$ \'e a multipli\c{c}\~ao de n\'umeros reais..
+\end{enumerate}
+
+\vesp
+
+\questao Seja
+\[
+	\complex = \{a + bi \mid a, b \in \real\}
+\]
+e $i^2 = -1$. Mostre que:
+\begin{enumerate}[label=({\alph*})]
+	\item $(\complex, +)$ \'e um grupo abeliano, onde
+	\[
+		(a + bi) + (c + di) = (a + c) + (b + d)i 
+	\]
+	para $a + bi$, $c + di \in \complex$.
+	\item Para $\complex^* = \complex - \{0\}$, $(\complex^*, \cdot)$ \'e um grupo abeliano, onde
+	\[
+		(a + bi)\cdot (c + di) = (ac - bd) + (ad + bc)i 
+	\]
+	para $a + bi$, $c + di \in \complex$.
+\end{enumerate}
+
+\vesp
+
+\questao Verifique se o conjunto $\q_{>0}$ dos n{\'u}meros racionais estritamente positivos com a
+ opera{\c c}{\~a}o dada {\'e} ou n{\~a}o um grupo. Justifique sua
+resposta.
+\begin{multicols}{2}
+\begin{enumerate}[label=({\alph*})]
+\item $(\q_{>0},\cdot)$
+\item $(\q_{>0}, +)$
+\end{enumerate}
+\end{multicols}
+
+\vesp
+
+% \questao Quais dos seguintes subconjuntos $G$ de $\z_{13}$ s{\~a}o grupos
+% com a opera{\c c}{\~a}o de multiplica{\c c}{\~a}o?
+% \begin{multicols}{2}
+% \begin{enumerate}[label=({\alph*})]
+% \item $G=\{\overline{1},\overline{12}\}$;
+
+% \item $G=\{\overline{1},\overline{5},\overline{8},\overline{12}\}$;
+
+% \item $G=\{\overline{1},\overline{2},\overline{3},\overline{4}, \overline{5},\overline{6},\overline{7},
+%  \overline{8},\overline{9},\overline{10},\overline{11},\overline{12}\}$
+% \item $G=\{\overline{1}, \overline{3},\overline{5},\overline{7},\overline{9},\overline{11}\}$.
+% \end{enumerate}
+% \end{multicols}
+
+\vesp
+
+\questao Seja $z  = a + bi \in \mathbb{C}$, onde $a$, $b \in \real$. Definimos $|z| = \sqrt{a^2 + b^2}$. Prove que $G=\{z \in \mathbb{C} \mid |z| = 1\}$ {\'e} um grupo
+abeliano com a opera{\c c}{\~a}o de multiplica{\c c}{\~a}o de n{\'u}meros complexos.
+
+\vesp
+
+\questao Mostre que o conjunto $\q[\sqrt{2}]^*=\{ a + b\sqrt{2} \in
+\mathbb{R}^* \mid  a, b \in \q \}$ {\'e} um grupo multiplicativo abeliano.
+
+\vesp
+
+\questao No conjunto $\z \times \z$ considere a opera\c{c}\~ao de soma definida por
+\[
+	(x, y) + (z, t) = (x + z, y + t)
+\]
+para $(x, y)$, $(z, t) \in \z \times \z$. Mostre que $(\z\times\z, +)$ \'e um grupo abeliano.
+
+% \vesp
+
+% \questao Determine $f$, $g \in S_3$ tais que:
+% \begin{enumerate}[label=({\alph*})]
+% 	\item $(f \comp g)^3 \ne f^3\comp g^3$
+% 	\item $(f \comp g)^2 \ne f^2\comp g^2$
+% \end{enumerate}
+
+% \vesp
+
+% \questao Considere o grupo $S_3$:
+% \begin{enumerate}[label=({\alph*})]
+% 	\item Determine todos os elementos $f \in S_3$ tais que $f^2 = Id$ e $f \ne Id$.
+% 	\item Determine todos os elementos $g \in S_3$ tais que $g^3 = Id$ e $g \ne Id$.
+% \end{enumerate}
+
+% \vesp
+
+% \questao Seja $V = \{1, f, g, h\}$ o seguinte subconjunto do grupo $S_4$:
+% \begin{align*}
+% 	1 = \begin{pmatrix}
+% 		1 & 2 & 3 & 4\\
+% 		1 & 2 & 3 & 4
+% 	\end{pmatrix}; \quad f = \begin{pmatrix}
+% 		1 & 2 & 3 & 4\\
+% 		2 & 1 & 4 & 3
+% 	\end{pmatrix}\\
+% 	g = \begin{pmatrix}
+% 		1 & 2 & 3 & 4\\
+% 		3 & 4 & 1 & 2
+% 	\end{pmatrix}; \quad h = \begin{pmatrix}
+% 		1 & 2 & 3 & 4\\
+% 		4 & 3 & 2 & 1
+% 	\end{pmatrix}.
+% \end{align*}
+% \begin{enumerate}[label=({\alph*})]
+% 	\item Prove que $(V, \comp)$ \'e um grupo contendo 4 elementos, onde $\comp$ \'e a opera\c{c}\~ao de $S_4$.
+% 	\item Prove que $(V, \comp)$ \'e um grupo abeliano.
+% \end{enumerate}
+
+% \vesp
+
+% \questao Considere o grupo $S_7$ e sejam
+% \begin{align*}
+% 	1 &= \begin{pmatrix}
+% 		1 & 2 & 3 & 4 & 5 & 6 & 7\\
+% 		1 & 2 & 3 & 4 & 5 & 6 & 7
+% 	\end{pmatrix}\\
+% 	\sigma &= \begin{pmatrix}
+% 	 		1 & 2 & 3 & 4 & 5 & 6 & 7\\
+% 	 		3 & 4 & 2 & 6 & 7 & 5 & 1
+% 	 	\end{pmatrix}.\\
+% 	\beta &= \begin{pmatrix}
+% 	 		1 & 2 & 3 & 4 & 5 & 6 & 7\\
+% 	 		3 & 1 & 2 & 6 & 7 & 4 & 5
+% 	 	\end{pmatrix}.
+% \end{align*}.
+% \begin{enumerate}[label=({\alph*})]
+% 	\item Encontre o menor $l \ge 0$ tal que $\sigma^l = 1$.
+% 	\item Encontre $\delta \in S_7$ tal que $\sigma\comp\delta = 1$.
+% 	\item Encontre o menor $k \ge 0$ tal que $\beta^k = 1$.
+% 	\item Encontre $\gamma \in S_7$ tal que $\gamma\comp\beta = 1$.
+% \end{enumerate}
+
+% \vesp
+
+% \questao Seja $(G,*)$ um grupo com elemento neutro $e$. Para $x\in
+% G$, considere a nota{\c c}{\~a}o $x^n=x*x*\cdots *x$ ($n$ vezes).
+% \begin{enumerate}[label=({\alph*})]
+% \item Seja $G$ um grupo tendo $e$ como elemento neutro. Prove que se
+% $x^2=e$, para todo $x\in G$, ent{\~a}o $G$ {\'e} um grupo abeliano.
+% \item Mostre que se $x\in G$ {\'e} tal que $x^2=x$, ent{\~a}o $x$ {\'e} o elemento neutro.
+% \end{enumerate}
+
+% \vesp
+
+% \questao Sejam $G$ um grupo e $x$, $y$, $z \in G$. Prove que:
+% \begin{enumerate}[label=({\alph*})]
+% 	\item Se $xy = xz$, ent\~ao $y = z$.
+% 	\item Se $yx = zx$, ent\~ao $y = z$.
+% \end{enumerate}
+
+% \vesp
+
+% \questao Seja $(G, *)$ um grupo e $g\in G$ um elemento fixado e $g^{-1}$
+% seu inverso. Mostre que a aplica{\c c}{\~a}o $i_g: G\to G$ definida por
+% $i_g(x)=g^{-1}*x*g$, para todo $x \in G$, {\'e} um isomorfismo.
+
+% \vesp
+
+% \questao Sejam $H$ e $K$ subgrupos de um grupo $G$ (com nota{\c c}{\~a}o
+% multiplicativa).
+% \begin{enumerate}[label=({\alph*})]
+% \item Mostre que $H\cap K$ tamb{\'e}m {\'e} subgrupo de $G$.
+% \item Seja $g\in G$ um elemento fixado. Mostre que o conjunto
+% $g^{-1}Hg=\{ g^{-1}xg \mid x\in H \} $ {\'e} um subgrupo de $G$.
+% \item Prove que $H\cup K$ {\'e} subgrupo de $G$ se, e somente se,
+% $H\subseteq K$ ou $K\subseteq H$.
+% %\item Demonstre que $HK=\{hk \mid h\in H, k\in K\}$ {\'e} subgrupo
+% %de $G$ se, e somente se, $HK=KH$.
+
+% %[\emph{Nota: $HK=KH$ \textbf{n{\~a}o} quer dizer que $hk=kh$,
+% %para todo $h\in H, k\in K$; significa que $hk=k_1h_1 \in KH$ e $kh=h_2k_2 \in
+% %HK$, para todo $h\in H, k\in K$.}]
+% \end{enumerate}
+
+% \vesp
+
+%\questao Sabendo que $G = \{e, a, b, c, d, f\}$ {\'e} um grupo multiplicativo isomorfo ao grupo $(\z_6, +)$, pede-se:
+%\begin{enumerate}[label=({\alph*})]
+%\item construir uma tabela de multiplica{\c c}{\~a}o para $G$;
+%\item calcular $a^2$, $b^{-2}$ e $c^{-3}$;
+%\item obter $x \in G$ tal que $dxf = a^{-1}$.
+%\end{enumerate}
+
+%\vesp
+
+% \questao Sejam $f:G\to H$ e $g:H\to J$ isomorfismos de grupos. Mostre
+% que
+% \begin{enumerate}[label=({\alph*})]
+% \item $g\circ f$ {\'e} tamb{\'e}m isomorfismo de grupos;
+% \item $f^{-1}$ {\'e} isomorfismo de grupos.
+% \end{enumerate}
+
+% \vesp
+
+% \questao Sejam $G$ e $J$ grupos multiplicativos, $f : G \to J$ um homomorfismo de grupos e $H$ um subgrupo de $J$. Mostre que $f^{-1}(H) = \{ x \in G \mid f(x) \in H\}$ {\'e} um subgrupo de $G$.
+
+% \vesp
+
+% \questao Prove que um grupo $G$ {\'e} abeliano se, e somente se, $f : G \to G$ definada por $f(x) = x^{-1}$ {\'e} um homomorfismo.
+
+% \vesp
+
+% \questao Seja $f: G\to H$ um
+% homomorfismo sobrejetivo de grupos e $K$ um subgrupo de $H$.
+% \begin{enumerate}[label=({\alph*})]
+% \item Mostre que $f^{-1}(K)$ {\'e} um subgrupo de $G$, onde $f^{-1}(K)$ {\'e} a imagem inversa de $K$.
+% \item Mostre que o n{\'u}cleo Ker$(f)$ de $f$ {\'e} um subgrupo de
+% $G$  e que Ker$(f)\subset f^{-1}(K)$.
+% %\item Seja $N$ um subgrupo de $G$. Mostre que $\mbox{Ker}(f)\cdot
+% %N = f^{-1}(f(N))$, onde $f^{-1}(f(N))$ {\'e} a imagem inversa de $f(N)$.
+
+% %[Lembre que $\mbox{Ker}(f)\cdot
+% %N=\{xy ~|~ x\in \mbox{Ker}(f), y\in N\}$ e mostre que $\mbox{Ker}(f)\cdot
+% %N \subseteq f^{-1}(f(N))$. Para ver que $f^{-1}(f(N))\subseteq \mbox{Ker}(f)\cdot
+% %N$, tome $x\in f^{-1}(f(N))$. Ent{\~a}o $f(x)\in f(N)$, ou seja, $f(x)=f(y)$, para algum $y\in N$. Assim,
+% %$f(xy^{-1})=e$ e portanto $xy^{-1}=z \in \mbox{Ker}(f)$. Ent{\~a}o $x=zy \in \mbox{Ker}(f)\cdot
+% %N$.]
+% \end{enumerate}
+
+% \vesp
+
+% \questao Seja $f: G \to J$ um homomorfismo de grupos e $g\in G$ tal que $o(g)=n$.
+% \begin{enumerate}[label=({\alph*})]
+% \item Mostre que $f(g)$ tem ordem positiva e que a ordem de $f(g)$ divide $n$.
+% \item Mostre que se $f$ {\'e} isomorfismo, ent{\~a}o $o(f(g))=n$.
+% \end{enumerate}
+
+% \vesp
+
+% \questao Seja $G$ um grupo finito com elemento
+% neutro $e$ e suponha que $H$ e $K$ s{\~a}o subgrupos de $G$ tais que
+% $|H|=p$ e $|K|=q$, onde $p$ e $q$ s{\~a}o primos distintos. Mostre que
+% $H\cap K=\{e\}$.
+
+% \vesp
+
+\questao Quais dos seguintes subconjuntos $G$ de $\z_{13}$ s{\~a}o grupos
+com a opera{\c c}{\~a}o de multiplica{\c c}{\~a}o?
+\begin{multicols}{2}
+\begin{enumerate}[label=({\alph*})]
+\item $G=\{\overline{1},\overline{12}\}$;
+
+\item $G=\{\overline{1},\overline{5},\overline{8},\overline{12}\}$;
+
+\item $G=\{\overline{1},\overline{2},\overline{3},\overline{4}, \overline{5},\overline{6},\overline{7},
+ \overline{8},\overline{9},\overline{10},\overline{11},\overline{12}\}$
+\item $G=\{\overline{1}, \overline{3},\overline{5},\overline{7},\overline{9},\overline{11}\}$.
+\end{enumerate}
+\end{multicols}
+
+\vesp
+
+\questao Determine $f$, $g \in S_3$ tais que:
+\begin{enumerate}[label=({\alph*})]
+	\item $(f \comp g)^3 \ne f^3\comp g^3$
+	\item $(f \comp g)^2 \ne f^2\comp g^2$
+\end{enumerate}
+
+\vesp
+
+\questao Considere o grupo $S_3$:
+\begin{enumerate}[label=({\alph*})]
+	\item Determine todos os elementos $f \in S_3$ tais que $f^2 = Id$ e $f \ne Id$.
+	\item Determine todos os elementos $g \in S_3$ tais que $g^3 = Id$ e $g \ne Id$.
+\end{enumerate}
+
+\vesp
+
+\questao Seja $V = \{1, f, g, h\}$ o seguinte subconjunto do grupo $S_4$:
+\begin{align*}
+	1 = \begin{pmatrix}
+		1 & 2 & 3 & 4\\
+		1 & 2 & 3 & 4
+	\end{pmatrix}; \quad f = \begin{pmatrix}
+		1 & 2 & 3 & 4\\
+		2 & 1 & 4 & 3
+	\end{pmatrix}\\
+	g = \begin{pmatrix}
+		1 & 2 & 3 & 4\\
+		3 & 4 & 1 & 2
+	\end{pmatrix}; \quad h = \begin{pmatrix}
+		1 & 2 & 3 & 4\\
+		4 & 3 & 2 & 1
+	\end{pmatrix}.
+\end{align*}
+\begin{enumerate}[label=({\alph*})]
+	\item Prove que $(V, \comp)$ \'e um grupo contendo 4 elementos, onde $\comp$ \'e a opera\c{c}\~ao de $S_4$.
+	\item Prove que $(V, \comp)$ \'e um grupo abeliano.
+\end{enumerate}
+
+\vesp
+
+\questao Considere o grupo $S_7$ e sejam
+\begin{align*}
+	1 &= \begin{pmatrix}
+		1 & 2 & 3 & 4 & 5 & 6 & 7\\
+		1 & 2 & 3 & 4 & 5 & 6 & 7
+	\end{pmatrix}\\
+	\sigma &= \begin{pmatrix}
+	 		1 & 2 & 3 & 4 & 5 & 6 & 7\\
+	 		3 & 4 & 2 & 6 & 7 & 5 & 1
+	 	\end{pmatrix}.\\
+	\beta &= \begin{pmatrix}
+	 		1 & 2 & 3 & 4 & 5 & 6 & 7\\
+	 		3 & 1 & 2 & 6 & 7 & 4 & 5
+	 	\end{pmatrix}.
+\end{align*}.
+\begin{enumerate}[label=({\alph*})]
+	\item Encontre o menor $l \ge 0$ tal que $\sigma^l = 1$.
+	\item Encontre $\delta \in S_7$ tal que $\sigma\comp\delta = 1$.
+	\item Encontre o menor $k \ge 0$ tal que $\beta^k = 1$.
+	\item Encontre $\gamma \in S_7$ tal que $\gamma\comp\beta = 1$.
+\end{enumerate}
+
+\vesp
+
+\questao Seja $(G,*)$ um grupo com elemento neutro $e$. Para $x\in
+G$, considere a nota{\c c}{\~a}o $x^n=x*x*\cdots *x$ ($n$ vezes).
+\begin{enumerate}[label=({\alph*})]
+\item Seja $G$ um grupo tendo $e$ como elemento neutro. Prove que se
+$x^2=e$, para todo $x\in G$, ent{\~a}o $G$ {\'e} um grupo abeliano.
+\item Mostre que se $x\in G$ {\'e} tal que $x^2=x$, ent{\~a}o $x$ {\'e} o elemento neutro.
+\end{enumerate}
+
+\vesp
+
+\questao Verifique se s\~ao subgrupos:
+\begin{enumerate}[label=({\alph*})]
+	\item $H = \{x \in \q \mid x > 0\}$ de $(\q^*,\cdot)$.
+	\item $H = \left\{\dfrac{1 + 2m}{1 + 2n} \mid m, n \in \z\right\}$ de $(\q^*,\cdot)$.
+	\item $H = \{\cos\theta + i\sin\theta \mid \theta \in \q\}$ de $(\complex^*,\cdot)$.
+	\item $H = \{0, \pm 2, \pm 4, \pm 6, \dots\}$ de $(\z,+)$.
+	\item $H = \{0, \pm 2, \pm 4, \pm 6, \dots\}$ do grupo $(\q - \{1\},\star)$ onde $\star$ \'e definida como $x \star y = x + y - xy$.
+	\item $H = \{a + b\sqrt{2} \mid a, b \in \q\}$ de $(\real,+)$.
+	\item $H = \{a + b\sqrt{2} \in \real^* \mid a, b \in \q\}$ de $(\real^*,\cdot)$.
+	\item $H = \{a + b\sqrt[3]{2} \mid a, b \in \q\}$ de $(\real,+)$.
+	\item $H = \{a + b\sqrt[3]{2} \in \real^* \mid a, b \in \q\}$ de $(\real^*,\cdot)$.
+\end{enumerate}
+
+\vesp
+
+\questao Determine todos os subgrupos do grupo aditivo $\z_4$.
+
+\vesp
+
+\questao Determine todos os subgrupos de $S_3$.
+
+\vesp
+
+\questao Seja
+\[
+	GL_2(\real) = \left\{A = \begin{pmatrix}
+		x & y\\z & t
+	\end{pmatrix} \mid x, y, z, t \in \real,\ \det(A) \ne 0\right\}.
+\]
+\begin{enumerate}[label=({\alph*})]
+	\item Mostre que $GL_2(\real)$ com a opera\c{c}\~ao de multiplica\c{c}\~ao de matrizes \'e um grupo. Esse grupo \'e abeliano?
+	\item Seja
+	\[
+		H = \left\{ A = \begin{pmatrix}
+			\cos a & \sin a\\ -\sin a & \cos a
+		\end{pmatrix} \mid a \in \real\right\}.
+	\]
+	Mostre que $H$ \'e um subgrupo de $GL_2(\real)$.
+	\item Seja
+	\[
+		K = \left\{ A = \begin{pmatrix}
+			a & b\\ -b & a
+		\end{pmatrix} \mid a, b \in \real \mbox{ e n\~ao nulos simultaneamente}\right\}.
+	\]
+	Mostre que $K$ \'e um subgrupo de $GL_2(\real)$.
+\end{enumerate}
+
+\vesp
+
+\questao Sejam $G$ um grupo e $x$, $y$, $z \in G$. Prove que:
+\begin{enumerate}[label=({\alph*})]
+	\item Se $xy = xz$, ent\~ao $y = z$.
+	\item Se $yx = zx$, ent\~ao $y = z$.
+\end{enumerate}
+
+\vesp
+
+\questao Sejam $H$ e $K$ subgrupos de um grupo $G$ (com nota{\c c}{\~a}o
+multiplicativa).
+\begin{enumerate}[label=({\alph*})]
+\item Mostre que $H\cap K$ tamb{\'e}m {\'e} subgrupo de $G$.
+\item Seja $g\in G$ um elemento fixado. Mostre que o conjunto
+$g^{-1}Hg=\{ g^{-1}xg \mid x\in H \} $ {\'e} um subgrupo de $G$.
+\item Prove que $H\cup K$ {\'e} subgrupo de $G$ se, e somente se,
+$H\subseteq K$ ou $K\subseteq H$.
+%\item Demonstre que $HK=\{hk \mid h\in H, k\in K\}$ {\'e} subgrupo
+%de $G$ se, e somente se, $HK=KH$.
+
+%[\emph{Nota: $HK=KH$ \textbf{n{\~a}o} quer dizer que $hk=kh$,
+%para todo $h\in H, k\in K$; significa que $hk=k_1h_1 \in KH$ e $kh=h_2k_2 \in
+%HK$, para todo $h\in H, k\in K$.}]
+\end{enumerate}
+
+% \vesp
+
+% \questao Sabendo que $G = \{e, a, b, c, d, f\}$ {\'e} um grupo multiplicativo isomorfo ao grupo $(\z_6, +)$, pede-se:
+% \begin{enumerate}[label=({\alph*})]
+% \item construir uma tabela de multiplica{\c c}{\~a}o para $G$;
+% \item calcular $a^2$, $b^{-2}$ e $c^{-3}$;
+% \item obter $x \in G$ tal que $dxf = a^{-1}$.
+% \end{enumerate}
+
+\vesp
+
+\questao Seja $G$ um grupo com nota\c{c}\~ao multiplicativa e $a$ um elemento de $G$. Prove que $N(a) = \{x \in G \mid ax = xa\}$ \'e um subgrupo de $G$.
+
+\vesp
+
+\questao Seja $G$ um grupo com nota\c{c}\~ao multiplicativa. Considere o subconjunto $Z(G) = \{x \in G \mid xg = gx, \mbox{ para todo } x \in G\}$. Mostre que:
+\begin{enumerate}[label=({\alph*})]
+	\item $Z(G)$ \'e um subgrupo de $G$.
+	\item $G$ \'e abeliano se, e somente se, $Z(G) = G$.
+\end{enumerate}
+
+\vesp
+
+\questao Verificar em cada caso se $f$ \'e um homomorfismo de grupos.
+\begin{enumerate}[label=({\alph*})]
+	\item $f: \z \to \z$ dada por $f(x) = kx$, sendo $\z$ o grupo aditivo dos inteiros e $k$ um n\'umero inteiro fixo.
+	\item $f: \real^* \to \real^*$ dada por $f(x) = |x|$ sendo $\real^*$ o grupo multiplicativo dos reais.
+	\item $f: \real \to \real$ dada por $f(x) = x + 1$, onde $\real$ \'e o grupo aditivo dos reais.
+	\item $f: \z \to \z \times \z$ dada por $f(x) = (x, 0)$, onde $\z$ e $\z \times \z$ denotam grupos aditivos.
+	\item $f: \z \times \z \to \z$ dada por $f(x,y) = x$, onde $\z \times \z$ e $\z$ s\~ao grupos aditivos.
+	\item $f: \z \to \real^*_+$ dada por $f(x) = 2^x$, onde $\z$ \'e grupo aditivo e $\real^*_+$ \'e grupo multiplicativo.
+\end{enumerate}
+
+\vesp
+
+\questao Determinar os homomorfismos injetores e os sobrejetores do exerc{\'\i}cio anterior.
+
+\vesp
+
+\questao Determine o n\'ucleo em cada homomorfismo do \textbf{Exerc{\'\i}cio 21}.
+
+\vesp
+
+\questao Seja $f: \z \times \z \to \z \times \z$ definida por $f(x, y) = (x - y, 0)$. Provar que $f$ \'e um homomorfimo do grupo aditivo $\z \times \z$ em si pr\'oprio. Obter $\ker(f)$.
+
+\vesp
+
+\questao Seja $G$ um grupo finito com elemento
+neutro $e$ e suponha que $H$ e $K$ s{\~a}o subgrupos de $G$ tais que
+$|H|=p$ e $|K|=q$, onde $p$ e $q$ s{\~a}o primos distintos. Mostre que
+$H\cap K=\{e\}$.
+
+\vesp
+
+\questao Sejam $G$ e $J$ grupos multiplicativos, $f : G \to J$ um homomorfismo de grupos e $H$ um subgrupo de $J$. Mostre que $f^{-1}(H) = \{ x \in G \mid f(x) \in H\}$ {\'e} um subgrupo de $G$.
+
+\vesp
+
+\questao Seja $(G, *)$ um grupo e $g\in G$ um elemento fixado e $g^{-1}$
+seu inverso. Mostre que a aplica{\c c}{\~a}o $i_g: G\to G$ definida por
+$i_g(x)=g^{-1}*x*g$, para todo $x \in G$, {\'e} um isomorfismo.
+
+\vesp
+
+\questao Sejam $f:G\to H$ e $g:H\to J$ isomorfismos de grupos. Mostre
+que
+\begin{enumerate}[label=({\alph*})]
+\item $g\circ f$ {\'e} tamb{\'e}m isomorfismo de grupos;
+\item $f^{-1}$ {\'e} isomorfismo de grupos.
+\end{enumerate}
+
+\vesp
+
+
+\questao Prove que um grupo $G$ {\'e} abeliano se, e somente se, $f : G \to G$ definada por $f(x) = x^{-1}$ {\'e} um homomorfismo.
+
+\vesp
+
+\questao Seja $f: G\to H$ um
+homomorfismo de grupos e $K$ um subgrupo de $H$.
+\begin{enumerate}[label=({\alph*})]
+\item Mostre que $f^{-1}(K)$ {\'e} um subgrupo de $G$, onde $f^{-1}(K)$ {\'e} a imagem inversa de $K$.
+\item Mostre que o n{\'u}cleo Ker$(f)$ de $f$ {\'e} um subgrupo de
+$G$  e que Ker$(f)\subset f^{-1}(K)$.
+\end{enumerate}
+
+\vesp
+
+\questao Seja $f: G \to J$ um homomorfismo de grupos e $g\in G$ tal que $o(g)=n$.
+\begin{enumerate}[label=({\alph*})]
+\item Mostre que $f(g)$ tem ordem positiva e que a ordem de $f(g)$ divide $n$.
+\item Mostre que se $f$ {\'e} isomorfismo, ent{\~a}o $o(f(g))=n$.
+\end{enumerate}
+\end{document}
