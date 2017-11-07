@@ -96,16 +96,28 @@ Nas considera\c{c}\~oes que faremos a seguir uma opera\c{c}\~ao bin\'aria $f$ so
 	\end{enumerate}
 \end{exemplos}
 
-\section{Propriedades Imediatas de um grupo}
 
-Seja $(G,*)$ um grupo. {\'E} f{\'a}cil ver que
-\begin{enumerate}
-\item O elemento neutro {\'e} {\'u}nico
-\item Existe um {\'u}nico inverso para cada $x\in G$
-\item Para todos $x,y\in G,(x*y)^{-1}=y^{-1}*x^{-1}$. Por indu{\c c}{\~a}o, $x_{1},x_{2},...,x_{n-1},x_{n}\in G$, \[(x_{1}*x_{2}*...*x_{n-1}*x_{n})^{-1}\] \[=x^{-1}_{n}*x^{-1}_{n-1}*...*x^{-1}_{2}*x^{-1}_{1}\]
-\item Para todo $x\in G, (x^{-1})^{-1}=x$
+\begin{proposicao}
+	Seja $(G,*)$ um grupo. Então:
+	\begin{enumerate}[label={\roman*})]
+		\item O elemento neutro de $G$ {\'e} {\'u}nico.
 
-\end{enumerate}
+		\item Existe um {\'u}nico inverso para cada $x \in G$.
+
+		\item Para todos $x$, $y \in G$,
+		\[
+			(x*y)^{-1} = y^{-1}*x^{-1}
+		\]
+		Por indu{\c c}{\~a}o, $x_1$, $x_2$, \dots ,$x_{n-1}$, $x_n \in G$,
+		\[
+			(x_1*x_2*\cdots *x_{n-1}*x_{n})^{-1} = x^{-1}_{n}*x^{-1}_{n-1}*\cdots *x^{-1}_2*x^{-1}_1
+		\]
+		\item Para todo $x \in G$, $(x^{-1})^{-1} = x$.
+	\end{enumerate}
+
+\end{proposicao}
+
+
 
 \section{Ordem de um Grupo}
 \begin{definicao}[Ordem de um grupo]
