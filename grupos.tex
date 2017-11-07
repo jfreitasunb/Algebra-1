@@ -4,20 +4,33 @@
 %%Ap\'os executar pdflatex arquivo
 \chapter{Grupos}
 
-\section{Defini{\c c}{\~a}o}
-
 \begin{definicao}
    Seja $A$ um conjunto n\~ao vazio. Toda fun\c{c}\~ao $f : A \times A \to A$ \'e chamada de uma \textbf{opera\c{c}\~ao bin\'aria} sobre $A$.
 \end{definicao}
 
-Nas considera\c{c}\~oes que faremos a seguir uma opere\c{c}\~ao bin\'aria $f$ sobre $A$ associa a cada par ordenado $(x, y) \in A \times A$ um elemento $f(x, y) \in A$ ser\'a denotada simplesmente por $*$. Assim escreveremos $f(x, y) = x*y$. Por exemplo a opera\c{c}\~ao $* : \n \times \n \to \n$ tal que $x*y = x^y$ est\'a bem definida pois $x^y \in \n$ sempre que $x$, $y \in \n$. Observe que esta opera\c{c}\~ao n\~ao pode ser definida em $\z$ pois por exemplo $2^{-1} \notin \z$. Tamb\'em n\~ao pode ser definida em $\rac$ pois $2^{1/2} \notin \rac$.
+Nas considera\c{c}\~oes que faremos a seguir uma opera\c{c}\~ao bin\'aria $f$ sobre $A$ que associa a cada par ordenado $(x, y) \in A \times A$ um elemento $f(x, y) \in A$ ser\'a denotada simplesmente por $*$. Assim escreveremos $f(x, y) = x*y$. Por exemplo a opera\c{c}\~ao $* : \n \times \n \to \n$ tal que $x*y = x^y$ est\'a bem definida pois $x^y \in \n$ sempre que $x$, $y \in \n$. Observe que esta opera\c{c}\~ao n\~ao pode ser definida em $\z$ pois por exemplo $2^{-1} \notin \z$. Tamb\'em n\~ao pode ser definida em $\rac$ pois $2^{1/2} \notin \rac$.
 
-\begin{definicao}[Grupo] Um grupo $G$ {\'e} um conjunto n{\~a}o vazio munido de uma opera{\c c}{\~a}o bin{\'a}ria $*$ tal que:
-\begin{enumerate}
-\item Para todo $x$, $y$, $z\in G$ temos $(x*y)*z=x*(y*z)$. (Associatividade)
-\item Existe $e\in G$ tal que $x*e = e*x = x$ para todo $x\in G$. Tal elemento $e$ {\'e} chamado de \textbf{elemento neutro} ou \textbf{unidade}.
-\item Para cada $x\in G$, existe $x^{-1}\in G$ tal que $x*x^{-1} = x^{-1}*x = e$. O elemento $x^{-1}$ {\'e} chamado de \textbf{inverso} ou \textbf{oposto}\footnote{$x^{-1}\neq\displaystyle\frac{1}{x}$} de $x$.
-\end{enumerate}
+\begin{definicao}
+	Seja $G$ um conjunto n{\~a}o vazio no qual está definida uma opera{\c c}{\~a}o bin{\'a}ria $*$ tal que:
+	\begin{enumerate}
+		\item Para todos $x$, $y$, $z\in G$:
+		\[
+			(x*y)*z=x*(y*z)
+		\]
+		
+		\item Existe $e \in G$ tal que
+		\[
+			x*e = x = e*x
+		\]
+		para todo $x \in G$. Tal elemento $e$ {\'e} chamado de \textbf{elemento neutro} ou \textbf{unidade} de $G$.
+
+		\item Para cada $x \in G$, existe $y \in G$ tal que
+		\[
+			x*y = e = y*x
+		\]
+		O elemento $y$ {\'e} chamado de \textbf{inverso} ou \textbf{oposto} de $x$.
+	\end{enumerate}
+	Nesse caso dizemos que o par $(G, *)$ é um \textbf{grupo}.
 \end{definicao}
 
 Denotamos um grupo $G$, cuja opera{\c c}{\~a}o bin{\'a}ria {\'e} $*$, por $(G,*)$. Quando $*$ {\'e} a soma, dizemos que $(G,*)$ {\'e} um grupo aditivo. Se $*$ {\'e} a multiplica{\c c}{\~a}o, dizemos que $(G,*)$ {\'e} um grupo multiplicativo.\\
