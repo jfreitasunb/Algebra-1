@@ -122,56 +122,54 @@ Nas considera\c{c}\~oes que faremos a seguir uma opera\c{c}\~ao bin\'aria $f$ so
 	Seja $(G,*)$ um grupo. Se $G$ {\'e} um conjunto com uma quantidade finita de elementos, dizemos que $G$ {\'e} um \textbf{grupo finito}. Denotamos por $|G|$ o n{\'u}mero de elementos de $G$ e que ser{\'a} chamado de \textbf{ordem} de $G$ ou \textbf{cardinalidade} de $G$. Quando o conjunto $G$ n{\~a}o {\'e} finito, dizemos que $G$ {\'e} um \textbf{grupo infinito}.
 \end{definicao}
 
-Exemplos:
-\begin{enumerate}
-\item $(\z_m, +)$ {\'e} um grupo finito para todo $m>1$.
-\item $(\z, +)$ {\'e} um grupo infinito.
-\end{enumerate}
+\begin{exemplos}
+	\begin{enumerate}[label={\arabic*})]
+		\item $(\z_m, +)$ {\'e} um grupo finito para todo $m>1$.
+		\item $(\z, +)$ {\'e} um grupo infinito.
+	\end{enumerate}	
+\end{exemplos}
 
-\section{Subgrupo}
-\subsubsection{Defini{\c c}{\~a}o}
-
-\begin{definicao}[Subgrupo]
-Seja $(G,*)$ um grupo. Um subconjunto n{\~a}o vazio $H\subseteq G$ {\'e} um subgrupo se, e somente se, $(H,*)$ {\'e} um grupo.
+\begin{definicao}
+	Seja $(G,*)$ um grupo. Um subconjunto n{\~a}o vazio $H\sub G$ {\'e} chamado de \textbf{subgrupo} de $G$ se, e somente se, $(H,*)$ {\'e} um grupo.
 \end{definicao}
 
-\subsubsection{Propriedades}
 \begin{proposicao}
-Um subconjunto n{\~a}o vazio $H\subseteq G$ {\'e} um subgrupo de $G$ se, e somente se
-\begin{enumerate}
-\item $x^{-1}\in H,\forall x\in H$
-\item $x*y\in H,\forall x,y\in H$
-\end{enumerate}
+	Seja $G$ um grupo. Um subconjunto n{\~a}o vazio $H\subseteq G$ {\'e} um subgrupo de $G$ se, e somente se
+	\begin{enumerate}
+		\item\label{subgrupo_condicao_1} $x^{-1}\in H$, para todo $x \in H$;
+		\item\label{subgrupo_condicao_2} $x*y\in H$, para todos $x$, $y \in H$.
+	\end{enumerate}
 \end{proposicao}
+\begin{prova}
+	Se $H$ {\'e} subgrupo, ent{\~a}o $H$ {\'e} um grupo. Logo \eqref{subgrupo_condicao_1} e \eqref{subgrupo_condicao_2} s{\~a}o satisfeitos.
 
-\textbf{Demonstra{\c c}{\~a}o}: Se $H$ {\'e} subgrupo, ent{\~a}o $H$ {\'e} um grupo. Logo 1 e 2 s{\~a}o satisfeitos.
+	Agora provemos que se $H$ satisfaz \eqref{subgrupo_condicao_1} e \eqref{subgrupo_condicao_2}, ent{\~a}o $H$ {\'e} grupo.
 
-Agora provemos que se $H$ satisfaz 1 e 2, ent{\~a}o $H$ {\'e} grupo.
+	Como $G$ {\'e} grupo, ent{\~a}o $*$ {\'e} associativa, logo $*$ {\'e} associativa em $H$.
 
-Como $G$ {\'e} grupo, ent{\~a}o $*$ {\'e} associativo, logo $*$ {\'e} associativo em $H$.
+	De \eqref{subgrupo_condicao_1}, para todo $x \in H$, $x^{-1}\in H$. Mas de \eqref{subgrupo_condicao_2}, para todos $x$, $y \in H,$ $x*y \in H$. Logo, se $x\in H$, ent{\~a}o $e = x*x^{-1} \in H$.
 
-De 1, $\forall x\in H,x^{-1}\in H$. Mas de 2, $\forall x,y\in H,\ x*y\in H$. Logo, se $x\in H$, ent{\~a}o $e=x*x^{-1}\in H$
+	Novamente por \eqref{subgrupo_condicao_1}, todo elemento de $H$ possui inverso em $H$.
 
-Novamente por 1, todo elemento de $H$ possui inverso em $H$.
+	Portanto, $(H,*)$ {\'e} um grupo.
+\end{prova}
 
-Logo, $(H,*)$ {\'e} um grupo.\#
 
-Exemplos:
-\begin{enumerate}
-\item Dado $(G,*)$ grupo, $H=\{e\}$ e $H=G$ s{\~a}o subgrupos de $G$, chamados de subgrupos triviais
-\item $(\mathbb{Z},+),\ H=m\mathbb{Z},\ m>1$
+\begin{exemplos}
+	\begin{enumerate}[label={\arabic*})]
+		\item Dado $(G,*)$ grupo, $H=\{e\}$ e $H=G$ s{\~a}o subgrupos de $G$, chamados de \textbf{subgrupos triviais}.
+		\item Seja $(\mathbb{Z},+)$ um grupo. Tomando $H = m\z$, onde $m > 1$, ent{\~a}o $H$ {\'e} subgrupo de $\z$.
+		\item $G = U\left(\z_8) = \{\overline{1}, \overline{3}, \overline{5}, \overline{7}\}$. Então $(G,\odot)$ {\'e} um grupo com $|G| = 4$. Além disso,
+		\begin{align*}
+			H_1 &= \{\overline{1}, \overline{3}\}\\
+			H_2 &= \{\overline{1}, \overline{5}\}\\
+			H_3 &= \{\overline{1}, \overline{7}\}
+		\end{align*}
+		São subgrupos de $G$.
+		
+	\end{enumerate}
+\end{exemplos}
 
-Ent{\~a}o $H$ {\'e} subgrupo de $\mathbb{Z}$
-\item $G=U\left(\dfrac{\mathbb{Z}}{8\mathbb{Z}}\right)=\{\bar{1},\bar{3},\bar{5},\bar{7}\}$
-
-$(G,\odot)$ {\'e} um grupo
-
-$|G|$=4
-
-$H_{1}=\{\bar{1},\bar{3}\}$ {\'e} subgrupo de G\\
-$H_{2}=\{\bar{1},\bar{5}\}$ {\'e} subgrupo de G\\
-$H_{3}=\{\bar{1},\bar{7}\}$ {\'e} subgrupo de G
-\end{enumerate}
 
 \section{Ordem de um subgrupo}
 
