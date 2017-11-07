@@ -37,55 +37,64 @@ Nas considera\c{c}\~oes que faremos a seguir uma opera\c{c}\~ao bin\'aria $f$ so
 	Quando $*$ {\'e} uma soma, dizemos que $(G,*)$ {\'e} um \textbf{grupo aditivo}. Se $*$ {\'e} uma multiplica{\c c}{\~a}o, dizemos que $(G,*)$ {\'e} um \textbf{grupo multiplicativo}.
 
 	Além disso, quando não houver chance de confusão com relação à operação do grupo $(G, *)$ vamos dizer simplesmente que $G$ é um grupo.
-
 \end{observacao}
 
-
-\section{Grupo comutativo ou abeliano}
-\begin{definicao}[Grupo comutativo ou abeliano] Um grupo $(G,*)$ {\'e} chamado de \textbf{grupo comutativo} ou \textbf{abeliano} quando $*$ {\'e} comutativa, ou seja, \[x*y=y*x\] para todo $x,y\in G$.
-\end{definicao}
-\vspace{1cm}
-
-Exemplos:
-\begin{enumerate}
-\item $(\z,+)$ {\'e} um grupo abeliano.
-\item $(\rac,+)$ {\'e} um grupo abeliano.
-\item $(\rac^*,\cdot)$ {\'e} um grupo abeliano.
-\item $(\real,+)$ {\'e} um grupo abeliano.
-\item $(\real^*,\cdot)$ {\'e} um grupo abeliano.
-\item Considere o conjunto dos n{\'u}meros reais $\mathbb{R}$ com a opera{\c c}{\~a}o $*$ definida por \[x*y=x+y-3\], $x,y\in\mathbb{R}$. Ent{\~a}o $(\mathbb{R},*)$ {\'e} um grupo abeliano.
-\begin{solucao}
-	De fato,
-
-	\begin{align*}
-		(x*y)*z &= (x+y-3)*z = (x+y-3)+z-3\\
-		&= x+(y-3+z)-3 = x+(y+z-3)-3 = x*(y+z-3)\\
-		&= x*(y*z)
-	\end{align*}
-	para todo $x,y,z\in \mathbb{R}$.
-
-	Agora,
+\begin{definicao}
+	Um grupo $(G,*)$ {\'e} chamado de \textbf{grupo comutativo} ou \textbf{abeliano} quando $*$ {\'e} comutativa, ou seja, quando
 	\[
-		x*y=x+y-3=y+x-3=y*x
+		x*y = y*x
 	\]
-	para todo $x,y\in\mathbb{R}$. Logo, $*$ {\'e} comutativa.
+	para todos $x$, $y \in G$.
+\end{definicao}
 
-	Para todo $x\in\mathbb{R}$, temos $x*3=x+3-3=x$. Logo, 3 {\'e} o elemento neutro de $*$.
+\begin{exemplos}
+	\begin{enumerate}
+		\item $(\z,+)$ {\'e} um grupo abeliano.
+		\item $(\rac,+)$ {\'e} um grupo abeliano.
+		\item $(\rac^*,\cdot)$ {\'e} um grupo abeliano.
+		\item $(\real,+)$ {\'e} um grupo abeliano.
+		\item $(\real^*,\cdot)$ {\'e} um grupo abeliano.
+		\item Considere o conjunto dos n{\'u}meros reais $\mathbb{R}$ com a opera{\c c}{\~a}o $*$ definida por
+		\[
+			x*y = x + y - 3
+		\]
+		para $x$, $y \in \mathbb{R}$. Ent{\~a}o $(\mathbb{R}, *)$ {\'e} um grupo abeliano.
+		\begin{solucao}
+			De fato,
+			\begin{enumerate}
+				\item Para todos $x$, $y$, $z \real$
+				\begin{align*}
+					(x*y)*z &= (x+y-3)*z = (x+y-3)+z-3\\
+					&= x+(y-3+z)-3 = x+(y+z-3)-3 = x*(y+z-3)\\
+					&= x*(y*z)
+				\end{align*}
 
-	Dado $x\in\mathbb{R}$, tome $x^{-1}=6-x$. Assim \[x*x^{-1}=x+(6-x)-3=3\]
+				\item Para todo $x \in \mathbb{R}$, temos $x*3 = x + 3 - 3 = x = 3 * x$. Logo, 3 {\'e} o elemento neutro de $*$.
 
-	Logo, para $x\in\mathbb{R}$ o inverso de $x$ por $*$ {\'e} $6-x$.
+				\item Dado $x \in \mathbb{R}$, tome $y = 6 - x \in \real$. Assim
+				\[
+					x*y = x + (6-x)-3 = 3 = y*x.
+				\]
+				Assim $y = 6 - x$ é o oposto de $x$ na operação $*$ definida em $\real$.
+			\end{enumerate}
 
-	Portanto $(\mathbb{R}, *)$ {\'e} um grupo comutativo.
-\end{solucao}
+			Portanto $(\real, *)$ é um grupo.
 
-\item $\left(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}},\oplus\right)$ {\'e} grupo.
-\item $\left(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}-\{\bar{0}\},\odot\right)$ {\'e} grupo?\\
-$\displaystyle\frac{\mathbb{Z}}{4\mathbb{Z}}-\{\bar{0}\}=\{\bar{1},\bar{2},\bar{3}\}=G$\\
-$\bar{2}\in G,\ \bar{2}\odot\bar{2}=\bar{0}\notin G$
-\item $\left(U\left(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}\right),\odot\right)$ {\'e} um grupo.
-\item ver \textbf{https://en.wikipedia.org/wiki/XOR\_swap\_algorithm}
-\end{enumerate}
+			Além disso, para todos $x$, $y \in \real$
+			\[
+				x*y = x + y - 3 = y + x - 3 = y*x
+			\]
+			Logo, $(\real, *)$ {\'e} um grupo comutativo.
+		\end{solucao}
+
+		\item $(\z_m,\oplus)$ {\'e} grupo.
+
+		\item $(\z_m-\{\overline{0}\},\otimes)$ {\'e} grupo?
+		\begin{solucao}
+			Não pois por exemplo para $m = 4$ temos $\z4-\{\overline{0}\} = \{\overline{1}, \overline{2}, \overline{3}\} = G$ e dados $\overline{2}\in G$ temos $\overline{2} \otimes \overline{2} = \overline{0} \notin G$. Portanto a operação $\otimes$ não é uma operação binária em $G = \z_4$.
+		\end{solucao}
+	\end{enumerate}
+\end{exemplos}
 
 \section{Propriedades Imediatas de um grupo}
 
