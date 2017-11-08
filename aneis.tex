@@ -362,9 +362,28 @@
 		Agora dados $x$, $y \in \ker(f)$ precisamos mostrar que $x - y \in \ker(f)$ e $xy \in \ker(f)$, e para mostrar isso basta mostrar que $f(x - y) = 0_B$ e$f(xy) = 0_B$. Inicialmente como $x$, $y \in \ker(f)$ daí $f(x) = f(y) = 0_B$. Assim
 		\begin{align*}
 			f(x - y) &= f(x + (-y)) = f(x) \oplus f(-y) = f(x) \oplus (-f(y)) = 0_B \oplus 0_B = 0_B\\
-			f(xy) = f(x)\otimes f(y) = 0_B \otimes 0_B = 0_B
+			f(xy) &= f(x)\otimes f(y) = 0_B \otimes 0_B = 0_B
 		\end{align*}
 		Logo $x - y \in \ker(f)$ e $xy \in \ker(f)$. Portanto $\ker(f)$ é um subanel de $A$.
+
+		\item Primeiro suponha que $f$ é injetora e vamos mostrar que $\ker(f) = \{0_A\}$. Para isso seja $x \in \ker(f)$. Então
+		\[
+			f(x) = 0_B,
+		\]
+		mas $f$ sendo um homomorfismo temos $f(0_A) = 0_B$. Daí
+		\[
+			f(x) = 0_B = f(0_A).
+		\]
+		E como $f$ é injetora, por hipótese, segue que $x = 0_A$. Logo $\ker(f) = \{0_A\}$.
+
+		Agora suponha que $\ker(f) = \{0_A\}$ e vamos mostrar que $f$ é injetora. Para isso sejam $x_1$, $x_2 \in A$ tais que $f(x_1) = f(x_2)$. Daí
+		\begin{align*}
+			&f(x_1) = f(x_2)\\
+			&f(x_1) \oplus (-f(x_2)) = 0_B\\
+			&f(x_1) \oplus f(-x_2) = 0_B\\
+			&f(x_1 - x_2) = 0_B
+		\end{align*}
+		Logo $x_1 - x_2 \in \ker(f) = \{0_A\}$. Com isso $x_1 - x_2 = 0_A$, isto é, $x_1 = x_2$. Portanto $f$ é injetora.
 	\end{enumerate}
 \end{prova}
 
