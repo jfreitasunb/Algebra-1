@@ -348,162 +348,162 @@
 	\end{enumerate}
 \end{proposicao}
 
-\begin{definicao}
-	Seja $(A, +, \cdot)$ um anel comutativo. Um subconjunto não-vazio $I \sub A$ {\'e} chamado de \textbf{ideal} de $A$ se:
-	\begin{enumerate}[label={\roman*})]
-		\item para todos $x$, $y \in I$, temos $x - y \in I$.
-		\item Para todo $\alpha \in A$ e todo $x \in I$, temos $\alpha\cdot x \in I$.
-	\end{enumerate}
-\end{definicao}
+% \begin{definicao}
+% 	Seja $(A, +, \cdot)$ um anel comutativo. Um subconjunto não-vazio $I \sub A$ {\'e} chamado de \textbf{ideal} de $A$ se:
+% 	\begin{enumerate}[label={\roman*})]
+% 		\item para todos $x$, $y \in I$, temos $x - y \in I$.
+% 		\item Para todo $\alpha \in A$ e todo $x \in I$, temos $\alpha\cdot x \in I$.
+% 	\end{enumerate}
+% \end{definicao}
 
-\begin{observacao}
-	Quando $I = A$ ou $I = \{0_A\}$, dizemos que $I$ {\'e} um \textbf{ideal trivial}.
-\end{observacao}
+% \begin{observacao}
+% 	Quando $I = A$ ou $I = \{0_A\}$, dizemos que $I$ {\'e} um \textbf{ideal trivial}.
+% \end{observacao}
 
-\begin{proposicao}
-	Seja $A$ um anel comutativo e $I$ um ideal de $A$. Ent{\~a}o:
-	\begin{enumerate}[label={\roman*})]
-	 	\item $0_{A}\in I$.
-	 	\item $-x \in I$ para todo $x \in I$.
-	 	\item Se $1_A \in I$, então $I = A$.
-	\end{enumerate}
-\end{proposicao}
-\begin{prova}
-	\begin{enumerate}[label={\roman*})]
-		\item Da definição de ideal temos $\alpha \cdot x \in I$ para todo $x \in I$ e todo $\alpha \in A$.
-		Assim dado $x \in I$ $0_A = 0_A \cdot x \in I$.
+% \begin{proposicao}
+% 	Seja $A$ um anel comutativo e $I$ um ideal de $A$. Ent{\~a}o:
+% 	\begin{enumerate}[label={\roman*})]
+% 	 	\item $0_{A}\in I$.
+% 	 	\item $-x \in I$ para todo $x \in I$.
+% 	 	\item Se $1_A \in I$, então $I = A$.
+% 	\end{enumerate}
+% \end{proposicao}
+% \begin{prova}
+% 	\begin{enumerate}[label={\roman*})]
+% 		\item Da definição de ideal temos $\alpha \cdot x \in I$ para todo $x \in I$ e todo $\alpha \in A$.
+% 		Assim dado $x \in I$ $0_A = 0_A \cdot x \in I$.
 
-		\item Como $0_A \in I$, dado $x \in I$ da definição de ideal segue que $0_A - x \in I$, isto é, $-x \in I$.
+% 		\item Como $0_A \in I$, dado $x \in I$ da definição de ideal segue que $0_A - x \in I$, isto é, $-x \in I$.
 
-		\item Suponha que $1_A \in I$. Como $I$ {\'e} ideal, para todo $\alpha \in A$ e todo $x \in I$ devemos ter $\alpha\cdot x \in I$. Assim, em particular, $1_A \cdot x \in I$ para todo $x \in A$. Logo, $A\sub I$ e como $I\sub A$, ent{\~a}o $I = A$.
-	\end{enumerate}
-\end{prova}
+% 		\item Suponha que $1_A \in I$. Como $I$ {\'e} ideal, para todo $\alpha \in A$ e todo $x \in I$ devemos ter $\alpha\cdot x \in I$. Assim, em particular, $1_A \cdot x \in I$ para todo $x \in A$. Logo, $A\sub I$ e como $I\sub A$, ent{\~a}o $I = A$.
+% 	\end{enumerate}
+% \end{prova}
 
-\begin{exemplos}
-	\begin{enumerate}[label={\arabic*})]
-		\item Em $\z$ todos os ideais n{\~a}o triviais s{\~a}o da forma $m\z$, $m > 1$.
-		\item No anel $\z_p$, onde $p$ {\'e} um n{\'u}mero primo, os {\'u}nicos ideais  s{\~a}o os triviais $\{\overline{0}\}$ e $\z_p$.
+% \begin{exemplos}
+% 	\begin{enumerate}[label={\arabic*})]
+% 		\item Em $\z$ todos os ideais n{\~a}o triviais s{\~a}o da forma $m\z$, $m > 1$.
+% 		\item No anel $\z_p$, onde $p$ {\'e} um n{\'u}mero primo, os {\'u}nicos ideais  s{\~a}o os triviais $\{\overline{0}\}$ e $\z_p$.
 		
-		De fato, seja $I \sub \z_p$ um ideal, $I \neq \{\overline{0}\}$. Provemos que $I = \z_p$. Para isso,
-		vamos provar que $\overline{1} \in I$. Seja $\overline{a} \in I$, $\overline{a} \neq \overline{0}$, pois $I \neq \{\overline{0}\}$. Como $p$ {\'e} primo, $mdc(a,p) = 1$, da{\'\i} existe $\overline{b} \in \z_p$, $\overline{b} \neq \overline{0}$, tal que $\overline{1} = \overline{a} \otimes \overline{b}$. Mas $I$ {\'e} ideal e $\overline{a} \in I$, logo $\overline{1} = \overline{a} \otimes \overline{b} \in I$.
+% 		De fato, seja $I \sub \z_p$ um ideal, $I \neq \{\overline{0}\}$. Provemos que $I = \z_p$. Para isso,
+% 		vamos provar que $\overline{1} \in I$. Seja $\overline{a} \in I$, $\overline{a} \neq \overline{0}$, pois $I \neq \{\overline{0}\}$. Como $p$ {\'e} primo, $mdc(a,p) = 1$, da{\'\i} existe $\overline{b} \in \z_p$, $\overline{b} \neq \overline{0}$, tal que $\overline{1} = \overline{a} \otimes \overline{b}$. Mas $I$ {\'e} ideal e $\overline{a} \in I$, logo $\overline{1} = \overline{a} \otimes \overline{b} \in I$.
 
-		Portanto $I = \z_p$.
+% 		Portanto $I = \z_p$.
 
-		\item Os {\'u}nicos ideais n{\~a}o triviais de $\z_8 = \{\overline{0}, \overline{1}, \overline{2}, \overline{3}, \overline{4}, \overline{5}, \overline{6}, \overline{7}\}$ s{\~a}o:
-		\begin{align*}
-			I_1 &= \{\overline{0}, \overline{2}, \overline{4}, \overline{6}\}\\
-			I_2 &=\{\overline{0}, \overline{4}\}
-		\end{align*}
-	\end{enumerate}	
-\end{exemplos}
-
-
-\begin{definicao}
-	Seja $I$ um ideal de um anel $(A, +, \cdot)$. Dados $x$, $y \in A$ dizemos que $x$ \textbf{é congruente a} $y$ \textbf{módulo} $I$ quando $x-y \in I$. Neste caso, escrevemos $x\equiv y \pmod I$.
-\end{definicao}
-
-\begin{proposicao}
-	A congru{\^e}ncia m{\'o}dulo $I$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia em $A \times A$, onde $A$ anel unit{\'a}rio.
-\end{proposicao}
-\begin{prova}
-	Como $0 = 0_{A} \in I$ e para todo $x \in I$, $x - x = 0 \in I$, ent{\~a}o $x \equiv x \pmod I$.
-
-	Suponha que $x\equiv y \pmod I$. Ent{\~a}o $x - y \in I$. Como $-1 \in A$, $y - x = -(x - y) = -[(x - y)1] = (x - y)(-1) \in I$, ou seja, $y\equiv x \pmod I$.
-
-	Agora, se $x\equiv y \pmod I$ e $y\equiv z \pmod I$, ent{\~a}o $x - y \in I$ e $y - z \in I$. Da{\'\i}, $x - z = (x - z) + (y - z)\in I$, ou seja, $x\equiv z \pmod I$.
-
-	Logo, {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia.
-\end{prova}
-
-Seja $y \in A$. A classe de equival{\^e}ncia m{\'o}dulo $I$ de $y$ {\'e}
-\[
-	C(y) = \{x \in A \mid x\equiv y \pmod I\} = \{x \in A \mid x - y \in I\}.
-\]
-
-Agora, $x - y \in I$ significa que existe $t \in I$, tal que $x - y = t$. Logo, $x = y + t$, onde $t \in I$.
-
-Assim,
-\[
-	C(y) = \{y + t\mid t \in I\} = y + I.
-\]
-
-\begin{observacao}
-	Denotamos por $y + I$ (ou $I + y$) a classe de equival{\^e}ncia m{\'o}dulo $I$ de $y \in A$. Denotamos por $\dfrac{A}{I}$ o conjunto de todas as classes de equival{\^e}ncia, tal conjunto {\'e} chamado de \textbf{quociente do anel $A$ pelo ideal $I$}.
-\end{observacao}
-
-\begin{exemplos}
-	\begin{enumerate}[label={\arabic*})]
-		\item Seja $A$ um anel com unidade e $I_{1} = \{0\}$ e $I_{2} = A$ ideais. Então:
-		\begin{enumerate}[label={\roman*})]
-		\item Dado $x \in A$:
-		\[
-			C(x) = x + I_{1} = \{x + 0\} = \{x\}.
-		\]
-		Assim $\dfrac{A}{I_{1}} = \{x + I \mid x \in A\}$, logo existem tantas classes de equival{\^e}ncia quantos forem os elementos de $A$.
-
-		\item Para $I_{2} = A$ temos:
-		\[
-			C(0_A) = 0_A + I = \{0_A + t \mid t \in I_{2}\}.
-		\]
-		Como $I_2 = A$, para todo $x \in A$ temos $x \in C(0_A)$ logo existem uma única classe de equivalência
-		e $\dfrac{A}{I_{2}} = \{0_{A} + I\}$.
-	\end{enumerate}
-
-	\item Seja $A = \z$. Sabemos que os ideais de $\z$ s{\~a}o da forma $m\z$, $m > 1$. Seja $I = m\z$ um ideal de $\z$. Assim $x\equiv y \pmod I$ se, e só se, $x - y \in I$. Mais isso ocorre se, e somente se, $x - y = mk $, para algum $k \in \z$. Logo $x\equiv y \pmod I$ se, e só se, $m\mid (x - y)$. Portanto, $\dfrac{\z}{I} = \z_m$.
-	\end{enumerate}
-\end{exemplos}
+% 		\item Os {\'u}nicos ideais n{\~a}o triviais de $\z_8 = \{\overline{0}, \overline{1}, \overline{2}, \overline{3}, \overline{4}, \overline{5}, \overline{6}, \overline{7}\}$ s{\~a}o:
+% 		\begin{align*}
+% 			I_1 &= \{\overline{0}, \overline{2}, \overline{4}, \overline{6}\}\\
+% 			I_2 &=\{\overline{0}, \overline{4}\}
+% 		\end{align*}
+% 	\end{enumerate}	
+% \end{exemplos}
 
 
-Agora seja $I$ ideal e $A$ um anel. Temos
-\[
-	\dfrac{A}{I} = \{y + I \mid y \in A\}\\
-\]
-onde $y + I = \{y + t \mid t \in I\}$ e $y \in A$.
+% \begin{definicao}
+% 	Seja $I$ um ideal de um anel $(A, +, \cdot)$. Dados $x$, $y \in A$ dizemos que $x$ \textbf{é congruente a} $y$ \textbf{módulo} $I$ quando $x-y \in I$. Neste caso, escrevemos $x\equiv y \pmod I$.
+% \end{definicao}
 
-Vamos definir uma soma $\oplus$ e um produto $\otimes$ em $\dfrac{A}{I}$ por
-\begin{align*}
-	(x + I)\oplus(y + I) &= (x + y) + I\\
-	(x + I)\otimes(y + I) &= (xy) + I
-\end{align*}
-para $x + I$, $y + I \in \dfrac{A}{I}$.
+% \begin{proposicao}
+% 	A congru{\^e}ncia m{\'o}dulo $I$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia em $A \times A$, onde $A$ anel unit{\'a}rio.
+% \end{proposicao}
+% \begin{prova}
+% 	Como $0 = 0_{A} \in I$ e para todo $x \in I$, $x - x = 0 \in I$, ent{\~a}o $x \equiv x \pmod I$.
 
-Verifiquemos que a soma e o produto em $\dfrac{A}{I}$ n{\~a}o dependem do representante da classe de equival{\^e}ncia.
-Para isso sejam $x_1 + I$, $x_2 + I$, $y_1 + I$, $y_2 + I \in \dfrac{A}{I}$ tais que
-\begin{align*}
-	x_1 + I &= x_2 + I\\
-	y_1 + I &= y_2 + I	
-\end{align*}
+% 	Suponha que $x\equiv y \pmod I$. Ent{\~a}o $x - y \in I$. Como $-1 \in A$, $y - x = -(x - y) = -[(x - y)1] = (x - y)(-1) \in I$, ou seja, $y\equiv x \pmod I$.
 
-Ent{\~a}o
-\begin{align*}
-	(x_1 + I) \oplus (y_1 + I) &= (x_1 + y_1) + I\\
-	(x_2 + I) \oplus (y_2 + I) &= (x_2 + y_2) + I
-\end{align*}
+% 	Agora, se $x\equiv y \pmod I$ e $y\equiv z \pmod I$, ent{\~a}o $x - y \in I$ e $y - z \in I$. Da{\'\i}, $x - z = (x - z) + (y - z)\in I$, ou seja, $x\equiv z \pmod I$.
 
-Como $x_1 + I = x_2 + I$, ent{\~a}o $x_1 - x_2 \in I$ e como $y_1 + I = y_2 + I$, ent{\~a}o $y_1 = y_2 \in I$. Mas $I$ {\'e} ideal, logo $(x_1 - x_2) + (y_1 - y_2) = (x_1 + y_1) - (x_2 + y_2) \in I$, ou seja
-\[
-	(x_1 + I) \oplus (y_1 + I) = (x_2 + I) \oplus (y_2 + I).
-\]
+% 	Logo, {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia.
+% \end{prova}
 
-Agora,
-\begin{align*}
-	(x_1 + I) \otimes (y_1 + I) &= (x_1y_1) + I\\
-	(x_2 + I) \otimes (y_2 + I) &= (x_2y_2) + I
-\end{align*}
+% Seja $y \in A$. A classe de equival{\^e}ncia m{\'o}dulo $I$ de $y$ {\'e}
+% \[
+% 	C(y) = \{x \in A \mid x\equiv y \pmod I\} = \{x \in A \mid x - y \in I\}.
+% \]
 
-Como $(x_1 - x_2)y \in I$ e $(y_1 - y_2)x_2 \in I$ então
-\begin{align*}
-	&(x_1 - x_2)y_1 + (y_1 - y_2)x_2 \in I\\
-	&x_1y_2-\underbrace{x_2y_1 + y_1x_2}_{= 0} - y_2x_2 \in I\\
-	&x_1y_1 - x_2y_2\in I,
-\end{align*}
-ou seja, $xy + I = x_2y_2 + I$. Portanto,
-\[
-	(x_1 + I) \otimes (y + I) = (x_2 + I) \otimes (y_2 + I).
-\]
+% Agora, $x - y \in I$ significa que existe $t \in I$, tal que $x - y = t$. Logo, $x = y + t$, onde $t \in I$.
 
-\begin{teorema}
-	Seja $(A, +, \cdot)$ um anel associativo, comutativo e com unidade. Ent{\~a}o, se $I$ {\'e} um ideal de $A$,
-	o quociente $\dfrac{A}{I}$ com as opera{\c c}{\~o}es $\oplus$ e $\otimes$ {\'e} um anel associativo,
-	comutativo e com unidade. O elemento neutro da soma {\'e} a classe $0_{A} + I$ e unidade do produto {\'e} $1_{A} + I$.
-\end{teorema}
+% Assim,
+% \[
+% 	C(y) = \{y + t\mid t \in I\} = y + I.
+% \]
+
+% \begin{observacao}
+% 	Denotamos por $y + I$ (ou $I + y$) a classe de equival{\^e}ncia m{\'o}dulo $I$ de $y \in A$. Denotamos por $\dfrac{A}{I}$ o conjunto de todas as classes de equival{\^e}ncia, tal conjunto {\'e} chamado de \textbf{quociente do anel $A$ pelo ideal $I$}.
+% \end{observacao}
+
+% \begin{exemplos}
+% 	\begin{enumerate}[label={\arabic*})]
+% 		\item Seja $A$ um anel com unidade e $I_{1} = \{0\}$ e $I_{2} = A$ ideais. Então:
+% 		\begin{enumerate}[label={\roman*})]
+% 		\item Dado $x \in A$:
+% 		\[
+% 			C(x) = x + I_{1} = \{x + 0\} = \{x\}.
+% 		\]
+% 		Assim $\dfrac{A}{I_{1}} = \{x + I \mid x \in A\}$, logo existem tantas classes de equival{\^e}ncia quantos forem os elementos de $A$.
+
+% 		\item Para $I_{2} = A$ temos:
+% 		\[
+% 			C(0_A) = 0_A + I = \{0_A + t \mid t \in I_{2}\}.
+% 		\]
+% 		Como $I_2 = A$, para todo $x \in A$ temos $x \in C(0_A)$ logo existem uma única classe de equivalência
+% 		e $\dfrac{A}{I_{2}} = \{0_{A} + I\}$.
+% 	\end{enumerate}
+
+% 	\item Seja $A = \z$. Sabemos que os ideais de $\z$ s{\~a}o da forma $m\z$, $m > 1$. Seja $I = m\z$ um ideal de $\z$. Assim $x\equiv y \pmod I$ se, e só se, $x - y \in I$. Mais isso ocorre se, e somente se, $x - y = mk $, para algum $k \in \z$. Logo $x\equiv y \pmod I$ se, e só se, $m\mid (x - y)$. Portanto, $\dfrac{\z}{I} = \z_m$.
+% 	\end{enumerate}
+% \end{exemplos}
+
+
+% Agora seja $I$ ideal e $A$ um anel. Temos
+% \[
+% 	\dfrac{A}{I} = \{y + I \mid y \in A\}\\
+% \]
+% onde $y + I = \{y + t \mid t \in I\}$ e $y \in A$.
+
+% Vamos definir uma soma $\oplus$ e um produto $\otimes$ em $\dfrac{A}{I}$ por
+% \begin{align*}
+% 	(x + I)\oplus(y + I) &= (x + y) + I\\
+% 	(x + I)\otimes(y + I) &= (xy) + I
+% \end{align*}
+% para $x + I$, $y + I \in \dfrac{A}{I}$.
+
+% Verifiquemos que a soma e o produto em $\dfrac{A}{I}$ n{\~a}o dependem do representante da classe de equival{\^e}ncia.
+% Para isso sejam $x_1 + I$, $x_2 + I$, $y_1 + I$, $y_2 + I \in \dfrac{A}{I}$ tais que
+% \begin{align*}
+% 	x_1 + I &= x_2 + I\\
+% 	y_1 + I &= y_2 + I	
+% \end{align*}
+
+% Ent{\~a}o
+% \begin{align*}
+% 	(x_1 + I) \oplus (y_1 + I) &= (x_1 + y_1) + I\\
+% 	(x_2 + I) \oplus (y_2 + I) &= (x_2 + y_2) + I
+% \end{align*}
+
+% Como $x_1 + I = x_2 + I$, ent{\~a}o $x_1 - x_2 \in I$ e como $y_1 + I = y_2 + I$, ent{\~a}o $y_1 = y_2 \in I$. Mas $I$ {\'e} ideal, logo $(x_1 - x_2) + (y_1 - y_2) = (x_1 + y_1) - (x_2 + y_2) \in I$, ou seja
+% \[
+% 	(x_1 + I) \oplus (y_1 + I) = (x_2 + I) \oplus (y_2 + I).
+% \]
+
+% Agora,
+% \begin{align*}
+% 	(x_1 + I) \otimes (y_1 + I) &= (x_1y_1) + I\\
+% 	(x_2 + I) \otimes (y_2 + I) &= (x_2y_2) + I
+% \end{align*}
+
+% Como $(x_1 - x_2)y \in I$ e $(y_1 - y_2)x_2 \in I$ então
+% \begin{align*}
+% 	&(x_1 - x_2)y_1 + (y_1 - y_2)x_2 \in I\\
+% 	&x_1y_2-\underbrace{x_2y_1 + y_1x_2}_{= 0} - y_2x_2 \in I\\
+% 	&x_1y_1 - x_2y_2\in I,
+% \end{align*}
+% ou seja, $xy + I = x_2y_2 + I$. Portanto,
+% \[
+% 	(x_1 + I) \otimes (y + I) = (x_2 + I) \otimes (y_2 + I).
+% \]
+
+% \begin{teorema}
+% 	Seja $(A, +, \cdot)$ um anel associativo, comutativo e com unidade. Ent{\~a}o, se $I$ {\'e} um ideal de $A$,
+% 	o quociente $\dfrac{A}{I}$ com as opera{\c c}{\~o}es $\oplus$ e $\otimes$ {\'e} um anel associativo,
+% 	comutativo e com unidade. O elemento neutro da soma {\'e} a classe $0_{A} + I$ e unidade do produto {\'e} $1_{A} + I$.
+% \end{teorema}
