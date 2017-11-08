@@ -21,7 +21,7 @@
 
 		\item A operação $\div$ em $\rac^{*}$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
 		\item Já em $\n$, $\z$, $\z^{*}$ e em $\rac$ a operação $\div$ n{\~a}o {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
-\end{enumerate}	
+	\end{enumerate}
 \end{exemplos}
 
 \begin{definicao}
@@ -341,12 +341,32 @@
 \end{definicao}
 
 \begin{definicao}
-	Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ anéis e $f : A \to B$ um homomorfismo de anéis. Então subconjunto de $A$ definido por
+	Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ anéis e $f : A \to B$ um homomorfismo de anéis. Então o subconjunto de $A$ definido por
 	\[
 		\ker(f) = \{ x \in A \mid f(x) = 0_B\}
 	\]
 	é chamado de \textbf{kernel} ou \textbf{núcleo} de $f$.
 \end{definicao}
+
+\begin{proposicao}
+	Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ anéis e $f : A \to B$ um homomorfismo de anéis. Então:
+	\begin{enumerate}
+		\item $\ker(f)$ é um subanel de $A$.
+		\item $f$ é injetora se, e somente se, $\ker(f) = \{0_A\}$.
+	\end{enumerate}
+\end{proposicao}
+\begin{prova}
+	\begin{enumerate}
+		\item Primeiro note que uma vez que $f$ é um homomorfismo então $f(0_A) = 0_B$. Logo $0_A \in \ker(f)$, isto é, $\ker(f) \ne \emptyset$.
+
+		Agora dados $x$, $y \in \ker(f)$ precisamos mostrar que $x - y \in \ker(f)$ e $xy \in \ker(f)$, e para mostrar isso basta mostrar que $f(x - y) = 0_B$ e$f(xy) = 0_B$. Inicialmente como $x$, $y \in \ker(f)$ daí $f(x) = f(y) = 0_B$. Assim
+		\begin{align*}
+			f(x - y) &= f(x + (-y)) = f(x) \oplus f(-y) = f(x) \oplus (-f(y)) = 0_B \oplus 0_B = 0_B\\
+			f(xy) = f(x)\otimes f(y) = 0_B \otimes 0_B = 0_B
+		\end{align*}
+		Logo $x - y \in \ker(f)$ e $xy \in \ker(f)$. Portanto $\ker(f)$ é um subanel de $A$.
+	\end{enumerate}
+\end{prova}
 
 
 
