@@ -4,136 +4,172 @@
 %%Ap\'os executar pdflatex arquivo
 \chapter{Grupos}
 
-\section{Defini{\c c}{\~a}o}
-
 \begin{definicao}
    Seja $A$ um conjunto n\~ao vazio. Toda fun\c{c}\~ao $f : A \times A \to A$ \'e chamada de uma \textbf{opera\c{c}\~ao bin\'aria} sobre $A$.
 \end{definicao}
 
-Nas considera\c{c}\~oes que faremos a seguir uma opere\c{c}\~ao bin\'aria $f$ sobre $A$ associa a cada par ordenado $(x, y) \in A \times A$ um elemento $f(x, y) \in A$ ser\'a denotada simplesmente por $*$. Assim escreveremos $f(x, y) = x*y$. Por exemplo a opera\c{c}\~ao $* : \n \times \n \to \n$ tal que $x*y = x^y$ est\'a bem definida pois $x^y \in \n$ sempre que $x$, $y \in \n$. Observe que esta opera\c{c}\~ao n\~ao pode ser definida em $\Z$ pois por exemplo $2^{-1} \notin \Z$. Tamb\'em n\~ao pode ser definida em $\rac$ pois $2^{1/2} \notin \rac$.
+Nas considera\c{c}\~oes que faremos a seguir uma opera\c{c}\~ao bin\'aria $f$ sobre $A$ que associa a cada par ordenado $(x, y) \in A \times A$ um elemento $f(x, y) \in A$ ser\'a denotada simplesmente por $*$. Assim escreveremos $f(x, y) = x*y$. Por exemplo a opera\c{c}\~ao $* : \n \times \n \to \n$ tal que $x*y = x^y$ est\'a bem definida pois $x^y \in \n$ sempre que $x$, $y \in \n$. Observe que esta opera\c{c}\~ao n\~ao pode ser definida em $\z$ pois por exemplo $2^{-1} \notin \z$. Tamb\'em n\~ao pode ser definida em $\rac$ pois $2^{1/2} \notin \rac$.
 
-\begin{definicao}[Grupo] Um grupo $G$ {\'e} um conjunto n{\~a}o vazio munido de uma opera{\c c}{\~a}o bin{\'a}ria $*$ tal que:
-\begin{enumerate}
-\item Para todo $x$, $y$, $z\in G$ temos $(x*y)*z=x*(y*z)$. (Associatividade)
-\item Existe $e\in G$ tal que $x*e = e*x = x$ para todo $x\in G$. Tal elemento $e$ {\'e} chamado de \textbf{elemento neutro} ou \textbf{unidade}.
-\item Para cada $x\in G$, existe $x^{-1}\in G$ tal que $x*x^{-1} = x^{-1}*x = e$. O elemento $x^{-1}$ {\'e} chamado de \textbf{inverso} ou \textbf{oposto}\footnote{$x^{-1}\neq\displaystyle\frac{1}{x}$} de $x$.
-\end{enumerate}
+\begin{definicao}
+	Seja $G$ um conjunto n{\~a}o vazio no qual está definida uma opera{\c c}{\~a}o bin{\'a}ria $*$ tal que:
+	\begin{enumerate}[label={\roman*})]
+		\item Para todos $x$, $y$, $z\in G$:
+		\[
+			(x*y)*z=x*(y*z)
+		\]
+		
+		\item Existe $e \in G$ tal que
+		\[
+			x*e = x = e*x
+		\]
+		para todo $x \in G$. Tal elemento $e$ {\'e} chamado de \textbf{elemento neutro} ou \textbf{unidade} de $G$.
+
+		\item Para cada $x \in G$, existe $y \in G$ tal que
+		\[
+			x*y = e = y*x
+		\]
+		O elemento $y$ {\'e} chamado de \textbf{inverso} ou \textbf{oposto} de $x$.
+	\end{enumerate}
+	Nesse caso dizemos que o par $(G, *)$ é um \textbf{grupo}.
 \end{definicao}
 
-Denotamos um grupo $G$, cuja opera{\c c}{\~a}o bin{\'a}ria {\'e} $*$, por $(G,*)$. Quando $*$ {\'e} a soma, dizemos que $(G,*)$ {\'e} um grupo aditivo. Se $*$ {\'e} a multiplica{\c c}{\~a}o, dizemos que $(G,*)$ {\'e} um grupo multiplicativo.\\
+\begin{observacao}
+	Quando $*$ {\'e} uma soma, dizemos que $(G,*)$ {\'e} um \textbf{grupo aditivo}. Se $*$ {\'e} uma multiplica{\c c}{\~a}o, dizemos que $(G,*)$ {\'e} um \textbf{grupo multiplicativo}.
 
-\section{Grupo comutativo ou abeliano}
-\begin{definicao}[Grupo comutativo ou abeliano] Um grupo $(G,*)$ {\'e} chamado de \textbf{grupo comutativo} ou \textbf{abeliano} quando $*$ {\'e} comutativa, ou seja, \[x*y=y*x\] para todo $x,y\in G$.
-\end{definicao}
-\vspace{1cm}
+	Além disso, quando não houver chance de confusão com relação à operação do grupo $(G, *)$ vamos dizer simplesmente que $G$ é um grupo.
+\end{observacao}
 
-Exemplos:
-\begin{enumerate}
-\item $(\Z,+)$ {\'e} um grupo abeliano.
-\item $(\rac,+)$ {\'e} um grupo abeliano.
-\item $(\rac^*,\cdot)$ {\'e} um grupo abeliano.
-\item $(\real,+)$ {\'e} um grupo abeliano.
-\item $(\real^*,\cdot)$ {\'e} um grupo abeliano.
-\item Considere o conjunto dos n{\'u}meros reais $\mathbb{R}$ com a opera{\c c}{\~a}o $*$ definida por \[x*y=x+y-3\], $x,y\in\mathbb{R}$. Ent{\~a}o $(\mathbb{R},*)$ {\'e} um grupo abeliano.
-\begin{solucao}
-	De fato,
-
-	\begin{align*}
-		(x*y)*z &= (x+y-3)*z = (x+y-3)+z-3\\
-		&= x+(y-3+z)-3 = x+(y+z-3)-3 = x*(y+z-3)\\
-		&= x*(y*z)
-	\end{align*}
-	para todo $x,y,z\in \mathbb{R}$.
-
-	Agora,
+\begin{definicao}
+	Um grupo $(G,*)$ {\'e} chamado de \textbf{grupo comutativo} ou \textbf{abeliano} quando $*$ {\'e} comutativa, ou seja, quando
 	\[
-		x*y=x+y-3=y+x-3=y*x
+		x*y = y*x
 	\]
-	para todo $x,y\in\mathbb{R}$. Logo, $*$ {\'e} comutativa.
-
-	Para todo $x\in\mathbb{R}$, temos $x*3=x+3-3=x$. Logo, 3 {\'e} o elemento neutro de $*$.
-
-	Dado $x\in\mathbb{R}$, tome $x^{-1}=6-x$. Assim \[x*x^{-1}=x+(6-x)-3=3\]
-
-	Logo, para $x\in\mathbb{R}$ o inverso de $x$ por $*$ {\'e} $6-x$.
-
-	Portanto $(\mathbb{R}, *)$ {\'e} um grupo comutativo.
-\end{solucao}
-
-\item $\left(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}},\oplus\right)$ {\'e} grupo.
-\item $\left(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}-\{\bar{0}\},\odot\right)$ {\'e} grupo?\\
-$\displaystyle\frac{\mathbb{Z}}{4\mathbb{Z}}-\{\bar{0}\}=\{\bar{1},\bar{2},\bar{3}\}=G$\\
-$\bar{2}\in G,\ \bar{2}\odot\bar{2}=\bar{0}\notin G$
-\item $\left(U\left(\displaystyle\frac{\mathbb{Z}}{m\mathbb{Z}}\right),\odot\right)$ {\'e} um grupo.
-\item ver \textbf{https://en.wikipedia.org/wiki/XOR\_swap\_algorithm}
-\end{enumerate}
-
-\section{Propriedades Imediatas de um grupo}
-
-Seja $(G,*)$ um grupo. {\'E} f{\'a}cil ver que
-\begin{enumerate}
-\item O elemento neutro {\'e} {\'u}nico
-\item Existe um {\'u}nico inverso para cada $x\in G$
-\item Para todos $x,y\in G,(x*y)^{-1}=y^{-1}*x^{-1}$. Por indu{\c c}{\~a}o, $x_{1},x_{2},...,x_{n-1},x_{n}\in G$, \[(x_{1}*x_{2}*...*x_{n-1}*x_{n})^{-1}\] \[=x^{-1}_{n}*x^{-1}_{n-1}*...*x^{-1}_{2}*x^{-1}_{1}\]
-\item Para todo $x\in G, (x^{-1})^{-1}=x$
-
-\end{enumerate}
-
-\section{Ordem de um Grupo}
-\begin{definicao}[Ordem de um grupo]
-Quando um grupo $(G,*)$, $G$ {\'e} um conjunto com um n{\'u}mero finito de elementos, dizemos que $G$ {\'e} um grupo finito. Denotamos por $|G|$ o n{\'u}mero de elementos de $G$ que ser{\'a} chamado de ordem de $G$ ou cardinalidade de $G$. Quando $G$ n{\~a}o {\'e} finito, dizemos que $G$ {\'e} um grupo infinito.
+	para todos $x$, $y \in G$.
 \end{definicao}
 
-Exemplos:
-\begin{enumerate}
-\item $(\Z_m, +)$ {\'e} um grupo finito para todo $m>1$.
-\item $(\Z, +)$ {\'e} um grupo infinito.
-\end{enumerate}
+\begin{exemplos}
+	\begin{enumerate}
+		\item $(\z,+)$ {\'e} um grupo abeliano.
+		\item $(\rac,+)$ {\'e} um grupo abeliano.
+		\item $(\rac^*,\cdot)$ {\'e} um grupo abeliano.
+		\item $(\real,+)$ {\'e} um grupo abeliano.
+		\item $(\real^*,\cdot)$ {\'e} um grupo abeliano.
+		\item Considere o conjunto dos n{\'u}meros reais $\mathbb{R}$ com a opera{\c c}{\~a}o $*$ definida por
+		\[
+			x*y = x + y - 3
+		\]
+		para $x$, $y \in \mathbb{R}$. Ent{\~a}o $(\mathbb{R}, *)$ {\'e} um grupo abeliano.
+		\begin{solucao}
+			De fato,
+			\begin{enumerate}
+				\item Para todos $x$, $y$, $z \real$
+				\begin{align*}
+					(x*y)*z &= (x+y-3)*z = (x+y-3)+z-3\\
+					&= x+(y-3+z)-3 = x+(y+z-3)-3 = x*(y+z-3)\\
+					&= x*(y*z)
+				\end{align*}
 
-\section{Subgrupo}
-\subsubsection{Defini{\c c}{\~a}o}
+				\item Para todo $x \in \mathbb{R}$, temos $x*3 = x + 3 - 3 = x = 3 * x$. Logo, 3 {\'e} o elemento neutro de $*$.
 
-\begin{definicao}[Subgrupo]
-Seja $(G,*)$ um grupo. Um subconjunto n{\~a}o vazio $H\subseteq G$ {\'e} um subgrupo se, e somente se, $(H,*)$ {\'e} um grupo.
-\end{definicao}
+				\item Dado $x \in \mathbb{R}$, tome $y = 6 - x \in \real$. Assim
+				\[
+					x*y = x + (6-x)-3 = 3 = y*x.
+				\]
+				Assim $y = 6 - x$ é o oposto de $x$ na operação $*$ definida em $\real$.
+			\end{enumerate}
 
-\subsubsection{Propriedades}
+			Portanto $(\real, *)$ é um grupo.
+
+			Além disso, para todos $x$, $y \in \real$
+			\[
+				x*y = x + y - 3 = y + x - 3 = y*x
+			\]
+			Logo, $(\real, *)$ {\'e} um grupo comutativo.
+		\end{solucao}
+
+		\item $(\z_m,\oplus)$ {\'e} grupo.
+
+		\item $(\z_m-\{\overline{0}\},\otimes)$ {\'e} grupo?
+		\begin{solucao}
+			Não pois por exemplo para $m = 4$ temos $\z4-\{\overline{0}\} = \{\overline{1}, \overline{2}, \overline{3}\} = G$ e dados $\overline{2}\in G$ temos $\overline{2} \otimes \overline{2} = \overline{0} \notin G$. Portanto a operação $\otimes$ não é uma operação binária em $G = \z_4$.
+		\end{solucao}
+	\end{enumerate}
+\end{exemplos}
+
+
 \begin{proposicao}
-Um subconjunto n{\~a}o vazio $H\subseteq G$ {\'e} um subgrupo de $G$ se, e somente se
-\begin{enumerate}
-\item $x^{-1}\in H,\forall x\in H$
-\item $x*y\in H,\forall x,y\in H$
-\end{enumerate}
+	Seja $(G,*)$ um grupo. Então:
+	\begin{enumerate}[label={\roman*})]
+		\item O elemento neutro de $G$ {\'e} {\'u}nico.
+
+		\item Existe um {\'u}nico inverso para cada $x \in G$.
+
+		\item Para todos $x$, $y \in G$,
+		\[
+			(x*y)^{-1} = y^{-1}*x^{-1}
+		\]
+		Por indu{\c c}{\~a}o, $x_1$, $x_2$, \dots ,$x_{n-1}$, $x_n \in G$,
+		\[
+			(x_1*x_2*\cdots *x_{n-1}*x_{n})^{-1} = x^{-1}_{n}*x^{-1}_{n-1}*\cdots *x^{-1}_2*x^{-1}_1
+		\]
+		\item Para todo $x \in G$, $(x^{-1})^{-1} = x$.
+	\end{enumerate}
+
 \end{proposicao}
 
-\textbf{Demonstra{\c c}{\~a}o}: Se $H$ {\'e} subgrupo, ent{\~a}o $H$ {\'e} um grupo. Logo 1 e 2 s{\~a}o satisfeitos.
 
-Agora provemos que se $H$ satisfaz 1 e 2, ent{\~a}o $H$ {\'e} grupo.
+\begin{definicao}
+	Seja $(G,*)$ um grupo. Se $G$ {\'e} um conjunto com uma quantidade finita de elementos, dizemos que $G$ {\'e} um \textbf{grupo finito}. Denotamos por $|G|$ o n{\'u}mero de elementos de $G$ e que ser{\'a} chamado de \textbf{ordem} de $G$ ou \textbf{cardinalidade} de $G$. Quando o conjunto $G$ n{\~a}o {\'e} finito, dizemos que $G$ {\'e} um \textbf{grupo infinito}.
+\end{definicao}
 
-Como $G$ {\'e} grupo, ent{\~a}o $*$ {\'e} associativo, logo $*$ {\'e} associativo em $H$.
+\begin{exemplos}
+	\begin{enumerate}[label={\arabic*})]
+		\item $(\z_m, +)$ {\'e} um grupo finito para todo $m>1$.
+		\item $(\z, +)$ {\'e} um grupo infinito.
+	\end{enumerate}	
+\end{exemplos}
 
-De 1, $\forall x\in H,x^{-1}\in H$. Mas de 2, $\forall x,y\in H,\ x*y\in H$. Logo, se $x\in H$, ent{\~a}o $e=x*x^{-1}\in H$
+\begin{definicao}
+	Seja $(G,*)$ um grupo. Um subconjunto n{\~a}o vazio $H\sub G$ {\'e} chamado de \textbf{subgrupo} de $G$ se, e somente se, $(H,*)$ {\'e} um grupo.
+\end{definicao}
 
-Novamente por 1, todo elemento de $H$ possui inverso em $H$.
+\begin{proposicao}
+	Seja $G$ um grupo. Um subconjunto n{\~a}o vazio $H\subseteq G$ {\'e} um subgrupo de $G$ se, e somente se
+	\begin{enumerate}
+		\item\label{subgrupo_condicao_1} $x^{-1}\in H$, para todo $x \in H$;
+		\item\label{subgrupo_condicao_2} $x*y\in H$, para todos $x$, $y \in H$.
+	\end{enumerate}
+\end{proposicao}
+\begin{prova}
+	Se $H$ {\'e} subgrupo, ent{\~a}o $H$ {\'e} um grupo. Logo \eqref{subgrupo_condicao_1} e \eqref{subgrupo_condicao_2} s{\~a}o satisfeitos.
 
-Logo, $(H,*)$ {\'e} um grupo.\#
+	Agora provemos que se $H$ satisfaz \eqref{subgrupo_condicao_1} e \eqref{subgrupo_condicao_2}, ent{\~a}o $H$ {\'e} grupo.
 
-Exemplos:
-\begin{enumerate}
-\item Dado $(G,*)$ grupo, $H=\{e\}$ e $H=G$ s{\~a}o subgrupos de $G$, chamados de subgrupos triviais
-\item $(\mathbb{Z},+),\ H=m\mathbb{Z},\ m>1$
+	Como $G$ {\'e} grupo, ent{\~a}o $*$ {\'e} associativa, logo $*$ {\'e} associativa em $H$.
 
-Ent{\~a}o $H$ {\'e} subgrupo de $\mathbb{Z}$
-\item $G=U\left(\dfrac{\mathbb{Z}}{8\mathbb{Z}}\right)=\{\bar{1},\bar{3},\bar{5},\bar{7}\}$
+	De \eqref{subgrupo_condicao_1}, para todo $x \in H$, $x^{-1}\in H$. Mas de \eqref{subgrupo_condicao_2}, para todos $x$, $y \in H,$ $x*y \in H$. Logo, se $x\in H$, ent{\~a}o $e = x*x^{-1} \in H$.
 
-$(G,\odot)$ {\'e} um grupo
+	Novamente por \eqref{subgrupo_condicao_1}, todo elemento de $H$ possui inverso em $H$.
 
-$|G|$=4
+	Portanto, $(H,*)$ {\'e} um grupo.
+\end{prova}
 
-$H_{1}=\{\bar{1},\bar{3}\}$ {\'e} subgrupo de G\\
-$H_{2}=\{\bar{1},\bar{5}\}$ {\'e} subgrupo de G\\
-$H_{3}=\{\bar{1},\bar{7}\}$ {\'e} subgrupo de G
-\end{enumerate}
+
+\begin{exemplos}
+	\begin{enumerate}[label={\arabic*})]
+		\item Dado $(G,*)$ grupo, $H=\{e\}$ e $H=G$ s{\~a}o subgrupos de $G$, chamados de \textbf{subgrupos triviais}.
+		\item Seja $(\mathbb{Z},+)$ um grupo. Tomando $H = m\z$, onde $m > 1$, ent{\~a}o $H$ {\'e} subgrupo de $\z$.
+		\item $G = U\left(\z_8) = \{\overline{1}, \overline{3}, \overline{5}, \overline{7}\}$. Então $(G,\odot)$ {\'e} um grupo com $|G| = 4$. Além disso,
+		\begin{align*}
+			H_1 &= \{\overline{1}, \overline{3}\}\\
+			H_2 &= \{\overline{1}, \overline{5}\}\\
+			H_3 &= \{\overline{1}, \overline{7}\}
+		\end{align*}
+		São subgrupos de $G$.
+		
+	\end{enumerate}
+\end{exemplos}
+
 
 \section{Ordem de um subgrupo}
 
@@ -189,11 +225,11 @@ para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a pa
 
 \begin{exemplos}
 	\begin{enumerate}
-		\item A fun\c{c}\~ao $f : \Z \to \complex$ dada por $f(x) = i^x$ \'e um homomorfismo de $(\Z, +)$ em $(\complex, \cdot)$. De fato,
+		\item A fun\c{c}\~ao $f : \z \to \complex$ dada por $f(x) = i^x$ \'e um homomorfismo de $(\z, +)$ em $(\complex, \cdot)$. De fato,
 		\[
 			f(x + y) = i^{x + y} = i^x\cdot i^y = f(x)\cdot f(y)
 		\]
-		para todos $x$, $y \in \Z$.
+		para todos $x$, $y \in \z$.
 
 		\item A fun\c{c}\~ao $f : \real^*_+ \to \real$ dada por $f(x) = \ln(x)$ \'e um homomorfismo de $(\real^*_+, \cdot)$ em $(\real, +)$. De fato,
 		\[
@@ -201,7 +237,7 @@ para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a pa
 		\]
 		para todos $x$, $y \in \real^*_+$. Al\'em disso, como $\ln(x)$ \'e uma fun\c{c}\~ao bijetora, ent\~ao $f$ \'e um isomorfismo de grupos.
 
-		\item Sejam $m$ um inteiro positivo fixo. A fun\c{c}\~ao $f: \Z \to \Z_m$ definida por $f(x) = \overline{x}$ \'e um homomorfimos de $(\Z, +)$ em $(\Z_m, \oplus)$. De fato,
+		\item Sejam $m$ um inteiro positivo fixo. A fun\c{c}\~ao $f: \z \to \z_m$ definida por $f(x) = \overline{x}$ \'e um homomorfimos de $(\z, +)$ em $(\z_m, \oplus)$. De fato,
 		\[
 			f(x + y) = \overline{x + y} = \overline{x} + \overline{y} = f(x) + f(y).
 		\]
@@ -247,9 +283,9 @@ para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a pa
 
 \begin{exemplos}
 	\begin{enumerate}
-		\item Considere o homomorfismo $f : \Z \to \complex^*$ dado por $f(x) = i^x$. Temos
+		\item Considere o homomorfismo $f : \z \to \complex^*$ dado por $f(x) = i^x$. Temos
 		\[
-			\ker(f) = \{x \in \Z \mid f(x) = 1\} = \{x \in \Z \mid i^x = 1\} = \{0, \pm 4, \pm 8, \cdots\} = 4\Z.
+			\ker(f) = \{x \in \z \mid f(x) = 1\} = \{x \in \z \mid i^x = 1\} = \{0, \pm 4, \pm 8, \cdots\} = 4\z.
 		\]
 
 		\item O n\'ucleo do homomorfismo $f : \real^*_+ \to \real$ dado por $f(x) = \ln(x)$. Temos
@@ -257,9 +293,9 @@ para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a pa
 			\ker(f) = \{x \in \real^*_+ \mid f(x) = 0\} = \{x \in \real^*_+ \mid \ln(x) = 0\} = \{1\}.
 		\]
 
-		\item O n\'ucleo do homomorfismo $f : \Z \to \Z_m$ dado por $f(x) = \overline{x}$, $m > 0$ fixo. Temos
+		\item O n\'ucleo do homomorfismo $f : \z \to \z_m$ dado por $f(x) = \overline{x}$, $m > 0$ fixo. Temos
 		\[
-			\ker(f) = \{x \in \Z \mid f(x) = \overline{0}\} = \{x \in \Z \mid \overline{x} = \overline{0}\} = \{0, \pm m, \pm 2m, \cdots\}.
+			\ker(f) = \{x \in \z \mid f(x) = \overline{0}\} = \{x \in \z \mid \overline{x} = \overline{0}\} = \{0, \pm m, \pm 2m, \cdots\}.
 		\]
 	\end{enumerate}
 \end{exemplos}
