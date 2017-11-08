@@ -48,7 +48,7 @@ Nas considera\c{c}\~oes que faremos a seguir uma opera\c{c}\~ao bin\'aria $f$ so
 \end{definicao}
 
 \begin{exemplos}
-	\begin{enumerate}
+	\begin{enumerate}[label={\arabic*})]
 		\item $(\z,+)$ {\'e} um grupo abeliano.
 		\item $(\rac,+)$ {\'e} um grupo abeliano.
 		\item $(\rac^*,\cdot)$ {\'e} um grupo abeliano.
@@ -61,8 +61,8 @@ Nas considera\c{c}\~oes que faremos a seguir uma opera\c{c}\~ao bin\'aria $f$ so
 		para $x$, $y \in \mathbb{R}$. Ent{\~a}o $(\mathbb{R}, *)$ {\'e} um grupo abeliano.
 		\begin{solucao}
 			De fato,
-			\begin{enumerate}
-				\item Para todos $x$, $y$, $z \real$
+			\begin{enumerate}[label={\roman*})]
+				\item Para todos $x$, $y$, $z \in \real$
 				\begin{align*}
 					(x*y)*z &= (x+y-3)*z = (x+y-3)+z-3\\
 					&= x+(y-3+z)-3 = x+(y+z-3)-3 = x*(y+z-3)\\
@@ -135,21 +135,21 @@ Nas considera\c{c}\~oes que faremos a seguir uma opera\c{c}\~ao bin\'aria $f$ so
 
 \begin{proposicao}
 	Seja $G$ um grupo. Um subconjunto n{\~a}o vazio $H\subseteq G$ {\'e} um subgrupo de $G$ se, e somente se
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item\label{subgrupo_condicao_1} $x^{-1}\in H$, para todo $x \in H$;
 		\item\label{subgrupo_condicao_2} $x*y\in H$, para todos $x$, $y \in H$.
 	\end{enumerate}
 \end{proposicao}
 \begin{prova}
-	Se $H$ {\'e} subgrupo, ent{\~a}o $H$ {\'e} um grupo. Logo \eqref{subgrupo_condicao_1} e \eqref{subgrupo_condicao_2} s{\~a}o satisfeitos.
+	Se $H$ {\'e} subgrupo, ent{\~a}o $H$ {\'e} um grupo. Logo \ref{subgrupo_condicao_1} e \ref{subgrupo_condicao_2} s{\~a}o satisfeitos.
 
-	Agora provemos que se $H$ satisfaz \eqref{subgrupo_condicao_1} e \eqref{subgrupo_condicao_2}, ent{\~a}o $H$ {\'e} grupo.
+	Agora provemos que se $H$ satisfaz \ref{subgrupo_condicao_1} e \ref{subgrupo_condicao_2}, ent{\~a}o $H$ {\'e} grupo.
 
 	Como $G$ {\'e} grupo, ent{\~a}o $*$ {\'e} associativa, logo $*$ {\'e} associativa em $H$.
 
-	De \eqref{subgrupo_condicao_1}, para todo $x \in H$, $x^{-1}\in H$. Mas de \eqref{subgrupo_condicao_2}, para todos $x$, $y \in H,$ $x*y \in H$. Logo, se $x\in H$, ent{\~a}o $e = x*x^{-1} \in H$.
+	De \ref{subgrupo_condicao_1}, para todo $x \in H$, $x^{-1}\in H$. Mas de \ref{subgrupo_condicao_2}, para todos $x$, $y \in H,$ $x*y \in H$. Logo, se $x\in H$, ent{\~a}o $e = x*x^{-1} \in H$.
 
-	Novamente por \eqref{subgrupo_condicao_1}, todo elemento de $H$ possui inverso em $H$.
+	Novamente por \ref{subgrupo_condicao_1}, todo elemento de $H$ possui inverso em $H$.
 
 	Portanto, $(H,*)$ {\'e} um grupo.
 \end{prova}
@@ -171,38 +171,33 @@ Nas considera\c{c}\~oes que faremos a seguir uma opera\c{c}\~ao bin\'aria $f$ so
 \end{exemplos}
 
 
-\section{Ordem de um subgrupo}
-
-\begin{teorema}[Lagrange]
-Seja $G$ um grupo finito. Se $H\subseteq G$ {\'e} um subgrupo, ent{\~a}o $|H|$ divide $|G|$.
+\begin{teorema}\label{teorema_de_lagrange}
+	Seja $G$ um grupo finito. Se $H\subseteq G$ {\'e} um subgrupo, ent{\~a}o $|H|$ divide $|G|$.
 \end{teorema}
 
-Exemplo: Quais s{\~a}o as poss{\'\i}veis ordens dos subgrupos de um grupo de ordem 48?
+\begin{exemplo}
+	Quais s{\~a}o as poss{\'\i}veis ordens dos subgrupos de um grupo de ordem 48?
+	\begin{solucao}
+		Seja $G$ um grupo tal que $|G|=48$. Se $H$ {\'e} um subgrupo prório de $G$, ent{\~a}o $|H|$ divide $|G|$. Mas $48=2^{4}\cdot 3$, daí se $H$ é um subgrupo de $G$ então $|H|=2$ ou $|H|=3$ ou $|H|= 2^{2}$ ou $|H|=2^{3}$ ou $|H|=2^{4}$ ou $|H|=2\cdot3$ ou $|H|=2^2\cdot 3$ ou $|H|=2^3\cdot 3$.
+	\end{solucao}
+\end{exemplo}
 
-Seja $G$ um grupo tal que $|G|=48$. Se $H$ {\'e} um subgrupo de $G$, ent{\~a}o $|H|$ divide $|G|$\\
-$48=2^{4}3$ \\
-$|H|=2,3,2^{2},2^{3},2^{4},2.3,2^{2}3,2^{2}3$
-
-Observa{\c c}{\~a}o: O teorema n{\~a}o diz que haver{\'a} um subgrupo de ordem $n$ para todo $n$ tal que $n||G|$. Diz apenas que se $H$ {\'e} subgrupo de $G$, ent{\~a}o $|H|$ divide $|G|$.
+\begin{observacao}
+	O Teorema \ref{teorema_de_lagrange} n{\~a}o diz que haver{\'a} um subgrupo de ordem $n$ para todo $n$ tal que $n||G|$. Diz apenas que se $H$ {\'e} subgrupo de $G$, ent{\~a}o $|H|$ divide $|G|$.
+\end{observacao}
 
 \begin{corolario}
-Os {\'u}nicos subgrupos de um grupo de ordem prima s{\~a}o os triviais
+	Os {\'u}nicos subgrupos de um grupo de ordem prima s{\~a}o os triviais
 \end{corolario}
+\begin{prova}
+	Suponha $|G| = p$ é um número primo. Assim os {\'u}nicos divisores positivos de $p$ s{\~a}o 1 e $p$. Logo se $H$ {\'e} um subgrupo de $G$, pelo Teorema \ref{teorema_de_lagrange} ent{\~a}o $|H|$ divide $|G|$. Assim $|H| = 1$ ou $|H| = p$. Portanto, $H=\{e\}$ ou $H = G$.
+\end{prova}
 
-\textbf{Demonstra{\c c}{\~a}o}: Quando $|G|=p$ primo, temos que os {\'u}nicos divisores de $p$ positivos s{\~a}o 1 e $p$.
-
-Ent{\~a}o, se $H$ {\'e} subgrupo de $G$, ent{\~a}o $|H|=1$ ou $|H|=p$.
-
-Portanto, $H=\{e\}$ ou $H=G$.\#
-
-\section{Homomorfimos de Grupos} % (fold)
-\label{sec:homomorfimos_de_grupos}
-
-Sejam $(G, *)$ e $(H, \triangle)$ grupos quaisquer. Considere uma fun\c{c}\~ao $f : G \to H$. Entre todas as poss{\'\i}veis fun\c{c}\~oes entre $G$ e $H$ vamos considerar somente aquelas que satisfa\c{c}\~ao a condi\c{c}\~ao
-\[
-	f(x * y) = f(x)\triangle f(y)
-\]
-para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a partir da imagem de $x$ e de $y$,
+% Sejam $(G, *)$ e $(H, \triangle)$ grupos quaisquer. Considere uma fun\c{c}\~ao $f : G \to H$. Entre todas as poss{\'\i}veis fun\c{c}\~oes entre $G$ e $H$ vamos considerar somente aquelas que satisfa\c{c}\~ao a condi\c{c}\~ao
+% \[
+% 	f(x * y) = f(x)\triangle f(y)
+% \]
+% para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a partir da imagem de $x$ e de $y$,
 
 \begin{definicao}
 	Dados doi grupos $(G, *)$ e $(H,\triangle)$ dizemos que uma fun\c{c}\~ao $f : G \to H$ \'e um \textbf{homomorfismo de grupos} se
@@ -214,7 +209,7 @@ para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a pa
 
 \begin{observacao}
 	Sejam $(G, *)$ e $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo.
-	\begin{enumerate}
+	\begin{enumerate}[label={\arabic*})]
 		\item Se $G = H$, neste caso $f : G \to G$ \'e chamado de um \textbf{endomorfimos} de grupos.
 		\item Se $f : G \to H$ \'e uma fun\c{c}\~ao injetora, ent\~ao dizemos que $f$ \'e um \textbf{monomorfismo} de grupos.
 		\item Se $f : G \to H$ \'e uma fun\c{c}\~ao sobrejetora, ent\~ao dizemos que $f$ \'e um \textbf{epimorfismo} de grupos.
@@ -224,7 +219,7 @@ para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a pa
 \end{observacao}
 
 \begin{exemplos}
-	\begin{enumerate}
+	\begin{enumerate}[label={\arabic*})]
 		\item A fun\c{c}\~ao $f : \z \to \complex$ dada por $f(x) = i^x$ \'e um homomorfismo de $(\z, +)$ em $(\complex, \cdot)$. De fato,
 		\[
 			f(x + y) = i^{x + y} = i^x\cdot i^y = f(x)\cdot f(y)
@@ -247,9 +242,9 @@ para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a pa
 
 \begin{proposicao}
 	Sejam $(G, *)$ e $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo. Denote por $1_G$ e $1_H$ os elementos neutros de $G$ e $H$, respectivamente.
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item $f(1_G) = 1_H$
-		\item $f(x^{-1}) = (f(x))^{-1}$ para todo $x \in G$.
+		\item $[f(x)]^{-1} = f(x^{-1})$ para todo $x \in G$.
 	\end{enumerate}
 \end{proposicao}
 
@@ -282,7 +277,7 @@ para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a pa
 \end{definicao}
 
 \begin{exemplos}
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item Considere o homomorfismo $f : \z \to \complex^*$ dado por $f(x) = i^x$. Temos
 		\[
 			\ker(f) = \{x \in \z \mid f(x) = 1\} = \{x \in \z \mid i^x = 1\} = \{0, \pm 4, \pm 8, \cdots\} = 4\z.
@@ -302,13 +297,13 @@ para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a pa
 
 \begin{proposicao}
 	Sejam $f : G \to H$ um homomorfismo de grupos. Ent\~ao:
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item $\ker(f)$ \'e um subgrupo de $G$.
 		\item $f$ \'e um monomorfismo se, e somente se, $\ker(f) = \{1_G\}$.
 	\end{enumerate}
 \end{proposicao}
 \begin{prova}
-	\begin{enumerate}
+	\begin{enumerate}[label={\roman*})]
 		\item Como $f(1_G) = 1_H$, ent\~ao $1_G \in \ker(f)$ e com isso $\ker(f) \ne \emptyset$. Se $x \in \ker(f)$, ent\~ao $f(x^{-1}) = [f(x)]^{-1} = 1_H^{-1} = 1_H$ e da{\'\i} $x^{-1} \in \ker(f)$. Finalmente se $x$, $y \in \ker(f)$, ent\~ao $f(x*y) = f(x)\triangle f(y) = 1_H \triangle 1_H = 1_H$, ou seja, $x * y \in \ker(f)$.
 
 		Portanto $\ker(f)$ \'e um subgrupo de $G$.
@@ -317,10 +312,10 @@ para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a pa
 
 		Agora suponha que $\ker(f) = \{1_G\}$. Sejam $x$, $y \in G$ tais que
 		\begin{align*}
-			f(x) &= f(y)\\
-			f(x)\triangle f(y)^{-1} & = 1_H\\
-			f(x)\triangle f(y^{-1}) &= 1_H\\
-			f(x * y^{-1}) &= 1_H
+			&f(x) = f(y)\\
+			&f(x)\triangle f(y)^{-1} = 1_H\\
+			&f(x)\triangle f(y^{-1}) = 1_H\\
+			&f(x * y^{-1}) = 1_H
 		\end{align*}
 		e da{\'\i} $x*y^{-1} \in \ker(f) = \{1_G\}$. Logo $x*y^{-1} = 1_G$, isto \'e, $x = y$. Portanto $f$ \'e injetora.
 	\end{enumerate}
@@ -331,8 +326,8 @@ para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a pa
 
 % section homomorfimos_de_grupos (end)
 
-\section{Grupos de Permuta\c{c}\~ao}
-Fazer a parte de $S_n$.
+% \section{Grupos de Permuta\c{c}\~ao}
+% Fazer a parte de $S_n$.
 
-\section{Grupos C{\'\i}clicos}
-Fazer a parte de grupos c{\'\i}clicos.
+% \section{Grupos C{\'\i}clicos}
+% Fazer a parte de grupos c{\'\i}clicos.
