@@ -396,6 +396,20 @@
 		\item Se $A$ tem unidade e $x \in A$ possui inverso multiplicativo, então $f(x)$ tem inverso e $f(x^{-1}) = (f(x))^{-1}$.
 	\end{enumerate}
 \end{proposicao}
+\begin{prova}
+	\begin{enumerate}[label={\roman*})]
+		\item Incialmente como num anel a unidade é única, para mostrar que $B$ possui unidade basta mostrar que
+		\[
+			y\otimes f(1_A) = y = f(1_A)\otimes y
+		\]
+		para todo $y \in B$. Sendo assim, seja $y \in B$. Como $f$ é sobrejetor então existe $x \in A$ tal que $f(x) = y$. Assim
+		\begin{align*}
+			y\otimes f(1_A) &= f(x) \otimes f(1_A) = f(x\cdot 1_A) = f(x) = y\\
+			f(1_A)\otimes y &= f(1_A) \otimes f(x) = f(1_A\cdot x) = f(x) = y
+		\end{align*}
+		para todo $y \in B$. Portanto $B$ possui unidade e $1_B = f(1_A)$.
+	\end{enumerate}
+\end{prova}
 
 % \begin{definicao}
 % 	Seja $(A, +, \cdot)$ um anel comutativo. Um subconjunto não-vazio $I \sub A$ {\'e} chamado de \textbf{ideal} de $A$ se:
