@@ -408,6 +408,17 @@
 			f(1_A)\otimes y &= f(1_A) \otimes f(x) = f(1_A\cdot x) = f(x) = y
 		\end{align*}
 		para todo $y \in B$. Portanto $B$ possui unidade e $1_B = f(1_A)$.
+
+		\item Novamente, devido á unicidade do inverso em um anel, para mostrar que $f(x)$ possui inverso basta mostrar que
+		\[
+			f(x)\otimes f(x^{-1}) = 1_B = f(x^{-1})\otimes f(x)
+		\]
+		desde que $x \in A$ possua inverso multiplicativo. Sendo assim suponha que $x \in A$ possui inverso multiplicativo. Seja $x^{-1}$ o inverso multiplicativo de $x$ em $A$. Temos
+		\begin{align*}
+			f(x)\otimes f(x^{-1}) &= f(x\cdot x^{-1}) = f(1_A) = 1_B\\
+			f(x^{-1})\otimes f(x) &= f(x^{-1}\cdot x) = f(1_A) = 1_B
+		\end{align*}
+		Portanto $f(x)$ possui inverso multiplicativo e $[f(x)]^{-1} = f(x^{-1})$, como queríamos.
 	\end{enumerate}
 \end{prova}
 
