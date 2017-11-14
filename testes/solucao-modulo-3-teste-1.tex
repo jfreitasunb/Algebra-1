@@ -38,13 +38,18 @@ Logo $f$ é um homomorfismo de $(\real, \oplus, \otimes)$ em $(\real, +, \cdot)$
 
 \questao Seja $f: A \to B$ um homomorfismo de an{\'e}is. Mostre que se $D$ {\'e} um subanel de $B$, ent{\~a}o $f^{-1}(D)$ {\'e} um subanel de $A$.
 
-\noindent\textbf{Solu\c{c}\~ao:} Para mostrar que $f^{-1}(D)$ é um subanel de $A$ precisamos mostrar que $f^{-1}(D) \ne \emptyset$ e que para todos $x$, $y \in f^{-1}(D)$ temos
+\noindent\textbf{Solu\c{c}\~ao:} Inicialmente lembre que
+\[
+	f^{-1}(D) = \{x \in A \mid f(x) \in D\}.
+\]
+
+Para mostrar que $f^{-1}(D)$ é um subanel de $A$ precisamos mostrar que $f^{-1}(D) \ne \emptyset$ e que para todos $x$, $y \in f^{-1}(D)$ temos
 \begin{enumerate}
 	\item $x - y \in f^{-1}(D)$
 	\item $xy \in f^{-1}(D)$.
 \end{enumerate}
 
-Primeiro, como $f$ é um homomorfismo de anéis, então $f(0_A) = 0_B$. Agora $D$ sendo um subanel de $B$ então $0_B \in D$. Logo $0_A \in f^{-1}(D)$.
+Primeiro, como $f$ é um homomorfismo de anéis, então $f(0_A) = 0_B$. Agora $D$ sendo um subanel de $B$ então $0_B \in D$. Logo $0_A \in f^{-1}(D)$ pois $f(0_A) \in D$.
 
 Dados $x$, $y \in f^{-1}(D)$ temos que $f(x) \in D$ e $f(y) \in D$. Daí
 \begin{align*}
