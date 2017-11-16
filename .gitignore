@@ -7,3 +7,11 @@ listas/lista-6-alg1.pdf
 Algebra_1.pdf
 *.toc
 *.idx
+
+Algebra_1\.fdb_latexmk
+
+Algebra_1\.fls
+
+Algebra_1\.ilg
+
+Algebra_1\.ind
