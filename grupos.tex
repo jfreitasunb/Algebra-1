@@ -146,6 +146,35 @@ Vamos considerar agora o caso particular em que $A \sub \n$ é um conjunto finit
 
 Se $A = \{1\}$, então só existe uma função $f : A \to A$ que é bijetora e essa função é a identidade. Nesse caso $\mathcal{S} = S_1 = \{Id\}$. Assim $(S_1, \circ)$ é um grupo, e nesse caso comutativo.
 
+
+Se $A = \{1, 2\}$ então podemos definir as seguintes funções bijetoras em $A$:
+\vspace*{-1cm}
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item[] \begin{align*}
+			Id : A &\to A\\ Id(1) &= 1\\ Id(2) &= 2
+		\end{align*}
+		\item[]  \begin{align*}
+			f : A &\to A\\ f(1) &= 2\\ f(2) &= 1
+		\end{align*}
+	\end{enumerate}
+\end{multicols}
+
+Assim $\mathcal{S} = S_2 = \{Id, f\}$. Assim $(S_2, \circ)$ é um grupo. Além disso,
+\begin{table}[!htb]
+\centering
+	\begin{tabular}{|c|c|c|} 
+	    \hline
+	    $\circ$ & $Id$ & $f$\T\\
+	    \hline
+	    $Id$ & $Id$ & $f$\T\\
+	    \hline
+	    $f$ & $f$ & $Id$\T\\
+	    \hline
+	\end{tabular}
+\end{table}
+
+assim esse grupo é comutativo.
 % section grupo_simétrico (end)
 
 
