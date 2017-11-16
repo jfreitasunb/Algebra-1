@@ -232,7 +232,15 @@ De modo geral se $A = \{1, 2, 3, \dots, n\}$ então existem exatamente $n!$ fun�
 \end{definicao}
 
 
-Um possível modo de representar os elementos de $S_n$ é o seguinte: vamos representar as funções $f \in S_n$ na forma de uma matriz contendo 2 linhas e $n$ colunas. A primeira linha é o domínio da função e a segunda contém suas imagens. Assim no caso de $S_3$ vamos escrever
+Um possível modo de representar os elementos de $S_n$ é o seguinte: vamos representar as funções $f \in S_n$ na forma de uma matriz contendo 2 linhas e $n$ colunas. A primeira linha é o domínio da função e a segunda contém suas imagens. Assim se $f \in S_n$ escreveremos
+\[
+	f = \begin{pmatrix}
+		1 & 2 & 3 & \dots & n\\
+		f(1) & f(2) & f(3) & \dots & f(n)
+	\end{pmatrix}.
+\]
+
+No caso de $S_3$ vamos escrever
 \begin{multicols}{3}
 	\begin{enumerate}
 		\item[] $Id = \begin{pmatrix}
