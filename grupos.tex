@@ -225,11 +225,56 @@ assim $(f_1 \circ f_4)(1) \ne (f_4 \circ f_1)(1)$, isto é, $f_1 \circ f_4 \ne f
 
 Note que em $S_2$ temos $2 = 2!$ elementos e em $S_3$ temos $6 = 3!$ elementos.
 
-De modo geral se $A = \{1, 2, 3, \dots, n\}$ então existem exatamente $n!$ funções $f : A \to A$ bijetoras. Assim o grupo $(S_n, \circ)$ possui $n!$ elementos e se $n \ge 3$, $S_n$ não é comutativo.
+De modo geral se $A = \{1, 2, 3, \dots, n\}$ então existem exatamente $n!$ funções $f : A \to A$ bijetoras. Assim o grupo $(S_n, \circ)$ possui $n!$ elementos e se $n \geqslant 3$ $S_n$ é um grupo não comutativo.
 
 \begin{definicao}
 	O grupo $S_n$ é chamado de \textbf{grupo simétrico} ou \textbf{grupo de permutações} em $A = \{1, 2, 3, \dots, n\}$.
 \end{definicao}
+
+
+Um possível modo de representar os elementos de $S_n$ é o seguinte: vamos representar as funções $f \in S_n$ na forma de uma matriz contendo 2 linhas e $n$ colunas. A primeira linha é o domínio da função e a segunda contém suas imagens. Assim no caso de $S_3$ vamos escrever
+\begin{multicols}{3}
+	\begin{enumerate}
+		\item[] $Id = \begin{pmatrix}
+			1 & 2 & 3\\
+			1 & 2 & 3
+		\end{pmatrix}$
+		\item[] $f_1 = \begin{pmatrix}
+			1 & 2 & 3\\
+			2 & 1 & 3
+		\end{pmatrix}$
+		\item[] $f_2 = \begin{pmatrix}
+			1 & 2 & 3\\
+			3 & 2 & 1
+		\end{pmatrix}$
+		\item[] $f_3 = \begin{pmatrix}
+			1 & 2 & 3\\
+			1 & 3 & 2
+		\end{pmatrix}$
+		\item[] $f_4 = \begin{pmatrix}
+			1 & 2 & 3\\
+			2 & 3 & 1
+		\end{pmatrix}$
+		\item[] $f_5 = \begin{pmatrix}
+			1 & 2 & 3\\
+			3 & 1 & 2
+		\end{pmatrix}$
+	\end{enumerate}
+\end{multicols}
+e daí, por exemplo,
+\[
+	f_3\circ f_4 = \begin{pmatrix}
+			1 & 2 & 3\\
+			1 & 3 & 2
+		\end{pmatrix} \circ \begin{pmatrix}
+			1 & 2 & 3\\
+			2 & 3 & 1
+		\end{pmatrix} = \begin{pmatrix}
+			1 & 2 & 3\\
+			3 & 2 & 1
+		\end{pmatrix} = f_2.
+\]
+
 % section grupo_simétrico (end)
 
 
