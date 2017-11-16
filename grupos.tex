@@ -96,7 +96,6 @@ Nas considera\c{c}\~oes que faremos a seguir uma opera\c{c}\~ao bin\'aria $f$ so
 	\end{enumerate}
 \end{exemplos}
 
-
 \begin{proposicao}
 	Seja $(G,*)$ um grupo. Então:
 	\begin{enumerate}[label={\roman*})]
@@ -114,8 +113,35 @@ Nas considera\c{c}\~oes que faremos a seguir uma opera\c{c}\~ao bin\'aria $f$ so
 		\]
 		\item Para todo $x \in G$, $(x^{-1})^{-1} = x$.
 	\end{enumerate}
-
 \end{proposicao}
+
+
+\section{Grupo Simétrico} % (fold)
+\label{sec:grupo_simétrico}
+
+Seja $A$ um conjunto não vazio. Dada uma função $f : A \to A$, sabemos que $f$ possui inversa se, e somente se, $f$ é bijetora, Teorema \ref{teorema_funcao_inversa}. Assim considere o conjunto
+\[
+	\mathcal{S} = \{ f : A \to A \mid f \mbox{é injetora}\}.
+\]
+com a composição de funções $\circ$. Como $Id : A \to A$ tal que $Id(x) = x$ para todo $x \in A$ é uma função bijetora então $\mathcal{S} \ne \emptyset$. Agora sejam $f$, $g$ e $h \in \mathcal{S}$. Para todo $x \in A$ temos
+\begin{align*}
+	[(f\circ g)\circ h](x) &= (f \circ g)(h(x)) = f(g(h(x)))\\
+	[f\circ(g\circ h)](x) &= f((g\circ h)(x)) = f(g(h(x)))
+\end{align*}
+Logo $(f\circ g)\circ h = f\circ(g\circ h)$.
+
+Agora da Proposição \ref{propriedades_identidade} sabemos que para toda $f \in \mathcal{S}$
+\[
+	f\circ Id = f = Id\circ f,
+\]
+logo $Id$ é o elemento neutro da composição. Além disso, para toda $f \in \mathcal{S}$ existe $g \in \mathcal{S}$ tal que
+\[
+	f\circ g = Id = g \circ f
+\]
+pois $f$ é bijetora. Logo todo elemento de $\mathcal{S}$ possui inverso.
+
+Portanto $(\mathcal{S}, \circ)$ é um grupo.
+% section grupo_simétrico (end)
 
 
 \begin{definicao}
