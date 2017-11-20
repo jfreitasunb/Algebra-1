@@ -27,6 +27,38 @@ Seja $f : \z \to M_3(\z_8)$ dada por
 \]
 
 \questao Mostre que $f$ é um homomorfismo de anéis.
+\noindent\textbf{Solu\c{c}\~ao:}
+
+Sejam $x$, $y \in \z$. Então
+\begin{align*}
+	f(x + y) &= \begin{pmatrix}
+		\overline{x + y} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{x + y} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{x + y}
+	\end{pmatrix} = \begin{pmatrix}
+		\overline{x} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{x} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{x}
+	\end{pmatrix} + \begin{pmatrix}
+		\overline{y} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{y} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{y}
+	\end{pmatrix} = f(x) + f(y)\\
+	f(x\cdot y) &= \begin{pmatrix}
+		\overline{xy} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{xy} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{xy}
+	\end{pmatrix} = \begin{pmatrix}
+		\overline{x} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{x} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{x}
+	\end{pmatrix} \begin{pmatrix}
+		\overline{y} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{y} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{y}
+	\end{pmatrix} = f(x)f(y)
+\end{align*}
+Logo $f$ é um homomorfismo de anéis.
 
 \questao Determine $\ker(f)$. $f$ é injetora?
 
