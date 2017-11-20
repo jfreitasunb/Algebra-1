@@ -60,44 +60,35 @@ Sejam $x$, $y \in \z$. Então
 \end{align*}
 Logo $f$ é um homomorfismo de anéis.
 
+\vspace{1cm}
+
 \questao Determine $\ker(f)$. $f$ é injetora?
 
-\noindent\textbf{Solu\c{c}\~ao:}
-Precisamos mostrar que
-\begin{enumerate}[label=({\alph*})]
-	\item $f(x \oplus y) = f(x) + f(y)$
-	\item $f(x \otimes y) = f(x)\cdot f(y)$
-\end{enumerate}
-para todos $x$, $y \in \real$.
-
-De fato, para $x$, $y \in \real$ temos
-\begin{align*}
-	f(x \oplus y) &= f(x + y + 1) = (x + y + 1) + 1 = (x + 1) + (y + 1) = f(x) + f(y)\\
-	f(x \otimes y) &=  f(x + y + xy) = (x + y + xy) + 1 = x(1 + y) + (1 + y) \\ &= (x + 1)(y + 1) = f(x)\cdot f(y)
-\end{align*}
-Logo $f$ é um homomorfismo de $(\real, \oplus, \otimes)$ em $(\real, +, \cdot)$.
-
-\vspace{.5cm}
-
-\questao Seja $f: A \to B$ um homomorfismo de an{\'e}is. Mostre que se $D$ {\'e} um subanel de $B$, ent{\~a}o $f^{-1}(D)$ {\'e} um subanel de $A$.
-
-\noindent\textbf{Solu\c{c}\~ao:} Inicialmente lembre que
+\noindent\textbf{Solu\c{c}\~ao:} Temos
 \[
-	f^{-1}(D) = \{x \in A \mid f(x) \in D\}.
+	ker(f) = \left\{x \in \z \mid f(x) = \begin{pmatrix}
+		\overline{0} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{0}
+	\end{pmatrix}\right\}.
 \]
 
-Para mostrar que $f^{-1}(D)$ é um subanel de $A$ precisamos mostrar que $f^{-1}(D) \ne \emptyset$ e que para todos $x$, $y \in f^{-1}(D)$ temos
-\begin{enumerate}[label=({\alph*})]
-	\item $x - y \in f^{-1}(D)$
-	\item $xy \in f^{-1}(D)$.
-\end{enumerate}
+Assim
+\[
+	f(x) = \begin{pmatrix}
+		\overline{x} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{x} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{x}
+	\end{pmatrix} = \begin{pmatrix}
+		\overline{0} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{0}
+	\end{pmatrix}
+\]
+logo $\overline{x} = \overline{0}$. Isto é, $x \equiv 0 \pmod 8$. Logo 
+\[
+	\ker(f) = \{x \in \z \mid x = 8k,\ k \in \z\} = \{0, \pm 8, \pm 16, \pm 24, \dots\}.
+\]
 
-Primeiro, como $f$ é um homomorfismo de anéis, então $f(0_A) = 0_B$. Agora $D$ sendo um subanel de $B$ então $0_B \in D$. Logo $0_A \in f^{-1}(D)$ pois $f(0_A) \in D$.
-
-Dados $x$, $y \in f^{-1}(D)$ temos que $f(x) \in D$ e $f(y) \in D$. Daí
-\begin{align*}
-	f(x - y) &= f(x) - f(y) \in D\\
-	f(xy) &= f(x)f(y) \in D
-\end{align*}
-pois $D$ é um subanel de $B$. Portanto $x - y \in f^{-1}(D)$ e $xy \in f^{-1}(D)$ e com isso $f^{-1}(D)$ é um subanel de $A$.
+Como $\ker(f) \ne \{0\}$ então $f$ não é injetora.
 \end{document}
