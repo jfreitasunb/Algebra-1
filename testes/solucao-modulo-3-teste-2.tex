@@ -1,0 +1,60 @@
+%!TEX program = xelatex
+%!TEX encoding = ISO-8859-1
+\documentclass[12pt]{article}
+
+\include{configuracoes/estrutura_listas}
+
+\begin{document}
+
+\input{configuracoes/cabecalho_listas}
+
+\begin{center}
+{\Large\bf {\'A}lgebra 1 - Turma D -- 2$^{o}$/2017} \\ \vspace{9pt} {\large\bf
+  $2^{\underline{o}}$ Teste Módulo 3 - Resolu\c{c}\~ao}\\
+\vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+\end{center}
+\hrule
+
+\vspace{.6cm}
+
+\questao Considere os seguintes an{\'e}is: $(\real, +, \cdot)$ e $(\real, \oplus, \otimes)$, sendo $a \oplus b = a + b + 1$ e $a \otimes b = a + b + ab$. Mostre que $f : \real \to \real$ dado por $f(x) = x + 1$, para todo $x \in \real$, {\'e} um homomorfimo de $(\real, \oplus, \otimes)$ em $(\real, +, \cdot)$.
+
+\noindent\textbf{Solu\c{c}\~ao:}
+Precisamos mostrar que
+\begin{enumerate}[label=({\alph*})]
+	\item $f(x \oplus y) = f(x) + f(y)$
+	\item $f(x \otimes y) = f(x)\cdot f(y)$
+\end{enumerate}
+para todos $x$, $y \in \real$.
+
+De fato, para $x$, $y \in \real$ temos
+\begin{align*}
+	f(x \oplus y) &= f(x + y + 1) = (x + y + 1) + 1 = (x + 1) + (y + 1) = f(x) + f(y)\\
+	f(x \otimes y) &=  f(x + y + xy) = (x + y + xy) + 1 = x(1 + y) + (1 + y) \\ &= (x + 1)(y + 1) = f(x)\cdot f(y)
+\end{align*}
+Logo $f$ é um homomorfismo de $(\real, \oplus, \otimes)$ em $(\real, +, \cdot)$.
+
+\vspace{.5cm}
+
+\questao Seja $f: A \to B$ um homomorfismo de an{\'e}is. Mostre que se $D$ {\'e} um subanel de $B$, ent{\~a}o $f^{-1}(D)$ {\'e} um subanel de $A$.
+
+\noindent\textbf{Solu\c{c}\~ao:} Inicialmente lembre que
+\[
+	f^{-1}(D) = \{x \in A \mid f(x) \in D\}.
+\]
+
+Para mostrar que $f^{-1}(D)$ é um subanel de $A$ precisamos mostrar que $f^{-1}(D) \ne \emptyset$ e que para todos $x$, $y \in f^{-1}(D)$ temos
+\begin{enumerate}[label=({\alph*})]
+	\item $x - y \in f^{-1}(D)$
+	\item $xy \in f^{-1}(D)$.
+\end{enumerate}
+
+Primeiro, como $f$ é um homomorfismo de anéis, então $f(0_A) = 0_B$. Agora $D$ sendo um subanel de $B$ então $0_B \in D$. Logo $0_A \in f^{-1}(D)$ pois $f(0_A) \in D$.
+
+Dados $x$, $y \in f^{-1}(D)$ temos que $f(x) \in D$ e $f(y) \in D$. Daí
+\begin{align*}
+	f(x - y) &= f(x) - f(y) \in D\\
+	f(xy) &= f(x)f(y) \in D
+\end{align*}
+pois $D$ é um subanel de $B$. Portanto $x - y \in f^{-1}(D)$ e $xy \in f^{-1}(D)$ e com isso $f^{-1}(D)$ é um subanel de $A$.
+\end{document}
