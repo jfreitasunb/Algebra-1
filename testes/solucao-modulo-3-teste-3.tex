@@ -60,31 +60,27 @@ Portanto $(\z\times\z,+)$ é um grupo abeliano.
 \]
 Mostre que $f$ é um homomorfismo de grupos e calcule $\ker(f)$.
 
-\noindent\textbf{Solu\c{c}\~ao:} Temos
-\[
-	ker(f) = \left\{x \in \z \mid f(x) = \begin{pmatrix}
-		\overline{0} & \overline{0} & \overline{0}\\
-		\overline{0} & \overline{0} & \overline{0}\\
-		\overline{0} & \overline{0} & \overline{0}
-	\end{pmatrix}\right\}.
-\]
+\noindent\textbf{Solu\c{c}\~ao:} Dados $(x,y)$, $(z,t) \in \z\times\z$ temos
+\begin{align*}
+	f((x,y) + (z,t)) = f(x+z,y+t) = (\overline{x+z - (y+t)},\overline{0}) = (\overline{x+z - y - t}, \overline{0}) = (\overline{(x-y) + (z-t)},\overline{0}) = (\overline{x-y},\overline{0}) + (\overline{z-t},\overline{0}) = f(x,y) + f(z,t).
+\end{align*}
+Logo $f$ é um homomorfismo de grupos.
 
-Assim
+Agora
 \[
-	f(x) = \begin{pmatrix}
-		\overline{x} & \overline{0} & \overline{0}\\
-		\overline{0} & \overline{x} & \overline{0}\\
-		\overline{0} & \overline{0} & \overline{x}
-	\end{pmatrix} = \begin{pmatrix}
-		\overline{0} & \overline{0} & \overline{0}\\
-		\overline{0} & \overline{0} & \overline{0}\\
-		\overline{0} & \overline{0} & \overline{0}
-	\end{pmatrix}
+	\ker(f) = \{(x,y) \in \z\times\z \mid f(x,y) = (\overline{0},\overline{0}\}.
 \]
-logo $\overline{x} = \overline{0}$. Isto é, $x \equiv 0 \pmod 8$. Logo 
+Mas
+\begin{align*}
+	f(x,y) = (\overline{0},\overline{0})\\
+	(\overline{x-y},\overline{0}) = (\overline{0},\overline{0})\\
+	\overline{x-y} = \overline{0}\\
+	\overline{x} = \overline{y}\\
+	x \equiv y \pmod(7)\\
+	x = y + 7k
+\end{align*}
+para $k \in \z$. Logo
 \[
-	\ker(f) = \{x \in \z \mid x = 8k,\ k \in \z\} = \{0, \pm 8, \pm 16, \pm 24, \dots\}.
+	\ker(f) = \{(y+7k,y) \mid y\in \z,\ k \in \z\}.
 \]
-
-Como $\ker(f) \ne \{0\}$ então $f$ não é injetora.
 \end{document}
