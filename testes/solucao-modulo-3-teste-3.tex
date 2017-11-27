@@ -27,13 +27,13 @@ para todos $(x,y)$, $(z,t) \in \z\times\z$. Mostre que $(\z\times\z, +)$ é um g
 
 Primeiro dados $(x,y)$, $(z,t) \in \z\times\z$ temos
 \[
-	(x,y) + (z,t) = (x+z,y+t) = (z+x,y+t) = (z,t) + (x,y).
+	(x,y) + (z,t) = (x+z,y+t) = (z+x,t+y) = (z,t) + (x,y).
 \]
 Assim a operação em $\z\times\z$ é comutativa.
 
 Sejam $(x,y)$, $(z,t)$ e $(r,s) \in \z\times\z$. Então
 \begin{align*}
-	[(x,y) + (z,t)] + (r,s) &= (x + z, y+t) + (r,s) = (x+y+r,y+t+s)\\
+	[(x,y) + (z,t)] + (r,s) &= (x + z, y+t) + (r,s) = (x+z+r,y+t+s)\\
 	(x,y) + [(z,t)+(r,s)] &= (x,y) + (z+r,t+s) = (x+z+r,y+t+s).
 \end{align*}
 Logo $[(x,y)+(z,t)] + (r,s) = (x,y) + [(z,t) + (r,s)]$.
@@ -68,7 +68,7 @@ Logo $f$ é um homomorfismo de grupos.
 
 Agora
 \[
-	\ker(f) = \{(x,y) \in \z\times\z \mid f(x,y) = (\overline{0},\overline{0}\}.
+	\ker(f) = \{(x,y) \in \z\times\z \mid f(x,y) = (\overline{0},\overline{0})\}.
 \]
 Mas
 \begin{align*}
@@ -81,6 +81,6 @@ Mas
 \end{align*}
 para $k \in \z$. Logo
 \[
-	\ker(f) = \{(y+7k,y) \mid y\in \z,\ k \in \z\}.
+	\ker(f) = \{(y+7k,y) \in \z\times\z \mid y\in \z,\ k \in \z\}.
 \]
 \end{document}
