@@ -25,36 +25,32 @@ para todos $(x,y)$, $(z,t) \in \z\times\z$. Mostre que $(\z\times\z, +)$ é um g
 
 \noindent\textbf{Solu\c{c}\~ao:}
 
-Sejam $x$, $y \in \z$. Então
+Primeiro dados $(x,y)$, $(z,t) \in \z\times\z$ temos
+\[
+	(x,y) + (z,t) = (x+z,y+t) = (z+x,y+t) = (z,t) + (x,y).
+\]
+Assim a operação em $\z\times\z$ é comutativa.
+
+Sejam $(x,y)$, $(z,t)$ e $(r,s) \in \z\times\z$. Então
 \begin{align*}
-	f(x + y) &= \begin{pmatrix}
-		\overline{x + y} & \overline{0} & \overline{0}\\
-		\overline{0} & \overline{x + y} & \overline{0}\\
-		\overline{0} & \overline{0} & \overline{x + y}
-	\end{pmatrix} = \begin{pmatrix}
-		\overline{x} & \overline{0} & \overline{0}\\
-		\overline{0} & \overline{x} & \overline{0}\\
-		\overline{0} & \overline{0} & \overline{x}
-	\end{pmatrix} + \begin{pmatrix}
-		\overline{y} & \overline{0} & \overline{0}\\
-		\overline{0} & \overline{y} & \overline{0}\\
-		\overline{0} & \overline{0} & \overline{y}
-	\end{pmatrix} = f(x) + f(y)\\
-	f(x\cdot y) &= \begin{pmatrix}
-		\overline{xy} & \overline{0} & \overline{0}\\
-		\overline{0} & \overline{xy} & \overline{0}\\
-		\overline{0} & \overline{0} & \overline{xy}
-	\end{pmatrix} = \begin{pmatrix}
-		\overline{x} & \overline{0} & \overline{0}\\
-		\overline{0} & \overline{x} & \overline{0}\\
-		\overline{0} & \overline{0} & \overline{x}
-	\end{pmatrix} \begin{pmatrix}
-		\overline{y} & \overline{0} & \overline{0}\\
-		\overline{0} & \overline{y} & \overline{0}\\
-		\overline{0} & \overline{0} & \overline{y}
-	\end{pmatrix} = f(x)f(y)
+	[(x,y) + (z,t)] + (r,s) &= (x + z, y+t) + (r,s) = (x+y+r,y+t+s)\\
+	(x,y) + [(z,t)+(r,s)] &= (x,y) + (z+r,t+s) = (x+z+r,y+t+s).
 \end{align*}
-Logo $f$ é um homomorfismo de anéis.
+Logo $[(x,y)+(z,t)] + (r,s) = (x,y) + [(z,t) + (r,s)]$.
+
+Para todo $(x,y) \in \z\times\z$ temos
+\[
+	(x,y) + (0,0) = (x+0,y+0) = (x,y).
+\]
+Assim $(0,0)$ é o elemento neutro da operação em $\z\times\z$.
+
+Agora dado $(x,y) \in \z\times\z$ tome $(-x,-y) \in \z\times\z$. Então
+\[
+	(x,y) + (-x,-y) = (x+(-x),y+(-y)) = (0,0).
+\]
+Daí $(-x,-y)$ é o oposto de $(x,y)$ em $\z\times\z$.
+
+Portanto $(\z\times\z,+)$ é um grupo abeliano.
 
 \vspace{1cm}
 
