@@ -1,0 +1,95 @@
+%!TEX program = xelatex
+%!TEX encoding = ISO-8859-1
+\documentclass[12pt]{article}
+
+\include{configuracoes/estrutura_listas}
+
+\begin{document}
+
+\input{configuracoes/cabecalho_listas}
+
+\begin{center}
+{\Large\bf {\'A}lgebra 1 - Turma D -- 2$^{o}$/2017} \\ \vspace{9pt} {\large\bf
+  $2^{\underline{o}}$ Teste Módulo 3 - Resolu\c{c}\~ao}\\
+\vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+\end{center}
+\hrule
+
+\vspace{.6cm}
+
+Seja $f : \z \to M_3(\z_8)$ dada por
+\[
+	f(x) = \begin{pmatrix}
+		\overline{x} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{x} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{x}
+	\end{pmatrix}.
+\]
+
+\questao Mostre que $f$ é um homomorfismo de anéis.
+
+\noindent\textbf{Solu\c{c}\~ao:}
+
+Sejam $x$, $y \in \z$. Então
+\begin{align*}
+	f(x + y) &= \begin{pmatrix}
+		\overline{x + y} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{x + y} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{x + y}
+	\end{pmatrix} = \begin{pmatrix}
+		\overline{x} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{x} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{x}
+	\end{pmatrix} + \begin{pmatrix}
+		\overline{y} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{y} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{y}
+	\end{pmatrix} = f(x) + f(y)\\
+	f(x\cdot y) &= \begin{pmatrix}
+		\overline{xy} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{xy} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{xy}
+	\end{pmatrix} = \begin{pmatrix}
+		\overline{x} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{x} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{x}
+	\end{pmatrix} \begin{pmatrix}
+		\overline{y} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{y} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{y}
+	\end{pmatrix} = f(x)f(y)
+\end{align*}
+Logo $f$ é um homomorfismo de anéis.
+
+\vspace{1cm}
+
+\questao Determine $\ker(f)$. $f$ é injetora?
+
+\noindent\textbf{Solu\c{c}\~ao:} Temos
+\[
+	ker(f) = \left\{x \in \z \mid f(x) = \begin{pmatrix}
+		\overline{0} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{0}
+	\end{pmatrix}\right\}.
+\]
+
+Assim
+\[
+	f(x) = \begin{pmatrix}
+		\overline{x} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{x} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{x}
+	\end{pmatrix} = \begin{pmatrix}
+		\overline{0} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{0}\\
+		\overline{0} & \overline{0} & \overline{0}
+	\end{pmatrix}
+\]
+logo $\overline{x} = \overline{0}$. Isto é, $x \equiv 0 \pmod 8$. Logo 
+\[
+	\ker(f) = \{x \in \z \mid x = 8k,\ k \in \z\} = \{0, \pm 8, \pm 16, \pm 24, \dots\}.
+\]
+
+Como $\ker(f) \ne \{0\}$ então $f$ não é injetora.
+\end{document}
