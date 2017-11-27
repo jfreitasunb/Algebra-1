@@ -62,7 +62,7 @@ Mostre que $f$ é um homomorfismo de grupos e calcule $\ker(f)$.
 
 \noindent\textbf{Solu\c{c}\~ao:} Dados $(x,y)$, $(z,t) \in \z\times\z$ temos
 \begin{align*}
-	f((x,y) + (z,t)) = f(x+z,y+t) = (\overline{x+z - (y+t)},\overline{0}) = (\overline{x+z - y - t}, \overline{0}) = (\overline{(x-y) + (z-t)},\overline{0}) = (\overline{x-y},\overline{0}) + (\overline{z-t},\overline{0}) = f(x,y) + f(z,t).
+	f((x,y) + (z,t)) &= f(x+z,y+t) = (\overline{x+z - (y+t)},\overline{0}) \\ &= (\overline{x+z - y - t}, \overline{0}) = (\overline{(x-y) + (z-t)},\overline{0}) \\ &= (\overline{x-y},\overline{0}) + (\overline{z-t},\overline{0}) \\ &= f(x,y) + f(z,t).
 \end{align*}
 Logo $f$ é um homomorfismo de grupos.
 
@@ -72,12 +72,12 @@ Agora
 \]
 Mas
 \begin{align*}
-	f(x,y) = (\overline{0},\overline{0})\\
-	(\overline{x-y},\overline{0}) = (\overline{0},\overline{0})\\
-	\overline{x-y} = \overline{0}\\
-	\overline{x} = \overline{y}\\
-	x \equiv y \pmod(7)\\
-	x = y + 7k
+	f(x,y) &= (\overline{0},\overline{0})\\
+	(\overline{x-y},\overline{0}) &= (\overline{0},\overline{0})\\
+	\overline{x-y} &= \overline{0}\\
+	\overline{x} &= \overline{y}\\
+	x &\equiv y \pmod 7\\
+	x &= y + 7k
 \end{align*}
 para $k \in \z$. Logo
 \[
