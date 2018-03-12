@@ -128,7 +128,7 @@ A = \{n \mid n \mbox{ \'e m{\'u}ltiplo de } 2\} = \{2,4,6,...\}.
 	Dados conjuntos $A$ e $B$, de acordo com a Definição \ref{igualdade_conjuntos} para que $A \ne B$ basta que exista um elemento $x \in A$ tal que $x \notin B$ ou que exista $y \in B$ tal que $y \notin A$.
 \end{observacao}
 	
-\begin{definicao}
+\begin{definicao}\label{definicao_continencia_conjuntos}
 	Se $A$ e $B$ s{\~a}o dois conjuntos, dizemos que $A$ {\'e} um \textbf{subconjunto} de $B$ ou que $A$ \textbf{est\'a contido} em $B$ ou que $B$ \textbf{cont\'em} $A$ se todo elemento de $A$ for elemento de $B$. Ou seja, se para todo elemento $x \in A$, temos $x \in B$. Nesse caso, escrevemos $A \subseteq B$ ou $B \supseteq A$.
 \end{definicao}
 
@@ -140,8 +140,6 @@ A \subsetneq B.
 
 Nesse caso, dizemos que $A$ {\'e} um \textbf{subconjunto pr{\'o}prio} de $B$.
 
-Para dizer que $A$ n{\~a}o est{\'a} contido em $B$, escrevemos $A \nsubseteq B$.
-
 \begin{exemplos}
 	Sejam $A = \{1,2,3,x,y,z\}$, $B = \{x, y\}$ e $C = \{x, y , z\}$. Temos:
 	\begin{enumerate}
@@ -151,6 +149,10 @@ Para dizer que $A$ n{\~a}o est{\'a} contido em $B$, escrevemos $A \nsubseteq B$.
 		\item $C \subseteq A$ pois todo elemento de $C$ também está em $A$.
 	\end{enumerate}
 \end{exemplos}
+
+\begin{observacao}
+	Dados dois conjuntos $A$ e $B$ pela Definição \ref{definicao_continencia_conjuntos} para que $A$ \textbf{não esteja contido em} $B$ basta que exista $x \in A$ tal que $x \notin B$. Nesse caso escrevemos $A \nsubseteq B$.
+\end{observacao}
 
 Usando a defini\c{c}\~ao de contin\^encia de conjuntos podemos definir igualdade de conjuntos da seguinte forma:
 \begin{center}
