@@ -11,7 +11,7 @@
 Nas considera\c{c}\~oes que faremos a seguir uma opera\c{c}\~ao bin\'aria $f$ sobre $A$ que associa a cada par ordenado $(x, y) \in A \times A$ um elemento $f(x, y) \in A$ ser\'a denotada simplesmente por $*$. Assim escreveremos $f(x, y) = x*y$. Por exemplo a opera\c{c}\~ao $* : \n \times \n \to \n$ tal que $x*y = x^y$ est\'a bem definida pois $x^y \in \n$ sempre que $x$, $y \in \n$. Observe que esta opera\c{c}\~ao n\~ao pode ser definida em $\z$ pois por exemplo $2^{-1} \notin \z$. Tamb\'em n\~ao pode ser definida em $\rac$ pois $2^{1/2} \notin \rac$.
 
 \begin{definicao}
-	Seja $G$ um conjunto n{\~a}o vazio no qual está definida uma opera{\c c}{\~a}o bin{\'a}ria $*$ tal que:
+	Seja $G$ um conjunto n{\~a}o vazio no qual est\'a definida uma opera{\c c}{\~a}o bin{\'a}ria $*$ tal que:
 	\begin{enumerate}[label={\roman*})]
 		\item Para todos $x$, $y$, $z\in G$:
 		\[
@@ -30,13 +30,13 @@ Nas considera\c{c}\~oes que faremos a seguir uma opera\c{c}\~ao bin\'aria $f$ so
 		\]
 		O elemento $y$ {\'e} chamado de \textbf{inverso} ou \textbf{oposto} de $x$.
 	\end{enumerate}
-	Nesse caso dizemos que o par $(G, *)$ é um \textbf{grupo}.
+	Nesse caso dizemos que o par $(G, *)$ \'e um \textbf{grupo}.
 \end{definicao}
 
 \begin{observacao}
 	Quando $*$ {\'e} uma soma, dizemos que $(G,*)$ {\'e} um \textbf{grupo aditivo}. Se $*$ {\'e} uma multiplica{\c c}{\~a}o, dizemos que $(G,*)$ {\'e} um \textbf{grupo multiplicativo}.
 
-	Além disso, quando não houver chance de confusão com relação à operação do grupo $(G, *)$ vamos dizer simplesmente que $G$ é um grupo.
+	Al\'em disso, quando n\~ao houver chance de confus\~ao com rela\c{c}\~ao \`a opera\c{c}\~ao do grupo $(G, *)$ vamos dizer simplesmente que $G$ \'e um grupo.
 \end{observacao}
 
 \begin{definicao}
@@ -75,12 +75,12 @@ Nas considera\c{c}\~oes que faremos a seguir uma opera\c{c}\~ao bin\'aria $f$ so
 				\[
 					x*y = x + (6-x)-3 = 3 = y*x.
 				\]
-				Assim $y = 6 - x$ é o oposto de $x$ na operação $*$ definida em $\real$.
+				Assim $y = 6 - x$ \'e o oposto de $x$ na opera\c{c}\~ao $*$ definida em $\real$.
 			\end{enumerate}
 
-			Portanto $(\real, *)$ é um grupo.
+			Portanto $(\real, *)$ \'e um grupo.
 
-			Além disso, para todos $x$, $y \in \real$
+			Al\'em disso, para todos $x$, $y \in \real$
 			\[
 				x*y = x + y - 3 = y + x - 3 = y*x
 			\]
@@ -91,13 +91,13 @@ Nas considera\c{c}\~oes que faremos a seguir uma opera\c{c}\~ao bin\'aria $f$ so
 
 		\item $(\z_m-\{\overline{0}\},\otimes)$ {\'e} grupo?
 		\begin{solucao}
-			Não pois por exemplo para $m = 4$ temos $\z_4-\{\overline{0}\} = \{\overline{1}, \overline{2}, \overline{3}\} = G$ e dados $\overline{2}\in G$ temos $\overline{2} \otimes \overline{2} = \overline{0} \notin G$. Portanto a operação $\otimes$ não é uma operação binária em $G = \z_4$.
+			N\~ao pois por exemplo para $m = 4$ temos $\z_4-\{\overline{0}\} = \{\overline{1}, \overline{2}, \overline{3}\} = G$ e dados $\overline{2}\in G$ temos $\overline{2} \otimes \overline{2} = \overline{0} \notin G$. Portanto a opera\c{c}\~ao $\otimes$ n\~ao \'e uma opera\c{c}\~ao bin\'aria em $G = \z_4$.
 		\end{solucao}
 	\end{enumerate}
 \end{exemplos}
 
 \begin{proposicao}
-	Seja $(G,*)$ um grupo. Então:
+	Seja $(G,*)$ um grupo. Ent\~ao:
 	\begin{enumerate}[label={\roman*})]
 		\item O elemento neutro de $G$ {\'e} {\'u}nico.
 
@@ -116,38 +116,38 @@ Nas considera\c{c}\~oes que faremos a seguir uma opera\c{c}\~ao bin\'aria $f$ so
 \end{proposicao}
 
 
-\section{Grupo Simétrico} % (fold)
-\label{sec:grupo_simétrico}
+\section{Grupo Sim\'etrico} % (fold)
+\label{sec:grupo_sim\'etrico}
 
-Seja $A$ um conjunto não vazio. Dada uma função $f : A \to A$, sabemos que $f$ possui inversa se, e somente se, $f$ é bijetora, Teorema \ref{teorema_funcao_inversa}. Assim considere o conjunto
+Seja $A$ um conjunto n\~ao vazio. Dada uma fun\c{c}\~ao $f : A \to A$, sabemos que $f$ possui inversa se, e somente se, $f$ \'e bijetora, Teorema \ref{teorema_funcao_inversa}. Assim considere o conjunto
 \[
-	\mathcal{S} = \{ f : A \to A \mid f \mbox{é injetora}\}
+	\mathcal{S} = \{ f : A \to A \mid f \mbox{\'e injetora}\}
 \]
-com a composição de funções $\circ$. Como $Id : A \to A$ tal que $Id(x) = x$ para todo $x \in A$ é uma função bijetora então $\mathcal{S} \ne \emptyset$. Agora sejam $f$, $g$ e $h \in \mathcal{S}$. Para todo $x \in A$ temos
+com a composi\c{c}\~ao de fun\c{c}\~oes $\circ$. Como $Id : A \to A$ tal que $Id(x) = x$ para todo $x \in A$ \'e uma fun\c{c}\~ao bijetora ent\~ao $\mathcal{S} \ne \emptyset$. Agora sejam $f$, $g$ e $h \in \mathcal{S}$. Para todo $x \in A$ temos
 \begin{align*}
 	[(f\circ g)\circ h](x) &= (f \circ g)(h(x)) = f(g(h(x)))\\
 	[f\circ(g\circ h)](x) &= f((g\circ h)(x)) = f(g(h(x)))
 \end{align*}
 Logo $(f\circ g)\circ h = f\circ(g\circ h)$.
 
-Agora da Proposição \ref{propriedades_identidade} sabemos que para toda $f \in \mathcal{S}$
+Agora da Proposi\c{c}\~ao \ref{propriedades_identidade} sabemos que para toda $f \in \mathcal{S}$
 \[
 	f\circ Id = f = Id\circ f,
 \]
-logo $Id$ é o elemento neutro da composição. Além disso, para toda $f \in \mathcal{S}$ existe $g \in \mathcal{S}$ tal que
+logo $Id$ \'e o elemento neutro da composi\c{c}\~ao. Al\'em disso, para toda $f \in \mathcal{S}$ existe $g \in \mathcal{S}$ tal que
 \[
 	f\circ g = Id = g \circ f
 \]
-pois $f$ é bijetora. Logo todo elemento de $\mathcal{S}$ possui inverso.
+pois $f$ \'e bijetora. Logo todo elemento de $\mathcal{S}$ possui inverso.
 
-Portanto $(\mathcal{S}, \circ)$ é um grupo. Além disso, em geral, esse grupo não é comutativo.
+Portanto $(\mathcal{S}, \circ)$ \'e um grupo. Al\'em disso, em geral, esse grupo n\~ao \'e comutativo.
 
-Vamos considerar agora o caso particular em que $A \sub \n$ é um conjunto finito. Estamos considerando $A \sub \n$ somente para simplificar a notação, poderíamos fazer a abordagem seguinte para qualquer conjunto finito.
+Vamos considerar agora o caso particular em que $A \sub \n$ \'e um conjunto finito. Estamos considerando $A \sub \n$ somente para simplificar a nota\c{c}\~ao, poder{\'\i}amos fazer a abordagem seguinte para qualquer conjunto finito.
 
-Se $A = \{1\}$, então só existe uma função $f : A \to A$ que é bijetora e essa função é a identidade. Nesse caso $\mathcal{S} = S_1 = \{Id\}$ e $(S_1, \circ)$ é um grupo, e nesse caso comutativo.
+Se $A = \{1\}$, ent\~ao s\'o existe uma fun\c{c}\~ao $f : A \to A$ que \'e bijetora e essa fun\c{c}\~ao \'e a identidade. Nesse caso $\mathcal{S} = S_1 = \{Id\}$ e $(S_1, \circ)$ \'e um grupo, e nesse caso comutativo.
 
 
-Se $A = \{1, 2\}$ então podemos definir as seguintes funções bijetoras em $A$:
+Se $A = \{1, 2\}$ ent\~ao podemos definir as seguintes fun\c{c}\~oes bijetoras em $A$:
 \begin{multicols}{2}
 	\begin{enumerate}
 		\item[] \begin{align*}
@@ -159,7 +159,7 @@ Se $A = \{1, 2\}$ então podemos definir as seguintes funções bijetoras em $A$
 	\end{enumerate}
 \end{multicols}
 
-Assim $\mathcal{S} = S_2 = \{Id, f\}$ e $(S_2, \circ)$ é um grupo.
+Assim $\mathcal{S} = S_2 = \{Id, f\}$ e $(S_2, \circ)$ \'e um grupo.
 \begin{table}[!htb]
 \centering
 	\begin{tabular}{|c|c|c|} 
@@ -173,9 +173,9 @@ Assim $\mathcal{S} = S_2 = \{Id, f\}$ e $(S_2, \circ)$ é um grupo.
 	\end{tabular}
 \end{table}
 
-Além disso, da tabela acima vemos que esse grupo é comutativo.
+Al\'em disso, da tabela acima vemos que esse grupo \'e comutativo.
 
-Agora seja $A = \{1, 2, 3\}$. Podemos definir então as seguintes funções bijetoras em $A$:
+Agora seja $A = \{1, 2, 3\}$. Podemos definir ent\~ao as seguintes fun\c{c}\~oes bijetoras em $A$:
 \begin{multicols}{3}
 	\begin{enumerate}
 		\item[] \begin{align*}
@@ -217,23 +217,23 @@ Agora seja $A = \{1, 2, 3\}$. Podemos definir então as seguintes funções bije
 	\end{enumerate}
 \end{multicols}
 
-Logo $\mathcal{S} = S_3 = \{Id, f_1, f_2, f_3, f_4, f_5\}$ e $(S_3, \circ)$ é um grupo. Nesse caso temos
+Logo $\mathcal{S} = S_3 = \{Id, f_1, f_2, f_3, f_4, f_5\}$ e $(S_3, \circ)$ \'e um grupo. Nesse caso temos
 \begin{align*}
 	(f_1 \circ f_4)(1) &= f_1(f_4(1)) = f_1(2) = 1\\
 	(f_4 \circ f_1)(1) &= f_4(f_1(1)) = f_4(2) = 3
 \end{align*}
-daí $(f_1 \circ f_4)(1) \ne (f_4 \circ f_1)(1)$, isto é, $f_1 \circ f_4 \ne f_4 \circ f_1$. Portanto o grupo $(S_3, \circ)$ não é comutativo.
+da{\'\i} $(f_1 \circ f_4)(1) \ne (f_4 \circ f_1)(1)$, isto \'e, $f_1 \circ f_4 \ne f_4 \circ f_1$. Portanto o grupo $(S_3, \circ)$ n\~ao \'e comutativo.
 
 Note que em $S_2$ temos $2 = 2!$ elementos e em $S_3$ temos $6 = 3!$ elementos.
 
-De modo geral, se $A = \{1, 2, 3, \dots, n\}$ então existem exatamente $n!$ funções $f : A \to A$ bijetoras. Assim o grupo $(S_n, \circ)$ possui $n!$ elementos e se $n \geqslant 3$ $S_n$ é um grupo não comutativo.
+De modo geral, se $A = \{1, 2, 3, \dots, n\}$ ent\~ao existem exatamente $n!$ fun\c{c}\~oes $f : A \to A$ bijetoras. Assim o grupo $(S_n, \circ)$ possui $n!$ elementos e se $n \geqslant 3$ $S_n$ \'e um grupo n\~ao comutativo.
 
 \begin{definicao}
-	O grupo $S_n$ é chamado de \textbf{grupo simétrico} ou \textbf{grupo de permutações} em $A = \{1, 2, 3, \dots, n\}$.
+	O grupo $S_n$ \'e chamado de \textbf{grupo sim\'etrico} ou \textbf{grupo de permuta\c{c}\~oes} em $A = \{1, 2, 3, \dots, n\}$.
 \end{definicao}
 
 
-Um possível modo de representar os elementos de $S_n$ é o seguinte: vamos representar as funções $f \in S_n$ na forma de uma matriz contendo 2 linhas e $n$ colunas. A primeira linha é o domínio da função e a segunda contém suas imagens. Assim se $f \in S_n$ escreveremos
+Um poss{\'\i}vel modo de representar os elementos de $S_n$ \'e o seguinte: vamos representar as fun\c{c}\~oes $f \in S_n$ na forma de uma matriz contendo 2 linhas e $n$ colunas. A primeira linha \'e o dom{\'\i}nio da fun\c{c}\~ao e a segunda cont\'em suas imagens. Assim se $f \in S_n$ escreveremos
 \[
 	f = \begin{pmatrix}
 		1 & 2 & 3 & \dots & n\\
@@ -270,7 +270,7 @@ No caso de $S_3$ vamos escrever
 		\end{pmatrix}$
 	\end{enumerate}
 \end{multicols}
-e daí, por exemplo,
+e da{\'\i}, por exemplo,
 \[
 	f_3\circ f_4 = \begin{pmatrix}
 			1 & 2 & 3\\
@@ -284,7 +284,7 @@ e daí, por exemplo,
 		\end{pmatrix} = f_2.
 \]
 
-% section grupo_simétrico (end)
+% section grupo_sim\'etrico (end)
 
 
 \begin{definicao}
@@ -294,7 +294,7 @@ e daí, por exemplo,
 \begin{exemplos}
 	\begin{enumerate}[label={\arabic*})]
 		\item $(\z_m, +)$ {\'e} um grupo finito para todo $m>1$.
-		\item $(S_n, \circ)$ é um grupo finito com $n!$ elementos.
+		\item $(S_n, \circ)$ \'e um grupo finito com $n!$ elementos.
 		\item $(\z, +)$ {\'e} um grupo infinito.
 	\end{enumerate}	
 \end{exemplos}
@@ -329,13 +329,13 @@ e daí, por exemplo,
 	\begin{enumerate}[label={\arabic*})]
 		\item Dado $(G,*)$ grupo, $H=\{e\}$ e $H=G$ s{\~a}o subgrupos de $G$, chamados de \textbf{subgrupos triviais}.
 		\item Seja $(\mathbb{Z},+)$ um grupo. Tomando $H = m\z$, onde $m > 1$, ent{\~a}o $H$ {\'e} subgrupo de $\z$.
-		\item $G = U(\z_8) = \{\overline{1}, \overline{3}, \overline{5}, \overline{7}\}$. Então $(G,\odot)$ {\'e} um grupo com $|G| = 4$. Além disso,
+		\item $G = U(\z_8) = \{\overline{1}, \overline{3}, \overline{5}, \overline{7}\}$. Ent\~ao $(G,\odot)$ {\'e} um grupo com $|G| = 4$. Al\'em disso,
 		\begin{align*}
 			H_1 &= \{\overline{1}, \overline{3}\}\\
 			H_2 &= \{\overline{1}, \overline{5}\}\\
 			H_3 &= \{\overline{1}, \overline{7}\}
 		\end{align*}
-		São subgrupos de $G$.
+		S\~ao subgrupos de $G$.
 		
 	\end{enumerate}
 \end{exemplos}
@@ -348,7 +348,7 @@ e daí, por exemplo,
 \begin{exemplo}
 	Quais s{\~a}o as poss{\'\i}veis ordens dos subgrupos de um grupo de ordem 48?
 	\begin{solucao}
-		Seja $G$ um grupo tal que $|G|=48$. Se $H$ {\'e} um subgrupo prório de $G$, ent{\~a}o $|H|$ divide $|G|$. Mas $48=2^{4}\cdot 3$, daí se $H$ é um subgrupo de $G$ então $|H|=2$ ou $|H|=3$ ou $|H|= 2^{2}$ ou $|H|=2^{3}$ ou $|H|=2^{4}$ ou $|H|=2\cdot3$ ou $|H|=2^2\cdot 3$ ou $|H|=2^3\cdot 3$.
+		Seja $G$ um grupo tal que $|G|=48$. Se $H$ {\'e} um subgrupo pr\'orio de $G$, ent{\~a}o $|H|$ divide $|G|$. Mas $48=2^{4}\cdot 3$, da{\'\i} se $H$ \'e um subgrupo de $G$ ent\~ao $|H|=2$ ou $|H|=3$ ou $|H|= 2^{2}$ ou $|H|=2^{3}$ ou $|H|=2^{4}$ ou $|H|=2\cdot3$ ou $|H|=2^2\cdot 3$ ou $|H|=2^3\cdot 3$.
 	\end{solucao}
 \end{exemplo}
 
@@ -360,7 +360,7 @@ e daí, por exemplo,
 	Os {\'u}nicos subgrupos de um grupo de ordem prima s{\~a}o os triviais
 \end{corolario}
 \begin{prova}
-	Suponha $|G| = p$ é um número primo. Assim os {\'u}nicos divisores positivos de $p$ s{\~a}o 1 e $p$. Logo se $H$ {\'e} um subgrupo de $G$, pelo Teorema \ref{teorema_de_lagrange} ent{\~a}o $|H|$ divide $|G|$. Assim $|H| = 1$ ou $|H| = p$. Portanto, $H=\{e\}$ ou $H = G$.
+	Suponha $|G| = p$ \'e um n\'umero primo. Assim os {\'u}nicos divisores positivos de $p$ s{\~a}o 1 e $p$. Logo se $H$ {\'e} um subgrupo de $G$, pelo Teorema \ref{teorema_de_lagrange} ent{\~a}o $|H|$ divide $|G|$. Assim $|H| = 1$ ou $|H| = p$. Portanto, $H=\{e\}$ ou $H = G$.
 \end{prova}
 
 % Sejam $(G, *)$ e $(H, \triangle)$ grupos quaisquer. Considere uma fun\c{c}\~ao $f : G \to H$. Entre todas as poss{\'\i}veis fun\c{c}\~oes entre $G$ e $H$ vamos considerar somente aquelas que satisfa\c{c}\~ao a condi\c{c}\~ao
