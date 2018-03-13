@@ -21,3 +21,9 @@ listas/lista-7-alg1\.fdb_latexmk
 listas/lista-7-alg1\.fls
 
 listas/lista-7-alg1\.pdf
+
+*.fdb_latexmk
+
+*.fls
+
+listas/lista-1-alg1\.pdf
