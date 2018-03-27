@@ -23,11 +23,17 @@
 
 \vspace{.5cm}
 
-\questao Sejam $A$, $B$ e $C$ conjuntos. Mostre que $A - (B \cup C) = (A - B) \cap (A - C)$
+\questao Sejam $A$, $B$ e $C$ conjuntos. Mostre que $A - (B \cup C) = (A - B) \cap (A - C)$.
 
 \noindent\textbf{Solu\c{c}\~ao:} Precisamos mostrar que:
 \begin{enumerate}[label={\roman*})]
-	\item $(A - B) - C \sub A - (B \cup C)$
-	\item $A - (B \cup C) \sub (A - B) - C$
+	\item $A - (B \cup C) \sub (A - B) \cap (A - C)$
+	\item $(A - B) \cap (A - C) \sub A - (B \cup C)$
 \end{enumerate}
+
+Para a primeira inclusão seja $x \in A - (B \cup C)$. Assim $x \in A$ e $x \notin B \cup C$. Logo $x \notin B$ e $x \notin C$. Como $x \in A$ e $x \notin B$, então $x \in A - B$. Além disso, $x \in A$ e $x \notin C$, logo $x \in A - C$. Como $x \in A - B$ e $x \in A - C$, então $x \in (A - B) \cap (A - C)$.
+
+Agora para a segunda inclusão seja $y \in (A - B) \cap (A - C)$. Daí $y \in A - B$ e $y \in A - C$. Com isso, $y \in A$ e $y \notin B$ e também $y \in A$ e $y \notin C$. Como $y \notin B$ e $y \notin C$, então $y \notin (B \cup C)$. Uma vez que $y \in A$ e $y \notin (B \cup C)$ segue que $y \in A - (B \cup C)$, como queríamos.
+
+Portanto, $A - (B \cup C) = (A - B) \cap (A - C)$.
 \end{document}
