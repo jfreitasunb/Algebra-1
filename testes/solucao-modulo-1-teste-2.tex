@@ -21,40 +21,13 @@
 
 \noindent\textbf{Solu\c{c}\~ao:} Seja $x \in C_E(A)$. Assim, por definição de complementar, $x \in E$ e $x \notin A$. Mas $E = A \cup B$ e $x \notin A$, logo $x \in B$. Portanto $C_E(A) \subseteq B$, como queríamos.
 
+\vspace{.5cm}
+
+\questao Sejam $A$, $B$ e $C$ conjuntos. Mostre que $A - (B \cup C) = (A - B) \cap (A - C)$
+
 \noindent\textbf{Solu\c{c}\~ao:} Precisamos mostrar que:
 \begin{enumerate}[label={\roman*})]
 	\item $(A - B) - C \sub A - (B \cup C)$
 	\item $A - (B \cup C) \sub (A - B) - C$
 \end{enumerate}
-
-Para a primeira inclusão seja $x \in (A - B) - C$. Assim, da definição de diferença de conjuntos, $x \in (A - B)$ e $x \notin C$. Novamente, pela definição de diferença de conjuntos, $x \in A$ e $x \notin B$. Como $x \notin B$ e $x \notin C$, então $x \notin (B \cup C)$. Daí $x \in A$ e $x \notin (B \cup C)$, ou seja, $x \in A - (B \cup C)$. Logo $(A - B) - C \sub A - (B \cup C)$.
-
-Agora para a segunda inclusão seja $y \in A - (B \cup C)$. Daí, pela definição de diferença de conjuntos, $x \in A$ e $x \notin (B \cup C)$. Como $x \notin (B \cup C)$, então $x \notin B$ e $x \notin C$. Assim de $x \in A$ e $x \notin B$ segue que $x \in A - B$. Agora, $x \in A - B$ e $x \notin C$ logo $x \in (A - B) - C$. Logo $A - (B \cup C) \sub (A - B) - C$.
-
-Portanto
-
-\[
-	(A - B) - C = A - (B \cup C),
-\]
-como queríamos.
-
-\vspace{.5cm}
-
-\questao Sejam $A = \z$, $m \in \z$, $m > 1$ fixo e $R = \{(x,y)\in \z \times \z \mid x - y = mk, \mbox{ para algum } k \in \z\}$. Mostre que $R$
-é uma rela{\c c}{\~a}o de equival{\^e}ncia sobre $\z$.
-
-\noindent\textbf{Solu\c{c}\~ao:} De fato,
-	\begin{itemize}
-		\item Para todo $x\in \z$ temos $x - x = m\cdot0$ e com isso $(x,x) \in R$.
-		\item Se $(x,y) \in R$ então existe $k \in \z$ tal que $x - y = mk$. Agora $y - x = -(x - y) = -mk = m (-k)$ e como $-k \in \z$ segue que $(y,x) \in R$.
-		\item Se $(x,y) \in R$ e $(y,z) \in R$, então existem $k$, $l\in \z$ tais que $x - y = mk$ e $y - z = ml$.
-		Somando essas duas equações obtemos
-		\begin{align*}
-			(x - y) + (y - z) &= mk + ml\\
-			x - z &= m(k + l)
-		\end{align*}
-		e como $k + l \in \z$ segue que $(x,z) \in \z$.
-	\end{itemize}
-	
-	Assim $R$ é uma relação de equivalência.
 \end{document}
