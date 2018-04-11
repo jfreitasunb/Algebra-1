@@ -18,21 +18,21 @@
 \vspace{.6cm}
 
 \questao Para mostrar que $R$ \'e rela\c{c}\~ao de equival\^encia sobre $A$ precisamos mostrar que
-\begin{enumerate}
+\begin{enumerate}[label={\roman*})]
 	\item Para todo $x \in A$, $xRx$.
 	\item Se $xRy$, ent\~ao $yRx$.
 	\item Se $xRy$ e $yRz$, ent\~ao $XRz$.
 \end{enumerate}
 
 Como $A = \n \times \n^*$, ent\~ao os elementos que aparecem na defini\c{c}\~ao de rela\c{c}\~ao de equival\^encia ser\~ao pares ordenados. Nesse caso particular precisamos verificar que:
-\begin{enumerate}
+\begin{enumerate}[label={\roman*})]
 	\item Para todo $x = (a,b) \in A$, $(a,b)R(a,b)$.
 	\item Para $x = (a,b)$ e $y = (c,d)$, se $(a,b)R(c,d)$, ent\~ao $(c,d)R(a,b)$.
 	\item Para $x = (a,b)$, $y = (c,d)$ e $z = (e,f)$ se $(a,b)R(c,d)$ e $(c,d)R(e,f)$, ent\~ao $(a,b)R(e,f)$.
 \end{enumerate}
 
 De fato,
-\begin{enumerate}
+\begin{enumerate}[label={\roman*})]
 	\item Para $(a,b) \in A$ $a + b = a + b$, logo $(a,b)R(a,b)$.
 	\item Se $(a,b)R(c,d)$ ent\~ao, por defini\c{c}\~ao $a + b = c + d$. Ou seja $c + d = a + b$ e com isso $(c,d)R(a,b)$.
 	\item se $(a,b)R(c,d)$ e $(c,d)R(e,f)$ ent\~ao, por defini\c{c}\~ao $a + b = c + d$  e $c + d = e + f$. Logo $a + b = e + f$, isto \'e, $(a,b)R(e,f)$.
