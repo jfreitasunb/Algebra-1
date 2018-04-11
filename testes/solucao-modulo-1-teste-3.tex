@@ -17,7 +17,29 @@
 
 \vspace{.6cm}
 
-\questao Seja $A = \n \times \n^*$ e considere a relação sobre $A$ dada por
+\questao Para mostrar que $R$ é relação de equivalência sobre $A$ precisamos mostrar que
+\begin{enumerate}
+	\item Para todo $x \in A$, $xRx$.
+	\item Se $xRy$, então $yRx$.
+	\item Se $xRy$ e $yRz$, então $XRz$.
+\end{enumerate}
+
+Como $A = \n \times \n^*$, então os elementos que aparecem na definição de relação de equivalência serão pares ordenados. Nesse caso particular precisamos verificar que:
+\begin{enumerate}
+	\item Para todo $x = (a,b) \in A$, $(a,b)R(a,b)$.
+	\item Para $x = (a,b)$ e $y = (c,d)$, se $(a,b)R(c,d)$, então $(c,d)R(a,b)$.
+	\item Para $x = (a,b)$, $y = (c,d)$ e $z = (e,f)$ se $(a,b)R(c,d)$ e $(c,d)R(e,f)$, então $(a,b)R(e,f)$.
+\end{enumerate}
+
+De fato,
+\begin{enumerate}
+	\item Para $(a,b) \in A$ $a + b = a + b$, logo $(a,b)R(a,b)$.
+	\item Se $(a,b)R(c,d)$ então, por definição $a + b = c + d$. Ou seja $c + d = a + b$ e com isso $(c,d)R(a,b)$.
+	\item se $(a,b)R(c,d)$ e $(c,d)R(e,f)$ então, por definição $a + b = c + d$  e $c + d = e + f$. Logo $a + b = e + f$, isto é, $(a,b)R(e,f)$.
+\end{enumerate}
+
+Portanto, $R$ é uma relação de equivalência sobre $A$ como queríamos.
+
 \[
 	(a,b)R(c,d) \mbox{ se, e só se, } a + b = c + d.
 \]
