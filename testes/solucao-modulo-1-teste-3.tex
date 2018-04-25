@@ -9,7 +9,7 @@
 \input{configuracoes/cabecalho_listas}
 
 \begin{center}
-{\Large\bf {\'A}lgebra 1 - Turma D -- 2$^{o}$/2017} \\ \vspace{9pt} {\large\bf
+{\Large\bf {\'A}lgebra 1 - Turma C -- 1$^{o}$/2018} \\ \vspace{9pt} {\large\bf
   $3^{\underline{o}}$ Teste - Resolu\c{c}\~ao}\\
 \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
 \end{center}
@@ -17,64 +17,78 @@
 
 \vspace{.6cm}
 
-\questao Seja $R \sub \q \times \q$ definido por $xRy$ quando $x - y \in \z$. Mostre que $R$ é uma relação de equivalência sobre $\q$.
+\questao Seja $A = \n \times \n^*$ e considere a rela\c{c}\~ao sobre $A$ dada por
+\[
+	(a,b)R(c,d) \mbox{ se, e s\'o se, } a + b = c + d.
+\]
 
-\noindent\textbf{Solu\c{c}\~ao:} Temos
+Mostre que $R$ \'e uma rela\c{c}\~ao de equival\^encia sobre $A$.
+
+\noindent\textbf{Solu\c{c}\~ao:} Para mostrar que $R$ \'e rela\c{c}\~ao de equival\^encia sobre $A$ precisamos mostrar que:
 \begin{enumerate}[label={\roman*})]
-	\item $xRx$ pois $x - x = 0 \in \z$.
-	\item Se $xRy$, então $x - y = k$, com $k \in \z$. Assim $y - x = -(x - y) = -k \in \z$. Logo $yRx$.
-	\item Se $xRy$ e $yRz$, então $x - y = k$ e $y - z = l$, com $k$, $l \in \z$. Assim $x - z = (x - y) + (y - z) = k + l \in \z$. Logo $xRz$.
+	\item Para todo $x \in A$, $xRx$.
+	\item Se $xRy$, ent\~ao $yRx$.
+	\item Se $xRy$ e $yRz$, ent\~ao $xRz$.
 \end{enumerate}
 
-Portanto $R$ é uma relação de equivalência sobre $\q$.
+Como $A = \n \times \n^*$, ent\~ao os elementos que aparecem na defini\c{c}\~ao de rela\c{c}\~ao de equival\^encia ser\~ao pares ordenados. Nesse caso particular precisamos verificar que:
+\begin{enumerate}[label={\roman*})]
+	\item Para todo $x = (a,b) \in A$, $(a,b)R(a,b)$.
+	\item Para $x = (a,b)$ e $y = (c,d)$, se $(a,b)R(c,d)$, ent\~ao $(c,d)R(a,b)$.
+	\item Para $x = (a,b)$, $y = (c,d)$ e $z = (e,f)$ se $(a,b)R(c,d)$ e $(c,d)R(e,f)$, ent\~ao $(a,b)R(e,f)$.
+\end{enumerate}
 
+De fato,
+\begin{enumerate}[label={\roman*})]
+	\item Para $(a,b) temos \in A$ $a + b = a + b$, logo $(a,b)R(a,b)$.
+	\item Se $(a,b)R(c,d)$ ent\~ao, por defini\c{c}\~ao $a + b = c + d$. Ou seja $c + d = a + b$ e com isso $(c,d)R(a,b)$.
+	\item se $(a,b)R(c,d)$ e $(c,d)R(e,f)$ ent\~ao, por defini\c{c}\~ao $a + b = c + d$  e $c + d = e + f$. Logo $a + b = e + f$, isto \'e, $(a,b)R(e,f)$.
+\end{enumerate}
+
+Portanto, $R$ \'e uma rela\c{c}\~ao de equival\^encia sobre $A$ como quer{\'\i}amos.
 
 \vspace{.5cm}
 
-\questao Seja $A = \z \times \z^*$, onde $\z^* = \z - \{0\}$. Para $(a,b)$, $(c,d) \in A$ defina
+\questao Considere a seguinte rela\c{c}\~ao sobre $\z$
 \[
-	(a,b)R(c,d) \mbox{ quando } ad=bc.
+	xRy \mbox{ quando } x^2 - y^2 = 4k, \mbox{ para algum } k \in \z.
 \]
 
 \begin{enumerate}[label={\alph*})]
-	\item Mostre que $R$ é uma rela{\c c}{\~a}o de equival{\^e}ncia sobre $A$.
-	\item Encontre a classe de equivalência $\overline{(2,1)}$ e exiba 5 elementos.
+	\item Mostre que $R$ \'e uma rela{\c c}{\~a}o de equival{\^e}ncia sobre $\z$.
+	\item Encontre $\overline{0}$, $\overline{1}$ e $\overline{2}$.
 \end{enumerate}
 
-\noindent\textbf{Solu\c{c}\~ao:} De fato,
+\noindent\textbf{Solu\c{c}\~ao:}
 	\begin{enumerate}[label={\alph*})]
-		\item Primeiro observe que
-		\[
-			R = \{((a,b);(c,d)) \in A \times A \mid ad = bc\}
-		\]
-		Assim um elemento $x \in A = \z\times\z^*$ é da forma $x = (a,b)$.
+		\item De fato,
 		\begin{enumerate}[label={\roman*})]
-			\item Para $(a,b) \in A$, $ab = ab$ logo $(a,b)R(a,b)$.
-			\item Se $(a,b)R(c,d)$, então $ad = bc$. Assim $bc = ad$, isto é, $(c,d)R(a,b)$.
-			\item Se $(a,b)R(c,d)$ e $(c,d)R(e,f)$ então
-			\begin{align}
-				ad &= bc\label{primeira_equacao}\\
-				cf &= de.\label{segunda_equacao}
-			\end{align}
-			Multiplicando a equação \eqref{primeira_equacao} por $f$ obtemos
-			\begin{align}\label{terceira_equacao}
-				adf = bcf.
-			\end{align}
-			Substituindo o valor de $cf$ da equação \eqref{segunda_equacao} na equação \eqref{terceira_equacao} obtemos
+			\item Para todo $x \in \z$, $x^2 - y^2 = 0 = 4\cdot 0$. Logo $xRx$.
+			\item Se $xRy$, ent\~ao $x^2 - y^2 = 4k$. Assim $y^2 - x^2 = -(x^2 - y^2) = -4k = 4(-k)$, isto \'e, $yRx$.
+			\item Se $xRy$ e $yRz$ ent\~ao
 			\begin{align*}
-				adf &= bde\\
-				adf - bde &= 0\\
-				d(af - be) &= 0.
+				x^2 - y^2 &= 4k\\
+				y^2 - z^2 &= 4l
 			\end{align*}
-			Como $d \in \z^*$, $d \ne 0$, logo $af - be = 0$. Assim $af = be$ e com isso $(a,b)R(e,f)$.
+			para $k$, $l \in \z$.
+			Somando as duas equa\c{c}\~oes obtemos
+			\begin{align*}\label{terceira_equacao}
+				x^2 - y^2 + y^2 - z^2 &= 4k + 4l\\
+				x^2 - z^2 &= 4(k + l)
+			\end{align*}
+			Assim $xRz$.
 		\end{enumerate}
 
-		Portanto $R$ é uma relação de equivalência sobre $A$.
+		Portanto $R$ \'e uma rela\c{c}\~ao de equival\^encia sobre $\z$.
 
-		\item A classe de equivalência de $\overline{(2,1)}$ é dada por:
+		\item Temos:
 		\begin{align*}
-			\overline{(2,1)} &= \{(x,y) \in A \mid (x,y)R(2,1)\} = \{(x,y) \in A \mid x = 2y\} \\
-			&= \{\cdots; (2,1); (4,2); (-2,-1);(-4,-2);(6,3);\cdots\}.
+			\overline{0} &= \{x \in \z \mid xR0\} = \{x \in \z \mid x^2 - 0^2 = 4k,\ k \in \z\} \\
+			&= \{x \in \z \mid x^2 = 4k, \ k \in \z\} = \{\dots, -4,-2,0,2,4, \dots\}\\
+			\overline{1} &= \{x \in \z \mid xR1\} = \{x \in \z \mid x^2 - 1^2 = 4k,\ k \in \z\} \\
+			&= \{x \in \z \mid x^2 = 4k + 1, \ k \in \z\} = \{\dots, -3,-1,1,3, \dots\}\\
+			\overline{2} &= \{x \in \z \mid xR2\} = \{x \in \z \mid x^2 - 2^2 = 4k,\ k \in \z\} \\
+			&= \{x \in \z \mid x^2 = 4k + 4, \ k \in \z\} = \{x \in \z \mid x^2 = 4(k + 1), \ k \in \z\} = \overline{0}.
 		\end{align*}
 	\end{enumerate}
 \end{document}
