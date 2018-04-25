@@ -1,0 +1,99 @@
+%!TEX program = xelatex
+%!TEX encoding = ISO-8859-1
+\documentclass[12pt]{article}
+
+\include{configuracoes/estrutura_listas}
+
+\begin{document}
+
+\input{configuracoes/cabecalho_listas}
+
+\begin{center}
+{\Large\bf {\'A}lgebra 1 - Turma D -- 2$^{o}$/2017} \\ \vspace{9pt} {\large\bf
+  $3^{\underline{a}}$ Lista de Exerc{\'\i}cios -- Operações em $\z_m$}\\
+\vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+\end{center}
+\hrule
+
+\vspace{.6cm}
+
+\questao Construa a tabela de soma, $\oplus$, e multiplicação, $\otimes$, nos seguintes conjuntos:
+\begin{multicols}{2}
+	\begin{enumerate}[label=({\alph*})]
+		\item $\z_5$
+		\item $\z_8$
+		\item $\z_9$
+		\item $\z_{11}$
+	\end{enumerate}
+\end{multicols}
+
+\vesp
+
+\questao Considere os seguintes subconjuntos $G$ de $\z_{12}$:
+\begin{multicols}{2}
+	\begin{enumerate}[label=({\alph*})]
+		\item $G=\{\overline{1},\overline{11}\}$;
+
+		\item $G=\{\overline{0},\overline{4},\overline{8}\}$;
+
+		\item $G=\{\overline{0},\overline{2},\overline{4},\overline{6},\overline{8},\overline{10}\}$
+		\item $G=\{\overline{1}, \overline{3},\overline{5},\overline{7},\overline{9},\overline{11}\}$.
+	\end{enumerate}
+\end{multicols}
+
+Para quais desses conjuntos vale as duas propriedades seguintes:
+\begin{enumerate}[label=({\roman*})]
+	\item $x \oplus y \in G$, para todos $x$, $y \in G$;
+	\item Para todo $x \in G$, existe $y \in G$ tal que $x \oplus y = \overline{0}$.
+\end{enumerate}
+
+\vesp
+
+\questao Considere os seguintes subconjuntos $G$ de $\z_{13}$:
+\begin{multicols}{2}
+	\begin{enumerate}[label=({\alph*})]
+		\item $G=\{\overline{1},\overline{12}\}$;
+
+		\item $G=\{\overline{1},\overline{5},\overline{8},\overline{12}\}$;
+
+		\item $G=\{\overline{1},\overline{2},\overline{3},\overline{4}, \overline{5},\overline{6},\overline{7},
+		 \overline{8},\overline{9},\overline{10},\overline{11},\overline{12}\}$
+		\item $G=\{\overline{1}, \overline{3},\overline{5},\overline{7},\overline{9},\overline{11}\}$.
+	\end{enumerate}
+\end{multicols}
+
+Para quais desses conjuntos vale as duas propriedades seguintes:
+\begin{enumerate}[label=({\roman*})]
+	\item $x \otimes y \in G$, para todos $x$, $y \in G$;
+	\item Para todo $x \in G$, existe $y \in G$ tal que $x \otimes y = \overline{1}$
+\end{enumerate}
+
+\vesp
+
+\questao Resolva as seguintes equa\c{c}\~oes:
+\begin{enumerate}[label={\alph*})]
+	\item $x \oplus \overline{2} = \overline{0}$ no conjunto $\z_4$;
+	\item $x^2 \oplus \overline{2}x = \overline{2}$ no conjunto $\z_5$;
+	\item $x^3 \oplus \overline{2}x = \overline{3}$ no conjunto $\z_7$.
+\end{enumerate}
+
+\vesp
+
+\questao Resolva o sistema de equa\c{c}\~oes
+  \[
+    \begin{cases}
+      x \oplus y = \overline{0}\\
+      \overline{2}x \oplus y = \overline{2}
+    \end{cases}
+  \]
+no conjunto $\z_4$. Este sistema possui solu\c{c}\~ao em $\z_3$?
+
+\vesp
+
+\questao Resolva a equa\c{c}\~ao $x^2 \oplus \overline{2}x \oplus \overline{1} = \overline{0}$ nos conjuntos $\z_7$ e $\z_{11}$, caso ela tenha ra{\'\i}zes.
+
+\vesp
+
+\questao Para quais valores de $\overline{c}$ a equa\c{c}\~ao $\overline{2}\otimes x = \overline{c}$ tem solu\c{c}\~ao no conjunto $\z_5$.
+
+\end{document}
