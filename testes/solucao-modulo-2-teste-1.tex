@@ -26,16 +26,17 @@ onde $a$, $b$, $c$, $d$ s{\~a}o n{\'u}meros reais constantes, $ad - bc \ne 0$.
 
 \questao Mostre que $f$ é injetora.
 
-\noindent\textbf{Solu\c{c}\~ao:} Sejam $x_1$, $x_2 \in \real - \{3\}$ tais que $f(x_1) = f(x_2)$. Temos
+\noindent\textbf{Solu\c{c}\~ao:} Sejam $x_1$, $x_2 \in \real - \left\{-\dfrac{d}{c}\right\}$ tais que $f(x_1) = f(x_2)$. Temos
 \begin{align*}
 	f(x_1) &= f(x_2)\\
-	\dfrac{4x_1 + 3}{3 - x_1} &= \dfrac{4x_2 + 3}{3 - x_2}\\
-	(4x_1 + 3)(3 - x_2) &= (4x_2 + 3)(3 - x_1)\\
-	12x_1 - 4x_1x_2 + 9 - 3x_2 &= 12x_2 - 4x_2x_1 + 9 - 3x_1\\
-	15x_1 - 15x_2 &= 0\\
-	15(x_1 - x_2) &= 0
+	\dfrac{ax_1 + b}{cx_1 + d} &= \dfrac{ax_2 + b}{cx_2 + d}\\
+	(ax_1 + b)(cx_2 + d) &= (ax_2 + b)(cx_1 + d)\\
+	acx_1x_2 + adx_1 + bcx_2 + bd &= acx_1x_2 + adx_2 + bcx_1 + bd\\
+	adx_1 + bcx_2 - adx_2 - bcx_1 &= 0\\
+	ad(x_1 - x_2) - bc(x_1 - x_2)&= 0\\
+	(ad - bc)(x_1 - x_2) &= 0
 \end{align*}
-Logo $x_1 = x_2$. Portanto $f$ é injetora.
+Como $ad - bc \ne 0$, então $x_1 - x_2 = 0$. Logo $x_1 = x_2$. Portanto $f$ é injetora.
 
 \vspace{.5cm}
 
