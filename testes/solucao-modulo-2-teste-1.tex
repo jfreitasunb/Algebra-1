@@ -17,7 +17,7 @@
 
 \vspace{.6cm}
 
-Seja $f : \real - \left\{-\dfrac{d}{c}\right\} \to \real  - \left\{\dfrac{a}{c}\right\}$ dada por
+Seja $f : \real - \left\{-\dfrac{d}{c}\right\} \to \real - \left\{\dfrac{a}{c}\right\}$ dada por
 \[
 	f(x) =  \dfrac{ax + b}{cx + d},
 \]
@@ -42,24 +42,29 @@ Como $ad - bc \ne 0$, então $x_1 - x_2 = 0$. Logo $x_1 = x_2$. Portanto $f$ é 
 
 \questao Mostre que $f$ é sobrejetora.
 
-\noindent\textbf{Solu\c{c}\~ao:} A função $f$ será sobrejetora se para todo $y \in \real$ existir $x \in \real$ tal que $f(x) = y$. Assim precisamos determinar se a equação $f(x) = y$ tem solução para todo $y \in \real$.
+\noindent\textbf{Solu\c{c}\~ao:} A função $f$ será sobrejetora se para todo $y \in \real - \left\{\dfrac{a}{c}\right\}$ existir $x \in \real - \left\{-\dfrac{d}{c}\right\}$ tal que $f(x) = y$. Assim precisamos determinar se a equação $f(x) = y$ tem solução para todo $y \in \real - \left\{\dfrac{a}{c}\right\}$.
 Temos
 \begin{align*}
 	f(x) &= y\\
-	\dfrac{4x + 3}{3 - x} &= y\\
-	4x + 3 &= y(3 - x)\\
-	4x + 3 &= 3y - yx\\
-	x(4 + y) &= 3y - 3
+	\dfrac{ax + b}{cx + d} &= y\\
+	ax + b &= y(cx + d)\\
+	ax + b &= ycx + dy\\
+	x(a - yc) &= dy - b
 \end{align*}
-Mas na última equação só podemos isolar $x$ se $y \ne -4$ e como $-4 \in \real$ isso indica que essa função não será sobrejetora.
+Mas na última equação como $y \in \real - \left\{\dfrac{a}{c}\right\}$ então $a - yc \ne 0$ logo podemos isolar $x$ obtendo
+\[
+	x = \dfrac{dy - b}{a - yc} \in \real - \left\{-\dfrac{d}{c}\right\}.
+\]
 
-Tome então $y = -4$ se existisse $x \in \real - \{3\}$ tal que $f(x) = -4$ teríamos
+Assim dado $y \in  \real - \left\{\dfrac{a}{c}\right\}$ tome $x = \dfrac{dy - b}{a - yc} \in \real - \left\{-\dfrac{d}{c}\right\}$. Daí
 \begin{align*}
-	f(x) &= -4\\
-	\dfrac{4x + 3}{3 - x} &= -4\\
-	4x + 3 &= -4(3 - x)\\
-	4x + 3 &= -12 + 4x
+	f(x) &= f\left(\dfrac{dy - b}{a - yc}\right) \\
+	&= \dfrac{a\left(\dfrac{dy - b}{a - yc}\right) + b}{c\left(\dfrac{dy - b}{a - yc}\right) + d} \\
+	&= \dfrac{\dfrac{ady - ab}{a - yc} + b}{\dfrac{cdy - cb}{a - yc} + d} \\
+	&= \dfrac{\dfrac{ady - ab + ba - byc}{a - yc}}{\dfrac{cdy - cb + da - dyc}{a - yc}} \\
+	&= \dfrac{(ad - bc)y}{ad - bc} \\ 
+	&= y
 \end{align*}
-e então $3 = -12$, o que é falso. Portanto não existe $x \ in \real - \{3\}$ tal que $f(x) = 4$ e com isso $f$ não é sobrejetora.
+Portanto $f$ é sobrejetora.
 
 \end{document}
