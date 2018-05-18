@@ -18,90 +18,10 @@
 \vspace{.6cm}
 
 \questao Sejam $f : A \to B$ e $g : B \to A$ funções tais que $g \comp f$ é injetora. Mostre que $f$ é injetora.
-\begin{align*}
-	x \oplus y &= x + y - 1\\
-	x \odot y &= x + y - xy
-\end{align*}
-para todos $x$, $y \in \q$. Mostre que $(\q, \otimes, \odot)$ é um anel. Esse anel é comutativo? Possui unidade?
 
 \noindent\textbf{Solu\c{c}\~ao:}
-\begin{enumerate}
-	\item Sejam $x$, $y$, $z \in \q$. Temos
-	\begin{align*}
-		(x \oplus y) \oplus z &= (x + y - 1) \oplus z = (x + y - 1) + z + 1 = x + y + z - 2\\
-		x \oplus (y \oplus z) &= x \oplus (y + z - 1) = x + (y + z - 1) - 1 = x + y + z - 2
-	\end{align*}
-	Comparando esses dois resultados vemos que $(x \oplus y) \oplus z = x \oplus (y \oplus z)$.
 
-	\item Sejam $x$, $y \in \q$. Temos
-	\begin{align*}
-		x \oplus y = x + y - 1\\
-		y \oplus x = y + x - 1
-	\end{align*}
-	Como $x$, $y \in \q$ segue que $x + y - 1 = y + x - 1$, isto é, $x \oplus y = y \oplus x$.
-
-	\item Queremos mostrar que existe $0_\q \in \q$ tal que $x \oplus 0_\q = x$ para todo $x \in \q$.
-	Assim vamos resolver a equação $x \oplus 0_\q = x$:
-	\begin{align*}
-		x\oplus 0_\q &= x\\
-		x + 0_\q - 1 &= x\\
-		0_\q = 1
-	\end{align*}
-	Logo $0_\q = 1 \in \q$ é o elemento neutro da operação $\oplus$ em $\q$ pois para todo $x \in \q$ temos
-	\[
-		x \oplus 1 = x + 1 - 1 = x
-	\]
-
-	\item Para cada $x \in \q$ queremos mostrar que existe $y \in \q$ tal que $x \oplus y = 0_q$, onde $0_q$ é o elemento neutro encontrado no passo anterior. Assim resolvendo
-	\begin{align*}
-		x \oplus y &= 0_q\\
-		x + y - 1 &= 1\\
-		y &= 2 - x \in \q
-	\end{align*}
-	Logo para cada $x \in \q$ tome $y = 2 - x \in \q$. Daí
-	\[
-		x \oplus y = x \oplus (2 - x) = x + (2 - x) - 1 = 2 = 1
-	\]
-	Logo $y = 2 - x$ é o oposto de $x$ na operação $\oplus$ definida em $\q$.
-
-	\item Sejam $x$, $y$ e $z \in \q$. Temos
-	\begin{align}
-		(x \odot y) \odot z &= (x + y - xy) \odot z = (x + y - xy) + z - (x + y - xy)z \nonumber\\ &= x + y + z - xy - xz - yz + xyz\label{final_associatividade_1}\\
-		x \odot (y \odot z) &= x \odot (y + z - yz) = x + (y + z - yz) - x(y + z - yz)\nonumber\\ &= x + y + z - xy - xz - yz + xyz\label{final_associatividade_2}
-	\end{align}
-	Comparando \eqref{final_associatividade_1} e \eqref{final_associatividade_2} vemos que $(x \odot y) \odot z = x \odot (y \odot z)$.
-
-	\item Sejam $x$, $y$ e $z \in \q$. Temos
-	\begin{align}
-		(x \oplus y)\odot z &= (x + y - 1) \odot z = (x + y - 1) + z - (x + y - 1)z\nonumber \\ &= x + y + z - xz - yz + z - 1\label{final_distributividade_1}\\
-		(x \odot z) \oplus (y \odot z) &= (x + z - xz) \oplus (y + z - yz)\nonumber \\ &= (x + z - xz) + (y + z - yz) - 1\nonumber \\ &= x + y + z - xz - yz + z - 1\label{final_distributividade_2}
-	\end{align}
-
-	Comparando \eqref{final_distributividade_1} e \eqref{final_distributividade_2} vemos que $(x \oplus y)\odot z = (x \odot z) \oplus (y \odot z)$.
-
-	\item Sejam $x$, $y$ e $z \in \q$. Temos
-	\begin{align}
-		x \odot (y \oplus z) &= x \odot (y + z - 1) = x + (y + z - 1) - x(y + z - 1)\nonumber \\ &= x + y + z - xy - xz + x - 1\label{final_distributividade_3}\\
-		(x \odot y) \oplus (x \odot z) &= (x + y - xy) \oplus (x + z - xz)\nonumber \\ & = (x + y - xy) + (x + z - xz) - 1\nonumber \\ &= x + y + z - xy - xz + x - 1\label{final_distributividade_4}
-	\end{align}
-	Comparando \eqref{final_distributividade_3} e \eqref{final_distributividade_4} vemos que $x \odot (y \oplus z) = (x \odot y) \oplus (x \odot z)$.
-\end{enumerate}
-
-Portanto $(\q, \oplus, \odot)$ é um anel.
-
-Além disso para $x$, $y \in \q$ temos
-\[
-	x \odot y = x + y - xy = y + x - yx = y \odot x
-\]
-e com isso esse anel é comutativo.
-
-Também temos
-\[
-	x \odot 0 = x + 0 - x\cdot 0 = x
-\]
-para todo $x \in \q$. Portanto $1_\q = 0$ é a unidade da multiplicação $\odot$ em $\q$.
-
-Desse modo $(\q, \oplus, \odot)$ é um anel comutativo com unidade.
+	Sejam $x_1$, $x_2 \in A$ tais que $f(x_1) = f(x_2)$. Como $f(x_1)$, $f(x_2) \in B$ e $g : B \to A$ é uma função temos $g(f(x_1)) = g(f(x_2))$. Isto é, $(g \comp f)(x_1) = (g \comp f)(x_2)$ e como $g \comp f$ é injetora segue que $x_1 = x_2$. Portanto $f$ é injetora.
 
 \vspace{.5cm}
 
