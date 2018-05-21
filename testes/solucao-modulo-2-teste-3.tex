@@ -77,4 +77,17 @@ para todos $(a, b)$, $(c, d) \in \z \times \z$. Mostre que $(\z \times \z, \oplu
 		Logo $(a, b) \otimes [(c, d) \oplus (e, f)] = [(a, b) \otimes (c, d)] \oplus [(a, b) \otimes (e, f)]$.
 	\end{enumerate}
 
+	Portanto $(\z \times \z, \oplus, \otimes)$ é um anel.
+
+	Agora para todos $(a, b)$, $(c, d) \in \z \times \z$ temos
+	\[
+	 	(a, b) \otimes (c, d) = (ac, ad + bc) = (ca, da + cb) = (c, d) \otimes (a, b).
+	\]
+	Portanto a operação $\otimes$ é comutativa. Assim $(\z \times \z, \oplus, \otimes)$ é um anel comutativo.
+
+	Tome $1_{\z \times \z} = (1, 0)$. Para todo $(a, b) \in \z \times \z$ temos
+	\[
+		(a, b) \otimes 1_{\z \times \z} = (a, b) \otimes (1, 0) = (a, b).
+	\]
+	Logo $1_{\z \times \z} = (1, 0)$ é a unidade da operação $\otimes$ em $\z \times \z$. Portanto $(\z \times \z, \oplus, \otimes)$ é um anel com unidade.
 \end{document}
