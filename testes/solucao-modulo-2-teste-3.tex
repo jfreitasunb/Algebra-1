@@ -22,7 +22,7 @@
 	(a, b) \oplus (c,d) &= (a + b, c + d)\\
 	(a, b) \otimes (c, d) &= (ac, ad + bc)
 \end{align*}
-para todos $(a, b)$, $(c, d) \in \z \times \z$. Mostre que $(\z \times \z, \oplus, \otimes)$ é um anel. É comutativo? Possui unidade?
+para todos $(a, b)$, $(c, d) \in \z \times \z$. Mostre que $(\z \times \z, \oplus, \otimes)$ \'e um anel. \'E comutativo? Possui unidade?
 
 \noindent\textbf{Solu\c{c}\~ao:}
 
@@ -32,7 +32,7 @@ para todos $(a, b)$, $(c, d) \in \z \times \z$. Mostre que $(\z \times \z, \oplu
 			[(a, b) \oplus (c, d)] \oplus (e, f) &= (a + c, b + d) \oplus (e, f) = (a + c + e, b + d + f)\\
 			(a, b) \oplus [(c, d) \oplus (e, f)] &= (a, b) \oplus (c + e, d + f) = (a + c + e, b + d + f)
 		\end{align*}
-		Logo $[(a, b) \oplus (c, d)] \oplus (e, f) = (a, b) \oplus [(c, d) \oplus (e, f)]$, como queríamos.
+		Logo $[(a, b) \oplus (c, d)] \oplus (e, f) = (a, b) \oplus [(c, d) \oplus (e, f)]$, como quer{\'\i}amos.
 
 		\item Para todos $(a, b)$, $(c, d) \in \z \times \z$ temos
 		\begin{align*}
@@ -45,20 +45,20 @@ para todos $(a, b)$, $(c, d) \in \z \times \z$. Mostre que $(\z \times \z, \oplu
 		\[
 			(a, b) \oplus 0_{\z \times \z} = (a, b) \oplus (0, 0) = (a + 0, b + 0) = (a, b).
 		\]
-		Assim $0_{\z \times \z} = (0, 0)$ é o elemento neutro da operação $\oplus$ em $\z \times \z$.
+		Assim $0_{\z \times \z} = (0, 0)$ \'e o elemento neutro da opera\c{c}\~ao $\oplus$ em $\z \times \z$.
 
 		\item Para $(a, b) \in \z \times \z$ tome $(-a, -b) \in \z \times \z$. Temos
 		\[
 			(a, b) \oplus (-a, -b) = (a - a, b - b) = (0, 0) = 0_{\z \times \z}.
 		\]
-		Logo $(-a, -b)$ é o oposto de $(a, b)$ na operação $\oplus$ em $\z \times \z$.
+		Logo $(-a, -b)$ \'e o oposto de $(a, b)$ na opera\c{c}\~ao $\oplus$ em $\z \times \z$.
 
 		\item Para todos $(a, b)$, $(c, d)$, $(e, f) \in \z \times \z$ temos
 		\begin{align*}
 			[(a, b) \otimes (c, d)] \otimes (e, f) &= (ac, ad + bc) \otimes (e, f) = (ace, acf + ade + bce)\\
 			(a, b) \otimes [(c, d) \otimes (e, f)] &= (a, b) \otimes (ce, cf + de) = (ace, acf + ade + bce)
 		\end{align*}
-		Logo $[(a, b) \otimes (c, d)] \otimes (e, f) = (a, b) \otimes [(c, d) \otimes (e, f)]$, como queríamos.
+		Logo $[(a, b) \otimes (c, d)] \otimes (e, f) = (a, b) \otimes [(c, d) \otimes (e, f)]$, como quer{\'\i}amos.
 
 		\item Para todos $(a, b)$, $(c, d)$, $(e, f) \in \z \times \z$ temos
 		\begin{align*}
@@ -77,17 +77,17 @@ para todos $(a, b)$, $(c, d) \in \z \times \z$. Mostre que $(\z \times \z, \oplu
 		Logo $(a, b) \otimes [(c, d) \oplus (e, f)] = [(a, b) \otimes (c, d)] \oplus [(a, b) \otimes (e, f)]$.
 	\end{enumerate}
 
-	Portanto $(\z \times \z, \oplus, \otimes)$ é um anel.
+	Portanto $(\z \times \z, \oplus, \otimes)$ \'e um anel.
 
 	Agora para todos $(a, b)$, $(c, d) \in \z \times \z$ temos
 	\[
 	 	(a, b) \otimes (c, d) = (ac, ad + bc) = (ca, da + cb) = (c, d) \otimes (a, b).
 	\]
-	Portanto a operação $\otimes$ é comutativa. Assim $(\z \times \z, \oplus, \otimes)$ é um anel comutativo.
+	Portanto a opera\c{c}\~ao $\otimes$ \'e comutativa. Assim $(\z \times \z, \oplus, \otimes)$ \'e um anel comutativo.
 
 	Tome $1_{\z \times \z} = (1, 0)$. Para todo $(a, b) \in \z \times \z$ temos
 	\[
 		(a, b) \otimes 1_{\z \times \z} = (a, b) \otimes (1, 0) = (a, b).
 	\]
-	Logo $1_{\z \times \z} = (1, 0)$ é a unidade da operação $\otimes$ em $\z \times \z$. Portanto $(\z \times \z, \oplus, \otimes)$ é um anel com unidade.
+	Logo $1_{\z \times \z} = (1, 0)$ \'e a unidade da opera\c{c}\~ao $\otimes$ em $\z \times \z$. Portanto $(\z \times \z, \oplus, \otimes)$ \'e um anel com unidade.
 \end{document}
