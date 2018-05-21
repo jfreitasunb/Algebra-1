@@ -30,7 +30,7 @@ para todos $(a, b)$, $(c, d) \in \z \times \z$. Mostre que $(\z \times \z, \oplu
 		\item Para todos $(a, b)$, $(c, d)$, $(e, f) \in \z \times \z$ temos
 		\begin{align*}
 			[(a, b) \oplus (c, d)] \oplus (e, f) &= (a + c, b + d) \oplus (e, f) = (a + c + e, b + d + f)\\
-			(a, b) \oplus [(c, d) \oplus (e, f)] = (a, b) \oplus (c + e, d + f) = (a + c + e, b + d + f)
+			(a, b) \oplus [(c, d) \oplus (e, f)] &= (a, b) \oplus (c + e, d + f) = (a + c + e, b + d + f)
 		\end{align*}
 		Logo $[(a, b) \oplus (c, d)] \oplus (e, f) = (a, b) \oplus [(c, d) \oplus (e, f)]$, como queríamos.
 
@@ -62,16 +62,16 @@ para todos $(a, b)$, $(c, d) \in \z \times \z$. Mostre que $(\z \times \z, \oplu
 
 		\item Para todos $(a, b)$, $(c, d)$, $(e, f) \in \z \times \z$ temos
 		\begin{align*}
-			[(a, b) \oplus (c, d)] \otimes (e, f) &= (a + c, b + d) \otimes (e, f) = (ae + ce, af + cf + be + de)\\
-			[(a, b) \otimes (e, f)] \oplus [(c, d) \otimes (e, f)] &= (ae, af + be) \otimes (ce, cf + de) = (ae + ce, af + be + cf + de)
+			[(a, b) \oplus (c, d)] \otimes (e, f) &= (a + c, b + d) \otimes (e, f) \\& = (ae + ce, af + cf + be + de)\\
+			[(a, b) \otimes (e, f)] \oplus [(c, d) \otimes (e, f)] &= (ae, af + be) \otimes (ce, cf + de) \\ &= (ae + ce, af + be + cf + de)
 		\end{align*}
 
 		Logo $[(a, b) \oplus (c, d)] \otimes (e, f) = [(a, b) \otimes (e, f)] \oplus [(c, d) \otimes (e, f)]$.
 
 		\item Para todos $(a, b)$, $(c, d)$, $(e, f) \in \z \times \z$ temos
 		\begin{align*}
-			(a, b) \otimes [(c, d) \oplus (e, f)] &= (a, b) \otimes (c + e, d + f) = (ac + ae, ad + af + bc + be)\\
-			[(a, b) \otimes (c, d)] \oplus [(a, b) \otimes (e, f)] &= (ac, ad + bc) \oplus (ae, af + be) = (ac + ae, ad + bc + af + be)
+			(a, b) \otimes [(c, d) \oplus (e, f)] &= (a, b) \otimes (c + e, d + f) \\ &= (ac + ae, ad + af + bc + be)\\
+			[(a, b) \otimes (c, d)] \oplus [(a, b) \otimes (e, f)] &= (ac, ad + bc) \oplus (ae, af + be) \\ &= (ac + ae, ad + bc + af + be)
 		\end{align*}
 
 		Logo $(a, b) \otimes [(c, d) \oplus (e, f)] = [(a, b) \otimes (c, d)] \oplus [(a, b) \otimes (e, f)]$.
