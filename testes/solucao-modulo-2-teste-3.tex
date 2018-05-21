@@ -26,25 +26,32 @@ para todos $(a, b)$, $(c, d) \in \z \times \z$. Mostre que $(\z \times \z, \oplu
 
 \noindent\textbf{Solu\c{c}\~ao:}
 
-	Sejam $x_1$, $x_2 \in A$ tais que $f(x_1) = f(x_2)$. Como $f(x_1)$, $f(x_2) \in B$ e $g : B \to A$ \'e uma fun\c{c}\~ao temos $g(f(x_1)) = g(f(x_2))$. Isto \'e, $(g \comp f)(x_1) = (g \comp f)(x_2)$ e como $g \comp f$ \'e injetora segue que $x_1 = x_2$. Portanto $f$ \'e injetora.
+	\begin{enumerate}
+		\item Para todos $(a, b)$, $(c, d)$, $(e, f) \in \z \times \z$ temos
+		\begin{align*}
+			[(a, b) \oplus (c, d)] \oplus (e, f) &= (a + c, b + d) \oplus (e, f) = (a + c + e, b + d + f)\\
+			(a, b) \oplus [(c, d) \oplus (e, f)] = (a, b) \oplus (c + e, d + f) = (a + c + e, b + d + f)
+		\end{align*}
+		Logo $[(a, b) \oplus (c, d)] \oplus (e, f) = (a, b) \oplus [(c, d) \oplus (e, f)]$, como queríamos.
 
-\vspace{.5cm}
+		\item Para todos $(a, b)$, $(c, d) \in \z \times \z$ temos
+		\begin{align*}
+			(a, b) \oplus (c, d) &= (a + c, b + d)\\
+			(c, d) \oplus (a, b) &= (c + a, d + b)
+		\end{align*}
+		Logo $(a, b) \oplus (c, d) = (c, d) \oplus (a, b)$.
 
-\questao Seja $f : A \to B$ uma fun\c{c}\~ao injetora e $P$, $Q \sub A$. Mostre que
-\[
-	f(P \cap Q) = f(P) \cap f(Q).
-\]
+		\item Tome $0_{\z \times \z} = (0, 0)$. Para todo $(a, b) \in \z \times \z$ temos
+		\[
+			(a, b) \oplus 0_{\z \times \z} = (a, b) \oplus (0, 0) = (a + 0, b + 0) = (a, b).
+		\]
+		Assim $0_{\z \times \z} = (0, 0)$ é o elemento neutro da operação $\oplus$ em $\z \times \z$.
 
-\noindent\textbf{Solu\c{c}\~ao:} Primeiro temos
-\begin{align*}
-	f(P \cap Q) &= \{f(x) \mid x \in P \cap Q\}\\
-	f(P) &= \{f(z) \mid z \in P\}\\
-	f(Q) &= \{f(t) \mid t \in Q\}.
-\end{align*}
-Seja $y \in f(P \cap Q)$. Ent\~ao existe $x \in P \cap Q$ tal que $y = f(x)$. Como $x \in P \cap Q$, ent\~ao $x \in P$ e $x \in Q$. Logo $y = f(x)$ com $x \in P$ e $y = f(x)$ com $x \in Q$. Ou seja, $y \in f(P)$ e $y \in f(Q)$. Portanto $y \in f(P) \cap f(Q)$.
-
-Agora seja $y \in f(P) \cap f(Q)$. Da{\'\i} $y \in f(P)$ e $y \in f(Q)$. Assim $y = f(x_1)$ com $x_1 \in P$ e $y = f(x_2)$ com $x_2 \in Q$. Logo $y = f(x_1) = f(x_2)$ e como $f$ \'e injetora, segue que $x_1 = x_2$. Portanto $y = f(x_1)$ com $x_1 = x_1 \in P \cap Q$, isto \'e, $y \in f(P \cap Q)$.
-
-Com isso $f(P \cap Q) = f(P) \cap f(Q)$.
+		\item Para $(a, b) \in \z \times \z$ tome $(-a, -b) \in \z \times \z$. Temos
+		\[
+			(a, b) \oplus (-a, -b) = (a - a, b - b) = (0, 0) = 0_{\z \times \z}.
+		\]
+		Logo $(-a, -b)$ é o oposto de $(a, b)$ na operação $\oplus$ em $\z \times \z$.
+	\end{enumerate}
 
 \end{document}
