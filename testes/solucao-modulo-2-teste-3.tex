@@ -52,6 +52,29 @@ para todos $(a, b)$, $(c, d) \in \z \times \z$. Mostre que $(\z \times \z, \oplu
 			(a, b) \oplus (-a, -b) = (a - a, b - b) = (0, 0) = 0_{\z \times \z}.
 		\]
 		Logo $(-a, -b)$ é o oposto de $(a, b)$ na operação $\oplus$ em $\z \times \z$.
+
+		\item Para todos $(a, b)$, $(c, d)$, $(e, f) \in \z \times \z$ temos
+		\begin{align*}
+			[(a, b) \otimes (c, d)] \otimes (e, f) &= (ac, ad + bc) \otimes (e, f) = (ace, acf + ade + bce)\\
+			(a, b) \otimes [(c, d) \otimes (e, f)] &= (a, b) \otimes (ce, cf + de) = (ace, acf + ade + bce)
+		\end{align*}
+		Logo $[(a, b) \otimes (c, d)] \otimes (e, f) = (a, b) \otimes [(c, d) \otimes (e, f)]$, como queríamos.
+
+		\item Para todos $(a, b)$, $(c, d)$, $(e, f) \in \z \times \z$ temos
+		\begin{align*}
+			[(a, b) \oplus (c, d)] \otimes (e, f) &= (a + c, b + d) \otimes (e, f) = (ae + ce, af + cf + be + de)\\
+			[(a, b) \otimes (e, f)] \oplus [(c, d) \otimes (e, f)] &= (ae, af + be) \otimes (ce, cf + de) = (ae + ce, af + be + cf + de)
+		\end{align*}
+
+		Logo $[(a, b) \oplus (c, d)] \otimes (e, f) = [(a, b) \otimes (e, f)] \oplus [(c, d) \otimes (e, f)]$.
+
+		\item Para todos $(a, b)$, $(c, d)$, $(e, f) \in \z \times \z$ temos
+		\begin{align*}
+			(a, b) \otimes [(c, d) \oplus (e, f)] &= (a, b) \otimes (c + e, d + f) = (ac + ae, ad + af + bc + be)\\
+			[(a, b) \otimes (c, d)] \oplus [(a, b) \otimes (e, f)] &= (ac, ad + bc) \oplus (ae, af + be) = (ac + ae, ad + bc + af + be)
+		\end{align*}
+
+		Logo $(a, b) \otimes [(c, d) \oplus (e, f)] = [(a, b) \otimes (c, d)] \oplus [(a, b) \otimes (e, f)]$.
 	\end{enumerate}
 
 \end{document}
