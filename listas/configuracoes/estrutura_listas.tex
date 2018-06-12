@@ -14,21 +14,21 @@
 \setlength{\textwidth}{6.5in}
 \setlength{\baselineskip}{12mm}
 
-\newcounter{fpcounter}
-\renewcommand{\thefpcounter}{\arabic{fpcounter}}
+\newcounter{exercicios}
+\renewcommand{\theexercicios}{\arabic{exercicios}}
 
-\newenvironment{quest}[2]{%
-\refstepcounter{fpcounter}%
+\newenvironment{questao}[1]{%
+\refstepcounter{exercicios}%
 \label{#1}%
-\noindent\textbf{Exerc{\'\i}cio {\thefpcounter}:}%
+\noindent\textbf{Exerc{\'\i}cio {\theexercicios}:}%
 }%
 {}%
 
-\newcounter{exercicios}
-\setcounter{exercicios}{0}
-\newcommand{\questao}{
-\addtocounter{exercicios}{1}
-\noindent{\bf Exerc{\'\i}cio \arabic{exercicios}: }}
+% \newcounter{exercicios}
+% \setcounter{exercicios}{0}
+% \newcommand{\questao}{
+% \addtocounter{exercicios}{1}
+% \noindent{\bf Exerc{\'\i}cio \arabic{exercicios}: }}
 
 \newcommand{\equi}{\Leftrightarrow}
 \newcommand{\bic}{\leftrightarrow}
