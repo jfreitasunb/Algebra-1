@@ -14,6 +14,16 @@
 \setlength{\textwidth}{6.5in}
 \setlength{\baselineskip}{12mm}
 
+\newcounter{fpcounter}
+\renewcommand{\thefpcounter}{\arabic{fpcounter}}
+
+\newenvironment{quest}[2]{%
+\refstepcounter{fpcounter}%
+\label{#1}%
+\noindent\textbf{Exerc{\'\i}cio {\thefpcounter}:}%
+}%
+{}%
+
 \newcounter{exercicios}
 \setcounter{exercicios}{0}
 \newcommand{\questao}{
