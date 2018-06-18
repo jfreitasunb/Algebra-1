@@ -17,22 +17,22 @@
 
 \vspace{.6cm}
 
-\questao Considere os seguintes an{\'e}is: $(\real, +, \cdot)$ e $(\real, \oplus, \otimes)$, sendo $a \oplus b = a + b + 1$ e $a \otimes b = a + b + ab$. Mostre que $f : \real \to \real$ dado por $f(x) = x + 1$, para todo $x \in \real$, {\'e} um homomorfimo de $(\real, \oplus, \otimes)$ em $(\real, +, \cdot)$.
+\questao Seja
+\[
+	M_2(\rac) = \left\{ \begin{pmatrix}
+		a & b\\c & d
+	\end{pmatrix} \mid a,b,c,d \in \rac\right\}
+\]
+um anel com as operações usuais. Mostre que
+\[
+	B = \left\{ \begin{pmatrix}
+		a & 0\\0 & a
+	\end{pmatrix} \mid a \in \rac\right\}	
+\]
+é um subanel. Esse subanel é comutativo?
 
 \noindent\textbf{Solu\c{c}\~ao:}
-Precisamos mostrar que
-\begin{enumerate}[label=({\alph*})]
-	\item $f(x \oplus y) = f(x) + f(y)$
-	\item $f(x \otimes y) = f(x)\cdot f(y)$
-\end{enumerate}
-para todos $x$, $y \in \real$.
 
-De fato, para $x$, $y \in \real$ temos
-\begin{align*}
-	f(x \oplus y) &= f(x + y + 1) = (x + y + 1) + 1 = (x + 1) + (y + 1) = f(x) + f(y)\\
-	f(x \otimes y) &=  f(x + y + xy) = (x + y + xy) + 1 = x(1 + y) + (1 + y) \\ &= (x + 1)(y + 1) = f(x)\cdot f(y)
-\end{align*}
-Logo $f$ é um homomorfismo de $(\real, \oplus, \otimes)$ em $(\real, +, \cdot)$.
 
 \vspace{.5cm}
 
