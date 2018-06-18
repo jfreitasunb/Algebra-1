@@ -19,15 +19,15 @@
 
 \questao Seja
 \[
-	M_2(\rac) = \left\{ \begin{pmatrix}
+	M_2(\q) = \left\{ \begin{pmatrix}
 		a & b\\c & d
-	\end{pmatrix} \mid a,b,c,d \in \rac\right\}
+	\end{pmatrix} \mid a,b,c,d \in \q\right\}
 \]
 um anel com as operações usuais. Mostre que
 \[
 	B = \left\{ \begin{pmatrix}
 		a & 0\\0 & a
-	\end{pmatrix} \mid a \in \rac\right\}	
+	\end{pmatrix} \mid a \in \q\right\}	
 \]
 é um subanel. Esse subanel é comutativo?
 
@@ -36,7 +36,16 @@ um anel com as operações usuais. Mostre que
 
 \vspace{.5cm}
 
-\questao Seja $f: A \to B$ um homomorfismo de an{\'e}is. Mostre que se $D$ {\'e} um subanel de $B$, ent{\~a}o $f^{-1}(D)$ {\'e} um subanel de $A$.
+\questao Considere o anel $(\z \times \z, \oplus, \otimes)$ cujas operações são dadas por
+\begin{align*}
+	(x, y) \oplus (z, t) &= (x + z, y + t)\\
+	(x, y) \otimes (z, t) &= (xz, yt)
+\end{align*}
+para todos $(x, y)$, $(z, t) \in \z \times \z$. Mostre que $f : \z \times \z \to \z \times \z$ dada por
+\[
+	f(x, y) = (y, x)
+\]
+é um homomorfismo de anéis.
 
 \noindent\textbf{Solu\c{c}\~ao:} Inicialmente lembre que
 \[
