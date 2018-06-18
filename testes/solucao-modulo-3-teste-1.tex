@@ -31,7 +31,56 @@ um anel com as operações usuais. Mostre que
 \]
 é um subanel. Esse subanel é comutativo?
 
-\noindent\textbf{Solu\c{c}\~ao:}
+\noindent\textbf{Solu\c{c}\~ao:} De fato, primeiro tomando $a = 0$ segue que
+\[
+	\begin{pmatrix}
+		0 & 0\\0 & 0
+	\end{pmatrix} \in B.
+\]
+Logo $B \ne \emptyset$.
+
+Agora dados $x$, $y \in B$ então
+\[
+	x = \begin{pmatrix}
+		a & 0\\0 & a
+	\end{pmatrix}\quad y = \begin{pmatrix}
+		b & 0\\0 & b
+	\end{pmatrix}.
+\]
+Assim
+\begin{align*}
+	x - y &= \begin{pmatrix}
+		a & 0\\0 & a
+	\end{pmatrix} - \begin{pmatrix}
+		b & 0\\0 & b
+	\end{pmatrix} = \begin{pmatrix}
+		a - b & 0\\0 & a - b
+	\end{pmatrix} \in B\\
+	xy &= \begin{pmatrix}
+		a & 0\\0 & a
+	\end{pmatrix}\begin{pmatrix}
+		b & 0\\0 & b
+	\end{pmatrix} = \begin{pmatrix}
+		ab & 0\\0 & ab
+	\end{pmatrix} \in B.
+\end{align*}
+Logo $B$ é um subanel de $M_2(\q)$.
+
+Agora observe que
+\begin{align*}
+	xy = \begin{pmatrix}
+		a & 0\\0 & a
+	\end{pmatrix}\begin{pmatrix}
+		b & 0\\0 & b
+	\end{pmatrix} = \begin{pmatrix}
+		ab & 0\\0 & ab
+	\end{pmatrix} = \begin{pmatrix}
+		b & 0\\0 & b
+	\end{pmatrix}\begin{pmatrix}
+		a & 0\\0 & a
+	\end{pmatrix} = yx
+\end{align*}
+para todos $x$, $y \in B$. Logo $B$ é um subanel comutativo.
 
 
 \vspace{.5cm}
