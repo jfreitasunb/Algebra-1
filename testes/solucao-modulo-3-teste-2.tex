@@ -19,10 +19,10 @@
 
 \questao Seja $f : \complex \to M_2(\real)$ dada por
 \[
-	f(a + bi) = \begin{pmatrix}
+	f(a + bi) = \begin{bmatrix}
 		\overline{a} & -b\\
 		b & a
-	\end{pmatrix}.
+	\end{bmatrix}.
 \]
 Mostre que $f$ é um homomorfismo de anéis. Determine $\ker(f)$.
 
@@ -30,46 +30,46 @@ Mostre que $f$ é um homomorfismo de anéis. Determine $\ker(f)$.
 
 Sejam $a + bi$, $c + di \in \complex$. Então
 \begin{align*}
-	f((a + bi) + (c + di)) = f((a + c) + (b + d)i) &= \begin{pmatrix}
+	f((a + bi) + (c + di)) &= f((a + c) + (b + d)i) \\&= \begin{bmatrix}
 		a + c & -(b + d)\\
 		(b + d) & a + c
-	\end{pmatrix} = \begin{pmatrix}
+	\end{bmatrix} = \begin{bmatrix}
 		a & -b\\
 		b & a
-	\end{pmatrix} + \begin{pmatrix}
+	\end{bmatrix} + \begin{bmatrix}
 		c & -d\\
 		d & c
-	\end{pmatrix} = f(a + bi) + f(c + di)\\
-	f((a + bi)\cdot (c + di)) = f(ac + adi + bci + bdi^2) = f((ac - bd) + (ad + bc)i)&= \begin{pmatrix}
+	\end{bmatrix}\\ &= f(a + bi) + f(c + di)\\
+	f((a + bi)\cdot (c + di)) &= f(ac + adi + bci + bdi^2) \\ &= f((ac - bd) + (ad + bc)i) \\ &= \begin{bmatrix}
 		ac - bd & -(ad + bc)\\
 		ad + bc & ac - bd
-	\end{pmatrix} = \begin{pmatrix}
+	\end{bmatrix} = \begin{bmatrix}
 		a & -b\\
 		b & a
-	\end{pmatrix} \begin{pmatrix}
+	\end{bmatrix} \begin{bmatrix}
 		c & -d\\
 		d & c
-	\end{pmatrix} = f(x)f(y)
+	\end{bmatrix}\\ &= f(x)f(y)
 \end{align*}
 Logo $f$ é um homomorfismo de anéis.
 
 Agora,
 \[
-	ker(f) = \left\{a + bi \in \complex \mid f(a + bi) = \begin{pmatrix}
+	ker(f) = \left\{a + bi \in \complex \mid f(a + bi) = \begin{bmatrix}
 		0 & 0\\
 		0 & 0
-	\end{pmatrix}\right\}.
+	\end{bmatrix}\right\}.
 \]
 
 Assim
 \[
-	f(a + bi) = \begin{pmatrix}
+	f(a + bi) = \begin{bmatrix}
 		a & -b\\
 		b & a
-	\end{pmatrix} = \begin{pmatrix}
+	\end{bmatrix} = \begin{bmatrix}
 		0 & 0\\
 		0 & 0
-	\end{pmatrix}
+	\end{bmatrix}
 \]
 logo $a = 0$ e $b = 0$. Isto é, $a + bi = 0$. Logo 
 \[
