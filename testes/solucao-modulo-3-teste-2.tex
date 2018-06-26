@@ -83,4 +83,34 @@ logo $a = 0$ e $b = 0$. Isto é, $a + bi = 0$. Logo
 	(x, y) + (z, t) = (x + z, y + t)
 \]
 para todos $(x,y)$, $(z,t) \in \z\times\z$. Mostre que $(\z\times\z, +)$ é um grupo abeliano.
+
+\noindent\textbf{Solu\c{c}\~ao:}
+
+Primeiro dados $(x,y)$, $(z,t) \in \z\times\z$ temos
+\[
+	(x,y) + (z,t) = (x+z,y+t) = (z+x,t+y) = (z,t) + (x,y).
+\]
+Assim a operação em $\z\times\z$ é comutativa.
+
+Sejam $(x,y)$, $(z,t)$ e $(r,s) \in \z\times\z$. Então
+\begin{align*}
+	[(x,y) + (z,t)] + (r,s) &= (x + z, y+t) + (r,s) = (x+z+r,y+t+s)\\
+	(x,y) + [(z,t)+(r,s)] &= (x,y) + (z+r,t+s) = (x+z+r,y+t+s).
+\end{align*}
+Logo $[(x,y)+(z,t)] + (r,s) = (x,y) + [(z,t) + (r,s)]$.
+
+Para todo $(x,y) \in \z\times\z$ temos
+\[
+	(x,y) + (0,0) = (x+0,y+0) = (x,y).
+\]
+Assim $(0,0)$ é o elemento neutro da operação em $\z\times\z$.
+
+Agora dado $(x,y) \in \z\times\z$ tome $(-x,-y) \in \z\times\z$. Então
+\[
+	(x,y) + (-x,-y) = (x+(-x),y+(-y)) = (0,0).
+\]
+Daí $(-x,-y)$ é o oposto de $(x,y)$ em $\z\times\z$.
+
+Portanto $(\z\times\z,+)$ é um grupo abeliano.
+
 \end{document}
