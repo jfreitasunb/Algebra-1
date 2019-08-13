@@ -1,0 +1,41 @@
+\Newassociation{solucao}{Solution}{ans}
+\newtheorem{exercicio}{}
+
+\setlength{\topmargin}{-1.0in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\textheight}{10.1in}
+\setlength{\textwidth}{6.5in}
+\setlength{\baselineskip}{12mm}
+
+\extraheadheight{0.7in}
+\firstpageheadrule
+\runningheadrule
+\lhead{
+        \begin{minipage}[c]{1.7cm}
+        \includegraphics[width=1.7cm]{unb.pdf}
+        \end{minipage}%
+        \hspace{0pt}
+        \begin{minipage}[c]{4in}
+          {Universidade de Bras{\'\i}lia} --
+          {Departamento de Matem{\'a}tica}
+\end{minipage}
+\vspace*{-0.8cm}
+}
+% \chead{Universidade de Bras{\'\i}lia - Departamento de Matem{\'a}tica}
+% \rhead{}
+% \vspace*{-2cm}
+
+\extrafootheight{.5in}
+\footrule
+\lfoot{\disciplina\ - \semestre$^o$/\ano}
+\cfoot{}
+\rfoot{P\'agina \thepage\ de \numpages}
+
+\newcounter{exercicios}
+\setcounter{exercicios}{0}
+\newcommand{\questao}{
+\addtocounter{exercicios}{1}
+\noindent{\bf Exerc{\'\i}cio \arabic{exercicios}: }}
+
+\newcommand{\resp}[1]{
+\noindent{\bf Exerc{\'\i}cio #1: }}
