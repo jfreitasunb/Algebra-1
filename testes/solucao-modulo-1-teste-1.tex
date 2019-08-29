@@ -39,6 +39,16 @@ $1^{\underline{o}}$ Teste - Resolu\c{c}\~ao}\\
 
 \questao Mostre que se $A \subseteq B$ e $C = B - A$, ent\~ao $A = B - C$.
 
-\noindent\textbf{Solu\c{c}\~ao:} Verdadeiro. Seja $x \in A \cap C$. Ent\~ao pela defini\c{c}\~ao de interse\c{c}\~ao de conjuntos temos $x \in A$ e $x \in C$. Agora, por hip\'otese, $A \subseteq B$ e de $x \in A$ podemos concluir que $x \in B$. Al\'em disso, por hip\'otese tamb\'em temos $C \subseteq D$. Da{\'\i} de $x \in C$ podemos concluir que $x \in D$. Logo $x \in B$ e $x \in D$, ou seja, $x \in B \cap D$. Portanto para todo $x \in A \cap C$ temos $x \in B \cap D$, isto \'e, $A \cap C \subseteq B \cap D$.
+\noindent\textbf{Solu\c{c}\~ao:} Como a teste envolve uma igualdade de conjuntos precisamos mostrar que:
+\begin{enumerate}
+    \item $A \sub B - C$\label{primeira_inclusao}
+    \item $B - C \sub A$\label{segunda_inclusao}
+\end{enumerate}
+
+Para mostrar \eqref{primeira_inclusao} seja $x \in A$. Como, por hipótese, $A \sub B$ então $x \in B$. Mas, também por hipótese, temos $C = B - A$. Assim como $x \in A$, então $x \not in C$. Logo, $x \in B$ e $x \not in C$, isto é, $x \in B - C$. Com isso, $A \sub B - C$.
+
+Agora, para mostrar \eqref{segunda_inclusao} seja $y \in B - C$. Daí, por definição, $x \in B$ e $x \notin C$. Mas, por hipótese, $C = B - A$, então como $x \notin C = B - A$ e $x \in B$, devemos ter $x \in A$. Logo $B - C \sub A$.
+
+Portanto, de \eqref{primeira_inclusao} e \eqref{segunda_inclusao} segue que $A = B - C$, como queríamos.
 
 \end{document}
