@@ -1,17 +1,23 @@
 %!TEX program = xelatex
 %!TEX encoding = ISO-8859-1
-\documentclass[12pt]{article}
+%!TEX program = xelatex
+% !TEX encoding = ISO-8859-1
+\def\ano{2019}
+\def\semestre{2}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
 
-\include{configuracoes/estrutura_listas}
+\documentclass[12pt]{exam}
+
+\input{../listas/configuracoes/pacotes}
+\input{../listas/configuracoes/configuracoes_paginas}
+\input{../listas/configuracoes/comandos_personalizados}
 
 \begin{document}
 
-\input{configuracoes/cabecalho_listas}
-
 \begin{center}
-{\Large\bf \'Algebra 1 - Turma C -- 1$^{o}$/2018} \\ \vspace{9pt} {\large\bf
-  $1^{\underline{o}}$ Teste - Resolu\c{c}\~ao}\\
-\vspace{9pt} Prof. Jos\'e Ant\^onio O. Freitas
+{\Large\bf \disciplina - Turma \turma -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
+  $1^{\underline{a}}$ Lista de Exerc{\'\i}cios -- Conjuntos}\\ \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
 \end{center}
 \hrule
 
