@@ -26,7 +26,17 @@ $2^{\underline{o}}$ Teste - M\'odulo 1 - Resolu\c{c}\~ao}\\
 
 \questao Suponha que $A \sub E$, $B \sub E$. Se $A \cap B = \vaz$, então $A \cup C_E(B) = C_E(B)$.
 
-\noindent\textbf{Solu\c{c}\~ao:} Seja $x \in C_E(A)$. Assim, por defini\c{c}\~ao de complementar, $x \in E$ e $x \notin A$. Mas $E = A \cup B$ e $x \notin A$, logo $x \in B$. Portanto $C_E(A) \subseteq B$, como quer{\'\i}amos.
+\noindent\textbf{Solu\c{c}\~ao:} Precisamos mostrar que
+\begin{enumerate}[label={\roman*})]
+    \item $A \cup C_E(B) \sub C_E(B)$
+    \item $C_E(B) \sub A \cup C_E(B)$
+\end{enumerate}
+
+Para a primeira inclusão seja $x \in A \cup C_E(B)$. Então $x \in A$ ou $x \in C_E(B)$. Caso $x \in A$, como $A \cap B = \vaz$, devemos ter $x \notin B$, isto é, $x \in C_E(B)$. Caso $x \in C_E(B)$, então temos o que queríamos. Logo $A \cup C_E(B) \sub C_E(B)$.
+
+A segunda inclusão é imediata, pois todo conjunto está contido nele mesmo união com qualquer outro.
+
+Portanto $A \cup C_E(B) = C_E(B)$.
 
 \vspace{.5cm}
 
