@@ -44,13 +44,13 @@ Portanto $A \cup C_E(B) = C_E(B)$.
 
 \noindent\textbf{Solu\c{c}\~ao:} Precisamos mostrar que:
 \begin{enumerate}[label={\roman*})]
-	\item $A - (B \cup C) \sub (A - B) \cap (A - C)$
-	\item $(A - B) \cap (A - C) \sub A - (B \cup C)$
+	\item $A - (A - B) \sub A \cap B$
+	\item $A \cap B \sub A - (A - B)$
 \end{enumerate}
 
-Para a primeira inclus\~ao seja $x \in A - (B \cup C)$. Assim $x \in A$ e $x \notin B \cup C$. Logo $x \notin B$ e $x \notin C$. Como $x \in A$ e $x \notin B$, ent\~ao $x \in A - B$. Al\'em disso, $x \in A$ e $x \notin C$, logo $x \in A - C$. Como $x \in A - B$ e $x \in A - C$, ent\~ao $x \in (A - B) \cap (A - C)$.
+Para a primeira inclus\~ao seja $x \in A - (A - B)$. Assim $x \in A$ e $x \notin A - B$. Mas $x \notin A - B$ significa que $x \notin A$ ou $x \in B$. Mas como $x \in A$, então $x \in B$ e com isso $x \in A \cap B$. Logo $A - (A - B) \sub A \cap B$.
 
-Agora para a segunda inclus\~ao seja $y \in (A - B) \cap (A - C)$. Da{\'\i} $y \in A - B$ e $y \in A - C$. Com isso, $y \in A$ e $y \notin B$ e tamb\'em $y \in A$ e $y \notin C$. Como $y \notin B$ e $y \notin C$, ent\~ao $y \notin (B \cup C)$. Uma vez que $y \in A$ e $y \notin (B \cup C)$ segue que $y \in A - (B \cup C)$, como quer{\'\i}amos.
+Agora para a segunda inclus\~ao seja $y \in A \cap B$. Da{\'\i} $y \in A$ e $y \in B$. Mas se $y \in B$, então $y \notin A - B$. Como $y \in A$ e $y \notin A - B$, então $y \in A - (A - B)$. Logo $A \cap B \sub A - (A - B)$.
 
-Portanto, $A - (B \cup C) = (A - B) \cap (A - C)$.
+Portanto, $A - (A - B) = A \cap B$.
 \end{document}
