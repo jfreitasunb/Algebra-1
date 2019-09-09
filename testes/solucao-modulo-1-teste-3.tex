@@ -40,12 +40,25 @@ Mostre que $R$ \'e uma rela\c{c}\~ao de equival\^encia sobre $\z$.
 
 De fato,
 \begin{enumerate}[label={\roman*})]
-	\item Para $(a,b) temos \in A$ $a + b = a + b$, logo $(a,b)R(a,b)$.
-	\item Se $(a,b)R(c,d)$ ent\~ao, por defini\c{c}\~ao $a + b = c + d$. Ou seja $c + d = a + b$ e com isso $(c,d)R(a,b)$.
-	\item se $(a,b)R(c,d)$ e $(c,d)R(e,f)$ ent\~ao, por defini\c{c}\~ao $a + b = c + d$  e $c + d = e + f$. Logo $a + b = e + f$, isto \'e, $(a,b)R(e,f)$.
+	\item Para $x \in \z$ temos $x - x = 0 = m\cdot 0$, logo $(x, x) \in R$.
+	\item Se $(x, y)\in R$ ent\~ao, para algum $k \in \z$ temos $x - y  = mk$. Assim
+	\begin{align*}
+		y - x = -(x - y) = -(mm) = m(-k)
+	\end{align*}
+	logo $(y, x) \in R$.
+	\item Se $(x, y) \in R$ e $(y, z) \in R$ ent\~ao, existem $k$, $l \in \z$ tais que
+	\begin{align*}
+		x - y &= km\\
+		y - z = lm.
+	\end{align*}
+	Assim
+	\begin{align*}
+		x - z = (x - y) + (y - z) = km + lm = m(k + l)
+	\end{align*}
+	e então $(x, z) \in R$.
 \end{enumerate}
 
-Portanto, $R$ \'e uma rela\c{c}\~ao de equival\^encia sobre $A$ como quer{\'\i}amos.
+Portanto, $R$ \'e uma rela\c{c}\~ao de equival\^encia sobre $\z$ como quer{\'\i}amos.
 
 \vspace{.5cm}
 
