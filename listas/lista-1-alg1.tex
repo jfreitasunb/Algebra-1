@@ -58,13 +58,13 @@ exemplo mostrando que a afirma\c{c}\~ao \'e falsa.
 \begin{enumerate}[label={\alph*})]
 \item Se $x \in A$ e $A \sub B$, ent\~ao $x \in B$.
 
-\item Se $A \nsub B$ e $B \subset C$, ent\~ao $A \nsub C$.
+\item Se $A \nsub B$ e $B \sub C$, ent\~ao $A \nsub C$.
 
 \item Se $A \nsub B$ e $B \nsub C$, ent\~ao $A \nsub C$.
 
 \item Se $x \in A$ e $A \nsub B$, ent\~ao $x \notin B$.
 
-\item Se $A \subset B$ e $x \notin B$, ent\~ao $x \notin A$.
+\item Se $A \sub B$ e $x \notin B$, ent\~ao $x \notin A$.
 
 \item Se $A \sub E$, ent\~ao $A \sub C_E(A)$.
 
@@ -148,9 +148,9 @@ exemplo mostrando que a afirma\c{c}\~ao \'e falsa.
 
 \questao Demonstre as seguintes igualdades.
 \begin{enumerate}[label={\alph*})]
-\item $A \cup (C_E(A) \cap B) = A \cup B$. \textit{(Aqui suponha que $A \sub E$.)}
+\item $A \cup (C_E(A) \cap B) = A \cup B$. \textit{(Aqui suponha que $A$, $B \sub E$.)}
 
-\item $A \cap (C_E(A) \cup B) = A \cap B$. \textit{(Aqui suponha que $A \sub E$.)}
+\item $A \cap (C_E(A) \cup B) = A \cap B$. \textit{(Aqui suponha que $A$, $B \sub E$.)}
 
 \item $(A - B) - C = A - (B \cup C)$.
 
