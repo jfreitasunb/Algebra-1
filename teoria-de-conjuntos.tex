@@ -350,26 +350,26 @@ C = A \sqcup B.
 \end{proposicao}
 \begin{prova}
 	Precisamos mostrar que
-	\begin{enumerate}
+	\begin{enumerate}[label={\arabic*})]
 		\item $(A \cup B) - C \sub (A - C) \cup (B - C)$
 		\item $(B - C) \sub (A \cup B) - C = (A - C)$
 	\end{enumerate}
-	Para a primeira inclusão seja $x \in (A \cup B) - C$. Assim por definição, $x \in A \cup B$ e $x \notin C$. De $x \in A \cup B$, então $x \in A$ ou $x \in B$.
+	Para a primeira inclus\~ao seja $x \in (A \cup B) - C$. Assim por defini\c{c}\~ao, $x \in A \cup B$ e $x \notin C$. De $x \in A \cup B$, ent\~ao $x \in A$ ou $x \in B$.
 	
-	Se $x \in A$, como $x \notin C$ segue então que $x \in A - C$. Logo $x \in (A - C) \cup (B - C)$.
+	Se $x \in A$, como $x \notin C$ segue ent\~ao que $x \in A - C$. Logo $x \in (A - C) \cup (B - C)$.
 
-	Se $x \in B$, como $x \notin C$ segue então que $x \in B - C$. Logo $x \in (A - C) \cup (B - C)$.
+	Se $x \in B$, como $x \notin C$ segue ent\~ao que $x \in B - C$. Logo $x \in (A - C) \cup (B - C)$.
 
 	Assim $(A \cup B) - C = (A - C) \sub (B - C)$.
 
-	Agora, para a segunda inclusão, seja $y \in (A - C) \cup (B - C)$. Por definição, $x \in A - C$ ou $x \in B - C$.
+	Agora, para a segunda inclus\~ao, seja $y \in (A - C) \cup (B - C)$. Por defini\c{c}\~ao, $x \in A - C$ ou $x \in B - C$.
 
-	Se $x \in A - C$, então $x \in A$ e $x \notin C$. Como $x \in A$, segue que $x \in A \cup B$. Mas $x \notin C$, com isso, $x \in (A \cup B) - C$.
+	Se $x \in A - C$, ent\~ao $x \in A$ e $x \notin C$. Como $x \in A$, segue que $x \in A \cup B$. Mas $x \notin C$, com isso, $x \in (A \cup B) - C$.
 
-	Se $x \in B - C$, então $x \in B$ e $x \notin C$. Como $x \in B$, segue que $x \in A \cup B$. Mas $x \notin C$, com isso, $x \in (A \cup B) - C$.
+	Se $x \in B - C$, ent\~ao $x \in B$ e $x \notin C$. Como $x \in B$, segue que $x \in A \cup B$. Mas $x \notin C$, com isso, $x \in (A \cup B) - C$.
 	Assim $(A - B) \cup (B - C) \sub (A \cup B) - C$.
 
-	Portanto, $(A \cup B) - C = (A - C) \cup (B - C)$, como queríamos.
+	Portanto, $(A \cup B) - C = (A - C) \cup (B - C)$, como quer{\'\i}amos.
 \end{prova}
 
 \begin{definicao}
