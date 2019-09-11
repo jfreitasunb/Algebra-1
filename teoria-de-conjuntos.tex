@@ -349,7 +349,27 @@ C = A \sqcup B.
 	\[(A \cup B) - C = (A - C) \cup (B - C).\]
 \end{proposicao}
 \begin{prova}
-	Segue da defini\c{c}\~ao de diferen\c{c}a de conjuntos.
+	Precisamos mostrar que
+	\begin{enumerate}
+		\item $(A \cup B) - C \sub (A - C) \cup (B - C)$
+		\item $(B - C) \sub (A \cup B) - C = (A - C)$
+	\end{enumerate}
+	Para a primeira inclusão seja $x \in (A \cup B) - C$. Assim por definição, $x \in A \cup B$ e $x \notin C$. De $x \in A \cup B$, então $x \in A$ ou $x \in B$.
+	
+	Se $x \in A$, como $x \notin C$ segue então que $x \in A - C$. Logo $x \in (A - C) \cup (B - C)$.
+
+	Se $x \in B$, como $x \notin C$ segue então que $x \in B - C$. Logo $x \in (A - C) \cup (B - C)$.
+
+	Assim $(A \cup B) - C = (A - C) \sub (B - C)$.
+
+	Agora, para a segunda inclusão, seja $y \in (A - C) \cup (B - C)$. Por definição, $x \in A - C$ ou $x \in B - C$.
+
+	Se $x \in A - C$, então $x \in A$ e $x \notin C$. Como $x \in A$, segue que $x \in A \cup B$. Mas $x \notin C$, com isso, $x \in (A \cup B) - C$.
+
+	Se $x \in B - C$, então $x \in B$ e $x \notin C$. Como $x \in B$, segue que $x \in A \cup B$. Mas $x \notin C$, com isso, $x \in (A \cup B) - C$.
+	Assim $(A - B) \cup (B - C) \sub (A \cup B) - C$.
+
+	Portanto, $(A \cup B) - C = (A - C) \cup (B - C)$, como queríamos.
 \end{prova}
 
 \begin{definicao}
