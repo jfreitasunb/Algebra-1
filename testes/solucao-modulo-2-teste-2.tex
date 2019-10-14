@@ -34,16 +34,16 @@ $2^{\underline{o}}$ Teste - M\'odulo 2 - Resolu\c{c}\~ao}\\
 
 \questao Sejam $f : A \to B$ e $g : B \to A$ fun\c{c}\~oes tais que $g \comp f$ \'e sobrejetora. Mostre que $g$ \'e sobrejetora.
 
-\noindent\textbf{Solu\c{c}\~ao:} Primeiro temos
+\noindent\textbf{Solu\c{c}\~ao:} Para mostrar que $g$ é sobrejetora temos que mostrar que para todo $z \in A$, existe $t \in B$ tal que $g(t) = z$.
+
+Assim seja $z \in A$. Como $g \comp f : A \to A$ é sobrejetora, existe $y \in B$ tal que $(g\comp f)(y) = z$. Agora,
 \begin{align*}
-	f(P \cap Q) &= \{f(x) \mid x \in P \cap Q\}\\
-	f(P) &= \{f(z) \mid z \in P\}\\
-	f(Q) &= \{f(t) \mid t \in Q\}.
+    (g\comp f)(y) &= z\\
+    g(f(y)) &= z
 \end{align*}
-Seja $y \in f(P \cap Q)$. Ent\~ao existe $x \in P \cap Q$ tal que $y = f(x)$. Como $x \in P \cap Q$, ent\~ao $x \in P$ e $x \in Q$. Logo $y = f(x)$ com $x \in P$ e $y = f(x)$ com $x \in Q$. Ou seja, $y \in f(P)$ e $y \in f(Q)$. Portanto $y \in f(P) \cap f(Q)$.
-
-Agora seja $y \in f(P) \cap f(Q)$. Da{\'\i} $y \in f(P)$ e $y \in f(Q)$. Assim $y = f(x_1)$ com $x_1 \in P$ e $y = f(x_2)$ com $x_2 \in Q$. Logo $y = f(x_1) = f(x_2)$ e como $f$ \'e injetora, segue que $x_1 = x_2$. Portanto $y = f(x_1)$ com $x_1 = x_1 \in P \cap Q$, isto \'e, $y \in f(P \cap Q)$.
-
-Com isso $f(P \cap Q) = f(P) \cap f(Q)$.
-
+e $f(y) \in B$ pois $f : A \to B$. Seja então $t = f(y) \in B$. Daí
+\[
+    g(t) = g(f(y)) = (g \comp f)(y) = z
+\]
+logo $g$ é sobrejetora.
 \end{document}
