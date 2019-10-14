@@ -1,16 +1,23 @@
 %!TEX program = xelatex
 %!TEX encoding = ISO-8859-1
-\documentclass[12pt]{article}
+%!TEX program = xelatex
+% !TEX encoding = ISO-8859-1
+\def\ano{2019}
+\def\semestre{2}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
 
-\include{configuracoes/estrutura_listas}
+\documentclass[12pt]{exam}
+
+\input{../configuracoes/pacotes}
+\input{../configuracoes/configuracoes_paginas}
+\input{../configuracoes/comandos_personalizados}
 
 \begin{document}
 
-\input{configuracoes/cabecalho_listas}
-
 \begin{center}
-{\Large\bf {\'A}lgebra 1 - Turma C -- 1$^{o}$/2018} \\ \vspace{9pt} {\large\bf
-  $2^{\underline{o}}$ Teste M\'odulo 2 - Resolu\c{c}\~ao}\\
+{\Large\bf \disciplina\ - Turma \turma\ -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
+$1^{\underline{o}}$ Teste - M\'odulo 2 - Resolu\c{c}\~ao}\\
 \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
 \end{center}
 \hrule
