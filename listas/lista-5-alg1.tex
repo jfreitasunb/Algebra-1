@@ -1,20 +1,25 @@
 %!TEX program = xelatex
 %!TEX encoding = ISO-8859-1
-\documentclass[12pt]{article}
+%!TEX program = xelatex
+% !TEX encoding = ISO-8859-1
+\def\ano{2019}
+\def\semestre{2}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
 
-\include{configuracoes/estrutura_listas}
+\documentclass[12pt]{exam}
+
+\input{../configuracoes/pacotes}
+\input{../configuracoes/configuracoes_paginas}
+\input{../configuracoes/comandos_personalizados}
 
 \begin{document}
 
-\input{configuracoes/cabecalho_listas}
-
 \begin{center}
- {\Large\bf {\'A}lgebra 1 - Turma C -- 1$^{o}$/2018} \\
- \vspace{9pt} {\large\bf $4^{\underline{a}}$ Lista de Exerc{\'\i}cios -- An\'eis}\\
- \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+{\Large\bf \disciplina\ - Turma \turma\ -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
+  $5^{\underline{a}}$ Lista de Exerc{\'\i}cios -- An\'eis}\\ \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
 \end{center}
 \hrule
-
 
 \vspace{.6cm}
 
@@ -25,7 +30,7 @@
 \end{align*}
 Mostre que $(\z \times \z, \oplus, \otimes)$ \'e um anel comutativo e com unidade.
 
-\vesp
+\vspace{.2cm}
 
 \questao{} Considere as opera\c{c}\~oes $\star$ e $\odot$ em $\rac$ definidas por
 \begin{align*}
@@ -34,7 +39,7 @@ Mostre que $(\z \times \z, \oplus, \otimes)$ \'e um anel comutativo e com unidad
 \end{align*}
 Mostre que $(\rac, \star, \odot)$ \'e um anel comutativo e com unidade.
 
-\vesp
+\vspace{.2cm}
 
 \questao{} Prove que s\~ao an\'eis:
 \begin{enumerate}[label={\alph*})]
@@ -48,7 +53,7 @@ Mostre que $(\rac, \star, \odot)$ \'e um anel comutativo e com unidade.
 \end{enumerate}
 Quais destes an\'eis s\~ao comutativos? Quais t\^em unidade?
 
-\vesp
+\vspace{.2cm}
 
 \questao{} Determinar quais dos seguintes conjuntos s\~ao an{\'e}is com as opera\c{c}\~oes usuais em $\rac$:
 	\begin{multicols}{2}
@@ -60,7 +65,7 @@ Quais destes an\'eis s\~ao comutativos? Quais t\^em unidade?
 		\end{enumerate}
 	\end{multicols}
 
-\vesp
+\vspace{.2cm}
 
 \questao{} Seja
 \[
@@ -114,7 +119,7 @@ Dados $A = \begin{pmatrix}
 	\end{align*}
 \end{enumerate}
 
-\vesp
+\vspace{.2cm}
 
 \questao{} Considere o conjunto $L = \{ a + b\sqrt{2} \mid a, b \in \rac\} \sub \real$. Para $a + b\sqrt{2}$, $c + d\sqrt{2} \in L$ definimos:
 \begin{align*}
