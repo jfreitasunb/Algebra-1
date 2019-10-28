@@ -23,6 +23,18 @@ $2^{\underline{o}}$ Teste - M\'odulo 2 - Resolu\c{c}\~ao}\\
 \vspace{.6cm}
 
 \questao Seja $f : A \to B$ uma fun{\c c}{\~a}o e seja $X \sub B$. Mostre que $f^{-1}(X^C) = (f^{-1}(X))^C$.
+\noindent\textbf{Solu\c{c}\~ao:} Precisamos mostrar que
+\begin{enumerate}
+    \item $f^{-1}(X^C) \sub (f^{-1}(X))^C$
+    \item $(f^{-1}(X))^C \sub f^{-1}(X^C)$.
+\end{enumerate}
+
+Para a primeira inclusão seja $z \in f^{-1}(X^C)$. Então, por definição, $f(z) \in X^C$. Logo, $f(z) \notin X$. Com isso $z \notin f^{-1}(X)$, ou seja, $z \in (f^{-1}(X))^C$.
+
+Agora para a segunda inclusão, seja $t \in (f^{-1}(X))^C$. Assim $t \notin f^{-1}(X)$ e então $f(t) \notin X$. Daí $f(t) \in X^C$, isto é, $t \in f^{-1}(X^C)$.
+
+Portanto, $f^{-1}(X^C) = (f^{-1}(X))^C$.
+
 
 \vspace{.5cm}
 
