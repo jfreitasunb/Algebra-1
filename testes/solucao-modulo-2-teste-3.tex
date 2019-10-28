@@ -50,7 +50,7 @@ Dados $A = \begin{pmatrix}
         a & b\\c & d 
     \end{pmatrix} \in M_2(\real)$ definimos
 \begin{align*}
-    A &= B \mbox{ quando } x = a, y = b, z = c, t = d\\
+    A = B \mbox{ quando } x = a, y = b, z = c, t = d\\
     A + B &= \begin{pmatrix}
         x & y\\z & t 
     \end{pmatrix} + \begin{pmatrix}
@@ -68,4 +68,317 @@ Dados $A = \begin{pmatrix}
 \end{align*}
 
 Mostre que $(M_2(\real), + , \cdot)$ \'e um an\'el. Esse anel \'e comutativo? Possui unidade?
+
+\noindent\textbf{Solu\c{c}\~ao:} Sejam
+\[
+    A = \begin{bmatrix}
+        x & y\\
+        z & t
+    \end{bmatrix},\ 
+    B = \begin{bmatrix}
+        a & b\\
+        c & d
+    \end{bmatrix},\ 
+    C = \begin{bmatrix}
+        m & n\\
+        l & p
+    \end{bmatrix} \in M_2(\real).
+\]
+\begin{enumerate}
+    \item
+    \begin{align*}
+        (A + B) + C = \begin{bmatrix}
+        x + a & y + b\\z + c & t + d 
+    \end{bmatrix} + \begin{bmatrix}
+        m & n\\l & p 
+    \end{bmatrix} = \begin{bmatrix}
+        (x + a) + m & (y + b) + n\\(z + c) + l & (t + d) + p 
+    \end{bmatrix} = \begin{bmatrix}
+        x + (a + m) & y + (b + n)\\z + (c + l) & t + (d + p) 
+    \end{bmatrix} = \begin{bmatrix}
+        x & y\\
+        z & t
+    \end{bmatrix} + \begin{bmatrix}
+        a + m & b + n\\c + l & d + p 
+    \end{bmatrix} = A + (B + C),
+    \end{align*}
+    para todas $A$, $B$ e $C \in \in M_2(\real)$.
+
+    \item 
+    \begin{align*}
+        A + B &= 
+        \begin{pmatrix}
+            x + a & y + b\\z + c & t + d 
+        \end{pmatrix} = \begin{bmatrix}
+            a + x & b + y\\c + z & d + t
+        \end{bmatrix} = B + A,
+    \end{align*}
+    para todas $A$, $B \in \in M_2(\real)$.
+
+    \item Tome
+    \[
+        0_{M_2(\real)} = \begin{bmatrix}
+            0 & 0\\0 & 0
+        \end{bmatrix} \in M_2(\real).
+    \]
+    Para toda $A \in M_2(\real)$ temos
+    \begin{align}
+        A + 0_{M_2(\real)} = \begin{bmatrix}
+        x & y\\
+        z & t
+    \end{bmatrix} + \begin{bmatrix}
+        0 & 0\\
+        0 & 0
+    \end{bmatrix} = \begin{bmatrix}
+        x + 0& y + 0\\
+        z + 0& t + 0
+    \end{bmatrix} = \begin{bmatrix}
+        x & y\\
+        z & t
+    \end{bmatrix}
+    \end{align}
+    Logo
+    \[
+        0_{M_2(\real)} = \begin{bmatrix}
+            0 & 0\\0 & 0
+        \end{bmatrix} \in M_2(\real).
+    \]
+    é o elemento neutro em $M_2(\real)$.
+
+    \item Dada
+    \[
+        A = \begin{bmatrix}
+        x & y\\
+        z & t
+    \end{bmatrix} \in M_2(\real)
+    \]
+    tome
+    \[
+        -A = \begin{bmatrix}
+        -x & -y\\
+        -z & -t
+    \end{bmatrix} \in M_2(\real).
+    \]
+    Assim
+    \begin{align*}
+      A + (-A) = \begin{bmatrix}
+        x & y\\
+        z & t
+    \end{bmatrix} + \begin{bmatrix}
+        -x & -y\\
+        -z & -t
+    \end{bmatrix} = \begin{bmatrix}
+        x + (-x) & y + (-y)\\
+        z + (-z)& t + (-t)
+    \end{bmatrix} = \begin{bmatrix}
+        0 & 0\\
+        0 & 0
+    \end{bmatrix} = 0_{M_2(\real)}
+    \end{align*}
+    Logo o oposto de
+    \[
+        A = \begin{bmatrix}
+        x & y\\
+        z & t
+    \end{bmatrix} \in M_2(\real)
+    \] é
+    \[
+        -A = \begin{bmatrix}
+        -x & -y\\
+        -z & -t
+    \end{bmatrix} \in M_2(\real).
+    \]
+
+    \item
+    \begin{align*}
+        (A\cdot B)\cdot C = \begin{bmatrix}
+        x & y\\z & t 
+    \end{bmatrix} \cdot \begin{bmatrix}
+        a & b\\c & d 
+    \end{bmatrix} \cdot C = \begin{bmatrix}
+        xa + yc & xb + yd\\za + tc & zb + td 
+    \end{bmatrix} \cdot \begin{bmatrix}
+        m & n\\
+        l & p
+    \end{bmatrix} = \begin{bmatrix}
+        (xa + yc)m + (xb + yd)l & (xa + yc)n + (xb + yd)p\\
+        (za + tc)m + (zb + td)l & (za + tc)n + (zb + td)p
+    \end{bmatrix} = \begin{bmatrix}
+        xam + ycm + xbl + ydl & xan + ycn + xbp + ydp\\
+        zam + tcm + zbl + tdl & zan + tcn + zbp + tdp
+    \end{bmatrix} = \begin{bmatrix}
+        x & y\\z & t 
+    \end{bmatrix} \cdot \begin{bmatrix}
+        am + bl & an + bp\\cm + dl & cn + dp 
+    \end{bmatrix} = \begin{bmatrix}
+        x & y\\z & t 
+    \end{bmatrix} \cdot (\begin{bmatrix}
+        a & b\\
+        c & d
+    \end{bmatrix}\cdot \begin{bmatrix}
+        m & n\\
+        l & p
+    \end{bmatrix}) = A\cdot (B \cdot C)
+    \end{align*}
+    para todas $A$, $B$ e $C \in \in M_2(\real)$.
+
+    \item
+    \begin{align*}
+        (A + B)\cdot C = \left[\begin{pmatrix}
+        x & y\\z & t 
+    \end{pmatrix} + \begin{pmatrix}
+        a & b\\c & d 
+    \end{pmatrix}\right]\cdot \begin{bmatrix}
+        m & n\\
+        l & p
+    \end{bmatrix}= \begin{pmatrix}
+        x + a & y + b\\z + c & t + d 
+    \end{pmatrix}\cdot \begin{bmatrix}
+        m & n\\
+        l & p
+    \end{bmatrix} = \begin{bmatrix}
+        (x + a)m + (y + b)l & (x + a)n + (y + b)p\\
+        (z + c)m + (t + d)l & (z + c)n + (t + d)p
+    \end{bmatrix} = \begin{bmatrix}
+        xm + yl + am + bl & xn + yp + an + bp\\
+        zm + tl + cm + dl & zn + tp + cn + dp
+    \end{bmatrix} = \begin{pmatrix}
+        x & y\\z & t 
+    \end{pmatrix}\cdot \begin{bmatrix}
+        m & n\\
+        l & p
+    \end{bmatrix} + \begin{pmatrix}
+        a & b\\c & d 
+    \end{pmatrix}\cdot \begin{bmatrix}
+        m & n\\
+        l & p
+    \end{bmatrix} = (A\cdot C) + (B \cdot C)
+    \end{align*}
+    para todas $A$, $B$ e $C \in \in M_2(\real)$.
+
+    \item
+    \begin{align*}
+        A\cdot(B + C) = \begin{pmatrix}
+        x & y\\z & t 
+    \end{pmatrix}\left[\begin{pmatrix}
+        a & b\\c & d 
+    \end{pmatrix} + \begin{bmatrix}
+        m & n\\
+        l & p
+    \end{bmatrix}\right] = \begin{pmatrix}
+        x & y\\z & t 
+    \end{pmatrix}\cdot \begin{bmatrix}
+        a + m & b + n\\
+        c + l & d + p
+    \end{bmatrix} = \begin{bmatrix}
+        x(a + m) + y(c + l) & x(b + n) + y(d + p)\\
+        z(a + m) + t(c + l) & z(b + n) + t(d + p)
+    \end{bmatrix} = \begin{bmatrix}
+        xa + yc + xm + yl & xb + yd + xn + yp\\
+        za + tc & zm + tl & zb + td + zn + tp
+    \end{bmatrix} = \begin{pmatrix}
+        x & y\\z & t 
+    \end{pmatrix}\cdot \begin{pmatrix}
+        a & b\\c & d 
+    \end{pmatrix} + \begin{pmatrix}
+        x & y\\z & t 
+    \end{pmatrix}\cdot \begin{bmatrix}
+        m & n\\
+        l & p
+    \end{bmatrix} = A\cdot B + A \cdot C
+    \end{align*}
+    para todas $A$, $B$ e $C \in \in M_2(\real)$.
+\end{enumerate}
+
+Portanto $(M_2(\real), + , \cdot)$ \'e um an\'el.
+
+Para que $(M_2(\real), + , \cdot)$ seja um an\'el comutativo é preciso que
+\[
+    A\cdot B = \begin{pmatrix}
+        x & y\\z & t 
+    \end{pmatrix} \cdot \begin{pmatrix}
+        a & b\\c & d 
+    \end{pmatrix} = \begin{pmatrix}
+        xa + yc & xb + yd\\za + tc & zb + td 
+    \end{pmatrix} = \begin{bmatrix}
+        ax + bz & ay + bt\\
+        cx + dz & cy + dt
+    \end{bmatrix} = \begin{pmatrix}
+        a & b\\c & d 
+    \end{pmatrix}\cdot \begin{pmatrix}
+        x & y\\z & t 
+    \end{pmatrix} = B \cdot A
+\]
+para todas $A$, $B \in M_2(\real)$. Mas se tomamos
+\begin{align*}
+    A = \begin{bmatrix}
+        1 & 0\\
+        0 & 0
+    \end{bmatrix}\\
+    B = \begin{bmatrix}
+        2 & 0\\
+        0 & 0
+    \end{bmatrix}
+\end{align*}
+obtemos
+\begin{align*}
+    A \cdot B = \begin{bmatrix}
+        1 & 0\\
+        0 & 0
+    \end{bmatrix}\cdot \begin{bmatrix}
+        0 & 2\\
+        0 & 0
+    \end{bmatrix} = \begin{bmatrix}
+        0 & 2\\
+        0 & 0
+    \end{bmatrix} \ne \begin{bmatrix}
+        0 & 0\\
+        0 & 0
+    \end{bmatrix} = \begin{bmatrix}
+        0 & 2\\
+        0 & 0
+    \end{bmatrix}\cdot \begin{bmatrix}
+        1 & 0\\
+        0 & 0
+    \end{bmatrix}
+\end{align*}
+Portanto $M_2(\real)$ não é um anel comutativo.
+
+Agora tomando
+\[
+    1_{M_2(\real)} = \begin{bmatrix}
+        1 & 0\\
+        0 & 1
+    \end{bmatrix} \in M_2(\real)
+\]
+temos
+\begin{align*}
+    A\cdot 1_{M_2(\real)} &= \begin{bmatrix}
+        x & y\\
+        z & t
+    \end{bmatrix} \cdot \begin{bmatrix}
+        1 & 0\\
+        0 & 1
+    \end{bmatrix} = \begin{bmatrix}
+        x & y\\
+        z & t
+    \end{bmatrix}\\
+    1_{M_2(\real)}\cdot A &= \begin{bmatrix}
+        1 & 0\\
+        0 & 1
+    \end{bmatrix}\cdot \begin{bmatrix}
+        x & y\\
+        z & t
+    \end{bmatrix} = \begin{bmatrix}
+        x & y\\
+        z & t
+    \end{bmatrix}
+\end{align*}
+para toda $A \in M_2(\real)$. Portanto $M_2(\real)$ é um anel com unidade ou anel unitário e a unidade é a matriz
+\[
+    1_{M_2(\real)} = \begin{bmatrix}
+        1 & 0\\
+        0 & 1
+    \end{bmatrix} \in M_2(\real).
+\]
 \end{document}
