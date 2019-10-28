@@ -50,7 +50,7 @@ Dados $A = \begin{pmatrix}
         a & b\\c & d 
     \end{pmatrix} \in M_2(\real)$ definimos
 \begin{align*}
-    A = B \mbox{ quando } x = a, y = b, z = c, t = d\\
+    A &= B \mbox{ quando } x = a, y = b, z = c, t = d\\
     A + B &= \begin{pmatrix}
         x & y\\z & t 
     \end{pmatrix} + \begin{pmatrix}
@@ -87,20 +87,20 @@ Mostre que $(M_2(\real), + , \cdot)$ \'e um an\'el. Esse anel \'e comutativo? Po
 \begin{enumerate}[label={\roman*})]
     \item
     \begin{align*}
-        (A + B) + C = \begin{bmatrix}
+        (A + B) + C &= \begin{bmatrix}
         x + a & y + b\\z + c & t + d 
     \end{bmatrix} + \begin{bmatrix}
         m & n\\l & p 
-    \end{bmatrix} = \begin{bmatrix}
+    \end{bmatrix}\\ &= \begin{bmatrix}
         (x + a) + m & (y + b) + n\\(z + c) + l & (t + d) + p 
-    \end{bmatrix} = \begin{bmatrix}
+    \end{bmatrix}\\ &= \begin{bmatrix}
         x + (a + m) & y + (b + n)\\z + (c + l) & t + (d + p) 
-    \end{bmatrix} = \begin{bmatrix}
+    \end{bmatrix} \\&= \begin{bmatrix}
         x & y\\
         z & t
     \end{bmatrix} + \begin{bmatrix}
         a + m & b + n\\c + l & d + p 
-    \end{bmatrix} = A + (B + C),
+    \end{bmatrix}\\ &= A + (B + C),
     \end{align*}
     para todas $A$, $B$ e $C \in \in M_2(\real)$.
 
@@ -161,16 +161,16 @@ Mostre que $(M_2(\real), + , \cdot)$ \'e um an\'el. Esse anel \'e comutativo? Po
     \]
     Assim
     \begin{align*}
-      A + (-A) = \begin{bmatrix}
+      A + (-A) &= \begin{bmatrix}
         x & y\\
         z & t
     \end{bmatrix} + \begin{bmatrix}
         -x & -y\\
         -z & -t
-    \end{bmatrix} = \begin{bmatrix}
+    \end{bmatrix}\\ &= \begin{bmatrix}
         x + (-x) & y + (-y)\\
         z + (-z)& t + (-t)
-    \end{bmatrix} = \begin{bmatrix}
+    \end{bmatrix}\\ &= \begin{bmatrix}
         0 & 0\\
         0 & 0
     \end{bmatrix} = 0_{M_2(\real)}
@@ -191,58 +191,58 @@ Mostre que $(M_2(\real), + , \cdot)$ \'e um an\'el. Esse anel \'e comutativo? Po
 
     \item
     \begin{align*}
-        (A\cdot B)\cdot C = \begin{bmatrix}
+        (A\cdot B)\cdot C &= \left(\begin{bmatrix}
         x & y\\z & t 
     \end{bmatrix} \cdot \begin{bmatrix}
         a & b\\c & d 
-    \end{bmatrix} \cdot C = \begin{bmatrix}
+    \end{bmatrix}\right) \cdot C\\ &= \begin{bmatrix}
         xa + yc & xb + yd\\za + tc & zb + td 
     \end{bmatrix} \cdot \begin{bmatrix}
         m & n\\
         l & p
-    \end{bmatrix} = \begin{bmatrix}
+    \end{bmatrix}\\ &= \begin{bmatrix}
         (xa + yc)m + (xb + yd)l & (xa + yc)n + (xb + yd)p\\
         (za + tc)m + (zb + td)l & (za + tc)n + (zb + td)p
-    \end{bmatrix} = \begin{bmatrix}
+    \end{bmatrix}\\ &= \begin{bmatrix}
         xam + ycm + xbl + ydl & xan + ycn + xbp + ydp\\
         zam + tcm + zbl + tdl & zan + tcn + zbp + tdp
-    \end{bmatrix} = \begin{bmatrix}
+    \end{bmatrix}\\ &= \begin{bmatrix}
         x & y\\z & t 
     \end{bmatrix} \cdot \begin{bmatrix}
         am + bl & an + bp\\cm + dl & cn + dp 
-    \end{bmatrix} = \begin{bmatrix}
+    \end{bmatrix}\\ &= \begin{bmatrix}
         x & y\\z & t 
-    \end{bmatrix} \cdot (\begin{bmatrix}
+    \end{bmatrix} \cdot \left(\begin{bmatrix}
         a & b\\
         c & d
     \end{bmatrix}\cdot \begin{bmatrix}
         m & n\\
         l & p
-    \end{bmatrix}) = A\cdot (B \cdot C)
+    \end{bmatrix}\right)\\ &= A\cdot (B \cdot C)
     \end{align*}
     para todas $A$, $B$ e $C \in \in M_2(\real)$.
 
     \item
     \begin{align*}
-        (A + B)\cdot C = \left[\begin{pmatrix}
+        (A + B)\cdot C &= \left(\begin{pmatrix}
         x & y\\z & t 
     \end{pmatrix} + \begin{pmatrix}
         a & b\\c & d 
-    \end{pmatrix}\right]\cdot \begin{bmatrix}
+    \end{pmatrix}\right)\cdot \begin{bmatrix}
         m & n\\
         l & p
-    \end{bmatrix}= \begin{pmatrix}
+    \end{bmatrix}\\ &= \begin{pmatrix}
         x + a & y + b\\z + c & t + d 
     \end{pmatrix}\cdot \begin{bmatrix}
         m & n\\
         l & p
-    \end{bmatrix} = \begin{bmatrix}
+    \end{bmatrix}\\ &= \begin{bmatrix}
         (x + a)m + (y + b)l & (x + a)n + (y + b)p\\
         (z + c)m + (t + d)l & (z + c)n + (t + d)p
-    \end{bmatrix} = \begin{bmatrix}
+    \end{bmatrix}\\ &= \begin{bmatrix}
         xm + yl + am + bl & xn + yp + an + bp\\
         zm + tl + cm + dl & zn + tp + cn + dp
-    \end{bmatrix} = \begin{pmatrix}
+    \end{bmatrix}\\ &= \begin{pmatrix}
         x & y\\z & t 
     \end{pmatrix}\cdot \begin{bmatrix}
         m & n\\
@@ -252,31 +252,31 @@ Mostre que $(M_2(\real), + , \cdot)$ \'e um an\'el. Esse anel \'e comutativo? Po
     \end{pmatrix}\cdot \begin{bmatrix}
         m & n\\
         l & p
-    \end{bmatrix} = (A\cdot C) + (B \cdot C)
+    \end{bmatrix}\\ &= (A\cdot C) + (B \cdot C)
     \end{align*}
     para todas $A$, $B$ e $C \in \in M_2(\real)$.
 
     \item
     \begin{align*}
-        A\cdot(B + C) = \begin{pmatrix}
+        A\cdot(B + C) &= \begin{pmatrix}
         x & y\\z & t 
-    \end{pmatrix}\left[\begin{pmatrix}
+    \end{pmatrix}\left(\begin{pmatrix}
         a & b\\c & d 
     \end{pmatrix} + \begin{bmatrix}
         m & n\\
         l & p
-    \end{bmatrix}\right] = \begin{pmatrix}
+    \end{bmatrix}\right)\\ &= \begin{pmatrix}
         x & y\\z & t 
     \end{pmatrix}\cdot \begin{bmatrix}
         a + m & b + n\\
         c + l & d + p
-    \end{bmatrix} = \begin{bmatrix}
+    \end{bmatrix}\\ &= \begin{bmatrix}
         x(a + m) + y(c + l) & x(b + n) + y(d + p)\\
         z(a + m) + t(c + l) & z(b + n) + t(d + p)
-    \end{bmatrix} = \begin{bmatrix}
+    \end{bmatrix}\\ &= \begin{bmatrix}
         xa + yc + xm + yl & xb + yd + xn + yp\\
-        za + tc & zm + tl & zb + td + zn + tp
-    \end{bmatrix} = \begin{pmatrix}
+        za + tc + zm + tl & zb + td + zn + tp
+    \end{bmatrix}\\ &= \begin{pmatrix}
         x & y\\z & t 
     \end{pmatrix}\cdot \begin{pmatrix}
         a & b\\c & d 
@@ -285,7 +285,7 @@ Mostre que $(M_2(\real), + , \cdot)$ \'e um an\'el. Esse anel \'e comutativo? Po
     \end{pmatrix}\cdot \begin{bmatrix}
         m & n\\
         l & p
-    \end{bmatrix} = A\cdot B + A \cdot C
+    \end{bmatrix}\\ &= A\cdot B + A \cdot C
     \end{align*}
     para todas $A$, $B$ e $C \in \in M_2(\real)$.
 \end{enumerate}
