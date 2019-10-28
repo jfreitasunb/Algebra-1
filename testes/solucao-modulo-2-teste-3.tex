@@ -87,7 +87,13 @@ Mostre que $(M_2(\real), + , \cdot)$ \'e um an\'el. Esse anel \'e comutativo? Po
 \begin{enumerate}[label={\roman*})]
     \item
     \begin{align*}
-        (A + B) + C &= \begin{bmatrix}
+        (A + B) + C &= \left(\begin{bmatrix}
+        x & y\\z & t 
+    \end{bmatrix} + \begin{bmatrix}
+        a & b\\c & d 
+    \end{bmatrix}\right) + \begin{bmatrix}
+        m & n\\l & p 
+    \end{bmatrix}\\ &= \begin{bmatrix}
         x + a & y + b\\z + c & t + d 
     \end{bmatrix} + \begin{bmatrix}
         m & n\\l & p 
@@ -260,7 +266,7 @@ Mostre que $(M_2(\real), + , \cdot)$ \'e um an\'el. Esse anel \'e comutativo? Po
     \begin{align*}
         A\cdot(B + C) &= \begin{bmatrix}
         x & y\\z & t 
-    \end{bmatrix}\left(\begin{bmatrix}
+    \end{bmatrix}\cdot\left(\begin{bmatrix}
         a & b\\c & d 
     \end{bmatrix} + \begin{bmatrix}
         m & n\\
