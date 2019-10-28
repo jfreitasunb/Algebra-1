@@ -22,77 +22,38 @@ $2^{\underline{o}}$ Teste - M\'odulo 2 - Resolu\c{c}\~ao}\\
 
 \vspace{.6cm}
 
-\questao Em $\z \times \z$ defina
+\questao Seja $f : A \to B$ uma fun{\c c}{\~a}o e seja $X \sub B$. Mostre que $f^{-1}(X^C) = (f^{-1}(X))^C$.
+
+\vspace{.5cm}
+
+\questao Seja
+\[
+    M_2(\real) = \left\{\begin{pmatrix}
+        x & y\\z & t 
+    \end{pmatrix} \mid x, y, z, t \in \real \right\}.
+\]
+Dados $A = \begin{pmatrix}
+        x & y\\z & t 
+    \end{pmatrix}$, $B = \begin{pmatrix}
+        a & b\\c & d 
+    \end{pmatrix} \in M_2(\real)$ definimos
 \begin{align*}
-	(a, b) \oplus (c,d) &= (a + b, c + d)\\
-	(a, b) \otimes (c, d) &= (ac, ad + bc)
+    A &= B \mbox{ quando } x = a, y = b, z = c, t = d\\
+    A + B &= \begin{pmatrix}
+        x & y\\z & t 
+    \end{pmatrix} + \begin{pmatrix}
+        a & b\\c & d 
+    \end{pmatrix} = \begin{pmatrix}
+        x + a & y + b\\z + c & t + d 
+    \end{pmatrix}\\
+    A \cdot B &= \begin{pmatrix}
+        x & y\\z & t 
+    \end{pmatrix} \cdot \begin{pmatrix}
+        a & b\\c & d 
+    \end{pmatrix} = \begin{pmatrix}
+        xa + yc & xb + yd\\za + tc & zb + td 
+    \end{pmatrix}.
 \end{align*}
-para todos $(a, b)$, $(c, d) \in \z \times \z$. Mostre que $(\z \times \z, \oplus, \otimes)$ \'e um anel. \'E comutativo? Possui unidade?
 
-\noindent\textbf{Solu\c{c}\~ao:}
-
-	\begin{enumerate}[label={\roman*})]
-		\item Para todos $(a, b)$, $(c, d)$, $(e, f) \in \z \times \z$ temos
-		\begin{align*}
-			[(a, b) \oplus (c, d)] \oplus (e, f) &= (a + c, b + d) \oplus (e, f) = (a + c + e, b + d + f)\\
-			(a, b) \oplus [(c, d) \oplus (e, f)] &= (a, b) \oplus (c + e, d + f) = (a + c + e, b + d + f)
-		\end{align*}
-		Logo $[(a, b) \oplus (c, d)] \oplus (e, f) = (a, b) \oplus [(c, d) \oplus (e, f)]$, como quer{\'\i}amos.
-
-		\item Para todos $(a, b)$, $(c, d) \in \z \times \z$ temos
-		\begin{align*}
-			(a, b) \oplus (c, d) &= (a + c, b + d)\\
-			(c, d) \oplus (a, b) &= (c + a, d + b)
-		\end{align*}
-		Logo $(a, b) \oplus (c, d) = (c, d) \oplus (a, b)$.
-
-		\item Tome $0_{\z \times \z} = (0, 0)$. Para todo $(a, b) \in \z \times \z$ temos
-		\[
-			(a, b) \oplus 0_{\z \times \z} = (a, b) \oplus (0, 0) = (a + 0, b + 0) = (a, b).
-		\]
-		Assim $0_{\z \times \z} = (0, 0)$ \'e o elemento neutro da opera\c{c}\~ao $\oplus$ em $\z \times \z$.
-
-		\item Para $(a, b) \in \z \times \z$ tome $(-a, -b) \in \z \times \z$. Temos
-		\[
-			(a, b) \oplus (-a, -b) = (a - a, b - b) = (0, 0) = 0_{\z \times \z}.
-		\]
-		Logo $(-a, -b)$ \'e o oposto de $(a, b)$ na opera\c{c}\~ao $\oplus$ em $\z \times \z$.
-
-		\item Para todos $(a, b)$, $(c, d)$, $(e, f) \in \z \times \z$ temos
-		\begin{align*}
-			[(a, b) \otimes (c, d)] \otimes (e, f) &= (ac, ad + bc) \otimes (e, f) = (ace, acf + ade + bce)\\
-			(a, b) \otimes [(c, d) \otimes (e, f)] &= (a, b) \otimes (ce, cf + de) = (ace, acf + ade + bce)
-		\end{align*}
-		Logo $[(a, b) \otimes (c, d)] \otimes (e, f) = (a, b) \otimes [(c, d) \otimes (e, f)]$, como quer{\'\i}amos.
-
-		\item Para todos $(a, b)$, $(c, d)$, $(e, f) \in \z \times \z$ temos
-		\begin{align*}
-			[(a, b) \oplus (c, d)] \otimes (e, f) &= (a + c, b + d) \otimes (e, f) \\& = (ae + ce, af + cf + be + de)\\
-			[(a, b) \otimes (e, f)] \oplus [(c, d) \otimes (e, f)] &= (ae, af + be) \otimes (ce, cf + de) \\ &= (ae + ce, af + be + cf + de)
-		\end{align*}
-
-		Logo $[(a, b) \oplus (c, d)] \otimes (e, f) = [(a, b) \otimes (e, f)] \oplus [(c, d) \otimes (e, f)]$.
-
-		\item Para todos $(a, b)$, $(c, d)$, $(e, f) \in \z \times \z$ temos
-		\begin{align*}
-			(a, b) \otimes [(c, d) \oplus (e, f)] &= (a, b) \otimes (c + e, d + f) \\ &= (ac + ae, ad + af + bc + be)\\
-			[(a, b) \otimes (c, d)] \oplus [(a, b) \otimes (e, f)] &= (ac, ad + bc) \oplus (ae, af + be) \\ &= (ac + ae, ad + bc + af + be)
-		\end{align*}
-
-		Logo $(a, b) \otimes [(c, d) \oplus (e, f)] = [(a, b) \otimes (c, d)] \oplus [(a, b) \otimes (e, f)]$.
-	\end{enumerate}
-
-	Portanto $(\z \times \z, \oplus, \otimes)$ \'e um anel.
-
-	Agora para todos $(a, b)$, $(c, d) \in \z \times \z$ temos
-	\[
-	 	(a, b) \otimes (c, d) = (ac, ad + bc) = (ca, da + cb) = (c, d) \otimes (a, b).
-	\]
-	Portanto a opera\c{c}\~ao $\otimes$ \'e comutativa. Assim $(\z \times \z, \oplus, \otimes)$ \'e um anel comutativo.
-
-	Tome $1_{\z \times \z} = (1, 0)$. Para todo $(a, b) \in \z \times \z$ temos
-	\[
-		(a, b) \otimes 1_{\z \times \z} = (a, b) \otimes (1, 0) = (a, b).
-	\]
-	Logo $1_{\z \times \z} = (1, 0)$ \'e a unidade da opera\c{c}\~ao $\otimes$ em $\z \times \z$. Portanto $(\z \times \z, \oplus, \otimes)$ \'e um anel com unidade.
+Mostre que $(M_2(\real), + , \cdot)$ \'e um an\'el. Esse anel \'e comutativo? Possui unidade?
 \end{document}
