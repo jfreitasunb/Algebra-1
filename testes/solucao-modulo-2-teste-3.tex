@@ -40,31 +40,31 @@ Portanto, $f^{-1}(X^C) = (f^{-1}(X))^C$.
 
 \questao Seja
 \[
-    M_2(\real) = \left\{\begin{pmatrix}
+    M_2(\real) = \left\{\begin{bmatrix}
         x & y\\z & t 
-    \end{pmatrix} \mid x, y, z, t \in \real \right\}.
+    \end{bmatrix} \mid x, y, z, t \in \real \right\}.
 \]
-Dados $A = \begin{pmatrix}
+Dados $A = \begin{bmatrix}
         x & y\\z & t 
-    \end{pmatrix}$, $B = \begin{pmatrix}
+    \end{bmatrix}$, $B = \begin{bmatrix}
         a & b\\c & d 
-    \end{pmatrix} \in M_2(\real)$ definimos
+    \end{bmatrix} \in M_2(\real)$ definimos
 \begin{align*}
     A &= B \mbox{ quando } x = a, y = b, z = c, t = d\\
-    A + B &= \begin{pmatrix}
+    A + B &= \begin{bmatrix}
         x & y\\z & t 
-    \end{pmatrix} + \begin{pmatrix}
+    \end{bmatrix} + \begin{bmatrix}
         a & b\\c & d 
-    \end{pmatrix} = \begin{pmatrix}
+    \end{bmatrix} = \begin{bmatrix}
         x + a & y + b\\z + c & t + d 
-    \end{pmatrix}\\
-    A \cdot B &= \begin{pmatrix}
+    \end{bmatrix}\\
+    A \cdot B &= \begin{bmatrix}
         x & y\\z & t 
-    \end{pmatrix} \cdot \begin{pmatrix}
+    \end{bmatrix} \cdot \begin{bmatrix}
         a & b\\c & d 
-    \end{pmatrix} = \begin{pmatrix}
+    \end{bmatrix} = \begin{bmatrix}
         xa + yc & xb + yd\\za + tc & zb + td 
-    \end{pmatrix}.
+    \end{bmatrix}.
 \end{align*}
 
 Mostre que $(M_2(\real), + , \cdot)$ \'e um an\'el. Esse anel \'e comutativo? Possui unidade?
@@ -107,9 +107,9 @@ Mostre que $(M_2(\real), + , \cdot)$ \'e um an\'el. Esse anel \'e comutativo? Po
     \item 
     \begin{align*}
         A + B &= 
-        \begin{pmatrix}
+        \begin{bmatrix}
             x + a & y + b\\z + c & t + d 
-        \end{pmatrix} = \begin{bmatrix}
+        \end{bmatrix} = \begin{bmatrix}
             a + x & b + y\\c + z & d + t
         \end{bmatrix} = B + A,
     \end{align*}
@@ -224,16 +224,16 @@ Mostre que $(M_2(\real), + , \cdot)$ \'e um an\'el. Esse anel \'e comutativo? Po
 
     \item
     \begin{align*}
-        (A + B)\cdot C &= \left(\begin{pmatrix}
+        (A + B)\cdot C &= \left(\begin{bmatrix}
         x & y\\z & t 
-    \end{pmatrix} + \begin{pmatrix}
+    \end{bmatrix} + \begin{bmatrix}
         a & b\\c & d 
-    \end{pmatrix}\right)\cdot \begin{bmatrix}
+    \end{bmatrix}\right)\cdot \begin{bmatrix}
         m & n\\
         l & p
-    \end{bmatrix}\\ &= \begin{pmatrix}
+    \end{bmatrix}\\ &= \begin{bmatrix}
         x + a & y + b\\z + c & t + d 
-    \end{pmatrix}\cdot \begin{bmatrix}
+    \end{bmatrix}\cdot \begin{bmatrix}
         m & n\\
         l & p
     \end{bmatrix}\\ &= \begin{bmatrix}
@@ -242,14 +242,14 @@ Mostre que $(M_2(\real), + , \cdot)$ \'e um an\'el. Esse anel \'e comutativo? Po
     \end{bmatrix}\\ &= \begin{bmatrix}
         xm + yl + am + bl & xn + yp + an + bp\\
         zm + tl + cm + dl & zn + tp + cn + dp
-    \end{bmatrix}\\ &= \begin{pmatrix}
+    \end{bmatrix}\\ &= \begin{bmatrix}
         x & y\\z & t 
-    \end{pmatrix}\cdot \begin{bmatrix}
+    \end{bmatrix}\cdot \begin{bmatrix}
         m & n\\
         l & p
-    \end{bmatrix} + \begin{pmatrix}
+    \end{bmatrix} + \begin{bmatrix}
         a & b\\c & d 
-    \end{pmatrix}\cdot \begin{bmatrix}
+    \end{bmatrix}\cdot \begin{bmatrix}
         m & n\\
         l & p
     \end{bmatrix}\\ &= (A\cdot C) + (B \cdot C)
@@ -258,16 +258,16 @@ Mostre que $(M_2(\real), + , \cdot)$ \'e um an\'el. Esse anel \'e comutativo? Po
 
     \item
     \begin{align*}
-        A\cdot(B + C) &= \begin{pmatrix}
+        A\cdot(B + C) &= \begin{bmatrix}
         x & y\\z & t 
-    \end{pmatrix}\left(\begin{pmatrix}
+    \end{bmatrix}\left(\begin{bmatrix}
         a & b\\c & d 
-    \end{pmatrix} + \begin{bmatrix}
+    \end{bmatrix} + \begin{bmatrix}
         m & n\\
         l & p
-    \end{bmatrix}\right)\\ &= \begin{pmatrix}
+    \end{bmatrix}\right)\\ &= \begin{bmatrix}
         x & y\\z & t 
-    \end{pmatrix}\cdot \begin{bmatrix}
+    \end{bmatrix}\cdot \begin{bmatrix}
         a + m & b + n\\
         c + l & d + p
     \end{bmatrix}\\ &= \begin{bmatrix}
@@ -276,13 +276,13 @@ Mostre que $(M_2(\real), + , \cdot)$ \'e um an\'el. Esse anel \'e comutativo? Po
     \end{bmatrix}\\ &= \begin{bmatrix}
         xa + yc + xm + yl & xb + yd + xn + yp\\
         za + tc + zm + tl & zb + td + zn + tp
-    \end{bmatrix}\\ &= \begin{pmatrix}
+    \end{bmatrix}\\ &= \begin{bmatrix}
         x & y\\z & t 
-    \end{pmatrix}\cdot \begin{pmatrix}
+    \end{bmatrix}\cdot \begin{bmatrix}
         a & b\\c & d 
-    \end{pmatrix} + \begin{pmatrix}
+    \end{bmatrix} + \begin{bmatrix}
         x & y\\z & t 
-    \end{pmatrix}\cdot \begin{bmatrix}
+    \end{bmatrix}\cdot \begin{bmatrix}
         m & n\\
         l & p
     \end{bmatrix}\\ &= A\cdot B + A \cdot C
@@ -294,20 +294,20 @@ Portanto $(M_2(\real), + , \cdot)$ \'e um an\'el.
 
 Para que $(M_2(\real), + , \cdot)$ seja um an\'el comutativo \'e preciso que
 \[
-    A\cdot B = \begin{pmatrix}
+    A\cdot B = \begin{bmatrix}
         x & y\\z & t 
-    \end{pmatrix} \cdot \begin{pmatrix}
+    \end{bmatrix} \cdot \begin{bmatrix}
         a & b\\c & d 
-    \end{pmatrix} = \begin{pmatrix}
+    \end{bmatrix} = \begin{bmatrix}
         xa + yc & xb + yd\\za + tc & zb + td 
-    \end{pmatrix} = \begin{bmatrix}
+    \end{bmatrix} = \begin{bmatrix}
         ax + bz & ay + bt\\
         cx + dz & cy + dt
-    \end{bmatrix} = \begin{pmatrix}
+    \end{bmatrix} = \begin{bmatrix}
         a & b\\c & d 
-    \end{pmatrix}\cdot \begin{pmatrix}
+    \end{bmatrix}\cdot \begin{bmatrix}
         x & y\\z & t 
-    \end{pmatrix} = B \cdot A
+    \end{bmatrix} = B \cdot A
 \]
 para todas $A$, $B \in M_2(\real)$. Mas se tomamos
 \begin{align*}
