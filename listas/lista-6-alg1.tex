@@ -1,20 +1,24 @@
 %!TEX program = xelatex
-%!TEX encoding = ISO-8859-1
-\documentclass[12pt]{article}
+% !TEX encoding = ISO-8859-1
+\def\ano{2019}
+\def\semestre{2}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\numerolista{6}
 
-\include{configuracoes/estrutura_listas}
+\documentclass[12pt]{exam}
+
+\input{../configuracoes/pacotes}
+\input{../configuracoes/configuracoes_paginas}
+\input{../configuracoes/comandos_personalizados}
 
 \begin{document}
 
-\input{configuracoes/cabecalho_listas}
-
 \begin{center}
- {\Large\bf {\'A}lgebra 1 - Turma C -- 1$^{o}$/2018} \\
- \vspace{9pt} {\large\bf $5^{\underline{a}}$ Lista de Exerc{\'\i}cios -- An\'eis e Homomorfismos}\\
- \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+{\Large\bf \disciplina\ - Turma \turma\ -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
+  $\numerolista^{\underline{a}}$ Lista de Exerc{\'\i}cios -- Subanéis e Homomorfismos}\\ \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
 \end{center}
 \hrule
-
 \vspace{.6cm}
 
 \textit{Nos casos em que n\~ao forem especificadas as opera\c{c}\~oes do anel, considere as opera\c{c}\~oes usuais.}
@@ -32,7 +36,7 @@
 	\end{multicols}
  
 
-\vesp
+\vspace{.3cm}
 
 \questao{} No anel $(\z \times \z, \oplus, \otimes)$ onde as opera\c{c}\~oes $\oplus$ e $\otimes$ s\~ao definidas por
 \begin{align*}
@@ -49,7 +53,7 @@ Quais dos seguintes conjuntos s\~ao suban\'eis?
 	\item $F = \{(x, y) \in \z \times \z \mid x + y = 2k,\ k \in \z\}$
 \end{enumerate}
 
-\vesp
+\vspace{.3cm}
 
 \questao{} No anel $(\rac, \star, \odot)$ onde as opera\c{c}\~oes $\star$ e $\odot$ em $\rac$ definidas por
 \begin{align*}
@@ -65,7 +69,7 @@ Quais dos seguintes subconjuntos s\~ao suban\'eis?
 \end{enumerate}
 
 
-\vesp
+\vspace{.3cm}
 
 \questao{} Quais dos conjuntos abaixo s\~ao suban\'eis de $M_2(\real)$?
 \begin{align*}
@@ -88,16 +92,16 @@ Quais dos seguintes subconjuntos s\~ao suban\'eis?
 \end{align*}
 
 
-\vesp
+\vspace{.3cm}
 
 \questao{} Determine todos os suban\'eis do anel $(\z_{16}, \oplus, \otimes)$.
 
 
-\vesp
+\vspace{.3cm}
 
 \questao{} Mostre que a interse\c{c}\~ao de dois suban\'eis de um anel $A$ \'e ainda um subanel de $A$.
 
-\vesp
+\vspace{.3cm}
 
 \questao{} Seja $(A, + , \cdot)$ um anel e $x \in A$ fixo. Mostre que o conjunto
 	\[
@@ -109,9 +113,9 @@ Quais dos seguintes subconjuntos s\~ao suban\'eis?
 \questao{} Verifique se $L = \{ a + b\sqrt{2} \mid a, b \in \rac\}$ {\'e} um subanel
 do anel $\mathbb{R}$.
 
-\vesp
+\vspace{.3cm}
 
-\questao{inicio_referencia}{} Verificar se a fun\c{c}\~ao $f : A \to B$ \'e ou n\~ao um homomorfismo do anel $A$ no anel $B$, nos seguintes casos:
+\questao{inicioreferencia}{} Verificar se a fun\c{c}\~ao $f : A \to B$ \'e ou n\~ao um homomorfismo do anel $A$ no anel $B$, nos seguintes casos:
 \begin{enumerate}[label=({\alph*})]
 \item $A = \z$, $B = \z$ e $f(x) = x + 1$
 \item $A = \z$, $B = \z$ e $f(x) = 2x$
@@ -129,7 +133,7 @@ do anel $\mathbb{R}$.
 \end{enumerate}
 
 
-\vesp
+\vspace{.3cm}
 
 \questao{} Prove que $f : \rac \to M_3(\rac)$ dada por
 \[
@@ -141,9 +145,9 @@ do anel $\mathbb{R}$.
 \]
 \'e um homomorfismo de an\'eis.
 
-\vesp
+\vspace{.3cm}
 
-\questao{fim_referencia} Considere os an{\'e}is $\z$ e $\z\times \z$. Verifique se as seguintes fun\c{c}\~oes s{\~a}o homomorfismos:
+\questao{fimreferencia} Considere os an{\'e}is $\z$ e $\z\times \z$. Verifique se as seguintes fun\c{c}\~oes s{\~a}o homomorfismos:
 \begin{enumerate}[label=({\alph*})]
 \item $f : \z\times\z \to \z\times\z$ dado por $f(x,y) = (0,y)$
 \item $f : \z\times\z \to \z$ dado por $f(x,y) = y$
@@ -152,15 +156,15 @@ do anel $\mathbb{R}$.
 \item $f : \z \to \z\times\z$ dado por $f(x) = (0,x)$
 \end{enumerate}
 
-\vesp
+\vspace{.3cm}
 
-\questao{} Determine o kernel dos homomorfismos dos \textbf{Exerc{\'i}cios de \ref{inicio_referencia} a \ref{fim_referencia}}.
+\questao{} Determine o kernel dos homomorfismos dos \textbf{Exerc{\'i}cios de \ref{inicioreferencia} a \ref{fimreferencia}}.
 
-\vesp
+\vspace{.3cm}
 
-\questao{} Nos \textbf{Exerc{\'\i}cios de \ref{inicio_referencia} a \ref{fim_referencia}} para as fun\c{c}\~oes que forem homomorfismos determine se elas tamb\'em s\~ao isomorfismos.
+\questao{} Nos \textbf{Exerc{\'\i}cios de \ref{inicioreferencia} a \ref{fimreferencia}} para as fun\c{c}\~oes que forem homomorfismos determine se elas tamb\'em s\~ao isomorfismos.
 
-\vesp
+\vspace{.3cm}
 
 \questao{} Seja $f : \complex \to M_2(\real)$ dada por
 \[
@@ -175,7 +179,7 @@ do anel $\mathbb{R}$.
 	\item \'E sobrejetor?
 \end{enumerate}
 
-\vesp
+\vspace{.3cm}
 
 \questao{} Seja $f: A \to B$ um homomorfismo de an{\'e}is. Mostre que:
 \begin{enumerate}[label=({\alph*})]
@@ -183,11 +187,11 @@ do anel $\mathbb{R}$.
 \item Se $D$ {\'e} um subanel de $B$, ent{\~a}o $f^{-1}(D)$ {\'e} um subanel de $A$.
 \end{enumerate}
 
-\vesp
+\vspace{.3cm}
 
 \questao{} D{\^e} um exemplo de an{\'e}is $A$ e $B$ e um homomorfismo $f : A \to B$ tal que $f(1_A) \ne 1_B$.
 
-\vesp
+\vspace{.3cm}
 
 \questao{} Sejam os an{\'e}is $A = \{ a + b\sqrt{-2} \mid a,\ b \in \rac\}$ e $B = M_2(\rac)$.
 \begin{enumerate}[label=({\alph*})]
@@ -203,12 +207,12 @@ b & a
 \item $f$ {\'e} um isomorfimo?
 \end{enumerate}
 
-\vesp
+\vspace{.3cm}
 
 \questao{} {\'E} verdadeiro ou falso: $\z$ e $\z_{m}$ para $m > 1$ s{\~a}o an{\'e}is
 isomorfos.
 
-\vesp
+\vspace{.3cm}
 
 \questao{} Considere os seguintes an{\'e}is: $(\real, +, \cdot)$ e $(\real, \oplus, \odot)$, sendo $a \oplus b = a + b + 1$ e $a \odot b = a + b + ab$. Mostre que $f : \real \to \real$ dado por $f(x) = x + 1$, para todo $x \in \real$, {\'e} um isomorfimos de $(\real, \oplus, \odot)$ em $(\real, +, \cdot)$.
 
