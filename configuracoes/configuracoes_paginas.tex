@@ -32,10 +32,14 @@
 \rfoot{P\'agina \thepage\ de \numpages}
 
 \newcounter{exercicios}
-\setcounter{exercicios}{0}
-\newcommand{\questao}{
-\addtocounter{exercicios}{1}
-\noindent{\bf Exerc{\'\i}cio \arabic{exercicios}: }}
+\renewcommand{\theexercicios}{\arabic{exercicios}}
+
+\newenvironment{questao}[1]{%
+\refstepcounter{exercicios}%
+\label{#1}%
+\noindent\textbf{Exerc{\'\i}cio {\theexercicios}:}%
+}%
+{}%
 
 \newcommand{\resp}[1]{
 \noindent{\bf Exerc{\'\i}cio #1: }}
