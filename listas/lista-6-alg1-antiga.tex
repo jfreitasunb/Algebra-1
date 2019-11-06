@@ -1,17 +1,22 @@
 %!TEX program = xelatex
-%!TEX encoding = ISO-8859-1
-\documentclass[12pt]{article}
+% !TEX encoding = ISO-8859-1
+\def\ano{2019}
+\def\semestre{2}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\numerolista{6}
 
-\include{configuracoes/estrutura_listas}
+\documentclass[12pt]{exam}
+
+\input{../configuracoes/pacotes}
+\input{../configuracoes/configuracoes_paginas}
+\input{../configuracoes/comandos_personalizados}
 
 \begin{document}
 
-\input{configuracoes/cabecalho_listas}
-
 \begin{center}
-{\Large\bf {\'A}lgebra 1 - Turma C -- 1$^{o}$/2018} \\ \vspace{9pt} {\large\bf
-  $6^{\underline{a}}$ Lista de Exerc{\'\i}cios -- Grupos}\\
-\vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+{\Large\bf \disciplina\ - Turma \turma\ -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
+  $\numerolista^{\underline{a}}$ Lista de Exerc{\'\i}cios -- Subanéis e Homomorfismos}\\ \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
 \end{center}
 \hrule
 
@@ -21,21 +26,21 @@
 	\item $(\z, \star)$, onde $x \star y = x + xy$, para $x$, $y \in \z$;
 	\item $(\z, \star)$, onde $x \star y = x + y + xy$, para $x$, $y \in \z$;
 	\item $(\z, \star)$, onde $x \star y = xy + 2x$, para $x$, $y \in \z$;
-	\item $(\q, \star)$, onde $x \star y = x + xy$, para $x$, $y \in \q$;
+	\item $(\rac, \star)$, onde $x \star y = x + xy$, para $x$, $y \in \rac$;
 	\item $(\real^*, \star)$, onde $x \star y = \dfrac{x}{y}$, para $x$, $y \in \real$;
 	\item $(\real_+, \star)$, onde $x \star y = \sqrt{x^2 + y^2}$, para $x$, $y \in \real_+$;
 	\item $(\real, \star)$, onde $x \star y = \sqrt[3]{x^3 + y^3}$, para $x$, $y \in \real$.
-	\item $(G, \cdot)$, onde $G = \{x \in \q \mid x > 0\}$ e $\cdot$ \'e a multiplica\c{c}\~ao de n\'umeros racionais.
+	\item $(G, \cdot)$, onde $G = \{x \in \rac \mid x > 0\}$ e $\cdot$ \'e a multiplica\c{c}\~ao de n\'umeros racionais.
 	\item $(G, \cdot)$, onde $G = \left\{\dfrac{1 + 2m}{1 + 2n} \mid m, n \in \z\right\}$ e $\cdot$ \'e a multiplica\c{c}\~ao de n\'umeros racionais.
 	\item $(G, +)$, onde $G = \{0, \pm 2, \pm 4, \pm 6, \dots\}$ e $+$ \'e a soma de n\'umeros inteiros.
 	\item $(G, \star)$, onde $G = \{0, \pm 2, \pm 4, \pm 6, \dots\}$ e $\star$ \'e definida como $x \star y = x + y - xy$.
-	\item $(G, +)$, onde $G = \{a + b\sqrt{2} \mid a, b \in \q\}$ e $+$ \'e a soma de n\'umeros reais.
-	\item $(G, \cdot)$, onde $G = \{a + b\sqrt{2} \in \real^* \mid a, b \in \q\}$ e $\cdot$ \'e a multipli\c{c}\~ao de n\'umeros reais.
-	\item $(G, +)$, onde $G = \{a + b\sqrt[3]{2} \mid a, b \in \q\}$ e $+$ \'e a soma de n\'umeros reais.
-	\item $(G, \cdot)$, onde $G = \{a + b\sqrt[3]{2} \in \real^* \mid a, b \in \q\}$ e $\cdot$ \'e a multipli\c{c}\~ao de n\'umeros reais..
+	\item $(G, +)$, onde $G = \{a + b\sqrt{2} \mid a, b \in \rac\}$ e $+$ \'e a soma de n\'umeros reais.
+	\item $(G, \cdot)$, onde $G = \{a + b\sqrt{2} \in \real^* \mid a, b \in \rac\}$ e $\cdot$ \'e a multipli\c{c}\~ao de n\'umeros reais.
+	\item $(G, +)$, onde $G = \{a + b\sqrt[3]{2} \mid a, b \in \rac\}$ e $+$ \'e a soma de n\'umeros reais.
+	\item $(G, \cdot)$, onde $G = \{a + b\sqrt[3]{2} \in \real^* \mid a, b \in \rac\}$ e $\cdot$ \'e a multipli\c{c}\~ao de n\'umeros reais..
 \end{enumerate}
 
-\vesp
+\vspace{.3cm}
 
 \questao{} Seja
 \[
@@ -55,19 +60,19 @@ e $i^2 = -1$. Mostre que:
 	para $a + bi$, $c + di \in \complex$.
 \end{enumerate}
 
-\vesp
+\vspace{.3cm}
 
-\questao{} Verifique se o conjunto $\q_{>0}$ dos n{\'u}meros racionais estritamente positivos com a
+\questao{} Verifique se o conjunto $\rac_{>0}$ dos n{\'u}meros racionais estritamente positivos com a
  opera{\c c}{\~a}o dada {\'e} ou n{\~a}o um grupo. Justifique sua
 resposta.
 \begin{multicols}{2}
 \begin{enumerate}[label=({\alph*})]
-\item $(\q_{>0},\cdot)$
-\item $(\q_{>0}, +)$
+\item $(\rac_{>0},\cdot)$
+\item $(\rac_{>0}, +)$
 \end{enumerate}
 \end{multicols}
 
-\vesp
+\vspace{.3cm}
 
 % \questao{} Quais dos seguintes subconjuntos $G$ de $\z_{13}$ s{\~a}o grupos
 % com a opera{\c c}{\~a}o de multiplica{\c c}{\~a}o?
@@ -83,17 +88,17 @@ resposta.
 % \end{enumerate}
 % \end{multicols}
 
-\vesp
+\vspace{.3cm}
 
 \questao{} Seja $z  = a + bi \in \mathbb{C}$, onde $a$, $b \in \real$. Definimos $|z| = \sqrt{a^2 + b^2}$. Prove que $G=\{z \in \mathbb{C} \mid |z| = 1\}$ {\'e} um grupo
 abeliano com a opera{\c c}{\~a}o de multiplica{\c c}{\~a}o de n{\'u}meros complexos.
 
-\vesp
+\vspace{.3cm}
 
-\questao{} Mostre que o conjunto $\q[\sqrt{2}]^*=\{ a + b\sqrt{2} \in
-\mathbb{R}^* \mid  a, b \in \q \}$ {\'e} um grupo multiplicativo abeliano.
+\questao{} Mostre que o conjunto $\rac[\sqrt{2}]^*=\{ a + b\sqrt{2} \in
+\mathbb{R}^* \mid  a, b \in \rac \}$ {\'e} um grupo multiplicativo abeliano.
 
-\vesp
+\vspace{.3cm}
 
 \questao{} No conjunto $\z \times \z$ considere a opera\c{c}\~ao de soma definida por
 \[
@@ -101,7 +106,7 @@ abeliano com a opera{\c c}{\~a}o de multiplica{\c c}{\~a}o de n{\'u}meros comple
 \]
 para $(x, y)$, $(z, t) \in \z \times \z$. Mostre que $(\z\times\z, +)$ \'e um grupo abeliano.
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Determine $f$, $g \in S_3$ tais que:
 % \begin{enumerate}[label=({\alph*})]
@@ -109,7 +114,7 @@ para $(x, y)$, $(z, t) \in \z \times \z$. Mostre que $(\z\times\z, +)$ \'e um gr
 % 	\item $(f \comp g)^2 \ne f^2\comp g^2$
 % \end{enumerate}
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Considere o grupo $S_3$:
 % \begin{enumerate}[label=({\alph*})]
@@ -117,7 +122,7 @@ para $(x, y)$, $(z, t) \in \z \times \z$. Mostre que $(\z\times\z, +)$ \'e um gr
 % 	\item Determine todos os elementos $g \in S_3$ tais que $g^3 = Id$ e $g \ne Id$.
 % \end{enumerate}
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Seja $V = \{1, f, g, h\}$ o seguinte subconjunto do grupo $S_4$:
 % \begin{align*}
@@ -141,7 +146,7 @@ para $(x, y)$, $(z, t) \in \z \times \z$. Mostre que $(\z\times\z, +)$ \'e um gr
 % 	\item Prove que $(V, \comp)$ \'e um grupo abeliano.
 % \end{enumerate}
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Considere o grupo $S_7$ e sejam
 % \begin{align*}
@@ -165,7 +170,7 @@ para $(x, y)$, $(z, t) \in \z \times \z$. Mostre que $(\z\times\z, +)$ \'e um gr
 % 	\item Encontre $\gamma \in S_7$ tal que $\gamma\comp\beta = 1$.
 % \end{enumerate}
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Seja $(G,*)$ um grupo com elemento neutro $e$. Para $x\in
 % G$, considere a nota{\c c}{\~a}o $x^n=x*x*\cdots *x$ ($n$ vezes).
@@ -175,7 +180,7 @@ para $(x, y)$, $(z, t) \in \z \times \z$. Mostre que $(\z\times\z, +)$ \'e um gr
 % \item Mostre que se $x\in G$ {\'e} tal que $x^2=x$, ent{\~a}o $x$ {\'e} o elemento neutro.
 % \end{enumerate}
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Sejam $G$ um grupo e $x$, $y$, $z \in G$. Prove que:
 % \begin{enumerate}[label=({\alph*})]
@@ -183,13 +188,13 @@ para $(x, y)$, $(z, t) \in \z \times \z$. Mostre que $(\z\times\z, +)$ \'e um gr
 % 	\item Se $yx = zx$, ent\~ao $y = z$.
 % \end{enumerate}
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Seja $(G, *)$ um grupo e $g\in G$ um elemento fixado e $g^{-1}$
 % seu inverso. Mostre que a aplica{\c c}{\~a}o $i_g: G\to G$ definida por
 % $i_g(x)=g^{-1}*x*g$, para todo $x \in G$, {\'e} um isomorfismo.
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Sejam $H$ e $K$ subgrupos de um grupo $G$ (com nota{\c c}{\~a}o
 % multiplicativa).
@@ -207,7 +212,7 @@ para $(x, y)$, $(z, t) \in \z \times \z$. Mostre que $(\z\times\z, +)$ \'e um gr
 % %HK$, para todo $h\in H, k\in K$.}]
 % \end{enumerate}
 
-% \vesp
+% \vspace{.3cm}
 
 %\questao{} Sabendo que $G = \{e, a, b, c, d, f\}$ {\'e} um grupo multiplicativo isomorfo ao grupo $(\z_6, +)$, pede-se:
 %\begin{enumerate}[label=({\alph*})]
@@ -216,7 +221,7 @@ para $(x, y)$, $(z, t) \in \z \times \z$. Mostre que $(\z\times\z, +)$ \'e um gr
 %\item obter $x \in G$ tal que $dxf = a^{-1}$.
 %\end{enumerate}
 
-%\vesp
+%\vspace{.3cm}
 
 % \questao{} Sejam $f:G\to H$ e $g:H\to J$ isomorfismos de grupos. Mostre
 % que
@@ -225,15 +230,15 @@ para $(x, y)$, $(z, t) \in \z \times \z$. Mostre que $(\z\times\z, +)$ \'e um gr
 % \item $f^{-1}$ {\'e} isomorfismo de grupos.
 % \end{enumerate}
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Sejam $G$ e $J$ grupos multiplicativos, $f : G \to J$ um homomorfismo de grupos e $H$ um subgrupo de $J$. Mostre que $f^{-1}(H) = \{ x \in G \mid f(x) \in H\}$ {\'e} um subgrupo de $G$.
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Prove que um grupo $G$ {\'e} abeliano se, e somente se, $f : G \to G$ definada por $f(x) = x^{-1}$ {\'e} um homomorfismo.
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Seja $f: G\to H$ um
 % homomorfismo sobrejetivo de grupos e $K$ um subgrupo de $H$.
@@ -252,7 +257,7 @@ para $(x, y)$, $(z, t) \in \z \times \z$. Mostre que $(\z\times\z, +)$ \'e um gr
 % %N$.]
 % \end{enumerate}
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Seja $f: G \to J$ um homomorfismo de grupos e $g\in G$ tal que $o(g)=n$.
 % \begin{enumerate}[label=({\alph*})]
@@ -260,14 +265,14 @@ para $(x, y)$, $(z, t) \in \z \times \z$. Mostre que $(\z\times\z, +)$ \'e um gr
 % \item Mostre que se $f$ {\'e} isomorfismo, ent{\~a}o $o(f(g))=n$.
 % \end{enumerate}
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Seja $G$ um grupo finito com elemento
 % neutro $e$ e suponha que $H$ e $K$ s{\~a}o subgrupos de $G$ tais que
 % $|H|=p$ e $|K|=q$, onde $p$ e $q$ s{\~a}o primos distintos. Mostre que
 % $H\cap K=\{e\}$.
 
-% \vesp
+% \vspace{.3cm}
 
 \questao{} Quais dos seguintes subconjuntos $G$ de $\z_{13}$ s{\~a}o grupos
 com a opera{\c c}{\~a}o de multiplica{\c c}{\~a}o?
@@ -283,7 +288,7 @@ com a opera{\c c}{\~a}o de multiplica{\c c}{\~a}o?
 \end{enumerate}
 \end{multicols}
 
-\vesp
+\vspace{.3cm}
 
 \questao{} Determine $f$, $g \in S_3$ tais que:
 \begin{enumerate}[label=({\alph*})]
@@ -291,7 +296,7 @@ com a opera{\c c}{\~a}o de multiplica{\c c}{\~a}o?
 	\item $(f \comp g)^2 \ne f^2\comp g^2$
 \end{enumerate}
 
-\vesp
+\vspace{.3cm}
 
 \questao{} Determine $f$, $g \in S_4$ tais que:
 \begin{enumerate}[label=({\alph*})]
@@ -299,7 +304,7 @@ com a opera{\c c}{\~a}o de multiplica{\c c}{\~a}o?
 	\item $(f \comp g)^3 \ne f^3\comp g^3$
 \end{enumerate}
 
-\vesp
+\vspace{.3cm}
 
 \questao{} Considere o grupo $S_3$:
 \begin{enumerate}[label=({\alph*})]
@@ -307,7 +312,7 @@ com a opera{\c c}{\~a}o de multiplica{\c c}{\~a}o?
 	\item Determine todos os elementos $g \in S_3$ tais que $g^3 = Id$ e $g \ne Id$.
 \end{enumerate}
 
-\vesp
+\vspace{.3cm}
 
 \questao{} Considere o grupo $S_4$:
 \begin{enumerate}[label=({\alph*})]
@@ -316,7 +321,7 @@ com a opera{\c c}{\~a}o de multiplica{\c c}{\~a}o?
 	\item Determine todos os elementos $g \in S_4$ tais que $g^4 = Id$ e $g \ne Id$.
 \end{enumerate}
 
-\vesp
+\vspace{.3cm}
 
 
 \questao{} Seja $V = \{1, f, g, h\}$ o seguinte subconjunto do grupo $S_4$:
@@ -341,7 +346,7 @@ com a opera{\c c}{\~a}o de multiplica{\c c}{\~a}o?
 	\item Prove que $(V, \comp)$ \'e um grupo abeliano.
 \end{enumerate}
 
-\vesp
+\vspace{.3cm}
 
 \questao{} Considere o grupo $S_7$ e sejam
 \begin{align*}
@@ -365,7 +370,7 @@ com a opera{\c c}{\~a}o de multiplica{\c c}{\~a}o?
 	\item Encontre $\gamma \in S_7$ tal que $\gamma\comp\beta = 1$.
 \end{enumerate}
 
-\vesp
+\vspace{.3cm}
 
 \questao{} Seja $(G,*)$ um grupo com elemento neutro $e$. Para $x\in
 G$, considere a nota{\c c}{\~a}o $x^n=x*x*\cdots *x$ ($n$ vezes).
@@ -375,7 +380,7 @@ $x^2=e$, para todo $x\in G$, ent{\~a}o $G$ {\'e} um grupo abeliano.
 \item Mostre que se $x\in G$ {\'e} tal que $x^2=x$, ent{\~a}o $x$ {\'e} o elemento neutro.
 \end{enumerate}
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Verifique se s\~ao subgrupos:
 % \begin{enumerate}[label=({\alph*})]
@@ -390,15 +395,15 @@ $x^2=e$, para todo $x\in G$, ent{\~a}o $G$ {\'e} um grupo abeliano.
 % 	\item $H = \{a + b\sqrt[3]{2} \in \real^* \mid a, b \in \q\}$ de $(\real^*,\cdot)$.
 % \end{enumerate}
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Determine todos os subgrupos do grupo aditivo $\z_4$.
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Determine todos os subgrupos de $S_3$.
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Seja
 % \[
@@ -424,7 +429,7 @@ $x^2=e$, para todo $x\in G$, ent{\~a}o $G$ {\'e} um grupo abeliano.
 % 	Mostre que $K$ \'e um subgrupo de $GL_2(\real)$.
 % \end{enumerate}
 
-\vesp
+\vspace{.3cm}
 
 \questao{} Sejam $G$ um grupo e $x$, $y$, $z \in G$. Prove que:
 \begin{enumerate}[label=({\alph*})]
@@ -432,7 +437,7 @@ $x^2=e$, para todo $x\in G$, ent{\~a}o $G$ {\'e} um grupo abeliano.
 	\item Se $yx = zx$, ent\~ao $y = z$.
 \end{enumerate}
 
-\vesp
+\vspace{.3cm}
 
 % \questao{} Sejam $H$ e $K$ subgrupos de um grupo $G$ (com nota{\c c}{\~a}o
 % multiplicativa).
@@ -450,7 +455,7 @@ $x^2=e$, para todo $x\in G$, ent{\~a}o $G$ {\'e} um grupo abeliano.
 %HK$, para todo $h\in H, k\in K$.}]
 % \end{enumerate}
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Sabendo que $G = \{e, a, b, c, d, f\}$ {\'e} um grupo multiplicativo isomorfo ao grupo $(\z_6, +)$, pede-se:
 % \begin{enumerate}[label=({\alph*})]
@@ -459,11 +464,11 @@ $x^2=e$, para todo $x\in G$, ent{\~a}o $G$ {\'e} um grupo abeliano.
 % \item obter $x \in G$ tal que $dxf = a^{-1}$.
 % \end{enumerate}
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Seja $G$ um grupo com nota\c{c}\~ao multiplicativa e $a$ um elemento de $G$. Prove que $N(a) = \{x \in G \mid ax = xa\}$ \'e um subgrupo de $G$.
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Seja $G$ um grupo com nota\c{c}\~ao multiplicativa. Considere o subconjunto $Z(G) = \{x \in G \mid xg = gx, \mbox{ para todo } x \in G\}$. Mostre que:
 % \begin{enumerate}[label=({\alph*})]
@@ -471,7 +476,7 @@ $x^2=e$, para todo $x\in G$, ent{\~a}o $G$ {\'e} um grupo abeliano.
 % 	\item $G$ \'e abeliano se, e somente se, $Z(G) = G$.
 % \end{enumerate}
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{nucleo_homomorfismo} Verificar em cada caso se $f$ \'e um homomorfismo de grupos.
 % \begin{enumerate}[label=({\alph*})]
@@ -483,36 +488,36 @@ $x^2=e$, para todo $x\in G$, ent{\~a}o $G$ {\'e} um grupo abeliano.
 % 	\item $f: \z \to \real^*_+$ dada por $f(x) = 2^x$, onde $\z$ \'e grupo aditivo e $\real^*_+$ \'e grupo multiplicativo.
 % \end{enumerate}
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Determinar os homomorfismos injetores e os sobrejetores do exerc{\'\i}cio anterior.
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Determine o n\'ucleo em cada homomorfismo do \textbf{Exerc{\'\i}cio \ref{nucleo_homomorfismo}}.
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Seja $f: \z \times \z \to \z \times \z$ definida por $f(x, y) = (x - y, 0)$. Provar que $f$ \'e um homomorfimo do grupo aditivo $\z \times \z$ em si pr\'oprio. Obter $\ker(f)$.
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Seja $G$ um grupo finito com elemento
 % neutro $e$ e suponha que $H$ e $K$ s{\~a}o subgrupos de $G$ tais que
 % $|H|=p$ e $|K|=q$, onde $p$ e $q$ s{\~a}o primos distintos. Mostre que
 % $H\cap K=\{e\}$.
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Sejam $G$ e $J$ grupos multiplicativos, $f : G \to J$ um homomorfismo de grupos e $H$ um subgrupo de $J$. Mostre que $f^{-1}(H) = \{ x \in G \mid f(x) \in H\}$ {\'e} um subgrupo de $G$.
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Seja $(G, *)$ um grupo e $g\in G$ um elemento fixado e $g^{-1}$
 % seu inverso. Mostre que a aplica{\c c}{\~a}o $i_g: G\to G$ definida por
 % $i_g(x)=g^{-1}*x*g$, para todo $x \in G$, {\'e} um isomorfismo.
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Sejam $f:G\to H$ e $g:H\to J$ isomorfismos de grupos. Mostre
 % que
@@ -521,12 +526,12 @@ $x^2=e$, para todo $x\in G$, ent{\~a}o $G$ {\'e} um grupo abeliano.
 % \item $f^{-1}$ {\'e} isomorfismo de grupos.
 % \end{enumerate}
 
-% \vesp
+% \vspace{.3cm}
 
 
 % \questao{} Prove que um grupo $G$ {\'e} abeliano se, e somente se, $f : G \to G$ definada por $f(x) = x^{-1}$ {\'e} um homomorfismo.
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Seja $f: G\to H$ um
 % homomorfismo de grupos e $K$ um subgrupo de $H$.
@@ -536,7 +541,7 @@ $x^2=e$, para todo $x\in G$, ent{\~a}o $G$ {\'e} um grupo abeliano.
 % $G$  e que Ker$(f)\subset f^{-1}(K)$.
 % \end{enumerate}
 
-% \vesp
+% \vspace{.3cm}
 
 % \questao{} Seja $f: G \to J$ um homomorfismo de grupos e $g\in G$ tal que $o(g)=n$.
 % \begin{enumerate}[label=({\alph*})]
