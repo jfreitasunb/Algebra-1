@@ -1,104 +1,28 @@
 %!TEX program = xelatex
-%!TEX encoding = ISO-8859-1
-\documentclass[12pt]{article}
+% !TEX encoding = ISO-8859-1
+\def\ano{2019}
+\def\semestre{2}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\numeroteste{1}
+\def\modulo{3}
 
-\include{configuracoes/estrutura_listas}
+\documentclass[12pt]{exam}
+
+\input{../configuracoes/pacotes}
+\input{../configuracoes/configuracoes_paginas}
+\input{../configuracoes/comandos_personalizados}
 
 \begin{document}
 
-\input{configuracoes/cabecalho_listas}
-
 \begin{center}
-{\Large\bf {\'A}lgebra 1 - Turma C -- 1$^{o}$/2018} \\ \vspace{9pt} {\large\bf
-  $1^{\underline{o}}$ Teste  - M\'odulo 3 - Resolu\c{c}\~ao}\\
+{\Large\bf \disciplina\ - Turma \turma\ -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
+$\numeroteste^{\underline{o}}$ Teste - M\'odulo \modulo\ - Resolu\c{c}\~ao}\\
 \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
 \end{center}
 \hrule
 
 \vspace{.6cm}
 
-\questao Seja
-\[
-	M_2(\q) = \left\{ \begin{pmatrix}
-		a & b\\c & d
-	\end{pmatrix} \mid a,b,c,d \in \q\right\}
-\]
-um anel com as opera\c{c}\~oes usuais. Mostre que
-\[
-	B = \left\{ \begin{pmatrix}
-		a & 0\\0 & a
-	\end{pmatrix} \mid a \in \q\right\}	
-\]
-\'e um subanel. Esse subanel \'e comutativo?
 
-\noindent\textbf{Solu\c{c}\~ao:} De fato, primeiro tomando $a = 0$ segue que
-\[
-	\begin{pmatrix}
-		0 & 0\\0 & 0
-	\end{pmatrix} \in B.
-\]
-Logo $B \ne \emptyset$.
-
-Agora dados $x$, $y \in B$ ent\~ao
-\[
-	x = \begin{pmatrix}
-		a & 0\\0 & a
-	\end{pmatrix}\quad \mbox{ e } \quad y = \begin{pmatrix}
-		b & 0\\0 & b
-	\end{pmatrix}.
-\]
-Assim
-\begin{align*}
-	x - y &= \begin{pmatrix}
-		a & 0\\0 & a
-	\end{pmatrix} - \begin{pmatrix}
-		b & 0\\0 & b
-	\end{pmatrix} = \begin{pmatrix}
-		a - b & 0\\0 & a - b
-	\end{pmatrix} \in B\\
-	xy &= \begin{pmatrix}
-		a & 0\\0 & a
-	\end{pmatrix}\begin{pmatrix}
-		b & 0\\0 & b
-	\end{pmatrix} = \begin{pmatrix}
-		ab & 0\\0 & ab
-	\end{pmatrix} \in B.
-\end{align*}
-Logo $B$ \'e um subanel de $M_2(\q)$.
-
-Agora observe que
-\begin{align*}
-	xy = \begin{pmatrix}
-		a & 0\\0 & a
-	\end{pmatrix}\begin{pmatrix}
-		b & 0\\0 & b
-	\end{pmatrix} = \begin{pmatrix}
-		ab & 0\\0 & ab
-	\end{pmatrix} = \begin{pmatrix}
-		b & 0\\0 & b
-	\end{pmatrix}\begin{pmatrix}
-		a & 0\\0 & a
-	\end{pmatrix} = yx
-\end{align*}
-para todos $x$, $y \in B$. Logo $B$ \'e um subanel comutativo.
-
-
-\vspace{.5cm}
-
-\questao Considere o anel $(\z \times \z, \oplus, \otimes)$ cujas opera\c{c}\~oes s\~ao dadas por
-\begin{align*}
-	(x, y) \oplus (z, t) &= (x + z, y + t)\\
-	(x, y) \otimes (z, t) &= (xz, yt)
-\end{align*}
-para todos $(x, y)$, $(z, t) \in \z \times \z$. Mostre que $f : \z \times \z \to \z \times \z$ dada por
-\[
-	f(x, y) = (y, x)
-\]
-\'e um homomorfismo de an\'eis.
-
-\noindent\textbf{Solu\c{c}\~ao:} Dados $(x, y)$, $(z, t) \in \z \times \z$ temos
-\begin{align*}
-	f((x, y) \oplus (z, t)) &= f(x + z, y + t) = (y + t, x + z) \\ &= (y, x) \oplus (t, z) \\ &= f(x, y) \oplus f(z, t)\\
-	f((x, y) \otimes (z, t)) &= f(xz, yt) = (yt, xz) \\ &= (y, x) \otimes (t, z) \\ &= f(x, y) \otimes f(z, t)\\
-\end{align*}
 \end{document}
