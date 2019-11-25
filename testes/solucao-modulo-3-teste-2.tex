@@ -35,52 +35,52 @@ Mostre que $f$ \'e um homomorfismo de an\'eis e encontre $\ker(f)$.
 
 \noindent\textbf{Solu\c{c}\~ao:}
 
-Sejam $a + bi$, $c + di \in \z$. Ent\~ao
+Sejam $x$, $y \in \z$. Ent\~ao
 \begin{align*}
-	f((a + bi) + (c + di)) &= f((a + c) + (b + d)i) \\&= \begin{bmatrix}
-		a + c & -(b + d)\\
-		(b + d) & a + c
+	f(x + y) &= \begin{bmatrix}
+		\overline{x + y} & \overline{0}\\
+		\overline{0} & \overline{x + y}
 	\end{bmatrix} = \begin{bmatrix}
-		a & -b\\
-		b & a
+		\overline{x} & \overline{0}\\
+		\overline{0} & \overline{x}
 	\end{bmatrix} + \begin{bmatrix}
-		c & -d\\
-		d & c
-	\end{bmatrix}\\ &= f(a + bi) + f(c + di)\\
-	f((a + bi)\cdot (c + di)) &= f(ac + adi + bci + bdi^2) \\ &= f((ac - bd) + (ad + bc)i) \\ &= \begin{bmatrix}
-		ac - bd & -(ad + bc)\\
-		ad + bc & ac - bd
+		\overline{y} & \overline{0}\\
+		\overline{0} & \overline{y}
+	\end{bmatrix}\\ &= f(x) + f(y)\\
+	f(x\cdot y) &= \begin{bmatrix}
+		\overline{xy} & \overline{0}\\
+		\overline{0} & \overline{xy}
 	\end{bmatrix} = \begin{bmatrix}
-		a & -b\\
-		b & a
+		\overline{0} & \overline{0}\\
+		\overline{0} & \overline{0}
 	\end{bmatrix} \begin{bmatrix}
-		c & -d\\
-		d & c
-	\end{bmatrix}\\ &= f(a + bi)f(c + di)
+		\overline{y} & \overline{0}\\
+		\overline{0} & \overline{y}
+	\end{bmatrix}\\ &= f(x)f(y)
 \end{align*}
 Logo $f$ \'e um homomorfismo de an\'eis.
 
 Agora,
 \[
-	ker(f) = \left\{a + bi \in \z \mid f(a + bi) = \begin{bmatrix}
-		0 & 0\\
-		0 & 0
+	ker(f) = \left\{x \in \z \mid f(x) = \begin{bmatrix}
+		\overline{0} & \overline{0}\\
+		\overline{0} & \overline{0}
 	\end{bmatrix}\right\}.
 \]
 
 Assim
 \[
-	f(a + bi) = \begin{bmatrix}
-		a & -b\\
-		b & a
+	f(x) = \begin{bmatrix}
+		\overline{x} & \overline{0}\\
+		\overline{0} & \overline{x}
 	\end{bmatrix} = \begin{bmatrix}
-		0 & 0\\
-		0 & 0
+		\overline{0} & \overline{0}\\
+		\overline{0} & \overline{0}
 	\end{bmatrix}
 \]
-logo $a = 0$ e $b = 0$. Isto \'e, $a + bi = 0$. Logo 
+logo $\overline{x} = \overline{0}$. Isto \'e, $x = 3k$, $k \in \z$. Logo 
 \[
-	\ker(f) = \{0\}.
+	\ker(f) = \{3k \mid k \in \z\} = \{0, \pm 3, \pm 6, \pm 9, \cdots\}.
 \]
 
 \vspace{1cm}
