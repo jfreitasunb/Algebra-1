@@ -93,31 +93,31 @@ para todos $x$, $y \in \real$. Mostre que $(\real, +)$ \'e um grupo. Esse grupo 
 
 \noindent\textbf{Solu\c{c}\~ao:}
 
-Primeiro dados $(x,y)$, $(z,t) \in \real$ temos
+Primeiro dados $x$, $y \in \real$ temos
 \[
-	(x,y) + (z,t) = (x+z,y+t) = (z+x,t+y) = (z,t) + (x,y).
+	x \star y = \sqrt[3]{x^3 + y^3} = \sqrt[3]{y^3 + x^3} = y \star x.
 \]
-Assim a opera\c{c}\~ao em $\real$ \'e comutativa.
+Assim a opera\c{c}\~ao $\star$ em $\real$ \'e comutativa.
 
-Sejam $(x,y)$, $(z,t)$ e $(r,s) \in \real$. Ent\~ao
+Agora sejam $x$, $y$ e $z \in \real$. Ent\~ao
 \begin{align*}
-	[(x,y) + (z,t)] + (r,s) &= (x + z, y+t) + (r,s) = (x+z+r,y+t+s)\\
-	(x,y) + [(z,t)+(r,s)] &= (x,y) + (z+r,t+s) = (x+z+r,y+t+s).
+	(x \star y) \star z &= (\sqrt[3]{x^3 + y^3})\star z = \sqrt[3]{(\sqrt[3]{x^3 + y^3})^3 + z^3} = \sqrt[3]{x^3 + y^3 + z^3}\\
+	x \star (y \star z) &= x \star (\sqrt[3]{y^3 + z^3}) = \sqrt[3]{x^3 + (\sqrt[3]{y^3 + z^3})^3} = \sqrt[3]{x^3 + y^3 + z^3}.
 \end{align*}
-Logo $[(x,y)+(z,t)] + (r,s) = (x,y) + [(z,t) + (r,s)]$.
+Logo $(x \star y) \star z = x \star (y \star z)$.
 
-Para todo $(x,y) \in \real$ temos
+Para todo $x \in \real$ temos
 \[
-	(x,y) + (0,0) = (x+0,y+0) = (x,y).
+	x \star 0 = \sqrt[3]{x^3 + 0^3} = x.
 \]
-Assim $(0,0)$ \'e o elemento neutro da opera\c{c}\~ao em $\real$.
+Assim $0$ \'e o elemento neutro da opera\c{c}\~ao $\star$ em $\real$.
 
-Agora dado $(x,y) \in \real$ tome $(-x,-y) \in \real$. Ent\~ao
+Agora dado $x \in \real$ tome $-x \in \real$. Ent\~ao
 \[
-	(x,y) + (-x,-y) = (x+(-x),y+(-y)) = (0,0).
+	x \star (-x) = \sqrt[3]{x^3 + (-x)^3} = 0.
 \]
-Da{\'\i} $(-x,-y)$ \'e o oposto de $(x,y)$ em $\real$.
+Da{\'\i} $-x$ \'e o oposto de $x$ na operação $\star$ em $\real$.
 
-Portanto $(\real,+)$ \'e um grupo abeliano.
+Portanto $(\real,+)$ \'e um grupo e esse grupo é abeliano.
 
 \end{document}
