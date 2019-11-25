@@ -85,39 +85,39 @@ logo $\overline{x} = \overline{0}$. Isto \'e, $x = 3k$, $k \in \z$. Logo
 
 \vspace{1cm}
 
-\questao{} Em $\z \times\z$ considere a opera\c{c}\~ao
+\questao{} Em $(\real , \star)$ considere a opera\c{c}\~ao
 \[
-	(x, y) + (z, t) = (x + z, y + t)
+	x\star y = \sqrt[3]{x^3 + y^3}
 \]
-para todos $(x,y)$, $(z,t) \in \z\times\z$. Mostre que $(\z\times\z, +)$ \'e um grupo abeliano.
+para todos $x$, $y \in \real$. Mostre que $(\real, +)$ \'e um grupo. Esse grupo é abeliano?
 
 \noindent\textbf{Solu\c{c}\~ao:}
 
-Primeiro dados $(x,y)$, $(z,t) \in \z\times\z$ temos
+Primeiro dados $(x,y)$, $(z,t) \in \real$ temos
 \[
 	(x,y) + (z,t) = (x+z,y+t) = (z+x,t+y) = (z,t) + (x,y).
 \]
-Assim a opera\c{c}\~ao em $\z\times\z$ \'e comutativa.
+Assim a opera\c{c}\~ao em $\real$ \'e comutativa.
 
-Sejam $(x,y)$, $(z,t)$ e $(r,s) \in \z\times\z$. Ent\~ao
+Sejam $(x,y)$, $(z,t)$ e $(r,s) \in \real$. Ent\~ao
 \begin{align*}
 	[(x,y) + (z,t)] + (r,s) &= (x + z, y+t) + (r,s) = (x+z+r,y+t+s)\\
 	(x,y) + [(z,t)+(r,s)] &= (x,y) + (z+r,t+s) = (x+z+r,y+t+s).
 \end{align*}
 Logo $[(x,y)+(z,t)] + (r,s) = (x,y) + [(z,t) + (r,s)]$.
 
-Para todo $(x,y) \in \z\times\z$ temos
+Para todo $(x,y) \in \real$ temos
 \[
 	(x,y) + (0,0) = (x+0,y+0) = (x,y).
 \]
-Assim $(0,0)$ \'e o elemento neutro da opera\c{c}\~ao em $\z\times\z$.
+Assim $(0,0)$ \'e o elemento neutro da opera\c{c}\~ao em $\real$.
 
-Agora dado $(x,y) \in \z\times\z$ tome $(-x,-y) \in \z\times\z$. Ent\~ao
+Agora dado $(x,y) \in \real$ tome $(-x,-y) \in \real$. Ent\~ao
 \[
 	(x,y) + (-x,-y) = (x+(-x),y+(-y)) = (0,0).
 \]
-Da{\'\i} $(-x,-y)$ \'e o oposto de $(x,y)$ em $\z\times\z$.
+Da{\'\i} $(-x,-y)$ \'e o oposto de $(x,y)$ em $\real$.
 
-Portanto $(\z\times\z,+)$ \'e um grupo abeliano.
+Portanto $(\real,+)$ \'e um grupo abeliano.
 
 \end{document}
