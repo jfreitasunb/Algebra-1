@@ -24,18 +24,18 @@ $\numeroteste^{\underline{o}}$ Teste - M\'odulo \modulo\ - Resolu\c{c}\~ao}\\
 
 \vspace{.6cm}
 
-\questao{} Seja $f : \complex \to M_2(\real)$ dada por
+\questao{} Seja $f : \z \to M_2(\z_3)$ dada por
 \[
-	f(a + bi) = \begin{bmatrix}
-		a & -b\\
-		b & a
+	f(x) = \begin{bmatrix}
+		\overline{x} & \overline{0}\\
+		\overline{0} & \overline{x}
 	\end{bmatrix}.
 \]
-Mostre que $f$ \'e um homomorfismo de an\'eis. Determine $\ker(f)$.
+Mostre que $f$ \'e um homomorfismo de an\'eis e encontre $\ker(f)$.
 
 \noindent\textbf{Solu\c{c}\~ao:}
 
-Sejam $a + bi$, $c + di \in \complex$. Ent\~ao
+Sejam $a + bi$, $c + di \in \z$. Ent\~ao
 \begin{align*}
 	f((a + bi) + (c + di)) &= f((a + c) + (b + d)i) \\&= \begin{bmatrix}
 		a + c & -(b + d)\\
@@ -62,7 +62,7 @@ Logo $f$ \'e um homomorfismo de an\'eis.
 
 Agora,
 \[
-	ker(f) = \left\{a + bi \in \complex \mid f(a + bi) = \begin{bmatrix}
+	ker(f) = \left\{a + bi \in \z \mid f(a + bi) = \begin{bmatrix}
 		0 & 0\\
 		0 & 0
 	\end{bmatrix}\right\}.
