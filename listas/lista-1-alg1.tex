@@ -183,7 +183,24 @@ exemplo mostrando que a afirma\c{c}\~ao \'e falsa.
 \item $C_E( A \cup B \cup C) = C_E(A) \cap C_E(B) \cap C_E(C)$. \textit{(Aqui suponha que $A$, $B$, $C \sub E$.)}
 \end{enumerate}
 
-\newpage
+
+\questao{}Dados conjuntos $A$ e $B$, defina:
+\[
+	A \Delta B = (A - B) \cup (B - A).
+\]
+Dados conjuntos $A$, $B$ e $C$ verifique se as seguintes propriedades são verdadeiras:
+\begin{enumerate}
+	\item $A \Delta A = \emptyset$
+	\item $A \Delta B = B \Delta A$
+	\item $A \Delta \emptyset = \emptyset \Delta A = A$
+	\item $A \Delta (A \Delta B) = B$
+	\item $B \Delta (A \Delta B) = B$
+	\item $(A \Delta B) \Delta C = A \Delta (B \Delta C)$
+	\item $A \cup (B \Delta C) = (A \cup B) \Delta (A \cup C)$
+	\item $A \cap (B \Delta C) = (A \cap B) \Delta (A \cap C)$
+	\item $A \Delta B = (A \cap B) - (A \cup B)$
+	\item $A \Delta B = (A \cup B) - (A \cap B)$
+\end{enumerate}
 
 \questao{} Sejam $A$, $B$, $C$ e $D$ conjuntos.
 \begin{enumerate}[label={\alph*})]
