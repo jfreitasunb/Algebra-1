@@ -1,7 +1,6 @@
 Notas de aula e listas de exercícios da disciplina de Álgebra 1 ministrada por José Antônio na UnB.
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
 
 ### What is this repository for? ###
 
