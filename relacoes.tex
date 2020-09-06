@@ -406,11 +406,28 @@ Para multiplica{\c c}{\~a}o, temos
 	As opera{\c c}{\~o}es de soma e produto definidas em \eqref{soma_modulo_m} e \eqref{multiplicacao_modulo_m} s{\~a}o independentes dos representantes das classes.
 \end{proposicao}
 \begin{prova}
-	Dadas duas classes em $\z_m$ com representantes diferentes, $\overline{a}_{1} = \overline{a}_{2}$, $\overline{b}_{1} = \overline{b}_{2}$, com $a_{1}\ne a_{2}$ e $b_{1}\ne b_{2}$, temos:
-	\begin{align*}
-		\overline{a}_{1}\oplus \overline{b}_{1} &= \overline{a_{1}+b_{1}} = \overline{a_{2} + b_{2}} =  \overline{a}_{2}\oplus \overline{b}_{2}\\
-		\overline{a}_{1}\otimes \overline{b}_{1} &= \overline{a_{1}b_{1}} = \overline{a_{2}b_{2}} = \overline{a}_{2}\otimes\overline{b}_{2}.
-	\end{align*}
+	Dadas duas classes em $\z_m$ com representantes diferentes, $\overline{a}_{1} = \overline{a}_{2}$ e  $\overline{b}_{1} = \overline{b}_{2}$, com $a_{1}\ne a_{2}$ e $b_{1}\ne b_{2}$,  temos:
+            \begin{align*}
+                a_1 &\equiv a_2 \pmod m\\
+                b_1 &\equiv b_2 \pmod m.
+            \end{align*}
+            Daí,
+            \begin{align*}
+                a_1 + b_1 &\equiv a_2 + b_2 \pmod m\\
+                a_1b_1 &\equiv a_2b_2 \pmod m
+            \end{align*}
+    
+        Mas de $a_1 + b_1 \equiv a_2 + b_2 \pmod m$ segue que $\overline{a_1 + b_1} = \overline{a_2 + b_2}$. Assim
+        \begin{align*}
+            \overline{a}_{1}\oplus \overline{b}_{1} = \overline{a_{1}+b_{1}} = \overline{a_{2} + b_{2}} = \overline{a}_{2}\oplus \overline{b}_{2}.
+        \end{align*}
+
+        Agora de $a_1b_1 \equiv a_2b_2 \pmod m$  segue que $\overline{a_1b_2} =  \overline{a_2b_2}$. Assim
+        \begin{align*}
+            \overline{a}_{1}\otimes \overline{b}_{1} = \overline{a_{1}b_{1}} = \overline{a_{2}b_{2}} = \overline{a}_{2}\otimes\overline{b}_{2}.
+        \end{align*}
+
+        Portanto a soma e a multiplicação não dependem dos representantes que escolhemos para as classes de equivalência, como queríamos.\hspace{.3cm}
 \end{prova}
 
 \begin{exemplo}
