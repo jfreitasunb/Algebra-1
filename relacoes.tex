@@ -204,7 +204,7 @@ Em virtude da observa\c{c}\~ao anterior a defini\c{c}\~ao de rela\c{c}\~ao de eq
 	\]
 \end{proposicao}
 \begin{prova}
-	Para todo $b\in A$ temos, pela defini\c{c}\~ao de classe de equival\^encia, que $\overline{b}\subseteq A$. Logo $\bigcup_{b\in A}\overline{b}\subseteq A$. Agora seja $x\in A$. Logo $x \in \overline{x}$ e da{\'\i} $x\in \bigcup_{b\in A}\overline{b}$. Assim $A\subseteq\bigcup_{a\in A}\overline{a}$. Portanto, $A=\bigcup_{b\in A}\overline{b}$.
+	Para todo $b\in A$ temos, pela defini\c{c}\~ao de classe de equival\^encia, que $\overline{b}\subseteq A$. Logo $\bigcup_{b\in A}\overline{b}\subseteq A$. Agora seja $x\in A$. Logo $x \in \overline{x}$ e da{\'\i} $x\in \bigcup_{b\in A}\overline{b}$. Assim $A\subseteq\bigcup_{b\in A}\overline{b}$. Portanto, $A=\bigcup_{b\in A}\overline{b}$.
 \end{prova}
 
 \begin{definicao}
@@ -283,7 +283,7 @@ Em virtude da observa\c{c}\~ao anterior a defini\c{c}\~ao de rela\c{c}\~ao de eq
 \begin{prova}
 	Provemos o item \ref{item_provado}.
 	
-	Como $a_{1}\equiv b_{2}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, existem $k$, $l \in \z$ tais que
+	Como $a_{1}\equiv b_{1}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, existem $k$, $l \in \z$ tais que
 	\begin{align*}
 		a_1 - b_1 &= km\\
 		a_2 - b_2 &= lm,
@@ -406,15 +406,32 @@ Para multiplica{\c c}{\~a}o, temos
 	As opera{\c c}{\~o}es de soma e produto definidas em \eqref{soma_modulo_m} e \eqref{multiplicacao_modulo_m} s{\~a}o independentes dos representantes das classes.
 \end{proposicao}
 \begin{prova}
-	Dadas duas classes em $\z_m$ com representantes diferentes, $\overline{a}_{1} = \overline{a}_{2}$, $\overline{b}_{1} = \overline{b}_{2}$, com $a_{1}\ne a_{2}$ e $b_{1}\ne b_{2}$, temos:
-	\begin{align*}
-		\overline{a}_{1}\oplus \overline{b}_{1} &= \overline{a_{1}+b_{1}} = \overline{a_{2} + b_{2}} =  \overline{a}_{2}\oplus \overline{b}_{2}\\
-		\overline{a}_{1}\otimes \overline{b}_{1} &= \overline{a_{1}b_{1}} = \overline{a_{2}b_{2}} = \overline{a}_{2}\otimes\overline{b}_{2}.
-	\end{align*}
+	Dadas duas classes em $\z_m$ com representantes diferentes, $\overline{a}_{1} = \overline{a}_{2}$ e  $\overline{b}_{1} = \overline{b}_{2}$, com $a_{1}\ne a_{2}$ e $b_{1}\ne b_{2}$,  temos:
+            \begin{align*}
+                a_1 &\equiv a_2 \pmod m\\
+                b_1 &\equiv b_2 \pmod m.
+            \end{align*}
+            Daí,
+            \begin{align*}
+                a_1 + b_1 &\equiv a_2 + b_2 \pmod m\\
+                a_1b_1 &\equiv a_2b_2 \pmod m
+            \end{align*}
+    
+        Mas de $a_1 + b_1 \equiv a_2 + b_2 \pmod m$ segue que $\overline{a_1 + b_1} = \overline{a_2 + b_2}$. Assim
+        \begin{align*}
+            \overline{a}_{1}\oplus \overline{b}_{1} = \overline{a_{1}+b_{1}} = \overline{a_{2} + b_{2}} = \overline{a}_{2}\oplus \overline{b}_{2}.
+        \end{align*}
+
+        Agora de $a_1b_1 \equiv a_2b_2 \pmod m$  segue que $\overline{a_1b_2} =  \overline{a_2b_2}$. Assim
+        \begin{align*}
+            \overline{a}_{1}\otimes \overline{b}_{1} = \overline{a_{1}b_{1}} = \overline{a_{2}b_{2}} = \overline{a}_{2}\otimes\overline{b}_{2}.
+        \end{align*}
+
+        Portanto a soma e a multiplicação não dependem dos representantes que escolhemos para as classes de equivalência, como queríamos.\hspace{.3cm}
 \end{prova}
 
 \begin{exemplo}
-	A some e a multiplica{\c c}{\~a}o em $\z_4 = \{\overline{0},\overline{1},\overline{2},\overline{3}\}$
+	A soma e a multiplica{\c c}{\~a}o em $\z_4 = \{\overline{0},\overline{1},\overline{2},\overline{3}\}$
 	s\~ao dadas nas tabelas abaixo:
 		\begin{table}[!htb]
 		  \caption{Soma e multiplica\c{c}\~ao em $\z_4$}
@@ -459,7 +476,7 @@ Para multiplica{\c c}{\~a}o, temos
 		\item Para todos $\overline{x}$, $\overline{y} \in \z_m$: $\overline{x} \oplus \overline{y} = \overline{y} \oplus \overline{x}$.
 		\item Para todos $\overline{x}$, $\overline{y}$ e $\overline{z} \in \z_m$: $(\overline{x} \oplus \overline{y}) \oplus \overline{z} = \overline{x} \oplus (\overline{y} \oplus \overline{z})$.
 		\item Para todo $\overline{x} \in \z_m$, $\overline{x} \oplus \overline{0} = \overline{x}$.
-		\item Para todo $\overline{x} \in \z$, existe $\overline{y} \in \z$ tal que $\overline{x} \oplus \overline{y} = \overline{0}$.
+		\item Para todo $\overline{x} \in \z_m$, existe $\overline{y} \in \z_m$ tal que $\overline{x} \oplus \overline{y} = \overline{0}$.
 		\item Para todos $\overline{x}$, $\overline{y} \in \z_m$: $\overline{x} \otimes \overline{y} = \overline{y} \otimes \overline{x}$.
 		\item Para todos $\overline{x}$, $\overline{y}$ e $\overline{z} \in \z_m$: $(\overline{x} \otimes \overline{y}) \otimes \overline{z} = \overline{x} \otimes (\overline{y} \otimes \overline{z})$.
 		\item Para todo $\overline{x} \in \z_m$: $\overline{x} \otimes \overline{1} = \overline{x}$.
