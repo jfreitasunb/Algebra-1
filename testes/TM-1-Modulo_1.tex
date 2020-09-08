@@ -1,0 +1,29 @@
+%!TEX program = xelatex
+% !TEX encoding = ISO-8859-1
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+
+\documentclass[12pt]{exam}
+
+\input{../configuracoes/pacotes}
+\input{../configuracoes/configuracoes_paginas}
+\input{../configuracoes/comandos_personalizados}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\begin{document}
+    \begin{center}
+        {\Large\bf \disciplina\ - Turma \turma\ -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
+        $1^o$ Teste do M\'odulo 1}\\
+        \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+    \end{center}
+    \hrule
+
+    \vspace{1cm}
+
+    Sejam $A$, $B$, $C$ e $E$ conjuntos. \textbf{Determine} se as afirma\c{c}\~oes seguintes s\~ao \textbf{verdadeiras} ou \textbf{falsas}. Se for verdadeira \textbf{prove}, caso seja falsa d\^e um \textbf{contra-exemplo}.
+\begin{enumerate}[label={\alph*})]
+    \item $(A \cap B) - C = (A - C) \cap (B - C)$.
+    \item Suponha que $A$, $B \sub E$. Se $C_E(A) \sub C_E(B)$, ent\~ao $A \cap B = A$.
+\end{enumerate}
+\end{document}
