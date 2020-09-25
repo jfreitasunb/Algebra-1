@@ -1,0 +1,280 @@
+%!TEX program = xelatex
+% !TEX encoding = ISO-8859-1
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\numerosemana{07}
+
+\documentclass[12pt]{exam}
+
+\input{../configuracoes/pacotes}
+\input{../configuracoes/configuracoes_paginas}
+\input{../configuracoes/comandos_personalizados}
+
+\begin{document}
+    \begin{center}
+    {\Large\bf \disciplina\ - Turma \turma\ -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
+        Lista de Exerc{\'\i}cios -- Semana \numerosemana}\\ \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+    \end{center}
+    \hrule
+
+    \vspace{.6cm}
+
+    \begin{center}
+    \textit{Nota\c{c}\~oes:}
+\end{center}
+\begin{multicols}{2}
+    \begin{enumerate}[label={\roman*})]
+        \item $\n^* = \n - \{0\}$
+        \item $\real^*_+ = \{x \in \real \mid x > 0\}$
+        \item $\real^*_- = \{x \in \real \mid x < 0\}$
+        \item $\real_+ = \{x \in \real \mid x \ge 0\}$
+        \item $\real_- = \{x \in \real \mid x \le 0\}$
+        \item $]c,d[\ = (c,d) = \{x \in \real \mid c < x < d\}$
+        \item $[c,d] = \{x \in \real \mid c \le x \le d\}$
+        \item $[c,d[\ = [c, d) = \{x \in \real \mid c \le x < d\}$
+        \item $]c,d] = (c, d] = \{x \in \real \mid c < x \le d\}$
+        \item Em $\z_m$ vamos denotar a opera\c{c}\~ao de soma $\oplus$ por $+$.
+        \item Em $\z_m$ vamos denotar a opera\c{c}\~ao de multiplica\c{c}\~ao $\otimes$ por $\cdot$.
+    \end{enumerate}
+\end{multicols}
+
+\vspace{.6cm}
+
+\questao{} Considere a fun\c{c}\~ao $f : \real \to \real$ dada por $f(x) = \mid x - 2\mid$. Encontre:
+\begin{multicols}{3}
+    \begin{enumerate}[label={\alph*})]
+        \item $f(\{1\})$
+        \item $f(\{-\sqrt{2}, 3\})$
+        \item $f([-2,2])$
+        \item $f((-3,5))$
+        \item $f^{-1}(\{3\})$
+        \item $f^{-1}(\{-3,5\})$
+        \item $f^{-1}([0,2])$
+        \item $f^{-1}([-3,3])$
+        \item $f^{-1}(\real^*_-)$
+    \end{enumerate}
+\end{multicols}
+
+\vspace{.3cm}
+
+\questao{} Seja $g : \real \to \real$ dada por
+\[
+    g(x) = \begin{cases}
+        x^2,& \mbox{ se } x \le 0\\
+        \sqrt[3]{x}, & \mbox{ se } x > 0.
+    \end{cases}
+\]
+Encontre:
+\begin{multicols}{2}
+    \begin{enumerate}[label={\alph*})]
+        \item $g([-1,8])$
+        \item $g(\real_+)$
+        \item $g^{-1}([-1,16])$
+        \item $g(\real_-)$
+        \item $g^{-1}([1,25])$
+        \item $g^{-1}(\real^*_-)$
+    \end{enumerate} 
+\end{multicols}
+
+
+\vspace{.3cm}
+
+\questao{} Seja $f(x) = x^4$ e $g(x) = x^7$. Verifique que $(f\circ g)(x) = (g\circ f)(x)$.
+
+\vspace{.3cm}
+
+\questao{} Dadas as fun\c{c}\~oes $f(x) = 3x + m$ e $g(x) = ax + 2$, determine condi\c{c}\~oes sobre $a$ e $m$ para que $(f\circ g)(x) = (g\circ f)(x)$.
+
+\newpage
+
+\questao{} Sejam $f$, $g$ e $h$ fun\c{c}\~oes de $\real$ em $\real$ definidas por $f(x) = x + 2$, $g(x) = x^2 - 1$ e $h(x) = 3x$, respectivamente.
+\begin{enumerate}[label={\alph*})]
+    \item Determine $f \circ g$, $f \circ h$, $g \circ f$, $g \circ h$ e $h \circ g$.
+    \item Verifique que $(f \circ g)\circ h = f \circ (g \circ h)$.
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Dada as fun\c{c}\~oes
+\[
+    f(x) = \begin{cases}
+        1, & \mbox{ se } x < 0\\
+        2x^2, & \mbox{ se } 0 \le x \le 1\\
+        0, & \mbox{ se } x > 1
+    \end{cases} \qquad g(x) = \begin{cases}
+        x, & \mbox{ se } x < 0\\
+        0, & \mbox{ se } 0 \le x \le 1\\
+        1, & \mbox{ se } x > 1.
+    \end{cases}
+\]
+Determine $f\circ g$.
+
+\vspace{.3cm}
+
+\questao{} Dada as fun\c{c}\~oes
+\[
+    f(x) = \begin{cases}
+        x^2 + 2, & \mbox{ se } x \le -1\\
+        \dfrac{1}{x - 2}, & \mbox{ se } -1 < x < 1\\
+        4 - x^2, & \mbox{ se } x \ge 1
+    \end{cases} \qquad g(x) = 2 - 3x.
+\]
+Determine $f\circ g$ e $g \circ f$.
+
+\vspace{.3cm}
+
+\questao{} Seja $f: \real^2 \to \real$ dada por $f(x,y) = xy$.
+\begin{enumerate}[label={\alph*})]
+    \item $f$ {\'e} injetora?
+    \item $f$ {\'e} sobrejetora?
+    \item Obter $f^{-1}({0})$.
+    \item Obter $f([0,1]\times [0,1])$.
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Seja $f : A \to [-9,-1)$ dada por $f(x) = \dfrac{4x + 3}{3 - x}$.
+\begin{enumerate}[label={\alph*})]
+    \item Determine $A$.
+    \item Mostre que $f$ \'e injetora.
+    \item \'E verdade que $f$ \'e sobrejetora?
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Seja $f : A \to (1,10]$ dada por $f(x) = \dfrac{4 - 11x}{4 - 2x}$.
+\begin{enumerate}[label={\alph*})]
+    \item Determine $A$.
+    \item Mostre que $f$ \'e injetora.
+    \item \'E verdade que $f$ \'e sobrejetora?
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Considere a fun{\c c}{\~a}o $f : \z \times \z \to \z \times \z$ tal que $f(x,y) = (2x + 3, 4y + 5)$. Prove que $f$ {\'e} injetora. Verifique se $f$ {\'e} bijetora.
+
+\vspace{.3cm}
+
+\questao{} Mostre que a fun\c{c}\~ao $f : \z \to \z$ dada por $f(n) = 2n$, \'e injetora mas n\~ao \'e sobrejetora.
+
+\vspace{.3cm}
+
+\questao{} Mostre que a fun\c{c}\~ao $h : \real^2 \to \real^2$ tal que $h(x, y) = (\sqrt[3]{x}, y^5)$ \'e sobrejetora.
+\vspace{.3cm}
+
+\questao{} Considere a fun{\c c}{\~a}o $g : \z_5 \times \z_9 \to \z_5 \times \z_9$ tal que $f(\overline{x},\overline{y}) = (\overline{2} \overline{x} + \overline{3}, \overline{4}\overline{y} + \overline{5})$.
+\begin{enumerate}[label={\alph*})]
+    \item $g$ \'e injetora?
+    \item $g$ \'e sobrejetora?
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Considere a fun{\c c}{\~a}o $g : \z_5 \times \z_7 \to \z_5 \times \z_7$ tal que $g(\overline{x},\overline{y}) = (\overline{x} + \overline{3}, \overline{6}\overline{y} + \overline{2})$. Determine a fun\c{c}\~ao inversa de $g$.
+
+\vspace{.3cm}
+
+\questao{} Mostre que a fun{\c c}{\~a}o $f : \real \to \real$ definida por $f(x) = ax + b$, com $a$ e $b$ constantes reais, $a \ne 0$, {\'e} uma bije{\c c}{\~a}o. Obter $f^{-1}$.
+
+\vspace{.3cm}
+
+\questao{} Mostrar que $f : \real - \left\{-\dfrac{d}{c}\right\} \to \real  - \left\{\dfrac{a}{c}\right\}$ dada por $f(x) =  \dfrac{ax + b}{cx + d}$, onde $a$, $b$, $c$, $d$ s{\~a}o n{\'u}meros reais constantes, $ad - bc \ne 0$, {\'e} uma bije{\c c}{\~a}o. Descrever a fun{\c c}{\~a}o $f^{-1}$.
+
+\vspace{.3cm}
+
+\questao{} Achar uma fun{\c c}{\~a}o $f : A \to B$, com $A$ e $B$ subconjuntos de $\real$, para cada caso abaixo:
+\begin{enumerate}[label={\alph*})]
+    \item $A = \real$, $B \nsub \real$ e $f$ injetora e n{\~a}o sobrejetora.
+    \item $A \nsub \real$, $B = \real$ e $f$ injetora e n{\~a}o sobrejetora.
+    \item $A = \real$, $B \nsub \real$ e $f$ sobrejetora e n{\~a}o injetora.
+    \item $A \nsub \real$, $B = \real$ e $f$ sobrejetora e n{\~a}o injetora.
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Dois conjuntos, $A$ e $B$, s\~ao \textbf{equipotentes} quando $A = B = \emptyset$ ou existe $f : A \to B$ fun\c{c}\~ao   bijetora. Mostre, em cada caso, que os conjuntos $A$ e $B$ s\~ao equipotentes, encontrado uma fun\c{c}\~ao bijetora $f : A \to B$ em cada caso:
+\begin{enumerate}[label={\alph*})]
+    \item $A = \n$ e $B = \n^*$
+    \item $A = \z$ e $B = \n$
+    \item $A = \real$ e $B = \real$
+    \item $A = ]-1, 1[$ e $B = ]c,d[$ com $c$ e $d$ n\'umeros reais e $c < d$.
+\end{enumerate}
+
+\newpage
+
+\questao{} Classificar (se poss{\'\i}vel) em injetora ou sobrejetora as seguintes fun{\c c}{\~o}es de $\real$ em $\real$.
+
+\begin{multicols}{2}
+    \begin{enumerate}[label={\alph*})]
+        \item $f(x) = x^3$
+        \item $f(x) = x^2 - 5x - 6$
+        \item $f(x) = 2^x$
+        \item $f(x) = | \sin x |$
+        \item $f(x) = x + | x |$
+        \item $f(x) = x + 3$
+        \item $f(x) = \mid x - 1\mid$
+        \item $f(x) = \dfrac{1}{x}$
+        \item $f(x) = 1 - x^2$
+        \item $f(x) = |x|(x - 1)$
+    \end{enumerate}
+\end{multicols}
+
+\vspace{.3cm}
+
+\questao{} Seja $f : A \to B$ e $g : B \to A$ fun\c{c}\~oes tais que $g \circ f = i_A$. Quais das afirma\c{c}\~oes seguintes s\~ao verdadeiras?
+\begin{enumerate}[label={\alph*})]
+    \item $g = f^{-1}$
+    \item $f$ \'e sobrejetora
+    \item $f$ \'e injetora
+    \item $g$ \'e sobrejetora
+    \item $g$ \'e injetora
+\end{enumerate}
+
+
+\vspace{.3cm}
+
+\questao{} Sejam $f : A \to B$, $g : A \to B$ e $h : B \to C$ fun\c{c}\~oes. Prove que se $h$ \'e injetora e $h \circ g = h \circ f$, ent\~ao $g = f$.
+
+\vspace{.3cm}
+
+\questao{} Seja $f : A \to B$ uma fun\c{c}\~ao e sejam $P$ e $Q$ subconjuntos de $A$. Mostre que:
+\begin{enumerate}[label={\alph*})]
+    \item Se $P\sub Q$, ent{\~a}o $f(P)\sub f(Q)$.
+    \item $f(P\cup Q) = f(P)\cup f(Q)$.
+    \item $f(P\cap Q)\sub f(P)\cap f(Q)$.
+    \item Se $f$ {\'e} injetora, ent{\~a}o $f(P\cap B) =  f(P)\cap f(Q)$.
+    \item $f$ {\'e} bijetora se, e somente se, $f(P^C) = (f(P))^C$ para todo $P \sub A$. \textit{(Aqui $P^C$ \'e o complementar de $P$ em rela\c{c}\~ao \`a $A$.)}
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Seja $f : A \to B$ uma fun{\c c}{\~a}o e sejam $P \sub
+A$ e $X, Y\sub B$. Mostre que:
+\begin{enumerate}[label={\alph*})]
+    \item Se $X\sub Y$, ent{\~a}o $f^{-1}(X)\sub f^{-1}(Y)$.
+    \item $f^{-1}(X\cup Y)=f^{-1}(X)\cup f^{-1}(Y)$.
+    \item $f^{-1}(X\cap Y)= f^{-1}(X)\cap f^{-1}(Y)$.
+    \item $P\sub f^{-1}(f(P))$.
+    \item $f(f^{-1}(X))= X \cap \mbox{Im}f$ e conclua que se $f$ {\'e} sobrejetora ent{\~a}o
+    $f(f^{-1}(X))=X$.
+    \item $f^{-1}(X^C) = (f^{-1}(X))^C$.
+    \item $f$ \'e sobrejetora se, e somente se, $f^{-1}(T) \ne \emptyset$ para todo $T \sub B$.
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Se as fun{\c c}{\~o}es $f : A \to B$ e $g : B\to A$ s{\~a}o
+tais que $g\circ f$ {\'e} injetora, ent{\~a}o $f$ {\'e} injetora.
+
+\vspace{.3cm}
+
+\questao{} Se as fun{\c c}{\~o}es $f : A \to B$ e $g : B\to A$ s{\~a}o
+tais que $g\circ f$ {\'e} sobrejetora, ent{\~a}o g {\'e} sobrejetora.
+
+\vspace{.3cm}
+
+\questao{} Mostrar que toda fun{\c c}{\~a}o injetora (sobrejetora) de um conjunto finito em si mesmo {\'e} tamb{\'e}m sobrejetora (injetora).
+
+\end{document}
