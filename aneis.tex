@@ -270,7 +270,7 @@
 			AB & =\begin{bmatrix}
 				0 & 0\\
 				0 & 0
-			\end{bmatrix}
+			\end{bmatrix}.
 		\end{align*}
 
 		\item Suponha que $m = nk$, $m > n > 1$ e $m > k > 1$. Logo, em $\z_m$, $\overline{n} \neq \overline{0}$ e $\overline{k} \neq \overline{0}$ e no entanto $\overline{n} \otimes \overline{k} = \overline{m} = \overline{0}$. Logo, se $m$ n{\~a}o {\'e} primo, ent{\~a}o $\z_m$ n{\~a}o {\'e} um anel de integridade. Agora, suponha que $m = p$ primo. Sejam $\overline{x}$, $\overline{y} \in \z_m$ tais que $\overline{x}\otimes \overline{y} = \overline{0}$, ou seja, $xy \equiv 0 \pmod p$. Da{\'\i} $p\mid xy$. Logo $p\mid x$ ou $p\mid y$. Portanto, $\overline{x} = \overline{0}$ ou $\overline{y} = \bar{0}$. Assim, $\z_m$ {\'e} anel de integridade se, e somente se, $m$ {\'e} primo.
@@ -324,7 +324,7 @@
 		\begin{align*}
 			f(0_A) \oplus (-f(0_A)) &= (f(0_A)\oplus f(0_A)) \oplus (-f(0_A))\\
 			0_B &= f(0_A) \oplus 0_B\\
-			f(0_A) &= 0_B
+			f(0_A) &= 0_B.
 		\end{align*}
 
 		\item Temos $0_B = f(0_A) = f(x + (-x)) = f(x)\oplus f(-x)$. Assim somando $-f(x)$ em ambos os lados obtemos
@@ -368,7 +368,7 @@
 		Agora dados $x$, $y \in \ker(f)$ precisamos mostrar que $x - y \in \ker(f)$ e $xy \in \ker(f)$, e para mostrar isso basta mostrar que $f(x - y) = 0_B$ e$f(xy) = 0_B$. Inicialmente como $x$, $y \in \ker(f)$ da{\'\i} $f(x) = f(y) = 0_B$. Assim
 		\begin{align*}
 			f(x - y) &= f(x + (-y)) = f(x) \oplus f(-y) = f(x) \oplus (-f(y)) = 0_B \oplus 0_B = 0_B\\
-			f(xy) &= f(x)\otimes f(y) = 0_B \otimes 0_B = 0_B
+			f(xy) &= f(x)\otimes f(y) = 0_B \otimes 0_B = 0_B.
 		\end{align*}
 		Logo $x - y \in \ker(f)$ e $xy \in \ker(f)$. Portanto $\ker(f)$ \'e um subanel de $A$.
 
@@ -387,7 +387,7 @@
 			&f(x_1) = f(x_2)\\
 			&f(x_1) \oplus (-f(x_2)) = 0_B\\
 			&f(x_1) \oplus f(-x_2) = 0_B\\
-			&f(x_1 - x_2) = 0_B
+			&f(x_1 - x_2) = 0_B.
 		\end{align*}
 		Logo $x_1 - x_2 \in \ker(f) = \{0_A\}$. Com isso $x_1 - x_2 = 0_A$, isto \'e, $x_1 = x_2$. Portanto $f$ \'e injetora.
 	\end{enumerate}
@@ -419,7 +419,7 @@
 		\end{align*}
 		para todo $y \in B$. Portanto $B$ possui unidade e $1_B = f(1_A)$.
 
-		\item Novamente, devido \'a unicidade do inverso em um anel, para mostrar que $f(x)$ possui inverso basta mostrar que
+		\item Novamente, devido \`a unicidade do inverso em um anel, para mostrar que $f(x)$ possui inverso basta mostrar que
 		\[
 			f(x)\otimes f(x^{-1}) = 1_B = f(x^{-1})\otimes f(x)
 		\]
@@ -592,5 +592,5 @@ ou seja, $xy + I = x_2y_2 + I$. Portanto,
 \begin{teorema}
 	Seja $(A, +, \cdot)$ um anel associativo, comutativo e com unidade. Ent{\~a}o, se $I$ {\'e} um ideal de $A$,
 	o quociente $\dfrac{A}{I}$ com as opera{\c c}{\~o}es $\oplus$ e $\otimes$ {\'e} um anel associativo,
-	comutativo e com unidade. O elemento neutro da soma {\'e} a classe $0_{A} + I$ e unidade do produto {\'e} $1_{A} + I$.
+	comutativo e com unidade. O elemento neutro da soma {\'e} a classe $0_{A} + I$ e a unidade do produto {\'e} $1_{A} + I$.
 \end{teorema}
