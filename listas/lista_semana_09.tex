@@ -1,0 +1,277 @@
+%!TEX program = xelatex
+% !TEX encoding = ISO-8859-1
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\numerosemana{09}
+
+\documentclass[12pt]{exam}
+
+\input{../configuracoes/pacotes}
+\input{../configuracoes/configuracoes_paginas}
+\input{../configuracoes/comandos_personalizados}
+
+\begin{document}
+    \begin{center}
+    {\Large\bf \disciplina\ - Turma \turma\ -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
+        Lista de Exerc{\'\i}cios -- Semana \numerosemana}\\ \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+    \end{center}
+    \hrule
+
+    \vspace{.6cm}
+
+    \questao{} Verifique se o conjunto $A$ com as opera\c{c}\~oes dadas \'e um anel. Em caso afirmativo, esse anel \'e comutativo? Possui unidade?
+    \begin{enumerate}[label={\alph*})]
+        \item $A = \real$, $x \oplus y = \dfrac{x + y}{2}$, $x \otimes y = x$, para todos $x$, $y \in A$.
+        \item $A = \real$, $x \oplus y = \sqrt[3]{x^3 + y^3}$, $x \otimes y = x$, para todos $x$, $y \in A$.
+        \item $A = \rac^*$, $x \oplus y = x + y + xy$, $x \otimes y = \dfrac{x}{y}$, para todos $x$, $y \in A$.
+        \item $A = \z$, $x \oplus y = xy + 2x$, $x \otimes y = x + xy$, para todos $x$, $y \in A$.
+        \item $A = \real_+$, $x \oplus y = \dfrac{x + y}{1 + xy}$, $x \otimes y = x^2 + y^2 + 2xy$, para todos $x$, $y \in A$.
+        \item $A = \z \times \z$, $(x, y) \oplus (z, t) = (x + y, z + t)$, $(x, y) \otimes (z, t) = (xz, 0)$, para todos $(x, y)$, $(z, t) \in A$.
+    \end{enumerate}
+
+    \vspace{.4cm}
+
+    \questao{} Consideremos em $\z \times \z$ as opera\c{c}\~oes $\oplus$ e $\otimes$ definidas por
+    \begin{align*}
+        (a, b) \oplus (c, d) = (a + c, b + d)\\
+        (a ,b) \otimes (c, d) = (ac - bd, ad + bc).
+    \end{align*}
+    Mostre que $(\z \times \z, \oplus, \otimes)$ \'e um anel comutativo e com unidade.
+
+    \vspace{.4cm}
+
+    \questao{} Considere as opera\c{c}\~oes $\star$ e $\odot$ em $\rac$ definidas por
+    \begin{align*}
+        x \star y = x + y - 6\\
+        x \odot y = x + y - \dfrac{xy}{6}.
+    \end{align*}
+    Mostre que $(\rac, \star, \odot)$ \'e um anel comutativo e com unidade.
+
+    \vspace{.4cm}
+
+    \questao{} Seja $m > 1$, $m \in \z$. No conjunto $\z_m$ considere as opera\c{c}\~oes usuais de soma $\oplus$ e multiplica\c{c}\~ao $\otimes$. Mostre que $(\z_m, \oplus, \otimes)$ \'e um anel comutativo com unidade.
+
+    \vspace{.4cm}
+
+    \questao{} Prove que s\~ao an\'eis:
+    \begin{enumerate}[label={\alph*})]
+        \item O conjunto $\z$ com a adi\c{c}\~ao usual e o produto $x \otimes y = 0$, para todo $x$, $y \in \z$.
+        \item O conjunto $\rac$ com as opera\c{c}\~oes $x \oplus y = x + y - 1$ e $x \odot y = x + y - xy$.
+        \item O conjunto $\z \times \z$ com as opera\c{c}\~oes:
+        \begin{align*}
+            (a, b) \oplus (c, d) = (a + c, b + d)\\
+            (a ,b) \otimes (c, d) = (ac, ad + bc).
+        \end{align*}
+    \end{enumerate}
+    Quais destes an\'eis s\~ao comutativos? Quais t\^em unidade?
+
+    \vspace{.4cm}
+
+    \questao{} Determinar quais dos seguintes conjuntos s\~ao an{\'e}is com as opera\c{c}\~oes usuais em $\rac$:
+        \begin{multicols}{2}
+            \begin{enumerate}[label=({\alph*})]
+                \item $\z$
+                \item $B = \{x \in \rac \mid x \notin \z\}$
+                \item $C = \left\{\dfrac{a}{b} \in \rac \mid a \in \z,\ b \in \z,\ 2 |b \right\}$
+                \item $D = \left\{\dfrac{a}{2^n} \in \rac \mid a \in \z \mbox{ e } n \in \z \right\}$
+            \end{enumerate}
+        \end{multicols}
+
+    \vspace{.4cm}
+
+    \questao{} Seja
+    \[
+        M_2(\real) = \left\{\begin{pmatrix}
+            x & y\\z & t 
+        \end{pmatrix} \mid x, y, z, t \in \real \right\}.
+    \]
+    Dados $A = \begin{pmatrix}
+            x & y\\z & t 
+        \end{pmatrix}$, $B = \begin{pmatrix}
+            a & b\\c & d 
+        \end{pmatrix} \in M_2(\real)$ definimos
+    \begin{align*}
+        A &= B \mbox{ quando } x = a, y = b, z = c, t = d\\
+        A + B &= \begin{pmatrix}
+            x & y\\z & t 
+        \end{pmatrix} + \begin{pmatrix}
+            a & b\\c & d 
+        \end{pmatrix} = \begin{pmatrix}
+            x + a & y + b\\z + c & t + d 
+        \end{pmatrix}\\
+        A \cdot B &= \begin{pmatrix}
+            x & y\\z & t 
+        \end{pmatrix} \cdot \begin{pmatrix}
+            a & b\\c & d 
+        \end{pmatrix} = \begin{pmatrix}
+            xa + yc & xb + yd\\za + tc & zb + td 
+        \end{pmatrix}.
+    \end{align*}
+    \begin{enumerate}[label=({\alph*})]
+        \item Mostre que $(M_2(\real), + , \cdot)$ \'e um an\'el. Esse anel \'e comutativo? Possui unidade?
+        \item Quais dos seguintes conjuntos s\~ao an\'eis com as opera\c{c}\~oes de $M_2(\real)$? Quais s\~ao comutativos? Quais possuem unidade?
+
+        \begin{align*}
+            L_1 &= \left\{\begin{pmatrix}
+                a & 0\\
+                b & 0
+            \end{pmatrix} \mid a, b \in \real\right\}\\
+            L_2 &= \left\{\begin{pmatrix}
+                a & b\\
+                0 & c
+            \end{pmatrix} \mid a, b, c \in \real\right\}\\
+            L_3 &= \left\{\begin{pmatrix}
+                a & 0\\
+                0 & b
+            \end{pmatrix} \mid a, b \in \real\right\}\\
+            L_4 &= \left\{\begin{pmatrix}
+                0 & a\\
+                c & b
+            \end{pmatrix} \mid a, b, c \in \real\right\}
+        \end{align*}
+    \end{enumerate}
+
+    \vspace{.4cm}
+
+    \questao{} Considere o conjunto $L = \{ a + b\sqrt{2} \mid a, b \in \rac\} \sub \real$. Para $a + b\sqrt{2}$, $c + d\sqrt{2} \in L$ definimos:
+    \begin{align*}
+        a + b\sqrt{2} &= c + d\sqrt{2} \quad \mbox{ quando } a = c \mbox{ e } b = d\\
+        (a + b\sqrt{2}) \oplus (c + d\sqrt{2}) &= (a + c) + (b + d)\sqrt{2}\\
+        (a + b\sqrt{2}) \otimes (c + d\sqrt{2}) &= (ac + 2bd) + (ad + bc)\sqrt{2}.
+    \end{align*}
+
+    Mostre que $(L, \oplus, \otimes)$ \'e um anel. Esse anel \'e comutativo? Possui unidade?
+
+    \vspace{1cm}
+    
+    \textit{Nos casos em que n\~ao forem especificadas as opera\c{c}\~oes do anel, considere as opera\c{c}\~oes usuais.}
+
+    \vspace{.6cm}
+
+    \questao{} Determinar quais dos seguintes subconjuntos de $\rac$ s{\~a}o suban{\'e}is:
+        \begin{multicols}{2}
+            \begin{enumerate}[label=({\alph*})]
+                \item $\z$
+                \item $B = \{x \in \rac \mid x \notin \z\}$
+                \item $C = \left\{\dfrac{a}{b} \in \rac \mid a \in \z,\ b \in \z,\ 2 |b \right\}$
+                \item $D = \left\{\dfrac{a}{2^n} \in \rac \mid a \in \z \mbox{ e } n \in \z \right\}$
+            \end{enumerate}
+        \end{multicols}
+     
+
+    \vspace{.3cm}
+
+    \questao{} No anel $(\z \times \z, \oplus, \otimes)$ onde as opera\c{c}\~oes $\oplus$ e $\otimes$ s\~ao definidas por
+    \begin{align*}
+        (a, b) \oplus (c, d) = (a + c, b + d)\\
+        (a ,b) \otimes (c, d) = (ac - bd, ad + bc).
+    \end{align*}
+    Quais dos seguintes conjuntos s\~ao suban\'eis?
+    \begin{enumerate}[label=({\alph*})]
+        \item $A = \{(x, y) \in \z \times \z \mid x = 0\}$
+        \item $B = \{(x, y) \in \z \times \z \mid y = 0\}$
+        \item $C = \{(x, y) \in \z \times \z \mid x = y\}$
+        \item $D = \{(x, y) \in \z \times \z \mid x = 2k,\ k \in \z\}$
+        \item $E = \{(x, y) \in \z \times \z \mid y = 3k,\ k \in \z\}$
+        \item $F = \{(x, y) \in \z \times \z \mid x + y = 2k,\ k \in \z\}$
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} No anel $(\rac, \star, \odot)$ onde as opera\c{c}\~oes $\star$ e $\odot$ em $\rac$ definidas por
+    \begin{align*}
+        x \star y = x + y - 6\\
+        x \odot y = x + y - \dfrac{xy}{6}.
+    \end{align*}
+    Quais dos seguintes subconjuntos s\~ao suban\'eis?
+    \begin{enumerate}[label=({\alph*})]
+        \item $A = \z$
+        \item $B = \{2k \mid k \in \z\}$
+        \item $C = \{6k \mid k \in \z\}$
+        \item $D = \{3k \mid k \in \z\}$
+    \end{enumerate}
+
+
+    \vspace{.3cm}
+
+    \questao{} Quais dos conjuntos abaixo s\~ao suban\'eis de $M_2(\real)$?
+    \begin{align*}
+        L_1 &= \left\{\begin{pmatrix}
+            a & 0\\
+            b & 0
+        \end{pmatrix} \mid a, b \in \real\right\}\\
+        L_2 &= \left\{\begin{pmatrix}
+            a & b\\
+            0 & c
+        \end{pmatrix} \mid a, b, c \in \real\right\}\\
+        L_3 &= \left\{\begin{pmatrix}
+            a & 0\\
+            0 & b
+        \end{pmatrix} \mid a, b \in \real\right\}\\
+        L_4 &= \left\{\begin{pmatrix}
+            0 & a\\
+            c & b
+        \end{pmatrix} \mid a, b, c \in \real\right\}\\
+        L_5 &= \left\{\begin{pmatrix}
+            0 & a\\
+            0 & b^2 + 1
+        \end{pmatrix} \mid a, b \in \real\right\}
+    \end{align*}
+
+    \vspace{.3cm}
+
+    \questao{} Quais dos conjuntos abaixo s\~ao suban\'eis de $M_2(\z_2)$?
+    \begin{align*}
+        L_1 &= \left\{\begin{pmatrix}
+            \overline{a} & \overline{0}\\
+            \overline{b} & \overline{0}
+        \end{pmatrix} \mid a, b \in \z_2\right\}\\
+        L_2 &= \left\{\begin{pmatrix}
+            \overline{a} & \overline{b}\\
+            \overline{0} & \overline{c}
+        \end{pmatrix} \mid a, b, c \in \z_2\right\}\\
+        L_3 &= \left\{\begin{pmatrix}
+            \overline{a} & \overline{0}\\
+            \overline{0} & \overline{b}
+        \end{pmatrix} \mid a, b \in \z_2\right\}\\
+        L_4 &= \left\{\begin{pmatrix}
+            \overline{0} & \overline{a}\\
+            \overline{c} & \overline{b}
+        \end{pmatrix} \mid a, b, c \in \z_2\right\}\\
+        L_5 &= \left\{\begin{pmatrix}
+            \overline{0} & \overline{a}\\
+            \overline{0} & \overline{b}^2 + \overline{1}
+        \end{pmatrix} \mid a, b \in \z_2\right\}
+    \end{align*}
+
+    \vspace{.3cm}
+
+    \questao{} Determine todos os suban\'eis do anel $(\z_8, \oplus, \otimes)$.
+
+    \vspace{.3cm}
+
+    \questao{} Determine todos os suban\'eis do anel $(\z_{16}, \oplus, \otimes)$.
+
+    \vspace{.3cm}
+
+    \questao{} Mostre que a interse\c{c}\~ao de dois suban\'eis de um anel $A$ \'e ainda um subanel de $A$.
+
+    \vspace{.3cm}
+
+    \questao{} \'E verdade que a uni\~ao de suban\'eis \'e um subanel?
+
+    \vspace{.3cm}
+
+    \questao{} Seja $(A, + , \cdot)$ um anel e $x \in A$ fixo. Mostre que o conjunto
+    \[
+        N(x) = \{y \in A \mid xy = yx\}
+    \]
+    \'e um subanel de $A$.
+
+    \vspace{.3cm}
+
+    \questao{} Verifique se $L = \{ a + b\sqrt{2} \mid a, b \in \rac\}$ {\'e} um subanel
+    do anel $\mathbb{R}$.
+\end{document}

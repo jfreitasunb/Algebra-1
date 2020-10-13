@@ -1,0 +1,106 @@
+%!TEX program = xelatex
+% !TEX encoding = ISO-8859-1
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+
+\documentclass[12pt]{exam}
+
+\input{../configuracoes/pacotes}
+\input{../configuracoes/configuracoes_paginas}
+\input{../configuracoes/comandos_personalizados}
+
+\begin{document}
+	\begin{center}
+	{\Large\bf \disciplina\ - Turma \turma\ -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
+	Teste Discursivo 2 - M\'odulo 1 - Resolu\c{c}\~ao}\\
+	\vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+	\end{center}
+	\hrule
+
+	\vspace{.6cm}
+
+	\questao{} Considere a seguinte rela\c{c}\~ao sobre $\z$:
+	\[
+		x R y\quad  \mbox{quando}\quad x^3 - y^3 = 5l, \quad \mbox{para algum}\quad l \in \z
+	\]
+	\begin{enumerate}[label={\arabic*})]
+		\item Mostre que $R$ \'e uma rela\c{c}\~ao de equival\^encia sobre $\z$.
+		\item Encontre todas as classes de equival\^encia dessa rela\c{c}\~ao.
+		\item A qual classe de equival\^encia sua matr{\'\i}cula pertence?
+	\end{enumerate}
+
+	\noindent\textbf{Solu\c{c}\~ao:}
+
+	\begin{enumerate}[label={\arabic*})]
+		\item Seja $x \in \z$. Temos
+		\[
+			x^3 - x^3 = 0 = 5\cdot 0.
+		\]
+		Logo $xRx$.
+
+		Suponha que $xRy$. Assim existe $l \in \z$ tal que
+		\[
+			x^3 - y^3 = 5l.
+		\]
+		Agora,
+		\[
+			y^3 - x^3 = -(x^3 - y^3) = -5l = 5(-l).
+		\]
+		Assim $yRx$.
+
+		Finalmente, se $xRy$ e $yRz$, ent\~ao existem $k$, $l \in \z$ tais que
+		\[
+			x^3 - y^3 = 5k \quad \mbox{e} \quad y^3 - z^3 = 5l.
+		\]
+		Da{\'\i}
+		\[
+			x^3 - y^3 = (x^3 - y^3) + (y^3 - z^3) = 5k + 5l = 5(k + l),
+		\]
+		ou seja, $xRz$.
+
+		Portanto $R$ \'e uma rela\c{c}\~ao de equival\^encia em $\z$.
+
+		\item Seja $a \in \z$. Ent\~ao
+		\begin{align*}
+			\overline{a} &= \{x \in \z \mid xRa\} \\
+			\overline{a} &= \{x \in \z \mid x^3 - a^3 = 5l, l \in \z\}\\
+			\overline{a} &= \{x \in \z \mid x^3 = 5l + a^3, l \in \z\}
+		\end{align*}
+		Note que nesse caso estamos efetuando a divis\~ao inteira de $x^3$ por 5 e o resto \'e dado por $a^3$.
+		Agora,
+		\begin{align*}
+			0^3 &= 0\\
+			1^3 &= 1\\
+			2^3 &= 8 = 5 + 3\\
+			3^3 &= 27 = 25 + 2\\
+			4^3 &= 64 = 60 + 4
+		\end{align*}
+		Assim,
+		temos as classes
+		\begin{align*}
+			\overline{0} &= \{x \in \z \mid x^3 = 5l, l \in \z\}\\
+			\overline{1} &= \{x \in \z \mid x^3 = 5l + 1, l \in \z\}\\
+			\overline{2} &= \{x \in \z \mid x^3 = 5l + 3, l \in \z\}\\
+			\overline{3} &= \{x \in \z \mid x^3 = 5l + 2, l \in \z\}\\
+			\overline{4} &= \{x \in \z \mid x^3 = 5l + 4, l \in \z\}.\\
+		\end{align*}
+
+		Portanto temos exatamente 5 classes de equival\^encia para a rela\c{c}\~ao $R$.
+
+		\item Seja $x$ a sua matr{\'\i}cula. Para encontrar a qual classe $x$ pertence, basta calcular $x^3$ e efetuar a divis\~ao inteira por 5. O resto dessa divis\~ao determinar\'a a qual classe sua matr{\'\i}cula pertence.
+	\end{enumerate}
+
+	\questao{} Considere a seguinte rela\c{c}\~ao sobre $\z$:
+	\[
+		x S y\quad  \mbox{quando}\quad y^3 - x^3 = 5t, \quad \mbox{para algum}\quad t \in \z
+	\]
+	\begin{enumerate}[label={\arabic*})]
+		\item Mostre que $S$ \'e uma rela\c{c}\~ao de equival\^encia sobre $\z$).
+		\item Encontre todas as classes de equival\^encia dessa rela\c{c}\~ao.
+		\item A qual classe de equival\^encia sua matr{\'\i}cula pertence?
+	\end{enumerate}
+
+	\noindent\textbf{Solu\c{c}\~ao:} Basta repetir os passos do Exerc{\'\i}cio 1, fazendo as substitui\c{c}\~oes necess\'arias.
+\end{document}
