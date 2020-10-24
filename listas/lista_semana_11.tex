@@ -1,0 +1,211 @@
+%!TEX program = xelatex
+% !TEX encoding = ISO-8859-1
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\numerosemana{11}
+
+\documentclass[12pt]{exam}
+
+\input{../configuracoes/pacotes}
+\input{../configuracoes/configuracoes_paginas}
+\input{../configuracoes/comandos_personalizados}
+
+\begin{document}
+
+\begin{center}
+    
+    {\Large\bf \disciplina\ - Turma \turma\ -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
+        Lista de Exerc{\'\i}cios -- Semana \numerosemana}\\ \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+    \end{center}
+    \hrule
+
+    \vspace{.6cm}
+    \questao{} Verifique se os seguintes conjuntos com a opera\c{c}\~ao dada \'e ou n\~ao um grupo. Em caso afirmativo, o grupo \'e comutativo?
+\begin{enumerate}[label=({\alph*})]
+    \item $(\z, \star)$, onde $x \star y = x + xy$, para $x$, $y \in \z$;
+    \item $(\z, \star)$, onde $x \star y = x + y + xy$, para $x$, $y \in \z$;
+    \item $(\z, \star)$, onde $x \star y = xy + 2x$, para $x$, $y \in \z$;
+    \item $(\rac, \star)$, onde $x \star y = x + xy$, para $x$, $y \in \rac$;
+    \item $(\real^*, \star)$, onde $x \star y = \dfrac{x}{y}$, para $x$, $y \in \real$;
+    \item $(\real_+, \star)$, onde $x \star y = \sqrt{x^2 + y^2}$, para $x$, $y \in \real_+$;
+    \item $(\real, \star)$, onde $x \star y = \sqrt[3]{x^3 + y^3}$, para $x$, $y \in \real$.
+    \item $(G, \cdot)$, onde $G = \{x \in \rac \mid x > 0\}$ e $\cdot$ \'e a multiplica\c{c}\~ao de n\'umeros racionais.
+    \item $(G, \cdot)$, onde $G = \left\{\dfrac{1 + 2m}{1 + 2n} \mid m, n \in \z\right\}$ e $\cdot$ \'e a multiplica\c{c}\~ao de n\'umeros racionais.
+    \item $(G, +)$, onde $G = \{0, \pm 2, \pm 4, \pm 6, \dots\}$ e $+$ \'e a soma de n\'umeros inteiros.
+    \item $(G, \star)$, onde $G = \{0, \pm 2, \pm 4, \pm 6, \dots\}$ e $\star$ \'e definida como $x \star y = x + y - xy$.
+    \item $(G, +)$, onde $G = \{a + b\sqrt{2} \mid a, b \in \rac\}$ e $+$ \'e a soma de n\'umeros reais.
+    \item $(G, \cdot)$, onde $G = \{a + b\sqrt{2} \in \real^* \mid a, b \in \rac\}$ e $\cdot$ \'e a multipli\c{c}\~ao de n\'umeros reais.
+    \item $(G, +)$, onde $G = \{a + b\sqrt[3]{2} \mid a, b \in \rac\}$ e $+$ \'e a soma de n\'umeros reais.
+    \item $(G, \cdot)$, onde $G = \{a + b\sqrt[3]{2} \in \real^* \mid a, b \in \rac\}$ e $\cdot$ \'e a multipli\c{c}\~ao de n\'umeros reais..
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Seja
+\[
+    \complex = \{a + bi \mid a, b \in \real\}
+\]
+e $i^2 = -1$. Mostre que:
+\begin{enumerate}[label=({\alph*})]
+    \item $(\complex, +)$ \'e um grupo abeliano, onde
+    \[
+        (a + bi) + (c + di) = (a + c) + (b + d)i 
+    \]
+    para $a + bi$, $c + di \in \complex$.
+    \item Para $\complex^* = \complex - \{0\}$, $(\complex^*, \cdot)$ \'e um grupo abeliano, onde
+    \[
+        (a + bi)\cdot (c + di) = (ac - bd) + (ad + bc)i 
+    \]
+    para $a + bi$, $c + di \in \complex$.
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Verifique se o conjunto $\rac_{>0}$ dos n{\'u}meros racionais estritamente positivos com a
+ opera{\c c}{\~a}o dada {\'e} ou n{\~a}o um grupo. Justifique sua
+resposta.
+\begin{multicols}{2}
+\begin{enumerate}[label=({\alph*})]
+\item $(\rac_{>0},\cdot)$
+\item $(\rac_{>0}, +)$
+\end{enumerate}
+\end{multicols}
+
+\vspace{.3cm}
+
+\questao{} Seja $z  = a + bi \in \mathbb{C}$, onde $a$, $b \in \real$. Definimos $|z| = \sqrt{a^2 + b^2}$. Prove que $G=\{z \in \mathbb{C} \mid |z| = 1\}$ {\'e} um grupo
+abeliano com a opera{\c c}{\~a}o de multiplica{\c c}{\~a}o de n{\'u}meros complexos.
+
+\vspace{.3cm}
+
+\questao{} Mostre que o conjunto $\rac[\sqrt{2}]^*=\{ a + b\sqrt{2} \in
+\mathbb{R}^* \mid  a, b \in \rac \}$ {\'e} um grupo multiplicativo abeliano.
+
+\vspace{.3cm}
+
+\questao{} No conjunto $\z \times \z$ considere a opera\c{c}\~ao de soma definida por
+\[
+    (x, y) + (z, t) = (x + z, y + t)
+\]
+para $(x, y)$, $(z, t) \in \z \times \z$. Mostre que $(\z\times\z, +)$ \'e um grupo abeliano.
+
+\vspace{.3cm}
+
+\questao{} Quais dos seguintes subconjuntos $G$ de $\z_{13}$ s{\~a}o grupos
+com a opera{\c c}{\~a}o de multiplica{\c c}{\~a}o?
+\begin{multicols}{2}
+\begin{enumerate}[label=({\alph*})]
+\item $G=\{\overline{1},\overline{12}\}$;
+
+\item $G=\{\overline{1},\overline{5},\overline{8},\overline{12}\}$;
+
+\item $G=\{\overline{1},\overline{2},\overline{3},\overline{4}, \overline{5},\overline{6},\overline{7},
+ \overline{8},\overline{9},\overline{10},\overline{11},\overline{12}\}$
+\item $G=\{\overline{1}, \overline{3},\overline{5},\overline{7},\overline{9},\overline{11}\}$.
+\end{enumerate}
+\end{multicols}
+
+\vspace{.3cm}
+
+\questao{} Determine $f$, $g \in S_3$ tais que:
+\begin{enumerate}[label=({\alph*})]
+    \item $(f \comp g)^3 \ne f^3\comp g^3$
+    \item $(f \comp g)^2 \ne f^2\comp g^2$
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Determine $f$, $g \in S_4$ tais que:
+\begin{enumerate}[label=({\alph*})]
+    \item $(f \comp g)^4 \ne f^4\comp g^4$
+    \item $(f \comp g)^3 \ne f^3\comp g^3$
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Considere o grupo $S_3$:
+\begin{enumerate}[label=({\alph*})]
+    \item Determine todos os elementos $f \in S_3$ tais que $f^2 = Id$ e $f \ne Id$.
+    \item Determine todos os elementos $g \in S_3$ tais que $g^3 = Id$ e $g \ne Id$.
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Considere o grupo $S_4$:
+\begin{enumerate}[label=({\alph*})]
+    \item Determine todos os elementos $f \in S_4$ tais que $f^2 = Id$ e $f \ne Id$.
+    \item Determine todos os elementos $g \in S_4$ tais que $g^3 = Id$ e $g \ne Id$.
+    \item Determine todos os elementos $g \in S_4$ tais que $g^4 = Id$ e $g \ne Id$.
+\end{enumerate}
+
+\vspace{.3cm}
+
+
+\questao{} Seja $V = \{1, f, g, h\}$ o seguinte subconjunto do grupo $S_4$:
+\begin{align*}
+    1 = \begin{pmatrix}
+        1 & 2 & 3 & 4\\
+        1 & 2 & 3 & 4
+    \end{pmatrix}; \quad f = \begin{pmatrix}
+        1 & 2 & 3 & 4\\
+        2 & 1 & 4 & 3
+    \end{pmatrix}\\
+    g = \begin{pmatrix}
+        1 & 2 & 3 & 4\\
+        3 & 4 & 1 & 2
+    \end{pmatrix}; \quad h = \begin{pmatrix}
+        1 & 2 & 3 & 4\\
+        4 & 3 & 2 & 1
+    \end{pmatrix}.
+\end{align*}
+\begin{enumerate}[label=({\alph*})]
+    \item Prove que $(V, \comp)$ \'e um grupo contendo 4 elementos, onde $\comp$ \'e a opera\c{c}\~ao de $S_4$.
+    \item Prove que $(V, \comp)$ \'e um grupo abeliano.
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Considere o grupo $S_7$ e sejam
+\begin{align*}
+    1 &= \begin{pmatrix}
+        1 & 2 & 3 & 4 & 5 & 6 & 7\\
+        1 & 2 & 3 & 4 & 5 & 6 & 7
+    \end{pmatrix}\\
+    \sigma &= \begin{pmatrix}
+            1 & 2 & 3 & 4 & 5 & 6 & 7\\
+            3 & 4 & 2 & 6 & 7 & 5 & 1
+        \end{pmatrix}.\\
+    \beta &= \begin{pmatrix}
+            1 & 2 & 3 & 4 & 5 & 6 & 7\\
+            3 & 1 & 2 & 6 & 7 & 4 & 5
+        \end{pmatrix}.
+\end{align*}.
+\begin{enumerate}[label=({\alph*})]
+    \item Encontre o menor $l \ge 0$ tal que $\sigma^l = 1$.
+    \item Encontre $\delta \in S_7$ tal que $\sigma\comp\delta = 1$.
+    \item Encontre o menor $k \ge 0$ tal que $\beta^k = 1$.
+    \item Encontre $\gamma \in S_7$ tal que $\gamma\comp\beta = 1$.
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Seja $(G,*)$ um grupo com elemento neutro $e$. Para $x\in
+G$, considere a nota{\c c}{\~a}o $x^n=x*x*\cdots *x$ ($n$ vezes).
+\begin{enumerate}[label=({\alph*})]
+\item Seja $G$ um grupo tendo $e$ como elemento neutro. Prove que se
+$x^2=e$, para todo $x\in G$, ent{\~a}o $G$ {\'e} um grupo abeliano.
+\item Mostre que se $x\in G$ {\'e} tal que $x^2=x$, ent{\~a}o $x$ {\'e} o elemento neutro.
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Sejam $G$ um grupo e $x$, $y$, $z \in G$. Prove que:
+\begin{enumerate}[label=({\alph*})]
+    \item Se $xy = xz$, ent\~ao $y = z$.
+    \item Se $yx = zx$, ent\~ao $y = z$.
+\end{enumerate}
+
+\vspace{.3cm}
+\end{document}
