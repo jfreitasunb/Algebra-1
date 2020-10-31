@@ -345,7 +345,7 @@ e da{\'\i}, por exemplo,
 		\end{align*}
 		S\~ao subgrupos de $G$.
 
-		\item Considere o grupo aditivo $M_2(\real)$. Então o conjunto
+		\item Considere o grupo aditivo $M_2(\real)$. Ent\~ao o conjunto
         \[
             H = \left\{\begin{pmatrix}
                 a & b\\c & d
@@ -379,36 +379,36 @@ Nesse caso vamos dizer simplesmente que $G$ \'e um grupo.
 \end{proposicao}
 \begin{prova}
 	\begin{enumerate}[label={\roman*})]
-		\item Precisamos mostrar que a relação $\sim$ definida acima satisfaz a Definição \eqref{definicao_relacao_equivalencia}.
+		\item Precisamos mostrar que a rela\c{c}\~ao $\sim$ definida acima satisfaz a Defini\c{c}\~ao \eqref{definicao_relacao_equivalencia}.
 
 		Denote por $e$ o elemento neutro do grupo $G$.
 
-		Primeiro, como $H$ é subgrupo de $G$, então $e \in H$. Mas
+		Primeiro, como $H$ \'e subgrupo de $G$, ent\~ao $e \in H$. Mas
 		\begin{align*}
 			e = x^{-1}x
 		\end{align*}
-		para todo $x \in G$. Logo $x \sim x$, como queríamos.
+		para todo $x \in G$. Logo $x \sim x$, como quer{\'\i}amos.
 
-		Suponha que $x \sim y$. Daí
+		Suponha que $x \sim y$. Da{\'\i}
 		\[
 			x^{-1}y \in H.
 		\]
-		Isto é,
+		Isto \'e,
 		\[
 			x^{-1}y = l
 		\]
-		onde $l \in H$. Mas $H$ é subgrupo e $l \in H$, então $l^{-1} \in H$. Agora
+		onde $l \in H$. Mas $H$ \'e subgrupo e $l \in H$, ent\~ao $l^{-1} \in H$. Agora
 		\begin{align*}
 			l^{-1} = (x^{-1}y)^{-1} = y^{-1}(x^{-1})^{-1} = y^{-1}x,
 		\end{align*}
-		isto é, $y^{-1}x \in H$. Com isso, $y \sim x$.
+		isto \'e, $y^{-1}x \in H$. Com isso, $y \sim x$.
 
-		Finalmente, suponha que $x \sim y$ e $y \sim z$. Daí
+		Finalmente, suponha que $x \sim y$ e $y \sim z$. Da{\'\i}
 		\begin{align*}
 			x^{-1}y &\in H\\
 			y^{-1}z &\in H
 		\end{align*}
-		e então como $H$ é subgrupo de $G$ devemos ter
+		e ent\~ao como $H$ \'e subgrupo de $G$ devemos ter
 		\begin{align*}
 			(x^{1}y)(y^{-1}z) &\in H\\
 			x^{-1}(yy^{-1})z &\in H\\
@@ -417,9 +417,9 @@ Nesse caso vamos dizer simplesmente que $G$ \'e um grupo.
 
 		Ou seja, $x \sim z$.
 
-		Portanto, $\sim$ é uma relação de equivalência sobre $G$.
+		Portanto, $\sim$ \'e uma rela\c{c}\~ao de equival\^encia sobre $G$.
 
-		\item Seja $a \in G$. Agora, por definição a classe de equivalência de $a$ é dada por
+		\item Seja $a \in G$. Agora, por defini\c{c}\~ao a classe de equival\^encia de $a$ \'e dada por
 		\[
 			\overline{a} = \{ x \in G \mid x \sim a\}.
 		\]
@@ -428,23 +428,23 @@ Nesse caso vamos dizer simplesmente que $G$ \'e um grupo.
 			aH = \{al \mid l \in H\}.
 		\]
 
-		Seja $x \in \overline{a}$. Assim $x \sim a$, isto é, $x^{-1}a \in H$. Logo existe $l \in H$ tal que
+		Seja $x \in \overline{a}$. Assim $x \sim a$, isto \'e, $x^{-1}a \in H$. Logo existe $l \in H$ tal que
 		\[
 			x^{-1}a = l.
 		\]
-		Mas então $x = al^{-1}$. Com isso $x \in aH$, uma vez que $H$ é subgrupo e $l^{-1} \in H$.
+		Mas ent\~ao $x = al^{-1}$. Com isso $x \in aH$, uma vez que $H$ \'e subgrupo e $l^{-1} \in H$.
 
 		Agora seja $y \in aH$. Logo existe $t \in H$ tal que
 		\[
 			y = at.
 		\]
-		Então
+		Ent\~ao
 		\[
 			ya^{-1} = t \in H.
 		\]
 		Logo $a \in y$, ou seja, $yx \in \overline{a}$.
 
-		Portanto $\overline{a} = aH$, como queríamos.
+		Portanto $\overline{a} = aH$, como quer{\'\i}amos.
 	\end{enumerate}
 \end{prova}
 
@@ -452,42 +452,42 @@ Nesse caso vamos dizer simplesmente que $G$ \'e um grupo.
     Seja $H$ um subgrupo de um grupo $G$. Ent\~ao duas classes laterais quaisquer m\'odulo $H$ s\~ao subconjuntos de $G$ que possuem a mesma cardinalidade, isto \'e, a mesma quantidade de elementos.
 \end{proposicao}
 \begin{prova}
-	Seja $H$ um subgrupo de um grupo $G$. Dados $a$, $b \in G$ para mostrar que $aH$ e $bH$ possuem a mesma cardinalidade vamos mostrar que sempre é possível definir uma função bijetora entre esses conjuntos, quaisquer que forem $a$ e $b \in G$.
+	Seja $H$ um subgrupo de um grupo $G$. Dados $a$, $b \in G$ para mostrar que $aH$ e $bH$ possuem a mesma cardinalidade vamos mostrar que sempre \'e poss{\'\i}vel definir uma fun\c{c}\~ao bijetora entre esses conjuntos, quaisquer que forem $a$ e $b \in G$.
 
-	Para isso, defina $f : aH \to bH$ por $f(al) = bl$, para $l \in H$. Mostremos que $f$ é bijetora, isto é, que $f$ é injetora e sobrejetora.
+	Para isso, defina $f : aH \to bH$ por $f(al) = bl$, para $l \in H$. Mostremos que $f$ \'e bijetora, isto \'e, que $f$ \'e injetora e sobrejetora.
 
-	Para mostrar que $f$ é injetora, sejam $al_1$, $al_2 \in aH$ tais que
+	Para mostrar que $f$ \'e injetora, sejam $al_1$, $al_2 \in aH$ tais que
 	\[
 		f(al_1) = f(al_2).
 	\]
-	Daí
+	Da{\'\i}
 	\begin{align*}
 		bl_1 &= bl_2\\
 		b^{-1}(bl_1) &= b^{-1}(bl_2)\\
 		l_1 &= l_2,
 	\end{align*}
-	com isso $al_1 = al_2$. Logo $f$ é injetora.
+	com isso $al_1 = al_2$. Logo $f$ \'e injetora.
 
 	Agora, seja $bt \in bH$. Tome $at \in aH$ e assim
 	\[
 		f(at) = bt,
 	\]
-	isto é, $f$ é sobrejetora.
+	isto \'e, $f$ \'e sobrejetora.
 
-	Portanto $f$ é bijetora e com isso $aH$ e $bH$ têm a mesma cardinalidade, como queríamos.
+	Portanto $f$ \'e bijetora e com isso $aH$ e $bH$ t\^em a mesma cardinalidade, como quer{\'\i}amos.
 \end{prova}
 
 \begin{observacao}
-	Da proposição anterior, sabemos que duas classes de equivalência posssuem sempre a mesma cardinalidade. Agora, tomando $e \in G$, o elemento neutro, temos
+	Da proposi\c{c}\~ao anterior, sabemos que duas classes de equival\^encia posssuem sempre a mesma cardinalidade. Agora, tomando $e \in G$, o elemento neutro, temos
 	\[
 		eH = \{el \mid l \in H\} = H.
 	\]
 
-	Assim a cardinalidade de $aH$ é igual a cardinalidade de $eH = H$, independente de $a \in G$. Ou seja, a cardinalidade de qualquer classe de equivalência é sempre igual à cardinalidade de $H$.
+	Assim a cardinalidade de $aH$ \'e igual a cardinalidade de $eH = H$, independente de $a \in G$. Ou seja, a cardinalidade de qualquer classe de equival\^encia \'e sempre igual \`a cardinalidade de $H$.
 \end{observacao}
 
 \begin{definicao}
-	Para cada $a \in G$, a classe de equivalência $aH$ definida pela relação de equivalência \eqref{relacao_equivalencia_subgrupo} é chamada de \textbf{classe lateral à direita, módulo $H$}, determinada por $a$.
+	Para cada $a \in G$, a classe de equival\^encia $aH$ definida pela rela\c{c}\~ao de equival\^encia \eqref{relacao_equivalencia_subgrupo} \'e chamada de \textbf{classe lateral \`a direita, m\'odulo $H$}, determinada por $a$.
 \end{definicao}
 
 \begin{exemplos}
@@ -505,18 +505,18 @@ Nesse caso vamos dizer simplesmente que $G$ \'e um grupo.
             	aH &= \{al \mid l \in H\}.
             \end{align*}
 
-            Se $a > 0$, então $al > 0$ para todo $l \in H$ e com isso $al \in H$. Logo
+            Se $a > 0$, ent\~ao $al > 0$ para todo $l \in H$ e com isso $al \in H$. Logo
             \[
             	aH = H
             \]
             para todo $a > 0$.
 
-            Se $a < 0$, então $al < 0$ para todo $l \in H$. Logo
+            Se $a < 0$, ent\~ao $al < 0$ para todo $l \in H$. Logo
             \[
             	aH = \{x \in \real^* \mid x < 0\}.
             \]
 
-            Com isso existem somente duas classes laterais que são: $H$ e $aH$, para $a < 0$.
+            Com isso existem somente duas classes laterais que s\~ao: $H$ e $aH$, para $a < 0$.
 
             \item Considere agora o grupo sim\'etrico $G = S_3$. Denote por
                 \[
@@ -533,13 +533,13 @@ Nesse caso vamos dizer simplesmente que $G$ \'e um grupo.
                 	bH &= \{bl \mid l \in H\} = \{b, ba, ba^2\}.
                 \end{align*}
 
-                Logo existem somente duas classes laterais que são $H$ e $bH$.
+                Logo existem somente duas classes laterais que s\~ao $H$ e $bH$.
         \end{enumerate}
     \end{exemplos}
 \end{exemplos}
 
 
-\section{Grupos Cíclicos}
+\section{Grupos C{\'\i}clicos}
 
 Seja $(G, *)$ um grupo.
 
@@ -730,26 +730,26 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
 \end{proposicao}
 \begin{prova}
 	\begin{enumerate}[label={\roman*})]
-		\item Como $x^0 = e$, então $e \in [x]$ e com isso $[x] \ne \emptyset$.
+		\item Como $x^0 = e$, ent\~ao $e \in [x]$ e com isso $[x] \ne \emptyset$.
 
 		Agora sejam $a$, $b \in [x]$. Assim existem $l$, $k \in \z$ tais que
 		\begin{align*}
 			a &= x^l\\
 			b &= x^k.
 		\end{align*}
-		Então
+		Ent\~ao
 		\begin{align*}
 			a^{-1} &= (x^l)^{-1} = x^{-l} \in [x]\\
 			ab &= x^lx^k = x^{l + k} \in [x].
 		\end{align*}
-		Portanto, $[x]$ é um subgrupo de $G$.
+		Portanto, $[x]$ \'e um subgrupo de $G$.
 
-		\item Se $x \in H$ e $H$ é um subgrupo de $G$, então como
+		\item Se $x \in H$ e $H$ \'e um subgrupo de $G$, ent\~ao como
 		\begin{align*}
 			x^m &=  x^{m-1}x\\
 			&=\underbrace{x\cdot x \cdots x}_{m\ vezes}
 		\end{align*}
-		segue que $x^m \in H$ para todo $m \in \z$. Logo $[x] \subseteq H$, como queríamos.
+		segue que $x^m \in H$ para todo $m \in \z$. Logo $[x] \subseteq H$, como quer{\'\i}amos.
 	\end{enumerate}
 \end{prova}
 
@@ -763,7 +763,7 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
 
 \begin{exemplos}
     \begin{enumerate}[label={\arabic*})]
-        \item No grupo multiplicativo $\complex^*$, o subgrupo gerado por $i$ é:
+        \item No grupo multiplicativo $\complex^*$, o subgrupo gerado por $i$ \'e:
         \[
         	[i] = \{i^m \mid i \in \z\} = \{1, -1, i, -1\}.
         \]
@@ -775,11 +775,11 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
                 2 & 3 & 1
             \end{pmatrix}
         \]
-        é
+        \'e
         \[
         	[f] = \{f^m \mid m \in \z\} = \{e, f, f^2\}.
         \]
-        \item No grupo aditivo $\z$ o subgrupo gerado por $3$ é
+        \item No grupo aditivo $\z$ o subgrupo gerado por $3$ \'e
         \[
         	[3] = \{3m \mid m \in \z\} = 3\z.
         \]
@@ -790,15 +790,15 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
     Todo subgrupo de um grupo c{\'\i}clico \'e tamb\'em c{\'\i}clico.
 \end{proposicao}
 \begin{prova}
-	Seja $G$ um grupo cíclico. Queremos mostrar que se $H \subseteq G$ é um subgrupo, então $H$ também é cíclico.
+	Seja $G$ um grupo c{\'\i}clico. Queremos mostrar que se $H \subseteq G$ \'e um subgrupo, ent\~ao $H$ tamb\'em \'e c{\'\i}clico.
 
-	Para isso suponha que $G = [x]$. Tome $H \subseteq G$ um subgrupo. Como os elementos de $G$ são todos da forma $x^m$, para $m \in \z$, então os elementos de $H$ também são potências de $x$.
+	Para isso suponha que $G = [x]$. Tome $H \subseteq G$ um subgrupo. Como os elementos de $G$ s\~ao todos da forma $x^m$, para $m \in \z$, ent\~ao os elementos de $H$ tamb\'em s\~ao pot\^encias de $x$.
 
-	Se $H = \{e\}$, então $H = [e]$.
+	Se $H = \{e\}$, ent\~ao $H = [e]$.
 
-	Suponha que $H \ne \{e\}$. Assim existe $x^l \in H$ com $l \ne 0$. Como $H$ é subgrupo, então $(x^l)^{-1} \in H$ para todo $x^l \in H$. Ou seja, existe em $H$ pelo menos um elemento $x^k$ com $k > 0$.
+	Suponha que $H \ne \{e\}$. Assim existe $x^l \in H$ com $l \ne 0$. Como $H$ \'e subgrupo, ent\~ao $(x^l)^{-1} \in H$ para todo $x^l \in H$. Ou seja, existe em $H$ pelo menos um elemento $x^k$ com $k > 0$.
 
-	Seja $\alpha > 0$ o menor número inteiro tal que $x^\alpha \in H$. Denote
+	Seja $\alpha > 0$ o menor n\'umero inteiro tal que $x^\alpha \in H$. Denote
 	\[
 		x^\alpha = b.
 	\]
@@ -806,11 +806,11 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
 	\[
 		H = [b].
 	\]
-	Como $b = x^\alpha \in H$, então pela Proposição \eqref{proposicao_subgrupo_gerado}, segue que $[b] \subseteq H$.
+	Como $b = x^\alpha \in H$, ent\~ao pela Proposi\c{c}\~ao \eqref{proposicao_subgrupo_gerado}, segue que $[b] \subseteq H$.
 
-	Agora seja $y \in H \subseteq G = [x]$. Daí $y = x^t$ para algum $t \in \z$.
+	Agora seja $y \in H \subseteq G = [x]$. Da{\'\i} $y = x^t$ para algum $t \in \z$.
 
-	Como $\alpha > 0$ podemos efetuar a divisão inteira de $t$ por $\alpha$ obtendo
+	Como $\alpha > 0$ podemos efetuar a divis\~ao inteira de $t$ por $\alpha$ obtendo
 	\[
 		t = q\alpha + r
 	\]
@@ -818,11 +818,11 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
 	\begin{align*}
 		y = x^t = x^{q\alpha + r} = (x^{\alpha})^qx^r.
 	\end{align*}
-	Mas $x^\alpha = b \in H$, logo $b^q \in H$ e daí
+	Mas $x^\alpha = b \in H$, logo $b^q \in H$ e da{\'\i}
 	\[
 		x^r = b^{-q}y\in H
 	\]
-	pois $b^{-q}$, $y \in H$. Ou seja, $x^r \in H$. Mas $\alpha$ é o menor inteiro positivo tal que $x^\alpha \in H$ e $r < \alpha$. Logo $r = 0$ e com isso
+	pois $b^{-q}$, $y \in H$. Ou seja, $x^r \in H$. Mas $\alpha$ \'e o menor inteiro positivo tal que $x^\alpha \in H$ e $r < \alpha$. Logo $r = 0$ e com isso
 	\begin{align*}
 		y = x^{q\alpha + r} = (x^{\alpha})^qx^0 = (x^{\alpha})^q = b^q \in [b].
 	\end{align*}
@@ -830,7 +830,7 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
 	\[
 		H = [b]
 	\]
-	como queríamos.
+	como quer{\'\i}amos.
 \end{prova}
 
 \begin{definicao}
@@ -885,7 +885,7 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
         		1 & 2 & 3
         	\end{pmatrix}
         \end{align*}
-        e então $o(a) = 2$.
+        e ent\~ao $o(a) = 2$.
 
         Agora para
         \[
@@ -933,7 +933,7 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
         		\overline{1} + \overline{1} + \overline{1} + \overline{1} + \overline{1} &= \overline{0}
         	\end{align*}
 
-        	De modo semelhante chega-se à conclusão que
+        	De modo semelhante chega-se \`a conclus\~ao que
         	\[
         		o(\overline{2}) = o(\overline{3}) = o(\overline{4}) = 5.
         	\]
@@ -949,32 +949,32 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
 \begin{prova}
 	Precisamos mostrar que
 	\begin{enumerate}[label={\roman*})]
-		\item Se $x^m = e$, então $h \mid m$.
+		\item Se $x^m = e$, ent\~ao $h \mid m$.
 
-		\item Se $h \mid m$, então $a^m = e$.
+		\item Se $h \mid m$, ent\~ao $a^m = e$.
 	\end{enumerate}
 
-	Para provar $ii)$ suponha que $o(x) = h$ e que $h \mid m$. Daí existe $l \in \z$ tal que $m = hl$. Logo
+	Para provar $ii)$ suponha que $o(x) = h$ e que $h \mid m$. Da{\'\i} existe $l \in \z$ tal que $m = hl$. Logo
 	\[
 		x^m = x^{hl} = (x^h)^l = e^l = e
 	\]
 	pois $h(x) = h$.
 
-	Agora para provar $i)$ suponha que $o(x) = h$ e que $a^m = e$. Como $h > 0$, podemos efetuar a divisão inteira de $m$ por $h$. Assim
+	Agora para provar $i)$ suponha que $o(x) = h$ e que $a^m = e$. Como $h > 0$, podemos efetuar a divis\~ao inteira de $m$ por $h$. Assim
 	\[
 		m = hq + r
 	\]
 	com $0 \le r < h$.
 
-	Daí
+	Da{\'\i}
 	\[
 		e = x^m = x^{hq + r} = x^hqx^r = (x^h)^qx^r = e^qx^r = x^r.
 	\]
-	Assim $x^r = e$. Mas $o(x) = h$ e $0 \le r < r$. Logo $r = 0$ e então
+	Assim $x^r = e$. Mas $o(x) = h$ e $0 \le r < r$. Logo $r = 0$ e ent\~ao
 	\[
 		m = hq,
 	\]
-	ou seja, $h \mid m$, como queríamos.
+	ou seja, $h \mid m$, como quer{\'\i}amos.
 \end{prova}
 
 \section{Homomorfismo de Grupos} % (fold)
