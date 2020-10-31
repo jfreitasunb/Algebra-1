@@ -568,28 +568,6 @@ Nesse caso vamos dizer simplesmente que $G$ \'e um grupo.
     \end{enumerate}
 \end{exemplos}
 
-\begin{teorema}\label{teorema_de_lagrange}
-	Seja $G$ um grupo finito. Se $H\subseteq G$ {\'e} um subgrupo, ent{\~a}o $|H|$ divide $|G|$.
-\end{teorema}
-
-\begin{exemplo}
-	Quais s{\~a}o as poss{\'\i}veis ordens dos subgrupos de um grupo de ordem 48?
-	\begin{solucao}
-		Seja $G$ um grupo tal que $|G|=48$. Se $H$ {\'e} um subgrupo pr\'orio de $G$, ent{\~a}o $|H|$ divide $|G|$. Mas $48=2^{4}\cdot 3$, da{\'\i} se $H$ \'e um subgrupo de $G$ ent\~ao $|H|=2$ ou $|H|=3$ ou $|H|= 2^{2}$ ou $|H|=2^{3}$ ou $|H|=2^{4}$ ou $|H|=2\cdot3$ ou $|H|=2^2\cdot 3$ ou $|H|=2^3\cdot 3$.
-	\end{solucao}
-\end{exemplo}
-
-\begin{observacao}
-	O Teorema \ref{teorema_de_lagrange} n{\~a}o diz que haver{\'a} um subgrupo de ordem $n$ para todo $n$ tal que $n||G|$. Diz apenas que se $H$ {\'e} subgrupo de $G$, ent{\~a}o $|H|$ divide $|G|$.
-\end{observacao}
-
-\begin{corolario}
-	Os {\'u}nicos subgrupos de um grupo de ordem prima s{\~a}o os triviais.
-\end{corolario}
-\begin{prova}
-	Suponha $|G| = p$ \'e um n\'umero primo. Assim os {\'u}nicos divisores positivos de $p$ s{\~a}o 1 e $p$. Logo se $H$ {\'e} um subgrupo de $G$, pelo Teorema \ref{teorema_de_lagrange} ent{\~a}o $|H|$ divide $|G|$. Assim $|H| = 1$ ou $|H| = p$. Portanto, $H=\{e\}$ ou $H = G$.
-\end{prova}
-
 \section{Homomorfismo de Grupos} % (fold)
 \label{sec:homomorfismo_de_grupos}
 
@@ -721,6 +699,29 @@ Nesse caso vamos dizer simplesmente que $G$ \'e um grupo.
 	\end{enumerate}
 \end{prova}
 
+\section{Teorema de Lagrange}
+
+\begin{teorema}\label{teorema_de_lagrange}
+	Seja $G$ um grupo finito. Se $H\subseteq G$ {\'e} um subgrupo, ent{\~a}o $|H|$ divide $|G|$.
+\end{teorema}
+
+\begin{exemplo}
+	Quais s{\~a}o as poss{\'\i}veis ordens dos subgrupos de um grupo de ordem 48?
+	\begin{solucao}
+		Seja $G$ um grupo tal que $|G|=48$. Se $H$ {\'e} um subgrupo pr\'orio de $G$, ent{\~a}o $|H|$ divide $|G|$. Mas $48=2^{4}\cdot 3$, da{\'\i} se $H$ \'e um subgrupo de $G$ ent\~ao $|H|=2$ ou $|H|=3$ ou $|H|= 2^{2}$ ou $|H|=2^{3}$ ou $|H|=2^{4}$ ou $|H|=2\cdot3$ ou $|H|=2^2\cdot 3$ ou $|H|=2^3\cdot 3$.
+	\end{solucao}
+\end{exemplo}
+
+\begin{observacao}
+	O Teorema \ref{teorema_de_lagrange} n{\~a}o diz que haver{\'a} um subgrupo de ordem $n$ para todo $n$ tal que $n||G|$. Diz apenas que se $H$ {\'e} subgrupo de $G$, ent{\~a}o $|H|$ divide $|G|$.
+\end{observacao}
+
+\begin{corolario}
+	Os {\'u}nicos subgrupos de um grupo de ordem prima s{\~a}o os triviais.
+\end{corolario}
+\begin{prova}
+	Suponha $|G| = p$ \'e um n\'umero primo. Assim os {\'u}nicos divisores positivos de $p$ s{\~a}o 1 e $p$. Logo se $H$ {\'e} um subgrupo de $G$, pelo Teorema \ref{teorema_de_lagrange} ent{\~a}o $|H|$ divide $|G|$. Assim $|H| = 1$ ou $|H| = p$. Portanto, $H=\{e\}$ ou $H = G$.
+\end{prova}
 
 
 
