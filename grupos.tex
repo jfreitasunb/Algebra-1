@@ -492,7 +492,7 @@ Nesse caso vamos dizer simplesmente que $G$ \'e um grupo.
 
 \begin{exemplos}
 	\begin{exemplos}
-        \begin{enumerate}[label={\roman*})]
+        \begin{enumerate}[label={\arabic*})]
             \item No grupo multiplicativo $G = \{1, -1, i, -i\}$, onde $i^2 = -1$. Considere o conjunto $H = \{1, -1\}$. Ent\~ao $H$ \'e um sugbrupo de $G$ e as classes laterais ser\~ao:
             \begin{align*}
             	1H &= H = \{1, -1\}\\
@@ -541,6 +541,15 @@ Nesse caso vamos dizer simplesmente que $G$ \'e um grupo.
 
 \section{Grupos Cíclicos}
 
+Seja $(G, *)$ um grupo.
+
+Caso a opera\c{c}\~ao $*$ seja do tipo multiplicativa, vamos escrever $(G, *) = (G, \cdot)$. Assim, dados $x$, $y \in G$ vamos denotar
+\[
+    x * y = x \cdot y = xy.
+\]
+
+Com a nota\c{c}\~ao multiplicativa o inverso de um elemento $x \in G$ ser\'a denotado por $x^{-1}$.
+
 \begin{definicao}
 	Seja $G$ um grupo multiplicativo e denote por $e$ o elemento neutro de $G$. Se $x \in G$ e $m \in \z$, a \textbf{pot\^encia $m$-\'esima} de $x$, ou \textbf{pot\^encia de $x$ de expoente $m$}, \'e o elemento de $G$ denotado por
         \[
@@ -557,7 +566,7 @@ Nesse caso vamos dizer simplesmente que $G$ \'e um grupo.
 \end{definicao}
 
 \begin{exemplos}
-    \begin{enumerate}[label={\roman*})]
+    \begin{enumerate}[label={\arabic*})]
         \item No grupo multiplicativo $GL_2(\real)$ seja
         \[
             A = \begin{pmatrix}
@@ -655,6 +664,54 @@ Nesse caso vamos dizer simplesmente que $G$ \'e um grupo.
         e para $m \le -4$ os valores se repetem.
     \end{enumerate}
 \end{exemplos}
+
+\begin{proposicao}
+	Seja $G$ um grupo multiplicativo. Se $m$ e $n$ s\~ao n\'umeros inteiros e $x \in G$, ent\~ao
+	\begin{enumerate}[label={\roman*})]
+	    \item $x^mx^n = x^{m + n}$
+
+	    \item $x^{-m} = (x^m)^{-1}$
+
+	    \item $(x^m)^n = x^{mn}$
+
+	    \item $x^mx^n = x^nx^m$.
+	\end{enumerate}
+\end{proposicao}
+
+Seja $(G, *)$ um grupo.
+
+Caso a opera\c{c}\~ao $*$ seja do tipo aditiva, vamos escrever $(G, *) = (G, +)$. Assim, dados $x$, $y \in G$ vamos denotar
+\[
+    x * y = x + y.
+\]
+
+Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
+
+\begin{definicao}
+	Seja $G$ um grupo aditivo e denote por $e$ o elemento neutro de $G$. Se $x \in G$ e $m \in \z$, o \textbf{m\'ultiplo $m$-\'esimo} de $x$ \'e o elemento de $G$ denotado por
+	\[
+		m \cdot x
+	\]
+	e definido por:
+	\[
+		m \cdot x = \begin{cases}
+			e, & \mbox{se m = 0},\\
+			(m - 1)\cdot x + x, & \mbox{ se } m \ge 1,\\
+			-[(-m) \cdot x], & \mbox{ se } m < 0. 
+		\end{cases}
+	\]
+\end{definicao}
+    
+\begin{proposicao}
+    Seja $G$ um grupo aditivo. Se $m$ e $n$ s\~ao n\'umeros inteiros e $x \in G$, ent\~ao
+    \begin{enumerate}[label={\roman*})]
+        \item $m \cdot x + n \cdot x = (m + n) \cdot x$
+
+        \item $(-m) \cdot x = -(m \cdot x)$
+
+        \item $n\cdot (m \cdot x) = (nm)\cdot x$
+    \end{enumerate}
+\end{proposicao}
 
 \section{Homomorfismo de Grupos} % (fold)
 \label{sec:homomorfismo_de_grupos}
