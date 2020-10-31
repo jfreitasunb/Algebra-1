@@ -451,6 +451,31 @@ Nesse caso vamos dizer simplesmente que $G$ \'e um grupo.
 \begin{proposicao}
     Seja $H$ um subgrupo de um grupo $G$. Ent\~ao duas classes laterais quaisquer m\'odulo $H$ s\~ao subconjuntos de $G$ que possuem a mesma cardinalidade, isto \'e, a mesma quantidade de elementos.
 \end{proposicao}
+\begin{prova}
+	Seja $H$ um subgrupo de um grupo $G$. Dados $a$, $b \in G$ para mostrar que $aH$ e $bH$ possuem a mesma cardinalidade vamos mostrar que sempre é possível definir uma função bijetora entre esses conjuntos, quaisquer que forem $a$ e $b \in G$.
+
+	Para isso, defina $f : aH \to bH$ por $f(al) = bl$, para $l \in H$. Mostremos que $f$ é bijetora, isto é, que $f$ é injetora e sobrejetora.
+
+	Para mostrar que $f$ é injetora, sejam $al_1$, $al_2 \in aH$ tais que
+	\[
+		f(al_1) = f(al_2).
+	\]
+	Daí
+	\begin{align*}
+		bl_1 &= bl_2\\
+		b^{-1}(bl_1) &= b^{-1}(bl_2)\\
+		l_1 &= l_2,
+	\end{align*}
+	com isso $al_1 = al_2$. Logo $f$ é injetora.
+
+	Agora, seja $bt \in bH$. Tome $at \in aH$ e assim
+	\[
+		f(at) = bt,
+	\]
+	isto é, $f$ é sobrejetora.
+
+	Portanto $f$ é bijetora e com isso $aH$ e $bH$ têm a mesma cardinalidade, como queríamos.
+\end{prova}
 
 \begin{teorema}\label{teorema_de_lagrange}
 	Seja $G$ um grupo finito. Se $H\subseteq G$ {\'e} um subgrupo, ent{\~a}o $|H|$ divide $|G|$.
@@ -468,7 +493,7 @@ Nesse caso vamos dizer simplesmente que $G$ \'e um grupo.
 \end{observacao}
 
 \begin{corolario}
-	Os {\'u}nicos subgrupos de um grupo de ordem prima s{\~a}o os triviais
+	Os {\'u}nicos subgrupos de um grupo de ordem prima s{\~a}o os triviais.
 \end{corolario}
 \begin{prova}
 	Suponha $|G| = p$ \'e um n\'umero primo. Assim os {\'u}nicos divisores positivos de $p$ s{\~a}o 1 e $p$. Logo se $H$ {\'e} um subgrupo de $G$, pelo Teorema \ref{teorema_de_lagrange} ent{\~a}o $|H|$ divide $|G|$. Assim $|H| = 1$ ou $|H| = p$. Portanto, $H=\{e\}$ ou $H = G$.
