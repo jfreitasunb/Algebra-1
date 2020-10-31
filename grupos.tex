@@ -565,6 +565,94 @@ Nesse caso vamos dizer simplesmente que $G$ \'e um grupo.
             \end{pmatrix}.
         \]
         Ent\~ao:
+        \begin{align*}
+        	A^0 &= \begin{pmatrix}
+        		1 & 0\\
+        		0 & 1
+        	\end{pmatrix}\\
+        	A^1 &= A\\
+        	A^2 &= A\cdot A = \begin{pmatrix}
+        		1 & 1\\
+        		2 & 3
+        	\end{pmatrix}\cdot \begin{pmatrix}
+        		1 & 1\\
+        		2 & 3
+        	\end{pmatrix} = \begin{pmatrix}
+        		3 & 4\\
+        		8 & 11
+        	\end{pmatrix}\\
+        	A^{-1} &= \begin{pmatrix}
+        		3 & -1\\
+        		-2 & 1
+        	\end{pmatrix}\\
+        	A^{-2} &= (A^2)^{-1}\begin{pmatrix}
+        		11 & -4\\
+        		-8 & 3
+        	\end{pmatrix}\\
+        \end{align*}
+        e podemos calcular $A^n$ para todo $n \in \z$.
+
+        \item No grupo multiplicativo $\z_5^*$ seja $a = \overline{2}$. Ent\~ao:
+        \begin{align*}
+        	\overline{2}^0 &= \overline{1}\\
+        	\overline{2}^1 &= \overline{2}\\
+        	\overline{2}^2 &= \overline{2}\odot \overline{2} = \overline{4}\\
+        	\overline{2}^3 &= (\overline{2})^2\odot \overline{2} = \overline{3}\\
+        	\overline{2}^4 &= (\overline{2})^3\odot \overline{2} = \overline{1}\\
+        	\overline{2}^5 &= (\overline{2})^4\odot \overline{2} = \overline{2}\\
+        \end{align*}
+        e para $m \ge 5$ os valores se repetem.
+
+        Agora,
+        \begin{align*}
+        	\overline{2}^{-1} &= \overline{3}\\
+        	\overline{2}^{-2} &= (\overline{2}^2)^{-1} = \overline{4}^{-1} = \overline{4}\\
+        	\overline{2}^{-3} &= (\overline{2}^3)^{-1} = \overline{3}^{-1} = \overline{2}\\
+        	\overline{2}^{-3} &= (\overline{2}^4)^{-1} = \overline{1}^{-1} = \overline{1}\\
+        	\overline{2}^{-5} &= (\overline{2}^5)^{-1} = \overline{2}^{-1} = \overline{3}\\
+        \end{align*}
+        e para $m \le -5$ os valores se repetem.
+
+        \item No grupo multiplicativo $S_3$ seja
+        \[
+            a = \begin{pmatrix}
+                1 & 2 & 3\\ 2 & 3 & 1
+            \end{pmatrix}.
+        \]
+        Ent\~ao:
+        \begin{align*}
+        	a^0 &= e\\
+        	a^1 &= a\\
+        	a^2 &= \begin{pmatrix}
+        		1 & 2 & 3\\
+        		2 & 3 & 1
+        	\end{pmatrix} \circ \begin{pmatrix}
+        		1 & 2 & 3\\
+        		2 & 3 & 1
+        	\end{pmatrix} = \begin{pmatrix}
+        		1 & 2 & 3\\
+        		3 & 1 & 2
+        	\end{pmatrix}\\
+        	a^3 &= a^2 \circ a = \begin{pmatrix}
+        		1 & 2 & 3\\
+        		3 & 1 & 2
+        	\end{pmatrix} \circ \begin{pmatrix}
+        		1 & 2 & 3\\
+        		2 & 3 & 1
+        	\end{pmatrix} = \begin{pmatrix}
+        		1 & 2 & 3\\
+        		1 & 2 & 3
+        	\end{pmatrix}
+        \end{align*}
+        e para $m \ge 4$ os valores se repetem.
+
+        Agora,
+        \begin{align*}
+        	a^{-1} &= a^2\\
+        	a^{-2} &= (a^2)^{-1} = a\\
+        	a^{-3} &= (a^3)^{-1} = e^{-1} = e\\
+        \end{align*}
+        e para $m \le -4$ os valores se repetem.
     \end{enumerate}
 \end{exemplos}
 
