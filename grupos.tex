@@ -418,6 +418,33 @@ Nesse caso vamos dizer simplesmente que $G$ \'e um grupo.
 		Ou seja, $x \sim z$.
 
 		Portanto, $\sim$ é uma relação de equivalência sobre $G$.
+
+		\item Seja $a \in G$. Agora, por definição a classe de equivalência de $a$ é dada por
+		\[
+			\overline{a} = \{ x \in G \mid x \sim a\}.
+		\]
+		Queremos mostrar que $\overline{a} = aH$, onde
+		\[
+			aH = \{al \mid l \in H\}.
+		\]
+
+		Seja $x \in \overline{a}$. Assim $x \sim a$, isto é, $x^{-1}a \in H$. Logo existe $l \in H$ tal que
+		\[
+			x^{-1}a = l.
+		\]
+		Mas então $x = al^{-1}$. Com isso $x \in aH$, uma vez que $H$ é subgrupo e $l^{-1} \in H$.
+
+		Agora seja $y \in aH$. Logo existe $t \in H$ tal que
+		\[
+			y = at.
+		\]
+		Então
+		\[
+			ya^{-1} = t \in H.
+		\]
+		Logo $a \in y$, ou seja, $yx \in \overline{a}$.
+
+		Portanto $\overline{a} = aH$, como queríamos.
 	\end{enumerate}
 \end{prova}
 
