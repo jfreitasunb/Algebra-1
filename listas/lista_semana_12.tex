@@ -1,0 +1,72 @@
+%!TEX program = xelatex
+% !TEX encoding = ISO-8859-1
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\numerosemana{12}
+
+\documentclass[12pt]{exam}
+
+\input{../configuracoes/pacotes}
+\input{../configuracoes/configuracoes_paginas}
+\input{../configuracoes/comandos_personalizados}
+
+\begin{document}
+
+\begin{center}
+    
+    {\Large\bf \disciplina\ - Turma \turma\ -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
+        Lista de Exerc{\'\i}cios -- Semana \numerosemana}\\ \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+    \end{center}
+    \hrule
+
+    \vspace{.6cm}
+    
+    \questao{} Verifique se s\~ao subgrupos:
+    \begin{enumerate}[label=({\alph*})]
+      \item $H = \{x \in \rac \mid x > 0\}$ de $(\rac^*,\cdot)$.
+      \item $H = \left\{\dfrac{1 + 2m}{1 + 2n} \mid m, n \in \z\right\}$ de $(\rac^*,\cdot)$.
+      \item $H = \{\cos\theta + i\sin\theta \mid \theta \in \rac\}$ de $(\complex^*,\cdot)$.
+      \item $H = \{0, \pm 2, \pm 4, \pm 6, \dots\}$ de $(\z,+)$.
+      \item $H = \{0, \pm 2, \pm 4, \pm 6, \dots\}$ do grupo $(\rac - \{1\},\star)$ onde $\star$ \'e definida como $x \star y = x + y - xy$.
+      \item $H = \{a + b\sqrt{2} \mid a, b \in \rac\}$ de $(\real,+)$.
+      \item $H = \{a + b\sqrt{2} \in \real^* \mid a, b \in \rac\}$ de $(\real^*,\cdot)$.
+      \item $H = \{a + b\sqrt[3]{2} \mid a, b \in \rac\}$ de $(\real,+)$.
+      \item $H = \{a + b\sqrt[3]{2} \in \real^* \mid a, b \in \rac\}$ de $(\real^*,\cdot)$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Determine todos os subgrupos do grupo aditivo $\z_4$.
+
+    \vspace{.3cm}
+
+    \questao{} Determine todos os subgrupos de $S_3$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja
+    \[
+      GL_2(\real) = \left\{A = \begin{pmatrix}
+          x & y\\z & t
+      \end{pmatrix} \mid x, y, z, t \in \real,\ \det(A) \ne 0\right\}.
+    \]
+    \begin{enumerate}[label=({\alph*})]
+      \item Mostre que $GL_2(\real)$ com a opera\c{c}\~ao de multiplica\c{c}\~ao de matrizes \'e um grupo. Esse grupo \'e abeliano?
+      \item Seja
+      \[
+          H = \left\{ A = \begin{pmatrix}
+              \cos a & \sin a\\ -\sin a & \cos a
+          \end{pmatrix} \mid a \in \real\right\}.
+      \]
+      Mostre que $H$ \'e um subgrupo de $GL_2(\real)$.
+      \item Seja
+      \[
+          K = \left\{ A = \begin{pmatrix}
+              a & b\\ -b & a
+          \end{pmatrix} \mid a, b \in \real \mbox{ e n\~ao nulos simultaneamente}\right\}.
+      \]
+      Mostre que $K$ \'e um subgrupo de $GL_2(\real)$.
+    \end{enumerate}
+\end{document}
