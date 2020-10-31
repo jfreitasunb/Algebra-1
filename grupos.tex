@@ -377,6 +377,49 @@ Nesse caso vamos dizer simplesmente que $G$ \'e um grupo.
         \end{align*}
     \end{enumerate}
 \end{proposicao}
+\begin{prova}
+	\begin{enumerate}
+		\item Precisamos mostrar que a relação $\sim$ definida acima satisfaz a Definição \eqref{definicao_relacao_equivalencia}.
+
+		Denote por $e$ o elemento neutro do grupo $G$.
+
+		Primeiro, como $H$ é subgrupo de $G$, então $e \in H$. Mas
+		\begin{align*}
+			e = x^{-1}x
+		\end{align*}
+		para todo $x \in G$. Logo $x \sim x$, como queríamos.
+
+		Suponha que $x \sim y$. Daí
+		\[
+			x^{-1}y \in H.
+		\]
+		Isto é,
+		\[
+			x^{-1}y = l
+		\]
+		onde $l \in H$. Mas $H$ é subgrupo e $l \in H$, então $l^{-1} \in H$. Agora
+		\begin{align*}
+			l^{-1} = (x^{-1}y)^{-1} = y^{-1}(x^{-1})^{-1} = y^{-1}x,
+		\end{align*}
+		isto é, $y^{-1}x \in H$. Com isso, $y \sim x$.
+
+		Finalmente, suponha que $x \sim y$ e $y \sim z$. Daí
+		\begin{align*}
+			x^{-1}y &\in H\\
+			y^{-1}z &\in H
+		\end{align*}
+		e então como $H$ é subgrupo de $G$ devemos ter
+		\begin{align*}
+			(x^{1}y)(y^{-1}z) &\in H\\
+			x^{-1}(yy^{-1})z &\in H\\
+			x^{-1}z &\in H.
+		\end{align*}
+
+		Ou seja, $x \sim z$.
+
+		Portanto, $\sim$ é uma relação de equivalência sobre $G$.
+	\end{enumerate}
+\end{prova}
 
 \begin{teorema}\label{teorema_de_lagrange}
 	Seja $G$ um grupo finito. Se $H\subseteq G$ {\'e} um subgrupo, ent{\~a}o $|H|$ divide $|G|$.
