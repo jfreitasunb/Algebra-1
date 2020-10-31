@@ -538,6 +538,36 @@ Nesse caso vamos dizer simplesmente que $G$ \'e um grupo.
     \end{exemplos}
 \end{exemplos}
 
+
+\section{Grupos Cíclicos}
+
+\begin{definicao}
+	Seja $G$ um grupo multiplicativo e denote por $e$ o elemento neutro de $G$. Se $x \in G$ e $m \in \z$, a \textbf{pot\^encia $m$-\'esima} de $x$, ou \textbf{pot\^encia de $x$ de expoente $m$}, \'e o elemento de $G$ denotado por
+        \[
+            x^m
+        \]
+        e definido por:
+        \[
+            x^m = \begin{cases}
+                    e, & \mbox{se m = 0},\\
+                    x^{m-1}x, & \mbox{ se } m \ge 1,\\
+                    (x^{-m})^{-1}, & \mbox{ se } m < 0. 
+                   \end{cases}
+        \]
+\end{definicao}
+
+\begin{exemplos}
+    \begin{enumerate}[label={\roman*})]
+        \item No grupo multiplicativo $GL_2(\real)$ seja
+        \[
+            A = \begin{pmatrix}
+                1 & 1\\2 & 3
+            \end{pmatrix}.
+        \]
+        Ent\~ao:
+    \end{enumerate}
+\end{exemplos}
+
 \begin{teorema}\label{teorema_de_lagrange}
 	Seja $G$ um grupo finito. Se $H\subseteq G$ {\'e} um subgrupo, ent{\~a}o $|H|$ divide $|G|$.
 \end{teorema}
