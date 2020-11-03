@@ -31,6 +31,21 @@
 	\noindent\textbf{Solu\c{c}\~ao:}
 
 	\begin{enumerate}[label={\arabic*})]
-		\item f
+		\item Precisamos mostrar que
+		\begin{enumerate}
+			\item $f^{-1}(X^C) \subset [f^{-1}(X)]^C$
+
+			\item $[f^{-1}(X)]^C \subset f^{-1}(X^C)$
+		\end{enumerate}
+
+		Para mostrar \textit{(a)} seja $z \in f^{-1}(X^C)$. Assim $f(z) \in X^C$. Logo $f(z) \notin	X$. Com isso $z \notin f^{-1}(X)$ e então $z \in [f^{-1}(X)]^C$.
+
+		Agora para mostrar \textit{(b)} seja $t \in [f^{-1}(X)]^C$. Daí $t \notin f^{-1}(X)$. Logo $f(t) \notin X$. Isto é, $f(t) \in X^C$ e então $t \in f^{-1}(X^C)$.
+
+		Portanto $f^{-1}(X^C) = [f^{-1}(X)]^C$, como queríamos.
+
+		\item Seja $t \in P$. Assim $f(t) \in f(P)$ e $f(P) \subset B$. Isto é, $t \in f^{-1}(f(P))$.
+
+		Portanto $P \subset f^{-1}(f(P))$, como queríamos.
 	\end{enumerate}
 \end{document}
