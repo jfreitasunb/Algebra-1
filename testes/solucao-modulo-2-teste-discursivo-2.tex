@@ -21,7 +21,7 @@
 
 	\vspace{.6cm}
 
-	\questao{} Seja $f : A \to B$ um homomorfismo de anéis. Mostre que:
+	Seja $f : A \to B$ um homomorfismo de anéis. Mostre que:
 	\begin{enumerate}[label={\roman*})]
 		\item Se $D$ é um subanel de $B$, então $f^{-1}(D)$ é um subanel de $A$.
 
@@ -31,73 +31,38 @@
 	\noindent\textbf{Solu\c{c}\~ao:}
 
 	\begin{enumerate}[label={\roman*})]
-		\item Seja $x \in \z$. Temos
-		\[
-			x^3 - x^3 = 0 = 5\cdot 0.
-		\]
-		Logo $xRx$.
+		\item Primeiro precisamos mostrar que $f^{-1}(D) \ne \emptyset$. Mas $D$ é um subanel de $B$ e então $0_B \in D$. Como $f$ é um homomorfismo de anéis, então $f(0_A) = 0_B$. Assim $0_A \in f^{-1}(D)$, isto é, $f^{-1}(D) \ne \emptyset$.
 
-		Suponha que $xRy$. Assim existe $l \in \z$ tal que
-		\[
-			x^3 - y^3 = 5l.
-		\]
-		Agora,
-		\[
-			y^3 - x^3 = -(x^3 - y^3) = -5l = 5(-l).
-		\]
-		Assim $yRx$.
-
-		Finalmente, se $xRy$ e $yRz$, ent\~ao existem $k$, $l \in \z$ tais que
-		\[
-			x^3 - y^3 = 5k \quad \mbox{e} \quad y^3 - z^3 = 5l.
-		\]
-		Da{\'\i}
-		\[
-			x^3 - y^3 = (x^3 - y^3) + (y^3 - z^3) = 5k + 5l = 5(k + l),
-		\]
-		ou seja, $xRz$.
-
-		Portanto $R$ \'e uma rela\c{c}\~ao de equival\^encia em $\z$.
-
-		\item Seja $a \in \z$. Ent\~ao
+		Agora sejam $x$, $y \in f^{-1}(D)$. Logo
 		\begin{align*}
-			\overline{a} &= \{x \in \z \mid xRa\} \\
-			\overline{a} &= \{x \in \z \mid x^3 - a^3 = 5l, l \in \z\}\\
-			\overline{a} &= \{x \in \z \mid x^3 = 5l + a^3, l \in \z\}
+			f(x) &\in D\\
+			f(y) &\in D.
 		\end{align*}
-		Note que nesse caso estamos efetuando a divis\~ao inteira de $x^3$ por 5 e o resto \'e dado por $a^3$.
-		Agora,
+		Mas $D$ é um subanel de $B$, logo $f(x) + (-f(y)) \in D$ e $f(x)f(y) \in D$. Daí como $f$ é um homomorfismo de anéis:
 		\begin{align*}
-			0^3 &= 0\\
-			1^3 &= 1\\
-			2^3 &= 8 = 5 + 3\\
-			3^3 &= 27 = 25 + 2\\
-			4^3 &= 64 = 60 + 4
+			f(x) + (-f(y)) &= f(x) + f(-y) = f(x + (-y))\\
+			f(x)f(y) &= f(xy),
 		\end{align*}
-		Assim,
-		temos as classes
-		\begin{align*}
-			\overline{0} &= \{x \in \z \mid x^3 = 5l, l \in \z\}\\
-			\overline{1} &= \{x \in \z \mid x^3 = 5l + 1, l \in \z\}\\
-			\overline{2} &= \{x \in \z \mid x^3 = 5l + 3, l \in \z\}\\
-			\overline{3} &= \{x \in \z \mid x^3 = 5l + 2, l \in \z\}\\
-			\overline{4} &= \{x \in \z \mid x^3 = 5l + 4, l \in \z\}.\\
-		\end{align*}
+		ou seja, $f(x + (-y)) \in D$ e $f(xy) \in D$. Assim $x + (-y) \in f^{-1}(D)$ e $xy \in f^{-1}(D)$. Portanto $f^{-1}(D)$ é um subanel de $A$, como queríamos.
 
-		Portanto temos exatamente 5 classes de equival\^encia para a rela\c{c}\~ao $R$.
+		\item Primeiro precisamos mostrar que $f^{-1}(J) \ne \emptyset$. Mas como $J$ é ideal de $B$, então $0_B \in J$. Novamente, do fato de $f$ ser um homomorfismo, segue que $f(0_A) = 0_B$, daí $0_A \in f^{-1}(J)$. Agora, para mostrar que $f^{-1}(J)$ é um ideal precisamos que
+		\begin{enumerate}
+			\item para todos $x$, $y \in f^{-1}(J)$, temos $x - y \in f^{-1}(J)$.
+			\item Para todo $\alpha \in A$ e todo $x \in f^{-1}(J)$, temos $\alpha\cdot x \in f^{-1}(J)$.
+		\end{enumerate}
 
-		\item Seja $x$ a sua matr{\'\i}cula. Para encontrar a qual classe $x$ pertence, basta calcular $x^3$ e efetuar a divis\~ao inteira por 5. O resto dessa divis\~ao determinar\'a a qual classe sua matr{\'\i}cula pertence.
+		Para o item \textit{(a)} sejam $x$, $y \in f^{-1}(J)$. Assim, $f(x)$, $f(y) \in J$. Mas $J$ é ideal de $B$, logo $f(x) - f(y) \in J$. Agora, como $f$ é homomorfismo, então
+		\[
+			f(x) - f(y) = f(x - y)
+		\]
+		e então $f(x - y) \in J$, ou seja, $x - y \in f^{-1}(J)$.
+
+		Para o item \textit{(b)} sejam $\alpha \in A$ e $x \in f^{-1}(J)$. Então $f(x) \in J$. Agora, novamente, como $J$ é ideal e $f(\alpha) \in B$ então $f(\alpha)f(x) \in J$. Usando que $f$ é homomorfismo temos
+		\[
+			f(\alpha)f(x) = f(\alpha x)
+		\]
+		e então $f(\alpha x) \in J$. Logo $\alpha x \in f^{-1}(J)$.
+
+		Portanto $f^{-1}(J)$ é um ideal	 de $A$, como queríamos.
 	\end{enumerate}
-
-	\questao{} Considere a seguinte rela\c{c}\~ao sobre $\z$:
-	\[
-		x S y\quad  \mbox{quando}\quad y^3 - x^3 = 5t, \quad \mbox{para algum}\quad t \in \z
-	\]
-	\begin{enumerate}[label={\arabic*})]
-		\item Mostre que $S$ \'e uma rela\c{c}\~ao de equival\^encia sobre $\z$).
-		\item Encontre todas as classes de equival\^encia dessa rela\c{c}\~ao.
-		\item A qual classe de equival\^encia sua matr{\'\i}cula pertence?
-	\end{enumerate}
-
-	\noindent\textbf{Solu\c{c}\~ao:} Basta repetir os passos do Exerc{\'\i}cio 1, fazendo as substitui\c{c}\~oes necess\'arias.
 \end{document}
