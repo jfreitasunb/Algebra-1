@@ -1,0 +1,73 @@
+%!TEX program = xelatex
+% !TEX encoding = ISO-8859-1
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\numerosemana{13}
+
+\documentclass[12pt]{exam}
+
+\input{../configuracoes/pacotes}
+\input{../configuracoes/configuracoes_paginas}
+\input{../configuracoes/comandos_personalizados}
+
+\begin{document}
+
+\begin{center}
+    
+    {\Large\bf \disciplina\ - Turma \turma\ -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
+        Lista de Exerc{\'\i}cios -- Semana \numerosemana}\\ \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+    \end{center}
+    \hrule
+
+    \vspace{.6cm}
+    
+    \questao{nucleo_homomorfismo} Verificar em cada caso se $f$ \'e um homomorfismo de grupos.
+    \begin{enumerate}[label=({\alph*})]
+      \item $f: \z \to \z$ dada por $f(x) = kx$, sendo $\z$ o grupo aditivo dos inteiros e $k$ um n\'umero inteiro fixo.
+      
+      \item $f: \real^* \to \real^*$ dada por $f(x) = |x|$ sendo $\real^*$ o grupo multiplicativo dos reais.
+      
+      \item $f: \real \to \real$ dada por $f(x) = x + 1$, onde $\real$ \'e o grupo aditivo dos reais.
+      
+      \item $f: \z \to \z \times \z$ dada por $f(x) = (x, 0)$, onde $\z$ e $\z \times \z$ denotam grupos aditivos.
+      
+      \item $f: \z \times \z \to \z$ dada por $f(x,y) = x$, onde $\z \times \z$ e $\z$ s\~ao grupos aditivos.
+      
+      \item $f: \z \to \real^*_+$ dada por $f(x) = 2^x$, onde $\z$ \'e grupo aditivo e $\real^*_+$ \'e grupo multiplicativo.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Determine o n\'ucleo em cada homomorfismo do \textbf{Exerc{\'\i}cio \ref{nucleo_homomorfismo}}.
+
+    \vspace{.3cm}
+
+    \questao{} Determinar os homomorfismos injetores e os sobrejetores do \textbf{Exerc{\'\i}cio \ref{nucleo_homomorfismo}}.
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $G$ e $J$ grupos multiplicativos, $f : G \to J$ um homomorfismo de grupos e $H$ um subgrupo de $J$. Mostre que $f^{-1}(H) = \{ x \in G \mid f(x) \in H\}$ {\'e} um subgrupo de $G$.
+
+    \vspace{.3cm}
+
+    \questao{} Prove que um grupo $G$ {\'e} abeliano se, e somente se, $f : G \to G$ definada por $f(x) = x^{-1}$ {\'e} um homomorfismo.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f: G\to H$ um homomorfismo de grupos e $K$ um subgrupo de $H$. Mostre que Ker$(f)\subset f^{-1}(K)$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f: \z \times \z \to \z \times \z$ definida por $f(x, y) = (x - y, 0)$. Provar que $f$ \'e um homomorfimo do grupo aditivo $\z \times \z$ em si pr\'oprio. Obter $\ker(f)$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f: G \to J$ um homomorfismo de grupos e $g\in G$ tal que $o(g)=n$.
+    \begin{enumerate}[label=({\alph*})]
+      \item Mostre que $f(g)$ tem ordem positiva e que a ordem de $f(g)$ divide $n$.
+      
+      \item Mostre que se $f$ {\'e} isomorfismo, ent{\~a}o $o(f(g))=n$.
+    \end{enumerate}
+\end{document}
