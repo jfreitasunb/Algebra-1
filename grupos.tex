@@ -1047,6 +1047,22 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
 			f(1_G) = 1_H,
 		\]
 		como queríamos.
+
+		\item Seja $x \in G$. Como num grupo o inverso de um elemento é único, basta mostrar que
+		\begin{align*}
+			f(x) \triangle f(x^{-1}) &= 1_H\\
+			f(x^{-1}) \triangle f(x) &= 1_H.
+		\end{align*}
+		De fato,
+		\begin{align*}
+			f(x) \triangle f(x^{-1}) &= f(x * x^{-1}) = f(1_G) = 1_H\\
+			f(x^{-1}) \triangle f(x) &= f(x^{-1} * x) = f(1_G) = 1_H.
+		\end{align*}
+		Logo
+		\[
+			[f(x)]^{-1} = f(x^{-1})
+		\]
+		como queríamos.
 	\end{enumerate}
 \end{prova}
 
@@ -1123,19 +1139,27 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
 	\end{enumerate}
 \end{prova}
 
-        \begin{proposicao}
-            Sejam $H$, $J$ e $L$ grupos. Se $f : H \to J$ e $g : J \to L$ são homomorfismos de grupos, então $g \circ f : H \to L$ também é um homomorfismo de grupos.
-        \end{proposicao}
+\begin{proposicao}
+    Sejam $H$, $J$ e $L$ grupos. Se $f : H \to J$ e $g : J \to L$ são homomorfismos de grupos, então $g \circ f : H \to L$ também é um homomorfismo de grupos.
+\end{proposicao}
+\begin{prova}
+	Sejam $x$, $y \in H$. Temos
+	\begin{align*}
+		(g \circ f)(xy) = g(f(xy)) = g(f(x)f(y)) = g(f(x))g(f(y)) = (g \circ f)(xy)(g \circ f)(xy).
+	\end{align*}
 
-   
-        \begin{corolario}
-            Se $f$ e $g$ são homomorfismo injetores (sobrejetores), então $g \circ f$ também é um homomorfismo injetor (sobrejetor).
-        \end{corolario}
+	Portanto, $g \circ f$ é um homomorfismo de grupos.
+\end{prova}
 
-   
-        \begin{proposicao}
-            Se $f : G \to H$ é um isomorfismo de grupos, então $f^{-1} : H \to G$ também é um isomorfismo de grupos.
-        \end{proposicao}
+
+\begin{corolario}
+    Se $f$ e $g$ são homomorfismo injetores (sobrejetores), então $g \circ f$ também é um homomorfismo injetor (sobrejetor).
+\end{corolario}
+
+
+\begin{proposicao}
+    Se $f : G \to H$ é um isomorfismo de grupos, então $f^{-1} : H \to G$ também é um isomorfismo de grupos.
+\end{proposicao}
 
 
 \section{Teorema de Lagrange}
