@@ -19,33 +19,43 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e ser\'a denotado p
 
 \begin{exemplos}
 	\begin{enumerate}[label={\arabic*})]
-	\item Sejam $A = \{0,1,2,3\}$ e $B = \{4,5,6,7,8\}$. Quais das seguintes rela{\c c}{\~o}es s{\~a}o fun{\c c}{\~o}es?
-	\begin{enumerate}[label={\alph*})]
-		\item $R_1 = \{(0,5),(1,6),(2,7)\}$
-		\item $R_2 = \{(0,4),(1,5),(1,6),(2,7),(3,8)\}$
-		\item $R_3 = \{(0,4),(1,5),(2,7),(3,8)\}$
-		\item $R_4 = \{(0,5),(1,5),(2,6),(3,7)\}$
-	\end{enumerate}
-	\begin{solucao}
-		\begin{enumerate}[label={\alph*})]
-			\item N\~ao \'e fun\c{c}\~ao pois $3 \in A$ e $3$ n\~ao est\'a associado {\`a} nenhum elemento de $B$.
-			\item N\~ao \'e fun\c{c}\~ao pois $1 \in A$ est\'a associado a dois elementos diferentes em $B$.
-			\item \'E uma fun\c{c}\~ao.
-			\item \'E uma fun\c{c}\~ao.
-		\end{enumerate}
-	\end{solucao}
-	\item $R_{5} = \{(x,y) \in \real  \times \real  \mid y^2 = x^2\}$
-	\begin{solucao}
-	 	N\~ao \'e fun\c{c}\~ao pois, por exemplo, para $x = 1$ temos $y = -1$ ou $y = 1$.
-	 \end{solucao}
-	\item $R_{6} = \{(x,y) \in \real  \times \real  \mid x^2 + y^2 = 1\}$.
-	\begin{solucao}
-	 	N\~ao \'e fun\c{c}\~ao pois, por exemplo, para $x = 0$ temos $y = 1$ ou $y = -1$.
-	 \end{solucao}
-	\item  $R_{7} = \{(x,y) \in \real  \times \real \mid y = x^2\}$
-	\begin{solucao}
-	 	\'E uma fun\c{c}\~ao.
-	\end{solucao}
+		\item Sejam $A = \{0,1,2,3\}$ e $B = \{4,5,6,7,8\}$. Quais das seguintes rela{\c c}{\~o}es s{\~a}o fun{\c c}{\~o}es?
+			\begin{enumerate}[label={\alph*})]
+				\item $R_1 = \{(0,5),(1,6),(2,7)\}$
+				
+				\item $R_2 = \{(0,4),(1,5),(1,6),(2,7),(3,8)\}$
+				
+				\item $R_3 = \{(0,4),(1,5),(2,7),(3,8)\}$
+				
+				\item $R_4 = \{(0,5),(1,5),(2,6),(3,7)\}$
+			\end{enumerate}
+			
+			\begin{solucao}
+				\begin{enumerate}[label={\alph*})]
+					\item N\~ao \'e fun\c{c}\~ao pois $3 \in A$ e $3$ n\~ao est\'a associado {\`a} nenhum elemento de $B$.
+					
+					\item N\~ao \'e fun\c{c}\~ao pois $1 \in A$ est\'a associado a dois elementos diferentes em $B$.
+					
+					\item \'E uma fun\c{c}\~ao.
+					
+					\item \'E uma fun\c{c}\~ao.
+				\end{enumerate}
+			\end{solucao}
+
+		\item $R_{5} = \{(x,y) \in \real  \times \real  \mid y^2 = x^2\}$
+			\begin{solucao}
+			 	N\~ao \'e fun\c{c}\~ao pois, por exemplo, para $x = 1$ temos $y = -1$ ou $y = 1$.
+			\end{solucao}
+		
+		\item $R_{6} = \{(x,y) \in \real  \times \real  \mid x^2 + y^2 = 1\}$.
+			\begin{solucao}
+			 	N\~ao \'e fun\c{c}\~ao pois, por exemplo, para $x = 0$ temos $y = 1$ ou $y = -1$.
+			 \end{solucao}
+
+		\item $R_{7} = \{(x,y) \in \real  \times \real \mid y = x^2\}$
+			\begin{solucao}
+			 	\'E uma fun\c{c}\~ao.
+			\end{solucao}
 	\end{enumerate}	
 \end{exemplos}
 
@@ -54,7 +64,9 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e ser\'a denotado p
 	Seja $f : A \to B$ uma fun\c{c}\~ao.
 	\begin{enumerate}[label={\roman*})]
 		\item Dizemos que $f$ \'e \textbf{injetora} se dados $x_1$, $x_2 \in A$ tais que $f(x_1) = f(x_2)$, ent\~ao $x_1 = x_2$. De modo equivalente, dizemos que $f$ e \textbf{injetora} se dados $x_1$, $x_2 \in A$ tais que $x_1 \ne x_2$, ent\~ao $f(x_1) \ne f(x_2)$.
+		
 		\item Dizemos que $f$ \'e \textbf{sobrejetora} se para todo $y \in B$, existe $x \in A$ tal que $f(x) = y$.
+		
 		\item Dizemos que $f$ e \textbf{bijetora} se $f$ for \textbf{injetora} e \textbf{sobrejetora} simultaneamente.
 	\end{enumerate}
 \end{definicao}
@@ -63,49 +75,49 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e ser\'a denotado p
 	Verifique se as seguintes fun\c{c}\~oes s\~ao injetoras ou sobrejetoras:
 	\begin{enumerate}[label={\arabic*})]
 		\item $f : \z \to \z$ dada por $f(x) = 3x + 1$
-		\begin{solucao}
-			De fato, dados $x_1$, $x_2 \in \z$ tais que $f(x_1) = f(x_2)$ temos
-			\begin{align*}
-				f(x_1) &= f(x_2)\\
-				3x_1 + 1 &= 3x_2 + 1\\
-				3x_1 &= 3x_2\\
-				3(x_1 - x_2) &= 0.
-			\end{align*}
-			Assim $x_1 - x_2 = 0$, isto \'e, $x_1 = x_2$. Logo $f$ \'e injetora.
+			\begin{solucao}
+				De fato, dados $x_1$, $x_2 \in \z$ tais que $f(x_1) = f(x_2)$ temos
+				\begin{align*}
+					f(x_1) &= f(x_2)\\
+					3x_1 + 1 &= 3x_2 + 1\\
+					3x_1 &= 3x_2\\
+					3(x_1 - x_2) &= 0.
+				\end{align*}
+				Assim $x_1 - x_2 = 0$, isto \'e, $x_1 = x_2$. Logo $f$ \'e injetora.
 
-			Para determinar se $f$ \'e sobrejetora seja $y \in \z$. Precisamos determinar se \'e poss{\'\i}vel encontrar algum $x \in \z$ tal que $f(x) = y$. Ou seja, precisamos saber se a equa\c{c}\~ao $3x + 1 = y$ tem solu\c{c}\~ao em $\z$ para qualquer valor de $y$.
+				Para determinar se $f$ \'e sobrejetora seja $y \in \z$. Precisamos determinar se \'e poss{\'\i}vel encontrar algum $x \in \z$ tal que $f(x) = y$. Ou seja, precisamos saber se a equa\c{c}\~ao $3x + 1 = y$ tem solu\c{c}\~ao em $\z$ para qualquer valor de $y$.
 
-			Se tomarmos $y = 2$ temos
-			\begin{align*}
-				3x + 1 &= 2\\
-				3x = 1
-			\end{align*}
-			e essa \'ultima equa\c{c}\~ao n\~ao possui solu\c{c}\~ao em $\z$. Logo para $y = 2$ \textbf{n\~ao} existe $x \in \z$ de modo que $f(x) = 2$. Logo $f$ n\~ao \'e sobrejetora.
-		\end{solucao}
+				Se tomarmos $y = 2$ temos
+				\begin{align*}
+					3x + 1 &= 2\\
+					3x = 1
+				\end{align*}
+				e essa \'ultima equa\c{c}\~ao n\~ao possui solu\c{c}\~ao em $\z$. Logo para $y = 2$ \textbf{n\~ao} existe $x \in \z$ de modo que $f(x) = 2$. Logo $f$ n\~ao \'e sobrejetora.
+			\end{solucao}
 
 		\item $g : \rac \to \rac$ dada por $f(x) = 3x + 1$
-		\begin{solucao}
-			A prova que $g$ \'e injetora \'e id\^entica ao caso anterior.
+			\begin{solucao}
+				A prova que $g$ \'e injetora \'e id\^entica ao caso anterior.
 
-			Para determinar se $g$ \'e sobrejetora seja $y \in \rac$. Precisamos determinar se \'e poss{\'\i}vel encontrar algum $x \in \rac$ tal que $g(x) = y$. Ou seja, precisamos saber se a equa\c{c}\~ao $3x + 1 = y$ tem solu\c{c}\~ao em $\rac$ para qualquer valor de $y$. Mas
-			\begin{align*}
-				&3x + 1 = y\\
-				&3x = y - 1\\
-				&x = \dfrac{y - 1}{3} \in \rac
-			\end{align*}
-			para qualquer valor de $y \in \rac$. Assim dado $y \in \rac$ tome $x = (y - 1)/3 \in \rac$. Da{\'\i}
-			\[
-				g(x) = g\left(\dfrac{y - 1}{3}\right) = 3\left(\dfrac{y - 1}{3}\right) + 1 = y - 1 + 1 = y. 
-			\]
-			Logo $g$ \'e sobrejetora.
-		\end{solucao}
+				Para determinar se $g$ \'e sobrejetora seja $y \in \rac$. Precisamos determinar se \'e poss{\'\i}vel encontrar algum $x \in \rac$ tal que $g(x) = y$. Ou seja, precisamos saber se a equa\c{c}\~ao $3x + 1 = y$ tem solu\c{c}\~ao em $\rac$ para qualquer valor de $y$. Mas
+				\begin{align*}
+					&3x + 1 = y\\
+					&3x = y - 1\\
+					&x = \dfrac{y - 1}{3} \in \rac
+				\end{align*}
+				para qualquer valor de $y \in \rac$. Assim dado $y \in \rac$ tome $x = (y - 1)/3 \in \rac$. Da{\'\i}
+				\[
+					g(x) = g\left(\dfrac{y - 1}{3}\right) = 3\left(\dfrac{y - 1}{3}\right) + 1 = y - 1 + 1 = y. 
+				\]
+				Logo $g$ \'e sobrejetora.
+			\end{solucao}
 		
 		\item A fun\c{c}\~ao $h :\real \to \real$ dada por $h(x) = x^2$
-		\begin{solucao}
-			A fun\c{c}\~ao $h$ n\~ao \'e injetora pois, por exemplo, $h(-1) = 1 = h(1)$ e $1\neq -1$.
+			\begin{solucao}
+				A fun\c{c}\~ao $h$ n\~ao \'e injetora pois, por exemplo, $h(-1) = 1 = h(1)$ e $1\neq -1$.
 
-			A fun\c{c}\~ao $h$ n\~ao \'e sobrejetora pois, por exemplo, para $y = -1$ \textbf{n\~ao} existe $x\in\mathbb{R}$ tal que $h(x) = -1$.
-		\end{solucao}
+				A fun\c{c}\~ao $h$ n\~ao \'e sobrejetora pois, por exemplo, para $y = -1$ \textbf{n\~ao} existe $x\in\mathbb{R}$ tal que $h(x) = -1$.
+			\end{solucao}
 		\end{enumerate}
 \end{exemplos}
 
