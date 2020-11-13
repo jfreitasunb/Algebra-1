@@ -1267,29 +1267,29 @@ Seja $G = [a]$ um grupo c{\'\i}clico. Dois casos podem ocorrer:
 
 \textbf{Caso 1:} $a^r \ne a^s$ sempre que $r \ne s$.
 
-Um exemplo desse caso é o grupo cíclico $G = [3]$ no grupo multiplicativo $(\rac^*, \cdot)$. Aqui, para todos $r \ne s$ temos $3^r \ne 3^s$. Além disso, é imediato verificar que a função
+Um exemplo desse caso \'e o grupo c{\'\i}clico $G = [3]$ no grupo multiplicativo $(\rac^*, \cdot)$. Aqui, para todos $r \ne s$ temos $3^r \ne 3^s$. Al\'em disso, \'e imediato verificar que a fun\c{c}\~ao
 \begin{align*}
 	f &: \z \to G\\
 	f(x) &= 3^x
 \end{align*}
-é um isomorfimo de grupos. Assim $\z \cong G$.
+\'e um isomorfimo de grupos. Assim $\z \cong G$.
 
-De modo geral temos a seguinte proposição:
+De modo geral temos a seguinte proposi\c{c}\~ao:
 
 \begin{proposicao}
     Se $G = [a]$ \'e um grupo c{\'\i}clico que cumpre a condi\c{c}\~ao do \textbf{Caso 1}, ent\~ao a fun\c{c}\~ao $f : \z \to G$ por $f(r) = a^r$ \'e um isomorfimo de grupos. Ou seja, $G \cong \z$.
 \end{proposicao}
 \begin{prova}
-	Basta verificar que a função $f : \real \to G$ dada por $f(x) = a^x$ é um isomorfimo de grupos.
+	Basta verificar que a fun\c{c}\~ao $f : \real \to G$ dada por $f(x) = a^x$ \'e um isomorfimo de grupos.
 \end{prova}
 
 \begin{observacao}
-	Como a função da proposição anterior é uma bijeção, segue então que os conjuntos $\z$ e $G = [a]$ têm a mesma cardinalidade. Assim os grupos que satisfazem o \textbf{Caso 1} são todos infinitos. Por esse motivo eles são chamados de \textbf{grupos cíclicos infinitos}.
+	Como a fun\c{c}\~ao da proposi\c{c}\~ao anterior \'e uma bije\c{c}\~ao, segue ent\~ao que os conjuntos $\z$ e $G = [a]$ t\^em a mesma cardinalidade. Assim os grupos que satisfazem o \textbf{Caso 1} s\~ao todos infinitos. Por esse motivo eles s\~ao chamados de \textbf{grupos c{\'\i}clicos infinitos}.
 \end{observacao}
 
 \textbf{Caso 2:} $a^r = a^s$ para algum par de inteiros distintos, $r$ e $s$.
 
-Um exemplo desse caso é considerar o grupo $G = [\overline{2}]$ no grupo aditivo $\z_6$. Nesse caso
+Um exemplo desse caso \'e considerar o grupo $G = [\overline{2}]$ no grupo aditivo $\z_6$. Nesse caso
 \begin{align*}
 	G = [\overline{2}] = \{k \cdot \overline{2} \mid k \in \z\}.
 \end{align*}
@@ -1312,11 +1312,11 @@ Aqui temos
     \]
 \end{proposicao}
 \begin{prova}
-	Como $a^r = a^s$ para $r$ e $s$ distintos podemos supor sem nenhum prejuízo que $r > s$. Então $r - s > 0$ e
+	Como $a^r = a^s$ para $r$ e $s$ distintos podemos supor sem nenhum preju{\'\i}zo que $r > s$. Ent\~ao $r - s > 0$ e
 	\begin{align*}
 		a^{r - s} &= a^ra^{-1} = a^r(a^s)^{-1} = a^r(a^r)^{-1} = e.
 	\end{align*}
-	Logo existem potências estritamente positivas de $a$ iguais ao elemento neutro de $G$. Seja $m$ o menor inteiro positivo tal que
+	Logo existem pot\^encias estritamente positivas de $a$ iguais ao elemento neutro de $G$. Seja $m$ o menor inteiro positivo tal que
 	\begin{align}\label{ordem_elemento_ciclico}
 		a^m = e.
 	\end{align}
@@ -1330,38 +1330,38 @@ Aqui temos
 		&\vdots\\
 		a^{m + m} &= e
 	\end{align*}
-	ou seja, a partir da potência $m$ os valores começam a se repetir.
+	ou seja, a partir da pot\^encia $m$ os valores come\c{c}am a se repetir.
 
-	Suponha que $a^i = a^j$ com $0 \le i < j < m$. Daí $0 < j - i < m$ e
+	Suponha que $a^i = a^j$ com $0 \le i < j < m$. Da{\'\i} $0 < j - i < m$ e
 	\begin{align*}
 		a^{j -  i} &= a^ja^{-1} = a^j(a^i)^{-1} = a^j(a^j)^{-1} = e
 	\end{align*}
-	Mas isso contradiz a escolha de $m$. Logo nas potências
+	Mas isso contradiz a escolha de $m$. Logo nas pot\^encias
 	\[
 		a^0,\ a^1,\ a^2, \dots, a^{m - 1}
 	\]
-	não há repetições de elementos. Assim $a^l \ne e$ para todo $0 < l < m$, o que prova (ii).
+	n\~ao h\'a repeti\c{c}\~oes de elementos. Assim $a^l \ne e$ para todo $0 < l < m$, o que prova (ii).
 
-	Agora seja $x \in G = [a]$. Então $x = a^t$ para algum $t \in \z$. Efetuando a divisão inteira de $t$ por $m$ obtemos
+	Agora seja $x \in G = [a]$. Ent\~ao $x = a^t$ para algum $t \in \z$. Efetuando a divis\~ao inteira de $t$ por $m$ obtemos
 	\[
 		t = qm + r
 	\]
-	com $0 \le r < m$. Daí
+	com $0 \le r < m$. Da{\'\i}
 	\begin{align*}
 		a^t = a^{qm + r} = a^{qm}a^r = (a^m)^qa^r = e^qa^r = a^r
 	\end{align*}
-	e como os possíveis valores de $r$ são 0, 1, 2, \dots, m-1 então $a^t \in \{a^0, a^1, a^2, \dots, a^{m - 1}\}$. Logo $[a] \subseteq \{a^0, a^1, a^2, \dots, a^{m - 1}\}$ e como $\{a^0, a^1, a^2, \dots, a^{m - 1}\} \subset [a]$ segue que
+	e como os poss{\'\i}veis valores de $r$ s\~ao 0, 1, 2, \dots, m-1 ent\~ao $a^t \in \{a^0, a^1, a^2, \dots, a^{m - 1}\}$. Logo $[a] \subseteq \{a^0, a^1, a^2, \dots, a^{m - 1}\}$ e como $\{a^0, a^1, a^2, \dots, a^{m - 1}\} \subset [a]$ segue que
 	\[
 		G = [a] = \{a^0, a^1, a^2, \dots, a^{m - 1}\}
 	\]
-	e então $|G| = m$, o que completa a demonstração.
+	e ent\~ao $|G| = m$, o que completa a demonstra\c{c}\~ao.
 \end{prova}
 
 \begin{corolario}
     Seja $G = [a]$ um grupo c{\'\i}clico de ordem finita igual a $m$. Ent\~ao a fun\c{c}\~ao $f : \z_m \to G$ dada por $f(\overline{x}) = a^x$ \'e um isomorfimo de grupos.
 \end{corolario}
 \begin{prova}
-	Basta mostrar que a função $f : \z_m \to G$ dada por $f(\overline{x}) = a^x$ é um isomorfimo de grupos.
+	Basta mostrar que a fun\c{c}\~ao $f : \z_m \to G$ dada por $f(\overline{x}) = a^x$ \'e um isomorfimo de grupos.
 \end{prova}
 % section isomorfimos_de_grupos (end)
 
