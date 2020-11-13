@@ -1000,26 +1000,80 @@ De modo geral temos a seguinte proposição:
 
 \textbf{Caso 2:} $a^r = a^s$ para algum par de inteiros distintos, $r$ e $s$.
 
-\begin{exemplo}
-	asdfasdfaf
-\end{exemplo}
+Um exemplo desse caso é considerar o grupo $G = [\overline{2}]$ no grupo aditivo $\z_6$. Nesse caso
+\begin{align*}
+	G = [\overline{2}] = \{k \cdot \overline{2} \mid k \in \z\}.
+\end{align*}
+
+Aqui temos
+\begin{align*}
+	6\cdot\overline{2} = 12\cdot \overline{2}.
+\end{align*}
 
 \begin{proposicao}
     Seja $G = [a]$ um grupo c{\'\i}clico que cumpre a condi\c{c}\~ao do \textbf{Caso 2}. Ent\~ao existe um inteiro $m > 0$ tal que
     \begin{enumerate}
         \item[i)] $a^m = e$
 
-        \item[ii)] $a^r \ne e$, sempre que $0 < r < m$.
+        \item[ii)] $a^l \ne e$, sempre que $0 < l < m$.
     \end{enumerate}
     Nesse caso, a ordem do grupo $G$ \'e $m$ e
     \[
         G = [a] = \{e, a, a^2, \cdots, a^{m - 1}\}.
     \]
 \end{proposicao}
+\begin{prova}
+	Como $a^r = a^s$ para $r$ e $s$ distintos podemos supor sem nenhum prejuízo que $r > s$. Então $r - s > 0$ e
+	\begin{align*}
+		a^{r - s} &= a^ra^{-1} = a^r(a^s)^{-1} = a^r(a^r)^{-1} = e.
+	\end{align*}
+	Logo existem potências estritamente positivas de $a$ iguais ao elemento neutro de $G$. Seja $m$ o menor inteiro positivo tal que
+	\begin{align}\label{ordem_elemento_ciclico}
+		a^m = e.
+	\end{align}
+	Com isso provamos o item (i).
+
+	Agora, observe que
+	\begin{align*}
+		a^m &= e\\
+		a^{m + 1} &= a\\
+		a^{m + 2} & a^2\\
+		&\vdots\\
+		a^{m + m} &= e
+	\end{align*}
+	ou seja, a partir da potência $m$ os valores começam a se repetir.
+
+	Suponha que $a^i = a^j$ com $0 \le i < j < m$. Daí $0 < j - i < m$ e
+	\begin{align*}
+		a^{j -  i} &= a^ja^{-1} = a^j(a^i)^{-1} = a^j(a^j)^{-1} = e
+	\end{align*}
+	Mas isso contradiz a escolha de $m$. Logo nas potências
+	\[
+		a^0,\ a^1,\ a^2, \dots, a^{m - 1}
+	\]
+	não há repetições de elementos. Assim $a^l \ne e$ para todo $0 < l < m$, o que prova (ii).
+
+	Agora seja $x \in G = [a]$. Então $x = a^t$ para algum $t \in \z$. Efetuando a divisão inteira de $t$ por $m$ obtemos
+	\[
+		t = qm + r
+	\]
+	com $0 \le r < m$. Daí
+	\begin{align*}
+		a^t = a^{qm + r} = a^{qm}a^r = (a^m)^qa^r = e^qa^r = a^r
+	\end{align*}
+	e como os possíveis valores de $r$ são 0, 1, 2, \dots, m-1 então $a^t \in \{a^0, a^1, a^2, \dots, a^{m - 1}\}$. Logo $[a] \subseteq \{a^0, a^1, a^2, \dots, a^{m - 1}\}$ e como $\{a^0, a^1, a^2, \dots, a^{m - 1}\} \subset [a]$ segue que
+	\[
+		G = [a] = \{a^0, a^1, a^2, \dots, a^{m - 1}\}
+	\]
+	e então $|G| = m$, o que completa a demonstração.
+\end{prova}
 
 \begin{corolario}
     Seja $G = [a]$ um grupo c{\'\i}clico de ordem finita igual a $m$. Ent\~ao a fun\c{c}\~ao $f : \z_m \to G$ dada por $f(\overline{x}) = a^x$ \'e um isomorfimo de grupos.
 \end{corolario}
+\begin{prova}
+	Basta mostrar que a função $f : \z_m \to G$ dada por $f(\overline{x}) = a^x$ é um isomorfimo de grupos.
+\end{prova}
 
 \section{Homomorfismo de Grupos} % (fold)
 \label{sec:homomorfismo_de_grupos}
