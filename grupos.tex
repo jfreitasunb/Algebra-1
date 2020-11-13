@@ -1218,26 +1218,18 @@ Temos
 \end{table}
 
 Defina $\sigma : G \to S_2$ por
-\begin{center}
-    \begin{tabular}{c}
-        $\sigma(1) = id$\\
-        \vspace{.3cm}\\
-        $\sigma(-1) = f$.
-    \end{tabular}
-\end{center}
+\begin{align*}
+    \sigma(1) &= id\\
+    \sigma(-1) &= f.
+\end{align*}
 
 Da defini\c{c}\~ao de $\sigma$ \'e f\'acil ver que essa fun\c{c}\~ao \'e bijetora. Al\'em disso,
-\begin{center}
-    \begin{tabular}{c}
-        $\sigma(1) \circ \sigma(1) = id \circ id = id = \sigma(1) = \sigma(1 \cdot 1)$\\
-        \\
-        $\sigma(1) \circ \sigma(-1) = id \circ f = f = \sigma(-1) = \sigma(1 \cdot -1)$\\
-        \\
-        $\sigma(-1) \circ \sigma(1) = f \circ id = f = \sigma(-1) = \sigma(-1 \cdot 1)$\\
-        \\
-        $\sigma(-1) \circ \sigma(-1) = f \circ f = id = \sigma(1) = \sigma(-1 \cdot -1)$\\
-    \end{tabular}
-\end{center}
+\begin{align*}
+    \sigma(1) \circ \sigma(1) &= id \circ id = id = \sigma(1) = \sigma(1 \cdot 1)\\
+    \sigma(1) \circ \sigma(-1) &= id \circ f = f = \sigma(-1) = \sigma(1 \cdot -1)\\
+    \sigma(-1) \circ \sigma(1) &= f \circ id = f = \sigma(-1) = \sigma(-1 \cdot 1)\\
+    \sigma(-1) \circ \sigma(-1) &= f \circ f = id = \sigma(1) = \sigma(-1 \cdot -1)
+\end{align*}
 ou seja, $\sigma(x\cdot y) = \sigma(x) \circ \sigma(y)$ para todos $x$, $y \in G$. Assim fun\c{c}\~ao $\sigma$ \'e um homomorfismo de $G$ em $S_2$.
 
 \vspace{.3cm}
@@ -1278,7 +1270,7 @@ Seja $G = [a]$ um grupo c{\'\i}clico. Dois casos podem ocorrer:
 Um exemplo desse caso é o grupo cíclico $G = [3]$ no grupo multiplicativo $(\rac^*, \cdot)$. Aqui, para todos $r \ne s$ temos $3^r \ne 3^s$. Além disso, é imediato verificar que a função
 \begin{align*}
 	f &: \z \to G\\
-	f(x) = 3^x
+	f(x) &= 3^x
 \end{align*}
 é um isomorfimo de grupos. Assim $\z \cong G$.
 
