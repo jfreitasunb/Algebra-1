@@ -1,0 +1,37 @@
+%!TEX program = xelatex
+%!TEX encoding = ISO-8859-1
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\numerosemana{14}
+
+\documentclass[12pt]{exam}
+
+\input{../configuracoes/pacotes}
+\input{../configuracoes/configuracoes_paginas}
+\input{../configuracoes/comandos_personalizados}
+
+\begin{document}
+
+\begin{center}
+    
+    {\Large\bf \disciplina\ - Turma \turma\ -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
+        Lista de Exerc{\'\i}cios -- Semana \numerosemana}\\ \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+    \end{center}
+    \hrule
+
+    \vspace{.6cm}
+
+    \questao{} Se $G = [a]$ \'e um grupo c{\'\i}clico tal que
+    \[
+        a^r \ne a^s \mbox{ sempre que } r \ne s.
+    \]
+    Mostre que a fun\c{c}\~ao $f : \z \to G$ por $f(r) = a^r$ \'e um isomorfimo de grupos.
+    
+    \vspace{.3cm}
+
+    \questao{} Seja $G = [a]$ um grupo c{\'\i}clico de ordem finita igual a $m$. Mostre que a fun\c{c}\~ao $f : \z_m \to G$ dada por $f(\overline{x}) = a^x$ \'e um isomorfimo de grupos.
+
+    
+\end{document}
