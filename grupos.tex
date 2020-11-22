@@ -1480,6 +1480,89 @@ Como $G$ \'e associativo, ent\~ao a \textbf{multiplica\c{c}\~ao de subconjuntos}
     \end{enumerate}
 \end{exemplos}
 
+\begin{definicao}
+    Um subgrupo $N$ de um grupo $G$ \'e chamado de \textbf{subgrupo normal} (ou \textbf{invariante}) se, para todo $x \in G$, vale
+    \[
+        xN = Nx.
+    \]
+    Denotaremos esse fato escrevendo $H \unlhd G$.
+\end{definicao}
+
+\begin{exemplos}
+    \begin{enumerate}[label=({\arabic*})]
+        \item Seja $G = S_3$. J\'a vimos que se tomamos
+        \[
+            Id = \begin{pmatrix}
+                1 & 2 & 3\\
+                1 & 2 & 3
+            \end{pmatrix}, \quad
+            f = \begin{pmatrix}
+                1 & 2 & 3\\
+                2 & 3 & 1
+            \end{pmatrix} \quad \mbox{e}\quad
+            g = \begin{pmatrix}
+                1 & 2 & 3\\
+                1 & 3 & 2
+            \end{pmatrix}
+        \]
+        ent\~ao
+        \[
+            S_3 = \{Id, f, f^2, g, gf, gf^2\}.
+        \]
+        Considere o subgrupo $H = [\ f\ ] = \{Id, f, f^2\}$. Ent\~ao $H$ \'e um subgrupo normal de $G$.
+        \begin{solucao}
+        	De fato,
+        	\begin{align*}
+        		IdH &= H = HId\\
+        		fH &= \{f, f^2, Id\} = Hf\\
+        		f^2H &= \{f^2, Id, f\} = Hf^2\\
+        		gH &= \{g, gf, gf^2\} = Hg\\
+        		(gf)H &= \{gf, gf^2, g\} = H(gf)\\
+        		(gf^2)H &= \{gf^2, g, gf\} = H(gf^2).
+        	\end{align*}
+
+        	Portanto
+        	\[
+        		xH = Hx
+        	\]
+        	para todo $x \in S_3$. Logo $H$ é um subgrupo normal de $S_3$.
+        \end{solucao}
+
+        \item Se $G$ \'e um grupo abeliano, ent\~ao todo subgrupo de $G$ \'e normal.
+        \begin{solucao}
+        	De fato, como $G$ é abeliano então
+        	\[
+        		xy = yx
+        	\]
+        	para todos $x$, $y \in G$. Daí se $N$ é um sugrupo de $G$, então para todo $x \in G$ temos
+        	\[
+        		xN = \{xt \mid t \in N\} = \{tx \mid t \in N\} = Nx.
+        	\]
+        	Portanto $N$ é um subgrupo normal de $G$.
+        \end{solucao}
+
+        \item Seja $H$ um subgrupo de $G$ tal que $H$ possui somente duas classes laterais. Ent\~ao $H$ \'e um subgrupo normal de $G$.
+        \begin{solucao}
+        	De fato, como as classes laterais à direita são duas: $H$ e $xH$, onde $x \notin H$. Então $xH = C_G(H)$ pois $G = H \cup xH$ e $H \cap xH = \emptyset$.
+
+        	Agora as classes laterais à esquerda também são somente duas: $H$ e $Hx$, onde $x \notin H$. Então $Hx = C_G(H)$ pois $G = H \cup Hx$ e $H \cap Hx = \emptyset$.
+
+        	Portanto $xH = Hx$ para todo $x \in G$, isto é, $H$ é um subgrupo normal de $G$.
+        \end{solucao}
+    \end{enumerate}
+\end{exemplos}
+
+\begin{proposicao}
+    Seja $G$ um grupo. Se $H$ e $L$ s\~ao subgrupos normais de $G$, ent\~ao $H \cap L$ \'e um subgrupo normal de $G$.
+\end{proposicao}
+
+\begin{proposicao}
+    Seja $N$ um subgrupo normal do grupo $G$. Ent\~ao, para quaisquer $a$, $b \in G$ temos
+    \[
+        (aN)(bN) = (ab)N.
+    \]
+\end{proposicao}
+
 % section subgrupos_normal (end)
 
 \section{Teorema de Lagrange}
