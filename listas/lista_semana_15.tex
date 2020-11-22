@@ -1,0 +1,66 @@
+%!TEX program = xelatex
+%!TEX encoding = ISO-8859-1
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\numerosemana{15}
+
+\documentclass[12pt]{exam}
+
+\input{../configuracoes/pacotes}
+\input{../configuracoes/configuracoes_paginas}
+\input{../configuracoes/comandos_personalizados}
+
+\begin{document}
+
+\begin{center}
+    
+    {\Large\bf \disciplina\ - Turma \turma\ -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
+        Lista de Exerc{\'\i}cios -- Semana \numerosemana}\\ \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+    \end{center}
+    \hrule
+
+    \vspace{.6cm}
+
+    \questao{} Seja $G$ um grupo multiplicativo. Se $A \subset G$ e $A \ne \emptyset$, seja $A^{-1} = \{x^{-1} \mid x \in A\}$. Mostre que:
+    \begin{enumerate}[label=({\alph*})]
+      \item $(A^{-1})^{-1} = A$;
+
+      \item Para todos $A$, $B \subset G$, $A \ne \emptyset$, $B \ne \emptyset$, tem-se que $(AB)^{-1} = B^{-1}A^{-1}$.
+    \end{enumerate}
+    
+    \vspace{.3cm}
+
+    \questao{} Sejam $G$ um grupo, $N$ um subgrupo normal e $H$ um subgrupo de $G$. Mostre que o subgrupo $H \cap N$ é normal em $H$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $G$ um grupo e $N$ um subgrupo de $G$. Mostre que $N$ é normal se, e somente se, $x^{-1}Nx = N$, para todo $x \in G$.
+    \noindent\textit{Observação: $x^{-1}Nx = \{x^{-1}nx \mid n \in N\}$}.
+
+    \vspace{.3cm}
+
+    \questao{} Mostre que, se $M$ e $N$ são subgrupos normais do grupo $G$ e $M \cap N = \{e\}$, então $xy = yx$ para quaisquer $x \in M$ e $y \in N$.
+    \noindent \textit{Sugestão: Mostre que $(xy)(yx)^{-1} = e$.}
+
+    \vspace{.3cm}
+
+    \questao{} Seja $G$   um grupo multiplicativo. Se $a \in G$, mostre que $H = \{x \in G \mid xa = ax\}$ é um subgrupo normal de $G$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f : G \to L$ um homomorfismo sobrejetor de grupos. Se $H$ é um subgrupo normal de $G$, mostre que $f(H)$ é um subgrupo normal de $L$.
+  
+    \vspace{.3cm}
+
+    \questao{} Sejam $H$ e $K$ subgrupos normais de um grupo $G$, tais que $H \cap K = \{e\}$. Se $h_1$, $h_2 \in H$ e $k_1$, $k_2 \in K$ são tais que
+    \[
+      h_1k_1 = h_2k_2,
+    \]
+    prove que $h_1 = h_2$ e $k_1 = k_2$.
+
+    \vspace{.3cm}
+
+    \questao{} Determine todos os subgrupos não triviais do grupo aditivo $\z_8$. Para cada subgrupo $H$ encontrado, construa a tabela do grupo quociente $\z_6/H$.
+\end{document}
