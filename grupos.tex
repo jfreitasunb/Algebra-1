@@ -1864,6 +1864,31 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
 \begin{lema}
     Se $f : G \to L$ \'e um homomorfismo de grupos, ent\~ao $N = \ker(f)$ \'e um subgrupo normal de $G$ e, portanto, $G/N$ \'e um grupo.
 \end{lema}
+\begin{prova}
+	Precisamos mostrar que
+	\[
+		xN = Nx
+	\]
+	para todo $x \in G$.
+
+	Seja $y \in xN$. Daí $y = xh$, com $h \in N = \ker(f)$. Agora
+	\begin{align*}
+		y = xh = xh(x^{-1}x) = (xhx^{-1})x.
+	\end{align*}
+	Mas
+	\begin{align*}
+		f(xhx^{-1}) = f(x)f(h)[f(x)]^{-1}
+	\end{align*}
+	e como $h \in N = \ker(f)$ segue que $f(xhx^{-1}) = e_L$. Logo $xhx^{-1} \in N = \ker(f)$ e então $y = (xhx^{-1})x \in Nx$. Assim $xN \subseteq Nx$.
+
+	Agora seja $z \in Nx$. Daí $z = ln$ com $l \in N$ e com isso
+	\begin{align*}
+		z = lx = (xx^{-1})ln = x(x^{-1}lx)
+	\end{align*}
+	e de modo análogo ao caso anterior mostra-se que $x^{-1}lx \in N = \ker(f)$. Assim $z = x(x^{-1}lx) \in xN$. Logo $Nx \subseteq xN$.
+
+	Portanto $xN = Nx$ para todo $x \in G$. Com isso $N = \ker(f)$ é um subgrupo normal de $G$, como queríamos.
+\end{prova}
 
 \begin{teorema}[Teorema do Homomorfismo para Grupos]
     Seja $f : G \to L$ um homomorfismo sobrejetor de grupos. Se $N = \ker(f)$, ent\~ao o grupo quociente $G/N$ \'e isomorfo ao grupo $L$.
