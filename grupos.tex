@@ -1368,7 +1368,7 @@ Aqui temos
 \section{Subgrupo Normal} % (fold)
 \label{sec:subgrupo_normal}
 
-No grupo $S_3$ considere as permutações
+No grupo $S_3$ considere as permuta\c{c}\~oes
 \[
 	f = \begin{pmatrix}
 		1 & 2 & 3\\
@@ -1385,7 +1385,7 @@ Assim
 	S_3 = \{Id, f, f^2, g, gf, gf^2\}.
 \]
 
-Seja $H = [g] = \{Id, g\}$. As classes laterais de $H$ são
+Seja $H = [g] = \{Id, g\}$. As classes laterais de $H$ s\~ao
 \begin{align*}
 	IdH &= H\\
 	fH &= \{f, fg\} = \{f, gf^2\} = (gf^2)H\\
@@ -1395,13 +1395,13 @@ Logo
 \[
 	S_3/H = \{H, fH, f^2H\}.
 \]
-Defina em $S_3/H$ a operação
+Defina em $S_3/H$ a opera\c{c}\~ao
 \[
 	(xH)(yH) = (xy)H,
 \]
 onde $xH$, $yH \in S_3/H$.
 
-Vamos verificar se essa operação está bem definida. Para isso sejam
+Vamos verificar se essa opera\c{c}\~ao est\'a bem definida. Para isso sejam
 \begin{align*}
 	fH &= (gf^2)H\\
 	f^2H &= (gf)H.
@@ -1418,13 +1418,13 @@ Com isso
 \[
 	(fH)(f^2H) \ne [(gf^2)H][(gf)H],
 \]
-ou seja essa operação não está bem definida em $S_3/H$. Isto ocorre pois
+ou seja essa opera\c{c}\~ao n\~ao est\'a bem definida em $S_3/H$. Isto ocorre pois
 \[
 	fH = \{f, gf^2\} \ne \{f, gf\} = Hf.
 \]
-Portanto nem sempre é possível transformar o conjunto $S_3/H$ em um grupo. Para tal é preciso introduzir um novo conceito.
+Portanto nem sempre \'e poss{\'\i}vel transformar o conjunto $S_3/H$ em um grupo. Para tal \'e preciso introduzir um novo conceito.
 
-Sejam $(G, \cdot)$ um grupo, denotado multiplicamente para fins de simplificação, e $A$ e $B$ subconjuntos de $G$. Vamos indicar por
+Sejam $(G, \cdot)$ um grupo, denotado multiplicamente para fins de simplifica\c{c}\~ao, e $A$ e $B$ subconjuntos de $G$. Vamos indicar por
 \[
     AB
 \]
@@ -1525,29 +1525,29 @@ Como $G$ \'e associativo, ent\~ao a \textbf{multiplica\c{c}\~ao de subconjuntos}
         	\[
         		xH = Hx
         	\]
-        	para todo $x \in S_3$. Logo $H$ é um subgrupo normal de $S_3$.
+        	para todo $x \in S_3$. Logo $H$ \'e um subgrupo normal de $S_3$.
         \end{solucao}
 
         \item Se $G$ \'e um grupo abeliano, ent\~ao todo subgrupo de $G$ \'e normal.
         \begin{solucao}
-        	De fato, como $G$ é abeliano então
+        	De fato, como $G$ \'e abeliano ent\~ao
         	\[
         		xy = yx
         	\]
-        	para todos $x$, $y \in G$. Daí se $N$ é um sugrupo de $G$, então para todo $x \in G$ temos
+        	para todos $x$, $y \in G$. Da{\'\i} se $N$ \'e um sugrupo de $G$, ent\~ao para todo $x \in G$ temos
         	\[
         		xN = \{xt \mid t \in N\} = \{tx \mid t \in N\} = Nx.
         	\]
-        	Portanto $N$ é um subgrupo normal de $G$.
+        	Portanto $N$ \'e um subgrupo normal de $G$.
         \end{solucao}
 
         \item Seja $H$ um subgrupo de $G$ tal que $H$ possui somente duas classes laterais. Ent\~ao $H$ \'e um subgrupo normal de $G$.
         \begin{solucao}
-        	De fato, como as classes laterais à direita são duas: $H$ e $xH$, onde $x \notin H$. Então $xH = C_G(H)$ pois $G = H \cup xH$ e $H \cap xH = \emptyset$.
+        	De fato, como as classes laterais \`a direita s\~ao duas: $H$ e $xH$, onde $x \notin H$. Ent\~ao $xH = C_G(H)$ pois $G = H \cup xH$ e $H \cap xH = \emptyset$.
 
-        	Agora as classes laterais à esquerda também são somente duas: $H$ e $Hx$, onde $x \notin H$. Então $Hx = C_G(H)$ pois $G = H \cup Hx$ e $H \cap Hx = \emptyset$.
+        	Agora as classes laterais \`a esquerda tamb\'em s\~ao somente duas: $H$ e $Hx$, onde $x \notin H$. Ent\~ao $Hx = C_G(H)$ pois $G = H \cup Hx$ e $H \cap Hx = \emptyset$.
 
-        	Portanto $xH = Hx$ para todo $x \in G$, isto é, $H$ é um subgrupo normal de $G$.
+        	Portanto $xH = Hx$ para todo $x \in G$, isto \'e, $H$ \'e um subgrupo normal de $G$.
         \end{solucao}
     \end{enumerate}
 \end{exemplos}
@@ -1560,31 +1560,31 @@ Como $G$ \'e associativo, ent\~ao a \textbf{multiplica\c{c}\~ao de subconjuntos}
 	\[
 		x(H\cap L) = (H \cap L)x
 	\]
-	para todo $x \in G$. Vamos mostrar isso provando as duas inclusões.
+	para todo $x \in G$. Vamos mostrar isso provando as duas inclus\~oes.
 
 	Assim seja $x \in G$ e $y \in x(H\cap L)$. Temos
 	\[
 		y = xt
 	\]
-	com $t \in H\cap L$. Daí $y = xt$ com $t \in H$ e $t \in L$. Logo $y \in xH$ e $y \in xL$. Mas por hipótise, $H$ e $L$ são subgrupos normais, logo $y \in Hx$ e $y \in Lx$. Ou seja, existem $h_1 \in H$ e $l_1 \in L$ tais que
+	com $t \in H\cap L$. Da{\'\i} $y = xt$ com $t \in H$ e $t \in L$. Logo $y \in xH$ e $y \in xL$. Mas por hip\'otise, $H$ e $L$ s\~ao subgrupos normais, logo $y \in Hx$ e $y \in Lx$. Ou seja, existem $h_1 \in H$ e $l_1 \in L$ tais que
 	\begin{align*}
 		y &= h_1x\\
 		y &= l_1x.
 	\end{align*}
-	Donde segue que $h_1 = l_1$. Assim $y = kx$ com $k \in H\cap L$, isto é, $y \in x(H\cap L)$. Com isso obtemos que $x(H\cap L) \subseteq (H\cap L)x$.
+	Donde segue que $h_1 = l_1$. Assim $y = kx$ com $k \in H\cap L$, isto \'e, $y \in x(H\cap L)$. Com isso obtemos que $x(H\cap L) \subseteq (H\cap L)x$.
 
-	Agora seja $z \in (H\cap L)x$. Então $z = rx$ com $r \in H\cap L$. Ou seja, $z \in xH$ e $ \in Lx$. Novamente, usando a hipótese que $H$ e $L$ são subgrupos normais, obtemos que $z \in xH$ e $z \in xL$. Com isso
+	Agora seja $z \in (H\cap L)x$. Ent\~ao $z = rx$ com $r \in H\cap L$. Ou seja, $z \in xH$ e $ \in Lx$. Novamente, usando a hip\'otese que $H$ e $L$ s\~ao subgrupos normais, obtemos que $z \in xH$ e $z \in xL$. Com isso
 	\begin{align*}
 		z &= xh_2\\
 		z &= xl_2
 	\end{align*}
-	com $h_2 \in H$ e $l_2 \in L$. Assim devemos ter $h_2 = l_2$ o que nos leva à conclusão que $z = xu$ com $u \in H\cap L$. Daí $z \in x(H \cap L)$ e com isso $(H \cap L)x \subseteq x(H \cap L)$.
+	com $h_2 \in H$ e $l_2 \in L$. Assim devemos ter $h_2 = l_2$ o que nos leva \`a conclus\~ao que $z = xu$ com $u \in H\cap L$. Da{\'\i} $z \in x(H \cap L)$ e com isso $(H \cap L)x \subseteq x(H \cap L)$.
 
 	Portanto
 	\[
 		x(H \cap L) = (H \cap L)x
 	\]
-	e então $H \cap L$ é um subgrupo normal de $G$, como queríamos.
+	e ent\~ao $H \cap L$ \'e um subgrupo normal de $G$, como quer{\'\i}amos.
 \end{prova}
 
 \begin{proposicao}
@@ -1594,18 +1594,18 @@ Como $G$ \'e associativo, ent\~ao a \textbf{multiplica\c{c}\~ao de subconjuntos}
     \]
 \end{proposicao}
 \begin{prova}
-	Vamos mostrar a igualdade, provando as duas inclusões.
+	Vamos mostrar a igualdade, provando as duas inclus\~oes.
 
-	Seja $x \in (aN)(bN)$. Daí $x = \alpha\beta$ com $\alpha \in aN$ e $\beta \in bN$. Logo existem $n_1$, $n_2 \in N$ tais que
+	Seja $x \in (aN)(bN)$. Da{\'\i} $x = \alpha\beta$ com $\alpha \in aN$ e $\beta \in bN$. Logo existem $n_1$, $n_2 \in N$ tais que
 	\begin{align*}
 		\alpha &= an_1\\
 		\beta &= bn_2.
 	\end{align*}
-	Então
+	Ent\~ao
 	\begin{align*}
 		x = (an_1)(bn_2) = a(n_1b)n_2.
 	\end{align*}
-	Mas por hipótese, $N$ é um subgrupo normal de $G$ e então $bN = Nb$. Assim como $n_1b \in Nb = bN$, existe $n_3 \in N$ tal que
+	Mas por hip\'otese, $N$ \'e um subgrupo normal de $G$ e ent\~ao $bN = Nb$. Assim como $n_1b \in Nb = bN$, existe $n_3 \in N$ tal que
 	\[
 		n_1b = bn_3.
 	\]
@@ -1613,19 +1613,19 @@ Como $G$ \'e associativo, ent\~ao a \textbf{multiplica\c{c}\~ao de subconjuntos}
 	\begin{align*}
 		x &= a(n_1b)n_2 = a(bn_2)n_2 = (ab)(n3n_2) \in (ab)N
 	\end{align*}
-	e então $x \in (ab)N$, ou seja, $(aN)(bN) \subseteq (ab)N$.
+	e ent\~ao $x \in (ab)N$, ou seja, $(aN)(bN) \subseteq (ab)N$.
 
-	Agora, para a outra inclusão, seja $y \in (ab)N$. Daí
+	Agora, para a outra inclus\~ao, seja $y \in (ab)N$. Da{\'\i}
 	\begin{align*}
 		y &= (ab)n = \underbrace{(ae)}_{\in An}\underbrace{(bn)}_{\in bN},
 	\end{align*}
-	isto é, $y \in (aN)(bN)$. Logo $(ab)N \subseteq (aN)(bN)$.
+	isto \'e, $y \in (aN)(bN)$. Logo $(ab)N \subseteq (aN)(bN)$.
 
 	Portanto,
 	\[
 		(aN)(bN) = (ab)N,
 	\]
-	como queríamos.
+	como quer{\'\i}amos.
 \end{prova}
 
 Seja $N$ um subgrupo normal de um grupo $G$, onde $e$ denota o elemento neutro de $G$. Denote por
@@ -1655,27 +1655,27 @@ Mas
 	(aN)(bN) &= (ab)N\\
 	(xN)(yN) &= (xy)N
 \end{align*}
-então vamos mostrar que $(ab)N = (xy)N$.
+ent\~ao vamos mostrar que $(ab)N = (xy)N$.
 
-Seja $z \in (ab)N$. Daí
+Seja $z \in (ab)N$. Da{\'\i}
 \[
 	z = (ab)n = a(bn),\ n \in N.
 \]
-Mas, por hipótse $bN = yN$, então $yN = Ny$ assim $bn = yn_1$. Além disso, $N$ é um subgrupo normal de $G$ então $yN = Ny$ e daí $yn_1 = n_2y$. Então
+Mas, por hip\'otse $bN = yN$, ent\~ao $yN = Ny$ assim $bn = yn_1$. Al\'em disso, $N$ \'e um subgrupo normal de $G$ ent\~ao $yN = Ny$ e da{\'\i} $yn_1 = n_2y$. Ent\~ao
 \[
 	z = a(bn) = a(yn_1) = a(n_2y) = (an_2)y.
 \]
-Novamente, pela hipótese, $aN = xN$ e então podemos escrever $an_2 = xn_3$. Assim
+Novamente, pela hip\'otese, $aN = xN$ e ent\~ao podemos escrever $an_2 = xn_3$. Assim
 \[
 	z = a(bn) = a(yn_1) = a(n_2y) = (an_2)y = (xn_3)y = x(n_3y).
 \]
-Mas $N$ é um subgrupo normal, com isso $yN = Ny$ e então podemos escrever $n_3y = yn_4$. Logo
+Mas $N$ \'e um subgrupo normal, com isso $yN = Ny$ e ent\~ao podemos escrever $n_3y = yn_4$. Logo
 \[
 	z = x(n_3y) = x(yn_4) = (xy)n_4
 \]
-essa última igualdade nos diz que $z \in (xy)N$ e então $(ab)N \subseteq (xy)N$.
+essa \'ultima igualdade nos diz que $z \in (xy)N$ e ent\~ao $(ab)N \subseteq (xy)N$.
 
-Agora seja $v \in (xy)N$. Daí existe $r \in N$ tal que $v = (xy)r$. Aqui repetindo os passos do caso anterior, usando que $N$ é um subgrupo normal e que $aN = xN$ e que $bN = yN$ podemos escrever
+Agora seja $v \in (xy)N$. Da{\'\i} existe $r \in N$ tal que $v = (xy)r$. Aqui repetindo os passos do caso anterior, usando que $N$ \'e um subgrupo normal e que $aN = xN$ e que $bN = yN$ podemos escrever
 \begin{align*}
 	v = (xy)r = x(yr) = x(br_1) = x(r_2b) = (xr_2)b = (ar_3)b = a(r_3b) = (ab)r_4
 \end{align*}
@@ -1690,7 +1690,7 @@ ou seja,
 	(aN)(bN) = (ab)N = (xy)N = (xN)(yN).
 \]
 
-Além disso, a multiplicação em $G/H$ satisfaz as seguintes propriedades:
+Al\'em disso, a multiplica\c{c}\~ao em $G/H$ satisfaz as seguintes propriedades:
 
 \begin{enumerate}[label={\roman*})]
     \item $[(aN)(bN)](cN) = (an)[(bN)(cN)]$ para todos $aN$, $bN$, $cN \in G/N$;
@@ -1712,7 +1712,7 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
 
 \begin{exemplos}
     \begin{enumerate}[label={\arabic*})]
-        \item Seja $G = \{1, -1, i, -i\}$ um grupo e $N = \{1, -1\}$. Como $G$ é um grupo abeliano então $N$ é um subgrupo normal de $G$. Assim podemos definir o grupo quociente $G/N$. As classes laterais de $N$ são
+        \item Seja $G = \{1, -1, i, -i\}$ um grupo e $N = \{1, -1\}$. Como $G$ \'e um grupo abeliano ent\~ao $N$ \'e um subgrupo normal de $G$. Assim podemos definir o grupo quociente $G/N$. As classes laterais de $N$ s\~ao
         \begin{align*}
         	1N &= N\\
         	iN &= \{it \mid t \in N\} = \{i, -i\}.
@@ -1721,7 +1721,7 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
         \[
         	G/N = \{N, iN\}
         \]
-        e a operação em $G$ é dada por
+        e a opera\c{c}\~ao em $G$ \'e dada por
         \begin{center}
         	\begin{table}[htp]
         		\centering
@@ -1738,13 +1738,13 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
         	\end{table}
         \end{center}
 
-        \item Seja $G = \z_6 = \{\overline{0}, \overline{1}, \overline{2}, \overline{3}, \overline{4}, \overline{5}\}$ e $H = \{\overline{0}, \overline{3}\}$. Como $\z_6$ é abeliano, então $H$ é um subgrupo normal e com isso podemos definir o grupo quociente $\z_6/H$. As classes de equivalência de $H$ são
+        \item Seja $G = \z_6 = \{\overline{0}, \overline{1}, \overline{2}, \overline{3}, \overline{4}, \overline{5}\}$ e $H = \{\overline{0}, \overline{3}\}$. Como $\z_6$ \'e abeliano, ent\~ao $H$ \'e um subgrupo normal e com isso podemos definir o grupo quociente $\z_6/H$. As classes de equival\^encia de $H$ s\~ao
         \begin{align*}
         	\overline{0} + H &= H\\
         	\overline{1} + H &= \{\overline{1} + t \mid t \in H\} = \{\overline{1}, \overline{4}\}\\
         	\overline{2} + H &= \{\overline{2} + t \mid t \in H\} = \{\overline{2}, \overline{5}\}.
         \end{align*}
-        Daí
+        Da{\'\i}
         \[
         	\z_6/H = \{H, \overline{1} + H, \overline{2} + H\}
         \]
@@ -1787,12 +1787,12 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
                 \[
                     S_3 = \{Id, f, f^2, g, gf, gf^2\}.
                 \]
-                Considere o subgrupo $H = [\ f\ ] = \{Id, f, f^2\}$. Como $H$ possui somente duas classes laterais, que são
+                Considere o subgrupo $H = [\ f\ ] = \{Id, f, f^2\}$. Como $H$ possui somente duas classes laterais, que s\~ao
                 \begin{align*}
                 	IdH &= H\\
                 	gH &= \{g, gf, gf^2\}
                 \end{align*}
-                então $H$ é um subgrupo normal de $S_3$. Assim podemos definir o grupo quociente $S_3/H$, onde
+                ent\~ao $H$ \'e um subgrupo normal de $S_3$. Assim podemos definir o grupo quociente $S_3/H$, onde
                 \[
                 	S_3/H = \{H, gH\}.
                 \]
@@ -1822,17 +1822,17 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
     \]
 \end{proposicao}
 \begin{prova}
-	Primeiro vamos mostrar que $\mu$ é um homomorfismo de grupos. Para isso sejam $x$, $y \in G$. Daí
+	Primeiro vamos mostrar que $\mu$ \'e um homomorfismo de grupos. Para isso sejam $x$, $y \in G$. Da{\'\i}
 	\begin{align*}
 		\mu(xy) = (xy)N = (xN)(yN) = \mu(x)\mu(y).
 	\end{align*}
-	Logo $\mu$ é um homomorfismo de grupos.
+	Logo $\mu$ \'e um homomorfismo de grupos.
 
 	Agora, dada $yN \in G/N$ tome $y \in G$ e com isso
 	\[
 		\mu(y) = yN,
 	\]
-	ou seja, $\mu$ é sobrejetor.
+	ou seja, $\mu$ \'e sobrejetor.
 
 	Finalmente, mostremos que
 	\[
@@ -1842,19 +1842,19 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
 	\[
 		\mu(x) = xN = N = eN
 	\]
-	pois $N$ é subgrupo. Assim $x \in \ker(\mu)$. Logo $N \subseteq \ker(\mu)$.
+	pois $N$ \'e subgrupo. Assim $x \in \ker(\mu)$. Logo $N \subseteq \ker(\mu)$.
 
-	Por outro lado, se $t \in \ker(\mu)$ então
+	Por outro lado, se $t \in \ker(\mu)$ ent\~ao
 	\[
 		\mu(t) = eN.
 	\]
-	Mas $\mu(t) = tN$ daí devemos ter $te^{-1} \in N$, isto é, $t \in N$. Logo $\ker(\mu) \subseteq N$.
+	Mas $\mu(t) = tN$ da{\'\i} devemos ter $te^{-1} \in N$, isto \'e, $t \in N$. Logo $\ker(\mu) \subseteq N$.
 
 	Portanto
 	\[
 		\ker(\mu) = N,
 	\]
-	como queríamos.
+	como quer{\'\i}amos.
 \end{prova}
 
 \begin{definicao}
@@ -1871,7 +1871,7 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
 	\]
 	para todo $x \in G$.
 
-	Seja $y \in xN$. Daí $y = xh$, com $h \in N = \ker(f)$. Agora
+	Seja $y \in xN$. Da{\'\i} $y = xh$, com $h \in N = \ker(f)$. Agora
 	\begin{align*}
 		y = xh = xh(x^{-1}x) = (xhx^{-1})x.
 	\end{align*}
@@ -1879,15 +1879,15 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
 	\begin{align*}
 		f(xhx^{-1}) = f(x)f(h)[f(x)]^{-1}
 	\end{align*}
-	e como $h \in N = \ker(f)$ segue que $f(xhx^{-1}) = e_L$. Logo $xhx^{-1} \in N = \ker(f)$ e então $y = (xhx^{-1})x \in Nx$. Assim $xN \subseteq Nx$.
+	e como $h \in N = \ker(f)$ segue que $f(xhx^{-1}) = e_L$. Logo $xhx^{-1} \in N = \ker(f)$ e ent\~ao $y = (xhx^{-1})x \in Nx$. Assim $xN \subseteq Nx$.
 
-	Agora seja $z \in Nx$. Daí $z = ln$ com $l \in N$ e com isso
+	Agora seja $z \in Nx$. Da{\'\i} $z = ln$ com $l \in N$ e com isso
 	\begin{align*}
 		z = lx = (xx^{-1})ln = x(x^{-1}lx)
 	\end{align*}
-	e de modo análogo ao caso anterior mostra-se que $x^{-1}lx \in N = \ker(f)$. Assim $z = x(x^{-1}lx) \in xN$. Logo $Nx \subseteq xN$.
+	e de modo an\'alogo ao caso anterior mostra-se que $x^{-1}lx \in N = \ker(f)$. Assim $z = x(x^{-1}lx) \in xN$. Logo $Nx \subseteq xN$.
 
-	Portanto $xN = Nx$ para todo $x \in G$. Com isso $N = \ker(f)$ é um subgrupo normal de $G$, como queríamos.
+	Portanto $xN = Nx$ para todo $x \in G$. Com isso $N = \ker(f)$ \'e um subgrupo normal de $G$, como quer{\'\i}amos.
 \end{prova}
 
 \begin{teorema}[Teorema do Homomorfismo para Grupos]\label{primeiro_teorema_homomorfismo}
@@ -1898,31 +1898,31 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
 	\[
 		G/N = \{aN \mid a \in N\}
 	\]
-	e como $f : G \to L$ é sobrejetora então
+	e como $f : G \to L$ \'e sobrejetora ent\~ao
 	\[
 		L = \{f(a) \mid a \in G\}.
 	\]
-	Assim vamos definir a regra $\sigma : G/N \to L$ por $\sigma(aN) = f(a)$. Mostremos que $\sigma$ é uma função.
+	Assim vamos definir a regra $\sigma : G/N \to L$ por $\sigma(aN) = f(a)$. Mostremos que $\sigma$ \'e uma fun\c{c}\~ao.
 
-	Da definição de $\sigma$ segue que todo elemento de $G/N$ possui uma imagem em $L$. Provemos que um mesmo elemento não possui duas imagens distintas. Assim sejam $aN$, $bN \in G/N$ tais que
+	Da defini\c{c}\~ao de $\sigma$ segue que todo elemento de $G/N$ possui uma imagem em $L$. Provemos que um mesmo elemento n\~ao possui duas imagens distintas. Assim sejam $aN$, $bN \in G/N$ tais que
 	\[
 		aN = bN.
 	\]
-	Daí $ab^{-1} \in N$ e como $N = \ker(f)$ então
+	Da{\'\i} $ab^{-1} \in N$ e como $N = \ker(f)$ ent\~ao
 	\begin{align*}
 		f(ab^{-1}) &= e_L\\
 		f(a)[f(b)]^{-1} &= e_L\\
 		f(a) &= f(b)
 	\end{align*}
-	mas por definição $\sigma(aN) = f(a)$ e $\sigma(bN) = f(b)$. Logo $\sigma(aN) = \sigma(bN)$, e então $\sigma$ realmente é uma função de $G/N$ em $L$.
+	mas por defini\c{c}\~ao $\sigma(aN) = f(a)$ e $\sigma(bN) = f(b)$. Logo $\sigma(aN) = \sigma(bN)$, e ent\~ao $\sigma$ realmente \'e uma fun\c{c}\~ao de $G/N$ em $L$.
 
-	Mostremos que $\sigma$ é um homomorfismo de grupos e que esse homomorfismo é bijetor.
+	Mostremos que $\sigma$ \'e um homomorfismo de grupos e que esse homomorfismo \'e bijetor.
 
 	Primeiro, dados $aN$, $bN \in G/H$ temos
 	\begin{align*}
 		\sigma((aN)(bN)) = \sigma((ab)N) = f(ab) = f(a)f(b) = \sigma(aN)\sigma(bN).
 	\end{align*}
-	Logo $\sigma$ é um homomorfismo de grupos.
+	Logo $\sigma$ \'e um homomorfismo de grupos.
 
 	Agora
 	\[
@@ -1933,11 +1933,11 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
 		\sigma(aN) &= e_L\\
 		f(a) &= e_L
 	\end{align*}
-	e então $a \in \ker(f) = N$. Com isso $aN = N = eN$. Logo
+	e ent\~ao $a \in \ker(f) = N$. Com isso $aN = N = eN$. Logo
 	\[
 		\ker(\sigma) = \{eN\}
 	\]
-	e assim $\sigma$ é injetora.
+	e assim $\sigma$ \'e injetora.
 
 	Finalmente, seja $y \in L$. Queremos encontrar $x \in G/N$ tal que
 	\[
@@ -1947,20 +1947,20 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
 	\[
 		L = \{f(a) \mid a \in G\}
 	\]
-	e então $y = f(a)$ para algum $a \in G$. Tomandi $x = aN$ obtemos
+	e ent\~ao $y = f(a)$ para algum $a \in G$. Tomandi $x = aN$ obtemos
 	\begin{align*}
 		\sigma(x) = \sigma(aN) = f(a) = y,
 	\end{align*}
-	isto é, $\sigma$ é sobrejetora.
+	isto \'e, $\sigma$ \'e sobrejetora.
 
-	Portanto $\sigma$ é um isomorfismo de grupos, daí $G/N \cong L$, como queríamos.
+	Portanto $\sigma$ \'e um isomorfismo de grupos, da{\'\i} $G/N \cong L$, como quer{\'\i}amos.
 \end{prova}
 
 \begin{exemplo}
     Dado um inteiro $m > 1$, considere o homomorfismo $\rho_m : \z \to \z_m$ definido por $\rho_m(x) = \overline{x}$.
 \end{exemplo}
 \begin{solucao}
-	Como $\rho_m$ é um homomorfismo sobrejetor, então do Teorema \ref{primeiro_teorema_homomorfismo} segue que
+	Como $\rho_m$ \'e um homomorfismo sobrejetor, ent\~ao do Teorema \ref{primeiro_teorema_homomorfismo} segue que
 	\[
 		\z/N \cong \z_m
 	\]
@@ -1972,7 +1972,7 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
 	\[
 		\ker(\rho_m) = \{x \in \z \mid \rho_m(x) = \overline{0}\}.
 	\]
-	Agora $\rho_m(x) = \overline{0}$ se, e só se, $x \equiv 0 \pmod m$. O que ocorre se, e só se, $x = mk$ com $k \in \z$. Assim temos
+	Agora $\rho_m(x) = \overline{0}$ se, e s\'o se, $x \equiv 0 \pmod m$. O que ocorre se, e s\'o se, $x = mk$ com $k \in \z$. Assim temos
 	\[
 		N = \ker(\rho_m) = \{mk \mid k \in \z\} = m\z.
 	\]
