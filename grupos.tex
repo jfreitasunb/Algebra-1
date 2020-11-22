@@ -1422,7 +1422,64 @@ ou seja essa operação não está bem definida em $S_3/H$. Isto ocorre pois
 \[
 	fH = \{f, gf^2\} \ne \{f, gf\} = Hf.
 \]
-Portanto nem sempre é possível transformar o conjunto $S_3/H$ em um grupo.
+Portanto nem sempre é possível transformar o conjunto $S_3/H$ em um grupo. Para tal é preciso introduzir um novo conceito.
+
+Sejam $(G, \cdot)$ um grupo, denotado multiplicamente para fins de simplificação, e $A$ e $B$ subconjuntos de $G$. Vamos indicar por
+\[
+    AB
+\]
+e chamaremos de \textbf{produto} de $A$ por $B$ o seguinte subconjunto de $G$:
+\begin{align*}
+    AB &= \emptyset,\ \mbox{se}\ A = \emptyset\ \mbox{ou}\ B = \emptyset\\
+    AB &= \{xy \mid x \in A \mbox{ e } y \in B\},\ \mbox{se}\ A \ne \emptyset\ \mbox{e}\ B \ne \emptyset.
+\end{align*}
+
+Assim o \textbf{produto} de $A$ por $B$ \'e uma opera\c{c}\~ao sobre o subconjuntos das partes de $G$, $\mathcal{P}(G)$, chamada de \textbf{multiplica\c{c}\~ao de subconjuntos} de $G$.
+
+Como $G$ \'e associativo, ent\~ao a \textbf{multiplica\c{c}\~ao de subconjuntos} tamb\'em ser\'a associativa. Al\'em disso, caso o grupo $G$ seja comutativo, ent\~ao \textbf{multiplica\c{c}\~ao de subconjuntos} tamb\'em ser\'a comutativa.
+
+\begin{exemplos}
+    \begin{enumerate}[label=({\arabic*})]
+        \item Seja $G = \{e, a, b, c\}$ o grupo tal que
+        \begin{center}
+        	\begin{table}[htp]
+	        	\centering
+	        	\caption{Grupo de Klein}
+	            \begin{tabular}{|c|c|c|c|c|}
+	                \hline
+	                $\cdot$ & e & a & b & c\\
+	                \hline
+	                e & e & a & b & c\\
+	                \hline
+	                a & a & e & c & b\\
+	                \hline
+	                b & b & c & e & a\\
+	                \hline
+	                c & c & b & a & e\\
+	                \hline
+	            \end{tabular}.
+        	\end{table}	''
+        \end{center}
+        
+        Esse grupo \'e chamada de \textbf{grupo de Klein}.
+
+        Se $A = \{e, a\}$ e $B = \{b, c\}$, ent\~ao
+        \[
+        	AB = \{xy \mid x \in A,\ y \in B\} = \{b, c, ab, ac\} = \{b, c\}.
+        \]
+        
+        \item Considere o grupo multiplicativo dos n\'umeros reais. Se
+        \begin{align*}
+            A &= \{x \in \real^* \mid x > 0\}\\
+            B &= \{x \in \real^* \mid x < 0\}
+        \end{align*}
+        ent\~ao
+        \[
+        	AB = \{xy \mid x \in A,\ y \in B\} = B.
+        \]
+    \end{enumerate}
+\end{exemplos}
+
 % section subgrupos_normal (end)
 
 \section{Teorema de Lagrange}
