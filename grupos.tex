@@ -1555,6 +1555,37 @@ Como $G$ \'e associativo, ent\~ao a \textbf{multiplica\c{c}\~ao de subconjuntos}
 \begin{proposicao}
     Seja $G$ um grupo. Se $H$ e $L$ s\~ao subgrupos normais de $G$, ent\~ao $H \cap L$ \'e um subgrupo normal de $G$.
 \end{proposicao}
+\begin{prova}
+	Precisamos mostrar que
+	\[
+		x(H\cap L) = (H \cap L)x
+	\]
+	para todo $x \in G$. Vamos mostrar isso provando as duas inclusões.
+
+	Assim seja $x \in G$ e $y \in x(H\cap L)$. Temos
+	\[
+		y = xt
+	\]
+	com $t \in H\cap L$. Daí $y = xt$ com $t \in H$ e $t \in L$. Logo $y \in xH$ e $y \in xL$. Mas por hipótise, $H$ e $L$ são subgrupos normais, logo $y \in Hx$ e $y \in Lx$. Ou seja, existem $h_1 \in H$ e $l_1 \in L$ tais que
+	\begin{align*}
+		y &= h_1x\\
+		y &= l_1x.
+	\end{align*}
+	Donde segue que $h_1 = l_1$. Assim $y = kx$ com $k \in H\cap L$, isto é, $y \in x(H\cap L)$. Com isso obtemos que $x(H\cap L) \subseteq (H\cap L)x$.
+
+	Agora seja $z \in (H\cap L)x$. Então $z = rx$ com $r \in H\cap L$. Ou seja, $z \in xH$ e $ \in Lx$. Novamente, usando a hipótese que $H$ e $L$ são subgrupos normais, obtemos que $z \in xH$ e $z \in xL$. Com isso
+	\begin{align*}
+		z &= xh_2\\
+		z &= xl_2
+	\end{align*}
+	com $h_2 \in H$ e $l_2 \in L$. Assim devemos ter $h_2 = l_2$ o que nos leva à conclusão que $z = xu$ com $u \in H\cap L$. Daí $z \in x(H \cap L)$ e com isso $(H \cap L)x \subseteq x(H \cap L)$.
+
+	Portanto
+	\[
+		x(H \cap L) = (H \cap L)x
+	\]
+	e então $H \cap L$ é um subgrupo normal de $G$, como queríamos.
+\end{prova}
 
 \begin{proposicao}
     Seja $N$ um subgrupo normal do grupo $G$. Ent\~ao, para quaisquer $a$, $b \in G$ temos
