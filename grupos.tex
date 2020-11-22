@@ -1812,10 +1812,66 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
 		        		\end{tabular}
 		        	\end{table}
 		        \end{center}
-
     \end{enumerate}
 \end{exemplos}
 
+\begin{proposicao}
+    Se $N$ \'e um subgrupo normal de $G$, ent\~ao a fun\c{c}\~ao $\mu : G \to G/N$ definida por $\mu(a) = aN$ \'e um homomorfismo sobrejetor de grupos tal que
+    \[
+        \ker(\mu) = N.
+    \]
+\end{proposicao}
+\begin{prova}
+	Primeiro vamos mostrar que $\mu$ é um homomorfismo de grupos. Para isso sejam $x$, $y \in G$. Daí
+	\begin{align*}
+		\mu(xy) = (xy)N = (xN)(yN) = \mu(x)\mu(y).
+	\end{align*}
+	Logo $\mu$ é um homomorfismo de grupos.
+
+	Agora, dada $yN \in G/N$ tome $y \in G$ e com isso
+	\[
+		\mu(y) = yN,
+	\]
+	ou seja, $\mu$ é sobrejetor.
+
+	Finalmente, mostremos que
+	\[
+		\ker(\mu) = N.
+	\]
+	Seja $x \in N$. Temos
+	\[
+		\mu(x) = xN = N = eN
+	\]
+	pois $N$ é subgrupo. Assim $x \in \ker(\mu)$. Logo $N \subseteq \ker(\mu)$.
+
+	Por outro lado, se $t \in \ker(\mu)$ então
+	\[
+		\mu(t) = eN.
+	\]
+	Mas $\mu(t) = tN$ daí devemos ter $te^{-1} \in N$, isto é, $t \in N$. Logo $\ker(\mu) \subseteq N$.
+
+	Portanto
+	\[
+		\ker(\mu) = N,
+	\]
+	como queríamos.
+\end{prova}
+
+\begin{definicao}
+    Se $N$ \'e um subgrupo normal de $G$, ent\~ao o homomorfismo $\mu : G \to G/N$ definido por $\mu(a) = aN$ \'e chamado de \textbf{homomorfismo can\^onico} de $G$ sobre $G/N$.
+\end{definicao}
+
+\begin{lema}
+    Se $f : G \to L$ \'e um homomorfismo de grupos, ent\~ao $N = \ker(f)$ \'e um subgrupo normal de $G$ e, portanto, $G/N$ \'e um grupo.
+\end{lema}
+
+\begin{teorema}[Teorema do Homomorfismo para Grupos]
+    Seja $f : G \to L$ um homomorfismo sobrejetor de grupos. Se $N = \ker(f)$, ent\~ao o grupo quociente $G/N$ \'e isomorfo ao grupo $L$.
+\end{teorema}
+
+\begin{exemplo}
+    Dado um inteiro $m > 1$, considere o homomorfismo $\rho_m : \z \to \z_m$ definido por $\rho_m(x) = \overline{x}$.
+\end{exemplo}
 % section subgrupos_normal (end)
 
 \section{Teorema de Lagrange}
