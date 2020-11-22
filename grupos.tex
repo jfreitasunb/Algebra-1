@@ -1365,6 +1365,66 @@ Aqui temos
 \end{prova}
 % section isomorfimos_de_grupos (end)
 
+\section{Subgrupo Normal} % (fold)
+\label{sec:subgrupo_normal}
+
+No grupo $S_3$ considere as permutações
+\[
+	f = \begin{pmatrix}
+		1 & 2 & 3\\
+		2 & 3 & 1
+	\end{pmatrix} \quad \mbox{e}\quad
+	g = \begin{pmatrix}
+		1 & 2 & 3\\
+		1 & 3 & 2
+	\end{pmatrix}.
+\]
+
+Assim
+\[
+	S_3 = \{Id, f, f^2, g, gf, gf^2\}.
+\]
+
+Seja $H = [g] = \{Id, g\}$. As classes laterais de $H$ são
+\begin{align*}
+	IdH &= H\\
+	fH &= \{f, fg\} = \{f, gf^2\} = (gf^2)H\\
+	f^2H &= \{f^2, f^2g\} = \{f^2, gf\} = (gf)H.
+\end{align*}
+Logo
+\[
+	S_3/H = \{H, fH, f^2H\}.
+\]
+Defina em $S_3/H$ a operação
+\[
+	(xH)(yH) = (xy)H,
+\]
+onde $xH$, $yH \in S_3/H$.
+
+Vamos verificar se essa operação está bem definida. Para isso sejam
+\begin{align*}
+	fH &= (gf^2)H\\
+	f^2H &= (gf)H.
+\end{align*}
+Temos
+\[
+	(fH)(f^2H) = (ff^2)H = f^2H = H
+\]
+e
+\begin{align*}
+	[(gf^2)H][(gf)H] = [(gf^2)(gf)]H = [g(f^2g)f]H = [g(gf)f]H = [(gg)(ff)]H = f^2H.
+\end{align*}
+Com isso
+\[
+	(fH)(f^2H) \ne [(gf^2)H][(gf)H],
+\]
+ou seja essa operação não está bem definida em $S_3/H$. Isto ocorre pois
+\[
+	fH = \{f, gf^2\} \ne \{f, gf\} = Hf.
+\]
+Portanto nem sempre é possível transformar o conjunto $S_3/H$ em um grupo.
+% section subgrupos_normal (end)
+
 \section{Teorema de Lagrange}
 
 \begin{teorema}\label{teorema_de_lagrange}
