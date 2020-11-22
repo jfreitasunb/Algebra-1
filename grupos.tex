@@ -1593,6 +1593,123 @@ Como $G$ \'e associativo, ent\~ao a \textbf{multiplica\c{c}\~ao de subconjuntos}
         (aN)(bN) = (ab)N.
     \]
 \end{proposicao}
+\begin{prova}
+	Vamos mostrar a igualdade, provando as duas inclusões.
+
+	Seja $x \in (aN)(bN)$. Daí $x = \alpha\beta$ com $\alpha \in aN$ e $\beta \in bN$. Logo existem $n_1$, $n_2 \in N$ tais que
+	\begin{align*}
+		\alpha &= an_1\\
+		\beta &= bn_2.
+	\end{align*}
+	Então
+	\begin{align*}
+		x = (an_1)(bn_2) = a(n_1b)n_2.
+	\end{align*}
+	Mas por hipótese, $N$ é um subgrupo normal de $G$ e então $bN = Nb$. Assim como $n_1b \in Nb = bN$, existe $n_3 \in N$ tal que
+	\[
+		n_1b = bn_3.
+	\]
+	Com isso
+	\begin{align*}
+		x &= a(n_1b)n_2 = a(bn_2)n_2 = (ab)(n3n_2) \in (ab)N
+	\end{align*}
+	e então $x \in (ab)N$, ou seja, $(aN)(bN) \subseteq (ab)N$.
+
+	Agora, para a outra inclusão, seja $y \in (ab)N$. Daí
+	\begin{align*}
+		y &= (ab)n = \underbrace{(ae)}_{\in An}\underbrace{(bn)}_{\in bN},
+	\end{align*}
+	isto é, $y \in (aN)(bN)$. Logo $(ab)N \subseteq (aN)(bN)$.
+
+	Portanto,
+	\[
+		(aN)(bN) = (ab)N,
+	\]
+	como queríamos.
+\end{prova}
+
+Seja $N$ um subgrupo normal de um grupo $G$, onde $e$ denota o elemento neutro de $G$. Denote por
+\[
+    G/N = \{aN \mid a \in G\}
+\]
+o conjunto das classes de equival\^encia determinadas por $N$.
+
+Defina em $G/N$ a opera\c{c}\~ao
+\[
+    (aN)(bN)  = (ab)N
+\]
+para todos $aN$, $bN \in G/N$.
+
+Sejam $a$, $b$, $x$, $y \in G$ tais que
+\begin{align*}
+	aN &= xN\\
+	bN &= yN.
+\end{align*}
+
+Queremos mostrar que
+\[
+	(aN)(bN) = (xN)(yN).
+\]
+Mas
+\begin{align*}
+	(aN)(bN) &= (ab)N\\
+	(xN)(yN) &= (xy)N
+\end{align*}
+então vamos mostrar que $(ab)N = (xy)N$.
+
+Seja $z \in (ab)N$. Daí
+\[
+	z = (ab)n = a(bn),\ n \in N.
+\]
+Mas, por hipótse $bN = yN$, então $yN = Ny$ assim $bn = yn_1$. Além disso, $N$ é um subgrupo normal de $G$ então $yN = Ny$ e daí $yn_1 = n_2y$. Então
+\[
+	z = a(bn) = a(yn_1) = a(n_2y) = (an_2)y.
+\]
+Novamente, pela hipótese, $aN = xN$ e então podemos escrever $an_2 = xn_3$. Assim
+\[
+	z = a(bn) = a(yn_1) = a(n_2y) = (an_2)y = (xn_3)y = x(n_3y).
+\]
+Mas $N$ é um subgrupo normal, com isso $yN = Ny$ e então podemos escrever $n_3y = yn_4$. Logo
+\[
+	z = x(n_3y) = x(yn_4) = (xy)n_4
+\]
+essa última igualdade nos diz que $z \in (xy)N$ e então $(ab)N \subseteq (xy)N$.
+
+Agora seja $v \in (xy)N$. Daí existe $r \in N$ tal que $v = (xy)r$. Aqui repetindo os passos do caso anterior, usando que $N$ é um subgrupo normal e que $aN = xN$ e que $bN = yN$ podemos escrever
+\begin{align*}
+	v = (xy)r = x(yr) = x(br_1) = x(r_2b) = (xr_2)b = (ar_3)b = a(r_3b) = (ab)r_4
+\end{align*}
+e com isso $v \in (ab)N$. Logo $(xy)N \subseteq (ab)N$.
+
+Portanto
+\[
+	(ab)N = (xy)N,
+\]
+ou seja,
+\[
+	(aN)(bN) = (ab)N = (xy)N = (xN)(yN).
+\]
+
+
+Além disso, a multiplicação em $G/H$ satisfaz as seguintes propriedades:
+
+\begin{enumerate}[label={\roman*})]
+    \item $[(aN)(bN)](cN) = (an)[(bN)(cN)]$ para todos $aN$, $bN$, $cN \in G/N$;
+
+    \item $(aN)(eN) = (ae)N = aN = (ea)N = (eN)(aN)$ para todo $aN \in G/N$;
+
+    \item $(aN)(a^{-1}N) = (aa^{-1})N = eN = (a^{-1}a)N = (a^{-1}N)(aN)$ para todo $aN \in G/N$.
+\end{enumerate}
+
+Portanto, o conjunto $G/N$ \'e um grupo com a multiplica\c{c}\~ao de conjuntos.
+
+Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
+
+\begin{definicao}
+    Sejam $G$ um grupo e $N$ um subgrupo normal de $G$. Nessas condi\c{c}\~oes, o \textbf{grupo quociente} 
+    de $G$ por $N$ \'e o par formado pelo conjunto quociente $G/N$ e da opera\c{c}\~ao de multiplica\c{c}\~ao de conjuntos 
+    aplicadas aos elementos desse conjunto.
+\end{definicao}
 
 % section subgrupos_normal (end)
 
