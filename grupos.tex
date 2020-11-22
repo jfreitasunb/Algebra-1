@@ -1890,7 +1890,7 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
 	Portanto $xN = Nx$ para todo $x \in G$. Com isso $N = \ker(f)$ é um subgrupo normal de $G$, como queríamos.
 \end{prova}
 
-\begin{teorema}[Teorema do Homomorfismo para Grupos]
+\begin{teorema}[Teorema do Homomorfismo para Grupos]\label{primeiro_teorema_homomorfismo}
     Seja $f : G \to L$ um homomorfismo sobrejetor de grupos. Se $N = \ker(f)$, ent\~ao o grupo quociente $G/N$ \'e isomorfo ao grupo $L$.
 \end{teorema}
 \begin{prova}
@@ -1959,6 +1959,28 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
 \begin{exemplo}
     Dado um inteiro $m > 1$, considere o homomorfismo $\rho_m : \z \to \z_m$ definido por $\rho_m(x) = \overline{x}$.
 \end{exemplo}
+\begin{solucao}
+	Como $\rho_m$ é um homomorfismo sobrejetor, então do Teorema \ref{primeiro_teorema_homomorfismo} segue que
+	\[
+		\z/N \cong \z_m
+	\]
+	onde
+	\[
+		N = \ker(\rho_m).
+	\]
+	Mas
+	\[
+		\ker(\rho_m) = \{x \in \z \mid \rho_m(x) = \overline{0}\}.
+	\]
+	Agora $\rho_m(x) = \overline{0}$ se, e só se, $x \equiv 0 \pmod m$. O que ocorre se, e só se, $x = mk$ com $k \in \z$. Assim temos
+	\[
+		N = \ker(\rho_m) = \{mk \mid k \in \z\} = m\z.
+	\]
+	Logo
+	\[
+		\z/N = \z/m\z \cong \z_m.
+	\]
+\end{solucao}
 % section subgrupos_normal (end)
 
 \section{Teorema de Lagrange}
