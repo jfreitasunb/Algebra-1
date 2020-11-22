@@ -1893,6 +1893,68 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
 \begin{teorema}[Teorema do Homomorfismo para Grupos]
     Seja $f : G \to L$ um homomorfismo sobrejetor de grupos. Se $N = \ker(f)$, ent\~ao o grupo quociente $G/N$ \'e isomorfo ao grupo $L$.
 \end{teorema}
+\begin{prova}
+	Inicialmente observe que
+	\[
+		G/N = \{aN \mid a \in N\}
+	\]
+	e como $f : G \to L$ é sobrejetora então
+	\[
+		L = \{f(a) \mid a \in G\}.
+	\]
+	Assim vamos definir a regra $\sigma : G/N \to L$ por $\sigma(aN) = f(a)$. Mostremos que $\sigma$ é uma função.
+
+	Da definição de $\sigma$ segue que todo elemento de $G/N$ possui uma imagem em $L$. Provemos que um mesmo elemento não possui duas imagens distintas. Assim sejam $aN$, $bN \in G/N$ tais que
+	\[
+		aN = bN.
+	\]
+	Daí $ab^{-1} \in N$ e como $N = \ker(f)$ então
+	\begin{align*}
+		f(ab^{-1}) &= e_L\\
+		f(a)[f(b)]^{-1} &= e_L\\
+		f(a) &= f(b)
+	\end{align*}
+	mas por definição $\sigma(aN) = f(a)$ e $\sigma(bN) = f(b)$. Logo $\sigma(aN) = \sigma(bN)$, e então $\sigma$ realmente é uma função de $G/N$ em $L$.
+
+	Mostremos que $\sigma$ é um homomorfismo de grupos e que esse homomorfismo é bijetor.
+
+	Primeiro, dados $aN$, $bN \in G/H$ temos
+	\begin{align*}
+		\sigma((aN)(bN)) = \sigma((ab)N) = f(ab) = f(a)f(b) = \sigma(aN)\sigma(bN).
+	\end{align*}
+	Logo $\sigma$ é um homomorfismo de grupos.
+
+	Agora
+	\[
+		\ker(\sigma) = \{aN \in g/N \mid \sigma(aN) = e_L\}.
+	\]
+	Mas
+	\begin{align*}
+		\sigma(aN) &= e_L\\
+		f(a) &= e_L
+	\end{align*}
+	e então $a \in \ker(f) = N$. Com isso $aN = N = eN$. Logo
+	\[
+		\ker(\sigma) = \{eN\}
+	\]
+	e assim $\sigma$ é injetora.
+
+	Finalmente, seja $y \in L$. Queremos encontrar $x \in G/N$ tal que
+	\[
+		\sigma(x) = y.
+	\]
+	Mas
+	\[
+		L = \{f(a) \mid a \in G\}
+	\]
+	e então $y = f(a)$ para algum $a \in G$. Tomandi $x = aN$ obtemos
+	\begin{align*}
+		\sigma(x) = \sigma(aN) = f(a) = y,
+	\end{align*}
+	isto é, $\sigma$ é sobrejetora.
+
+	Portanto $\sigma$ é um isomorfismo de grupos, daí $G/N \cong L$, como queríamos.
+\end{prova}
 
 \begin{exemplo}
     Dado um inteiro $m > 1$, considere o homomorfismo $\rho_m : \z \to \z_m$ definido por $\rho_m(x) = \overline{x}$.
