@@ -1690,7 +1690,6 @@ ou seja,
 	(aN)(bN) = (ab)N = (xy)N = (xN)(yN).
 \]
 
-
 Além disso, a multiplicação em $G/H$ satisfaz as seguintes propriedades:
 
 \begin{enumerate}[label={\roman*})]
@@ -1710,6 +1709,112 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
     de $G$ por $N$ \'e o par formado pelo conjunto quociente $G/N$ e da opera\c{c}\~ao de multiplica\c{c}\~ao de conjuntos 
     aplicadas aos elementos desse conjunto.
 \end{definicao}
+
+\begin{exemplos}
+    \begin{enumerate}[label=({\arabic*})]
+        \item Seja $G = \{1, -1, i, -i\}$ um grupo e $N = \{1, -1\}$. Como $G$ é um grupo abeliano então $N$ é um subgrupo normal de $G$. Assim podemos definir o grupo quociente $G/N$. As classes laterais de $N$ são
+        \begin{align*}
+        	1N &= N\\
+        	iN &= \{it \mid t \in N\} = \{i, -i\}.
+        \end{align*}
+        Assim
+        \[
+        	G/N = \{N, iN\}
+        \]
+        e a operação em $G$ é dada por
+        \begin{center}
+        	\begin{table}[htp]
+        		\centering
+        		\caption{$G/N$}
+        		\begin{tabular}{|c|c|c|}
+        			\hline
+        			$\cdot$ & $N$ & $iN$\\
+        			\hline
+        			$N$ & $N$ & $iN$\\
+        			\hline
+        			$iN$ & $iN$ & $N$\\
+        			\hline
+        		\end{tabular}
+        	\end{table}
+        \end{center}
+
+        \item Seja $G = \z_6 = \{\overline{0}, \overline{1}, \overline{2}, \overline{3}, \overline{4}, \overline{5}\}$ e $H = \{\overline{0}, \overline{3}\}$. Como $\z_6$ é abeliano, então $H$ é um subgrupo normal e com isso podemos definir o grupo quociente $\z_6/H$. As classes de equivalência de $H$ são
+        \begin{align*}
+        	\overline{0} + H &= H\\
+        	\overline{1} + H &= \{\overline{1} + t \mid t \in H\} = \{\overline{1}, \overline{4}\}\\
+        	\overline{2} + H &= \{\overline{2} + t \mid t \in H\} = \{\overline{2}, \overline{5}\}.
+        \end{align*}
+        Daí
+        \[
+        	\z_6/H = \{H, \overline{1} + H, \overline{2} + H\}
+        \]
+        e
+        \begin{center}
+        	\begin{table}[htp]
+        		\centering
+        		\caption{$\z_6/H$}
+        		\begin{tabular}{|c|c|c|c|}
+        			\hline
+        			$\oplus$ & $H$ & $\overline{1} + H$ & $\overline{2} + H$\\
+        			\hline
+        			$H$ & $H$ & $\overline{1} + H$ & $\overline{2} + H$\\
+        			\hline
+        			$\overline{1} + H$ & $\overline{1} + H$ & $\overline{2} + H$ & $H$\\
+        			\hline
+        			$\overline{2} + H$ & $\overline{2} + H$ & $H$ & $\overline{1} + H$\\
+        			\hline
+        		\end{tabular}
+        	\end{table}
+        \end{center}
+
+
+        \item Seja $G = S_3$. J\'a vimos que se tomamos
+                \[
+                    Id = \begin{pmatrix}
+                        1 & 2 & 3\\
+                        1 & 2 & 3
+                    \end{pmatrix},\quad
+                    f = \begin{pmatrix}
+                        1 & 2 & 3\\
+                        2 & 3 & 1
+                    \end{pmatrix} \quad \mbox{e}\quad
+                    g = \begin{pmatrix}
+                        1 & 2 & 3\\
+                        1 & 3 & 2
+                    \end{pmatrix}
+                \]
+                ent\~ao
+                \[
+                    S_3 = \{Id, f, f^2, g, gf, gf^2\}.
+                \]
+                Considere o subgrupo $H = [\ f\ ] = \{Id, f, f^2\}$. Como $H$ possui somente duas classes laterais, que são
+                \begin{align*}
+                	IdH &= H\\
+                	gH &= \{g, gf, gf^2\}
+                \end{align*}
+                então $H$ é um subgrupo normal de $S_3$. Assim podemos definir o grupo quociente $S_3/H$, onde
+                \[
+                	S_3/H = \{H, gH\}.
+                \]
+                Temos
+                \begin{center}
+		        	\begin{table}[htp]
+		        		\centering
+		        		\caption{$S_3/H$}
+		        		\begin{tabular}{|c|c|c|}
+		        			\hline
+		        			$\circ$ & $H$ & $gN$\\
+		        			\hline
+		        			$H$ & $H$ & $gN$\\
+		        			\hline
+		        			$gN$ & $gN$ & $H$\\
+		        			\hline
+		        		\end{tabular}
+		        	\end{table}
+		        \end{center}
+
+    \end{enumerate}
+\end{exemplos}
 
 % section subgrupos_normal (end)
 
