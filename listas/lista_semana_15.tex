@@ -4,7 +4,7 @@
 \def\semestre{1}
 \def\disciplina{\'Algebra 1}
 \def\turma{C}
-\def\numerosemana{16}
+\def\numerosemana{15}
 
 \documentclass[12pt]{exam}
 
@@ -23,20 +23,55 @@
 
     \vspace{.6cm}
 
-    \questao{} Seja $G$ um grupo de ordem $p^n$, em que $p$ é um número primo e $n > 1$. Mostre que a ordem de um elemento qualquer de $G$ é uma potência de $p$.
-
-    \vspace{.3cm}
-
-    \questao{} Sejam $H$ e $K$ subgrupos de um grupo finito $G$. Mostre que se $o(H) = p$ e $o(K) = q$, com $p \ne q$ primos, então $H \cap K = \{e\}$, onde $e$ denota o elemento neutro de $G$.
-
-    \vspace{.3cm}
-
-    \questao{} Seja $p > 1$ um número primo. Prove que:
+    \questao{} Seja $G$ um grupo multiplicativo. Se $A \subset G$ e $A \ne \emptyset$, seja $A^{-1} = \{x^{-1} \mid x \in A\}$. Mostre que:
     \begin{enumerate}[label=({\alph*})]
-      \item Para todo $\overline{a} \in \z_p$, se $\overline{a} \ne \overline{0}$, então $(\overline{a})^{p-1} = \overline{1}$.
+      \item $(A^{-1})^{-1} = A$;
 
-      \item Conclua a partir disso que se $a \in \z$, então $a^p \equiv a \pmod p$.
+      \item Para todos $A$, $B \subset G$, $A \ne \emptyset$, $B \ne \emptyset$, tem-se que $(AB)^{-1} = B^{-1}A^{-1}$.
     \end{enumerate}
     
     \vspace{.3cm}
+
+    \questao{} Sejam $G$ um grupo, $N$ um subgrupo normal e $H$ um subgrupo de $G$. Mostre que o subgrupo $H \cap N$ \'e normal em $H$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $G$ um grupo e $N$ um subgrupo de $G$. Mostre que $N$ \'e normal se, e somente se, $x^{-1}Nx = N$, para todo $x \in G$.
+    \noindent\textit{Observa\c{c}\~ao: $x^{-1}Nx = \{x^{-1}nx \mid n \in N\}$}.
+
+    \vspace{.3cm}
+
+    \questao{} Mostre que, se $M$ e $N$ s\~ao subgrupos normais do grupo $G$ e $M \cap N = \{e\}$, ent\~ao $xy = yx$ para quaisquer $x \in M$ e $y \in N$.
+    \noindent \textit{Sugest\~ao: Mostre que $(xy)(yx)^{-1} = e$.}
+
+    \vspace{.3cm}
+
+    \questao{} Seja $G$   um grupo multiplicativo. Se $a \in G$, mostre que $H = \{x \in G \mid xa = ax\}$ \'e um subgrupo normal de $G$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f : G \to L$ um homomorfismo sobrejetor de grupos. Se $H$ \'e um subgrupo normal de $G$, mostre que $f(H)$ \'e um subgrupo normal de $L$.
+  
+    \vspace{.3cm}
+
+    \questao{} Sejam $H$ e $K$ subgrupos normais de um grupo $G$, tais que $H \cap K = \{e\}$. Se $h_1$, $h_2 \in H$ e $k_1$, $k_2 \in K$ s\~ao tais que
+    \[
+      h_1k_1 = h_2k_2,
+    \]
+    prove que $h_1 = h_2$ e $k_1 = k_2$.
+
+    \vspace{.3cm}
+
+    \questao{} Determine todos os subgrupos n\~ao triviais do grupo aditivo $\z_8$. Para cada subgrupo $H$ encontrado, construa a tabela do grupo quociente $\z_6/H$.
+
+    \vspace{.3cm}
+
+    \questao{} Construa a t\'abua dos seguintes grupos quocientes:
+    \begin{enumerate}[label=({\alph*})]
+      \item $\z_9/H$ em que $H = \{\overline{0}, \overline{3}, \overline{6}\}$
+
+      \item $\z/2\z$
+
+      \item $(\z \times \z)/(3\z \times 2\z)$
+    \end{enumerate}
 \end{document}
