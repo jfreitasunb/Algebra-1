@@ -2000,6 +2000,34 @@ O n\'umero de elementos de $G/H$ \'e chamado de \textbf{{\'\i}ndice} de $H$ em $
 \begin{teorema}\label{teorema_de_lagrange}
 	Seja $G$ um grupo finito. Se $H\subseteq G$ {\'e} um subgrupo, ent{\~a}o $|H|$ divide $|G|$.
 \end{teorema}
+\begin{prova}
+	Seja $H$ um subgrupo de um grupo finito $G$. Denote
+	\[
+		[G : H] = r.
+	\]
+	Assim
+	\[
+		G/H = \{a_1H, a_2H, \cdots, a_rH\}
+	\]
+	com
+	\[
+		a_iH \cap a_jH = \emptyset
+	\]
+	sempre que $a_i \ne a_j$. Além disso,
+	\[
+		G = a_1H \cup a_2H \cup \cdots \cup a_rH
+	\]
+	e como todas as classes de equivalência módulo $H$ possuem a mesma quantidade de elementos e essa quantidade é igual à ordem de $H$, $o(H)$, então
+	\begin{align*}
+		o(G) &= o(a_1H) + o(a_2H) + \cdots + o(a_rH)\\
+		o(G) &= o(H) + o(H) + \cdots + o(H)
+	\end{align*}
+	logo $o(G) = ro(H)$, ou seja,
+	\[
+		o(G) = [G : H]o(H).
+	\]
+	Portanto $o(H) | o(G)$, como queríamos.
+\end{prova}
 
 \begin{exemplo}
 	Quais s{\~a}o as poss{\'\i}veis ordens dos subgrupos de um grupo de ordem 48?
