@@ -1985,6 +1985,18 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
 
 \section{Teorema de Lagrange}
 
+Seja $G$ um grupo finito. Se $H$ \'e um subgrupo de $G$, ent\~ao existir\'a uma quantidade finita de classes laterais m\'odulo $H$.
+Assim o conjunto
+\[
+    G/H = \{aH \mid a \in G\}
+\]
+\'e finito.
+
+O n\'umero de elementos de $G/H$ \'e chamado de \textbf{{\'\i}ndice} de $H$ em $G$ e ser\'a denotado por
+\[
+    [G : H] = |G/H|.
+\]
+
 \begin{teorema}\label{teorema_de_lagrange}
 	Seja $G$ um grupo finito. Se $H\subseteq G$ {\'e} um subgrupo, ent{\~a}o $|H|$ divide $|G|$.
 \end{teorema}
@@ -1997,7 +2009,26 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
 \end{exemplo}
 
 \begin{observacao}
-	O Teorema \ref{teorema_de_lagrange} n{\~a}o diz que haver{\'a} um subgrupo de ordem $n$ para todo $n$ tal que $n||G|$. Diz apenas que se $H$ {\'e} subgrupo de $G$, ent{\~a}o $|H|$ divide $|G|$.
+	O Teorema \ref{teorema_de_lagrange} n{\~a}o diz que haver{\'a} um subgrupo de ordem $n$ para todo $n$ tal que $n||G|$. Diz apenas que se $H$ {\'e} subgrupo de $G$, ent{\~a}o $|H|$ divide $|G|$. Por exemplo, no grupo $S_4$ considere o seguinte subconjunto:
+            \[
+                L = \left\{\begin{pmatrix}
+                    1 & 2 & 3 & 4\\
+                    1 & 2 & 3 & 4
+                \end{pmatrix}, \begin{pmatrix}
+                    1 & 2 & 3 & 4\\
+                    1 & 3 & 4 & 2
+                \end{pmatrix}\right\}.
+            \]
+            Observe que o n\'umero de elementos de L divide $|S_4| = 4! = 24$ mas $L$ n\~ao \'e um subgrupo de $S_4$ pois
+            \[
+                \begin{pmatrix}
+                    1 & 2 & 3 & 4\\
+                    1 & 3 & 4 & 2
+                \end{pmatrix}^{-1} = \begin{pmatrix}
+                    1 & 2 & 3 & 4\\
+                    1 & 4 & 2 & 3
+                \end{pmatrix} \notin L.
+            \]
 \end{observacao}
 
 \begin{corolario}
