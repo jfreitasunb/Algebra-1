@@ -1,0 +1,42 @@
+%!TEX program = xelatex
+%!TEX encoding = ISO-8859-1
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\numerosemana{16}
+
+\documentclass[12pt]{exam}
+
+\input{../configuracoes/pacotes}
+\input{../configuracoes/configuracoes_paginas}
+\input{../configuracoes/comandos_personalizados}
+
+\begin{document}
+
+\begin{center}
+    
+    {\Large\bf \disciplina\ - Turma \turma\ -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
+        Lista de Exerc{\'\i}cios -- Semana \numerosemana}\\ \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+    \end{center}
+    \hrule
+
+    \vspace{.6cm}
+
+    \questao{} Seja $G$ um grupo de ordem $p^n$, em que $p$ é um número primo e $n > 1$. Mostre que a ordem de um elemento qualquer de $G$ é uma potência de $p$.
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $H$ e $K$ subgrupos de um grupo finito $G$. Mostre que se $o(H) = p$ e $o(K) = q$, com $p \ne q$ primos, então $H \cap K = \{e\}$, onde $e$ denota o elemento neutro de $G$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $p > 1$ um número primo. Prove que:
+    \begin{enumerate}[label=({\alph*})]
+      \item Para todo $\overline{a} \in \z_p$, se $\overline{a} \ne \overline{0}$, então $(\overline{a})^{p-1} = \overline{1}$.
+
+      \item Conclua a partir disso que se $a \in \z$, então $a^p \equiv a \pmod p$.
+    \end{enumerate}
+    
+    \vspace{.3cm}
+\end{document}
