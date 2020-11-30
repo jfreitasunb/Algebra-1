@@ -2059,7 +2059,7 @@ O n\'umero de elementos de $G/H$ \'e chamado de \textbf{{\'\i}ndice} de $H$ em $
             \]
 \end{observacao}
 
-\begin{corolario}
+\begin{corolario}\label{primeiro_coralario_Lagrange}
     Seja $G$ um grupo finito. Ent\~ao a ordem de um elemento $x \in G$ divide a ordem de $G$ e o quociente \'e $[G : H]$, onde $H = [x]$.
 \end{corolario}
 \begin{prova}
@@ -2081,6 +2081,17 @@ O n\'umero de elementos de $G/H$ \'e chamado de \textbf{{\'\i}ndice} de $H$ em $
     \]
     onde $e$ denota o elemento neutro de $G$.
 \end{corolario}
+\begin{prova}
+	Suponha que a ordem de $x \in G$ é $k$. Assim $k$ é o menor inteiro estritamente positivo tal que $x^k = e$. Assim pelo Corolário \eqref{primeiro_coralario_Lagrange} podemos escrever
+	\[
+		o(G) = [G : H]k
+	\]
+	onde $H = [x]$. Logo
+	\[
+		x^{o(G)} = x^{[G : H]k} = (x^k)^{[G : H]} = e
+	\]
+	como queríamos.
+\end{prova}
 
 \begin{corolario}
     Seja $G$ um grupo finito cuja ordem \'e um n\'umero primo. Ent\~ao $G$ \'e um grupo c{\'\i}clico e os \'unicos subgrupos de $G$ s\~ao os triviais, ou seja, $\{e\}$ e $G$.
