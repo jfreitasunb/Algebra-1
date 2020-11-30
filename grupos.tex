@@ -2062,6 +2062,17 @@ O n\'umero de elementos de $G/H$ \'e chamado de \textbf{{\'\i}ndice} de $H$ em $
 \begin{corolario}
     Seja $G$ um grupo finito. Ent\~ao a ordem de um elemento $x \in G$ divide a ordem de $G$ e o quociente \'e $[G : H]$, onde $H = [x]$.
 \end{corolario}
+\begin{prova}
+	A ordem de $x \in G$ é igual à ordem do subgrupo $H = [x]$. Assim, pelo Teorema de Lagrange \eqref{teorema_de_lagrange}, $o(H) | o(G)$ e
+	\[
+		o(G) = [G : H]o(H),
+	\]
+	ou seja,
+	\[
+		o(x) | o(G)
+	\]
+	como queríamos.
+\end{prova}
 
 \begin{corolario}
     Sejam $G$ um grupo finito e $x \in G$. Ent\~ao
