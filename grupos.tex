@@ -2096,3 +2096,21 @@ O n\'umero de elementos de $G/H$ \'e chamado de \textbf{{\'\i}ndice} de $H$ em $
 \begin{corolario}
     Seja $G$ um grupo finito cuja ordem \'e um n\'umero primo. Ent\~ao $G$ \'e um grupo c{\'\i}clico e os \'unicos subgrupos de $G$ s\~ao os triviais, ou seja, $\{e\}$ e $G$.
 \end{corolario}
+\begin{prova}
+	Seja $o(G) = p$, com $p$ primo. Assim $p > 1$ e daí existe $x \in G$ com $x \ne e$. Seja $H = [x]$. Do Teorema de Lagrange \eqref{teorema_de_lagrange} segue que
+	\[
+		o(H) | p.
+	\]
+	Daí $o(H) = 1$ ou $o(H) = p$. Mas $x \ne e$, logo $o(H) = p$ e então
+	\[
+		G = H = [x]
+	\]
+	e assim $G$ é cíclico.
+
+	Agora seja $J$ um subgrupo de $G$. Daí Teorema de Lagrange \eqref{teorema_de_lagrange} segue que
+	\[
+		o(J) | o(G) = p.
+	\]
+	Com isso $o(J) = 1$ ou $o(J) = p$. Logo $J = \{e\}$ ou $J = G$, como queríamos.
+
+\end{prova}
