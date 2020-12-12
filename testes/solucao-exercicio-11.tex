@@ -1,0 +1,38 @@
+%!TEX program = xelatex
+% !TEX encoding = ISO-8859-1
+\def\ano{2019}
+\def\semestre{2}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+
+\documentclass[12pt]{exam}
+
+\input{../configuracoes/pacotes}
+\input{../configuracoes/comandos_personalizados}
+
+\begin{document}
+
+Seja $G = [a]$ um grupo c{\'\i}clico de ordem $s$ e $H = [b]$ um grupo c{\'\i}clico de ordem $t$. Monstre que se $sk$ \'e um m\'ultiplo de $t$, então $\phi : G \to H$, definida por $\phi(a) = b^k$ \'e um homomorfismo de grupos.
+
+\textbf{Ideia de solução:} Nesse caso devemos assumir que $\phi(a^l) = b^{lk}$. Primeiro é preciso mostrar que $\phi$ está bem definida, ou seja, se
+\[
+    a^i = a^j
+\]
+para $i \ne j$ então
+\[
+    b^{ik} = b^{jk}.
+\]
+
+Como $G$ é um grupo finito, para que $a^i = a^j$ é preciso que $i \equiv j \pmod s$. Isto é $s | (i - j)$ e com isso podemos escrever $i = \beta s + j$ com $\beta \in \z$. Com isso
+\begin{align*}
+    b^{ki} = b^{k(\beta s + j)} = b^{\beta ks + kj}.
+\end{align*}
+Como $ks$ é um múltiplo de $t$, então $ks = \alpha t$ com $\alpha \in \z$. Logo
+\[
+    b^{ki} = b^{k(\beta s + j)} = b^{\beta ks + kj} = (b^{ks})^\beta(b^{kj}) = (b^{\alpha t})^\beta(b^{kj}) = b^{kj}.
+\]
+Assim $\phi(a^i) = \phi(a^j)$ e $\phi$ está bem definida.
+
+Agora é só que $\phi$ é um homomorfismo.
+
+\end{document}
