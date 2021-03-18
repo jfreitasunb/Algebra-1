@@ -44,8 +44,8 @@
 
     \questao{} Considere as opera\c{c}\~oes $\star$ e $\odot$ em $\rac$ definidas por
     \begin{align*}
-        x \star y = x + y - 6\\
-        x \odot y = x + y - \dfrac{xy}{6}.
+        x \star y = x + y - 8\\
+        x \odot y = x + y - \dfrac{xy}{8}.
     \end{align*}
     Mostre que $(\rac, \star, \odot)$ \'e um anel comutativo e com unidade.
 
@@ -73,6 +73,7 @@
         \begin{multicols}{2}
             \begin{enumerate}[label=({\alph*})]
                 \item $\z$
+                \item $2\z = \{2k \mid k \in \z\}$
                 \item $B = \{x \in \rac \mid x \notin \z\}$
                 \item $C = \left\{\dfrac{a}{b} \in \rac \mid a \in \z,\ b \in \z,\ 2 |b \right\}$
                 \item $D = \left\{\dfrac{a}{2^n} \in \rac \mid a \in \z \mbox{ e } n \in \z \right\}$
@@ -135,6 +136,43 @@
 
     \vspace{.4cm}
 
+    \questao{} Seja
+    \[
+        M_2(\z_m) = \left\{\begin{pmatrix}
+            \overline{x} & \overline{y}\\\overline{z} & \overline{t} 
+        \end{pmatrix} \mid \overline{x}, \overline{y}, \overline{z}, \overline{t} \in \z_m \right\}
+    \]
+    onde $m \in \z$, $m > 1$.
+    Dados $A = \begin{pmatrix}
+            \overline{x} & \overline{y}\\\overline{z} & \overline{t} 
+        \end{pmatrix}$, $B = \begin{pmatrix}
+            \overline{a} & \overline{b}\\\overline{c} & \overline{c} 
+        \end{pmatrix} \in M_2(\real)$ definimos
+    \begin{align*}
+        A &= B \mbox{ quando } \overline{x} = \overline{a}, \overline{y} = \overline{b}, \overline{z} = \overline{c}, \overline{t} = \overline{d}\\
+        A + B &= \begin{pmatrix}
+            \overline{x}& \overline{y}\\\overline{z} &\overline{t} 
+        \end{pmatrix} + \begin{pmatrix}
+            \overline{a} & \overline{b}\\\overline{c} & \overline{d} 
+        \end{pmatrix} = \begin{pmatrix}
+            \overline{x}+ \overline{a} & \overline{y} + \overline{b}\\\overline{z} + \overline{c} &\overline{t} + \overline{d} 
+        \end{pmatrix}\\
+        A \cdot B &= \begin{pmatrix}
+            \overline{x}& \overline{y}\\\overline{z} &\overline{t} 
+        \end{pmatrix} \cdot \begin{pmatrix}
+            \overline{a} & \overline{b}\\\overline{c} & \overline{d} 
+        \end{pmatrix} = \begin{pmatrix}
+            \overline{x}\overline{a} + \overline{y}\overline{c} & \overline{x}\overline{b} + \overline{y}\overline{d}\\\overline{z}\overline{a} + \overline{tc} & \overline{z}\overline{b} + \overline{t}\overline{d} 
+        \end{pmatrix}.
+    \end{align*}
+    Mostre que $(M_2(\z_m), + , \cdot)$ \'e um an\'el. Esse anel \'e comutativo? Possui unidade?
+
+    \vspace{.2cm}
+
+    \textbf{Observação: }\textit{No caso geral, o conjunto $(M_n(\z_m), + , \cdot)$ também é um anel.}
+
+    \vspace{.4cm}
+
     \questao{} Considere o conjunto $L = \{ a + b\sqrt{2} \mid a, b \in \rac\} \sub \real$. Para $a + b\sqrt{2}$, $c + d\sqrt{2} \in L$ definimos:
     \begin{align*}
         a + b\sqrt{2} &= c + d\sqrt{2} \quad \mbox{ quando } a = c \mbox{ e } b = d\\
@@ -146,7 +184,7 @@
 
     \vspace{1cm}
     
-    \textit{Nos casos em que n\~ao forem especificadas as opera\c{c}\~oes do anel, considere as opera\c{c}\~oes usuais.}
+    \textbf{Observação: }\textit{Nos casos em que n\~ao forem especificadas as opera\c{c}\~oes do anel, considere as opera\c{c}\~oes usuais.}
 
     \vspace{.6cm}
 
