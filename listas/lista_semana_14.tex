@@ -1,7 +1,7 @@
 %!TEX program = xelatex
 %!TEX encoding = ISO-8859-1
 \def\ano{2020}
-\def\semestre{1}
+\def\semestre{2}
 \def\disciplina{\'Algebra 1}
 \def\turma{C}
 \def\numerosemana{14}
@@ -23,93 +23,55 @@
 
     \vspace{.6cm}
 
-    \questao{} Se $G = [a]$ \'e um grupo c{\'\i}clico tal que
-    \[
-        a^r \ne a^s \mbox{ sempre que } r \ne s.
-    \]
-    Mostre que a fun\c{c}\~ao $f : \z \to G$ por $f(r) = a^r$ \'e um isomorfimo de grupos.
+    \questao{} Seja $G$ um grupo multiplicativo. Se $A \subset G$ e $A \ne \emptyset$, seja $A^{-1} = \{x^{-1} \mid x \in A\}$. Mostre que:
+    \begin{enumerate}[label=({\alph*})]
+      \item $(A^{-1})^{-1} = A$;
+
+      \item Para todos $A$, $B \subset G$, $A \ne \emptyset$, $B \ne \emptyset$, tem-se que $(AB)^{-1} = B^{-1}A^{-1}$.
+    \end{enumerate}
     
     \vspace{.3cm}
 
-    \questao{} Seja $G = [a]$ um grupo c{\'\i}clico de ordem finita igual a $m$. Mostre que a fun\c{c}\~ao $f : \z_m \to G$ dada por $f(\overline{x}) = a^x$ \'e um isomorfimo de grupos.
+    \questao{} Sejam $G$ um grupo, $N$ um subgrupo normal e $H$ um subgrupo de $G$. Mostre que o subgrupo $H \cap N$ \'e normal em $H$.
 
     \vspace{.3cm}
 
-    \questao{} Construa a tabela de multiplica\c{c}\~ao de um grupo $G = \{e, a, b, c\}$ que seja isomorfo ao grupo multiplicativo $H = \{1, i, -1, -i\}$.
-    \textit{Sugest\~ao:} Fa\c{c}a a seguinte associa\c{c}\~ao $e \to 1$, $a \to i$, $b \to -1$, $c \to -i$.
-
-    \vspace{.3cm}
-    
-    \questao{} Construa a tabela de multiplica\c{c}\~ao de um grupo $G = \{e, a, b, c\}$ que seja isomorfo ao grupo $(\z_5^*, \otimes)$. Em seguida, resolva em $G$ a equa\c{c}\~ao $axb^{-1} = c^2$.
-    \textit{Sugest\~ao:} Fa\c{c}a a seguinte associa\c{c}\~ao $e \to \overline{1}$, $a \to \overline{2}$, $b \to \overline{3}$, $c \to \overline{4}$.
+    \questao{} Seja $G$ um grupo e $N$ um subgrupo de $G$. Mostre que $N$ \'e normal se, e somente se, $x^{-1}Nx = N$, para todo $x \in G$.
+    \noindent\textit{Observa\c{c}\~ao: $x^{-1}Nx = \{x^{-1}nx \mid n \in N\}$}.
 
     \vspace{.3cm}
 
-    \questao{} Sabendo que $G = \{e, a, b, c, d, f\}$ \'e um grupo multiplicativo isomorfo ao grupo aditivo $\z_6$, onde $e$ \'e o elemento neutro de $G$ responda aos seguintes itens:
-    \begin{enumerate}[label=({\alph*})]
-      \item Construa a tabela de multiplica\c{c}\~ao de $G$.
-
-      \item Calcule $a^2$, $b^{-2}$ e $c^{-3}$.
-
-      \item Obtenha $x \in G$ tal que $bxc = a^{-1}$.
-    \end{enumerate}
-    \textit{Sugest\~ao:} Fa\c{c}a a seguinte associa\c{c}\~ao $e \to \overline{0}$, $a \to \overline{1}$, $b \to \overline{2}$, $c \to \overline{2}$, $d \to \overline{4}$, $f \to \overline{5}$.
+    \questao{} Mostre que, se $M$ e $N$ s\~ao subgrupos normais do grupo $G$ e $M \cap N = \{e\}$, ent\~ao $xy = yx$ para quaisquer $x \in M$ e $y \in N$.
+    \noindent \textit{Sugest\~ao: Mostre que $(xy)(yx)^{-1} = e$.}
 
     \vspace{.3cm}
 
-    \questao{} Mostre que $f : \z \to 2\z$ dada por $f(n) = 2n$, para todo $n \in \z$, \'e um isomorfismo do grupo aditivo $\z$ no grupo aditivo $2\z = \{0, \pm 2, \pm 4, \dots\}$.
+    \questao{} Seja $G$ um grupo multiplicativo. Se $a \in G$ é tal que o subgrupo $[a]$ é normal, mostre que $H = \{x \in G \mid xa = ax\}$ \'e um subgrupo normal de $G$.
 
     \vspace{.3cm}
 
-    \questao{} Seja $a \in \real_+^*$ e $a \ne 1$.
-    \begin{enumerate}[label=({\alph*})]
-      \item  Mostre que $G = \{a^n \mid n \in \z\}$ \'e um subgrupo de $(\real_+^*, \cdot)$.
-
-      \item Mostre que $f : \z \to G$ tal que $f(n) = a^n$ \'e um isomorfismo de $(\z, +)$ em $(G, \cdot)$.
-    \end{enumerate}
-
+    \questao{} Seja $f : G \to L$ um homomorfismo sobrejetor de grupos. Se $H$ \'e um subgrupo normal de $G$, mostre que $f(H)$ \'e um subgrupo normal de $L$.
+  
     \vspace{.3cm}
 
-    \questao{} Mostre que $G = \{2^m3^n \mid m, n \in \z\}$ e $J = \{m + ni \mid m, n \in \z\}$ s\~ao subgrupos de $(\real_+^*, \cdot)$ e $(\complex, +)$, respectivamente, e que s\~ao isomorfos.
-
-    \newpage
-
-    \questao{} Seja $G$ um grupo. Considere o conjunto
+    \questao{} Sejam $H$ e $K$ subgrupos normais de um grupo $G$, tais que $H \cap K = \{e\}$. Se $h_1$, $h_2 \in H$ e $k_1$, $k_2 \in K$ s\~ao tais que
     \[
-        Aut(G) = \{f : G \to G \mid f \mbox{ \'e um isomorfismo}\}.
+      h_1k_1 = h_2k_2,
     \]
-    \begin{enumerate}[label=({\alph*})]
-      \item Mostre que $(Aut(G), \circ)$ \'e um grupo.
-
-      \item Mostre que $Aut(\z) \cong \z_2$.
-    \end{enumerate}
+    prove que $h_1 = h_2$ e $k_1 = k_2$.
 
     \vspace{.3cm}
 
-    \questao{} Considere o conjunto
-    \[
-      J = \left\{\begin{bmatrix}
-        1 & 0\\0 & 1
-      \end{bmatrix}, \begin{bmatrix}
-        1 & 0\\0 & -1
-      \end{bmatrix}, \begin{bmatrix}
-        -1 & 0\\0 & 1
-      \end{bmatrix}, \begin{bmatrix}
-        -1 & 0\\0 & -1
-      \end{bmatrix}\right\}.
-    \]
-    \begin{enumerate}[label=({\alph*})]
-      \item Mostre que $J$ com a opera\c{c}\~ao de multiplica\c{c}\~ao de matrizes \'e um grupo.
-
-      \item Esse grupo \'e abeliano?
-
-      \item Mostre que $J \cong \z_4$.
-    \end{enumerate}
+    \questao{} Determine todos os subgrupos n\~ao triviais do grupo aditivo $\z_8$. Para cada subgrupo $H$ encontrado, construa a tabela do grupo quociente $\z_6/H$.
 
     \vspace{.3cm}
 
-    \questao{} Os grupos $(\z_7^*, \otimes)$ e $(\z_6, \oplus)$ s\~ao isomorfos?
+    \questao{} Construa a t\'abua dos seguintes grupos quocientes:
+    \begin{enumerate}[label=({\alph*})]
+      \item $\z_9/H$ em que $H = \{\overline{0}, \overline{3}, \overline{6}\}$
 
+      \item $\z/2\z$
 
-    
+      \item $(\z \times \z)/(3\z \times 2\z)$
+    \end{enumerate}
 \end{document}

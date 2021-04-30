@@ -1,7 +1,7 @@
 %!TEX program = xelatex
 %!TEX encoding = ISO-8859-1
 \def\ano{2020}
-\def\semestre{1}
+\def\semestre{2}
 \def\disciplina{\'Algebra 1}
 \def\turma{C}
 \def\numerosemana{13}
@@ -22,93 +22,94 @@
     \hrule
 
     \vspace{.6cm}
+
+    \questao{} Se $G = [a]$ \'e um grupo c{\'\i}clico tal que
+    \[
+        a^r \ne a^s \mbox{ sempre que } r \ne s.
+    \]
+    Mostre que a fun\c{c}\~ao $f : \z \to G$ por $f(r) = a^r$ \'e um isomorfimo de grupos.
     
-    \questao{nucleo_homomorfismo} Verificar em cada caso se $f$ \'e um homomorfismo de grupos.
+    \vspace{.3cm}
+
+    \questao{} Seja $G = [a]$ um grupo c{\'\i}clico de ordem finita igual a $m$. Mostre que a fun\c{c}\~ao $f : \z_m \to G$ dada por $f(\overline{x}) = a^x$ \'e um isomorfimo de grupos.
+
+    \vspace{.3cm}
+
+    \questao{} Construa a tabela de multiplica\c{c}\~ao de um grupo $G = \{e, a, b, c\}$ que seja isomorfo ao grupo multiplicativo $H = \{1, i, -1, -i\}$.
+    \textit{Sugest\~ao:} Fa\c{c}a a seguinte associa\c{c}\~ao $e \to 1$, $a \to i$, $b \to -1$, $c \to -i$.
+
+    \vspace{.3cm}
+    
+    \questao{} Construa a tabela de multiplica\c{c}\~ao de um grupo $G = \{e, a, b, c\}$ que seja isomorfo ao grupo $(\z_5^*, \otimes)$. Em seguida, resolva em $G$ a equa\c{c}\~ao $axb^{-1} = c^2$.
+    \textit{Sugest\~ao:} Fa\c{c}a a seguinte associa\c{c}\~ao $e \to \overline{1}$, $a \to \overline{2}$, $b \to \overline{3}$, $c \to \overline{4}$.
+
+    \vspace{.3cm}
+
+    \questao{} Sabendo que $G = \{e, a, b, c, d, f\}$ \'e um grupo multiplicativo isomorfo ao grupo aditivo $\z_6$, onde $e$ \'e o elemento neutro de $G$ responda aos seguintes itens:
     \begin{enumerate}[label=({\alph*})]
-      \item $f: \z \to \z$ dada por $f(x) = kx$, sendo $\z$ o grupo aditivo dos inteiros e $k$ um n\'umero inteiro fixo.
-      
-      \item $f: \real^* \to \real^*$ dada por $f(x) = |x|$ sendo $\real^*$ o grupo multiplicativo dos reais.
-      
-      \item $f: \real \to \real$ dada por $f(x) = x + 1$, onde $\real$ \'e o grupo aditivo dos reais.
-      
-      \item $f: \z \to \z \times \z$ dada por $f(x) = (x, 0)$, onde $\z$ e $\z \times \z$ denotam grupos aditivos.
-      
-      \item $f: \z \times \z \to \z$ dada por $f(x,y) = x$, onde $\z \times \z$ e $\z$ s\~ao grupos aditivos.
-      
-      \item $f: \z \to \real^*_+$ dada por $f(x) = 2^x$, onde $\z$ \'e grupo aditivo e $\real^*_+$ \'e grupo multiplicativo.
+      \item Construa a tabela de multiplica\c{c}\~ao de $G$.
+
+      \item Calcule $a^2$, $b^{-2}$ e $c^{-3}$.
+
+      \item Obtenha $x \in G$ tal que $bxc = a^{-1}$.
+    \end{enumerate}
+    \textit{Sugest\~ao:} Fa\c{c}a a seguinte associa\c{c}\~ao $e \to \overline{0}$, $a \to \overline{1}$, $b \to \overline{2}$, $c \to \overline{2}$, $d \to \overline{4}$, $f \to \overline{5}$.
+
+    \vspace{.3cm}
+
+    \questao{} Mostre que $f : \z \to 2\z$ dada por $f(n) = 2n$, para todo $n \in \z$, \'e um isomorfismo do grupo aditivo $\z$ no grupo aditivo $2\z = \{0, \pm 2, \pm 4, \dots\}$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $a \in \real_+^*$ e $a \ne 1$.
+    \begin{enumerate}[label=({\alph*})]
+      \item  Mostre que $G = \{a^n \mid n \in \z\}$ \'e um subgrupo de $(\real_+^*, \cdot)$.
+
+      \item Mostre que $f : \z \to G$ tal que $f(n) = a^n$ \'e um isomorfismo de $(\z, +)$ em $(G, \cdot)$.
     \end{enumerate}
 
     \vspace{.3cm}
 
-    \questao{} Das fun\c{c}\~oes a seguir, algumas s\~ao homomorfismos do grupo multiplicativo $\complex^*$. \textbf{Descubra} quais e determine o n\'ucleo de cada uma.
-    \begin{multicols}{2}
-      \begin{enumerate}[label=({\alph*})]
-        \item $f(z) = z^2$
+    \questao{} Mostre que $G = \{2^m3^n \mid m, n \in \z\}$ e $J = \{m + ni \mid m, n \in \z\}$ s\~ao subgrupos de $(\real_+^*, \cdot)$ e $(\complex, +)$, respectivamente, e que s\~ao isomorfos.
 
-        \item $f(z) = |z|$, aqui $|z| = \sqrt{a^2 + b^2}$, se $z = a + bi$.
+    \newpage
 
-        \item $f(z) = \dfrac{1}{z}$
-
-        \item $f(z) = -\dfrac{1}{z}$
-
-        \item $f(z) = -z$
-
-        \item $f(z) = z^3$
-
-        \item $f(z) = \overline{z}$ onde $\overline{z} = a - bi$, se $z = a + bi$.
-      \end{enumerate}
-    \end{multicols}
-
-    \vspace{.3cm}
-
-    \questao{} Sejam $(G, \cdot)$ e $(J, \cdot)$ grupos. Estabele\c{c}a quais das seguintes fun\c{c}\~oes s\~ao homomorfismos e determine seus n\'ucleos.
-
+    \questao{} Seja $G$ um grupo. Considere o conjunto
+    \[
+        Aut(G) = \{f : G \to G \mid f \mbox{ \'e um isomorfismo}\}.
+    \]
     \begin{enumerate}[label=({\alph*})]
-      \item $f_1 : G \times J \to G$ dada por $f_1(x,y) = x$.
+      \item Mostre que $(Aut(G), \circ)$ \'e um grupo.
 
-      \item $f_2 : G \times J \to J$ dada por $f_2(x,y) = y$.
-
-      \item $f_3 : G  \to G \times J$ dada por $f_3(x) = (x, 1_J)$.
-
-      \item $f_4 : G \times J \to J \times G$ dada por $f_4(x,y) = (y, x)$.
-
-      \item $f_5 : J \to G \times J$ dada por $f_5(y) = (1_G, y)$.
+      \item Mostre que $Aut(\z) \cong \z_2$.
     \end{enumerate}
 
     \vspace{.3cm}
 
-    \questao{} Determine o n\'ucleo em cada homomorfismo do \textbf{Exerc{\'\i}cio \ref{nucleo_homomorfismo}}.
-
-    \vspace{.3cm}
-
-    \questao{} Determinar os homomorfismos injetores e os sobrejetores do \textbf{Exerc{\'\i}cio \ref{nucleo_homomorfismo}}.
-
-    \vspace{.3cm}
-
-    \questao{} Sejam $G$ e $J$ grupos multiplicativos, $f : G \to J$ um homomorfismo de grupos e $H$ um subgrupo de $J$. Mostre que $f^{-1}(H) = \{ x \in G \mid f(x) \in H\}$ {\'e} um subgrupo de $G$.
-
-    \vspace{.3cm}
-
-    \questao{} Prove que um grupo $G$ {\'e} abeliano se, e somente se, $f : G \to G$ definada por $f(x) = x^{-1}$ {\'e} um homomorfismo.
-
-    \vspace{.3cm}
-
-    \questao{} Seja $f: G\to H$ um homomorfismo de grupos e $K$ um subgrupo de $H$. Mostre que Ker$(f)\subset f^{-1}(K)$.
-
-    \vspace{.3cm}
-
-    \questao{} Seja $f: \z \times \z \to \z \times \z$ definida por $f(x, y) = (x - y, 0)$. Provar que $f$ \'e um homomorfimo do grupo aditivo $\z \times \z$ em si pr\'oprio. Obter $\ker(f)$.
-
-    \vspace{.3cm}
-
-    \questao{} Seja $f: G \to J$ um homomorfismo de grupos e $g\in G$ tal que $o(g)=n$.
+    \questao{} Considere o conjunto
+    \[
+      J = \left\{\begin{bmatrix}
+        1 & 0\\0 & 1
+      \end{bmatrix}, \begin{bmatrix}
+        1 & 0\\0 & -1
+      \end{bmatrix}, \begin{bmatrix}
+        -1 & 0\\0 & 1
+      \end{bmatrix}, \begin{bmatrix}
+        -1 & 0\\0 & -1
+      \end{bmatrix}\right\}.
+    \]
     \begin{enumerate}[label=({\alph*})]
-      \item Mostre que $f(g)$ tem ordem positiva e que a ordem de $f(g)$ divide $n$.
-      
-      \item Mostre que se $f$ {\'e} isomorfismo, ent{\~a}o $o(f(g))=n$.
+      \item Mostre que $J$ com a opera\c{c}\~ao de multiplica\c{c}\~ao de matrizes \'e um grupo.
+
+      \item Esse grupo \'e abeliano?
+
+      \item Mostre que $J \cong \z_4$.
     \end{enumerate}
 
     \vspace{.3cm}
 
-    \questao{} Seja $G = [a]$ um grupo c{\'\i}clico de ordem $s$ e $H = [b]$ um grupo c{\'\i}clico de ordem $t$. Demonstre que $\phi : G \to H$, definida por $\phi(a) = b^k$ \'e um homomorfismo de grupos se, e somente se, $sk$ \'e um m\'ultiplo de $t$.
+    \questao{} Os grupos $(\z_7^*, \otimes)$ e $(\z_6, \oplus)$ s\~ao isomorfos?
+
+
+    
 \end{document}
