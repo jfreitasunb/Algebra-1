@@ -55,6 +55,12 @@
 
     \vspace{.4cm}
 
+    \questao{} Considere o conjunto
+    \[
+     T_2(\z) = \left\{\begin{bmatrix}a & b\\ 0 & c\end{bmatrix} \mid a, b, c \in \z\right\}.
+    \]
+    Mostre que $T_2(\z)$ é um anel, com as operações usuais de soma e multiplicação de matrizes. Esse anel possui unidade? É comutativo?
+
     \questao{} Seja $X$ um conjunto não vazio e $\mathcal{P}(X)$ o conjunto das partes de $X$. Defina em $\mathcal{P}(X)$ a operação $\Delta$ por
     \[
         A \Delta B = (A - B) \cup (B - A)
@@ -365,4 +371,21 @@
         M_2^d(\z) = \left\{\begin{pmatrix} a & db \\ b & a \end{pmatrix} \mid a, b \in \z\right\}.
     \]
     Mostre que $M_2^d(\z)$ é um subanel de $M_2(\z)$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $X$ um conjunto infinito. Sabemos que $(\mathcal{P}(X), \Delta, \cap)$ é um anel com unidade. Seja
+    \[
+        R = \{A \in \mathcal{P}(X) \mid A \mbox{ é finito}\}.
+    \]
+    Prove as seguintes afirmações:
+    \begin{enumerate}[label=({\alph*})]
+        \item $R$ é um subanel de $\mathcal{P}(X)$.
+
+        \item $R$ não possui unidade.
+
+        \item Para todo $A \in R$, $A \ne \emptyset$ existe $B \in R$ tal que $A \cap B = \emptyset$.
+
+        \item Para todo $A \in \mathcal{P}(X)$, $A \ne X$, $A \ne \emptyset$ existe $B \in \mathcal{P}(X)$ tal que $A \cap B = \emptyset$.
+    \end{enumerate}
 \end{document}
