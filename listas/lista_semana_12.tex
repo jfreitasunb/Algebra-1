@@ -25,17 +25,17 @@
 
     \questao{nucleo_homomorfismo} Verificar em cada caso se $f$ \'e um homomorfismo de grupos.
     \begin{enumerate}[label=({\alph*})]
-      \item $f: \z \to \z$ dada por $f(x) = kx$, sendo $\z$ o grupo aditivo dos inteiros e $k$ um n\'umero inteiro fixo.
+        \item $f: \z \to \z$ dada por $f(x) = kx$, sendo $\z$ o grupo aditivo dos inteiros e $k$ um n\'umero inteiro fixo.
 
-      \item $f: \real^* \to \real^*$ dada por $f(x) = |x|$ sendo $\real^*$ o grupo multiplicativo dos reais.
+        \item $f: \real^* \to \real^*$ dada por $f(x) = |x|$ sendo $\real^*$ o grupo multiplicativo dos reais.
 
-      \item $f: \real \to \real$ dada por $f(x) = x + 1$, onde $\real$ \'e o grupo aditivo dos reais.
+        \item $f: \real \to \real$ dada por $f(x) = x + 1$, onde $\real$ \'e o grupo aditivo dos reais.
 
-      \item $f: \z \to \z \times \z$ dada por $f(x) = (x, 0)$, onde $\z$ e $\z \times \z$ denotam grupos aditivos.
+        \item $f: \z \to \z \times \z$ dada por $f(x) = (x, 0)$, onde $\z$ e $\z \times \z$ denotam grupos aditivos.
 
-      \item $f: \z \times \z \to \z$ dada por $f(x,y) = x$, onde $\z \times \z$ e $\z$ s\~ao grupos aditivos.
+        \item $f: \z \times \z \to \z$ dada por $f(x,y) = x$, onde $\z \times \z$ e $\z$ s\~ao grupos aditivos.
 
-      \item $f: \z \to \real^*_+$ dada por $f(x) = 2^x$, onde $\z$ \'e grupo aditivo e $\real^*_+$ \'e grupo multiplicativo.
+        \item $f: \z \to \real^*_+$ dada por $f(x) = 2^x$, onde $\z$ \'e grupo aditivo e $\real^*_+$ \'e grupo multiplicativo.
     \end{enumerate}
 
     \vspace{.3cm}
@@ -93,6 +93,28 @@
         \item A função $f : \real \to SO(2)$ definida por
             \[
                 f(t) = \begin{bmatrix}cos(t) & -\sin(t)\\\sin(t) & \cos(t)\end{bmatrix}
+            \]
+        é um homomorfismo de grupos? Caso afirmativo, esse homomorfismo é injetor? É sobrejetor?
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Considere o conjunto
+    \[
+        GL_2(\real) = GL(2, \real) = \left\{A = \begin{bmatrix}x & y\\z & t\end{bmatrix} \mid x, y, z, t \in \real,\ \det(A) \ne 0 \right\}.
+    \]
+    \begin{enumerate}[label=({\alph*})]
+        \item Mostre que $GL_2(\real)$ é um grupo não abeliano com a operação de multiplicação de matrizes.
+
+        \item A função $f : \real \to GL_2(\real)$ definida por
+            \[
+                f(x) = \begin{bmatrix}x & 0\\0 & 1\end{bmatrix}
+            \]
+        é um homomorfismo de grupos? Caso afirmativo, esse homomorfismo é injetor? É sobrejetor?
+
+        \item A função $g : \real \to GL_2(\real)$ definida por
+            \[
+                g(x) = \begin{bmatrix}1 & x\\0 & 1\end{bmatrix}
             \]
         é um homomorfismo de grupos? Caso afirmativo, esse homomorfismo é injetor? É sobrejetor?
     \end{enumerate}
