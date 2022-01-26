@@ -18,9 +18,9 @@
 	\begin{enumerate}[label={\arabic*})]
 		\item Todo n\'umero primo \'e {\'\i}mpar.
 		\begin{solucao}
-			Essa seten\c{c}a \'e uma proposi\c{c}\~ao de valor l\'ogico "Falsidade."	
+			Essa seten\c{c}a \'e uma proposi\c{c}\~ao de valor l\'ogico "Falsidade."
 		\end{solucao}
-		
+
 		\item $x^2 + y^2 \ge 0$ para todos $x$, $y \in \real$.
 		\begin{solucao}
 			Esse seten\c{c}a \'e uma proposi\c{c}\~ao de valor l\'ogico "Verdade".
@@ -102,7 +102,7 @@ Para dizer que um elemento $x$ n{\~a}o pertence ao conjunto $A$, escrevemos:
 	x \notin A.
 \]
 
-Um conjunto sem elementos {\'e} chamado de \textbf{conjunto vazio}. Tal conjunto {\'e} denotado por $\emptyset$.
+Um conjunto sem elementos {\'e} chamado de \textbf{conjunto vazio}. Tal conjunto {\'e} denotado por $\emptyset$ ou por $\{\ \}$.
 
 Dado um conjunto $A$ e $x$ um elemento, ocorre sempre uma das seguintes situa\c{c}\~oes:
 \[
@@ -154,7 +154,7 @@ Um conjunto tamb{\'e}m pode ser dado pela descri{\c c}{\~a}o das propriedades do
 \begin{observacao}
 	Dados conjuntos $A$ e $B$, de acordo com a Defini\c{c}\~ao \ref{igualdade_conjuntos} para que $A \ne B$ basta que exista um elemento $x \in A$ de maneira que $x \notin B$ ou que exista $y \in B$ com a condição de que $y \notin A$.
 \end{observacao}
-	
+
 \begin{definicao}\label{definicao_continencia_conjuntos}
 	Se $A$ e $B$ s{\~a}o dois conjuntos, dizemos que $A$ {\'e} um \textbf{subconjunto} de $B$ ou que $A$ \textbf{est\'a contido} em $B$ ou que $B$ \textbf{cont\'em} $A$ se todo elemento de $A$ for elemento de $B$. Ou seja, se para todo elemento $x \in A$, temos $x \in B$. Nesse caso, escrevemos $A \subseteq B$ (ou $A \subset B$) ou $B \supseteq A$ (ou $B \supset A$).
 \end{definicao}
@@ -217,7 +217,7 @@ Considere os seguintes conjuntos:
 
 Neste caso, $2 \in A$ e $2 \notin B$, logo $A \nsubseteq B$. Por outro lado, $3 \in B$ e $3 \notin A$ e com isso $B \nsubseteq A$. Portanto, dados dois conjuntos $A$ e $B$, nem sempre temos $A \subseteq B$ ou $B \subseteq A$.
 
-\begin{proposicao} 
+\begin{proposicao}
 	Seja $A$ um conjunto. Ent{\~a}o $ \emptyset \subseteq A$.
 \end{proposicao}
 \begin{prova}
@@ -285,7 +285,7 @@ O conceito de uni{\~a}o ($ \cup $) e intersec{\c c}{\~a}o ($ \cap $) pode ser es
 \end{definicao}
 
 \begin{definicao}
-	Sejam $A$ e $B$ conjuntos. Se $A \cap B = \emptyset$, dizemos que $A$ e $B$ s{\~a}o \textbf{conjuntos disjuntos}.	
+	Sejam $A$ e $B$ conjuntos. Se $A \cap B = \emptyset$, dizemos que $A$ e $B$ s{\~a}o \textbf{conjuntos disjuntos}.
 \end{definicao}
 
 
@@ -349,7 +349,7 @@ Sejam $A$ e $B$ conjuntos tais que $C = A \cup B$ e $A \cap B = \emptyset$. Nest
 		 	B - A &= \{3,9,15,21,...\}
 		 \end{align*}
 	\end{enumerate}
-	
+
 \end{exemplos}
 
 \begin{proposicao}
@@ -365,7 +365,7 @@ Sejam $A$ e $B$ conjuntos tais que $C = A \cup B$ e $A \cap B = \emptyset$. Nest
 		\item $(B - C) \sub (A \cup B) - C = (A - C)$
 	\end{enumerate}
 	Para a primeira inclus\~ao seja $x \in (A \cup B) - C$. Assim por defini\c{c}\~ao, $x \in A \cup B$ e $x \notin C$. De $x \in A \cup B$, ent\~ao $x \in A$ ou $x \in B$.
-	
+
 	Se $x \in A$, como $x \notin C$ segue ent\~ao que $x \in A - C$. Logo $x \in (A - C) \cup (B - C)$.
 
 	Se $x \in B$, como $x \notin C$ segue ent\~ao que $x \in B - C$. Logo $x \in (A - C) \cup (B - C)$.
@@ -394,7 +394,7 @@ Dados dois conjuntos $A$ e $E$ tais que $A\subseteq E$, definimos o \textbf{comp
 		\item Se $A = E$, ent{\~a}o $C_A(A) = \{ x \in A \mid x \notin A \} = \emptyset$.
 		\item $(A^C)^C = \{x \in E \mid x \notin A^C\} = \{ x \in E \mid x \in A \} = A$
 	\end{enumerate}
-	
+
 \end{observacoes}
 
 \begin{exemplo}
@@ -502,5 +502,5 @@ Os elementos desse conjunto s{\~a}o todos os subconjuntos de $A$. Dizer que $Y\i
 		\item $B = \{x\}$, $\mathcal{P}(B) = \{\emptyset, \{x\}\}$;
 		\item $C = \{a,b,c\}$, $\mathcal{P}(C)=\{\emptyset, \{a\}, \{b\},\{c\},\{a,b\},\{a,c\},\{b,c\},C\}$;
 		\item $D=\real$, $\mathcal{P}(D)=\{X\mid X \subseteq \real\}$, por exemplo $\rac\in \mathcal{P}(D)$.
-	\end{enumerate}	
+	\end{enumerate}
 \end{exemplos}
