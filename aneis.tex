@@ -9,7 +9,7 @@
 	Seja $A$ um conjunto n{\~a}o vazio. Dizemos que $A$ est{\'a} munido (ou equipado) de uma \textbf{opera{\c c}{\~a}o bin{\'a}ria} quando existe uma fun{\c c}{\~a}o
 	\begin{align*}
 		&\Delta : A \times A \to A\\
-		&(a,b) \longmapsto a\Delta b		
+		&(a,b) \longmapsto a\Delta b
 	\end{align*}
 	Uma opera{\c c}{\~a}o bin{\'a}ria tamb{\'e}m {\'e} chamada de uma \textbf{opera{\c c}{\~a}o interna} em $A$.
 \end{definicao}
@@ -63,7 +63,7 @@
 			(x \oplus y)\otimes z = x\otimes z \oplus y\otimes z.
 		\]
 		Essa propriedade {\'e} chamada \textbf{distributiva da soma em rela{\c c}{\~a}o ao produto}.
-		
+
 		\item \textbf{Distributividade}: Para todos $x$, $y$, $z \in A$ vale
 		\[
 			x\otimes(y \oplus z) = x\otimes y \oplus x\otimes z.
@@ -89,7 +89,7 @@
 
 		\item Se um anel $(A, \oplus, \otimes)$ satisfaz as duas propriedades anteriores dizemos que $(A, \oplus, \otimes)$ \'e um \textbf{anel comutativo com unidade} ou um \textbf{anel comutativo unit\'ario}.
 
-		\item Seja $(A, \oplus, \otimes)$ um anel. Quando n\~ao houver chance de confus\~ao com rela\c{c}\~ao \`as opera\c{c}\~oes envolvidas diremos simplesmente que $A$ \'e uma anel.
+		\item Seja $(A, \oplus, \otimes)$ um anel. Quando n\~ao houver chance de confus\~ao com rela\c{c}\~ao \`as opera\c{c}\~oes envolvidas diremos simplesmente que $A$ \'e um anel.
 	\end{enumerate}
 \end{observacoes}
 
@@ -106,11 +106,11 @@
 		\begin{enumerate}[label={\roman*})]
 			\item Para todo $x \in \z$
 			\begin{align*}
-				[(f \oplus g) \oplus h](x) &= (f \oplus g)(x) + h(x) = (f(x) + g(x)) + h(x)\\ 
+				[(f \oplus g) \oplus h](x) &= (f \oplus g)(x) + h(x) = (f(x) + g(x)) + h(x)\\
 				&= f(x) + (g(x) + h(x)) = f(x) + (g \oplus h)(x)\\ &= [f \oplus (g \oplus h)](x)
 			\end{align*}
 			para todos $f$, $g$ e $h \in A$.
-			
+
 			\item Para todo $x \in \z$
 			\[
 				(f\oplus g)(x) = f(x) + g(x) = g(x) + f(x) = (g\oplus f)(x),
@@ -145,7 +145,7 @@
 
 			\item Para todo $x \in \z$
 			\begin{align*}
-				[f\otimes (g \oplus h)](x) &= f(x)(g\oplus h)(x) = f(x)(g(x) + h(x))\\ 
+				[f\otimes (g \oplus h)](x) &= f(x)(g\oplus h)(x) = f(x)(g(x) + h(x))\\
 				&= f(x)g(x) + f(x)h(x) = (f\otimes g)(x) + (f\otimes h)(x)\\
 				&= [(f \otimes g) \oplus (f\otimes h)](x)
 			\end{align*}
@@ -192,7 +192,7 @@
 	\begin{enumerate}[label={\roman*})]
 		\item Suponha que existam $0_1$, $0_2\in A$ elementos neutros de $A$. Assim
 		\[
-			x + 0_1 = x \quad \mbox{e}\quad x + 0_2 = x	
+			x + 0_1 = x \quad \mbox{e}\quad x + 0_2 = x
 		\]
 		para todo $x \in A$. Assim
 		\[
@@ -209,7 +209,7 @@
 			y_1 = y_2 + 0_A = y_1 + (x + y_2) = (y_1 + x) + y_2 = 0_A + y_2 =y_2.
 		\]
 		Logo o oposto de $x$ \'e \'unico  e da{\'\i} ser\'a denotado por $-x$.
-		
+
 		\item Dado $x \in A$, ent\~ao $-x$ {\'e} oposto de $x$, isto {\'e}, $x + (-x) = 0_A$. Logo o oposto de $(-x)$ {\'e} $x$, ou seja, $-(-x) = x$.
 
 		\item Segue usando indu\c{c}\~ao sobre $n$.
@@ -236,7 +236,7 @@
 \label{sec:aneis_de_integridade_e_subaneis}
 
 \begin{definicao}
-	Um anel comutativo $(A, + , \cdot)$ {\'e} dito ser um \textbf{anel de integridade} quando para todos 
+	Um anel comutativo $(A, + , \cdot)$ {\'e} dito ser um \textbf{anel de integridade} quando para todos
 	$x$, $y \in A$, se $xy = 0_A$, ent{\~a}o $x = 0_A$ ou $y = 0_A$. Um anel de integridade tamb{\'e}m {\'e} chamado de \textbf{dom{\'\i}nio de integridade} ou simplesmente de \textbf{dom{\'\i}nio}.
 \end{definicao}
 
@@ -248,9 +248,9 @@
 \begin{exemplos}
 	\begin{enumerate}[label={\arabic*})]
 		\item Os an{\'e}is $\z$, $\rac$, $\real$, $\complex$ s{\~a}o an{\'e}is de integridade.
-		
+
 		\item Em geral $\z_m$ n{\~a}o {\'e} anel de integridade, por exemplo, em $\z_4$, $\overline{2} \neq \overline{0}$, no entanto $\overline{2}\otimes \overline{2} = \overline{4} = \overline{0}$.
-		
+
 		\item $M_{n}(\real)$ n{\~a}o {\'e} um anel de integridade, por exemplo, em $M_{2}(\real)$
 		\begin{align*}
 			A &= \begin{bmatrix}
@@ -258,8 +258,8 @@
 				0 & 0
 			\end{bmatrix} \neq \begin{bmatrix}
 				0 & 0\\
-				0 & 0		
-			\end{bmatrix},\qquad 
+				0 & 0
+			\end{bmatrix},\qquad
 			B = \begin{bmatrix}
 				0 & 0\\
 				1 & 0
@@ -288,7 +288,7 @@
 		\item Todo anel $A$ sempre tem dois suban{\'e}is: $\{0_{A}\}$ e $A$, que s{\~a}o chamados de \textbf{suban{\'e}is triviais}.
 		\item Em $(\z_4,\oplus,\otimes)$ o conjunto $B = \{\overline{0}, \overline{2}\}$ \'e um subanel.
 		\item No anel $\z$, o conjunto $m\z$, $m > 1$ {\'e} um subanel de $\z$.
-	\end{enumerate}	
+	\end{enumerate}
 \end{exemplos}
 
 \begin{proposicao}
@@ -470,7 +470,7 @@
 	\begin{enumerate}[label={\arabic*})]
 		\item Em $\z$ todos os ideais n{\~a}o triviais s{\~a}o da forma $m\z$, $m > 1$.
 		\item No anel $\z_p$, onde $p$ {\'e} um n{\'u}mero primo, os {\'u}nicos ideais  s{\~a}o os triviais $\{\overline{0}\}$ e $\z_p$.
-		
+
 		De fato, seja $I \sub \z_p$ um ideal, $I \neq \{\overline{0}\}$. Provemos que $I = \z_p$. Para isso,
 		vamos provar que $\overline{1} \in I$. Seja $\overline{a} \in I$, $\overline{a} \neq \overline{0}$, pois $I \neq \{\overline{0}\}$. Como $p$ {\'e} primo, $mdc(a,p) = 1$, da{\'\i} existe $\overline{b} \in \z_p$, $\overline{b} \neq \overline{0}$, tal que $\overline{1} = \overline{a} \otimes \overline{b}$. Mas $I$ {\'e} ideal e $\overline{a} \in I$, logo $\overline{1} = \overline{a} \otimes \overline{b} \in I$.
 
@@ -481,7 +481,7 @@
 			I_1 &= \{\overline{0}, \overline{2}, \overline{4}, \overline{6}\}\\
 			I_2 &=\{\overline{0}, \overline{4}\}
 		\end{align*}
-	\end{enumerate}	
+	\end{enumerate}
 \end{exemplos}
 
 
@@ -558,7 +558,7 @@ Verifiquemos que a soma e o produto em $\dfrac{A}{I}$ n{\~a}o dependem do repres
 Para isso sejam $x_1 + I$, $x_2 + I$, $y_1 + I$, $y_2 + I \in \dfrac{A}{I}$ tais que
 \begin{align*}
 	x_1 + I &= x_2 + I\\
-	y_1 + I &= y_2 + I	
+	y_1 + I &= y_2 + I
 \end{align*}
 
 Ent{\~a}o

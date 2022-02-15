@@ -11,7 +11,7 @@
    Seja $A$ um conjunto n\~ao vazio. Toda fun\c{c}\~ao $f : A \times A \to A$ \'e chamada de uma \textbf{opera\c{c}\~ao bin\'aria} sobre $A$.
 \end{definicao}
 
-Nas considera\c{c}\~oes que faremos a seguir uma opera\c{c}\~ao bin\'aria $f$ sobre $A$ que associa a cada par ordenado $(x, y) \in A \times A$ um elemento $f(x, y) \in A$ ser\'a denotada simplesmente por $*$. Assim escreveremos $f(x, y) = x*y$. Por exemplo a opera\c{c}\~ao $* : \n \times \n \to \n$ tal que $x*y = x^y$ est\'a bem definida pois $x^y \in \n$ sempre que $x$, $y \in \n$. Observe que esta opera\c{c}\~ao n\~ao pode ser definida em $\z$ pois por exemplo $2^{-1} \notin \z$. Tamb\'em n\~ao pode ser definida em $\rac$ pois $2^{1/2} \notin \rac$.
+Nas considera\c{c}\~oes que faremos a seguir uma opera\c{c}\~ao bin\'aria $f$ sobre $A$ que associa a cada par ordenado $(x, y) \in A \times A$ um elemento $f(x, y) \in A$ ser\'a denotada simplesmente por $*$. Assim escreveremos $f(x, y) = x*y$. Por exemplo, a opera\c{c}\~ao $* : \n \times \n \to \n$ tal que $x*y = x^y$ est\'a bem definida pois $x^y \in \n$ sempre que $x$, $y \in \n$. Observe que esta opera\c{c}\~ao n\~ao pode ser definida em $\z$ pois, por exemplo $2^{-1} \notin \z$. Tamb\'em n\~ao pode ser definida em $\rac$ pois $2^{1/2} \notin \rac$.
 
 \begin{definicao}
 	Seja $G$ um conjunto n{\~a}o vazio no qual est\'a definida uma opera{\c c}{\~a}o bin{\'a}ria $*$ tal que:
@@ -20,7 +20,7 @@ Nas considera\c{c}\~oes que faremos a seguir uma opera\c{c}\~ao bin\'aria $f$ so
 		\[
 			(x*y)*z=x*(y*z)
 		\]
-		
+
 		\item Existe $e \in G$ tal que
 		\[
 			x*e = x = e*x
@@ -165,7 +165,7 @@ Se $A = \{1, 2\}$ ent\~ao podemos definir as seguintes fun\c{c}\~oes bijetoras e
 Assim $\mathcal{S} = S_2 = \{Id, f\}$ e $(S_2, \circ)$ \'e um grupo.
 \begin{table}[!htb]
 \centering
-	\begin{tabular}{|c|c|c|} 
+	\begin{tabular}{|c|c|c|}
 	    \hline
 	    $\circ$ & $Id$ & $f$\T\\
 	    \hline
@@ -299,7 +299,7 @@ e da{\'\i}, por exemplo,
 		\item $(\z_m, +)$ {\'e} um grupo finito para todo $m>1$.
 		\item $(S_n, \circ)$ \'e um grupo finito com $n!$ elementos.
 		\item $(\z, +)$ {\'e} um grupo infinito.
-	\end{enumerate}	
+	\end{enumerate}
 \end{exemplos}
 
 \section{Subgrupos} % (fold)
@@ -334,9 +334,9 @@ e da{\'\i}, por exemplo,
 \begin{exemplos}
 	\begin{enumerate}[label={\arabic*})]
 		\item Dado $(G,*)$ grupo, $H=\{e\}$ e $H=G$ s{\~a}o subgrupos de $G$, chamados de \textbf{subgrupos triviais}.
-		
+
 		\item Seja $(\mathbb{Z},+)$ um grupo. Tomando $H = m\z$, onde $m > 1$, ent{\~a}o $H$ {\'e} subgrupo de $\z$.
-		
+
 		\item $G = U(\z_8) = \{\overline{1}, \overline{3}, \overline{5}, \overline{7}\}$. Ent\~ao $(G,\odot)$ {\'e} um grupo com $|G| = 4$. Al\'em disso,
 		\begin{align*}
 			H_1 &= \{\overline{1}, \overline{3}\}\\
@@ -349,7 +349,7 @@ e da{\'\i}, por exemplo,
         \[
             H = \left\{\begin{pmatrix}
                 a & b\\c & d
-            \end{pmatrix} \in M_2(\real) \mid a + d = 0\right\} 
+            \end{pmatrix} \in M_2(\real) \mid a + d = 0\right\}
         \]
         \'e um subgrupo de $M_2(\real)$.
 	\end{enumerate}
@@ -557,7 +557,7 @@ Com a nota\c{c}\~ao multiplicativa o inverso de um elemento $x \in G$ ser\'a den
             x^m = \begin{cases}
                     e, & \mbox{se m = 0},\\
                     x^{m-1}x, & \mbox{ se } m \ge 1,\\
-                    (x^{-m})^{-1}, & \mbox{ se } m < 0. 
+                    (x^{-m})^{-1}, & \mbox{ se } m < 0.
                    \end{cases}
         \]
 \end{definicao}
@@ -694,11 +694,11 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
 		m \cdot x = \begin{cases}
 			e, & \mbox{se m = 0},\\
 			(m - 1)\cdot x + x, & \mbox{ se } m \ge 1,\\
-			-[(-m) \cdot x], & \mbox{ se } m < 0. 
+			-[(-m) \cdot x], & \mbox{ se } m < 0.
 		\end{cases}
 	\]
 \end{definicao}
-    
+
 \begin{proposicao}
     Seja $G$ um grupo aditivo. Se $m$ e $n$ s\~ao n\'umeros inteiros e $x \in G$, ent\~ao
     \begin{enumerate}[label={\roman*})]
@@ -714,7 +714,7 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
 	Seja $G$ um grupo multiplicativo e $x \in G$. Denote por $[x]$ o seguinte conjunto
 	\[
 	    [x] = \{x^m \mid m \in \z\} \subseteq G.
-	\]	
+	\]
 \end{definicao}
 
 \begin{proposicao}
@@ -764,7 +764,7 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
         \[
         	[i] = \{i^m \mid i \in \z\} = \{1, -1, i, -1\}.
         \]
-        
+
         \item No grupo $S_3$, o subgrupo gerado por
         \[
             f = \begin{pmatrix}
@@ -860,7 +860,7 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
         	\item $o(2i) = 0$ pois para todo $r > 0$ temos $(2i)^r = 2^ri^r$ e $2^r \ne 1$ para todo $r > 0$.
 
         \end{itemize}
-        
+
         \item Em $S_3$ temos, por exemplo, para
         \[
         	a = \begin{pmatrix}
@@ -1460,14 +1460,14 @@ Como $G$ \'e associativo, ent\~ao a \textbf{multiplica\c{c}\~ao de subconjuntos}
 	            \end{tabular}.
         	\end{table}	''
         \end{center}
-        
+
         Esse grupo \'e chamada de \textbf{grupo de Klein}.
 
         Se $A = \{e, a\}$ e $B = \{b, c\}$, ent\~ao
         \[
         	AB = \{xy \mid x \in A,\ y \in B\} = \{b, c, ab, ac\} = \{b, c\}.
         \]
-        
+
         \item Considere o grupo multiplicativo dos n\'umeros reais. Se
         \begin{align*}
             A &= \{x \in \real^* \mid x > 0\}\\
@@ -1705,8 +1705,8 @@ Portanto, o conjunto $G/N$ \'e um grupo com a multiplica\c{c}\~ao de conjuntos.
 Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
 
 \begin{definicao}
-    Sejam $G$ um grupo e $N$ um subgrupo normal de $G$. Nessas condi\c{c}\~oes, o \textbf{grupo quociente} 
-    de $G$ por $N$ \'e o par formado pelo conjunto quociente $G/N$ e da opera\c{c}\~ao de multiplica\c{c}\~ao de conjuntos 
+    Sejam $G$ um grupo e $N$ um subgrupo normal de $G$. Nessas condi\c{c}\~oes, o \textbf{grupo quociente}
+    de $G$ por $N$ \'e o par formado pelo conjunto quociente $G/N$ e da opera\c{c}\~ao de multiplica\c{c}\~ao de conjuntos
     aplicadas aos elementos desse conjunto.
 \end{definicao}
 
