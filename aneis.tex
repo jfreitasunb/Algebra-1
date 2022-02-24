@@ -27,16 +27,16 @@
 	\end{enumerate}
 \end{exemplos}
 
-\begin{definicao}
+\begin{definicao}\label{definicaoanel}
 	Seja $A$ um conjunto n{\~a}o vazio no qual est\~ao definidas duas opera{\c c}{\~o}es bin\'arias $\oplus$ e $\otimes$, chamadas \textit{soma} e \textit{produto}.  Dizemos que $(A, \oplus, \otimes)$ {\'e} um \textbf{anel} quando as seguintes condi{\c c}{\~o}es s{\~a}o verdadeiras:
 	\begin{enumerate}[label={\roman*})]
 		\item \textbf{Associatividade}: para todos $x$, $y$, $z \in A$ vale que
 		\[
 			(x \oplus y) \oplus z = x \oplus (y \oplus z).
 		\]
-		Essa propriedade {\'e} chamada \textbf{propriedade associativa} da soma.
+		Essa propriedade {\'e} chamada \textbf{propriedade associativa} da soma.\label{associatividadesoma}
 
-		\item \textbf{Comutatividade}: Para todos $x$, $y \in A$ vale
+		\item \textbf{Comutatividade}: Para todos $x$, $y \in A$ vale\label{comutatividadesoma}
 		\[
 			x \oplus y = y \oplus x.
 		\]
@@ -53,7 +53,7 @@
 		\]
 		Tal elemento $y$ \'e chamado de \textbf{oposto aditivo} de $x$ ou simplesmente \textbf{oposto} de $x$.
 
-		\item \textbf{Associatividade}: Para todos $x$, $y$, $z \in A$, vale que
+		\item \textbf{Associatividade}: Para todos $x$, $y$, $z \in A$, vale que\label{associatividadeproduto}
 		\[
 			(x\otimes y) \otimes z = x\otimes (y\otimes z).
 		\]
@@ -62,13 +62,13 @@
 		\[
 			(x \oplus y)\otimes z = x\otimes z \oplus y\otimes z.
 		\]
-		Essa propriedade {\'e} chamada \textbf{distributiva da soma em rela{\c c}{\~a}o ao produto}.
+		Essa propriedade {\'e} chamada \textbf{distributiva da soma em rela{\c c}{\~a}o ao produto}.\label{distributividadesomaproduto}
 
 		\item \textbf{Distributividade}: Para todos $x$, $y$, $z \in A$ vale
 		\[
 			x\otimes(y \oplus z) = x\otimes y \oplus x\otimes z.
 		\]
-		Essa {\'e} a propriedade \textbf{distributiva do produto em rela{\c c}{\~a}o {\`a} soma}.
+		Essa {\'e} a propriedade \textbf{distributiva do produto em rela{\c c}{\~a}o {\`a} soma}.\label{distributividadeprodutosoma}
 	\end{enumerate}
 \end{definicao}
 
@@ -304,7 +304,7 @@
 
     A prova de \textit{(i)} é uma consequência direta da definição de subanel.
 
-    Agora para prova \textit{(ii)}, vamos mostrar que $(B, +, \cdot)$ é um anel.
+    Agora para prova \textit{(ii)}, vamos mostrar que $(B, +, \cdot)$ é um anel. Inicialmente obserque que na definição de anel, Definição \ref{definicaoanel}, os itens \ref{associatividadesoma}
 \end{prova}
 \section{Homomorfismo de An\'eis} % (fold)
 \label{sec:homomorfismo_de_aneis}
