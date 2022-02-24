@@ -304,7 +304,24 @@
 
     A prova de \textit{(i)} é uma consequência direta da definição de subanel.
 
-    Agora para prova \textit{(ii)}, vamos mostrar que $(B, +, \cdot)$ é um anel. Inicialmente obserque que na definição de anel, Definição \ref{definicaoanel}, os itens \ref{associatividadesoma}
+    Agora para prova \textit{(ii)}, vamos mostrar que $(B, +, \cdot)$ é um anel. Inicialmente obserque que na definição de anel, Definição \ref{definicaoanel}, os itens \ref{associatividadesoma}, \ref{comutatividadesoma}, \ref{associatividadeproduto}, \ref{distributividadesomaproduto} e \ref{distributividadeprodutosoma} são válidos para todos os elementos de $A$ e como $B \subseteq A$, então essas propriedades também são válidas em $B$.
+
+    Como por hipótese $x\cdot y \in B$ para todos $x$, $y \in B$, então o produto $\cdot$ é uma operação binária em $B$.
+
+    Usando agora que $B \ne \emptyset$, seja $x \in B$. Como $x + (-y) \in B$ para todos $x$, $y \in B$, então
+    \[
+        0_A = x + (-x) \in B.
+    \]
+    Além disso, como $x \in B$ e $0_A \in B$, então
+    \[
+        -x = 0_A + (-x) \in B.
+    \]
+    Finalmente, dados $x$, $y \in B$. Sabemos que $-y \in B$, daí
+    \[
+        x + y = x + [-(-y)] \in B.
+    \]
+
+    Portanto, $(B, +, \cdot)$ é um anel e com isso $(B, +, \cdot)$ é um subanel de $A$.
 \end{prova}
 \section{Homomorfismo de An\'eis} % (fold)
 \label{sec:homomorfismo_de_aneis}
