@@ -231,6 +231,33 @@ Neste caso, $2 \in A$ e $2 \notin B$, logo $A \nsubseteq B$. Por outro lado, $3 
 	\[
 		A \cap B = \{x \mid x \in A\mbox{ e }  x \in B\}.
 	\]
+
+    \begin{tikzpicture}[thick,
+    set/.style = {circle,
+        minimum size = 3cm,
+        fill=MidnightBlue!50}]
+
+% Set A
+\node[set,label={135:$A$}] (A) at (0,0) {};
+
+% Set B
+\node[set,label={45:$B$}] (B) at (1.8,0) {};
+
+% Intersection
+\begin{scope}
+    \clip (0,0) circle(1.5cm);
+    \clip (1.8,0) circle(1.5cm);
+    \fill[Dandelion](0,0) circle(1.5cm);
+\end{scope}
+
+% Circles outline
+\draw (0,0) circle(1.5cm);
+\draw (1.8,0) circle(1.5cm);
+
+% Set intersection label
+\node at (0.9,0) {$A\cap B$};
+
+\end{tikzpicture}
 \end{definicao}
 
 \begin{exemplo}
@@ -246,6 +273,23 @@ Neste caso, $2 \in A$ e $2 \notin B$, logo $A \nsubseteq B$. Por outro lado, $3 
 	\[
 		A \cup B = \{x \mid x \in A \mbox{ ou } x \in B\}.
 	\]
+
+    \begin{tikzpicture}[thick,set/.style = {circle,fill=orange,minimum size =3cm}]
+
+        % Set A
+        \node [set,label={135:$A$}] (A) at (0,0){};
+
+        % Set B
+        \node [set,label={45:$B$}] (B) at (1.8,0){};
+
+        % Circles outline
+        \draw[white] (0,0) circle(1.5cm);
+        \draw[white] (1.8,0) circle(1.5cm);
+
+        % Union text label
+        \node[orange!90!black] at (0.9,1.8) {$A\cup B$};
+
+    \end{tikzpicture}
 \end{definicao}
 
 \begin{exemplo}
@@ -334,6 +378,23 @@ Sejam $A$ e $B$ conjuntos tais que $C = A \cup B$ e $A \cap B = \emptyset$. Nest
 	\[
 		A - B = \{x \mid x \in A \mbox{ e } x \notin B\}.
 	\]
+
+    \begin{tikzpicture}[thick,set/.style = { circle, minimum size = 3cm}]
+
+        % Set A
+        \node[set,fill=OliveGreen,label={135:$A$}] (A) at (0,0) {};
+
+        % Set B
+        \node[set,fill=white,label={45:$B$}] (B) at (0:2) {};
+
+        % Circles outline
+        \draw (0,0) circle(1.5cm);
+        \draw (2,0) circle(1.5cm);
+
+        % Difference text label
+        \node[left,white] at (A.center){$A-B$};
+
+    \end{tikzpicture}
 \end{definicao}
 
 \begin{exemplos}
@@ -383,10 +444,20 @@ Sejam $A$ e $B$ conjuntos tais que $C = A \cup B$ e $A \cap B = \emptyset$. Nest
 \end{prova}
 
 \begin{definicao}
-Dados dois conjuntos $A$ e $E$ tais que $A\subseteq E$, definimos o \textbf{complementar} de $A$ em $E$, denotado $A^C$ ou $C_E(A)$, como
-\[
-	C_E(A) = \{ x \in E \mid x \notin A \}.
-\]
+    Dados dois conjuntos $A$ e $E$ tais que $A\subseteq E$, definimos o \textbf{complementar} de $A$ em $E$, denotado $A^C$ ou $C_E(A)$, como
+    \[
+	    C_E(A) = \{ x \in E \mid x \notin A \}.
+    \]
+
+    \begin{tikzpicture}
+        \fill[Green!55!white, even odd rule](5,-2) rectangle (-2,2) (0:2cm);
+        \fill[white] (1.5, 0) circle[radius=1.5];
+        \draw[black] (1.5, 0) circle [radius=1.5];
+
+        \node at (1.5, 0) (A) {$A$};
+        \node at (4, 1) (C) {$C_E(A)$};
+        \node at (5, 2.2) (E) {$E$};
+    \end{tikzpicture}
 \end{definicao}
 
 \begin{observacoes}
