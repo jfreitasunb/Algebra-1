@@ -147,6 +147,8 @@
         \item Se $A \cup B = B$, então $A \subset B$.
 
         \item $A \cap B = A$ se, e somente se, $A \cup B = B$
+
+        \item Se $A \sub B$, $B \sub C$ e $C \sub A$, então $A = B = C$.
     \end{enumerate}
 
     \vspace{.3cm}
@@ -160,6 +162,30 @@
 
     \vspace{.3cm}
 
+    \questao{} Sejam $a$, $b \in \real$ com $a < b$. O intervalo fechado $[a, b]$ é o conjunto $\{x \in \real \mid a \le x \le b\}$. De modo semelhantes, o intervalo aberto $(a, b)$ é o conjunto $\{y \in \real \mid a < y < b\}$. Sejam $P = [3, 7]$, $Q = [7,9]$ e $R = [-3, 8]$. Descreva os seguintes conjuntos:
+    \begin{enumerate}[label={\alph*})]
+        \item $P \cap Q$.
+
+        \item $P \cup Q$.
+
+        \item $(P \cup Q) \cap R$.
+
+        \item $P \cup (Q \cap R)$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $A$ e $B$ conjuntos e suponha que $A$ não é um subconjunto de $B$. Quais das seguintes afirmações são verdadeiras? Encontre todas as respostas corretas.
+
+    \begin{enumerate}[label={\roman*})]
+        \item Se $x \in A$, então $x \notin B$.
+
+        \item Se $x \in B$, ent~ao $x \in A$.
+
+        \item Existe um elemento $x \in A$ tal que $x \notin B$.
+
+        \item Existe um elemento $x \in B$, tal que $x \notin B$.
+    \end{enumerate}
     \questao{} Demonstre que:
     \begin{enumerate}[label={\alph*})]
         \item Se $A \sub B$ e $C \sub D$, ent\~ao $A \cap C \sub B \cap D$.
@@ -173,6 +199,12 @@
         \item $A \cup (B \cap (A \cup C)) = A \cup (B \cap C)$.
 
         \item $A \cup B = B$ se, e somente se, $A \subset B$.
+
+        \item $(A \cup B) \cap C \sub A \cup (B \cap C)$.
+
+        \item $A \sub B \cap C$ se, e somente se, $A \sub B$ e $A \sub C$.
+
+        \item Se $A \sub B \cup C$ e $A \cap B = \emptyset$, então $A \sub C$.
     \end{enumerate}
 
 \end{document}
