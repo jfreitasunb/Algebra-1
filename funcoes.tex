@@ -22,22 +22,22 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e ser\'a denotado p
 		\item Sejam $A = \{0,1,2,3\}$ e $B = \{4,5,6,7,8\}$. Quais das seguintes rela{\c c}{\~o}es s{\~a}o fun{\c c}{\~o}es?
 			\begin{enumerate}[label={\alph*})]
 				\item $R_1 = \{(0,5),(1,6),(2,7)\}$
-				
+
 				\item $R_2 = \{(0,4),(1,5),(1,6),(2,7),(3,8)\}$
-				
+
 				\item $R_3 = \{(0,4),(1,5),(2,7),(3,8)\}$
-				
+
 				\item $R_4 = \{(0,5),(1,5),(2,6),(3,7)\}$
 			\end{enumerate}
-			
+
 			\begin{solucao}
 				\begin{enumerate}[label={\alph*})]
 					\item N\~ao \'e fun\c{c}\~ao pois $3 \in A$ e $3$ n\~ao est\'a associado {\`a} nenhum elemento de $B$.
-					
+
 					\item N\~ao \'e fun\c{c}\~ao pois $1 \in A$ est\'a associado a dois elementos diferentes em $B$.
-					
+
 					\item \'E uma fun\c{c}\~ao.
-					
+
 					\item \'E uma fun\c{c}\~ao.
 				\end{enumerate}
 			\end{solucao}
@@ -46,7 +46,7 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e ser\'a denotado p
 			\begin{solucao}
 			 	N\~ao \'e fun\c{c}\~ao pois, por exemplo, para $x = 1$ temos $y = -1$ ou $y = 1$.
 			\end{solucao}
-		
+
 		\item $R_{6} = \{(x,y) \in \real  \times \real  \mid x^2 + y^2 = 1\}$.
 			\begin{solucao}
 			 	N\~ao \'e fun\c{c}\~ao pois, por exemplo, para $x = 0$ temos $y = 1$ ou $y = -1$.
@@ -56,7 +56,7 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e ser\'a denotado p
 			\begin{solucao}
 			 	\'E uma fun\c{c}\~ao.
 			\end{solucao}
-	\end{enumerate}	
+	\end{enumerate}
 \end{exemplos}
 
 
@@ -64,9 +64,9 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e ser\'a denotado p
 	Seja $f : A \to B$ uma fun\c{c}\~ao.
 	\begin{enumerate}[label={\roman*})]
 		\item Dizemos que $f$ \'e \textbf{injetora} se dados $x_1$, $x_2 \in A$ tais que $f(x_1) = f(x_2)$, ent\~ao $x_1 = x_2$. De modo equivalente, dizemos que $f$ e \textbf{injetora} se dados $x_1$, $x_2 \in A$ tais que $x_1 \ne x_2$, ent\~ao $f(x_1) \ne f(x_2)$.
-		
+
 		\item Dizemos que $f$ \'e \textbf{sobrejetora} se para todo $y \in B$, existe $x \in A$ tal que $f(x) = y$.
-		
+
 		\item Dizemos que $f$ e \textbf{bijetora} se $f$ for \textbf{injetora} e \textbf{sobrejetora} simultaneamente.
 	\end{enumerate}
 \end{definicao}
@@ -107,11 +107,11 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e ser\'a denotado p
 				\end{align*}
 				para qualquer valor de $y \in \rac$. Assim dado $y \in \rac$ tome $x = (y - 1)/3 \in \rac$. Da{\'\i}
 				\[
-					g(x) = g\left(\dfrac{y - 1}{3}\right) = 3\left(\dfrac{y - 1}{3}\right) + 1 = y - 1 + 1 = y. 
+					g(x) = g\left(\dfrac{y - 1}{3}\right) = 3\left(\dfrac{y - 1}{3}\right) + 1 = y - 1 + 1 = y.
 				\]
 				Logo $g$ \'e sobrejetora.
 			\end{solucao}
-		
+
 		\item A fun\c{c}\~ao $h :\real \to \real$ dada por $h(x) = x^2$
 			\begin{solucao}
 				A fun\c{c}\~ao $h$ n\~ao \'e injetora pois, por exemplo, $h(-1) = 1 = h(1)$ e $1\neq -1$.
@@ -123,6 +123,42 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e ser\'a denotado p
 
 \begin{definicao}
 	Sejam $f : A \to B$ e $g : B \to C$ fun\c{c}\~oes. Definimos a \textbf{fun\c{c}\~ao composta} de $g$ com $f$ como sendo a fun\c{c}\~ao denotada por $g \circ f : A \to C$ tal que $(g\circ f)(x) = g(f(x))$ para todo $x \in A$.
+    \begin{tikzpicture}
+       \begin{scope}[x=3cm, y=1cm]
+            \node[ellipse,
+            draw = brown,
+            rotate=90,
+            fill = cyan!20,
+            label=right:{$A$},
+            minimum width = 4cm,
+            minimum height = 2cm] (e) at (-2,0) {};
+            \node[bullet,label=above:$x$] (x) at (-2,0) {};
+            \node[ellipse,
+            draw = brown,
+            rotate=90,
+            label={right:$B$},
+            fill = cyan!20,
+            minimum width = 4cm,
+            minimum height = 2cm] (B) at (0,0) {};
+            \draw [->,red] (-1.9, 2.3) to [out=30,in=150] (-0.1, 2.3);
+            \node[label=above:$f$] (f) at (-1, 3) {};
+            \node[bullet,label=above:$f(x)$] (fx) at (0,0) {};
+            \node[ellipse,
+            draw = brown,
+            rotate=90,
+            label={right:$C$},
+            fill = cyan!20,
+            minimum width = 4cm,
+            minimum height = 2cm] (C) at (2,0) {};
+            \node[bullet,label=above:$g(f(x))$] (gfx) at (2,0) {};
+            \draw [->,blue] (0.1,2.3) to [out=30,in=150] (1.9, 2.3);
+            \node[label=above:$g$] (g) at (1, 3) {};
+            \draw [->,red, dashed] (x) to [out=30,in=150] (fx);
+            \draw [->,blue, dashed] (fx) to [out=30,in=150] (gfx);
+            \draw [->,orange] (x) to [out=-50,in=-130] (gfx);
+            \node[label=above:$g\circ f$] (gf) at (0,-3.5) {};
+        \end{scope}
+    \end{tikzpicture}
 \end{definicao}
 
 \begin{exemplos}
@@ -245,7 +281,7 @@ Com essa defini\c{c}\~ao $g$ \'e uma fun\c{c}\~ao? Vejamos um exemplo: definida 
 	f(0) &= 5\\
 	f(1) &= 5\\
 	f(2) &= 6\\
-	f(3) &= 7.	
+	f(3) &= 7.
 \end{align*}
 
 A partir da defini\c{c}\~ao \eqref{condicao_funcao_inversa} temos
@@ -261,7 +297,7 @@ Assim $g$ definida pela condi\c{c}\~ao \eqref{condicao_funcao_inversa} n\~ao \'e
 	f(0) &= 5\\
 	f(1) &= 4\\
 	f(2) &= 6\\
-	f(3) &= 7.	
+	f(3) &= 7.
 \end{align*}
 
 Agora $g$ torna-se:
@@ -342,7 +378,7 @@ Portanto para que a condi\c{c}\~ao \eqref{condicao_funcao_inversa} defina uma fu
 
 		Agora, dado $y \in B$, segue que $y = i_{B}(y)$. Mas $i_{B} = f\circ g$. Da{\'\i}, $y = i_{B}(y) = (f\circ g)(y) = f(g(y))$. Assim, $x = g(y)\in A$ e $f(x) = y$. Logo $f$ {\'e} sobrejetora.
 
-		Portanto $f$ {\'e} bijetora. Analogamente, prova-se que g {\'e} bijetora. 
+		Portanto $f$ {\'e} bijetora. Analogamente, prova-se que g {\'e} bijetora.
 
 		Provemos agora que $g = f^{-1}$. Para isso, primeiro temos  $f^{-1} : B \to A$ e ent\~ao $\dom(g) = B = \dom(f^{-1})$. Agora, $f\circ g = i_{B} = f\circ f^{-1}$. Assim, para todo $x \in B$, $(f\circ g)(x) = (f\circ f^{-1})(x)$. Isto {\'e}, $f(g(x)) = f(f^{-1}(x))$. Portanto como $f$ \'e injetora, $g(x) = f^{-1}(x)$ para todo $x\in B$. Logo $g = f^{-1}$ como quer{\'\i}amos.
 	\end{enumerate}
