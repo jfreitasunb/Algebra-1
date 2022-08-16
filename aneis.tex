@@ -325,9 +325,20 @@
 \end{prova}
 
 \begin{exemplo}
-    \begin{center}
-        \huge{Fazer exemplos de subanel usando a proprosição anterior.}
-    \end{center}
+    No anel $(\z \times \z, \oplus, \otimes)$ onde as opera\c{c}\~oes $\oplus$ e $\otimes$ s\~ao definidas por
+    \begin{align*}
+        (a, b) \oplus (c, d) = (a + c, b + d)\\
+        (a ,b) \otimes (c, d) = (ac - bd, ad + bc).
+    \end{align*}
+    Quais dos seguintes conjuntos s\~ao suban\'eis?
+    \begin{enumerate}[label=({\alph*})]
+        \item $A = \{(x, y) \in \z \times \z \mid x = 0\}$
+        \item $B = \{(x, y) \in \z \times \z \mid y = 0\}$
+        \item $C = \{(x, y) \in \z \times \z \mid x = y\}$
+        \item $D = \{(x, y) \in \z \times \z \mid x = 2k,\ k \in \z\}$
+        \item $E = \{(x, y) \in \z \times \z \mid y = 3k,\ k \in \z\}$
+        \item $F = \{(x, y) \in \z \times \z \mid x + y = 2k,\ k \in \z\}$
+    \end{enumerate}
 \end{exemplo}
 
 
@@ -374,9 +385,20 @@
 \end{prova}
 
 \begin{exemplo}
-    \begin{center}
-        \huge{Fazer exemplos de homomorfismos.}
-    \end{center}
+    Seja $(\z\times\z, +, \cdot)$ um anel com as seguintes opera\c{c}\~oes
+    \begin{align*}
+        (a, b) + (c, d) &= (a + c, b + d)\\
+        (a, b)\cdot (c, d) &= (ac, ad + bc)
+    \end{align*}
+    para todos $(a, b)$, $(c, d) \in \z\times\z$.
+    Quais das seguintes funções $f : \z\times\z \to \z$ \'e um homomorfismo?
+    \begin{enumerate}[label={\roman*})]
+        \item $f(a, b) = a$
+
+        \item $g(x, y) = 2x$
+
+        \item $h(\alpha, \beta)= \alpha + \beta$
+    \end{enumerate}
 \end{exemplo}
 
 
@@ -398,9 +420,14 @@
 \end{definicao}
 
 \begin{exemplo}
-    \begin{center}
-        \huge{Fazer exemplos de núcleo de homomorfismos.}
-    \end{center}
+    Seja $f : \complex \to M_2(\real)$ dada por
+    \[
+        f(a + bi) = \begin{bmatrix}
+            a & -b\\
+            b & a
+        \end{bmatrix}.
+    \]
+    Determine $\ker(f)$. Esse homomorfismo é injetor?
 \end{exemplo}
 
 \begin{proposicao}
@@ -497,9 +524,14 @@
 \end{observacao}
 
 \begin{exemplo}
-    \begin{center}
-        \huge{Fazer exemplos para verificar que é ideal.}
-    \end{center}
+    Verifique se s\~ao ideiais:
+    \begin{enumerate}[label=({\arabic*})]
+        \item $I = m\z \times n\z$ no anel $\z \times \z$, em que $m$, $n \in \z$ e as operações consideradas são as usuais;
+
+        \item $I = \z$ no anel $(\rac, \oplus, \otimes)$ em que a $a \oplus b = a + b - 1$ e $a \otimes b = a + b - ab$, para todos $a$, $b \in \rac$;
+
+        \item $I = 4\z$ no anel $(\z, +, \odot)$ em que a adi\c{c}\~ao \'e a usual e $a \odot b = 0$, para quaisquer $a$, $b \in \z$.
+    \end{enumerate}
 \end{exemplo}
 
 \begin{proposicao}
