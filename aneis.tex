@@ -597,8 +597,26 @@
 
                 \item $I = \z$ no anel $(\rac, \oplus, \otimes)$ em que a $a \oplus b = a + b - 1$ e $a \otimes b = a + b - ab$, para todos $a$, $b \in \rac$;
 
-            \item $I = 4\z$ no anel $(\z, +, \odot)$ em que a adi\c{c}\~ao \'e a usual e $a \odot b = 0$, para quaisquer $a$, $b \in \z$.
-        \end{enumerate}
+                \item $I = 4\z$ no anel $(\z, +, \odot)$ em que a adi\c{c}\~ao \'e a usual e $a \odot b = 0$, para quaisquer $a$, $b \in \z$.
+            \end{enumerate}
+            \begin{solucao}
+                \begin{enumerate}[label=({\alph*})]
+                    \item Primeiro observe que o elemento neutro do anel $\z \times \z$ com as operações usuais é o elemento $(0, 0)$ e $(0, 0) \in I$ e que o oposto de $(mk, nl)$
+                        é dado por
+                        \[
+                            -(mk, nl) = (-mk, -nl).
+                        \]
+                        Assim dados $x = (km, nl) \in I$ e $y = (mp, nq) \in I$ temos
+                        \[
+                            x + (-y) = (mk, nl) + (-mp, -nq) = (m(k - p), n(l - q)) \in I.
+                        \]
+                        Agora tomando $(\alpha, \beta) \in \z \times \z$ temos
+                        \[
+                            (\alpha, \beta) \cdot (mk, nl) = (\alpha(mk), \beta(nl)) = (m(\alpha k), n(\beta l)) \in I.
+                        \]
+                        Portanto $I$ é um ideal de $\z \times \z$.
+                \end{enumerate}
+            \end{solucao}
     \end{enumerate}
 \end{exemplo}
 
