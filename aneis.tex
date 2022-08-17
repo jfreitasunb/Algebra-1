@@ -345,6 +345,37 @@
                 \[
                     (0, 1) \otimes (0, 2) = (0\cdot 0 - 1\cdot 2, 0\cdot 2 + 0\cdot 1) = (-2, 0) \notin A.
                 \]
+
+            \item Primeiro note que $(0, 0) \in B$, logo $B \ne \emptyset$ e assim podemos aplicar a Proposição \ref{proposical_subanel}. Para isso sejam $(a, b)$, $(c, d) \in B$.
+                Temos:
+                \begin{align*}
+                    (a, b) \oplus [-(c, d)] &= (a, b) \oplus (-c, -d) = (a - c, b - d)\\
+                    (a, b) \otimes (c, d) &= (ac - bd, ad + bc)
+                \end{align*}
+                Como $(a, b)$ e $(c, d) \in B$ então
+                \begin{align}
+                    a + b &= 2k\label{primeira_condicao}\\
+                    c + d &= 2l\label{segunda_condicao}
+                \end{align}
+                onde $k$, $l \in \z$. Assim
+                \[
+                    (a - c) + (b - d) = (a + b) - (c + d) = 2k - 2l = 2(k - l)
+                \]
+                e com isso $(a, b) \oplus [-(c, d)] \in B$.
+
+                Agora observe que de \eqref{primeira_condicao} segue que $a$ e $b$ devem ter a mesma paridade, isto é, $a$ e $b$ são
+                ambos pares ou ambos ímpares. De modo análogo, de \eqref{segunda_condicao}, o mesmo ocorre com $c$ e $d$. Assim se $a$ e $b$ ou $c$ e $d$ são pares, então
+                \[
+                    (ac - bd) + (ad + bc)
+                \]
+                é sempre um número par. Agora se $a$, $b$, $c$ e $d$ são todos ímpares, então $ac$, $bd$, $ad$ e $bc$ também são ímpares e daí
+                \[
+                    (ac - bd) + (ad + bc)
+                \]
+                é par. Logo $(a, b) \otimes (c, d) \in B$.
+
+                Portanto $B$ é um subanel de $(\z \times \z, \oplus, \otimes)$.
+
         \end{enumerate}
     \end{solucao}
 \end{exemplo}
