@@ -325,12 +325,13 @@
 \end{prova}
 
 \begin{exemplo}
-    No anel $(\z \times \z, \oplus, \otimes)$ onde as opera\c{c}\~oes $\oplus$ e $\otimes$ s\~ao definidas por
+    No conjunto $\z \times \z$ considere as operações $\oplus$ e $\otimes$ definidas por
     \begin{align*}
         (a, b) \oplus (c, d) = (a + c, b + d)\\
         (a ,b) \otimes (c, d) = (ac - bd, ad + bc).
     \end{align*}
-    Quais dos seguintes conjuntos s\~ao suban\'eis?
+    onde $(a, b)$, $(c, d) \in \z \times \z$. Então é fácil ver que $(\z \times \z, \oplus, \otimes)$ é um anel. Além disso, esse anel é comutativo e possui unidade. Sabendo que
+    $(\z \times \z, \oplus, \otimes)$ é um anel, quais dos seguintes subconjuntos de $\z \times \z$ s\~ao suban\'eis?
     \begin{enumerate}[label=({\alph*})]
         \item $A = \{(x, y) \in \z \times \z \mid x = 0\}$
 
@@ -339,7 +340,10 @@
         \item $C =  \{(1, y) \in \z \times \z \mid y \in \z\}$
     \end{enumerate}
     \begin{solucao}
-        Inicialmente observe que no anel $(\z \times \z, \oplus, \otimes)$ o elemento neutro é $(0,0)$ e o oposto de $(a, b)$ é dado por $(-a, -b)$.
+        Inicialmente observe que no anel $(\z \times \z, \oplus, \otimes)$ o elemento neutro é $(0,0)$ e o oposto de $(a, b)$ é dado por
+        \[
+            -(a, b) = (-a, -b).
+        \]
         \begin{enumerate}[label=({\alph*})]
             \item Observe que apesar de $(0, 0) \in A$, o subconjunto $A$ não é um subanel de $A$ uma vez que tomando $(0, 1)$, $(0, 2) \in A$ temos
                 \[
@@ -368,7 +372,9 @@
                 \[
                     (ac - bd) + (ad + bc)
                 \]
-                é sempre um número par. Agora se $a$, $b$, $c$ e $d$ são todos ímpares, então $ac$, $bd$, $ad$ e $bc$ também são ímpares e daí
+                é sempre um número par.
+
+                Agora se $a$, $b$, $c$ e $d$ são todos ímpares, então $ac$, $bd$, $ad$ e $bc$ também são ímpares e daí
                 \[
                     (ac - bd) + (ad + bc)
                 \]
@@ -569,11 +575,15 @@
     \begin{enumerate}[label={\arabic*})]
 		\item Em $\z$ todos os ideais n{\~a}o triviais s{\~a}o da forma $m\z$, $m > 1$.
 		\item No anel $\z_p$, onde $p$ {\'e} um n{\'u}mero primo, os {\'u}nicos ideais  s{\~a}o os triviais $\{\overline{0}\}$ e $\z_p$.
+        \begin{solucao}
+            De fato, seja $I \sub \z_p$ um ideal, $I \neq \{\overline{0}\}$. Provemos que $I = \z_p$. Para isso, vamos
+            provar que $\overline{1} \in I$. Seja $\overline{a} \in I$, $\overline{a} \neq \overline{0}$, pois $I \neq
+            \{\overline{0}\}$. Como $p$ {\'e} primo, $mdc(a,p) = 1$, da{\'\i} existe $\overline{b} \in \z_p$,
+            $\overline{b} \neq \overline{0}$, tal que $\overline{1} = \overline{a} \otimes \overline{b}$. Mas $I$ {\'e}
+            ideal e $\overline{a} \in I$, logo $\overline{1} = \overline{a} \otimes \overline{b} \in I$.
 
-		De fato, seja $I \sub \z_p$ um ideal, $I \neq \{\overline{0}\}$. Provemos que $I = \z_p$. Para isso,
-		vamos provar que $\overline{1} \in I$. Seja $\overline{a} \in I$, $\overline{a} \neq \overline{0}$, pois $I \neq \{\overline{0}\}$. Como $p$ {\'e} primo, $mdc(a,p) = 1$, da{\'\i} existe $\overline{b} \in \z_p$, $\overline{b} \neq \overline{0}$, tal que $\overline{1} = \overline{a} \otimes \overline{b}$. Mas $I$ {\'e} ideal e $\overline{a} \in I$, logo $\overline{1} = \overline{a} \otimes \overline{b} \in I$.
-
-		Portanto $I = \z_p$.
+            Portanto $I = \z_p$.
+        \end{solucao}
 
 		\item Os {\'u}nicos ideais n{\~a}o triviais de $\z_8 = \{\overline{0}, \overline{1}, \overline{2}, \overline{3}, \overline{4}, \overline{5}, \overline{6}, \overline{7}\}$ s{\~a}o:
 		\begin{align*}
