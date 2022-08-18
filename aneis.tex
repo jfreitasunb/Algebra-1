@@ -389,6 +389,105 @@
     \end{solucao}
 \end{exemplo}
 
+\section{Ideais} % (fold)
+\label{sec:ideais}
+
+\begin{definicao}
+	Seja $(A, +, \cdot)$ um anel comutativo. Um subconjunto n\~ao-vazio $I \sub A$ {\'e} chamado de \textbf{ideal} de $A$ se:
+	\begin{enumerate}[label={\roman*})]
+		\item para todos $x$, $y \in I$, temos $x - y \in I$.
+		\item Para todo $\alpha \in A$ e todo $x \in I$, temos $\alpha\cdot x \in I$.
+	\end{enumerate}
+\end{definicao}
+
+\begin{observacao}
+	Quando $I = A$ ou $I = \{0_A\}$, dizemos que $I$ {\'e} um \textbf{ideal trivial}.
+\end{observacao}
+
+\begin{exemplo}
+    \begin{enumerate}[label={\arabic*})]
+		\item Em $\z$ todos os ideais n{\~a}o triviais s{\~a}o da forma $m\z$, $m > 1$.
+		\item No anel $\z_p$, onde $p$ {\'e} um n{\'u}mero primo, os {\'u}nicos ideais  s{\~a}o os triviais $\{\overline{0}\}$ e $\z_p$.
+        \begin{solucao}
+            De fato, seja $I \sub \z_p$ um ideal, $I \neq \{\overline{0}\}$. Provemos que $I = \z_p$. Para isso, vamos
+            provar que $\overline{1} \in I$. Seja $\overline{a} \in I$, $\overline{a} \neq \overline{0}$, pois $I \neq
+            \{\overline{0}\}$. Como $p$ {\'e} primo, $mdc(a,p) = 1$, da{\'\i} existe $\overline{b} \in \z_p$,
+            $\overline{b} \neq \overline{0}$, tal que $\overline{1} = \overline{a} \otimes \overline{b}$. Mas $I$ {\'e}
+            ideal e $\overline{a} \in I$, logo $\overline{1} = \overline{a} \otimes \overline{b} \in I$.
+
+            Portanto $I = \z_p$.
+        \end{solucao}
+
+		\item Os {\'u}nicos ideais n{\~a}o triviais de $\z_8 = \{\overline{0}, \overline{1}, \overline{2}, \overline{3}, \overline{4}, \overline{5}, \overline{6}, \overline{7}\}$ s{\~a}o:
+		\begin{align*}
+			I_1 &= \{\overline{0}, \overline{2}, \overline{4}, \overline{6}\}\\
+			I_2 &=\{\overline{0}, \overline{4}\}
+		\end{align*}
+
+        \item Verifique se s\~ao ideiais:
+            \begin{enumerate}[label=({\alph*})]
+                \item $I = m\z \times n\z$ no anel $\z \times \z$, em que $m$, $n \in \z$ e as operações consideradas são as usuais;
+
+                \item $J = \z$ no anel $(\rac, \oplus, \otimes)$ em que a $a \oplus b = a + b - 1$ e $a \otimes b = a + b - ab$, para todos $a$, $b \in \rac$;
+
+                \item $K = 4\z$ no anel $(\z, +, \odot)$ em que a adi\c{c}\~ao \'e a usual e $a \odot b = 0$, para quaisquer $a$, $b \in \z$.
+            \end{enumerate}
+            \begin{solucao}
+                \begin{enumerate}[label=({\alph*})]
+                    \item Primeiro observe que o elemento neutro do anel $\z \times \z$ com as operações usuais é o elemento $(0, 0)$ e $(0, 0) \in I$ e que o oposto de $(mk, nl)$
+                        é dado por
+                        \[
+                            -(mk, nl) = (-mk, -nl).
+                        \]
+                        Assim dados $x = (km, nl) \in I$ e $y = (mp, nq) \in I$ temos
+                        \[
+                            x + (-y) = (mk, nl) + (-mp, -nq) = (m(k - p), n(l - q)) \in I.
+                        \]
+                        Agora tomando $(\alpha, \beta) \in \z \times \z$ temos
+                        \[
+                            (\alpha, \beta) \cdot (mk, nl) = (\alpha(mk), \beta(nl)) = (m(\alpha k), n(\beta l)) \in I.
+                        \]
+                        Portanto $I$ é um ideal de $\z \times \z$.
+
+                    \item No anel $(\rac, \oplus, \otimes)$ o elemento neutro da soma $\oplus$ é 1 e $1 \in J$. Agora observe que tomando $\alpha = \dfrac{1}{3} \in \rac$ e $x =
+                        3 \in \z$ temos
+                        \[
+                            \alpha \otimes x = \dfrac{1}{3} \otimes 3 = \dfrac{1}{3} + 3 - \dfrac{3}{3} = \dfrac{7}{2} \notin \z,
+                        \]
+                        logo $J$ não é um ideal de $(\rac, \oplus, \otimes)$.
+
+                    \item No anel $(\z, +, \odot)$ o elemento neutro a soma é o 0 e $0 \in K$. Agora sejam $x$, $y \in K$. Assim $x = 4p$ e $y = 4q$ com $p$, $q \in \z$. Daí
+                        \[
+                            x - y = 4p - 4q = 4(p - q) \in K.
+                        \]
+                        Agora tomando $\alpha \in \z$ temos
+                        \[
+                            \alpha \odot x = \alpha \odot 4q = 0 \in K,
+                        \]
+                        logo $K$ é um ideal de $(\z, +, \odot)$.
+                \end{enumerate}
+            \end{solucao}
+    \end{enumerate}
+\end{exemplo}
+
+\begin{proposicao}
+	Seja $A$ um anel comutativo e $I$ um ideal de $A$. Ent{\~a}o:
+	\begin{enumerate}[label={\roman*})]
+	 	\item $0_{A}\in I$.
+	 	\item $-x \in I$ para todo $x \in I$.
+	 	\item Se $1_A \in I$, ent\~ao $I = A$.
+	\end{enumerate}
+\end{proposicao}
+\begin{prova}
+	\begin{enumerate}[label={\roman*})]
+		\item Da defini\c{c}\~ao de ideal temos $\alpha \cdot x \in I$ para todo $x \in I$ e todo $\alpha \in A$.
+		Assim dado $x \in I$ $0_A = 0_A \cdot x \in I$.
+
+		\item Como $0_A \in I$, dado $x \in I$ da defini\c{c}\~ao de ideal segue que $0_A - x \in I$, isto \'e, $-x \in I$.
+
+		\item Suponha que $1_A \in I$. Como $I$ {\'e} ideal, para todo $\alpha \in A$ e todo $x \in I$ devemos ter $\alpha\cdot x \in I$. Assim, em particular, $1_A \cdot x \in I$ para todo $x \in A$. Logo, $A\sub I$ e como $I\sub A$, ent{\~a}o $I = A$.
+	\end{enumerate}
+\end{prova}
 
 \section{Homomorfismo de An\'eis} % (fold)
 \label{sec:homomorfismo_de_aneis}
@@ -603,106 +702,6 @@ Usando a Proposição \ref{homomorfismo_injetor} vemos que o homomorfismo do Exe
 			f(x^{-1})\otimes f(x) &= f(x^{-1}\cdot x) = f(1_A) = 1_B
 		\end{align*}
 		Portanto $f(x)$ possui inverso multiplicativo e $[f(x)]^{-1} = f(x^{-1})$, como quer{\'\i}amos.
-	\end{enumerate}
-\end{prova}
-
-\section{Ideais} % (fold)
-\label{sec:ideais}
-
-\begin{definicao}
-	Seja $(A, +, \cdot)$ um anel comutativo. Um subconjunto n\~ao-vazio $I \sub A$ {\'e} chamado de \textbf{ideal} de $A$ se:
-	\begin{enumerate}[label={\roman*})]
-		\item para todos $x$, $y \in I$, temos $x - y \in I$.
-		\item Para todo $\alpha \in A$ e todo $x \in I$, temos $\alpha\cdot x \in I$.
-	\end{enumerate}
-\end{definicao}
-
-\begin{observacao}
-	Quando $I = A$ ou $I = \{0_A\}$, dizemos que $I$ {\'e} um \textbf{ideal trivial}.
-\end{observacao}
-
-\begin{exemplo}
-    \begin{enumerate}[label={\arabic*})]
-		\item Em $\z$ todos os ideais n{\~a}o triviais s{\~a}o da forma $m\z$, $m > 1$.
-		\item No anel $\z_p$, onde $p$ {\'e} um n{\'u}mero primo, os {\'u}nicos ideais  s{\~a}o os triviais $\{\overline{0}\}$ e $\z_p$.
-        \begin{solucao}
-            De fato, seja $I \sub \z_p$ um ideal, $I \neq \{\overline{0}\}$. Provemos que $I = \z_p$. Para isso, vamos
-            provar que $\overline{1} \in I$. Seja $\overline{a} \in I$, $\overline{a} \neq \overline{0}$, pois $I \neq
-            \{\overline{0}\}$. Como $p$ {\'e} primo, $mdc(a,p) = 1$, da{\'\i} existe $\overline{b} \in \z_p$,
-            $\overline{b} \neq \overline{0}$, tal que $\overline{1} = \overline{a} \otimes \overline{b}$. Mas $I$ {\'e}
-            ideal e $\overline{a} \in I$, logo $\overline{1} = \overline{a} \otimes \overline{b} \in I$.
-
-            Portanto $I = \z_p$.
-        \end{solucao}
-
-		\item Os {\'u}nicos ideais n{\~a}o triviais de $\z_8 = \{\overline{0}, \overline{1}, \overline{2}, \overline{3}, \overline{4}, \overline{5}, \overline{6}, \overline{7}\}$ s{\~a}o:
-		\begin{align*}
-			I_1 &= \{\overline{0}, \overline{2}, \overline{4}, \overline{6}\}\\
-			I_2 &=\{\overline{0}, \overline{4}\}
-		\end{align*}
-
-        \item Verifique se s\~ao ideiais:
-            \begin{enumerate}[label=({\alph*})]
-                \item $I = m\z \times n\z$ no anel $\z \times \z$, em que $m$, $n \in \z$ e as operações consideradas são as usuais;
-
-                \item $J = \z$ no anel $(\rac, \oplus, \otimes)$ em que a $a \oplus b = a + b - 1$ e $a \otimes b = a + b - ab$, para todos $a$, $b \in \rac$;
-
-                \item $K = 4\z$ no anel $(\z, +, \odot)$ em que a adi\c{c}\~ao \'e a usual e $a \odot b = 0$, para quaisquer $a$, $b \in \z$.
-            \end{enumerate}
-            \begin{solucao}
-                \begin{enumerate}[label=({\alph*})]
-                    \item Primeiro observe que o elemento neutro do anel $\z \times \z$ com as operações usuais é o elemento $(0, 0)$ e $(0, 0) \in I$ e que o oposto de $(mk, nl)$
-                        é dado por
-                        \[
-                            -(mk, nl) = (-mk, -nl).
-                        \]
-                        Assim dados $x = (km, nl) \in I$ e $y = (mp, nq) \in I$ temos
-                        \[
-                            x + (-y) = (mk, nl) + (-mp, -nq) = (m(k - p), n(l - q)) \in I.
-                        \]
-                        Agora tomando $(\alpha, \beta) \in \z \times \z$ temos
-                        \[
-                            (\alpha, \beta) \cdot (mk, nl) = (\alpha(mk), \beta(nl)) = (m(\alpha k), n(\beta l)) \in I.
-                        \]
-                        Portanto $I$ é um ideal de $\z \times \z$.
-
-                    \item No anel $(\rac, \oplus, \otimes)$ o elemento neutro da soma $\oplus$ é 1 e $1 \in J$. Agora observe que tomando $\alpha = \dfrac{1}{3} \in \rac$ e $x =
-                        3 \in \z$ temos
-                        \[
-                            \alpha \otimes x = \dfrac{1}{3} \otimes 3 = \dfrac{1}{3} + 3 - \dfrac{3}{3} = \dfrac{7}{2} \notin \z,
-                        \]
-                        logo $J$ não é um ideal de $(\rac, \oplus, \otimes)$.
-
-                    \item No anel $(\z, +, \odot)$ o elemento neutro a soma é o 0 e $0 \in K$. Agora sejam $x$, $y \in K$. Assim $x = 4p$ e $y = 4q$ com $p$, $q \in \z$. Daí
-                        \[
-                            x - y = 4p - 4q = 4(p - q) \in K.
-                        \]
-                        Agora tomando $\alpha \in \z$ temos
-                        \[
-                            \alpha \odot x = \alpha \odot 4q = 0 \in K,
-                        \]
-                        logo $K$ é um ideal de $(\z, +, \odot)$.
-                \end{enumerate}
-            \end{solucao}
-    \end{enumerate}
-\end{exemplo}
-
-\begin{proposicao}
-	Seja $A$ um anel comutativo e $I$ um ideal de $A$. Ent{\~a}o:
-	\begin{enumerate}[label={\roman*})]
-	 	\item $0_{A}\in I$.
-	 	\item $-x \in I$ para todo $x \in I$.
-	 	\item Se $1_A \in I$, ent\~ao $I = A$.
-	\end{enumerate}
-\end{proposicao}
-\begin{prova}
-	\begin{enumerate}[label={\roman*})]
-		\item Da defini\c{c}\~ao de ideal temos $\alpha \cdot x \in I$ para todo $x \in I$ e todo $\alpha \in A$.
-		Assim dado $x \in I$ $0_A = 0_A \cdot x \in I$.
-
-		\item Como $0_A \in I$, dado $x \in I$ da defini\c{c}\~ao de ideal segue que $0_A - x \in I$, isto \'e, $-x \in I$.
-
-		\item Suponha que $1_A \in I$. Como $I$ {\'e} ideal, para todo $\alpha \in A$ e todo $x \in I$ devemos ter $\alpha\cdot x \in I$. Assim, em particular, $1_A \cdot x \in I$ para todo $x \in A$. Logo, $A\sub I$ e como $I\sub A$, ent{\~a}o $I = A$.
 	\end{enumerate}
 \end{prova}
 
