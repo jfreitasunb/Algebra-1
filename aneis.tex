@@ -490,29 +490,29 @@
             b & a
         \end{bmatrix}.
     \]
-    \begin{enumerate}
+    \begin{enumerate}[label={\alph*})]
         \item Mostre que $f$ é um homomorfismo de anéis.
 
         \item Determine $\ker(f)$. Esse homomorfismo é injetor?
     \end{enumerate}
     \begin{solucao}
-        \begin{enumerate}
+        \begin{enumerate}[label={\alph*})]
             \item Observe quer
                 \[
                     f(0 + 0i) = \begin{bmatrix}0 & 0 \\ 0 &0\end{bmatrix}.
                 \]
                 Agora sejam $a + bi$, $c + di \in \complex$. Então
                 \begin{align*}
-                    f((a + bi) + (c + di)) &= f((a + c) + (b + d)i) = \begin{bmatrix}(a + c) & -(b + d)\\(b + d) & (a + c)\end{bmatrix} = \begin{bmatrix}a & -b\\b & a
-                    \end{bmatrix}\\ &+ \begin{bmatrix}c & -d\\d&c \end{bmatrix}= f(a + bi) + f(c + di)\\
-                    f((a + bi)(c + di)) &= f((ac - bd) + (ac + bd)i) = \begin{bmatrix}(ac - bd) & -(ad + bc)\\(ad + bc) & (ac - bd)\end{bmatrix} = \begin{bmatrix}a & -b\\b & a
-                    \end{bmatrix}\begin{bmatrix}c & -d\\d & c\end{bmatrix} = f(a + bi)f(c + di).
+                    f((a + bi) + (c + di)) &= f((a + c) + (b + d)i) = \begin{bmatrix}(a + c) & -(b + d)\\(b + d) & (a + c)\end{bmatrix}\\ &= \begin{bmatrix}a & -b\\b & a
+                    \end{bmatrix} + \begin{bmatrix}c & -d\\d & c \end{bmatrix} \\ &= f(a + bi) + f(c + di)\\
+                    f((a + bi)(c + di)) &= f((ac - bd) + (ac + bd)i) = \begin{bmatrix}(ac - bd) & -(ad + bc)\\(ad + bc) & (ac - bd)\end{bmatrix}\\ &= \begin{bmatrix}a & -b\\b & a
+                    \end{bmatrix}\begin{bmatrix}c & -d\\d & c\end{bmatrix}\\ &= f(a + bi)f(c + di).
                 \end{align*}
                 Logo $f$ realmente é um homomorfismo de anéis.
 
             \item Por definição
                 \[
-                    \ker(f) = \{a + bi \in \complex \mid f(a + bi) = \begin{bmatrix} 0 & 0\\ 0 & 0\end{bmatrix}\}.
+                    \ker(f) = \left\{a + bi \in \complex \mid f(a + bi) = \begin{bmatrix} 0 & 0\\ 0 & 0\end{bmatrix}\right\}.
                 \]
                 mas
                 \[
