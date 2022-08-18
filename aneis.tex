@@ -1,7 +1,6 @@
 %!TEX program = xelatex
 %!TEX root = Algebra_1.tex
 \chapter{An{\'e}is}
-
 \section{Conceitos B\'asicos} % (fold)
 \label{sec:conceitos_basicos}
 
@@ -20,7 +19,8 @@
 
 		\item A multiplica\c{c}\~ao usual nos conjuntos $\z$, $\rac$, $\real$ e $\complex$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
 
-		\item Seja $m > 1$, $m \in \z$ fixo. A soma \eqref{soma_modulo_m} e a multiplica\c{c}\~ao \eqref{multiplicacao_modulo_m} definidos em $\z_m = \{\overline{0},\overline{1},...,\overline{m-1}\}$ s\~ao uma opera\c{c}\~oes bin\'arias.
+        \item Seja $m > 1$, $m \in \z$ fixo. A soma \eqref{soma_modulo_m} e a multiplica\c{c}\~ao \eqref{multiplicacao_modulo_m} definidos em $\z_m =
+            \{\overline{0},\overline{1},...,\overline{m-1}\}$ s\~ao uma opera\c{c}\~oes bin\'arias.
 
 		\item A opera\c{c}\~ao $\div$ em $\rac^{*}$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
 		\item J\'a em $\n$, $\z$, $\z^{*}$ e em $\rac$ a opera\c{c}\~ao $\div$ n{\~a}o {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
@@ -28,13 +28,10 @@
 \end{exemplos}
 
 \begin{definicao}\label{definicaoanel}
-	Seja $A$ um conjunto n{\~a}o vazio no qual est\~ao definidas duas opera{\c c}{\~o}es bin\'arias $\oplus$ e $\otimes$, chamadas \textit{soma} e \textit{produto}.  Dizemos que $(A, \oplus, \otimes)$ {\'e} um \textbf{anel} quando as seguintes condi{\c c}{\~o}es s{\~a}o verdadeiras:
-	\begin{enumerate}[label={\roman*})]
-		\item \textbf{Associatividade}: para todos $x$, $y$, $z \in A$ vale que
-		\[
-			(x \oplus y) \oplus z = x \oplus (y \oplus z).
-		\]
-		Essa propriedade {\'e} chamada \textbf{propriedade associativa} da soma.\label{associatividadesoma}
+    Seja $A$ um conjunto n{\~a}o vazio no qual est\~ao definidas duas opera{\c c}{\~o}es bin\'arias $\oplus$ e $\otimes$, chamadas
+    \textit{soma} e \textit{produto}.  Dizemos que $(A, \oplus, \otimes)$ {\'e} um \textbf{anel} quando as seguintes condi{\c c}{\~o}es s{\~a}o verdadeiras:
+    \begin{enumerate}[label={\roman*})] \item \textbf{Associatividade}: para todos $x$, $y$, $z \in A$ vale que \[ (x \oplus y) \oplus z = x \oplus (y \oplus z). \] Essa
+    propriedade {\'e} chamada \textbf{propriedade associativa} da soma.\label{associatividadesoma}
 
 		\item \textbf{Comutatividade}: Para todos $x$, $y \in A$ vale\label{comutatividadesoma}
 		\[
@@ -81,23 +78,23 @@
 		\]
 		Dizemos que $(A, \oplus, \otimes)$ {\'e} um \textbf{anel comutativo}.
 
-		\item \textbf{Unidade}: Se existe em $A$ um elemento denotado por $1$ ou $1_{A}$ tal que
-		\[
-			x \otimes 1 = x = 1 \otimes x,
-		\]
-		para todo $x \in A$, ent{\~a}o dizemos que $(A, \oplus, \otimes)$ \'e um \textbf{anel com unidade} ou um \textbf{anel unit{\'a}rio}. O elemento $1_A$ {\'e} chamado de \textbf{unidade} de $A$ ou \textbf{elemento neutro da multiplica\c{c}\~ao} de $A$.
+        \item \textbf{Unidade}: Se existe em $A$ um elemento denotado por $1$ ou $1_{A}$ tal que \[ x \otimes 1 = x = 1 \otimes x, \] para todo $x \in A$, ent{\~a}o dizemos que
+            $(A, \oplus, \otimes)$ \'e um \textbf{anel com unidade} ou um \textbf{anel unit{\'a}rio}. O elemento $1_A$ {\'e} chamado de \textbf{unidade} de $A$ ou
+            \textbf{elemento neutro da multiplica\c{c}\~ao} de $A$.
 
-		\item Se um anel $(A, \oplus, \otimes)$ satisfaz as duas propriedades anteriores dizemos que $(A, \oplus, \otimes)$ \'e um \textbf{anel comutativo com unidade} ou um \textbf{anel comutativo unit\'ario}.
+        \item Se um anel $(A, \oplus, \otimes)$ satisfaz as duas propriedades anteriores dizemos que $(A, \oplus, \otimes)$ \'e um \textbf{anel comutativo com unidade} ou um
+            \textbf{anel comutativo unit\'ario}.
 
-		\item Seja $(A, \oplus, \otimes)$ um anel. Quando n\~ao houver chance de confus\~ao com rela\c{c}\~ao \`as opera\c{c}\~oes envolvidas diremos simplesmente que $A$ \'e um anel.
-	\end{enumerate}
-\end{observacoes}
+        \item Seja $(A, \oplus, \otimes)$ um anel. Quando n\~ao houver chance de confus\~ao com rela\c{c}\~ao \`as opera\c{c}\~oes envolvidas diremos simplesmente que $A$ \'e um
+            anel.
+    \end{enumerate} \end{observacoes}
 
 \begin{exemplos}
 	\begin{enumerate}[label={\arabic*})]
 		\item $(\z,+,.)$, $(\rac,+,.)$, $(\real,+,.)$, $(\complex,+,.)$, $(\z_m, \oplus, \otimes)$ s{\~a}o an{\'e}is comutativos e com unidade.
 
-		\item  Seja $A = \z =\{f : \z \to \z \mid f \mbox{ {\'e} uma fun{\c c}{\~a}o}\}$. Dadas duas fun{\c c}{\~o}es quaisquer $f$, $g \in A$, definimos $f\oplus g:\z \to \z$ e $f \otimes g:\z \to \z$ como:
+        \item  Seja $A = \z =\{f : \z \to \z \mid f \mbox{ {\'e} uma fun{\c c}{\~a}o}\}$. Dadas duas fun{\c c}{\~o}es quaisquer $f$, $g \in A$, definimos $f\oplus g:\z \to \z$ e
+            $f \otimes g:\z \to \z$ como:
 		\begin{align*}
 			(f\oplus g)(x) &= f(x) + g(x)\\
 			(f\otimes g)(x) &= f(x)g(x)
@@ -236,8 +233,8 @@
 \label{sec:aneis_de_integridade_e_subaneis}
 
 \begin{definicao}
-	Um anel comutativo $(A, + , \cdot)$ {\'e} dito ser um \textbf{anel de integridade} quando para todos
-	$x$, $y \in A$, se $xy = 0_A$, ent{\~a}o $x = 0_A$ ou $y = 0_A$. Um anel de integridade tamb{\'e}m {\'e} chamado de \textbf{dom{\'\i}nio de integridade} ou simplesmente de \textbf{dom{\'\i}nio}.
+    Um anel comutativo $(A, + , \cdot)$ {\'e} dito ser um \textbf{anel de integridade} quando para todos $x$, $y \in A$, se $xy = 0_A$, ent{\~a}o $x = 0_A$ ou $y = 0_A$. Um anel
+    de integridade tamb{\'e}m {\'e} chamado de \textbf{dom{\'\i}nio de integridade} ou simplesmente de \textbf{dom{\'\i}nio}.
 \end{definicao}
 
 \begin{observacao}
@@ -249,7 +246,8 @@
 	\begin{enumerate}[label={\arabic*})]
 		\item Os an{\'e}is $\z$, $\rac$, $\real$, $\complex$ s{\~a}o an{\'e}is de integridade.
 
-		\item Em geral $\z_m$ n{\~a}o {\'e} anel de integridade, por exemplo, em $\z_4$, $\overline{2} \neq \overline{0}$, no entanto $\overline{2}\otimes \overline{2} = \overline{4} = \overline{0}$.
+        \item Em geral $\z_m$ n{\~a}o {\'e} anel de integridade, por exemplo, em $\z_4$, $\overline{2} \neq \overline{0}$, no entanto $\overline{2}\otimes \overline{2} =
+            \overline{4} = \overline{0}$.
 
 		\item $M_{n}(\real)$ n{\~a}o {\'e} um anel de integridade, por exemplo, em $M_{2}(\real)$
 		\begin{align*}
@@ -273,7 +271,11 @@
 			\end{bmatrix}.
 		\end{align*}
 
-		\item Suponha que $m = nk$, $m > n > 1$ e $m > k > 1$. Logo, em $\z_m$, $\overline{n} \neq \overline{0}$ e $\overline{k} \neq \overline{0}$ e no entanto $\overline{n} \otimes \overline{k} = \overline{m} = \overline{0}$. Logo, se $m$ n{\~a}o {\'e} primo, ent{\~a}o $\z_m$ n{\~a}o {\'e} um anel de integridade. Agora, suponha que $m = p$ primo. Sejam $\overline{x}$, $\overline{y} \in \z_m$ tais que $\overline{x}\otimes \overline{y} = \overline{0}$, ou seja, $xy \equiv 0 \pmod p$. Da{\'\i} $p\mid xy$. Logo $p\mid x$ ou $p\mid y$. Portanto, $\overline{x} = \overline{0}$ ou $\overline{y} = \bar{0}$. Assim, $\z_m$ {\'e} anel de integridade se, e somente se, $m$ {\'e} primo.
+        \item Suponha que $m = nk$, $m > n > 1$ e $m > k > 1$. Logo, em $\z_m$, $\overline{n} \neq \overline{0}$ e $\overline{k} \neq \overline{0}$ e no entanto $\overline{n}
+            \otimes \overline{k} = \overline{m} = \overline{0}$. Logo, se $m$ n{\~a}o {\'e} primo, ent{\~a}o $\z_m$ n{\~a}o {\'e} um anel de integridade. Agora, suponha que $m =
+            p$ primo. Sejam $\overline{x}$, $\overline{y} \in \z_m$ tais que $\overline{x}\otimes \overline{y} = \overline{0}$, ou seja, $xy \equiv 0 \pmod p$. Da{\'\i} $p\mid
+            xy$. Logo $p\mid x$ ou $p\mid y$. Portanto, $\overline{x} = \overline{0}$ ou $\overline{y} = \bar{0}$. Assim, $\z_m$ {\'e} anel de integridade se, e somente se, $m$
+            {\'e} primo.
 	\end{enumerate}
 \end{exemplos}
 
@@ -292,7 +294,8 @@
 \end{exemplos}
 
 \begin{proposicao}\label{proposicao_subanel}
-	Seja $(A, +,\cdot)$ um anel. Um subconjunto n{\~a}o vazio $B\subseteq A$ {\'e} um subanel de $A$ se, e somente se, $x + (-y) \in B$ e $x\cdot y \in B$ para todos $x$, $y \in B$.
+    Seja $(A, +,\cdot)$ um anel. Um subconjunto n{\~a}o vazio $B\subseteq A$ {\'e} um subanel de $A$ se, e somente se, $x + (-y) \in B$ e $x\cdot y \in B$ para todos $x$, $y \in
+    B$.
 \end{proposicao}
 \begin{prova}
     Precisamos mostrar que
@@ -304,7 +307,9 @@
 
     A prova de \textit{\ref{primeiroladosubanel}} é uma consequência direta da definição de subanel.
 
-    Agora para provar \textit{\ref{segundoladosubanel}}, vamos mostrar que $(B, +, \cdot)$ é um anel. Inicialmente obserque que na definição de anel, Definição \ref{definicaoanel}, os itens \ref{associatividadesoma}, \ref{comutatividadesoma}, \ref{associatividadeproduto}, \ref{distributividadesomaproduto} e \ref{distributividadeprodutosoma} são válidos para todos os elementos de $A$ e como $B \subseteq A$, então essas propriedades também são válidas em $B$.
+    Agora para provar \textit{\ref{segundoladosubanel}}, vamos mostrar que $(B, +, \cdot)$ é um anel. Inicialmente obserque que na definição de anel, Definição
+    \ref{definicaoanel}, os itens \ref{associatividadesoma}, \ref{comutatividadesoma}, \ref{associatividadeproduto}, \ref{distributividadesomaproduto} e
+    \ref{distributividadeprodutosoma} são válidos para todos os elementos de $A$ e como $B \subseteq A$, então essas propriedades também são válidas em $B$.
 
     Como por hipótese $x\cdot y \in B$ para todos $x$, $y \in B$, então o produto $\cdot$ é uma operação binária em $B$.
 
@@ -411,16 +416,16 @@
 		\item Em $\z$ todos os ideais n{\~a}o triviais s{\~a}o da forma $m\z$, $m > 1$.
 		\item No anel $\z_p$, onde $p$ {\'e} um n{\'u}mero primo, os {\'u}nicos ideais  s{\~a}o os triviais $\{\overline{0}\}$ e $\z_p$.
         \begin{solucao}
-            De fato, seja $I \sub \z_p$ um ideal, $I \neq \{\overline{0}\}$. Provemos que $I = \z_p$. Para isso, vamos
-            provar que $\overline{1} \in I$. Seja $\overline{a} \in I$, $\overline{a} \neq \overline{0}$, pois $I \neq
-            \{\overline{0}\}$. Como $p$ {\'e} primo, $mdc(a,p) = 1$, da{\'\i} existe $\overline{b} \in \z_p$,
-            $\overline{b} \neq \overline{0}$, tal que $\overline{1} = \overline{a} \otimes \overline{b}$. Mas $I$ {\'e}
-            ideal e $\overline{a} \in I$, logo $\overline{1} = \overline{a} \otimes \overline{b} \in I$.
+            De fato, seja $I \sub \z_p$ um ideal, $I \neq \{\overline{0}\}$. Provemos que $I = \z_p$. Para isso, vamos provar que $\overline{1} \in I$. Seja $\overline{a} \in I$,
+            $\overline{a} \neq \overline{0}$, pois $I \neq \{\overline{0}\}$. Como $p$ {\'e} primo, $mdc(a,p) = 1$, da{\'\i} existe $\overline{b} \in \z_p$, $\overline{b} \neq
+            \overline{0}$, tal que $\overline{1} = \overline{a} \otimes \overline{b}$. Mas $I$ {\'e} ideal e $\overline{a} \in I$, logo $\overline{1} = \overline{a} \otimes
+            \overline{b} \in I$.
 
             Portanto $I = \z_p$.
         \end{solucao}
 
-		\item Os {\'u}nicos ideais n{\~a}o triviais de $\z_8 = \{\overline{0}, \overline{1}, \overline{2}, \overline{3}, \overline{4}, \overline{5}, \overline{6}, \overline{7}\}$ s{\~a}o:
+        \item Os {\'u}nicos ideais n{\~a}o triviais de $\z_8 = \{\overline{0}, \overline{1}, \overline{2}, \overline{3}, \overline{4}, \overline{5}, \overline{6}, \overline{7}\}$
+            s{\~a}o:
 		\begin{align*}
 			I_1 &= \{\overline{0}, \overline{2}, \overline{4}, \overline{6}\}\\
 			I_2 &=\{\overline{0}, \overline{4}\}
@@ -487,7 +492,8 @@
 
 		\item Como $0_A \in I$, dado $x \in I$ da defini\c{c}\~ao de ideal segue que $0_A - x \in I$, isto \'e, $-x \in I$.
 
-		\item Suponha que $1_A \in I$. Como $I$ {\'e} ideal, para todo $\alpha \in A$ e todo $x \in I$ devemos ter $\alpha\cdot x \in I$. Assim, em particular, $1_A \cdot x \in I$ para todo $x \in A$. Logo, $A\sub I$ e como $I\sub A$, ent{\~a}o $I = A$.
+        \item Suponha que $1_A \in I$. Como $I$ {\'e} ideal, para todo $\alpha \in A$ e todo $x \in I$ devemos ter $\alpha\cdot x \in I$. Assim, em particular, $1_A \cdot x \in
+            I$ para todo $x \in A$. Logo, $A\sub I$ e como $I\sub A$, ent{\~a}o $I = A$.
 	\end{enumerate}
 \end{prova}
 
@@ -639,7 +645,8 @@
 	\begin{enumerate}[label={\roman*})]
 		\item Primeiro note que sendo $f$ \'e um homomorfismo ent\~ao $f(0_A) = 0_B$. Logo $0_A \in \ker(f)$, isto \'e, $\ker(f) \ne \emptyset$.
 
-		Agora dados $x$, $y \in \ker(f)$ precisamos mostrar que $x - y \in \ker(f)$ e $xy \in \ker(f)$, e para mostrar isso basta mostrar que $f(x - y) = 0_B$ e$f(xy) = 0_B$. Inicialmente como $x$, $y \in \ker(f)$ da{\'\i} $f(x) = f(y) = 0_B$. Assim
+        Agora dados $x$, $y \in \ker(f)$ precisamos mostrar que $x - y \in \ker(f)$ e $xy \in \ker(f)$, e para mostrar isso basta mostrar que $f(x - y) = 0_B$ e$f(xy) = 0_B$.
+        Inicialmente como $x$, $y \in \ker(f)$ da{\'\i} $f(x) = f(y) = 0_B$. Assim
 		\begin{align*}
 			f(x - y) &= f(x + (-y)) = f(x) \oplus f(-y) = f(x) \oplus (-f(y)) = 0_B \oplus 0_B = 0_B\\
 			f(xy) &= f(x)\otimes f(y) = 0_B \otimes 0_B = 0_B.
@@ -698,7 +705,8 @@ Usando a Proposição \ref{homomorfismo_injetor} vemos que o homomorfismo do Exe
 		\[
 			f(x)\otimes f(x^{-1}) = 1_B = f(x^{-1})\otimes f(x)
 		\]
-		desde que $x \in A$ possua inverso multiplicativo. Sendo assim suponha que $x \in A$ possui inverso multiplicativo. Seja $x^{-1}$ o inverso multiplicativo de $x$ em $A$. Temos
+        desde que $x \in A$ possua inverso multiplicativo. Sendo assim suponha que $x \in A$ possui inverso multiplicativo. Seja $x^{-1}$ o inverso multiplicativo de $x$ em $A$.
+        Temos
 		\begin{align*}
 			f(x)\otimes f(x^{-1}) &= f(x\cdot x^{-1}) = f(1_A) = 1_B\\
 			f(x^{-1})\otimes f(x) &= f(x^{-1}\cdot x) = f(1_A) = 1_B
@@ -711,7 +719,8 @@ Usando a Proposição \ref{homomorfismo_injetor} vemos que o homomorfismo do Exe
 \label{sec:anel_quociente}
 
 \begin{definicao}
-	Seja $I$ um ideal de um anel $(A, +, \cdot)$. Dados $x$, $y \in A$ dizemos que $x$ \textbf{\'e congruente a} $y$ \textbf{m\'odulo} $I$ quando $x-y \in I$. Neste caso, escrevemos $x\equiv y \pmod I$.
+    Seja $I$ um ideal de um anel $(A, +, \cdot)$. Dados $x$, $y \in A$ dizemos que $x$ \textbf{\'e congruente a} $y$ \textbf{m\'odulo} $I$ quando $x-y \in I$. Neste caso,
+    escrevemos $x\equiv y \pmod I$.
 \end{definicao}
 
 \begin{proposicao}
@@ -740,7 +749,8 @@ Assim,
 \]
 
 \begin{observacao}
-	Denotamos por $y + I$ (ou $I + y$) a classe de equival{\^e}ncia m{\'o}dulo $I$ de $y \in A$. Denotamos por $\dfrac{A}{I}$ o conjunto de todas as classes de equival{\^e}ncia, tal conjunto {\'e} chamado de \textbf{quociente do anel $A$ pelo ideal $I$}.
+    Denotamos por $y + I$ (ou $I + y$) a classe de equival{\^e}ncia m{\'o}dulo $I$ de $y \in A$. Denotamos por $\dfrac{A}{I}$ o conjunto de todas as classes de equival{\^e}ncia,
+    tal conjunto {\'e} chamado de \textbf{quociente do anel $A$ pelo ideal $I$}.
 \end{observacao}
 
 \begin{exemplos}
@@ -761,7 +771,8 @@ Assim,
 		e $\dfrac{A}{I_{2}} = \{0_{A} + I\}$.
 	\end{enumerate}
 
-	\item Seja $A = \z$. Sabemos que os ideais de $\z$ s{\~a}o da forma $m\z$, $m > 1$. Seja $I = m\z$ um ideal de $\z$. Assim $x\equiv y \pmod I$ se, e s\'o se, $x - y \in I$. Mais isso ocorre se, e somente se, $x - y = mk $, para algum $k \in \z$. Logo $x\equiv y \pmod I$ se, e s\'o se, $m\mid (x - y)$. Portanto, $\dfrac{\z}{I} = \z_m$.
+    \item Seja $A = \z$. Sabemos que os ideais de $\z$ s{\~a}o da forma $m\z$, $m > 1$. Seja $I = m\z$ um ideal de $\z$. Assim $x\equiv y \pmod I$ se, e s\'o se, $x - y \in I$.
+        Mais isso ocorre se, e somente se, $x - y = mk $, para algum $k \in \z$. Logo $x\equiv y \pmod I$ se, e s\'o se, $m\mid (x - y)$. Portanto, $\dfrac{\z}{I} = \z_m$.
 	\end{enumerate}
 \end{exemplos}
 
@@ -792,7 +803,8 @@ Ent{\~a}o
 	(x_2 + I) \oplus (y_2 + I) &= (x_2 + y_2) + I
 \end{align*}
 
-Como $x_1 + I = x_2 + I$, ent{\~a}o $x_1 - x_2 \in I$ e como $y_1 + I = y_2 + I$, ent{\~a}o $y_1 = y_2 \in I$. Mas $I$ {\'e} ideal, logo $(x_1 - x_2) + (y_1 - y_2) = (x_1 + y_1) - (x_2 + y_2) \in I$, ou seja
+Como $x_1 + I = x_2 + I$, ent{\~a}o $x_1 - x_2 \in I$ e como $y_1 + I = y_2 + I$, ent{\~a}o $y_1 = y_2 \in I$. Mas $I$ {\'e} ideal, logo $(x_1 - x_2) + (y_1 - y_2) = (x_1 + y_1)
+- (x_2 + y_2) \in I$, ou seja
 \[
 	(x_1 + I) \oplus (y_1 + I) = (x_2 + I) \oplus (y_2 + I).
 \]
@@ -815,6 +827,6 @@ ou seja, $xy + I = x_2y_2 + I$. Portanto,
 \]
 
 \begin{teorema}
-	Seja $(A, +, \cdot)$ um anel comutativo e com unidade. Ent{\~a}o, se $I$ {\'e} um ideal de $A$,
-	o quociente $\dfrac{A}{I}$ com as opera{\c c}{\~o}es $\oplus$ e $\otimes$ {\'e} um anel comutativo e com unidade. O elemento neutro da soma {\'e} a classe $0_{A} + I$ e a unidade do produto {\'e} $1_{A} + I$.
+    Seja $(A, +, \cdot)$ um anel comutativo e com unidade. Ent{\~a}o, se $I$ {\'e} um ideal de $A$, o quociente $\dfrac{A}{I}$ com as opera{\c c}{\~o}es $\oplus$ e $\otimes$
+    {\'e} um anel comutativo e com unidade. O elemento neutro da soma {\'e} a classe $0_{A} + I$ e a unidade do produto {\'e} $1_{A} + I$.
 \end{teorema}
