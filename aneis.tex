@@ -482,7 +482,7 @@
 	\'e chamado de \textbf{kernel} ou \textbf{n\'ucleo} de $f$.
 \end{definicao}
 
-\begin{exemplo}
+\begin{exemplo}\label{exemplo_kernel_homomorfismo_aneis}
     Seja $f : \complex \to M_2(\real)$ dada por
     \[
         f(a + bi) = \begin{bmatrix}
@@ -514,7 +514,8 @@
                 \[
                     \ker(f) = \left\{a + bi \in \complex \mid f(a + bi) = \begin{bmatrix} 0 & 0\\ 0 & 0\end{bmatrix}\right\}.
                 \]
-                mas
+
+                Mas
                 \[
                     f(a + bi) = \begin{bmatrix}a & -b\\b & a\end{bmatrix}
                 \]
@@ -526,7 +527,7 @@
     \end{solucao}
 \end{exemplo}
 
-\begin{proposicao}
+\begin{proposicao}\label{homomorfismo_injetor}
 	Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis e $f : A \to B$ um homomorfismo de an\'eis. Ent\~ao:
 	\begin{enumerate}[label={\roman*})]
 		\item $\ker(f)$ \'e um subanel de $A$.
@@ -565,6 +566,7 @@
 	\end{enumerate}
 \end{prova}
 
+Usando a Proposição \ref{homomorfismo_injetor} vemos que o homomorfismo do Exemplo \ref{exemplo_kernel_homomorfismo_aneis} é um homomorfismo injetor.
 \begin{proposicao}
 	Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis e seja $f : A \to B$ um homomorfismo sobrejetor de an\'eis.
 	\begin{enumerate}[label={\roman*})]
