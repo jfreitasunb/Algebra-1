@@ -447,6 +447,17 @@
 
         \item $h(\alpha, \beta)= \alpha + \beta$
     \end{enumerate}
+    \begin{solucao}
+        Inicialmente observe que o elemento neutro do anel $\z \times \z$ com as operações dadas é $(0, 0)$.
+        \begin{enumerate}
+            \item Primeiro veja que $f(0, 0) = 0$, então $f$ pode ser um homomorfismo de anéis. Para confirmar sejam $(a, b)$, $(c, d) \in \z \times \z$. Temos
+                \begin{align*}
+                    f((a, b) + (c, d)) &= f(a + c, b + d) = a + c = f(a, b) + f(c, d)\\
+                    f((a, b) \cdot (c, d)) &= f(ac, ad + bc) = ac = f(a, b)f(c, d),
+                \end{align*}
+                logo $f$ é realmente um homomorfismo de anéis.
+        \end{enumerate}
+    \end{solucao}
 \end{exemplo}
 
 
