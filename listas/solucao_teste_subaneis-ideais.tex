@@ -1,0 +1,84 @@
+%!TEX program = xelatex
+% !TEX encoding = ISO-8859-1
+\def\ano{2022}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{2}
+
+\documentclass[12pt]{exam}
+
+\input{../configuracoes/pacotes}
+\input{../configuracoes/configuracoes_paginas}
+\input{../configuracoes/comandos_personalizados}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\begin{document}
+    \begin{center}
+        {\Large\bf \disciplina\ - Turma \turma\ -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
+        Solu\c{c}\~ao de Exerc{\'\i}cio}\\
+        \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+    \end{center}
+    \hrule
+
+    \vspace{.6cm}
+
+    Solu\c{c}\~ao do Teste Discursivo realizado no dia \textbf{09/09/2022}.
+
+    \vspace{.6cm}
+
+    \questao{} Dados conjuntos $A$ e $B$, defina
+    \[
+        A \Delta B = (A - B) \cup (B - A).
+    \]
+
+    Verifique se a propriedade seguinte \'e verdadeira:
+    \[
+        A \Delta (A \Delta B) = B.
+    \]
+
+
+    \noindent\textbf{Solu\c{c}\~ao:} \textit{Verdadeira}. Para prov\'a-la, precisamos mostrar que
+    \begin{enumerate}[label=({\roman*})]
+        \item $A \Delta (A \Delta B) \subset B$
+        \item $B \subset A \Delta (A \Delta B)$.
+    \end{enumerate}
+
+    Para mostrar (i)  seja $x \in A \Delta (A \Delta B)$. Ent\~ao pela defini\c{c}\~ao da opera\c{c}\~ao $\Delta$, temos
+    \[
+        x \in [A - (A \Delta B)] \cup [(A \Delta B) - A].
+    \]
+    Assim $x \in [A - (A \Delta B)]$ ou $x \in [(A \Delta B) - A]$. Vamos analisar cada op\c{c}\~ao separadamente.
+
+    Suponha que $x \in [A - (A \Delta B)]$. Com isso, $x \in A$ e $x \notin A \Delta B$. Agora, $A \Delta B$ envolve uma uni\~ao de conjuntos e para $x$ n\~ao pertencer a essa uni\~ao $x$ n\~ao pode pertencer a nenhum dos conjuntos. Logo $x \notin A - B$ e $x \notin B - A$. Mas para que $x \notin A - B$, devemos ter $x \notin A$ ou $x \in B$ e para que $x \notin B - A$, devemos ter $x \notin B$ ou $x \in A$. Mas $x \in A$, logo devemos ter obrigatoriamente $x \in B$.
+
+    Agora suponha que $x \in [(A \Delta B) - A]$. Ent\~ao $x \in A \Delta B$ e $x \notin A$. Mas como $x \in A \Delta B$, ent\~ao $x \in (A - B) \cup (B - A)$ e como $x \notin A$ devemos ter obrigatoriamente $x \in B - A$. Com isso $x \in B$.
+
+    Portanto, independente do caso, $x \in B$, isto \'e,
+    \[
+        A \Delta (A \Delta B) \subset B.
+    \]
+
+    Para mostrar (ii) seja $y \in B$. Agora temos duas possibilidades que s\~ao: $y \in A$ ou $y \notin A$. Vamos analisar cada uma separadamente.
+
+    Primeiro suponha que $y \in A$. Como, por hip\'otese, $y \in B$ segue que
+    \[
+        y \notin A - B
+    \]
+    e de $y \in A$ segue que
+    \[
+        y \notin B - A.
+    \]
+    Assim $y \notin A \Delta B$. Mas $y \in A$, logo $y \in A - (A \Delta B)$. Da{\'\i} $y \in A \Delta (A \Delta B)$.
+
+    Agora suponha que $y \notin A$. Novamente, por hip\'otese, $y \in B$. Assim $y \in B - A$. Com isso $y \in A \Delta B$. Mas ent\~ao $y \notin A - (A \Delta B)$ e $y \in (A \Delta B) - A$. Da{\'\i} $y \in A \Delta (A \Delta B)$.
+
+    Portanto, independente do caso, sempre temos
+    \[
+        B \subset A \Delta (A \Delta B).
+    \]
+
+    Assim, como as duas inclus\~oes s\~ao verdadeiras, segue que
+    \[
+        A \Delta (A \Delta B) = B,
+    \]
+    como quer{\'\i}amos. \hspace{.1cm} \qedsymbol
+\end{document}
