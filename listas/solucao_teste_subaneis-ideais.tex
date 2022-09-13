@@ -41,21 +41,21 @@
         Agora sejam $a$, $b \in N(x)$. Precisamos mostrar que $a + (-b)\in N(x)$ e que $a\cdot b \in N(x)$. Como $a$ e $b$ estão em $N(x)$
         então
         \begin{align}
-            xa = ax\\
-            xb = bx.
+            xa = ax\label{p1}\\
+            xb = bx\label{p2}.
         \end{align}
         Da definição do conjunto $N(x)$, precisamos mostrar que
-        \begin{align}
+        \begin{align*}
             x[a + (-b)] &= [a + (-b)]x\\
             x(ab) &= (ab)x
-        \end{align}
+        \end{align*}
         para concluir que $a + (-b) \in N(x)$ e que $ab \in N(x)$. Mas
         \begin{align*}
-            x[a + (-b)] &= xa + x(-b) \\ &= ax + (-(xb)) \\ &= xa + (-(bx)) \\ &= xa + (-b)x \\ &= [a + (-b)]x
+            x[a + (-b)] &= xa + x(-b) \\ &\stackrel{\eqref{p1}}{=} ax + (-(xb)) \\ &\stackrel{\eqref{p2}}{=} xa + (-(bx)) \\ &= xa + (-b)x \\ &= [a + (-b)]x
         \end{align*}
         e assim $a + (-b) \in N(x)$, como queríamos. Além disso,
         \begin{align*}
-            x(ab) = (xa)b = (ax)b = a(xb) = a(bx) = (ab)x
+            x(ab) = (xa)b \stackrel{\eqref{p1}}{=} (ax)b = a(xb) \stackrel{\eqref{p2}}{=} a(bx) = (ab)x
         \end{align*}
         e com isso $ab \in N(x)$.
 
