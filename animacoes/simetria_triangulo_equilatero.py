@@ -25,7 +25,7 @@ class Start(Scene):
         #self.play(FadeIn(triangulo))
 
         # ... some move or rotate mobjects around...
-        self.play(Rotate(Tri, 2*PI/3, rate_func=linear, run_time = 3))
+        self.play(Rotate(Tri, 2*PI/3, about_point = baricentro, rate_func = linear, run_time = 3))
 
         self.play(Rotate(Tri[1][0], -2*PI/3), Rotate(Tri[1][1], -2*PI/3), Rotate(Tri[1][2], -2*PI/3))
 
