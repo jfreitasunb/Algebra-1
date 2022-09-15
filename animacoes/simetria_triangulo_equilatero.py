@@ -36,7 +36,7 @@ class Start(Scene):
         matrix = [[-1, 0], [0, 1]]
         matrix2 = [[0, -1]]
         self.play(Tri.animate.apply_matrix(matrix), run_time=1)
-        self.add(Tri[1][0].apply_matrix(matrix), Tri[1][0].move_to(vertices[2]), Tri[1][1].apply_matrix(matrix), Tri[1][1].move_to(vertices[1]))
+        self.add(Tri[1][0].apply_matrix(matrix), Tri[1][0].move_to(vertices[2]), Tri[1][1].apply_matrix(matrix), Tri[1][1].move_to(vertices[1]), Tri[1][2].apply_matrix(matrix), Tri[1][2].move_to(vertices[0]))
         self.wait(4)
 
         finishScene(self)
