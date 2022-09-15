@@ -9,6 +9,9 @@ class Start(Scene):
         triangulo = Triangle().scale(2)
 
         vertices = triangulo.get_vertex_groups()[0]
+
+        baricentro = [ (vertices[0][0] + vertices[1][0] + vertices[2][0])/3, (vertices[0][1] + vertices[1][1] + vertices[2][1])/3, 0]
+
         vertices[0][1] = vertices[0][1]+0.3
         vertices[1][0] = vertices[1][0]-0.2
         vertices[2][0] = vertices[2][0]+0.3
@@ -30,4 +33,5 @@ class Start(Scene):
         #self.play(FadeOut(triangulo))
 
         self.wait(4)
+
         finishScene(self)
