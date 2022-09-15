@@ -33,5 +33,10 @@ class Start(Scene):
         #self.play(FadeOut(triangulo))
 
         self.wait(4)
+        matrix = [[-1, 0], [0, 1]]
+        matrix2 = [[0, -1]]
+        self.play(Tri.animate.apply_matrix(matrix), run_time=1)
+        self.add(Tri[1][0].apply_matrix(matrix), Tri[1][0].move_to(vertices[2]), Tri[1][1].apply_matrix(matrix), Tri[1][1].move_to(vertices[1]))
+        self.wait(4)
 
         finishScene(self)
