@@ -48,23 +48,24 @@ class Start(Scene):
 
         labels_originais.set_color(RED)
 
-        Tri = VGroup()
-        Tri.add(triangulo, labels_rotacionados)
+        Triangulo_rotacao = VGroup()
+        Triangulo_rotacao.add(triangulo, labels_rotacionados)
 
         self.play(Write(labels_originais))
         self.play(FadeIn(triangulo))
 
         # ... some move or rotate mobjects around...
-        self.play(Rotate(Tri, 2*PI/3, about_point = baricentro, rate_func = linear, run_time = 3))
+        self.play(Rotate(Triangulo_rotacao, 2*PI/3, about_point = baricentro, rate_func = linear, run_time = 3))
 
-        self.play(Rotate(Tri[1][0], -2*PI/3), Rotate(Tri[1][1], -2*PI/3), Rotate(Tri[1][2], -2*PI/3))
+        self.play(Rotate(Triangulo_rotacao[1][0], -2*PI/3), Rotate(Triangulo_rotacao[1][1], -2*PI/3), Rotate(Triangulo_rotacao[1][2], -2*PI/3))
+
+        Triangulo_reflexao = VGroup()
+        Triangulo_reflexao.add(triangulo, labels_rotacionados)
 
         self.wait(4)
         matrix = [[-1, 0], [0, 1]]
-        matrix2 = [[0, -1]]
-        self.play(Tri.animate.apply_matrix(matrix), run_time=1)
-        self.add(Tri[1][0].apply_matrix(matrix), Tri[1][0].move_to(vertices_rotacionados[2]), Tri[1][1].apply_matrix(matrix),
-                Tri[1][1].move_to(vertices_rotacionados[1]), Tri[1][2].apply_matrix(matrix), Tri[1][2].move_to(vertices_rotacionados[0]))
+        self.play(Triangulo_reflexao.animate.apply_matrix(matrix), run_time=1)
+        #self.add(Triangulo_reflexao[1][0].apply_matrix(matrix), Triangulo_reflexao[1][0].move_to(vertices_rotacionados[2]), Triangulo_reflexao[1][1].apply_matrix(matrix), Triangulo_reflexao[1][1].move_to(vertices_rotacionados[1]), Triangulo_reflexao[1][2].apply_matrix(matrix), Triangulo_reflexao[1][2].move_to(vertices_rotacionados[0]))
         self.wait(4)
 
         finishScene(self)
