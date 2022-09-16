@@ -90,13 +90,14 @@ class Start(Scene):
         for i in range(0,6):
             self.play(Write(g_flat[i]), **{"run_time": 0.75})
 
-        self.play(Write(labels_originais))
-
-        self.play(FadeIn(triangulo))
 
         Triangulo_reflexao = VGroup()
 
-        Triangulo_reflexao.add(triangulo, labels_rotacionados)
+        Triangulo_reflexao.add(triangulo.copy(), labels_rotacionados.copy())
+
+        self.play(Write(labels_originais))
+
+        self.play(FadeIn(Triangulo_reflexao[0]))
 
         matrix = [[-1, 0], [0, 1]]
 
