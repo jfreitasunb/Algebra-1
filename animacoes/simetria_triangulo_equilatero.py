@@ -150,6 +150,25 @@ class Start(Scene):
         for i in range(0,6):
             self.play(Write(f_flat[i]), **{"run_time": 0.75})
 
+        gf = Matrix(
+            [("1", "2", "3"), ("2", "1", "3")], left_bracket="(",
+            right_bracket=")")
+
+        gf_flat = VGroup(*VGroup(*gf)[0])
+
+        texto_gf = Tex(r"\ =\ ")
+
+        texto_gf.next_to(f, RIGHT)
+
+        gf.to_corner(DOWN*7 + LEFT)
+
+        self.play(Write(texto_gf))
+
+        for i in VGroup(*gf)[1:]:
+            self.play(Write(i))
+
+        for i in range(0,6):
+            self.play(Write(gf_flat[i]), **{"run_time": 0.75})
 
         self.wait(2)
 
@@ -201,6 +220,10 @@ class Start(Scene):
         self.play(Triangulo_composicao.animate.apply_matrix(matrix), run_time=1)
 
         self.add(Triangulo_composicao[1][0].apply_matrix(matrix), Triangulo_composicao[1][0].move_to(vertices_rotacionados_composicao[2]),Triangulo_composicao[1][1].apply_matrix(matrix), Triangulo_composicao[1][1].move_to(vertices_rotacionados_composicao[1]), Triangulo_composicao[1][2].apply_matrix(matrix), Triangulo_composicao[1][2].move_to(vertices_rotacionados_composicao[0]))
+
+        self.wait(3)
+
+        self.play(FadeOut(Triangulo_composicao[1]))
 
         self.wait(5)
 
