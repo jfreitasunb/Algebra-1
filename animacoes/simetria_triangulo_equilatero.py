@@ -10,18 +10,22 @@ class Start(Scene):
             right_bracket=")")
 
         f_flat = VGroup(*VGroup(*f)[0])
+
         texto = Tex(r"f\ =\ ")
 
         f.to_corner(corner=UP + LEFT*3, buff=0.5)
 
         texto.next_to(f, LEFT)
+
         self.play(Write(texto))
+
         for i in VGroup(*f)[1:]:
             self.play(Write(i))
 
         for i in range(0,6):
             self.play(Write(f_flat[i]), **{"run_time": 0.75})
         self.wait(4)
+
         triangulo = Triangle().scale(2)
 
         vertices = triangulo.get_vertex_groups()[0]
@@ -29,11 +33,13 @@ class Start(Scene):
         baricentro = [ (vertices[0][0] + vertices[1][0] + vertices[2][0])/3, (vertices[0][1] + vertices[1][1] + vertices[2][1])/3, 0]
 
         vertices_originais = vertices.copy()
+
         vertices_originais[0][1] = vertices_originais[0][1]+1.3
         vertices_originais[1][0] = vertices_originais[1][0]-1.0
         vertices_originais[2][0] = vertices_originais[2][0]+1.0
 
         vertices_rotacionados = vertices.copy()
+
         vertices_rotacionados[0][1] = vertices_rotacionados[0][1]+0.3
         vertices_rotacionados[1][0] = vertices_rotacionados[1][0]-0.2
         vertices_rotacionados[2][0] = vertices_rotacionados[2][0]+0.3
@@ -49,9 +55,11 @@ class Start(Scene):
         labels_originais.set_color(RED)
 
         Triangulo_rotacao = VGroup()
+
         Triangulo_rotacao.add(triangulo.copy(), labels_rotacionados.copy())
 
         self.play(Write(labels_originais))
+
         self.play(FadeIn(Triangulo_rotacao[0]))
 
         # ... some move or rotate mobjects around...
@@ -73,7 +81,9 @@ class Start(Scene):
         g.to_corner(corner=UP + LEFT*3, buff=0.5)
 
         texto_g.next_to(g, LEFT)
+
         self.play(Write(texto_g))
+
         for i in VGroup(*g)[1:]:
             self.play(Write(i))
 
@@ -87,6 +97,7 @@ class Start(Scene):
         Triangulo_reflexao = VGroup()
 
         Triangulo_reflexao.add(triangulo, labels_rotacionados)
+
         matrix = [[-1, 0], [0, 1]]
 
         self.play(Triangulo_reflexao.animate.apply_matrix(matrix), run_time=1)
