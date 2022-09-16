@@ -24,7 +24,8 @@ class Start(Scene):
 
         for i in range(0,6):
             self.play(Write(f_flat[i]), **{"run_time": 0.75})
-        self.wait(4)
+
+        self.wait(2)
 
         triangulo = Triangle().scale(2)
 
@@ -58,14 +59,24 @@ class Start(Scene):
 
         Triangulo_rotacao.add(triangulo.copy(), labels_rotacionados.copy())
 
+        self.play(FadeIn(Triangulo_rotacao[0]))
+
+        self.wait(3)
+
         self.play(Write(labels_originais))
 
-        self.play(FadeIn(Triangulo_rotacao[0]))
+        self.wait(2)
 
         # ... some move or rotate mobjects around...
         self.play(Rotate(Triangulo_rotacao, 2*PI/3, about_point = baricentro, rate_func = linear, run_time = 3))
 
         self.play(Rotate(Triangulo_rotacao[1][0], -2*PI/3), Rotate(Triangulo_rotacao[1][1], -2*PI/3), Rotate(Triangulo_rotacao[1][2], -2*PI/3))
+
+        self.wait(3)
+
+        self.play(FadeOut(Triangulo_rotacao[1]), FadeOut(labels_originais))
+
+        self.wait(2)
 
         self.play(
             *[FadeOut(mob)for mob in self.mobjects]
@@ -95,9 +106,13 @@ class Start(Scene):
 
         Triangulo_reflexao.add(triangulo.copy(), labels_rotacionados.copy())
 
+        self.play(FadeIn(Triangulo_reflexao[0]))
+
+        self.wait(2)
+
         self.play(Write(labels_originais))
 
-        self.play(FadeIn(Triangulo_reflexao[0]))
+        self.wait(2)
 
         matrix = [[-1, 0], [0, 1]]
 
@@ -105,6 +120,9 @@ class Start(Scene):
 
         self.add(Triangulo_reflexao[1][0].apply_matrix(matrix), Triangulo_reflexao[1][0].move_to(vertices_rotacionados[0]), Triangulo_reflexao[1][1].apply_matrix(matrix), Triangulo_reflexao[1][1].move_to(vertices_rotacionados[2]), Triangulo_reflexao[1][2].apply_matrix(matrix), Triangulo_reflexao[1][2].move_to(vertices_rotacionados[1]))
 
-        self.wait(4)
+        self.wait(2)
+
+        self.play(FadeOut(Triangulo_reflexao[1]), FadeOut(labels_originais))
+        self.wait(2)
 
         finishScene(self)
