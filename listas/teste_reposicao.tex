@@ -1,0 +1,28 @@
+%!TEX program = xelatex
+
+\def\numerosemana{11}
+
+\documentclass[12pt]{exam}
+
+\input{../configuracoes/variaveis_listas}
+\input{../configuracoes/pacotes}
+\input{../configuracoes/configuracoes_paginas}
+\input{../configuracoes/comandos_personalizados}
+
+\begin{document}
+
+\questao{} Seja $d \in \z$ e considere o subconjunto de $M_2(\z)$ dado por
+    \[
+        M_2^d(\z) = \left\{\begin{pmatrix} a & db \\ b & a \end{pmatrix} \mid a, b \in \z\right\}.
+    \]
+    Mostre que $M_2^d(\z)$ é um subanel de $M_2(\z)$.
+
+\vspace{1cm}
+
+\questao{} Seja $(A, +, \cdot)$ um anel comutativo. Sejam $I$ e $J$ ideais de $A$. Mostre que
+    \[
+        I + J = \{x + y \mid x \in I, y \in J\}
+    \]
+    \'e um ideal de $A$.
+
+\end{document}
