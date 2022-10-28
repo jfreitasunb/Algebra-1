@@ -1,0 +1,210 @@
+%!TEX program = xelatex
+
+\def\numerosemana{02}
+
+\documentclass[12pt]{exam}
+
+\input{../configuracoes/variaveis_listas}
+\input{../configuracoes/pacotes}
+\input{../configuracoes/configuracoes_paginas}
+\input{../configuracoes/comandos_personalizados}
+
+\begin{document}
+    \begin{center}
+    {\Large\bf \disciplina\ - Turma \turma\ -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
+        Lista de Exerc{\'\i}cios -- Semana \numerosemana}\\ \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+    \end{center}
+    \hrule
+
+    \vspace{.6cm}
+
+    \begin{center}
+        \textit{Observa\c{c}\~oes: \begin{enumerate} \item A nota\c{c}\~ao $A \nsub B$ significa que $A \subset B$ e $A \ne B$, isto é, existe $x \in B$ com $x \notin A$. \item Seja $A$ um conjunto com uma quantidade finita de elementos, denotamos por $|A|$ a quantidade de elementos no conjunto $A$.\end{enumerate}}
+    \end{center}
+    \questao{} Dados os conjuntos $A = \{0,1,2\}$, $B = \{0,2,3\}$ e $C = \{0,1,2,3,4\}$, classifique as afirma\c{c}\~oes a seguir em verdadeira ou falsa, justificando:
+    \begin{multicols}{2}
+        \begin{enumerate}[label={\arabic*})]
+            \item $A \sub B$
+
+            \item $A \in C$
+
+            \item $B \sub C$
+
+            \item $A \in \{A, B, \{A, C\}\}$
+
+            \item $\{A\} \sub \{B, \{A, B\}\}$
+
+            \item $\{0,2\} \sub B$
+
+            \item $\{0,2\} \sub C$
+
+            \item $1 \sub C$
+
+            \item $\{1,4\} \in C$
+
+            \item $\{0,3\} \sub B$
+
+            \item $B \sub A$
+
+            \item $C \sub \{0, 1, 2, 3, 4, C, \{A, B, C\}\}$
+
+            \item $\{\vaz\} \sub A$
+
+            \item $\vaz \in C$
+
+            \item $A \sub C$
+
+            \item $x \neq \{x\}$
+
+            \item $\emptyset = \{\emptyset\}$
+
+            \item $\emptyset \in \{\emptyset\}$
+
+            \item $\emptyset \sub \{A, B, \{C\}\}$
+
+            \item $\{\} = \{0\}$
+
+            \item $A \sub \emptyset$
+
+            \item $\{\emptyset\} \sub \emptyset$
+
+            \item $\{1, 3, 3\} = \{1, \{2, 3\}, 3\}$
+
+            \item $\{a, b, c\} = \{A, B, C\}$
+
+            \item $\{\{a\}, \{b\}\} = \{\{a\}, b\}$
+
+            \item $\{1, 2, 3, 4, 5\} = \{4, 1, 3, 5, 2, 4, 5\}$
+
+            \item $\{\} \sub \{\emptyset\}$
+
+            \item $|\emptyset| = 1$
+
+            \item $|\{x,x\}| = 2$
+
+            \item $|A \cap \emptyset | = 0$
+
+            \item $|\{A, B, C\}| = 11$
+
+            \item $|\{A, B, C\}| = 3$
+
+            \item $|\{A, \{B, C\}, C, \{A, B, C\}\}| = 4$
+
+        \end{enumerate}
+    \end{multicols}
+
+    \questao{} D\^e exemplos de conjuntos n\~ao vazios $A$, $B$ e $C$ tais que:
+    \begin{enumerate}[label={\alph*})]
+        \item $A \sub B$, $C \sub B$ e $A \cap C = \emptyset$.
+
+        \item $A \sub B$, $C \nsub B$ e $A \cap C = \emptyset$.
+
+        \item $A \sub C$, $A \ne C$ e $B \cap C = \emptyset$.
+
+        \item $A \sub (B \cap C)$, $B \sub C$, $B \ne C$ e $A \ne C$.
+
+        \item $A \in B$, $B \sub C$ e $A \nsubseteq C$.
+
+        \item $A \subsetneq B$, $B \in C$ e $A \in C$.
+
+        \item $A \cap B \sub C$, $A \nsubseteq C$ e $B \nsubseteq C$.
+
+        \item $A \cap C = \emptyset$, $A \sub B$ e $|B \cap C| = 3$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Determine $A \cup B$ e $A \cap B$ se $A = \{x \in \real \mid x^2 = 1\}$ e $B = \z$.
+
+    \vspace{.3cm}
+
+    \questao{} Em cada um dos seguintes itens, determine se a afirma\c{c}\~ao \'e
+    verdadeira ou falsa. Se for verdadeira, demonstre-a. Se for falsa, exiba um
+    exemplo mostrando que a afirma\c{c}\~ao \'e falsa.
+    \begin{enumerate}[label={\alph*})]
+        \item Se $x \in A$ e $A \sub B$, ent\~ao $x \in B$.
+
+        \item Se $A \nsub B$ e $B \sub C$, ent\~ao $A \nsub C$.
+
+        \item Se $A \nsub B$ e $B \nsub C$, ent\~ao $A \nsub C$.
+
+        \item Se $x \in A$ e $A \nsub B$, ent\~ao $x \notin B$.
+
+        \item Se $A \sub B$ e $x \notin B$, ent\~ao $x \notin A$.
+
+        \item Se $A$, $B$ e $C$ s\~ao conjuntos, ent\~ao $A \cup (B \cap C) = (A \cup B) \cap C$.
+
+        \item $A \cap B = B \cap A$.
+
+        \item Se $A \cap B = A \cap C$, então $B = C$.
+
+        \item Se $A \cup B = A \cup C$, então $B = C$.
+
+        \item $A \cup B = B \cup A$.
+
+        \item Se $A \cap B = A$, então $A \subset B$.
+
+        \item Se $A \cup B = B$, então $A \subset B$.
+
+        \item $A \cap B = A$ se, e somente se, $A \cup B = B$
+
+        \item Se $A \sub B$, $B \sub C$ e $C \sub A$, então $A = B = C$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Considere os seguintes conjuntos:
+    \begin{align*}
+        A &= \{x \in \z \mid x = 2m,\ m \in \z\}\\
+        B &= \{y \in \z \mid y = 2(n - 1),\ n \in \z\}.
+    \end{align*}
+    Os conjuntos $A$ e $B$ são iguais? Justifique sua resposta.
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $a$, $b \in \real$ com $a < b$. O intervalo fechado $[a, b]$ é o conjunto $\{x \in \real \mid a \le x \le b\}$. De modo semelhantes, o intervalo aberto $(a, b)$ é o conjunto $\{y \in \real \mid a < y < b\}$. Sejam $P = [3, 7]$, $Q = [7,9]$ e $R = [-3, 8]$. Descreva os seguintes conjuntos:
+    \begin{enumerate}[label={\alph*})]
+        \item $P \cap Q$.
+
+        \item $P \cup Q$.
+
+        \item $(P \cup Q) \cap R$.
+
+        \item $P \cup (Q \cap R)$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $A$ e $B$ conjuntos e suponha que $A$ não é um subconjunto de $B$. Quais das seguintes afirmações são verdadeiras? Encontre todas as respostas corretas.
+
+    \begin{enumerate}[label={\roman*})]
+        \item Se $x \in A$, então $x \notin B$.
+
+        \item Se $x \in B$, ent~ao $x \in A$.
+
+        \item Existe um elemento $x \in A$ tal que $x \notin B$.
+
+        \item Existe um elemento $x \in B$, tal que $x \notin B$.
+    \end{enumerate}
+    \questao{} Demonstre que:
+    \begin{enumerate}[label={\alph*})]
+        \item Se $A \sub B$ e $C \sub D$, ent\~ao $A \cap C \sub B \cap D$.
+
+        \item $A \cup B = \vaz$ se, e somente se, $A = \vaz$ e $B = \vaz$.
+
+        \item $A \cup B = A \cap B$ se, e somente se,  $A = B$.
+
+        \item $A \sub B$ se, e somente se,  $A \cap B = A$.
+
+        \item $A \cup (B \cap (A \cup C)) = A \cup (B \cap C)$.
+
+        \item $A \cup B = B$ se, e somente se, $A \subset B$.
+
+        \item $(A \cup B) \cap C \sub A \cup (B \cap C)$.
+
+        \item $A \sub B \cap C$ se, e somente se, $A \sub B$ e $A \sub C$.
+
+        \item Se $A \sub B \cup C$ e $A \cap B = \emptyset$, então $A \sub C$.
+    \end{enumerate}
+
+\end{document}
