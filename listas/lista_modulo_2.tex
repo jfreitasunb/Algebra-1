@@ -1,0 +1,704 @@
+%!TEX program = xelatex
+
+\def\numeromodulo{1}
+
+\documentclass[12pt]{exam}
+
+\input{../configuracoes/variaveis_listas}
+\input{../configuracoes/pacotes}
+\input{../configuracoes/configuracoes_paginas}
+\input{../configuracoes/comandos_personalizados}
+
+\begin{document}
+    \begin{center}
+    {\Large\bf \disciplina\ - Turma \turma\ -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
+        Lista de Exerc{\'\i}cios -- Módulo \numeromodulo}\\ \vspace{9pt} Prof. Jos{\'e} Ant{\^o}nio O. Freitas
+    \end{center}
+    \hrule
+    \begin{center}
+        \textit{Nota\c{c}\~oes:}
+    \end{center}
+    \begin{multicols}{2}
+        \begin{enumerate}[label={\roman*})]
+            \item $\n^* = \n - \{0\}$
+
+            \item $\real^*_+ = \{x \in \real \mid x > 0\}$
+
+            \item $\real^*_- = \{x \in \real \mid x < 0\}$
+
+            \item $\real_+ = \{x \in \real \mid x \ge 0\}$
+
+            \item $\real_- = \{x \in \real \mid x \le 0\}$
+
+            \item $]c,d[\ = (c,d) = \{x \in \real \mid c < x < d\}$
+
+            \item $[c,d] = \{x \in \real \mid c \le x \le d\}$
+
+            \item $[c,d[\ = [c, d) = \{x \in \real \mid c \le x < d\}$
+
+            \item $]c,d] = (c, d] = \{x \in \real \mid c < x \le d\}$
+
+            \item Em $\z_m$ vamos denotar a opera\c{c}\~ao de soma $\oplus$ por $+$.
+
+            \item Em $\z_m$ vamos denotar a opera\c{c}\~ao de multiplica\c{c}\~ao $\otimes$ por $\cdot$.
+        \end{enumerate}
+    \end{multicols}
+
+    \vspace{.6cm}
+
+
+    \vspace{.6cm}
+
+    \begin{multicols}{2}
+        \begin{enumerate}[label={\roman*})]
+            \item $\n^* = \n - \{0\}$
+
+            \item $\real^*_+ = \{x \in \real \mid x > 0\}$
+
+            \item $\real^*_- = \{x \in \real \mid x < 0\}$
+
+            \item $\real_+ = \{x \in \real \mid x \ge 0\}$
+
+            \item $\real_- = \{x \in \real \mid x \le 0\}$
+
+            \item $]c,d[\ = (c,d) = \{x \in \real \mid c < x < d\}$
+
+            \item $[c,d] = \{x \in \real \mid c \le x \le d\}$
+
+            \item $[c,d[\ = [c, d) = \{x \in \real \mid c \le x < d\}$
+
+            \item $]c,d] = (c, d] = \{x \in \real \mid c < x \le d\}$
+
+            \item Em $\z_m$ vamos denotar a opera\c{c}\~ao de soma $\oplus$ por $+$.
+
+            \item Em $\z_m$ vamos denotar a opera\c{c}\~ao de multiplica\c{c}\~ao $\otimes$ por $\cdot$.
+        \end{enumerate}
+    \end{multicols}
+
+    \vspace{.6cm}
+
+
+   \questao{} Construa a tabela de soma, $\oplus$, e multiplicação, $\otimes$, nos seguintes conjuntos:
+\begin{multicols}{3}
+    \begin{enumerate}[label=({\alph*})]
+        \item $\z_5$
+        \item $\z_6$
+        \item $\z_8$
+        \item $\z_9$
+        \item $\z_{11}$
+        \item $\z_{12}$
+    \end{enumerate}
+\end{multicols}
+
+\vspace{.3cm}
+
+\questao{} Considere os seguintes subconjuntos $G$ de $\z_{12}$:
+\begin{multicols}{2}
+    \begin{enumerate}[label=({\alph*})]
+        \item $G=\{\overline{1},\overline{11}\}$;
+
+        \item $G=\{\overline{0},\overline{4},\overline{8}\}$;
+
+        \item $G=\{\overline{0},\overline{2},\overline{4},\overline{6},\overline{8},\overline{10}\}$
+        \item $G=\{\overline{1}, \overline{3},\overline{5},\overline{7},\overline{9},\overline{11}\}$.
+    \end{enumerate}
+\end{multicols}
+
+Para quais desses conjuntos valem as duas propriedades seguintes:
+\begin{enumerate}[label=({\roman*})]
+    \item $x \oplus y \in G$, para todos $x$, $y \in G$.
+    \item Para todo $x \in G$, existe $y \in G$ tal que $x \oplus y = \overline{0}$.
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Considere os seguintes subconjuntos $G$ de $\z_{13}$:
+\begin{multicols}{2}
+    \begin{enumerate}[label=({\alph*})]
+        \item $G=\{\overline{1},\overline{12}\}$;
+
+        \item $G=\{\overline{1},\overline{5},\overline{8},\overline{12}\}$;
+
+        \item $G=\{\overline{1},\overline{2},\overline{3},\overline{4}, \overline{5},\overline{6},\overline{7},
+         \overline{8},\overline{9},\overline{10},\overline{11},\overline{12}\}$
+        \item $G=\{\overline{1}, \overline{3},\overline{5},\overline{7},\overline{9},\overline{11}\}$.
+    \end{enumerate}
+\end{multicols}
+
+Para quais desses conjuntos valem as duas propriedades seguintes:
+\begin{enumerate}[label=({\roman*})]
+    \item $x \otimes y \in G$, para todos $x$, $y \in G$.
+    \item Para todo $x \in G$, existe $y \in G$ tal que $x \otimes y = \overline{1}$.
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Resolva as seguintes equa\c{c}\~oes:
+\begin{enumerate}[label={\alph*})]
+    \item $x \oplus \overline{2} = \overline{0}$ no conjunto $\z_4$;
+    \item $x^2 \oplus \overline{2}x = \overline{2}$ no conjunto $\z_5$;
+    \item $x^3 \oplus \overline{2}x = \overline{3}$ no conjunto $\z_7$.
+\end{enumerate}
+
+\newpage
+
+\questao{} Resolva o sistema de equa\c{c}\~oes
+  \[
+    \begin{cases}
+      x \oplus y = \overline{0}\\
+      \overline{2}x \oplus y = \overline{2}
+    \end{cases}
+  \]
+nos conjuntos:
+\begin{multicols}{2}
+    \begin{enumerate}[label=({\alph*})]
+        \item $\z_4$
+        \item $\z_6$
+        \item $\z_3$
+        \item $\z_5$
+    \end{enumerate}
+\end{multicols}
+
+\vspace{.3cm}
+
+\questao{} Resolva a equa\c{c}\~ao $x^2 \oplus \overline{2}x \oplus \overline{1} = \overline{0}$ nos conjuntos $\z_7$ e $\z_{11}$, caso ela tenha ra{\'\i}zes.
+
+\vspace{.3cm}
+
+\questao{} Para quais valores de $\overline{c}$ a equa\c{c}\~ao $\overline{2}\otimes x = \overline{c}$ tem solu\c{c}\~ao no conjunto $\z_5$.
+
+\vspace{.3cm}
+
+\questao{} Mostre que a rela{\c c}{\~a}o de congru{\^e}ncia m{\'o}dulo $m$ satisfaz as seguintes propriedades:
+\begin{enumerate}[label=({\alph*})]
+    \item $a\equiv b\pmod{m}$ se, e somente se, $a - b\equiv 0\pmod{m}$.
+    \item Se $a_{1}\equiv b_{1}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, ent{\~a}o $a_{1}+a_{2}\equiv b_{1}+b_{2}\pmod{m}$.
+    \item Se $a_{1}\equiv b_{1}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, ent{\~a}o $a_{1}a_{2}\equiv b_{1}b_{2}\pmod{m}$.\label{item_provado}
+    \item Se $a\equiv b\pmod{m}$, ent{\~a}o $ax\equiv bx\pmod{m}$, para todo $x \in \z$.
+    \item Vale a lei do cancelamento: se $d \in \z$ e $mdc(d,m) = 1$ ent{\~a}o $ad \equiv bd \pmod{m}$ implica $a\equiv b \pmod{m}$.
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Sejam $\overline{a}$, $\overline{b}$, $\overline{c} \in \z_m$. Prove que
+\begin{enumerate}[label=({\alph*})]
+    \item $(\overline{a} \oplus \overline{b}) \otimes \overline{c} = (\overline{a} \otimes \overline{c}) \oplus (\overline{b} \otimes \overline{c})$
+
+    \item $\overline{a} \otimes (\overline{b} \oplus \overline{c}) = (\overline{a} \otimes \overline{b}) \oplus (\overline{a} \otimes \overline{c})$
+\end{enumerate}
+
+    \begin{center}
+        \textit{Nota\c{c}\~oes:}
+    \end{center}
+    \begin{multicols}{2}
+        \begin{enumerate}[label={\roman*})]
+            \item $\n^* = \n - \{0\}$
+
+            \item $\real^*_+ = \{x \in \real \mid x > 0\}$
+
+            \item $\real^*_- = \{x \in \real \mid x < 0\}$
+
+            \item $\real_+ = \{x \in \real \mid x \ge 0\}$
+
+            \item $\real_- = \{x \in \real \mid x \le 0\}$
+
+            \item $]c,d[\ = (c,d) = \{x \in \real \mid c < x < d\}$
+
+            \item $[c,d] = \{x \in \real \mid c \le x \le d\}$
+
+            \item $[c,d[\ = [c, d) = \{x \in \real \mid c \le x < d\}$
+
+            \item $]c,d] = (c, d] = \{x \in \real \mid c < x \le d\}$
+
+            \item Em $\z_m$ vamos denotar a opera\c{c}\~ao de soma $\oplus$ por $+$.
+
+            \item Em $\z_m$ vamos denotar a opera\c{c}\~ao de multiplica\c{c}\~ao $\otimes$ por $\cdot$.
+        \end{enumerate}
+    \end{multicols}
+
+    \vspace{.6cm}
+
+    \questao{} Seja $f: \real^2 \to \real$ dada por $f(x,y) = xy$.
+    \begin{enumerate}[label={\alph*})]
+        \item $f$ {\'e} injetora?
+
+        \item $f$ {\'e} sobrejetora?
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f: \z_4 \times \z_8 \to \z_{12}$ dada por $f(\overline{x},\overline{y}) = \overline{3xy}$.
+    \begin{enumerate}[label={\alph*})]
+        \item $f$ {\'e} injetora?
+
+        \item $f$ {\'e} sobrejetora?
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f: \z_4 \to \z_9 \times \z_4$ dada por $f(\overline{x}) = (\overline{9 + x},\overline{x+1})$.
+    \begin{enumerate}[label={\alph*})]
+        \item $f$ {\'e} injetora?
+
+        \item $f$ {\'e} sobrejetora?
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f : A \to [-9,-1)$ dada por $f(x) = \dfrac{4x + 3}{3 - x}$.
+    \begin{enumerate}[label={\alph*})]
+        \item Determine $A$.
+
+        \item Mostre que $f$ \'e injetora.
+
+        \item \'E verdade que $f$ \'e sobrejetora?
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $S = \{1, 2, 3\}$ e $T = \{a, b, c, d\}$.
+    \begin{enumerate}[label={\alph*})]
+        \item Quantas funções $f : S \to T$ eistem? Descreva cada uma delas.
+
+        \item Quantas funções injetoras $f : S \to T$ existem? Descreva cada uma delas.
+
+        \item Quantas funções sobrejetoras $f : S \to T$ existem? Descreva cada uma delas.
+
+        \item Quantas funções bijetoras $f : S \to T$ existem? Descreva cada uma delas.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f : A \to (1,10]$ dada por $f(x) = \dfrac{4 - 11x}{4 - 2x}$.
+    \begin{enumerate}[label={\alph*})]
+        \item Determine $A$.
+
+        \item Mostre que $f$ \'e injetora.
+
+        \item \'E verdade que $f$ \'e sobrejetora?
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Considere a fun{\c c}{\~a}o $f : \z \times \z \to \z \times \z$ tal que $f(x,y) = (2x + 3, 4y + 5)$. Prove que $f$ {\'e} injetora. Verifique se $f$ {\'e} bijetora.
+
+    \vspace{.3cm}
+
+    \questao{} Mostre que a fun\c{c}\~ao $f : \z \to \z$ dada por $f(n) = 2n$, \'e injetora mas n\~ao \'e sobrejetora.
+
+    \vspace{.3cm}
+
+    \questao{} Mostre que a fun\c{c}\~ao $h : \real^2 \to \real^2$ tal que $h(x, y) = (\sqrt[3]{x}, y^5)$ \'e sobrejetora. Essa função é bijetora? Justifique.
+
+    \vspace{.3cm}
+
+    \questao{} Classificar (se poss{\'\i}vel) em injetora ou sobrejetora as seguintes fun{\c c}{\~o}es de $f : \z \times \z \to \z$.
+
+    \begin{multicols}{2}
+        \begin{enumerate}[label={\alph*})]
+            \item $f(m, n) = m^2 + n^2$
+
+            \item $f(m, n) = m$
+
+            \item $f(m, n) = |n|$
+
+            \item $f(m, n) = m - n$
+        \end{enumerate}
+    \end{multicols}
+
+    \vspace{.3cm}
+
+    \questao{} Considere a fun{\c c}{\~a}o $g : \z_5 \times \z_9 \to \z_5 \times \z_9$ tal que $g(\overline{x},\overline{y}) = (\overline{2} \overline{x} + \overline{3}, \overline{4}\overline{y} + \overline{5})$.
+    \begin{enumerate}[label={\alph*})]
+        \item $g$ \'e injetora?
+
+        \item $g$ \'e sobrejetora?
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Achar uma fun{\c c}{\~a}o $f : A \to B$, com $A$ e $B$ subconjuntos de $\real$, para cada caso abaixo:
+    \begin{enumerate}[label={\alph*})]
+        \item $A = \real$, $B \nsub \real$ e $f$ injetora e n{\~a}o sobrejetora.
+
+        \item $A \nsub \real$, $B = \real$ e $f$ injetora e n{\~a}o sobrejetora.
+
+        \item $A = \real$, $B \nsub \real$ e $f$ sobrejetora e n{\~a}o injetora.
+
+        \item $A \nsub \real$, $B = \real$ e $f$ sobrejetora e n{\~a}o injetora.
+    \end{enumerate}
+
+    \newpage
+
+    \questao{} Classificar (se poss{\'\i}vel) em injetora ou sobrejetora as seguintes fun{\c c}{\~o}es de $\real$ em $\real$.
+
+    \begin{multicols}{2}
+        \begin{enumerate}[label={\alph*})]
+            \item $f(x) = x^3$
+
+            \item $f(x) = x^2 - 5x - 6$
+
+            \item $f(x) = 2^x$
+
+            \item $f(x) = x + | x |$
+
+            \item $f(x) = x + 3$
+
+            \item $f(x) = \mid x - 1\mid$
+
+            \item $f(x) = 1/x$
+
+            \item $f(x) = 1 - x^2$
+
+            \item $f(x) = x^2/(1 + x^2)$
+        \end{enumerate}
+    \end{multicols}
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f : A \to B$ uma função. Defina $P_f : \mathcal{P}(A) \to \mathcal{P}(B)$ por
+    \[
+        P_f(C) = \{\beta \in B \mid \mbox{ existe } \alpha \in C \mbox{ tal que } f(\alpha) = \beta\}
+    \]
+    para $C \sub A$. Prove que:
+    \begin{enumerate}[label={\roman*})]
+
+        \item $f : A \to B$ é injetora se, e somente se, $P_f : \mathcal{P}(A) \to \mathcal{B}(B)$ é injetora.
+
+        \item $f : A \to B$ é sobrejetora se, e somente se, $P_f : \mathcal{P}(A) \to \mathcal{B}(B)$ é sobrejetora.
+    \end{enumerate}
+
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $f$, $g : \real \to \real$ dadas por $f(x) = x^4$ e $g(x) = x^7$. Verifique que $(f\circ g)(x) = (g\circ f)(x)$.
+
+    \vspace{.3cm}
+
+    \questao{} Dadas as fun\c{c}\~oes $f(x) = 3x + m$ e $g(x) = ax + 2$, determine condi\c{c}\~oes sobre $a$ e $m$ para que $(f\circ g)(x) = (g\circ f)(x)$, quando:
+    \begin{enumerate}[label={\roman*})]
+        \item $f : \z \to \z$ e $g : \z \to \z$
+        \item $f : \real \to \real$ e $g : \real \to \real$
+        \item $f : \z_6 \to \z_6$ e $g : \z_6 \to \z_6$
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $f$, $g$ e $h$ fun\c{c}\~oes de $\real$ em $\real$ definidas por $f(x) = x + 2$, $g(x) = x^2 - 1$ e $h(x) = 3x$, respectivamente.
+    \begin{enumerate}[label={\alph*})]
+        \item Determine $f \circ g$, $f \circ h$, $g \circ f$, $g \circ h$ e $h \circ g$.
+        \item Verifique que $(f \circ g)\circ h = f \circ (g \circ h)$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Dada as fun\c{c}\~oes
+    \[
+        f(x) = \begin{cases}
+            1, & \mbox{ se } x < 0\\
+            2x^2, & \mbox{ se } 0 \le x \le 1\\
+            0, & \mbox{ se } x > 1
+        \end{cases} \qquad g(x) = \begin{cases}
+            x, & \mbox{ se } x < 0\\
+            0, & \mbox{ se } 0 \le x \le 1\\
+            1, & \mbox{ se } x > 1.
+        \end{cases}
+    \]
+    Determine $f\circ g$.
+
+    \vspace{.3cm}
+
+    \questao{} Dada as fun\c{c}\~oes
+    \[
+        f(x) = \begin{cases}
+            x^2 + 2, & \mbox{ se } x \le -1\\
+            \dfrac{1}{x - 2}, & \mbox{ se } -1 < x < 1\\
+            4 - x^2, & \mbox{ se } x \ge 1
+        \end{cases} \qquad g(x) = 2 - 3x.
+    \]
+    Determine $f\circ g$ e $g \circ f$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f : A \to B$ uma função. Quando a composição $f \circ f$ está definida?
+
+    \vspace{.3cm}
+
+    \questao{} Encontre exemplos de conjuntos $A$, $B$ e $C$ e funções $f : A \to B$ e $g : B \to C$ tais que $g \circ f : A \to C$ é sobrejetora mas $f : A \to B$ não é sobrejetora.
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $f : A \to B$, $g : A \to B$ e $h : B \to C$ fun\c{c}\~oes. Prove que se $h$ \'e injetora e $h \circ g = h \circ f$, ent\~ao $g = f$.
+
+    \vspace{.3cm}
+
+    \questao{} Se as fun{\c c}{\~o}es $f : A \to B$ e $g : B\to A$ s{\~a}o
+    tais que $g\circ f$ {\'e} injetora, ent{\~a}o $f$ {\'e} injetora.
+
+    \vspace{.3cm}
+
+    \questao{} Dê um exemplo de funções $f$ e $g$ tais que $g \circ f$ é injetora mas $g$ não é injetora.
+
+    \vspace{.3cm}
+
+    \questao{} Se as fun{\c c}{\~o}es $f : A \to B$ e $g : B\to A$ s{\~a}o
+    tais que $g\circ f$ {\'e} sobrejetora, ent{\~a}o g {\'e} sobrejetora.
+
+    \vspace{.3cm}
+
+    \questao{} Mostre que toda fun{\c c}{\~a}o injetora (sobrejetora) de um conjunto finito em si mesmo {\'e} tamb{\'e}m sobrejetora (injetora).
+
+    \vspace{.3cm}
+
+    \questao{} Suponha que $f$, $g : A \to A$ são funções. Se $f \circ f = g \circ g$, então $f = g$? Prove ou dê um contra-exemplo.
+
+    \vspace{.3cm}
+
+    \questao{} Uma função $f : \real \to \real$ é dita \textit{estritamente crescente} se para todo $x_1 < x_2$ temos $f(x_1) < f(x_2)$. Mostre que se $f : \real \to \real$ é estritamente crescente, então $f$ é injetora.
+
+    \vspace{.3cm}
+
+    \questao{} Considere a fun\c{c}\~ao $f : \real \to \real$ dada por $f(x) = \left| x - \dfrac{5}{2}\right|$. Encontre:
+    \begin{multicols}{3}
+        \begin{enumerate}[label={\alph*})]
+            \item $f(\{1\})$
+
+            \item $f(\{-\sqrt{2}, 3\})$
+
+            \item $f([-2,2])$
+
+            \item $f((-3,5))$
+
+            \item $f^{-1}(\{3\})$
+
+            \item $f^{-1}(\{-3,5\})$
+
+            \item $f^{-1}([0,2])$
+
+            \item $f^{-1}([-3,3])$
+
+            \item $f^{-1}(\real^*_-)$
+        \end{enumerate}
+    \end{multicols}
+
+    \vspace{.3cm}
+
+    \questao{} Seja $g : \real \to \real$ dada por
+    \[
+        g(x) = \begin{cases}
+            x^3 - 2,& \mbox{ se } x \le 0\\
+            \sqrt{x + 1}, & \mbox{ se } 0 < x \le 2\\
+            \dfrac{1}{x - 2}, & \mbox{ se } x > 2.
+        \end{cases}
+    \]
+    Encontre:
+    \begin{multicols}{2}
+        \begin{enumerate}[label={\alph*})]
+            \item $g([-1,8])$
+
+            \item $g(\real_+)$
+
+            \item $g(]1, 3])$
+
+            \item $g^{-1}([-1,16])$
+
+            \item $g(\real_-)$
+
+            \item $g^{-1}([1,25])$
+
+            \item $g^{-1}(\real^*_-)$
+
+            \item $g^{-1}([-1,5])$
+        \end{enumerate}
+    \end{multicols}
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f: \real^2 \to \real$ dada por $f(x,y) = xy - 2$.
+    \begin{multicols}{2}
+        \begin{enumerate}[label={\alph*})]
+            \item Obter $f^{-1}(\{0\})$.
+
+            \item Obter $f([0,1]\times [0,1])$.
+
+            \item Obter $f^{-1}([0,2])$.
+
+            \item Obter $f(]-3,4]\times [2,4[)$.
+        \end{enumerate}
+    \end{multicols}
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f : \z \to \z_{12}$ dada por $f(x) = \overline{4}\overline{x} + \overline{3}$.
+    \begin{enumerate}[label={\alph*})]
+        \item Obter $f^{-1}(\{\overline{0}\})$.
+
+        \item Seja $I = \{8k \mid k \in \z\}$. Encontre $f(I)$.
+
+        \item Obter $f^{-1}(\{\overline{0}, \overline{2}, \overline{7}, \overline{10}\})$.
+
+        \item Seja $J = \{5k \mid k \in \z\} \cup \{10l \mid l \in \z\}$. Encontre $f(I)$.
+
+        \item Obter $f^{-1}(\{\overline{1}, \overline{3}, \overline{4}, \overline{8}\})$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Considere a fun{\c c}{\~a}o $f : \z_5 \times \z_9 \to \z_5 \times \z_9$ tal que $f(\overline{x},\overline{y}) = (\overline{2} \overline{x} + \overline{3}, \overline{4}\overline{y} + \overline{5})$. Verifique se $f$ possui inversa e em caso afirmativo, encontre sua inversa.
+
+    \vspace{.3cm}
+
+    \questao{} Para quais valores de $a \in \z$ a função $f : \z \to \z$ dada por $f(x)       = x + a$ possui inversa? Para cada valor de $a$, encontre a função inversa.
+
+    \vspace{.3cm}
+
+    \questao{} Para quais valores de $b \in \z$ a função $g : \z \to \z$ dada por $g(x)       = bx$ possui inversa? Para cada valor de $b$, encontre a função inversa.
+
+    \vspace{.3cm}
+
+    \questao{} Suponha que as funções $f : A \to B$ e $g : B \to C$ são inversíveis. Mos      tre que $g \circ f$ é inversível e que
+    \[
+        (g \circ f)^{-1} = f^{-1} \circ g^{-1}.
+    \]
+
+    \vspace{.3cm}
+
+    \questao{} Considere a fun{\c c}{\~a}o $g : \z_6 \times \z_8 \to \z_6 \times \z_8$ tal que $g(\overline{x},\overline{y}) = (\overline{2} \overline{x} + \overline{3}, \overline{4}\overline{y} + \overline{5})$. Verifique se $g$ possui inversa e em caso afirmativo, encontre sua inversa.
+
+    \vspace{.3cm}
+
+    \questao{} Considere a fun{\c c}{\~a}o $h : \z_5 \times \z_7 \to \z_5 \times \z_7$ tal que $h(\overline{x},\overline{y}) = (\overline{x} + \overline{3}, \overline{6}\overline{y} + \overline{2})$. Determine a fun\c{c}\~ao inversa de $h$, se existir.
+
+    \vspace{.3cm}
+
+    \questao{} Considere a fun{\c c}{\~a}o $t : \z_8 \times \z_{10} \to \z_8 \times \z_{10}$ tal que $t(\overline{x},\overline{y}) = (\overline{x} + \overline{3}, \overline{6}\overline{y} + \overline{2})$. Determine a fun\c{c}\~ao inversa de $t$, se existir.
+
+    \vspace{.3cm}
+
+    \questao{} A fun{\c c}{\~a}o $f : \z \to \z$ definida por $f(x) = ax + b$, com $a$ e $b$ constantes, $a \ne 0$, {\'e} uma bije{\c c}{\~a}o? Caso afirmativo, obtenha $f^{-1}$.
+
+    \vspace{.3cm}
+
+
+    \questao{} Mostre que a fun{\c c}{\~a}o $f : \real \to \real$ definida por $f(x) = ax + b$, com $a$ e $b$ constantes reais, $a \ne 0$, {\'e} uma bije{\c c}{\~a}o. Obter $f^{-1}$.
+
+    \vspace{.3cm}
+
+    \questao{} Mostrar que $f : \real - \left\{-\dfrac{d}{c}\right\} \to \real  - \left\{\dfrac{a}{c}\right\}$ dada por $f(x) =  \dfrac{ax + b}{cx + d}$, onde $a$, $b$, $c$, $d$ s{\~a}o n{\'u}meros reais constantes, $ad - bc \ne 0$, {\'e} uma bije{\c c}{\~a}o. Descrever a fun{\c c}{\~a}o $f^{-1}$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f : A \to B$ e $g : B \to A$ fun\c{c}\~oes tais que $g \circ f = i_A$. Quais das afirma\c{c}\~oes seguintes s\~ao verdadeiras?
+    \begin{enumerate}[label={\alph*})]
+        \item $g = f^{-1}$
+
+        \item $f$ \'e sobrejetora
+
+        \item $f$ \'e injetora
+
+        \item $g$ \'e sobrejetora
+
+        \item $g$ \'e injetora
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f : A \to B$ uma fun\c{c}\~ao. Se $Y \sub B$, ent\~ao $f(f^{-1}(Y)) = Y$? Prove ou d\^e um contra-exemplo.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f : A \to B$ uma fun\c{c}\~ao e $X \sub A$. \'E verdade que
+    \[
+        f(f^{-1}(f(X))) = f(X)?
+    \]
+    Prove ou d\^e um contra-exemplo.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f : A \to B$ uma fun\c{c}\~ao. Dados conjuntos $X \sub A$ e $Y \sub B$ \'e verdade que
+    \[
+        f^{-1}(f(f^{-1}(f(X)))) = f^{-1}(Y)?
+    \]
+    Prove ou d\^e um contra-exemplo.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f : A \to B$ uma fun\c{c}\~ao. Prove que $f$ \'e injetiva se, e somente se, $X = f^{-1}(f(X))$ para todo $X \sub A$.
+
+    \vspace{.3cm}
+
+    \questao{} Dada uma fun\c{c}\~ao $f : A \to B$ e conjuntos $W$, $X \sub A$, ent\~ao a igualdade
+    \[
+        f(W \cap X) = f(W) \cap f(X)
+    \]
+    \textbf{em geral \'e falsa}. D\^e um exemplo em que essa igualdade seja falsa.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f : A \to B$ uma fun\c{c}\~ao e sejam $P$ e $Q$ subconjuntos de $A$. Mostre que:
+    \begin{enumerate}[label={\alph*})]
+        \item Se $P\sub Q$, ent{\~a}o $f(P)\sub f(Q)$.
+        \item $f(P\cup Q) = f(P)\cup f(Q)$.
+
+        \item $f(P\cap Q)\sub f(P)\cap f(Q)$.
+
+        \item $f(P) - f(Q) \sub f(P - Q)$.
+
+        \item Mostre que se $f$ é bijetora, então $f(P - Q) = f(P) - f(Q)$.
+
+        \item Se $f$ {\'e} injetora, ent{\~a}o $f(P\cap Q) =  f(P)\cap f(Q)$.
+
+        \item $f$ {\'e} bijetora se, e somente se, $f(P^C) = (f(P))^C$ para todo $P \sub A$. \textit{(Aqui $P^C$ \'e o complementar de $P$ em rela\c{c}\~ao \`a $A$.)}
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Suponha que $f : A \to B$ e $g : B \to C$ são funções. Seja $P \sub A$, então
+    \[
+        (g \circ f)(A) = g(f(A)).
+    \]
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $P$, $Q$ conjuntos, $f : P \to Q$ uma função, $A \sub P$ e $B \sub Q$. Então $f(A) \cap B = f(A \cap f^{-1}(B))$.
+
+    \vspace{.3cm}
+
+    \questao{} Suponha que $f : A \to B$ e $g : B \to C$ são funções. Seja $P \sub C$. Então
+    \[
+        (g \circ f)^{-1}(C) = f^{-1}(g^{-1}(C)).
+    \]
+
+    \questao{} Seja $f : A \to B$ uma fun{\c c}{\~a}o e sejam $P \sub
+    A$ e $X, Y\sub B$. Mostre que:
+    \begin{enumerate}[label={\alph*})]
+        \item Se $X\sub Y$, ent{\~a}o $f^{-1}(X)\sub f^{-1}(Y)$.
+
+        \item $f^{-1}(X\cup Y)=f^{-1}(X)\cup f^{-1}(Y)$.
+
+        \item $f^{-1}(X - Y) = f^{-1}(X) - f^{-1}(Y)$.
+
+        \item $f^{-1}(X\cap Y)= f^{-1}(X)\cap f^{-1}(Y)$.
+
+        \item $P\sub f^{-1}(f(P))$.
+
+        \item $f(f^{-1}(X))= X \cap \mbox{Im}f$ e conclua que se $f$ {\'e} sobrejetora ent{\~a}o
+        $f(f^{-1}(X))=X$.
+        \item $f^{-1}(X^C) = (f^{-1}(X))^C$.
+
+        \item $f$ \'e sobrejetora se, e somente se, $f^{-1}(T) \ne \emptyset$ para todo $T \sub B$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f : A \to B$ uma função. Mostre que $f$ é injetora se, e somente se, para todos conjuntos $P$, $Q \sub A$ temos $f(P \cap Q) = f(P) \cap f(Q)$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f : A \to B$ uma função. Prove que $f$ é sobrejetora se, e somente se, $B - f(P) \sub f(A - P)$, para todo conjunto $P \sub A$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f: A \to B$ uma função. Prove que $f$ é injetora se, e somente se, $f(A - P) = B - f(P)$ para todo conjunto $P \sub A$.
+
+\end{document}
