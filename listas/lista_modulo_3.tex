@@ -937,4 +937,196 @@
         \item Encontre todos os subgrupos de $G$.
     \end{enumerate}
 
+\questao{nucleo_homomorfismo} Verificar em cada caso se $f$ \'e um homomorfismo de grupos.
+    \begin{enumerate}[label=({\alph*})]
+        \item $f: \z \to \z$ dada por $f(x) = kx$, sendo $\z$ o grupo aditivo dos inteiros e $k$ um n\'umero inteiro fixo.
+
+        \item $f: \real^* \to \real^*$ dada por $f(x) = |x|$ sendo $\real^*$ o grupo multiplicativo dos reais.
+
+        \item $f: \real \to \real$ dada por $f(x) = x + 1$, onde $\real$ \'e o grupo aditivo dos reais.
+
+        \item $f: \z \to \z \times \z$ dada por $f(x) = (x, 0)$, onde $\z$ e $\z \times \z$ denotam grupos aditivos.
+
+        \item $f: \z \times \z \to \z$ dada por $f(x,y) = x$, onde $\z \times \z$ e $\z$ s\~ao grupos aditivos.
+
+        \item $f: \z \to \real^*_+$ dada por $f(x) = 2^x$, onde $\z$ \'e grupo aditivo e $\real^*_+$ \'e grupo multiplicativo.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Das fun\c{c}\~oes a seguir, algumas s\~ao homomorfismos do grupo multiplicativo $\complex^*$. \textbf{Descubra} quais e determine o n\'ucleo de cada uma.
+    \begin{multicols}{2}
+      \begin{enumerate}[label=({\alph*})]
+        \item $f(z) = z^2$
+
+        \item $f(z) = |z|$, aqui $|z| = \sqrt{a^2 + b^2}$, se $z = a + bi$.
+
+        \item $f(z) = \dfrac{1}{z}$
+
+        \item $f(z) = -\dfrac{1}{z}$
+
+        \item $f(z) = -z$
+
+        \item $f(z) = z^3$
+
+        \item $f(z) = \overline{z}$ onde $\overline{z} = a - bi$, se $z = a + bi$.
+      \end{enumerate}
+    \end{multicols}
+
+    \vspace{.3cm}
+
+    \questao{} Considere o conjunto
+    \[
+        T = \left\{\begin{bmatrix}x & y\\0 & 1/x\end{bmatrix} \mid x \in \real^*,\ y \in \real\right\}.
+    \]
+    \begin{enumerate}[label=({\alph*})]
+        \item Mostre que $T$ é um grupo não comutativo com a operação de multiplicação de matrizes.
+
+        \item A função $f : \real \to T$ definida por
+            \[
+                f(t) = \begin{bmatrix}1 & t\\0 & 1\end{bmatrix}
+            \]
+        é um homomorfismo de grupos? Caso afirmativo, esse homomorfismo é injetor? É sobrejetor?
+
+        \item A função $g : \real \to T$ definida por
+            \[
+                g(t) = \begin{bmatrix}e^t & 0\\0 & e^{-t}\end{bmatrix}
+            \]
+        é um homomorfismo de grupos? Caso afirmativo, esse homomorfismo é injetor? É sobrejetor?
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Considere o conjunto
+    \[
+        SO(2) = \left\{\begin{bmatrix}x & -y\\y & x\end{bmatrix} \mid x, y \in \real,\ x^2 + y^2 = 1\right\}.
+    \]
+    \begin{enumerate}[label=({\alph*})]
+        \item Mostre que $SO(2)$ é um grupo abeliano com a operação de multiplicação de matrizes.
+
+        \item A função $f : \real \to SO(2)$ definida por
+            \[
+                f(t) = \begin{bmatrix}cos(t) & -\sin(t)\\\sin(t) & \cos(t)\end{bmatrix}
+            \]
+        é um homomorfismo de grupos? Caso afirmativo, esse homomorfismo é injetor? É sobrejetor?
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Considere o conjunto
+    \[
+        GL_2(\real) = GL(2, \real) = \left\{A = \begin{bmatrix}x & y\\z & t\end{bmatrix} \mid x, y, z, t \in \real,\ \det(A) \ne 0 \right\}.
+    \]
+    \begin{enumerate}[label=({\alph*})]
+        \item Mostre que $GL_2(\real)$ é um grupo não abeliano com a operação de multiplicação de matrizes.
+
+        \item A função $f : \real \to GL_2(\real)$ definida por
+            \[
+                f(x) = \begin{bmatrix}x & 0\\0 & 1\end{bmatrix}
+            \]
+        é um homomorfismo de grupos? Caso afirmativo, esse homomorfismo é injetor? É sobrejetor?
+
+        \item A função $g : \real \to GL_2(\real)$ definida por
+            \[
+                g(x) = \begin{bmatrix}1 & x\\0 & 1\end{bmatrix}
+            \]
+        é um homomorfismo de grupos? Caso afirmativo, esse homomorfismo é injetor? É sobrejetor?
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Considere o conjunto
+    \[
+        T = \left\{\begin{bmatrix}a & b\\0 & d\end{bmatrix} \mid a, b, d \in \real,\ ad \ne 0 \right\}.
+    \]
+    \begin{enumerate}[label=({\alph*})]
+        \item Mostre que $T$ é um subgrupo de $GL_2(\real)$.
+
+        \item Seja $\phi : T \to \real^*$ definida por
+            \[
+                \phi\left(\begin{bmatrix}a & b\\0 & d\end{bmatrix}\right) = a^2
+            \]
+            Mostre que $\phi$ é um homomorfismo de grupos. Esse homomorfismo é injetor? É sobrejetor?
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $(G, \cdot)$ e $(J, \cdot)$ grupos. Estabele\c{c}a quais das seguintes fun\c{c}\~oes s\~ao homomorfismos e determine seus n\'ucleos.
+
+    \begin{enumerate}[label=({\alph*})]
+      \item $f_1 : G \times J \to G$ dada por $f_1(x,y) = x$.
+
+      \item $f_2 : G \times J \to J$ dada por $f_2(x,y) = y$.
+
+      \item $f_3 : G  \to G \times J$ dada por $f_3(x) = (x, 1_J)$.
+
+      \item $f_4 : G \times J \to J \times G$ dada por $f_4(x,y) = (y, x)$.
+
+      \item $f_5 : J \to G \times J$ dada por $f_5(y) = (1_G, y)$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Determine o n\'ucleo em cada homomorfismo do \textbf{Exerc{\'\i}cio \ref{nucleo_homomorfismo}}.
+
+    \vspace{.3cm}
+
+    \questao{} Determinar os homomorfismos injetores e os sobrejetores do \textbf{Exerc{\'\i}cio \ref{nucleo_homomorfismo}}.
+
+    \vspace{.3cm}
+
+\questao{} Considere os grupos aditivos $(\z_{10}, \oplus)$ e $(\z_{22}, \oplus)$. Defina $f : \z_{10} \to \z_{22}$ por $f(\overline{x}) =
+    \overline{11x}$.
+    \begin{enumerate}[label=({\alph*})]
+        \item Mostre que $f$ é um homomorfismo de grupos.
+
+        \item Determine $\ker(f)$.
+
+        \item $f$ é sobrejetora? Justifique.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $G$ e $J$ grupos multiplicativos, $f : G \to J$ um homomorfismo de grupos e $H$ um subgrupo de $J$. Mostre que $f^{-1}(H) = \{ x \in G \mid f(x) \in H\}$ {\'e} um subgrupo de $G$.
+
+    \vspace{.3cm}
+
+    \questao{} Prove que um grupo $G$ {\'e} abeliano se, e somente se, $f : G \to G$ definada por $f(x) = x^{-1}$ {\'e} um homomorfismo.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f: G\to H$ um homomorfismo de grupos e $K$ um subgrupo de $H$. Mostre que Ker$(f)\subset f^{-1}(K)$.
+
+    \vspace{.3cm}
+
+    \questao{} Se $\phi : G \to H$ é um homomorfismo de grupos e $G$ é abeliano, prove que $\phi(G)$ também é abeliano.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f: \z \times \z \to \z \times \z$ definida por $f(x, y) = (x - y, 0)$. Provar que $f$ \'e um homomorfismo do grupo aditivo $\z \times \z$ em si pr\'oprio. Obter $\ker(f)$.
+
+    \vspace{.3cm}
+
+    \questao{} Mostre que $f : \z \to 2\z$ dada por $f(n) = 2n$, para todo $n \in \z$, \'e um isomorfismo do grupo aditivo $\z$ no grupo aditivo $2\z = \{0, \pm 2, \pm 4, \dots\}$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $a \in \real_+^*$ e $a \ne 1$.
+    \begin{enumerate}[label=({\alph*})]
+      \item  Mostre que $G = \{a^n \mid n \in \z\}$ \'e um subgrupo de $(\real_+^*, \cdot)$.
+
+      \item Mostre que $f : \z \to G$ tal que $f(n) = a^n$ \'e um isomorfismo de $(\z, +)$ em $(G, \cdot)$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Mostre que $G = \{2^m3^n \mid m, n \in \z\}$ e $J = \{m + ni \mid m, n \in \z\}$ s\~ao subgrupos de $(\real_+^*, \cdot)$ e $(\complex, +)$, respectivamente, e que s\~ao isomorfos.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $G = \real - \{-1\}$ e defina a operação binária em $G$ por
+    \[
+        a * b = a + b + ab.
+    \]
+    Prove que $G$ é um grupo com essa operação. Mostre também que $f : G \to \real^*$ dada por $f(x) = x + 1$ é um isomorfismo do grupo $G$ no grupo multiplicativo $\real^*$.
 \end{document}
