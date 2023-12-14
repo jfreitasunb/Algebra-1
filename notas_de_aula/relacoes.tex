@@ -1,39 +1,39 @@
 %!TEX program = xelatex
 %!TEX root = Algebra_1.tex
-%%Usar makeindex -s indexstyle.ist arquivo.idx no terminal para gerar o {\'\i}ndice remissivo agrupado por inicial
-%%Ap\'os executar pdflatex arquivo
-% \chapter{Rela{\c c}{\~o}es e Fun{\c c}{\~o}es}
-\chapter{Rela{\c c}{\~o}es}
-% \section{Rela{\c c}{\~o}es}
-% \subsubsection{Defini{\c c}{\~a}o}
-% Sejam A e B dois conjuntos n{\~a}o vazios. Os subconjuntos de AxB s{\~a}o chamados rela{\c c}{\~o}es, ou seja, uma rela{\c c}{\~a}o em AxB {\'e} um subconjunto desse produto cartesiano.
+%%Usar makeindex -s indexstyle.ist arquivo.idx no terminal para gerar o índice remissivo agrupado por inicial
+%%Após executar pdflatex arquivo
+% \chapter{Relações e Funções}
+\chapter{Relações}
+% \section{Relações}
+% \subsubsection{Definição}
+% Sejam A e B dois conjuntos não vazios. Os subconjuntos de AxB são chamados relações, ou seja, uma relação em AxB é um subconjunto desse produto cartesiano.
 
-% Quando $R$ {\'e} uma rela{\c c}{\~a}o em $A \times B$, tamb{\'e}m dizemos que $R$ {\'e} uma rela{\c c}{\~a}o de A em B.
+% Quando $R$ é uma relação em $A \times B$, também dizemos que $R$ é uma relação de A em B.
 
 % Exemplos:
 % \begin{enumerate}[label={\arabic*})]
-% \item Se A=\{0,1\} e B=\{-1,0,1\}, ent{\~a}o AxB=\{(0,-1),(0,0),(0,1),(1,-1),(1,0),(1,1,)\}\\
-% S{\~a}o exemplos de rela{\c c}{\~o}es:\\
+% \item Se A=\{0,1\} e B=\{-1,0,1\}, então AxB=\{(0,-1),(0,0),(0,1),(1,-1),(1,0),(1,1,)\}\\
+% São exemplos de relações:\\
 % $R_{1}=\{(0,1)\}$\\
 % $R_{2}=\emptyset$\\
 % $R_{3}=\{(1,-1),(1,1)\}$\\
 % $R_{4}=A$x$B$
-% \item Se $A=B=\mathbb{R}$, ent{\~a}o AxB {\'e} o conjunto formado por todos pares ordenados de n{\'u}meros reais. Um exemplo de rela{\c c}{\~a}o em $\mathbb{R}$x$\mathbb{R}$ {\'e} o conjunto:\\
+% \item Se $A=B=\mathbb{R}$, então AxB é o conjunto formado por todos pares ordenados de números reais. Um exemplo de relação em $\mathbb{R}$x$\mathbb{R}$ é o conjunto:\\
 % $R=\{(x,y)\in \mathbb{R}$x$\mathbb{R}/ y\geq 0\}$
 % \end{enumerate}
 
-\section{Rela{\c c}{\~o}es de equival{\^e}ncia}
+\section{Relações de equivalência}
 
 \begin{definicao}\label{definicao_relacao_equivalencia}
-    Seja $A$ um conjunto n{\~a}o vazio e $R\subseteq A \times A$. Dizemos que $R$ {\'e} uma \textbf{rela{\c c}{\~a}o de equival{\^e}ncia} se:
+    Seja $A$ um conjunto não vazio e $R\subseteq A \times A$. Dizemos que $R$ é uma \textbf{relação de equivalência} se:
     \begin{enumerate}[label={\roman*})]
         \item Para todo $x \in A$, $(x,x) \in R$. \textit{(Propriedade Reflexiva)}
-        \item Se $(x, y) \in R$, ent\~ao $(y, x) \in R$. \textit{(Propriedade Sim\'etrica)}
-        \item Se $(x, y) \in R$ e $(y, z) \in R$, ent\~ao $(x, z)\in R$. \textit{(Propriedade Transitiva)}
+        \item Se $(x, y) \in R$, então $(y, x) \in R$. \textit{(Propriedade Simétrica)}
+        \item Se $(x, y) \in R$ e $(y, z) \in R$, então $(x, z)\in R$. \textit{(Propriedade Transitiva)}
     \end{enumerate}
 \end{definicao}
 
-Quando $R\subseteq A \times A$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia, dizemos que $R$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia em $A$. Quando dois elementos $x$, $y \in A$ s{\~a}o tais que $(x,y) \in R$, dizemos que $x$ e $y$ \textbf{s{\~a}o relacionados} ou que $x$ e $y$ \textbf{est\~ao relacionados}.
+Quando $R\subseteq A \times A$ é uma relação de equivalência, dizemos que $R$ é uma relação de equivalência em $A$. Quando dois elementos $x$, $y \in A$ são tais que $(x,y) \in R$, dizemos que $x$ e $y$ \textbf{são relacionados} ou que $x$ e $y$ \textbf{estão relacionados}.
 
 \begin{exemplos}\label{exemplos_relacoes_equivalencia}
     \begin{enumerate}[label={\arabic*})]
@@ -41,7 +41,7 @@ Quando $R\subseteq A \times A$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia, d
         \begin{align*}
             A\times A = &\{(1,1);(1,2);(1,3);(1,4);(2,1);(2,2);(2,3);(2,4);\\ &(3,1);(3,2);(3,3);(3,4);(4,1);(4,2);(4,3);(4,4)\}.
         \end{align*}
-        Quais dos seguintes conjuntos s\~ao exemplos de rela{\c c}{\~o}es de equival{\^e}ncia?
+        Quais dos seguintes conjuntos são exemplos de relações de equivalência?
         \begin{itemize}
             \item $R_{1}= A\times A$
             \item $R_{2}=\{(1,1);(2,2);(3,3)\}$
@@ -50,137 +50,137 @@ Quando $R\subseteq A \times A$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia, d
             \item $R_{5}=\{(1,1);(2,2);(3,3);(4,4);(1,2);(2,1);(2,4);(4;2)\}$
         \end{itemize}
         \begin{solucao}
-            $R_2$ n\~ao \'e rela\c{c}\~ao de equival\^encia pois $(4,4) \notin R_2$.
+            $R_2$ não é relação de equivalência pois $(4,4) \notin R_2$.
 
-            $R_5$ n\~ao \'e rela\c{c}\~ao de equival\^encia pois, por exemplo, $(1,4) \notin R_5$.
+            $R_5$ não é relação de equivalência pois, por exemplo, $(1,4) \notin R_5$.
 
-            Os demais s\~ao exemplos de rela\c{c}\~oes de equival\^encia.
+            Os demais são exemplos de relações de equivalência.
         \end{solucao}
 
         \item Seja $A = \z$ e $R\subseteq \z\times \z$ definida por $R = \{(x,y)\in \z \times \z \mid x = y\}$.
-        Ent\~ao $R$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia.
+        Então $R$ é uma relação de equivalência.
         \begin{solucao}
             De fato,
             \begin{itemize}
-                \item Para todo $x \in \z$ temos $x = x$ da{\'\i} $(x,x) \in R$.
-                \item Se $(x,y)\in R$, ent\~ao pela defini\c{c}\~ao de $R$ temos $x = y$. Logo $y = x$ e ent\~ao $(y,x)\in R$.
-                \item Se $(x,y) \in R$ e $(y,z) \in R$, ent\~ao  $x = y$ e $y = z$. Logo $x = z$ e assim $(x,z)\in R$ como quer{\'\i}amos.
+                \item Para todo $x \in \z$ temos $x = x$ daí $(x,x) \in R$.
+                \item Se $(x,y)\in R$, então pela definição de $R$ temos $x = y$. Logo $y = x$ e então $(y,x)\in R$.
+                \item Se $(x,y) \in R$ e $(y,z) \in R$, então  $x = y$ e $y = z$. Logo $x = z$ e assim $(x,z)\in R$ como queríamos.
             \end{itemize}
-            Portanto $R$ \'e uma rela\c{c}\~ao de equival\^encia sobre $\z$.
+            Portanto $R$ é uma relação de equivalência sobre $\z$.
         \end{solucao}
 
         \item Seja $A = \z$ e tome $R = \{(x,y)\in \z \times \z \mid x - y = 2k, \mbox{ para algum } k \in \z\}$. Mostre que $R$
-        \'e uma rela{\c c}{\~a}o de equival{\^e}ncia sobre $\z$.
+        é uma relação de equivalência sobre $\z$.
         \begin{solucao}
             De fato,
             \begin{itemize}
                 \item Para todo $x\in\z$ temos $x - x = 2\cdot0$ e com isso $(x,x) \in R$.
-                \item Se $(x,y) \in R$ ent\~ao existe $k \in \z$ tal que $x - y = 2k$. Agora $y - x = -(x - y) = -2k = 2 (-k)$
+                \item Se $(x,y) \in R$ então existe $k \in \z$ tal que $x - y = 2k$. Agora $y - x = -(x - y) = -2k = 2 (-k)$
                 e como $-k \in \z$ segue que $(y,x) \in R$.
-                \item Se $(x,y) \in R$ e $(y,z) \in R$, ent\~ao existem $k$, $l\in \z$ tais que $x - y = 2k$ e $y - z = 2l$.
-                Somando essas duas equa\c{c}\~oes obtemos
+                \item Se $(x,y) \in R$ e $(y,z) \in R$, então existem $k$, $l\in \z$ tais que $x - y = 2k$ e $y - z = 2l$.
+                Somando essas duas equações obtemos
                 \begin{align*}
                     (x - y) + (y - z) &= 2k + 2l\\
                     x - z &= 2(k + l)
                 \end{align*}
                 e como $k + l \in \z$ segue que $(x,z) \in \z$.
             \end{itemize}
-            Assim $R$ \'e uma rela\c{c}\~ao de equival\^encia.
+            Assim $R$ é uma relação de equivalência.
         \end{solucao}
     \end{enumerate}
 \end{exemplos}
 \begin{observacoes}
-    Seja $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em $A$, isto \'e, $R \sub A \times A$.
+    Seja $R$ uma relação de equivalência em $A$, isto é, $R \sub A \times A$.
     \begin{enumerate}[label={\arabic*})]
-        \item  Para dizermos que $(x,y) \in R$ usaremos a nota{\c c}{\~a}o $x\equiv y\ (R)$, que se l{\^e} ``$x$ \'e equivalente a $y$ m{\'o}dulo $R$", ou ainda a nota{\c c}{\~a}o $xRy$, com o mesmo significado anterior.
-        \item Em alguns casos vamos utilizar a nota\c{c}\~ao $\sim$ para representar a rela\c{c}\~ao $R$. Nesse caso, escrevemos $x \sim y$ para dizer que $(x, y) \in R$, ou que, $xRy$.
+        \item  Para dizermos que $(x,y) \in R$ usaremos a notação $x\equiv y\ (R)$, que se lê ``$x$ é equivalente a $y$ módulo $R$", ou ainda a notação $xRy$, com o mesmo significado anterior.
+        \item Em alguns casos vamos utilizar a notação $\sim$ para representar a relação $R$. Nesse caso, escrevemos $x \sim y$ para dizer que $(x, y) \in R$, ou que, $xRy$.
     \end{enumerate}
 \end{observacoes}
 
-Em virtude da observa\c{c}\~ao anterior a defini\c{c}\~ao de rela\c{c}\~ao de equival\^encia pode ser reescrita como:
+Em virtude da observação anterior a definição de relação de equivalência pode ser reescrita como:
 
 \begin{definicao}
-    Seja $A$ um conjunto n{\~a}o vazio e $R\subseteq A \times A$. Dizemos que $R$ {\'e} uma \textbf{rela{\c c}{\~a}o de equival{\^e}ncia} se:
+    Seja $A$ um conjunto não vazio e $R\subseteq A \times A$. Dizemos que $R$ é uma \textbf{relação de equivalência} se:
     \begin{enumerate}[label={\roman*})]
         \item Para todo $x \in A$, $xRx$. \textit{(Propriedade Reflexiva)}
-        \item Se $xRy$, ent\~ao $yRx$. \textit{(Propriedade Sim\'etrica)}
-        \item Se $xRy$ e $yRz$, ent\~ao $xRz$. \textit{(Propriedade Transitiva)}
+        \item Se $xRy$, então $yRx$. \textit{(Propriedade Simétrica)}
+        \item Se $xRy$ e $yRz$, então $xRz$. \textit{(Propriedade Transitiva)}
     \end{enumerate}
 \end{definicao}
 
 \begin{definicao}
-    Seja $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia sobre um conjunto $A$. Dado $b \in A$, chamamos de \textbf{classe de equival{\^e}ncia determinada por $b$ m{\'o}dulo $R$}, denotada por $\overline{b}$ ou $C(b)$, o subconjunto de $A$ dado por
+    Seja $R$ uma relação de equivalência sobre um conjunto $A$. Dado $b \in A$, chamamos de \textbf{classe de equivalência determinada por $b$ módulo $R$}, denotada por $\overline{b}$ ou $C(b)$, o subconjunto de $A$ dado por
     \[
         \overline{b} = C(b) = \{x \in A \mid (x,b) \in R\} = \{x \in A \mid xRb\}.
     \]
 \end{definicao}
 
 \begin{observacao}
-    Seja $A \ne \emptyset$ e $R$ uma rela\c{c}\~ao de equival\^encia sobre $A$. Segue da defini\c{c}\~ao de rela\c{c}\~ao de equival\^encia que para todo $b \in A$, $\overline{b} \ne \emptyset$ pois $(b,b) \in R$ logo $b \in \overline{b}$.
+    Seja $A \ne \emptyset$ e $R$ uma relação de equivalência sobre $A$. Segue da definição de relação de equivalência que para todo $b \in A$, $\overline{b} \ne \emptyset$ pois $(b,b) \in R$ logo $b \in \overline{b}$.
 \end{observacao}
 
 \begin{exemplos}\label{exemplos_classes_equivalencia}
     Do Exemplo \ref{exemplos_relacoes_equivalencia} temos
     \begin{enumerate}[label={\arabic*})]
-        \item As classes de equival\^encia de $R_1$ s\~ao:
+        \item As classes de equivalência de $R_1$ são:
         \begin{align*}
             \overline{1} &= \{x \in A \mid (x,1) \in R_1\} = \{1,2,3,4\}\\
             \overline{2} &= \{x \in A \mid (x,2) \in R_1\} = \{1,2,3,4\}\\
             \overline{3} &= \{x \in A \mid (x,3) \in R_1\} = \{1,2,3,4\}\\
             \overline{4} &= \{x \in A \mid (x,4) \in R_1\} = \{1,2,3,4\}\\
         \end{align*}
-        Nesse caso temos somente uma classe de equival\^encia.
+        Nesse caso temos somente uma classe de equivalência.
 
-        \item As classes de equival\^encia de $R_3$ s\~ao:
+        \item As classes de equivalência de $R_3$ são:
         \begin{align*}
             \overline{1} &= \{x \in A \mid (x,1) \in R_3\} = \{1,2\}\\
             \overline{2} &= \{x \in A \mid (x,2) \in R_3\} = \{1,2\}\\
             \overline{3} &= \{x \in A \mid (x,3) \in R_3\} = \{3\}\\
             \overline{4} &= \{x \in A \mid (x,4) \in R_3\} = \{4\}\\
         \end{align*}
-        Aqui temos tr\^es classes de equival\^encia diferentes.
+        Aqui temos três classes de equivalência diferentes.
 
-        \item As classes de equival\^encia de $R_4$ s\~ao:
+        \item As classes de equivalência de $R_4$ são:
         \begin{align*}
             \overline{1} &= \{x \in A \mid (x,1) \in R_4\} = \{1\}\\
             \overline{2} &= \{x \in A \mid (x,2) \in R_4\} = \{2\}\\
             \overline{3} &= \{x \in A \mid (x,3) \in R_4\} = \{3\}\\
             \overline{4} &= \{x \in A \mid (x,4) \in R_4\} = \{4\}\\
         \end{align*}
-        Aqui temos quatro classes de equival\^encia diferentes.
+        Aqui temos quatro classes de equivalência diferentes.
 
-        \item Para a rela\c{c}\~ao de equival\^encia $R = \{(x,y)\in \z \times \z \mid x - y = 2k, \mbox{ para algum } k \in \z\}$ temos:
+        \item Para a relação de equivalência $R = \{(x,y)\in \z \times \z \mid x - y = 2k, \mbox{ para algum } k \in \z\}$ temos:
         \begin{align*}
             \overline{0} &= \{x \in \z \mid xR0 \} = \{x \in \z \mid x - 0 = 2k,\ k \in \z\} \\
             \overline{0} &= \{x \in \z \mid x = 2k,\ k \in \z\} = \{0, \pm 2, \pm 4, \pm 6, \dots\}\\
             \overline{1} &= \{x \in \z \mid xR1 \} = \{x \in \z \mid x - 1 = 2k,\ k \in \z\} \\
             \overline{1} &= \{x \in \z \mid x = 2k + 1,\ k \in \z\} = \{\pm 1, \pm 3, \pm 4, \pm 7, \dots\}\\
         \end{align*}
-        Neste caso existem somente duas classes de equival\^encia. (\textit{Por qu\^e?})
+        Neste caso existem somente duas classes de equivalência. (\textit{Por quê?})
     \end{enumerate}
 \end{exemplos}
 
 \begin{proposicao}
-    Seja $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em um conjunto n{\~a}o vazio $A$. Dados $a$, $b \in A$ temos:
+    Seja $R$ uma relação de equivalência em um conjunto não vazio $A$. Dados $a$, $b \in A$ temos:
     \begin{enumerate}[label={\roman*})]
-        \item se $\overline{a} \cap \overline{b} \ne \emptyset$, ent{\~a}o $aRb$.
-        \item se  $\overline{a} \cap \overline{b} \neq \emptyset$, ent{\~a}o $\overline{a} = \overline{b}$.
+        \item se $\overline{a} \cap \overline{b} \ne \emptyset$, então $aRb$.
+        \item se  $\overline{a} \cap \overline{b} \neq \emptyset$, então $\overline{a} = \overline{b}$.
     \end{enumerate}
 \end{proposicao}
 \begin{prova}
     \begin{enumerate}[label={\roman*})]
-        \item Como  $\overline{a} \cap \overline{b} \ne \emptyset$, existe um $y \in \overline{a} \cap \overline{b}$, logo $y \in \overline{a}$ e $y \in \overline{b}$. Da defini{\c c}{\~a}o de classe de equival{\^e}ncia temos $yRa$ e $yRb$. Como $R$ {\'e} rela{\c c}{\~a}o de equival{\^e}ncia temos $aRy$ e $bRy$. Pela propriedade transitiva segue que $aRb$, como quer{\'\i}amos.
+        \item Como  $\overline{a} \cap \overline{b} \ne \emptyset$, existe um $y \in \overline{a} \cap \overline{b}$, logo $y \in \overline{a}$ e $y \in \overline{b}$. Da definição de classe de equivalência temos $yRa$ e $yRb$. Como $R$ é relação de equivalência temos $aRy$ e $bRy$. Pela propriedade transitiva segue que $aRb$, como queríamos.
 
-        \item Precisamos mostrar que $\overline{a} \sub \overline{b}$ e que $\overline{b} \sub \overline{a}.$ Para a primeira inclus\~ao seja $y \in \overline{a}$. Da{\'\i} $yRa$. Mas, por hip\'otese, $\overline{a}\cap\overline{b}\neq\emptyset$, assim pelo item anterior segue que $aRb$. Logo, como $yRa$ e $aRb$, segue que $yRb$, ou seja, $y \in \overline{b}$. Da{\'\i} $\overline{a}\sub\overline{b}$. Agora para provar a segunda inclus\~ao seja $x \in \overline{b}$. Ent\~ao $xRb$. Novamente, $\overline{a} \cap \overline{b} \ne \emptyset$ e ent\~ao pelo item anterior segue que $aRb$. Assim uma vez que $R$ \'e uma rela\c{c}\~ao de equival\^encia temos $bRa$ e de $xRb$ obtemos $xRa$, ou seja, $x \in \overline{a}$. Com isso $\overline{b} \sub \overline{a}$. Portanto $\overline{a} = \overline{b}$, como quer{\'\i}amos.
+        \item Precisamos mostrar que $\overline{a} \sub \overline{b}$ e que $\overline{b} \sub \overline{a}.$ Para a primeira inclusão seja $y \in \overline{a}$. Daí $yRa$. Mas, por hipótese, $\overline{a}\cap\overline{b}\neq\emptyset$, assim pelo item anterior segue que $aRb$. Logo, como $yRa$ e $aRb$, segue que $yRb$, ou seja, $y \in \overline{b}$. Daí $\overline{a}\sub\overline{b}$. Agora para provar a segunda inclusão seja $x \in \overline{b}$. Então $xRb$. Novamente, $\overline{a} \cap \overline{b} \ne \emptyset$ e então pelo item anterior segue que $aRb$. Assim uma vez que $R$ é uma relação de equivalência temos $bRa$ e de $xRb$ obtemos $xRa$, ou seja, $x \in \overline{a}$. Com isso $\overline{b} \sub \overline{a}$. Portanto $\overline{a} = \overline{b}$, como queríamos.
     \end{enumerate}
 \end{prova}
 
 \begin{corolario}
-    Seja $R$ uma rela\c{c}\~ao de equival\^encia sobre um conjunto n\~ao vazio $A$. Dados $a$, $b \in A$ ent\~ao $\overline{a} \cap \overline{b} = \emptyset$ ou $\overline{a} = \overline{b}$.
+    Seja $R$ uma relação de equivalência sobre um conjunto não vazio $A$. Dados $a$, $b \in A$ então $\overline{a} \cap \overline{b} = \emptyset$ ou $\overline{a} = \overline{b}$.
 \end{corolario}
 
 \begin{definicao}
-    Seja $R$ uma rela\c{c}\~ao de equival\^encia sobre um conjunto n\~ao vazio $A$. O conjunto de todas as classes de equival{\^e}ncia determinadas por $R$ ser{\'a} denotado por $A/R$ e {\'e} chamado de \textbf{conjunto quociente} de $A$ por $R$.
+    Seja $R$ uma relação de equivalência sobre um conjunto não vazio $A$. O conjunto de todas as classes de equivalência determinadas por $R$ ser{\'a} denotado por $A/R$ e é chamado de \textbf{conjunto quociente} de $A$ por $R$.
 \end{definicao}
 
 \begin{exemplos}
@@ -194,28 +194,28 @@ Em virtude da observa\c{c}\~ao anterior a defini\c{c}\~ao de rela\c{c}\~ao de eq
 \end{exemplos}
 
 \begin{definicao}
-    Seja $C$ uma classe de equival{\^e}ncia de uma rela{\c c}{\~a}o de equival{\^e}ncia $R$. Qualquer elemento $y\in C$ {\'e} chamado \textbf{representante} de $C$.
+    Seja $C$ uma classe de equivalência de uma relação de equivalência $R$. Qualquer elemento $y\in C$ é chamado \textbf{representante} de $C$.
 \end{definicao}
 
 \begin{proposicao}
-    Seja $A$ um conjunto n{\~a}o vazio e $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em $A$. Ent{\~a}o $A$ {\'e} a uni{\~a}o disjunta das classes $\overline{b}$, $b \in A$, ou seja,
+    Seja $A$ um conjunto não vazio e $R$ uma relação de equivalência em $A$. Então $A$ é a união disjunta das classes $\overline{b}$, $b \in A$, ou seja,
     \[
         A = \bigcup_{b\in A}\overline{b}.
     \]
 \end{proposicao}
 \begin{prova}
-    Para todo $b\in A$ temos, pela defini\c{c}\~ao de classe de equival\^encia, que $\overline{b}\subseteq A$. Logo $\bigcup_{b\in A}\overline{b}\subseteq A$. Agora seja $x\in A$. Logo $x \in \overline{x}$ e da{\'\i} $x\in \bigcup_{b\in A}\overline{b}$. Assim $A\subseteq\bigcup_{b\in A}\overline{b}$. Portanto, $A=\bigcup_{b\in A}\overline{b}$.
+    Para todo $b\in A$ temos, pela definição de classe de equivalência, que $\overline{b}\subseteq A$. Logo $\bigcup_{b\in A}\overline{b}\subseteq A$. Agora seja $x\in A$. Logo $x \in \overline{x}$ e daí $x\in \bigcup_{b\in A}\overline{b}$. Assim $A\subseteq\bigcup_{b\in A}\overline{b}$. Portanto, $A=\bigcup_{b\in A}\overline{b}$.
 \end{prova}
 
 \begin{definicao}
     Sejam $a$, $b \in \z$, $b \neq 0$. Dizemos que $b$ \textbf{divide} $a$ quando existe um inteiro $k$ tal que $a=bk$.
-    Nesse caso escrevemos $b \mid a$. Quando $b$ \textbf{n{\~a}o divide} $a$, escrevemos $b\not{\mid}a$.
+    Nesse caso escrevemos $b \mid a$. Quando $b$ \textbf{não divide} $a$, escrevemos $b\not{\mid}a$.
 \end{definicao}
 
 \begin{exemplos}
     \begin{enumerate}[label={\arabic*})]
-        \item Os inteiros 1 e $-1$ dividem qualquer n{\'u}mero inteiro $a$, pois $a = 1 a$ e $a = (-1)(-a)$.
-        \item O n{\'u}mero 0 n{\~a}o divide nenhum inteiro $b$, pois n{\~a}o existe $a \in \z$ tal que $b = 0a$.
+        \item Os inteiros 1 e $-1$ dividem qualquer número inteiro $a$, pois $a = 1 a$ e $a = (-1)(-a)$.
+        \item O número 0 não divide nenhum inteiro $b$, pois não existe $a \in \z$ tal que $b = 0a$.
         \item Para todo $b\neq 0$, $b$ divide $\pm b$.
         \item Para todo inteiro $b\neq 0$, $b$ divide 0, pois $0 = b0$.
         \item $3 \not{\mid} 8$.
@@ -227,26 +227,26 @@ Em virtude da observa\c{c}\~ao anterior a defini\c{c}\~ao de rela\c{c}\~ao de eq
 \begin{proposicao}
     \begin{enumerate}[label={\roman*})]
         \item $a\mid a$, para todo $a \in \z$.
-        \item Se $a\mid b$ e $b\mid a$, $a$, $b > 0$ ent\~ao $a = b$.
-        \item Se $a\mid b$ e $b\mid c$, ent{\~a}o $a\mid c$.
-        \item Se $a\mid b$ e $a\mid c$, ent{\~a}o $a\mid (bx+cy)$, para todos $x$, $y \in \z$.
+        \item Se $a\mid b$ e $b\mid a$, $a$, $b > 0$ então $a = b$.
+        \item Se $a\mid b$ e $b\mid c$, então $a\mid c$.
+        \item Se $a\mid b$ e $a\mid c$, então $a\mid (bx+cy)$, para todos $x$, $y \in \z$.
     \end{enumerate}
 \end{proposicao}
 \begin{prova}
     \begin{enumerate}[label={\roman*})]
         \item Imediata.
 
-        \item De fato, existem $k$, $l \in \z $ tais que $b = ka$ e $a = lb$. Assim $b = klb$, isto \'e, $b(1 - kl) = 0$.
-        Como $b \ne 0$ ent\~ao $1 - kl = 0$. Da{\'\i} $kl = 1$ e ent\~ao $k = \pm 1$ e $l = \pm 1$. Mas $a > 0$ e $b > 0$, logo $k = l =1$. Logo $a = b$.
+        \item De fato, existem $k$, $l \in \z $ tais que $b = ka$ e $a = lb$. Assim $b = klb$, isto é, $b(1 - kl) = 0$.
+        Como $b \ne 0$ então $1 - kl = 0$. Daí $kl = 1$ e então $k = \pm 1$ e $l = \pm 1$. Mas $a > 0$ e $b > 0$, logo $k = l =1$. Logo $a = b$.
 
         \item De fato, existem $k$, $l \in \z$ tais que $b = ka$ e $c = bl$. Assim  $c = kal = (kl)a$, ou seja, $a\mid c$.
 
-        \item Temos $b = ka$ e $c = al$, com $k$, $l \in \z$. Da{\'\i} $bx + cy = (ka)x + (al)y = a(kx + ly)$ e como $kx + ly \in \z$ segue que $a \mid (bx + cy)$.
+        \item Temos $b = ka$ e $c = al$, com $k$, $l \in \z$. Daí $bx + cy = (ka)x + (al)y = a(kx + ly)$ e como $kx + ly \in \z$ segue que $a \mid (bx + cy)$.
     \end{enumerate}
 \end{prova}
 
 \begin{definicao}
-    Sejam $a$, $b \in\z$, dizemos que $a$ \textbf{{\'e} congruente \`a} $b$ \textbf{m{\'o}dulo} $m$ se $m \mid (a-b)$. Neste caso, escrevemos $a\equiv_{m} b$ ou $a\equiv b \pmod{m}$.
+    Sejam $a$, $b \in\z$, dizemos que $a$ \textbf{é congruente \`a} $b$ \textbf{módulo} $m$ se $m \mid (a-b)$. Neste caso, escrevemos $a\equiv_{m} b$ ou $a\equiv b \pmod{m}$.
 \end{definicao}
 
 \begin{exemplos}
@@ -258,26 +258,26 @@ Em virtude da observa\c{c}\~ao anterior a defini\c{c}\~ao de rela\c{c}\~ao de eq
 \end{exemplos}
 
 \begin{proposicao}
-    A congru{\^e}ncia m{\'o}dulo $m$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia em $\z$.
+    A congruência módulo $m$ é uma relação de equivalência em $\z$.
 \end{proposicao}
 \begin{prova}
     \begin{enumerate}[label={\roman*})]
         \item Para todo $a \in \z$, $a\equiv a\pmod{m}$ pois $m\mid (a-a)$.
-        \item Se $a\equiv b\pmod{m}$, ent{\~a}o $m\mid (a - b)$. Da{\'\i} existe $k \in \z$, tal que $(a - b) = km$. Agora, $(b - a) = -(a - b) = -(km) = (-k)m$, ou seja, $m \mid (b - a)$. Da{\'\i} $b\equiv a \pmod{m}$.
-        \item Se $a\equiv b\pmod{m}$ e $b\equiv c\pmod{m}$, ent{\~a}o $m\mid (a-b)$ e $m\mid (b-c)$. Assim, $m\mid [(a-b)+(b-c)]$. Logo, $m\mid (a-c)$, isto {\'e}, $a\equiv c\pmod{m}$.
+        \item Se $a\equiv b\pmod{m}$, então $m\mid (a - b)$. Daí existe $k \in \z$, tal que $(a - b) = km$. Agora, $(b - a) = -(a - b) = -(km) = (-k)m$, ou seja, $m \mid (b - a)$. Daí $b\equiv a \pmod{m}$.
+        \item Se $a\equiv b\pmod{m}$ e $b\equiv c\pmod{m}$, então $m\mid (a-b)$ e $m\mid (b-c)$. Assim, $m\mid [(a-b)+(b-c)]$. Logo, $m\mid (a-c)$, isto é, $a\equiv c\pmod{m}$.
     \end{enumerate}
 
-    Portanto a congru{\^e}ncia m{\'o}dulo $m$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia.
+    Portanto a congruência módulo $m$ é uma relação de equivalência.
 \end{prova}
 
 \begin{teorema}
-    A rela{\c c}{\~a}o de congru{\^e}ncia m{\'o}dulo $m$ satisfaz as seguintes propriedades:
+    A relação de congruência módulo $m$ satisfaz as seguintes propriedades:
     \begin{enumerate}[label={\roman*})]
         \item $a_{1}\equiv b_{1}\pmod{m}$ se, e somente se, $a_{1}-b_{1}\equiv 0\pmod{m}$.
-        \item Se $a_{1}\equiv b_{1}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, ent{\~a}o $a_{1}+a_{2}\equiv b_{1}+b_{2}\pmod{m}$.
-        \item Se $a_{1}\equiv b_{2}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, ent{\~a}o $a_{1}a_{2}\equiv b_{1}b_{2}\pmod{m}$.\label{item_provado}
-        \item Se $a\equiv b\pmod{m}$, ent{\~a}o $ax\equiv bx\pmod{m}$, para todo $x \in \z$.
-        \item Vale a lei do cancelamento: se $d \in \z$ e $mdc(d,m) = 1$ ent{\~a}o $ad \equiv bd \pmod{m}$ implica $a\equiv b \pmod{m}$.
+        \item Se $a_{1}\equiv b_{1}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, então $a_{1}+a_{2}\equiv b_{1}+b_{2}\pmod{m}$.
+        \item Se $a_{1}\equiv b_{2}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, então $a_{1}a_{2}\equiv b_{1}b_{2}\pmod{m}$.\label{item_provado}
+        \item Se $a\equiv b\pmod{m}$, então $ax\equiv bx\pmod{m}$, para todo $x \in \z$.
+        \item Vale a lei do cancelamento: se $d \in \z$ e $mdc(d,m) = 1$ então $ad \equiv bd \pmod{m}$ implica $a\equiv b \pmod{m}$.
     \end{enumerate}
 \end{teorema}
 \begin{prova}
@@ -288,7 +288,7 @@ Em virtude da observa\c{c}\~ao anterior a defini\c{c}\~ao de rela\c{c}\~ao de eq
         a_1 - b_1 &= km\\
         a_2 - b_2 &= lm,
     \end{align*}
-    isto \'e,
+    isto é,
     \begin{align*}
         a_1 &= b_1 + km\\
         a_2 &= b_2 + lm,
@@ -301,12 +301,12 @@ Em virtude da observa\c{c}\~ao anterior a defini\c{c}\~ao de rela\c{c}\~ao de eq
     Ou seja, $a_1a_2 - b_1b_2 = pm$, onde $p = lb_1 + kb_2 + klm \in \z$. Portanto, $a_1a_2 \equiv b_1b_2 \pmod{m}$.
 \end{prova}
 
-Como a congru{\^e}ncia m{\'o}dulo $m$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia, podemos determinar suas classes de equival{\^e}ncia. Assim, dado $n \in \z$, temos
+Como a congruência módulo $m$ é uma relação de equivalência, podemos determinar suas classes de equivalência. Assim, dado $n \in \z$, temos
 \[
     \overline{n} = C(n) = \{x \in \z \mid x\equiv n \pmod{m}\}.
 \]
 
-Denotaremos $C(n)$ por $R_{m}(n)$ ou $\overline{n}$, quando n{\~a}o houver possibilidade de confus{\~a}o.
+Denotaremos $C(n)$ por $R_{m}(n)$ ou $\overline{n}$, quando não houver possibilidade de confusão.
 
 Por exemplo, fixando $m > 1$
 \begin{align*}
@@ -316,7 +316,7 @@ Por exemplo, fixando $m > 1$
 \end{align*}
 
 \begin{proposicao}
-    As classes de equival{\^e}ncia definidas pela congru{\^e}ncia m{\'o}dulo $m$ s{\~a}o determinadas pelos restos da divis{\~a}o inteira por $m$. Em outras palavras, $R_{m}(n)$ {\'e} o conjunto dos n{\'u}meros inteiros cujo resto na divis{\~a}o inteira por $m$ {\'e} $n$.
+    As classes de equivalência definidas pela congruência módulo $m$ são determinadas pelos restos da divisão inteira por $m$. Em outras palavras, $R_{m}(n)$ é o conjunto dos números inteiros cujo resto na divisão inteira por $m$ é $n$.
 \end{proposicao}
 
 \begin{corolario}
@@ -325,13 +325,13 @@ Por exemplo, fixando $m > 1$
 
 \begin{exemplos}
     \begin{enumerate}[label={\arabic*})]
-        \item Se $m=2$, ent{\~a}o os poss{\'\i}veis restos na divis{\~a}o inteira por 2 s{\~a}o 0 e 1. Logo, existem duas classes de equival{\^e}ncia, a saber
+        \item Se $m=2$, então os possíveis restos na divisão inteira por 2 são 0 e 1. Logo, existem duas classes de equivalência, a saber
         \begin{align*}
             R_{2}(0) &= \{x \in \z \mid x\equiv 0 \pmod{2}\} = \{x\in \z \mid x = 2k, k\in\z\}\\
             R_{2}(1) &= \{x\in\z \mid x\equiv 1 \pmod{2}\} = \{x\in\z \mid x = 1 + 2k, k\in\z\}.
         \end{align*}
 
-        \item Se $m = 3$, ent{\~a}o os poss{\'\i}veis restos da divis{\~a}o inteira s{\~a}o 0, 1 e 2. Da{\'\i}
+        \item Se $m = 3$, então os possíveis restos da divisão inteira são 0, 1 e 2. Daí
         \begin{align*}
             R_{3}(0) &= \{x \in \z \mid x\equiv 0 \pmod{3}\} = \{x\in \z \mid x = 3k, k \in \z\}\\
             R_{3}(1) & = \{x \in \z \mid x\equiv 1 \pmod{3}\} = \{x\in\z \mid x = 3k + 1, k \in \z\}\\
@@ -341,10 +341,10 @@ Por exemplo, fixando $m > 1$
 \end{exemplos}
 
 \begin{proposicao}
-    Na rela{\c c}{\~a}o de equival{\^e}ncia m{\'o}dulo $m$ existem $m$ classes de equival{\^e}ncia.
+    Na relação de equivalência módulo $m$ existem $m$ classes de equivalência.
 \end{proposicao}
 \begin{prova}
-    Os poss{\'\i}veis restos na divis{\~a}o inteira por $m$ s{\~a}o $0,1,...,(m-1)$. Como cada poss{\'\i}vel resto define uma classe de equival{\^e}ncia diferente, existem exatamente $m$ classes de equival{\^e}ncia
+    Os possíveis restos na divisão inteira por $m$ são $0,1,...,(m-1)$. Como cada possível resto define uma classe de equivalência diferente, existem exatamente $m$ classes de equivalência
 \end{prova}
 
 \begin{observacao}
@@ -356,13 +356,13 @@ Fixado $m$ inteiro positivo, denotaremos
     R_{m}(m-1) &= \overline{m-1}
 \end{align*}
 
-O conjunto quociente desta rela{\c c}{\~a}o ser{\'a} denotado por $\displaystyle\frac{\z}{m\z}$ ou $\z_m$. Assim
+O conjunto quociente desta relação ser{\'a} denotado por $\displaystyle\frac{\z}{m\z}$ ou $\z_m$. Assim
 \[
     \z_m = \displaystyle\frac{\z}{m\z}=\{\overline{0},\overline{1},...,\overline{m-1}\}.
 \]
 \end{observacao}
 
-Queremos definir um meio de somar e multiplicar os elementos de $\z_m$. Por exemplo, em $\z_2 = \{\overline{0},\overline{1}\}$ temos que a soma de pares {\'e} par, soma de par com {\'\i}mpar {\'e} {\'\i}mpar e a soma de {\'\i}mpares {\'e} par. Assim podemos escrever
+Queremos definir um meio de somar e multiplicar os elementos de $\z_m$. Por exemplo, em $\z_2 = \{\overline{0},\overline{1}\}$ temos que a soma de pares é par, soma de par com ímpar é ímpar e a soma de ímpares é par. Assim podemos escrever
 
 \begin{table}[h]
    \centering
@@ -378,7 +378,7 @@ Queremos definir um meio de somar e multiplicar os elementos de $\z_m$. Por exem
    \end{tabular}
 \end{table}
 
-Para multiplica{\c c}{\~a}o, temos
+Para multiplicação, temos
 
 \begin{table}[h]
    \centering
@@ -403,7 +403,7 @@ Para multiplica{\c c}{\~a}o, temos
 \end{definicao}
 
 \begin{proposicao}
-    As opera{\c c}{\~o}es de soma e produto definidas em \eqref{soma_modulo_m} e \eqref{multiplicacao_modulo_m} s{\~a}o independentes dos representantes das classes.
+    As operações de soma e produto definidas em \eqref{soma_modulo_m} e \eqref{multiplicacao_modulo_m} são independentes dos representantes das classes.
 \end{proposicao}
 \begin{prova}
     Dadas duas classes em $\z_m$ com representantes diferentes, $\overline{a}_{1} = \overline{a}_{2}$ e  $\overline{b}_{1} = \overline{b}_{2}$, com $a_{1}\ne a_{2}$ e $b_{1}\ne b_{2}$,  temos:
@@ -431,10 +431,10 @@ Para multiplica{\c c}{\~a}o, temos
 \end{prova}
 
 \begin{exemplo}
-    A soma e a multiplica{\c c}{\~a}o em $\z_4 = \{\overline{0},\overline{1},\overline{2},\overline{3}\}$
-    s\~ao dadas nas tabelas abaixo:
+    A soma e a multiplicação em $\z_4 = \{\overline{0},\overline{1},\overline{2},\overline{3}\}$
+    são dadas nas tabelas abaixo:
         \begin{table}[!htb]
-          \caption{Soma e multiplica\c{c}\~ao em $\z_4$}
+          \caption{Soma e multiplicação em $\z_4$}
           \begin{minipage}{.5\linewidth}
             \centering
              \begin{tabular}{|c|c|c|c|c|}
@@ -471,7 +471,7 @@ Para multiplica{\c c}{\~a}o, temos
 \end{exemplo}
 
 \begin{proposicao}
-    As opera\c{c}\~oes de soma $\oplus$ e multiplica\c{c}\~ao $\otimes$ em $\z_m$ satisfazem as seguintes propriedades:
+    As operações de soma $\oplus$ e multiplicação $\otimes$ em $\z_m$ satisfazem as seguintes propriedades:
     \begin{enumerate}[label={\roman*})]
         \item Para todos $\overline{x}$, $\overline{y} \in \z_m$: $\overline{x} \oplus \overline{y} = \overline{y} \oplus \overline{x}$.
         \item Para todos $\overline{x}$, $\overline{y}$ e $\overline{z} \in \z_m$: $(\overline{x} \oplus \overline{y}) \oplus \overline{z} = \overline{x} \oplus (\overline{y} \oplus \overline{z})$.
@@ -501,30 +501,30 @@ Para multiplica{\c c}{\~a}o, temos
 \end{prova}
 
 \begin{definicao}
-    Um elemento $\overline{a} \in \z_m$ {\'e} \textbf{invers{\'\i}vel} se, e somente se, existe $\overline{b} \in \z_m$ tal que $\overline{a} \otimes \overline{b} = \overline{1}$. Neste caso, $\overline{b}$ {\'e} chamado \textbf{inverso} de $\overline{a}$ e denotaremos $\overline{b} = (\overline{a})^{-1}$.
+    Um elemento $\overline{a} \in \z_m$ é \textbf{inversível} se, e somente se, existe $\overline{b} \in \z_m$ tal que $\overline{a} \otimes \overline{b} = \overline{1}$. Neste caso, $\overline{b}$ é chamado \textbf{inverso} de $\overline{a}$ e denotaremos $\overline{b} = (\overline{a})^{-1}$.
 \end{definicao}
 
 \begin{proposicao}
-    Se o inverso existe, ent\~ao ele {\'e} {\'u}nico.
+    Se o inverso existe, então ele é único.
 \end{proposicao}
 \begin{prova}
-    De fato, dado $\overline{a} \in \z_m$, suponha que existem $\overline{b}$, $\overline{d} \in \z_m$ tais que $\overline{a} \otimes \overline{b} = \overline{1} = \overline{a} \otimes \overline{d}$, ent{\~a}o
+    De fato, dado $\overline{a} \in \z_m$, suponha que existem $\overline{b}$, $\overline{d} \in \z_m$ tais que $\overline{a} \otimes \overline{b} = \overline{1} = \overline{a} \otimes \overline{d}$, então
     \begin{align*}
         \overline{b} &= \overline{b} \otimes \overline{1} = \overline{b} \otimes (\overline{a} \otimes \overline{d})\\ &= (\overline{b} \otimes \overline{a}) \otimes \overline{d} = \overline{1} \otimes \overline{d} = \overline{d}
     \end{align*}
 \end{prova}
 
 \begin{proposicao}
-    Um elemento $\overline{a} \in \z_m$ {\'e} invers{\'\i}vel se, e somente se, $mdc(a,m)=1$.
+    Um elemento $\overline{a} \in \z_m$ é inversível se, e somente se, $mdc(a,m)=1$.
 \end{proposicao}
 
 \begin{corolario}
-    Se $m$ \'e um n\'umero primo, ent\~ao para todo $\overline{x} \in \z_m$, $\overline{x} \ne \overline{0}$, existe inverso.
+    Se $m$ é um n\'umero primo, então para todo $\overline{x} \in \z_m$, $\overline{x} \ne \overline{0}$, existe inverso.
 \end{corolario}
 
 \begin{exemplos}
     \begin{enumerate}[label={\arabic*})]
-        \item Em $\z_4$ existem dois elementos invers{\'\i}veis que s{\~a}o $\overline{1}$, cujo inverso {\'e} $\overline{1}$, e o $\overline{3}$, cujo inverso {\'e} $\overline{3}$.
+        \item Em $\z_4$ existem dois elementos inversíveis que são $\overline{1}$, cujo inverso é $\overline{1}$, e o $\overline{3}$, cujo inverso é $\overline{3}$.
         \item Em $\z_{11}$, todos elementos, exceto $\overline{0}$, possuem inverso:
 
         \begin{table}[h]
@@ -543,25 +543,25 @@ Para multiplica{\c c}{\~a}o, temos
 \end{exemplos}
 
 
-% \section{Rela\c{c}\~oes de Ordem} % (fold)
+% \section{Relações de Ordem} % (fold)
 % \label{sec:relacoes_de_ordem}
 
 % \begin{definicao}
-%     Seja $A \ne \emptyset$ e $R \sub A \times A$. Dizemos que $R$ \'e uma \textbf{rela\c{c}\~ao de ordem parcial sobre} $A$ se:
+%     Seja $A \ne \emptyset$ e $R \sub A \times A$. Dizemos que $R$ é uma \textbf{relação de ordem parcial sobre} $A$ se:
 %     \begin{enumerate}[label={\roman*})]
 %         \item Para todo $x \in A$, $xRx$.
-%         \item Se $xRy$ e $yRx$, ent\~ao $x = y$.
-%         \item Se $xRy$ e $yRz$, ent\~ao $xRz$.
+%         \item Se $xRy$ e $yRx$, então $x = y$.
+%         \item Se $xRy$ e $yRz$, então $xRz$.
 %     \end{enumerate}
 % \end{definicao}
 
-% Quando $R$ \'e uma rela\c{c}\~ao de ordem parcial sobre $A$, para dizer que $(x,y) \in R$ vamos usar a nota\c{c}\~ao $x\preceq y\ (R)$ significando ``$x$ \textit{precede $y$ na rela\c{c}\~ao $R$}''.
+% Quando $R$ é uma relação de ordem parcial sobre $A$, para dizer que $(x,y) \in R$ vamos usar a notação $x\preceq y\ (R)$ significando ``$x$ \textit{precede $y$ na relação $R$}''.
 
-% Para denotar que $(x,y) \in R$ e que $x \ne y$ usaremos a nota\c{c}\~ao $x \prec y\ (R)$ significando ``$x$ \textit{precede estritamente $y$ na rela\c{c}\~ao $R$}''.
+% Para denotar que $(x,y) \in R$ e que $x \ne y$ usaremos a notação $x \prec y\ (R)$ significando ``$x$ \textit{precede estritamente $y$ na relação $R$}''.
 
 % \begin{exemplos}\label{exemplos_relacoes_de_ordem}
 %     \begin{enumerate}[label={\arabic*})]
-%         \item Seja $A = \{a,b,c,d\}$. Quais dos seguintes cojuntos s\~ao rela\c{c}\~oes de ordem?
+%         \item Seja $A = \{a,b,c,d\}$. Quais dos seguintes cojuntos são relações de ordem?
 %         \begin{align*}
 %             R_1 &= \{(a,a);(b,b);(c,c)\}\\
 %             R_2 &= \{(a,a);(b,b);(c,c);(d,d)\}\\
@@ -569,24 +569,24 @@ Para multiplica{\c c}{\~a}o, temos
 %             R_4 &= \{(a,a);(b,b);(c,c);(d,d);(a;b);(c,a);(c,b);(a,d);(c,d)\}\\
 %         \end{align*}
 %         \begin{solucao}
-%             $R_1$ n\~ao \'e rela\c{c}\~ao de ordem pois $(d,d) \notin R_1$.
+%             $R_1$ não é relação de ordem pois $(d,d) \notin R_1$.
 
-%             $R_3$ n\~ao \'e rela\c{c}\~ao de ordem pois $(a,b)$, $(b,a) \in R_3$ no entanto $a \ne b$.
+%             $R_3$ não é relação de ordem pois $(a,b)$, $(b,a) \in R_3$ no entanto $a \ne b$.
 
-%             $R_2$ e $R_4$ s\~ao rela\c{c}\~oes de ordem.
+%             $R_2$ e $R_4$ são relações de ordem.
 %         \end{solucao}
 
-%         \item A rela\c{c}\~ao $R$ sobre $\real$ definida por
+%         \item A relação $R$ sobre $\real$ definida por
 %         \[
 %             xRy \mbox{ se, e somente se, } x \leqslant y
 %         \]
-%         \'e uma rela\c{c}\~ao de ordem sobre $\real$.
+%         é uma relação de ordem sobre $\real$.
 %         \begin{solucao}
 %             De fato,
 %             \begin{enumerate}[label={\roman*})]
-%                 \item Para todo $x \in \real$, $x \leqslant x$, isto \'e, $xRx$.
-%                 \item Se $xRy$ e $yRx$, ent\~ao $x \leqslant y$ e $y \leqslant x$. Logo $x = y$.
-%                 \item Se $xRy$ e $yRz$, ent\~ao $x \leqslant y$ e $y \leqslant z$. Logo $x \leqslant z$, isto \'e, $xRz$.
+%                 \item Para todo $x \in \real$, $x \leqslant x$, isto é, $xRx$.
+%                 \item Se $xRy$ e $yRx$, então $x \leqslant y$ e $y \leqslant x$. Logo $x = y$.
+%                 \item Se $xRy$ e $yRz$, então $x \leqslant y$ e $y \leqslant z$. Logo $x \leqslant z$, isto é, $xRz$.
 %             \end{enumerate}
 %         \end{solucao}
 
@@ -594,85 +594,85 @@ Para multiplica{\c c}{\~a}o, temos
 %         \[
 %             R = \{(x,y) \in \n \times \n : x \mid y\}.
 %         \]
-%         Ent\~ao $R$ \'e uma rela\c{c}\~ao de ordem sobre $\n$.
+%         Então $R$ é uma relação de ordem sobre $\n$.
 %         \begin{solucao}
 %             De fato,
 %             \begin{enumerate}[label={\roman*})]
 %                 \item Para todo $x \in \n$, $x \mid x$. Logo $(x,x) \in R$.
-%                 \item Se $(x,y)\in R$ e $(y,x) \in R$, ent\~ao $x \mid y$ e $y \mid x$. Como $x$, $y \in \n$ ent\~ao $x = y$.
-%                 \item Se $(x,y) \in R$ e $(y,z) \in R$, ent\~ao $x \mid y$ e $y \mid z$. Logo $x \mid z$, isto \'e, $xRz$.
+%                 \item Se $(x,y)\in R$ e $(y,x) \in R$, então $x \mid y$ e $y \mid x$. Como $x$, $y \in \n$ então $x = y$.
+%                 \item Se $(x,y) \in R$ e $(y,z) \in R$, então $x \mid y$ e $y \mid z$. Logo $x \mid z$, isto é, $xRz$.
 %             \end{enumerate}
 %         \end{solucao}
 %     \end{enumerate}
 % \end{exemplos}
 
 % \begin{definicoes}
-%     Seja $A \ne \emptyset$ e $R$ uma rela\c{c}\~ao de ordem sobre $A$.
+%     Seja $A \ne \emptyset$ e $R$ uma relação de ordem sobre $A$.
 %     \begin{enumerate}[label={\roman*})]
-%         \item Um \textbf{conjunto parcialmente ordenador} \'e um conjunto sobre o qual se definiu uma certa rela\c{c}\~ao de ordem parcial.
-%         \item Dados $x$, $y \in A$ dizemos que $x$ e $y$ s\~ao \textbf{compar\'aveis mediante} $R$ se $x \preceq y$ ou $y \preceq x$.
-%         \item Se quaisquer dois elementos de $A$ forem compar\'aveis mediante $R$, ent\~ao $R$ \'e chamada de \textbf{rela\c{c}\~ao de ordem total sobre} $A$. Nesse caso dizemos que $A$ \'e um \textbf{conjunto totalmente ordenado}.
+%         \item Um \textbf{conjunto parcialmente ordenador} é um conjunto sobre o qual se definiu uma certa relação de ordem parcial.
+%         \item Dados $x$, $y \in A$ dizemos que $x$ e $y$ são \textbf{compar\'aveis mediante} $R$ se $x \preceq y$ ou $y \preceq x$.
+%         \item Se quaisquer dois elementos de $A$ forem compar\'aveis mediante $R$, então $R$ é chamada de \textbf{relação de ordem total sobre} $A$. Nesse caso dizemos que $A$ é um \textbf{conjunto totalmente ordenado}.
 %     \end{enumerate}
 % \end{definicoes}
 
 % \begin{exemplos}
 %     No Exemplo \ref{exemplos_relacoes_de_ordem} temos:
 %     \begin{enumerate}[label={\arabic*})]
-%         \item $R_4$ \'e uma rela\c{c}\~ao de ordem total sobre $A$.
-%         \item $R$ \'e uma rela\c{c}\~ao de ordem total sobre $\real$.
-%         \item A rela\c{c}\~ao de divibilidade sobre $\n$ n\~ao \'e uma ordem total pois, por exemplo, $2 \not{\mid} 3$ e $3 \not{\mid} 2$.
+%         \item $R_4$ é uma relação de ordem total sobre $A$.
+%         \item $R$ é uma relação de ordem total sobre $\real$.
+%         \item A relação de divibilidade sobre $\n$ não é uma ordem total pois, por exemplo, $2 \not{\mid} 3$ e $3 \not{\mid} 2$.
 %     \end{enumerate}
 % \end{exemplos}
 
 % \begin{definicoes}
-%     Seja $A$ um conjunto parcialmente ordenado mediante a rela\c{c}\~ao $\preceq$. Seja $B \sub A$ com $B \ne \emptyset$.
+%     Seja $A$ um conjunto parcialmente ordenado mediante a relação $\preceq$. Seja $B \sub A$ com $B \ne \emptyset$.
 %     \begin{enumerate}[label={\roman*})]
-%         \item Um elemento $l \in A$ \'e um \textbf{limite superior} de $B$ se para todo $x \in B$ temos $x \preceq l$.
-%         \item Um elemento $m \in A$ \'e um \textbf{limite inferior} de $B$ se para todo $x \in B$, $m \preceq x$.
+%         \item Um elemento $l \in A$ é um \textbf{limite superior} de $B$ se para todo $x \in B$ temos $x \preceq l$.
+%         \item Um elemento $m \in A$ é um \textbf{limite inferior} de $B$ se para todo $x \in B$, $m \preceq x$.
 %     \end{enumerate}
 % \end{definicoes}
 
 % \begin{exemplo}
 %     Considere $\real$ com a ordem $\leqslant$.
 %     \begin{enumerate}[label={\arabic*})]
-%         \item Seja $A = \{x \in \real \mid x < 2\}$. Ent\~ao $l = 2$ \'e um limite superior para $A$. Assim como qualquer n\'umero real maior ou igaul a 2 tamb\'em ser\'a. Note que $A$ n\~ao possui limite inferior.
-%         \item Seja $B = \{x \in \real \mid x \geqslant -3\}$. Ent\~ao $m = -3$ \'e um limite inferior para $B$. Nesse caso n\~ao existe limite superior para $B$.
-%         \item Seja $C = [2,3)$. Aqui $m = 2$ \'e um limite inferior para $C$ e $l = 3$ \'e um limite superior para $C$.
+%         \item Seja $A = \{x \in \real \mid x < 2\}$. Então $l = 2$ é um limite superior para $A$. Assim como qualquer n\'umero real maior ou igaul a 2 também ser\'a. Note que $A$ não possui limite inferior.
+%         \item Seja $B = \{x \in \real \mid x \geqslant -3\}$. Então $m = -3$ é um limite inferior para $B$. Nesse caso não existe limite superior para $B$.
+%         \item Seja $C = [2,3)$. Aqui $m = 2$ é um limite inferior para $C$ e $l = 3$ é um limite superior para $C$.
 %     \end{enumerate}
 % \end{exemplo}
 
 % \begin{exemplo}
-%     Seja $A = \n$ com a rela\c{c}\~ao de ordem parcial $x \mid y$.
+%     Seja $A = \n$ com a relação de ordem parcial $x \mid y$.
 %     \begin{enumerate}[label={\arabic*})]
-%         \item Seja $A = \{2,4,8,16\}$. Aqui $l = 32$ \'e um limite superior para $A$ pois $x\mid 32$ para todo $x \in A$. Al\'em disso, $m = 2$ \'e um limite inferior para $A$ pois $2 \mid y$ para todo $y \in A$.
-%         \item Seja $B = \{1,3,5,7,9,\dots\}$. Aqui $m = 1$ \'e um limite inferior para $B$ mas n\~ao existe limite superior.
+%         \item Seja $A = \{2,4,8,16\}$. Aqui $l = 32$ é um limite superior para $A$ pois $x\mid 32$ para todo $x \in A$. Além disso, $m = 2$ é um limite inferior para $A$ pois $2 \mid y$ para todo $y \in A$.
+%         \item Seja $B = \{1,3,5,7,9,\dots\}$. Aqui $m = 1$ é um limite inferior para $B$ mas não existe limite superior.
 %     \end{enumerate}
 % \end{exemplo}
 
 % \begin{definicoes}
-%     Seja $B$ um subconjunto n\~ao vazio de um conjunto parcialmente ordenado $A$ pela rela\c{c}\~ao $\preceq$.
+%     Seja $B$ um subconjunto não vazio de um conjunto parcialmente ordenado $A$ pela relação $\preceq$.
 %     \begin{enumerate}[label={\roman*})]
-%         \item Um elemento $\alpha \in B$ \'e um \textbf{m\'aximo} de $B$ se para todo $x \in B$, temos $x \preceq \alpha$, isto \'e, quando $\alpha$ \'e um limite superior de $B$ e pertence a $B$.
-%         \item Um elemento $\beta \in B$ \'e um \textbf{m{\'\i}nimo} de $B$ se para todo $y \in B$, temos $\beta \preceq y$, isto \'e, quando $\beta$ \'e um limite inferior de $B$ e pertence a $B$.
+%         \item Um elemento $\alpha \in B$ é um \textbf{m\'aximo} de $B$ se para todo $x \in B$, temos $x \preceq \alpha$, isto é, quando $\alpha$ é um limite superior de $B$ e pertence a $B$.
+%         \item Um elemento $\beta \in B$ é um \textbf{mínimo} de $B$ se para todo $y \in B$, temos $\beta \preceq y$, isto é, quando $\beta$ é um limite inferior de $B$ e pertence a $B$.
 %     \end{enumerate}
 % \end{definicoes}
 
 % \begin{proposicao}
-%     Seja $B$ \'e um subconjunto n\~ao vazio do conjunto parcialmente ordenado $A$. Se $B$ possui um m\'aximo, ou m{\'\i}nimo, ent\~ao ele \'e \'unico.
+%     Seja $B$ é um subconjunto não vazio do conjunto parcialmente ordenado $A$. Se $B$ possui um m\'aximo, ou mínimo, então ele é \'unico.
 % \end{proposicao}
 % \begin{prova}
-%     Faremos a demonstra\c{c}\~ao somente para o m\'aximo. O caso do m{\'\i}nimo \'e an\'alogo.
+%     Faremos a demonstração somente para o m\'aximo. O caso do mínimo é an\'alogo.
 
-%     Como $A$ \'e parcialmente ordenado, existe $R \sub A \times A$ que \'e uma rela\c{c}\~ao de ordem parcial em $A$.
-%     Suponha que $\alpha_1$ e $\alpha_2$ sejam m\'aximos de $B$. Ent\~ao como $\alpha_1$ \'e m\'aximo de $B$ e $\alpha_2 \in B$, ent\~ao
+%     Como $A$ é parcialmente ordenado, existe $R \sub A \times A$ que é uma relação de ordem parcial em $A$.
+%     Suponha que $\alpha_1$ e $\alpha_2$ sejam m\'aximos de $B$. Então como $\alpha_1$ é m\'aximo de $B$ e $\alpha_2 \in B$, então
 %     \[
 %         \alpha_2 \preceq \alpha_1.
 %     \]
-%     Agora, como $\alpha_2$ \'e m\'aximo de $B$ e $\alpha_1 \in B$, ent\~ao
+%     Agora, como $\alpha_2$ é m\'aximo de $B$ e $\alpha_1 \in B$, então
 %     \[
 %         \alpha_1 \preceq \alpha_2.
 %     \]
-%     Ou seja, $\alpha_1 R \alpha_2$ e $\alpha_2R\alpha_1$ e como $R$ \'e rela\c{c}\~ao de ordem parcial segue que $\alpha_1 = \alpha_2$, ou seja, o m\'aximo de $B$ \'e \'unico.
+%     Ou seja, $\alpha_1 R \alpha_2$ e $\alpha_2R\alpha_1$ e como $R$ é relação de ordem parcial segue que $\alpha_1 = \alpha_2$, ou seja, o m\'aximo de $B$ é \'unico.
 % \end{prova}
 
-% section rela\c{c}\~oes_de_ordem (end)
+% section relações_de_ordem (end)

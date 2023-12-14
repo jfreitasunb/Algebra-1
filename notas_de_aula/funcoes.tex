@@ -1,25 +1,25 @@
 %!TEX program = xelatex
 %!TEX root = Algebra_1.tex
-\chapter{Fun{\c c}{\~o}es}
+\chapter{Funções}
 
 \begin{definicao}
-Uma \textbf{fun{\c c}{\~a}o} $f : A \to B$, de um conjunto $A$ em um conjunto $B$, {\'e} uma rela{\c c}{\~a}o que associa os elementos de $A$ com os elementos em $B$ satisfazendo as seguintes condições:
+Uma \textbf{função} $f : A \to B$, de um conjunto $A$ em um conjunto $B$, é uma relação que associa os elementos de $A$ com os elementos em $B$ satisfazendo as seguintes condições:
     \begin{enumerate}[label={\roman*})]
         \item Para todo $x \in A$, existe $y \in B$ tal que $f(x) = y$.
-        \item  Se $x \in A$ \'e tal que $f(x) = y_1$ e $f(x) = y_2$ com $y_1$, $y_2 \in B$, ent\~ao $y_1 = y_2$.
+        \item  Se $x \in A$ é tal que $f(x) = y_1$ e $f(x) = y_2$ com $y_1$, $y_2 \in B$, então $y_1 = y_2$.
     \end{enumerate}
-Nesse caso $y$ \'e chamado de \textbf{imagem} de $x$ segundo $f$.
+Nesse caso $y$ é chamado de \textbf{imagem} de $x$ segundo $f$.
 \end{definicao}
 
-O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e ser\'a denotado por $\dom(f)$. O conjunto $B$ {\'e} chamado de \textbf{contra-dom{\'\i}nio} de $f$. O conjunto
+O conjunto $A$ é chamado de \textbf{domínio} de $f$ e será denotado por $\dom(f)$. O conjunto $B$ é chamado de \textbf{contra-domínio} de $f$. O conjunto
 \[
     \im(f) = \{f(x) \mid x \in A\} \sub B
 \]
-\'e chamado \textbf{imagem} de $f$.
+é chamado \textbf{imagem} de $f$.
 
 \begin{exemplos}
     \begin{enumerate}[label={\arabic*})]
-        \item Sejam $A = \{0,1,2,3\}$ e $B = \{4,5,6,7,8\}$. Quais das seguintes rela{\c c}{\~o}es s{\~a}o fun{\c c}{\~o}es?
+        \item Sejam $A = \{0,1,2,3\}$ e $B = \{4,5,6,7,8\}$. Quais das seguintes relações são funções?
             \begin{enumerate}[label={\alph*})]
                 \item $R_1 = \{(0,5),(1,6),(2,7)\}$
 
@@ -32,47 +32,47 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e ser\'a denotado p
 
             \begin{solucao}
                 \begin{enumerate}[label={\alph*})]
-                    \item N\~ao \'e fun\c{c}\~ao pois $3 \in A$ e $3$ n\~ao est\'a associado {\`a} nenhum elemento de $B$.
+                    \item Não é função pois $3 \in A$ e $3$ não está associado à nenhum elemento de $B$.
 
-                    \item N\~ao \'e fun\c{c}\~ao pois $1 \in A$ est\'a associado a dois elementos diferentes em $B$.
+                    \item Não é função pois $1 \in A$ está associado a dois elementos diferentes em $B$.
 
-                    \item \'E uma fun\c{c}\~ao.
+                    \item É uma função.
 
-                    \item \'E uma fun\c{c}\~ao.
+                    \item É uma função.
                 \end{enumerate}
             \end{solucao}
 
         \item $R_{5} = \{(x,y) \in \real  \times \real  \mid y^2 = x^2\}$
             \begin{solucao}
-                 N\~ao \'e fun\c{c}\~ao pois, por exemplo, para $x = 1$ temos $y = -1$ ou $y = 1$.
+                 Não é função pois, por exemplo, para $x = 1$ temos $y = -1$ ou $y = 1$.
             \end{solucao}
 
         \item $R_{6} = \{(x,y) \in \real  \times \real  \mid x^2 + y^2 = 1\}$.
             \begin{solucao}
-                 N\~ao \'e fun\c{c}\~ao pois, por exemplo, para $x = 0$ temos $y = 1$ ou $y = -1$.
+                 Não é função pois, por exemplo, para $x = 0$ temos $y = 1$ ou $y = -1$.
              \end{solucao}
 
         \item $R_{7} = \{(x,y) \in \real  \times \real \mid y = x^2\}$
             \begin{solucao}
-                 \'E uma fun\c{c}\~ao.
+                 É uma função.
             \end{solucao}
     \end{enumerate}
 \end{exemplos}
 
 
 \begin{definicao}
-    Seja $f : A \to B$ uma fun\c{c}\~ao.
+    Seja $f : A \to B$ uma função.
     \begin{enumerate}[label={\roman*})]
-        \item Dizemos que $f$ \'e \textbf{injetora} se dados $x_1$, $x_2 \in A$ tais que $f(x_1) = f(x_2)$, ent\~ao $x_1 = x_2$. De modo equivalente, dizemos que $f$ e \textbf{injetora} se dados $x_1$, $x_2 \in A$ tais que $x_1 \ne x_2$, ent\~ao $f(x_1) \ne f(x_2)$.
+        \item Dizemos que $f$ é \textbf{injetora} se dados $x_1$, $x_2 \in A$ tais que $f(x_1) = f(x_2)$, então $x_1 = x_2$. De modo equivalente, dizemos que $f$ e \textbf{injetora} se dados $x_1$, $x_2 \in A$ tais que $x_1 \ne x_2$, então $f(x_1) \ne f(x_2)$.
 
-        \item Dizemos que $f$ \'e \textbf{sobrejetora} se para todo $y \in B$, existe $x \in A$ tal que $f(x) = y$.
+        \item Dizemos que $f$ é \textbf{sobrejetora} se para todo $y \in B$, existe $x \in A$ tal que $f(x) = y$.
 
         \item Dizemos que $f$ e \textbf{bijetora} se $f$ for \textbf{injetora} e \textbf{sobrejetora} simultaneamente.
     \end{enumerate}
 \end{definicao}
 
 \begin{exemplos}
-    Verifique se as seguintes fun\c{c}\~oes s\~ao injetoras ou sobrejetoras:
+    Verifique se as seguintes funções são injetoras ou sobrejetoras:
     \begin{enumerate}[label={\arabic*})]
         \item $f : \z \to \z$ dada por $f(x) = 3x + 1$
             \begin{solucao}
@@ -83,46 +83,46 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e ser\'a denotado p
                     3x_1 &= 3x_2\\
                     3(x_1 - x_2) &= 0.
                 \end{align*}
-                Assim $x_1 - x_2 = 0$, isto \'e, $x_1 = x_2$. Logo $f$ \'e injetora.
+                Assim $x_1 - x_2 = 0$, isto é, $x_1 = x_2$. Logo $f$ é injetora.
 
-                Para determinar se $f$ \'e sobrejetora seja $y \in \z$. Precisamos determinar se \'e poss{\'\i}vel encontrar algum $x \in \z$ tal que $f(x) = y$. Ou seja, precisamos saber se a equa\c{c}\~ao $3x + 1 = y$ tem solu\c{c}\~ao em $\z$ para qualquer valor de $y$.
+                Para determinar se $f$ é sobrejetora seja $y \in \z$. Precisamos determinar se é possível encontrar algum $x \in \z$ tal que $f(x) = y$. Ou seja, precisamos saber se a equação $3x + 1 = y$ tem solução em $\z$ para qualquer valor de $y$.
 
                 Se tomarmos $y = 2$ temos
                 \begin{align*}
                     3x + 1 &= 2\\
                     3x = 1
                 \end{align*}
-                e essa \'ultima equa\c{c}\~ao n\~ao possui solu\c{c}\~ao em $\z$. Logo para $y = 2$ \textbf{n\~ao} existe $x \in \z$ de modo que $f(x) = 2$. Logo $f$ n\~ao \'e sobrejetora.
+                e essa última equação não possui solução em $\z$. Logo para $y = 2$ \textbf{não} existe $x \in \z$ de modo que $f(x) = 2$. Logo $f$ não é sobrejetora.
             \end{solucao}
 
         \item $g : \rac \to \rac$ dada por $f(x) = 3x + 1$
             \begin{solucao}
-                A prova que $g$ \'e injetora \'e id\^entica ao caso anterior.
+                A prova que $g$ é injetora é idêntica ao caso anterior.
 
-                Para determinar se $g$ \'e sobrejetora seja $y \in \rac$. Precisamos determinar se \'e poss{\'\i}vel encontrar algum $x \in \rac$ tal que $g(x) = y$. Ou seja, precisamos saber se a equa\c{c}\~ao $3x + 1 = y$ tem solu\c{c}\~ao em $\rac$ para qualquer valor de $y$. Mas
+                Para determinar se $g$ é sobrejetora seja $y \in \rac$. Precisamos determinar se é possível encontrar algum $x \in \rac$ tal que $g(x) = y$. Ou seja, precisamos saber se a equação $3x + 1 = y$ tem solução em $\rac$ para qualquer valor de $y$. Mas
                 \begin{align*}
                     &3x + 1 = y\\
                     &3x = y - 1\\
                     &x = \dfrac{y - 1}{3} \in \rac
                 \end{align*}
-                para qualquer valor de $y \in \rac$. Assim dado $y \in \rac$ tome $x = (y - 1)/3 \in \rac$. Da{\'\i}
+                para qualquer valor de $y \in \rac$. Assim dado $y \in \rac$ tome $x = (y - 1)/3 \in \rac$. Daí
                 \[
                     g(x) = g\left(\dfrac{y - 1}{3}\right) = 3\left(\dfrac{y - 1}{3}\right) + 1 = y - 1 + 1 = y.
                 \]
-                Logo $g$ \'e sobrejetora.
+                Logo $g$ é sobrejetora.
             \end{solucao}
 
-        \item A fun\c{c}\~ao $h :\real \to \real$ dada por $h(x) = x^2$
+        \item A função $h :\real \to \real$ dada por $h(x) = x^2$
             \begin{solucao}
-                A fun\c{c}\~ao $h$ n\~ao \'e injetora pois, por exemplo, $h(-1) = 1 = h(1)$ e $1\neq -1$.
+                A função $h$ não é injetora pois, por exemplo, $h(-1) = 1 = h(1)$ e $1\neq -1$.
 
-                A fun\c{c}\~ao $h$ n\~ao \'e sobrejetora pois, por exemplo, para $y = -1$ \textbf{n\~ao} existe $x\in\mathbb{R}$ tal que $h(x) = -1$.
+                A função $h$ não é sobrejetora pois, por exemplo, para $y = -1$ \textbf{não} existe $x\in\mathbb{R}$ tal que $h(x) = -1$.
             \end{solucao}
         \end{enumerate}
 \end{exemplos}
 
 \begin{definicao}
-    Sejam $f : A \to B$ e $g : B \to C$ fun\c{c}\~oes. Definimos a \textbf{fun\c{c}\~ao composta} de $g$ com $f$ como sendo a fun\c{c}\~ao denotada por $g \circ f : A \to C$ tal que $(g\circ f)(x) = g(f(x))$ para todo $x \in A$.
+    Sejam $f : A \to B$ e $g : B \to C$ funções. Definimos a \textbf{função composta} de $g$ com $f$ como sendo a função denotada por $g \circ f : A \to C$ tal que $(g\circ f)(x) = g(f(x))$ para todo $x \in A$.
     \begin{tikzpicture}
        \begin{scope}[x=3cm, y=1cm]
             \node[ellipse,
@@ -170,7 +170,7 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e ser\'a denotado p
         \end{align*}
         Assim em geral $f \circ g \ne g \circ f$.
 
-        \item $f : \real_- \to \real^*_+$ e $g : \real^*_+ \to \real$ dadas por $f(x) = x^2 + 1$ e $g(x) = \ln x$. Nesse caso s\'o podemos definir $g \circ f : \real_- \to \real$ e
+        \item $f : \real_- \to \real^*_+$ e $g : \real^*_+ \to \real$ dadas por $f(x) = x^2 + 1$ e $g(x) = \ln x$. Nesse caso só podemos definir $g \circ f : \real_- \to \real$ e
         \[
             (g\circ f)(x) = g(f(x)) = g(x^2 + 1) = \ln(x^2 + 1).
         \]
@@ -178,7 +178,7 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e ser\'a denotado p
 \end{exemplos}
 
 \begin{proposicao}\label{composicao_funcoes_injetoras}
-    Se $f : A \to B$ e $g : B \to C$ s{\~a}o fun{\c c}{\~o}es injetoras, ent{\~a}o $g\circ f : A \to C$ {\'e} injetora.
+    Se $f : A \to B$ e $g : B \to C$ são funções injetoras, então $g\circ f : A \to C$ é injetora.
 \end{proposicao}
 \begin{prova}
     Dados $x_1$, $x_2 \in A$ tais que $(g\circ f)(x_1) = (g\circ f)(x_2)$ queremos mostrar que $x_1 = x_2$. Temos:
@@ -186,20 +186,20 @@ O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} de $f$ e ser\'a denotado p
         (g\circ f)(x_1) &= (g\circ f)(x_2)\\
         g(f(x_1)) &= g(f(x_2)).
     \end{align*}
-    Como por hip\'otese $g$ \'e injetora, dessa \'ultima igualdade segue que $f(x_1) = f(x_2)$. Mas $f$ tamb\'em \'e injetora, por hip\'otese, da{\'\i} $x_1 = x_2$, como quer{\'\i}amos. Portanto $g\circ f$ \'e injetora.
+    Como por hipótese $g$ é injetora, dessa última igualdade segue que $f(x_1) = f(x_2)$. Mas $f$ também é injetora, por hipótese, daí $x_1 = x_2$, como queríamos. Portanto $g\circ f$ é injetora.
 \end{prova}
 
 \begin{proposicao}\label{composicao_funcoes_sobrejetoras}
-    Se $f : A \to B$ e $g : B \to C$ s{\~a}o fun\c{c}\~oes sobrejetoras, ent{\~a}o $g\circ f : A \to C$ {\'e} sobrejetora.
+    Se $f : A \to B$ e $g : B \to C$ são funções sobrejetoras, então $g\circ f : A \to C$ é sobrejetora.
 \end{proposicao}
 \begin{prova}
-     Para mostrar que $g \circ f : A \to C$ \'e sobrejetora, precisamos mostrar que para todo $y \in C$, existe $x \in A$ tal que $(g\circ f)(x) = y$.
+     Para mostrar que $g \circ f : A \to C$ é sobrejetora, precisamos mostrar que para todo $y \in C$, existe $x \in A$ tal que $(g\circ f)(x) = y$.
 
-     Assim seja $y \in C$. Como $g : B \to C$ \'e sobrejetora, existe $z \in B$ tal que $g(z) = y$. Mas $z \in B$ e $f : A \to B$ \'e sobrejetora e assim existe $x \in A$ tal que $f(x) = z$. Logo
+     Assim seja $y \in C$. Como $g : B \to C$ é sobrejetora, existe $z \in B$ tal que $g(z) = y$. Mas $z \in B$ e $f : A \to B$ é sobrejetora e assim existe $x \in A$ tal que $f(x) = z$. Logo
      \[
          (g\circ f)(x) = g(f(x)) = g(z) = y.
      \]
-     Portanto $g \circ f$ \'e sobrejetora.
+     Portanto $g \circ f$ é sobrejetora.
 \end{prova}
 
 Das Proposições \ref{composicao_funcoes_injetoras} e \ref{composicao_funcoes_sobrejetoras} obtemos o seguinte corolário:
@@ -208,19 +208,19 @@ Das Proposições \ref{composicao_funcoes_injetoras} e \ref{composicao_funcoes_s
     Se $f : A \to B$ e $g : B \to C$ são funções bijetoras, então $g \circ f: A \to C$ é bijetora.
 \end{corolario}
 \begin{definicao}
-    Seja $f : A \to B$ uma fun{\c c}{\~a}o.
+    Seja $f : A \to B$ uma função.
     \begin{enumerate}[label={\roman*})]
         \item Dado $P \sub A$, chama-se \textbf{imagem direta} de $P$  \textbf{segundo} $f$ e indica-se por $f(P)$ o subconjunto de $B$ dado por
         \[
             f(P) = \{f(x) \mid x \in P\},
         \]
-        isto {\'e}, $f(P)$ {\'e} o conjunto das imagens por $f$ dos elementos de $P$.
+        isto é, $f(P)$ é o conjunto das imagens por $f$ dos elementos de $P$.
 
         \item Dado $Q \sub B$, chama-se \textbf{imagem inversa} de $Q$ \textbf{segundo} $f$ e indica-se por $f^{-1}(Q)$ o subconjunto de $A$ dado por
         \[
             f^{-1}(Q) = \{x \in A \mid f(x) \in Q\},
         \]
-        isto {\'e}, $f^{-1}(Q)$ {\'e} o conjunto dos elementos de $A$ que tem imagem em $Q$ atrav{\'e}s de $f$.
+        isto é, $f^{-1}(Q)$ é o conjunto dos elementos de $A$ que tem imagem em $Q$ através de $f$.
     \end{enumerate}
 \end{definicao}
 
@@ -253,27 +253,27 @@ Das Proposições \ref{composicao_funcoes_injetoras} e \ref{composicao_funcoes_s
 \end{exemplos}
 
 \begin{proposicao}
-    Seja $f : A \to B$ uma fun{\c c}{\~a}o. Considere conjuntos $P$, $Q \sub A$ e $X$, $Y \sub B$.
+    Seja $f : A \to B$ uma função. Considere conjuntos $P$, $Q \sub A$ e $X$, $Y \sub B$.
     \begin{enumerate}[label={\roman*})]
-        \item Se $P \sub Q$, ent{\~a}o $f(P) \sub f(Q)$.
+        \item Se $P \sub Q$, então $f(P) \sub f(Q)$.
 
         \item $f^{-1}(X \cup Y) = f^{-1}(X) \cup f^{-1}(Y)$.
     \end{enumerate}
 \end{proposicao}
 \begin{prova}
     \begin{enumerate}[label={\roman*})]
-        \item Se $y \in f(P)$, ent{\~a}o existe $x \in P$ tal que $f(x) = y$. Mas como $P \sub Q$, ent{\~a}o $x \in Q$ e da{\'\i} $y \in f(Q)$. Logo $f(P) \sub f(Q)$.
+        \item Se $y \in f(P)$, então existe $x \in P$ tal que $f(x) = y$. Mas como $P \sub Q$, então $x \in Q$ e daí $y \in f(Q)$. Logo $f(P) \sub f(Q)$.
 
-        \item Seja $z \in f^{-1}(X \cup Y)$. Ent{\~a}o $f(z) \in X \cup Y$. Se $f(z) \in X$, ent\~ao $z \in f^{-1}(X)$ e da{\'\i} $z \in f^{-1}(X) \cup f^{-1}(Y)$. Se $f(z) \in Y$, ent{\~a}o $z \in f^{-1}(Y)$ e assim $z \in f^{-1}(X) \cup f^{-1}(Y)$. Logo, $f^{-1}(X \cup Y) \sub f^{-1}(X) \cup f^{-1}(Y)$.
+        \item Seja $z \in f^{-1}(X \cup Y)$. Então $f(z) \in X \cup Y$. Se $f(z) \in X$, então $z \in f^{-1}(X)$ e daí $z \in f^{-1}(X) \cup f^{-1}(Y)$. Se $f(z) \in Y$, então $z \in f^{-1}(Y)$ e assim $z \in f^{-1}(X) \cup f^{-1}(Y)$. Logo, $f^{-1}(X \cup Y) \sub f^{-1}(X) \cup f^{-1}(Y)$.
 
-        Agora, seja $z \in f^{-1}(X) \cup f^{-1}(Y)$. Se $z \in f^{-1}(X)$, ent{\~a}o $f(z) \in X$, da{\'\i} $f(z) \in X \cup Y$, isto {\'e}, $z \in f^{-1}(X \cup Y)$. Se $z \in f^{-1}(Y)$, ent{\~a}o $f(z) \in Y$ e assim $f(z) \in X \cup Y$, isto {\'e}, $z \in f^{-1}(X \cup Y)$. Logo $f^{-1}(X) \cup f^{-1}(Y) \sub f^{-1}(X \cup Y)$.
+        Agora, seja $z \in f^{-1}(X) \cup f^{-1}(Y)$. Se $z \in f^{-1}(X)$, então $f(z) \in X$, daí $f(z) \in X \cup Y$, isto é, $z \in f^{-1}(X \cup Y)$. Se $z \in f^{-1}(Y)$, então $f(z) \in Y$ e assim $f(z) \in X \cup Y$, isto é, $z \in f^{-1}(X \cup Y)$. Logo $f^{-1}(X) \cup f^{-1}(Y) \sub f^{-1}(X \cup Y)$.
 
         Portanto, $f^{-1}(X \cup Y) = f^{-1}(X) \cup f^{-1}(Y)$.
     \end{enumerate}
 \end{prova}
 
 
-Dado $f : A \to B$ uma fun\c{c}{\~a}o, queremos construir uma fun\c{c}\~ao $g : B \to A$ de modo que
+Dado $f : A \to B$ uma função, queremos construir uma função $g : B \to A$ de modo que
 \[
     g(f(x)) = x
 \]
@@ -281,7 +281,7 @@ para todo $x \in A$. Mas $f(x) = y$ com $y \in B$. Assim podemos tentar definir 
 \begin{align}\label{condicao_funcao_inversa}
     g(y) = x,\ y \in B \mbox{ se, e somente se, } f(x) = y.
 \end{align}
-Com essa defini\c{c}\~ao $g$ \'e uma fun\c{c}\~ao? Vejamos um exemplo: definida $f : \{0,1,2,3\} \to \{4,5,6,7,8\}$ por:
+Com essa definição $g$ é uma função? Vejamos um exemplo: definida $f : \{0,1,2,3\} \to \{4,5,6,7,8\}$ por:
 \begin{align*}
     f(0) &= 5\\
     f(1) &= 5\\
@@ -289,7 +289,7 @@ Com essa defini\c{c}\~ao $g$ \'e uma fun\c{c}\~ao? Vejamos um exemplo: definida 
     f(3) &= 7.
 \end{align*}
 
-A partir da defini\c{c}\~ao \eqref{condicao_funcao_inversa} temos
+A partir da definição \eqref{condicao_funcao_inversa} temos
 \begin{align*}
     g(5) &= 0\\
     g(5) &= 1\\
@@ -297,7 +297,7 @@ A partir da defini\c{c}\~ao \eqref{condicao_funcao_inversa} temos
     g(7) &= 3.
 \end{align*}
 
-Assim $g$ definida pela condi\c{c}\~ao \eqref{condicao_funcao_inversa} n\~ao \'e uma fun\c{c}\~ao pois $g$ atribui ao n\'umero 5 dois poss{\'\i}veis valores: 0 e 1. Isso ocorre pois $f$ n\~ao \'e injetora. Vamos ent\~ao redefinir $f$ de modo a torn\'a-la injetora:
+Assim $g$ definida pela condição \eqref{condicao_funcao_inversa} não é uma função pois $g$ atribui ao número 5 dois possíveis valores: 0 e 1. Isso ocorre pois $f$ não é injetora. Vamos então redefinir $f$ de modo a torná-la injetora:
 \begin{align*}
     f(0) &= 5\\
     f(1) &= 4\\
@@ -313,64 +313,64 @@ Agora $g$ torna-se:
     g(7) &= 3.
 \end{align*}
 
-Ainda assim $g$ n\~ao \'e fun\c{c}\~ao pois $g$ n\~ao associa $8 \in B$ com nenhum elemento em $A$. Isso ocorre pois $f$ n\~ao \'e sobrejetora.
+Ainda assim $g$ não é função pois $g$ não associa $8 \in B$ com nenhum elemento em $A$. Isso ocorre pois $f$ não é sobrejetora.
 
-Portanto para que a condi\c{c}\~ao \eqref{condicao_funcao_inversa} defina uma fun\c{c}\~ao \'e necess\'ario que $f$ seja bijetora. Temos ent\~ao o seguinte teorema:
+Portanto para que a condição \eqref{condicao_funcao_inversa} defina uma função é necessário que $f$ seja bijetora. Temos então o seguinte teorema:
 
 \begin{teorema}\label{teorema_funcao_inversa}
-    Seja $f: A \to B$ fun{\c c}{\~a}o. Defina $g : B \to A$ por
+    Seja $f: A \to B$ função. Defina $g : B \to A$ por
     \begin{align}\label{funcao_inversa}
         g(y) = x,\ y \in B \mbox{ se, e somente se, } f(x) = y.
     \end{align}
-    Ent{\~a}o $g$ {\'e} uma fun{\c c}{\~a}o se, e somente se, $f$ {\'e} bijetora.
+    Então $g$ é uma função se, e somente se, $f$ é bijetora.
 \end{teorema}
 \begin{prova}
     Precisamos mostrar que:
     \begin{enumerate}[label={\roman*})]
-        \item Se $g$ definida por \eqref{funcao_inversa} \'e uma fun\c{c}\~ao, ent\~ao $f$ \'e bijetora.
-        \item Se $f$ \'e bijetora, ent\~ao $g$ definida por \eqref{funcao_inversa} \'e uma fun\c{c}\~ao.
+        \item Se $g$ definida por \eqref{funcao_inversa} é uma função, então $f$ é bijetora.
+        \item Se $f$ é bijetora, então $g$ definida por \eqref{funcao_inversa} é uma função.
     \end{enumerate}
 
-    Provemos a primeira afirma\c{c}\~ao: suponha que $g$ \'e uma fun\c{c}\~ao. Precisamos provar que $f$ {\'e} injetora e sobrejetora.
+    Provemos a primeira afirmação: suponha que $g$ é uma função. Precisamos provar que $f$ é injetora e sobrejetora.
 
-    Sejam $x_1$, $x_2 \in A$ tais que $f(x_1) = y = f(x_2)$. Como $f(x_1) = y$ temos $g(y) = x_1$, al{\'e}m disso, $g(y) = x_2$. Mas $g$ {\'e} uma fun{\c c}{\~a}o, da{\'\i} $x_1 = x_2$, ou seja, $f$ {\'e} injetora.
+    Sejam $x_1$, $x_2 \in A$ tais que $f(x_1) = y = f(x_2)$. Como $f(x_1) = y$ temos $g(y) = x_1$, além disso, $g(y) = x_2$. Mas $g$ é uma função, daí $x_1 = x_2$, ou seja, $f$ é injetora.
 
-    Dado $y \in B$, como $g$ {\'e} uma fun{\c c}{\~a}o, existe $x \in A$, tal que $g(y) = x$, logo $f(x) = y$ e assim $f$ {\'e} sobrejetora.
+    Dado $y \in B$, como $g$ é uma função, existe $x \in A$, tal que $g(y) = x$, logo $f(x) = y$ e assim $f$ é sobrejetora.
 
-    Portanto $f$ {\'e} bijetora.
+    Portanto $f$ é bijetora.
 
-    Agora vamos provar a segunda afirma\c{c}\~ao: suponha que $f$ \'e bijetora. Precisamos mostrar que $g$ \'e uma fun\c{c}\~ao. Primeiramente, dado $y \in B$, como $f$ {\'e} sobrejetora, existe $x \in A$ tal que $f(x) = y$. Logo por \eqref{funcao_inversa} segue que $g(y) = x \in A$. Logo $g$ associa cada elemento de $B$ com algum elemento em $A$.
+    Agora vamos provar a segunda afirmação: suponha que $f$ é bijetora. Precisamos mostrar que $g$ é uma função. Primeiramente, dado $y \in B$, como $f$ é sobrejetora, existe $x \in A$ tal que $f(x) = y$. Logo por \eqref{funcao_inversa} segue que $g(y) = x \in A$. Logo $g$ associa cada elemento de $B$ com algum elemento em $A$.
 
-    Suponha que $g(y) = x_1$ e que $g(y) = x_2$. Da{\'\i}, de \eqref{funcao_inversa} temos $f(x_1) = y$ e $f(x_2) = y$. Mas $f$ {\'e} injetora, logo $x_1 = x_2$ e ent{\~a}o $g(y) = x_1 = x_2$. Assim $g$ associa cada elemento de $B$ com somente um elemento em $A$.
+    Suponha que $g(y) = x_1$ e que $g(y) = x_2$. Daí, de \eqref{funcao_inversa} temos $f(x_1) = y$ e $f(x_2) = y$. Mas $f$ é injetora, logo $x_1 = x_2$ e então $g(y) = x_1 = x_2$. Assim $g$ associa cada elemento de $B$ com somente um elemento em $A$.
 
-    Portanto $g$ {\'e} fun{\c c}{\~a}o.
+    Portanto $g$ é função.
 \end{prova}
 
 
 \begin{definicao}
-    A fun\c{c}\~ao $g : B \to A$ do teorema \ref{teorema_funcao_inversa} \'e chamada de \textbf{fun\c{c}\~ao inversa} de $f : A \to B$ e ser\'a denotada por $g = f^{-1}$.
+    A função $g : B \to A$ do teorema \ref{teorema_funcao_inversa} é chamada de \textbf{função inversa} de $f : A \to B$ e será denotada por $g = f^{-1}$.
 \end{definicao}
 
 
 \begin{definicao}
-    Dado um conjunto $A \ne \emptyset$, a fun{\c c}{\~a}o $i_{A}: A \to A$ dada por $i_{A}(x) = x$ {\'e} chamada de \textbf{fun{\c c}{\~a}o identidade}.
+    Dado um conjunto $A \ne \emptyset$, a função $i_{A}: A \to A$ dada por $i_{A}(x) = x$ é chamada de \textbf{função identidade}.
 \end{definicao}
 
 \begin{proposicao}
-    Se $f : A \to B$ {\'e} bijetora, ent{\~a}o $f\circ f^{-1} = i_{B}$ e $f^{-1}\circ f = i_{A}$.
+    Se $f : A \to B$ é bijetora, então $f\circ f^{-1} = i_{B}$ e $f^{-1}\circ f = i_{A}$.
 \end{proposicao}
 \begin{prova}
-    Temos $i_{B} : B \to B$ e $i_{A} : A \to A$. Al{\'e}m disso, $f\circ f^{-1} : B \to B$ e $f^{-1}\circ f : A \to A$, da{\'\i} $\dom(f\circ f^{-1}) = \dom(i_{B})$ e $\dom(f^{-1}\circ f) = \dom(i_{A})$. Agora, $y \in B$, $(f\circ f^{-1})(y) = f(f^{-1}(y)) = y = i_{B}(y)$. E se $x \in A$, $(f^{-1}\circ f)(x) = f^{-1}(f(x)) = x = i_{A}(x)$. Portanto $f\circ f^{-1} = i_{B}$ e $f^{-1}\circ f = i_{A}$ como quer{\'\i}amos.
+    Temos $i_{B} : B \to B$ e $i_{A} : A \to A$. Além disso, $f\circ f^{-1} : B \to B$ e $f^{-1}\circ f : A \to A$, daí $\dom(f\circ f^{-1}) = \dom(i_{B})$ e $\dom(f^{-1}\circ f) = \dom(i_{A})$. Agora, $y \in B$, $(f\circ f^{-1})(y) = f(f^{-1}(y)) = y = i_{B}(y)$. E se $x \in A$, $(f^{-1}\circ f)(x) = f^{-1}(f(x)) = x = i_{A}(x)$. Portanto $f\circ f^{-1} = i_{B}$ e $f^{-1}\circ f = i_{A}$ como queríamos.
 \end{prova}
 
 \begin{proposicao}\label{propriedades_identidade}
-    Se $f : A \to B$ e $g : B \to A$ s{\~a}o fun{\c c}{\~o}es, ent{\~a}o:
+    Se $f : A \to B$ e $g : B \to A$ são funções, então:
     \begin{enumerate}[label={\roman*})]
         \item $f\circ i_{A} = f$
         \item $i_{B}\circ f = f$
         \item $g\circ i_{B} = g$
         \item $i_{A}\circ g = g$
-        \item Se $g\circ f = i_{A}$ e $f\circ g = i_{B}$, ent{\~a}o $f$ e $g$ s{\~a}o bijetoras e $g=f^{-1}$.
+        \item Se $g\circ f = i_{A}$ e $f\circ g = i_{B}$, então $f$ e $g$ são bijetoras e $g=f^{-1}$.
     \end{enumerate}
 \end{proposicao}
 \begin{prova}
@@ -379,12 +379,12 @@ Portanto para que a condi\c{c}\~ao \eqref{condicao_funcao_inversa} defina uma fu
         \item Segue de forma semelhante ao caso anteiror.
         \item Segue de forma semelhante ao primeiro caso.
         \item Segue de forma semelhante ao primeiro caso.
-        \item Provemos que $f$ \'e bijetora: sejam $x_1$, $x_2 \in A$ tais que $f(x_1) = f(x_2)$. Como $f : A \to B$ e $g : B \to A$, ent{\~a}o $g(f(x_1)) = g(f(x_2))$, ou seja, $(g\circ f)(x_1) = (g\circ f)(x_2)$. Da{\'\i}, $i_{A}(x_1) = i_{A}(x_2)$. Logo, $x_1 = x_2$. Logo $f$ {\'e} injetora.
+        \item Provemos que $f$ é bijetora: sejam $x_1$, $x_2 \in A$ tais que $f(x_1) = f(x_2)$. Como $f : A \to B$ e $g : B \to A$, então $g(f(x_1)) = g(f(x_2))$, ou seja, $(g\circ f)(x_1) = (g\circ f)(x_2)$. Daí, $i_{A}(x_1) = i_{A}(x_2)$. Logo, $x_1 = x_2$. Logo $f$ é injetora.
 
-        Agora, dado $y \in B$, segue que $y = i_{B}(y)$. Mas $i_{B} = f\circ g$. Da{\'\i}, $y = i_{B}(y) = (f\circ g)(y) = f(g(y))$. Assim, $x = g(y)\in A$ e $f(x) = y$. Logo $f$ {\'e} sobrejetora.
+        Agora, dado $y \in B$, segue que $y = i_{B}(y)$. Mas $i_{B} = f\circ g$. Daí, $y = i_{B}(y) = (f\circ g)(y) = f(g(y))$. Assim, $x = g(y)\in A$ e $f(x) = y$. Logo $f$ é sobrejetora.
 
-        Portanto $f$ {\'e} bijetora. Analogamente, prova-se que g {\'e} bijetora.
+        Portanto $f$ é bijetora. Analogamente, prova-se que g é bijetora.
 
-        Provemos agora que $g = f^{-1}$. Para isso, primeiro temos  $f^{-1} : B \to A$ e ent\~ao $\dom(g) = B = \dom(f^{-1})$. Agora, $f\circ g = i_{B} = f\circ f^{-1}$. Assim, para todo $x \in B$, $(f\circ g)(x) = (f\circ f^{-1})(x)$. Isto {\'e}, $f(g(x)) = f(f^{-1}(x))$. Portanto como $f$ \'e injetora, $g(x) = f^{-1}(x)$ para todo $x\in B$. Logo $g = f^{-1}$ como quer{\'\i}amos.
+        Provemos agora que $g = f^{-1}$. Para isso, primeiro temos  $f^{-1} : B \to A$ e então $\dom(g) = B = \dom(f^{-1})$. Agora, $f\circ g = i_{B} = f\circ f^{-1}$. Assim, para todo $x \in B$, $(f\circ g)(x) = (f\circ f^{-1})(x)$. Isto é, $f(g(x)) = f(f^{-1}(x))$. Portanto como $f$ é injetora, $g(x) = f^{-1}(x)$ para todo $x\in B$. Logo $g = f^{-1}$ como queríamos.
     \end{enumerate}
 \end{prova}
