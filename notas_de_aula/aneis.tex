@@ -6,25 +6,25 @@
 \begin{definicao}
     Seja $A$ um conjunto n{\~a}o vazio. Dizemos que $A$ est{\'a} munido (ou equipado) de uma \textbf{opera{\c c}{\~a}o bin{\'a}ria} quando
     existe uma fun{\c c}{\~a}o
-	\begin{align*}
-		&\Delta : A \times A \to A\\
-		&(a,b) \longmapsto a\Delta b
-	\end{align*}
-	Uma opera{\c c}{\~a}o bin{\'a}ria tamb{\'e}m {\'e} chamada de uma \textbf{opera{\c c}{\~a}o interna} em $A$.
+    \begin{align*}
+        &\Delta : A \times A \to A\\
+        &(a,b) \longmapsto a\Delta b
+    \end{align*}
+    Uma opera{\c c}{\~a}o bin{\'a}ria tamb{\'e}m {\'e} chamada de uma \textbf{opera{\c c}{\~a}o interna} em $A$.
 \end{definicao}
 
 \begin{exemplos}
-	\begin{enumerate}[label={\arabic*})]
-		\item A soma usual nos conjuntos $\z$, $\rac$, $\real$ e $\complex$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
+    \begin{enumerate}[label={\arabic*})]
+        \item A soma usual nos conjuntos $\z$, $\rac$, $\real$ e $\complex$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
 
-		\item A multiplica\c{c}\~ao usual nos conjuntos $\z$, $\rac$, $\real$ e $\complex$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
+        \item A multiplica\c{c}\~ao usual nos conjuntos $\z$, $\rac$, $\real$ e $\complex$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
 
         \item Seja $m > 1$, $m \in \z$ fixo. A soma \eqref{soma_modulo_m} e a multiplica\c{c}\~ao \eqref{multiplicacao_modulo_m} definidos em $\z_m =
             \{\overline{0},\overline{1},...,\overline{m-1}\}$ s\~ao uma opera\c{c}\~oes bin\'arias.
 
-		\item A opera\c{c}\~ao $\div$ em $\rac^{*}$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
-		\item J\'a em $\n$, $\z$, $\z^{*}$ e em $\rac$ a opera\c{c}\~ao $\div$ n{\~a}o {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
-	\end{enumerate}
+        \item A opera\c{c}\~ao $\div$ em $\rac^{*}$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
+        \item J\'a em $\n$, $\z$, $\z^{*}$ e em $\rac$ a opera\c{c}\~ao $\div$ n{\~a}o {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
+    \end{enumerate}
 \end{exemplos}
 
 \begin{definicao}\label{definicaoanel}
@@ -33,50 +33,50 @@
     \begin{enumerate}[label={\roman*})] \item \textbf{Associatividade}: para todos $x$, $y$, $z \in A$ vale que \[ (x \oplus y) \oplus z = x \oplus (y \oplus z). \] Essa
     propriedade {\'e} chamada \textbf{propriedade associativa} da soma.\label{associatividadesoma}
 
-		\item \textbf{Comutatividade}: Para todos $x$, $y \in A$ vale\label{comutatividadesoma}
-		\[
-			x \oplus y = y \oplus x.
-		\]
+        \item \textbf{Comutatividade}: Para todos $x$, $y \in A$ vale\label{comutatividadesoma}
+        \[
+            x \oplus y = y \oplus x.
+        \]
 
-		\item \textbf{Elemento Neutro}: Existe em $A$ um elemento denotado por $0$ (zero) ou $0_{A}$ tal que para todo elemento $x \in A$ vale
-		\[
-			x \oplus 0_A = x = 0_A \oplus x.
-		\]
-		Tal elemento $0_A$ \'e chamado de \textbf{elemento neutro da soma} ou simplesmente \textbf{elemento neutro}.
+        \item \textbf{Elemento Neutro}: Existe em $A$ um elemento denotado por $0$ (zero) ou $0_{A}$ tal que para todo elemento $x \in A$ vale
+        \[
+            x \oplus 0_A = x = 0_A \oplus x.
+        \]
+        Tal elemento $0_A$ \'e chamado de \textbf{elemento neutro da soma} ou simplesmente \textbf{elemento neutro}.
 
-		\item \textbf{Elemento Oposto}: Para cada elemento $x \in A$, existe $y \in A$ tal que
-		\[
-			x \oplus y = 0_A = y \oplus x.
-		\]
-		Tal elemento $y$ \'e chamado de \textbf{oposto aditivo} de $x$ ou simplesmente \textbf{oposto} de $x$.
+        \item \textbf{Elemento Oposto}: Para cada elemento $x \in A$, existe $y \in A$ tal que
+        \[
+            x \oplus y = 0_A = y \oplus x.
+        \]
+        Tal elemento $y$ \'e chamado de \textbf{oposto aditivo} de $x$ ou simplesmente \textbf{oposto} de $x$.
 
-		\item \textbf{Associatividade}: Para todos $x$, $y$, $z \in A$, vale que\label{associatividadeproduto}
-		\[
-			(x\otimes y) \otimes z = x\otimes (y\otimes z).
-		\]
+        \item \textbf{Associatividade}: Para todos $x$, $y$, $z \in A$, vale que\label{associatividadeproduto}
+        \[
+            (x\otimes y) \otimes z = x\otimes (y\otimes z).
+        \]
 
-		\item \textbf{Distributividade}: Para todos $x$, $y$, $z \in A$ vale
-		\[
-			(x \oplus y)\otimes z = x\otimes z \oplus y\otimes z.
-		\]
-		Essa propriedade {\'e} chamada \textbf{distributiva da soma em rela{\c c}{\~a}o ao produto}.\label{distributividadesomaproduto}
+        \item \textbf{Distributividade}: Para todos $x$, $y$, $z \in A$ vale
+        \[
+            (x \oplus y)\otimes z = x\otimes z \oplus y\otimes z.
+        \]
+        Essa propriedade {\'e} chamada \textbf{distributiva da soma em rela{\c c}{\~a}o ao produto}.\label{distributividadesomaproduto}
 
-		\item \textbf{Distributividade}: Para todos $x$, $y$, $z \in A$ vale
-		\[
-			x\otimes(y \oplus z) = x\otimes y \oplus x\otimes z.
-		\]
-		Essa {\'e} a propriedade \textbf{distributiva do produto em rela{\c c}{\~a}o {\`a} soma}.\label{distributividadeprodutosoma}
-	\end{enumerate}
+        \item \textbf{Distributividade}: Para todos $x$, $y$, $z \in A$ vale
+        \[
+            x\otimes(y \oplus z) = x\otimes y \oplus x\otimes z.
+        \]
+        Essa {\'e} a propriedade \textbf{distributiva do produto em rela{\c c}{\~a}o {\`a} soma}.\label{distributividadeprodutosoma}
+    \end{enumerate}
 \end{definicao}
 
 \begin{observacoes}
-	Seja $(A, \oplus, \otimes)$ um anel.
-	\begin{enumerate}[label={\arabic*})]
-		\item \textbf{Comutatividade}: Se para todos $x$, $y \in A$ vale
-		\[
-			x \otimes y = y \otimes x.
-		\]
-		Dizemos que $(A, \oplus, \otimes)$ {\'e} um \textbf{anel comutativo}.
+    Seja $(A, \oplus, \otimes)$ um anel.
+    \begin{enumerate}[label={\arabic*})]
+        \item \textbf{Comutatividade}: Se para todos $x$, $y \in A$ vale
+        \[
+            x \otimes y = y \otimes x.
+        \]
+        Dizemos que $(A, \oplus, \otimes)$ {\'e} um \textbf{anel comutativo}.
 
         \item \textbf{Unidade}: Se existe em $A$ um elemento denotado por $1$ ou $1_{A}$ tal que \[ x \otimes 1 = x = 1 \otimes x, \] para todo $x \in A$, ent{\~a}o dizemos que
             $(A, \oplus, \otimes)$ \'e um \textbf{anel com unidade} ou um \textbf{anel unit{\'a}rio}. O elemento $1_A$ {\'e} chamado de \textbf{unidade} de $A$ ou
@@ -86,148 +86,148 @@
             \textbf{anel comutativo unit\'ario}.
 
 
-		\item Seja $(A, \oplus, \otimes)$ um anel. Quando n\~ao houver chance de confus\~ao com rela\c{c}\~ao \`as opera\c{c}\~oes envolvidas diremos simplesmente que $A$ \'e um anel.
-	\end{enumerate}
+        \item Seja $(A, \oplus, \otimes)$ um anel. Quando n\~ao houver chance de confus\~ao com rela\c{c}\~ao \`as opera\c{c}\~oes envolvidas diremos simplesmente que $A$ \'e um anel.
+    \end{enumerate}
 \end{observacoes}
 
 \begin{exemplos}
-	\begin{enumerate}[label={\arabic*})]
-		\item $(\z,+,.)$, $(\rac,+,.)$, $(\real,+,.)$, $(\complex,+,.)$, $(\z_m, \oplus, \otimes)$ s{\~a}o an{\'e}is comutativos e com unidade.
+    \begin{enumerate}[label={\arabic*})]
+        \item $(\z,+,.)$, $(\rac,+,.)$, $(\real,+,.)$, $(\complex,+,.)$, $(\z_m, \oplus, \otimes)$ s{\~a}o an{\'e}is comutativos e com unidade.
 
         \item  Seja $A = \z =\{f : \z \to \z \mid f \mbox{ {\'e} uma fun{\c c}{\~a}o}\}$. Dadas duas fun{\c c}{\~o}es quaisquer $f$, $g \in A$, definimos $f\oplus g:\z \to \z$ e
             $f \otimes g:\z \to \z$ como:
-		\begin{align*}
-			(f\oplus g)(x) &= f(x) + g(x)\\
-			(f\otimes g)(x) &= f(x)g(x)
-		\end{align*}
-		para todo $x \in \z$. Assim $(A, \oplus, \otimes)$ \'e um anel. De fato:
-		\begin{enumerate}[label={\roman*})]
-			\item Para todo $x \in \z$
-			\begin{align*}
-				[(f \oplus g) \oplus h](x) &= (f \oplus g)(x) + h(x) = (f(x) + g(x)) + h(x)\\
-				&= f(x) + (g(x) + h(x)) = f(x) + (g \oplus h)(x)\\ &= [f \oplus (g \oplus h)](x)
-			\end{align*}
-			para todos $f$, $g$ e $h \in A$.
+        \begin{align*}
+            (f\oplus g)(x) &= f(x) + g(x)\\
+            (f\otimes g)(x) &= f(x)g(x)
+        \end{align*}
+        para todo $x \in \z$. Assim $(A, \oplus, \otimes)$ \'e um anel. De fato:
+        \begin{enumerate}[label={\roman*})]
+            \item Para todo $x \in \z$
+            \begin{align*}
+                [(f \oplus g) \oplus h](x) &= (f \oplus g)(x) + h(x) = (f(x) + g(x)) + h(x)\\
+                &= f(x) + (g(x) + h(x)) = f(x) + (g \oplus h)(x)\\ &= [f \oplus (g \oplus h)](x)
+            \end{align*}
+            para todos $f$, $g$ e $h \in A$.
 
-			\item Para todo $x \in \z$
-			\[
-				(f\oplus g)(x) = f(x) + g(x) = g(x) + f(x) = (g\oplus f)(x),
-			\]
-			portanto $f\oplus g = g\oplus f$ para todos $f$, $g \in A$.
+            \item Para todo $x \in \z$
+            \[
+                (f\oplus g)(x) = f(x) + g(x) = g(x) + f(x) = (g\oplus f)(x),
+            \]
+            portanto $f\oplus g = g\oplus f$ para todos $f$, $g \in A$.
 
-			\item $0_A : \z \to \z$ dada por $0_A(x) = 0$ para todo $x \in \z$. Da{\'\i} para todo $x \in \z$
-			\[
-				(f \oplus 0_A)(x) = f(x) + 0_A(x) = f(x) + 0 = f(x)
-			\]
-			para todo $f \in A$. Logo $f + 0_A = f$ para todo $f \in A$. Logo $0_A$ \'e o elemento neutro da soma em $A$.
+            \item $0_A : \z \to \z$ dada por $0_A(x) = 0$ para todo $x \in \z$. Da{\'\i} para todo $x \in \z$
+            \[
+                (f \oplus 0_A)(x) = f(x) + 0_A(x) = f(x) + 0 = f(x)
+            \]
+            para todo $f \in A$. Logo $f + 0_A = f$ para todo $f \in A$. Logo $0_A$ \'e o elemento neutro da soma em $A$.
 
-			\item Dada $f \in A$, defina $g : \z \to \z$ por $g(x) = -f(x)$ para todo $x \in \z$. Da{\'\i} para todo $x \in \z$ temos
-			\[
-				(f \oplus g)(x) = f(x) + g(x) = f(x) + (-f(x)) = 0.
-			\]
-			Logo $g(x) = -f(x)$ \'e o oposto de $f \in A$.
+            \item Dada $f \in A$, defina $g : \z \to \z$ por $g(x) = -f(x)$ para todo $x \in \z$. Da{\'\i} para todo $x \in \z$ temos
+            \[
+                (f \oplus g)(x) = f(x) + g(x) = f(x) + (-f(x)) = 0.
+            \]
+            Logo $g(x) = -f(x)$ \'e o oposto de $f \in A$.
 
-			\item Para todo $x \in \z$
-			\begin{align*}
-				[(f \otimes g)\otimes h](x) &= (f \otimes g)(x)h(x) = (f(x)g(x))h(x)\\ &= f(x)(g(x)h(x)) = f(x)(g \otimes h)(x)\\ &= [f\otimes (g \otimes h)](x)
-			\end{align*}
-			para todos $f$, $g$ e $h \in \z$.
+            \item Para todo $x \in \z$
+            \begin{align*}
+                [(f \otimes g)\otimes h](x) &= (f \otimes g)(x)h(x) = (f(x)g(x))h(x)\\ &= f(x)(g(x)h(x)) = f(x)(g \otimes h)(x)\\ &= [f\otimes (g \otimes h)](x)
+            \end{align*}
+            para todos $f$, $g$ e $h \in \z$.
 
-			\item Para todo $x \in \z$
-			\begin{align*}
-				[(f \oplus g)\otimes h](x) &= (f \oplus g)(x)h(x) = (f(x) + g(x))h(x) \\ &= f(x)h(x) + g(x)h(x)
-				= (f\otimes g)(x) + (g \otimes h)(x)\\
-				&= [(f \otimes g) \oplus (g \otimes h)](x)
-			\end{align*}
-			para todos $f$, $g$ e $h \in A$.
+            \item Para todo $x \in \z$
+            \begin{align*}
+                [(f \oplus g)\otimes h](x) &= (f \oplus g)(x)h(x) = (f(x) + g(x))h(x) \\ &= f(x)h(x) + g(x)h(x)
+                = (f\otimes g)(x) + (g \otimes h)(x)\\
+                &= [(f \otimes g) \oplus (g \otimes h)](x)
+            \end{align*}
+            para todos $f$, $g$ e $h \in A$.
 
-			\item Para todo $x \in \z$
-			\begin{align*}
-				[f\otimes (g \oplus h)](x) &= f(x)(g\oplus h)(x) = f(x)(g(x) + h(x))\\
-				&= f(x)g(x) + f(x)h(x) = (f\otimes g)(x) + (f\otimes h)(x)\\
-				&= [(f \otimes g) \oplus (f\otimes h)](x)
-			\end{align*}
-			para todos $f$, $g$ e $h \in A$.
-		\end{enumerate}
-		Assim $(A, \oplus, \otimes)$ \'e um anel. Al\'em disso, para todo $x \in \z$
-		\[
-			(f\otimes g)(x) = f(x)g(x) = g(x)f(x) = (g\otimes f)(x)
-		\]
-		para todos $f$, $g \in A$. Assim a opera\c{c}\~ao $\otimes$ \'e comutativa.
+            \item Para todo $x \in \z$
+            \begin{align*}
+                [f\otimes (g \oplus h)](x) &= f(x)(g\oplus h)(x) = f(x)(g(x) + h(x))\\
+                &= f(x)g(x) + f(x)h(x) = (f\otimes g)(x) + (f\otimes h)(x)\\
+                &= [(f \otimes g) \oplus (f\otimes h)](x)
+            \end{align*}
+            para todos $f$, $g$ e $h \in A$.
+        \end{enumerate}
+        Assim $(A, \oplus, \otimes)$ \'e um anel. Al\'em disso, para todo $x \in \z$
+        \[
+            (f\otimes g)(x) = f(x)g(x) = g(x)f(x) = (g\otimes f)(x)
+        \]
+        para todos $f$, $g \in A$. Assim a opera\c{c}\~ao $\otimes$ \'e comutativa.
 
-		Mais ainda, definindo $1_A : \z \to \z$ como $1_A(x) = 1$ para todo $x \in \z$ temos
-		\[
-			(f \otimes 1_A)(x) = f(x)1_A(x) = f(x)\cdot 1 = f(x)
-		\]
-		para todo $f \in A$. Logo $1_A$ \'e a unidade de $A$.
+        Mais ainda, definindo $1_A : \z \to \z$ como $1_A(x) = 1$ para todo $x \in \z$ temos
+        \[
+            (f \otimes 1_A)(x) = f(x)1_A(x) = f(x)\cdot 1 = f(x)
+        \]
+        para todo $f \in A$. Logo $1_A$ \'e a unidade de $A$.
 
-		Portanto $(A, \oplus, \otimes)$ \'e um anel comutativo com unidade.
-	\end{enumerate}
+        Portanto $(A, \oplus, \otimes)$ \'e um anel comutativo com unidade.
+    \end{enumerate}
 \end{exemplos}
 
 \begin{observacao}
-	Seja $(A, \oplus, \cdot)$ um anel. Para simplificar a nota\c{c}\~ao vamos denotar a opera\c{c}\~ao $\oplus$
-	por $+$ e a opera\c{c}\~ao $\otimes$ por $\cdot$ e assim escrever simplesmente que $(A, +, \cdot)$ \'e um anel.
+    Seja $(A, \oplus, \cdot)$ um anel. Para simplificar a nota\c{c}\~ao vamos denotar a opera\c{c}\~ao $\oplus$
+    por $+$ e a opera\c{c}\~ao $\otimes$ por $\cdot$ e assim escrever simplesmente que $(A, +, \cdot)$ \'e um anel.
 \end{observacao}
 
 \begin{proposicao}
-	Seja $(A, + , \cdot)$ um anel. Ent\~ao:
-	\begin{enumerate}[label={\roman*})]
-		\item O elemento neutro {\'e} {\'u}nico.
-		\item Para cada $x \in A$ existe um {\'u}nico oposto.
-		\item Para todo $x \in A$, $-(-x) = x$.
-		\item Dados $x_{1}$, $x_{2}$, \dots, $x_n \in A$, $n \geqslant 2$, ent{\~a}o
-		\[
-			-(x_1 + x_2 + \dots + x_n) = (-x_1) + (-x_2) + \dots + (-x_n).
-		\]
-		\item Para todos $\alpha$, $x$, $y \in A$, se $\alpha + x = \alpha + y$, ent{\~a}o $x = y$.
-		\item Para todo $x \in A$, $x\cdot 0_A = 0_A = 0_A\cdot x$.
-		\item Para todos $x$, $y \in A$, temos $x(-y) = (-x)y = -(xy)$.
-		\item Para todos $x$, $y \in A$, $xy = (-x)(-y)$.
-	\end{enumerate}
+    Seja $(A, + , \cdot)$ um anel. Ent\~ao:
+    \begin{enumerate}[label={\roman*})]
+        \item O elemento neutro {\'e} {\'u}nico.
+        \item Para cada $x \in A$ existe um {\'u}nico oposto.
+        \item Para todo $x \in A$, $-(-x) = x$.
+        \item Dados $x_{1}$, $x_{2}$, \dots, $x_n \in A$, $n \geqslant 2$, ent{\~a}o
+        \[
+            -(x_1 + x_2 + \dots + x_n) = (-x_1) + (-x_2) + \dots + (-x_n).
+        \]
+        \item Para todos $\alpha$, $x$, $y \in A$, se $\alpha + x = \alpha + y$, ent{\~a}o $x = y$.
+        \item Para todo $x \in A$, $x\cdot 0_A = 0_A = 0_A\cdot x$.
+        \item Para todos $x$, $y \in A$, temos $x(-y) = (-x)y = -(xy)$.
+        \item Para todos $x$, $y \in A$, $xy = (-x)(-y)$.
+    \end{enumerate}
 \end{proposicao}
 \begin{prova}
-	\begin{enumerate}[label={\roman*})]
-		\item Suponha que existam $0_1$, $0_2\in A$ elementos neutros de $A$. Assim
-		\[
-			x + 0_1 = x \quad \mbox{e}\quad x + 0_2 = x
-		\]
-		para todo $x \in A$. Assim
-		\[
-			0_1 = 0_1 + 0_2 = 0_2
-		\]
-		e portanto o elemento neutro \'e \'unico.
+    \begin{enumerate}[label={\roman*})]
+        \item Suponha que existam $0_1$, $0_2\in A$ elementos neutros de $A$. Assim
+        \[
+            x + 0_1 = x \quad \mbox{e}\quad x + 0_2 = x
+        \]
+        para todo $x \in A$. Assim
+        \[
+            0_1 = 0_1 + 0_2 = 0_2
+        \]
+        e portanto o elemento neutro \'e \'unico.
 
-		\item De fato, dado $x \in A$ suponha que existam $y_1$, $y_2\in A$ tais que
-		\[
-			x + y_1 = 0_A \quad \mbox{e}\quad x + y_2 = 0_A.
-		\]
-		Da{\'\i}
-		\[
-			y_1 = y_2 + 0_A = y_1 + (x + y_2) = (y_1 + x) + y_2 = 0_A + y_2 =y_2.
-		\]
-		Logo o oposto de $x$ \'e \'unico  e da{\'\i} ser\'a denotado por $-x$.
+        \item De fato, dado $x \in A$ suponha que existam $y_1$, $y_2\in A$ tais que
+        \[
+            x + y_1 = 0_A \quad \mbox{e}\quad x + y_2 = 0_A.
+        \]
+        Da{\'\i}
+        \[
+            y_1 = y_2 + 0_A = y_1 + (x + y_2) = (y_1 + x) + y_2 = 0_A + y_2 =y_2.
+        \]
+        Logo o oposto de $x$ \'e \'unico  e da{\'\i} ser\'a denotado por $-x$.
 
-		\item Dado $x \in A$, ent\~ao $-x$ {\'e} oposto de $x$, isto {\'e}, $x + (-x) = 0_A$. Logo o oposto de $(-x)$ {\'e} $x$, ou seja, $-(-x) = x$.
+        \item Dado $x \in A$, ent\~ao $-x$ {\'e} oposto de $x$, isto {\'e}, $x + (-x) = 0_A$. Logo o oposto de $(-x)$ {\'e} $x$, ou seja, $-(-x) = x$.
 
-		\item Segue usando indu\c{c}\~ao sobre $n$.
+        \item Segue usando indu\c{c}\~ao sobre $n$.
 
-		\item Suponha que $\alpha + x = \alpha + y$. Seja $-\alpha$ o oposto de $\alpha$ da{\'\i}
-		\begin{align*}
-			x &= 0_A + x \\ &= [(-\alpha) + \alpha] + x\\ &= (-\alpha) + (\alpha + x) \\ &= (-\alpha) + (\alpha + y) \\ &= [(-\alpha) + \alpha] + y \\ &= 0_A + y = y
-		\end{align*}
-		como quer{\'\i}amos.
+        \item Suponha que $\alpha + x = \alpha + y$. Seja $-\alpha$ o oposto de $\alpha$ da{\'\i}
+        \begin{align*}
+            x &= 0_A + x \\ &= [(-\alpha) + \alpha] + x\\ &= (-\alpha) + (\alpha + x) \\ &= (-\alpha) + (\alpha + y) \\ &= [(-\alpha) + \alpha] + y \\ &= 0_A + y = y
+        \end{align*}
+        como quer{\'\i}amos.
 
-		\item Temos $x\cdot 0_A + 0_A = x\cdot 0_A = x\cdot(0_A + 0_A) = x\cdot 0_A + x\cdot 0_A$. Assim do item anterior segue que $x\cdot 0_A = 0_A$.
+        \item Temos $x\cdot 0_A + 0_A = x\cdot 0_A = x\cdot(0_A + 0_A) = x\cdot 0_A + x\cdot 0_A$. Assim do item anterior segue que $x\cdot 0_A = 0_A$.
 
-		\item Provemos que $x(-y) = -(xy)$:
-		\[
-			x(-y) + xy = x((-y) + y) = x\cdot 0_A = 0_A,
-		\]
-		portanto $-xy = x(-y)$.
+        \item Provemos que $x(-y) = -(xy)$:
+        \[
+            x(-y) + xy = x((-y) + y) = x\cdot 0_A = 0_A,
+        \]
+        portanto $-xy = x(-y)$.
 
-		\item Basta usar o caso anterior.
-	\end{enumerate}
+        \item Basta usar o caso anterior.
+    \end{enumerate}
 \end{prova}
 
 \section{An\'eis de Integridade e Suban\'eis} % (fold)
@@ -239,59 +239,59 @@
 \end{definicao}
 
 \begin{observacao}
-	Se $x$ e $y$ s{\~a}o elementos n{\~a}o nulos de um anel $A$ tais que $xy = 0_A$, ent{\~a}o $x$ e $y$ s{\~a}o chamados de \textbf{divisores pr{\'o}prios de zero}.
+    Se $x$ e $y$ s{\~a}o elementos n{\~a}o nulos de um anel $A$ tais que $xy = 0_A$, ent{\~a}o $x$ e $y$ s{\~a}o chamados de \textbf{divisores pr{\'o}prios de zero}.
 \end{observacao}
 
 
 \begin{exemplos}
-	\begin{enumerate}[label={\arabic*})]
-		\item Os an{\'e}is $\z$, $\rac$, $\real$, $\complex$ s{\~a}o an{\'e}is de integridade.
+    \begin{enumerate}[label={\arabic*})]
+        \item Os an{\'e}is $\z$, $\rac$, $\real$, $\complex$ s{\~a}o an{\'e}is de integridade.
 
         \item Em geral $\z_m$ n{\~a}o {\'e} anel de integridade, por exemplo, em $\z_4$, $\overline{2} \neq \overline{0}$, no entanto $\overline{2}\otimes \overline{2} =
             \overline{4} = \overline{0}$.
 
-		\item $M_{n}(\real)$ n{\~a}o {\'e} um anel de integridade, por exemplo, em $M_{2}(\real)$
-		\begin{align*}
-			A &= \begin{bmatrix}
-				1 & 0\\
-				0 & 0
-			\end{bmatrix} \neq \begin{bmatrix}
-				0 & 0\\
-				0 & 0
-			\end{bmatrix},\qquad
-			B = \begin{bmatrix}
-				0 & 0\\
-				1 & 0
-			\end{bmatrix} \neq \begin{bmatrix}
-				0 & 0\\
-				0 & 0
-			\end{bmatrix}\\
-			AB & =\begin{bmatrix}
-				0 & 0\\
-				0 & 0
-			\end{bmatrix}.
-		\end{align*}
+        \item $M_{n}(\real)$ n{\~a}o {\'e} um anel de integridade, por exemplo, em $M_{2}(\real)$
+        \begin{align*}
+            A &= \begin{bmatrix}
+                1 & 0\\
+                0 & 0
+            \end{bmatrix} \neq \begin{bmatrix}
+                0 & 0\\
+                0 & 0
+            \end{bmatrix},\qquad
+            B = \begin{bmatrix}
+                0 & 0\\
+                1 & 0
+            \end{bmatrix} \neq \begin{bmatrix}
+                0 & 0\\
+                0 & 0
+            \end{bmatrix}\\
+            AB & =\begin{bmatrix}
+                0 & 0\\
+                0 & 0
+            \end{bmatrix}.
+        \end{align*}
 
         \item Suponha que $m = nk$, $m > n > 1$ e $m > k > 1$. Logo, em $\z_m$, $\overline{n} \neq \overline{0}$ e $\overline{k} \neq \overline{0}$ e no entanto $\overline{n}
             \otimes \overline{k} = \overline{m} = \overline{0}$. Logo, se $m$ n{\~a}o {\'e} primo, ent{\~a}o $\z_m$ n{\~a}o {\'e} um anel de integridade. Agora, suponha que $m =
             p$ primo. Sejam $\overline{x}$, $\overline{y} \in \z_m$ tais que $\overline{x}\otimes \overline{y} = \overline{0}$, ou seja, $xy \equiv 0 \pmod p$. Da{\'\i} $p\mid
             xy$. Logo $p\mid x$ ou $p\mid y$. Portanto, $\overline{x} = \overline{0}$ ou $\overline{y} = \bar{0}$. Assim, $\z_m$ {\'e} anel de integridade se, e somente se, $m$
             {\'e} primo.
-	\end{enumerate}
+    \end{enumerate}
 \end{exemplos}
 
 
 
 \begin{definicao}
-	Seja $(A, +, \cdot)$ um anel. Dizemos que um subconjunto n{\~a}o vazio $B\subseteq A$ {\'e} um \textbf{subanel} de $A$ quando $(B, +, \cdot)$ \'e um anel.
+    Seja $(A, +, \cdot)$ um anel. Dizemos que um subconjunto n{\~a}o vazio $B\subseteq A$ {\'e} um \textbf{subanel} de $A$ quando $(B, +, \cdot)$ \'e um anel.
 \end{definicao}
 
 \begin{exemplos}
-	\begin{enumerate}[label={\arabic*})]
-		\item Todo anel $A$ sempre tem dois suban{\'e}is: $\{0_{A}\}$ e $A$, que s{\~a}o chamados de \textbf{suban{\'e}is triviais}.
-		\item Em $(\z_4,\oplus,\otimes)$ o conjunto $B = \{\overline{0}, \overline{2}\}$ \'e um subanel.
-		\item No anel $\z$, o conjunto $m\z$, $m > 1$ {\'e} um subanel de $\z$.
-	\end{enumerate}
+    \begin{enumerate}[label={\arabic*})]
+        \item Todo anel $A$ sempre tem dois suban{\'e}is: $\{0_{A}\}$ e $A$, que s{\~a}o chamados de \textbf{suban{\'e}is triviais}.
+        \item Em $(\z_4,\oplus,\otimes)$ o conjunto $B = \{\overline{0}, \overline{2}\}$ \'e um subanel.
+        \item No anel $\z$, o conjunto $m\z$, $m > 1$ {\'e} um subanel de $\z$.
+    \end{enumerate}
 \end{exemplos}
 
 \begin{proposicao}\label{proposicao_subanel}
@@ -401,21 +401,21 @@
 \label{sec:ideais}
 
 \begin{definicao}
-	Seja $(A, +, \cdot)$ um anel comutativo. Um subconjunto n\~ao-vazio $I \sub A$ {\'e} chamado de \textbf{ideal} de $A$ se:
-	\begin{enumerate}[label={\roman*})]
-		\item para todos $x$, $y \in I$, temos $x + (-y) \in I$;
-		\item para todo $\alpha \in A$ e todo $x \in I$, temos $\alpha\cdot x \in I$.
-	\end{enumerate}
+    Seja $(A, +, \cdot)$ um anel comutativo. Um subconjunto n\~ao-vazio $I \sub A$ {\'e} chamado de \textbf{ideal} de $A$ se:
+    \begin{enumerate}[label={\roman*})]
+        \item para todos $x$, $y \in I$, temos $x + (-y) \in I$;
+        \item para todo $\alpha \in A$ e todo $x \in I$, temos $\alpha\cdot x \in I$.
+    \end{enumerate}
 \end{definicao}
 
 \begin{observacao}
-	Quando $I = A$ ou $I = \{0_A\}$, dizemos que $I$ {\'e} um \textbf{ideal trivial}.
+    Quando $I = A$ ou $I = \{0_A\}$, dizemos que $I$ {\'e} um \textbf{ideal trivial}.
 \end{observacao}
 
 \begin{exemplo}
     \begin{enumerate}[label={\arabic*})]
-		\item Em $\z$ todos os ideais n{\~a}o triviais s{\~a}o da forma $m\z$, $m > 1$.
-		\item No anel $\z_p$, onde $p$ {\'e} um n{\'u}mero primo, os {\'u}nicos ideais  s{\~a}o os triviais $\{\overline{0}\}$ e $\z_p$.
+        \item Em $\z$ todos os ideais n{\~a}o triviais s{\~a}o da forma $m\z$, $m > 1$.
+        \item No anel $\z_p$, onde $p$ {\'e} um n{\'u}mero primo, os {\'u}nicos ideais  s{\~a}o os triviais $\{\overline{0}\}$ e $\z_p$.
         \begin{solucao}
             De fato, seja $I \sub \z_p$ um ideal, $I \neq \{\overline{0}\}$. Provemos que $I = \z_p$. Para isso, vamos provar que $\overline{1} \in I$. Seja $\overline{a} \in I$,
             $\overline{a} \neq \overline{0}$, pois $I \neq \{\overline{0}\}$. Como $p$ {\'e} primo, $mdc(a,p) = 1$, da{\'\i} existe $\overline{b} \in \z_p$, $\overline{b} \neq
@@ -427,10 +427,10 @@
 
         \item Os {\'u}nicos ideais n{\~a}o triviais de $\z_8 = \{\overline{0}, \overline{1}, \overline{2}, \overline{3}, \overline{4}, \overline{5}, \overline{6}, \overline{7}\}$
             s{\~a}o:
-		\begin{align*}
-			I_1 &= \{\overline{0}, \overline{2}, \overline{4}, \overline{6}\}\\
-			I_2 &=\{\overline{0}, \overline{4}\}
-		\end{align*}
+        \begin{align*}
+            I_1 &= \{\overline{0}, \overline{2}, \overline{4}, \overline{6}\}\\
+            I_2 &=\{\overline{0}, \overline{4}\}
+        \end{align*}
 
         \item Verifique se s\~ao ideiais:
             \begin{enumerate}[label=({\alph*})]
@@ -479,65 +479,65 @@
 \end{exemplo}
 
 \begin{proposicao}
-	Seja $A$ um anel comutativo e $I$ um ideal de $A$. Ent{\~a}o:
-	\begin{enumerate}[label={\roman*})]
-	 	\item $0_{A}\in I$.
-	 	\item $-x \in I$ para todo $x \in I$.
-	 	\item Se $A$ é um anel unitário e $1_A \in I$, ent\~ao $I = A$.
-	\end{enumerate}
+    Seja $A$ um anel comutativo e $I$ um ideal de $A$. Ent{\~a}o:
+    \begin{enumerate}[label={\roman*})]
+         \item $0_{A}\in I$.
+         \item $-x \in I$ para todo $x \in I$.
+         \item Se $A$ é um anel unitário e $1_A \in I$, ent\~ao $I = A$.
+    \end{enumerate}
 \end{proposicao}
 \begin{prova}
-	\begin{enumerate}[label={\roman*})]
-		\item Da defini\c{c}\~ao de ideal temos $\alpha \cdot x \in I$ para todo $x \in I$ e todo $\alpha \in A$.
-		Assim dado $x \in I$ $0_A = 0_A \cdot x \in I$.
+    \begin{enumerate}[label={\roman*})]
+        \item Da defini\c{c}\~ao de ideal temos $\alpha \cdot x \in I$ para todo $x \in I$ e todo $\alpha \in A$.
+        Assim dado $x \in I$ $0_A = 0_A \cdot x \in I$.
 
-		\item Como $0_A \in I$, dado $x \in I$ da defini\c{c}\~ao de ideal segue que $0_A - x \in I$, isto \'e, $-x \in I$.
+        \item Como $0_A \in I$, dado $x \in I$ da defini\c{c}\~ao de ideal segue que $0_A - x \in I$, isto \'e, $-x \in I$.
 
         \item Suponha que $1_A \in I$. Como $I$ {\'e} ideal, para todo $\alpha \in A$ e todo $x \in I$ devemos ter $\alpha\cdot x \in I$. Assim, em particular, $1_A \cdot x \in
             I$ para todo $x \in A$. Logo, $A\sub I$ e como $I\sub A$, ent{\~a}o $I = A$.
-	\end{enumerate}
+    \end{enumerate}
 \end{prova}
 
 \section{Homomorfismo de An\'eis} % (fold)
 \label{sec:homomorfismo_de_aneis}
 
 \begin{definicao}
-	Um homomorfismo do anel $(A, +, \cdot)$ no anel $(B, \oplus, \otimes)$ {\'e} uma fun{\c c}{\~a}o $f : A \to B$ que satisfaz:
-	\begin{enumerate}[label={\roman*})]
-		\item $f(x + y) = f(x) \oplus f(y)$, para todos $x$, $y \in A$;
-		\item $f(x \cdot y) = f(x)\otimes f(y)$, para todos $x$, $y \in A$.
-		% \item $f(1_{A})=1_{B}$, onde $1_{A}$ {\'e} a unidade de A e $1_{B}$ {\'e} a unidade de B
-	\end{enumerate}
+    Um homomorfismo do anel $(A, +, \cdot)$ no anel $(B, \oplus, \otimes)$ {\'e} uma fun{\c c}{\~a}o $f : A \to B$ que satisfaz:
+    \begin{enumerate}[label={\roman*})]
+        \item $f(x + y) = f(x) \oplus f(y)$, para todos $x$, $y \in A$;
+        \item $f(x \cdot y) = f(x)\otimes f(y)$, para todos $x$, $y \in A$.
+        % \item $f(1_{A})=1_{B}$, onde $1_{A}$ {\'e} a unidade de A e $1_{B}$ {\'e} a unidade de B
+    \end{enumerate}
 \end{definicao}
 
 \begin{proposicao}
-	Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis e seja $f : A \to B$ um homomorfismo. Ent{\~a}o:
-	\begin{enumerate}[label={\roman*})]
-		\item $f(0_{A}) = 0_{B}$
-		\item $f(-x) = -f(x)$, para todo $x \in A$.
-	\end{enumerate}
+    Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis e seja $f : A \to B$ um homomorfismo. Ent{\~a}o:
+    \begin{enumerate}[label={\roman*})]
+        \item $f(0_{A}) = 0_{B}$
+        \item $f(-x) = -f(x)$, para todo $x \in A$.
+    \end{enumerate}
 \end{proposicao}
 \begin{prova}
-	\begin{enumerate}[label={\roman*})]
-		\item Fazendo $x = y = 0_{A}$, temos
-		\[
-			f(0_A) = f(0_A + 0_A) = f(0_A) \oplus f(0_A)
-		\]
-		Somando $-f(0_A)$ em ambos os lados obtemos
-		\begin{align*}
-			f(0_A) \oplus (-f(0_A)) &= (f(0_A)\oplus f(0_A)) \oplus (-f(0_A))\\
-			0_B &= f(0_A) \oplus 0_B\\
-			f(0_A) &= 0_B.
-		\end{align*}
+    \begin{enumerate}[label={\roman*})]
+        \item Fazendo $x = y = 0_{A}$, temos
+        \[
+            f(0_A) = f(0_A + 0_A) = f(0_A) \oplus f(0_A)
+        \]
+        Somando $-f(0_A)$ em ambos os lados obtemos
+        \begin{align*}
+            f(0_A) \oplus (-f(0_A)) &= (f(0_A)\oplus f(0_A)) \oplus (-f(0_A))\\
+            0_B &= f(0_A) \oplus 0_B\\
+            f(0_A) &= 0_B.
+        \end{align*}
 
-		\item Temos $0_B = f(0_A) = f(x + (-x)) = f(x)\oplus f(-x)$. Assim somando $-f(x)$ em ambos os lados obtemos
-		\begin{align*}
-			0_B\oplus(-f(x)) &= [f(x)\oplus f(-x)] + (-f(x))\\
-			-f(x) &= f(-x) \oplus (f(x) \oplus (-f(x)))\\
-			f(-x) &= -f(x)
-		\end{align*}
-		como quer{\'\i}amos.
-	\end{enumerate}
+        \item Temos $0_B = f(0_A) = f(x + (-x)) = f(x)\oplus f(-x)$. Assim somando $-f(x)$ em ambos os lados obtemos
+        \begin{align*}
+            0_B\oplus(-f(x)) &= [f(x)\oplus f(-x)] + (-f(x))\\
+            -f(x) &= f(-x) \oplus (f(x) \oplus (-f(x)))\\
+            f(-x) &= -f(x)
+        \end{align*}
+        como quer{\'\i}amos.
+    \end{enumerate}
 \end{prova}
 
 \begin{exemplo}
@@ -574,20 +574,20 @@
 
 
 \begin{definicao}Seja $f:A\rightarrow B$ um homomorfismo, onde $A$ e $B$ s{\~a}o an{\'e}is. Dizemos que
-	\begin{enumerate}[label={\roman*})]
-		\item $f$ {\'e} um epimorfismo se $f$ for sobrejetora.
-		\item $f$ {\'e} um monomorfismo se $f$ for injetora.
-		\item $f$ {\'e} um isomorfismo se $f$ for bijetora.
-		\item Quando $A=B$ e $f$ {\'e} um isomorfismo, ent{\~a}o $f$ {\'e} um automorfismo.
-	\end{enumerate}
+    \begin{enumerate}[label={\roman*})]
+        \item $f$ {\'e} um epimorfismo se $f$ for sobrejetora.
+        \item $f$ {\'e} um monomorfismo se $f$ for injetora.
+        \item $f$ {\'e} um isomorfismo se $f$ for bijetora.
+        \item Quando $A=B$ e $f$ {\'e} um isomorfismo, ent{\~a}o $f$ {\'e} um automorfismo.
+    \end{enumerate}
 \end{definicao}
 
 \begin{definicao}
-	Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis e $f : A \to B$ um homomorfismo de an\'eis. Ent\~ao o subconjunto de $A$ definido por
-	\[
-		\ker(f) = \{ x \in A \mid f(x) = 0_B\}
-	\]
-	\'e chamado de \textbf{kernel} ou \textbf{n\'ucleo} de $f$.
+    Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis e $f : A \to B$ um homomorfismo de an\'eis. Ent\~ao o subconjunto de $A$ definido por
+    \[
+        \ker(f) = \{ x \in A \mid f(x) = 0_B\}
+    \]
+    \'e chamado de \textbf{kernel} ou \textbf{n\'ucleo} de $f$.
 \end{definicao}
 
 \begin{exemplo}\label{exemplo_kernel_homomorfismo_aneis}
@@ -636,84 +636,84 @@
 \end{exemplo}
 
 \begin{proposicao}\label{homomorfismo_injetor}
-	Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis e $f : A \to B$ um homomorfismo de an\'eis. Ent\~ao:
-	\begin{enumerate}[label={\roman*})]
-		\item $\ker(f)$ \'e um subanel de $A$.
-		\item $f$ \'e injetora se, e somente se, $\ker(f) = \{0_A\}$.
-	\end{enumerate}
+    Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis e $f : A \to B$ um homomorfismo de an\'eis. Ent\~ao:
+    \begin{enumerate}[label={\roman*})]
+        \item $\ker(f)$ \'e um subanel de $A$.
+        \item $f$ \'e injetora se, e somente se, $\ker(f) = \{0_A\}$.
+    \end{enumerate}
 \end{proposicao}
 \begin{prova}
-	\begin{enumerate}[label={\roman*})]
-		\item Primeiro note que sendo $f$ \'e um homomorfismo ent\~ao $f(0_A) = 0_B$. Logo $0_A \in \ker(f)$, isto \'e, $\ker(f) \ne \emptyset$.
+    \begin{enumerate}[label={\roman*})]
+        \item Primeiro note que sendo $f$ \'e um homomorfismo ent\~ao $f(0_A) = 0_B$. Logo $0_A \in \ker(f)$, isto \'e, $\ker(f) \ne \emptyset$.
 
         Agora dados $x$, $y \in \ker(f)$ precisamos mostrar que $x - y \in \ker(f)$ e $xy \in \ker(f)$, e para mostrar isso basta mostrar que $f(x - y) = 0_B$ e$f(xy) = 0_B$.
         Inicialmente como $x$, $y \in \ker(f)$ da{\'\i} $f(x) = f(y) = 0_B$. Assim
-		\begin{align*}
-			f(x - y) &= f(x + (-y)) = f(x) \oplus f(-y) = f(x) \oplus (-f(y)) = 0_B \oplus 0_B = 0_B\\
-			f(xy) &= f(x)\otimes f(y) = 0_B \otimes 0_B = 0_B.
-		\end{align*}
-		Logo $x - y \in \ker(f)$ e $xy \in \ker(f)$. Portanto $\ker(f)$ \'e um subanel de $A$.
+        \begin{align*}
+            f(x - y) &= f(x + (-y)) = f(x) \oplus f(-y) = f(x) \oplus (-f(y)) = 0_B \oplus 0_B = 0_B\\
+            f(xy) &= f(x)\otimes f(y) = 0_B \otimes 0_B = 0_B.
+        \end{align*}
+        Logo $x - y \in \ker(f)$ e $xy \in \ker(f)$. Portanto $\ker(f)$ \'e um subanel de $A$.
 
-		\item Primeiro suponha que $f$ \'e injetora e vamos mostrar que $\ker(f) = \{0_A\}$. Para isso seja $x \in \ker(f)$. Ent\~ao
-		\[
-			f(x) = 0_B,
-		\]
-		mas $f$ sendo um homomorfismo temos $f(0_A) = 0_B$. Da{\'\i}
-		\[
-			f(x) = 0_B = f(0_A).
-		\]
-		E como $f$ \'e injetora, por hip\'otese, segue que $x = 0_A$. Logo $\ker(f) = \{0_A\}$.
+        \item Primeiro suponha que $f$ \'e injetora e vamos mostrar que $\ker(f) = \{0_A\}$. Para isso seja $x \in \ker(f)$. Ent\~ao
+        \[
+            f(x) = 0_B,
+        \]
+        mas $f$ sendo um homomorfismo temos $f(0_A) = 0_B$. Da{\'\i}
+        \[
+            f(x) = 0_B = f(0_A).
+        \]
+        E como $f$ \'e injetora, por hip\'otese, segue que $x = 0_A$. Logo $\ker(f) = \{0_A\}$.
 
-		Agora suponha que $\ker(f) = \{0_A\}$ e vamos mostrar que $f$ \'e injetora. Para isso sejam $x_1$, $x_2 \in A$ tais que $f(x_1) = f(x_2)$. Da{\'\i}
-		\begin{align*}
-			&f(x_1) = f(x_2)\\
-			&f(x_1) \oplus (-f(x_2)) = 0_B\\
-			&f(x_1) \oplus f(-x_2) = 0_B\\
-			&f(x_1 - x_2) = 0_B.
-		\end{align*}
-		Logo $x_1 - x_2 \in \ker(f) = \{0_A\}$. Com isso $x_1 - x_2 = 0_A$, isto \'e, $x_1 = x_2$. Portanto $f$ \'e injetora.
-	\end{enumerate}
+        Agora suponha que $\ker(f) = \{0_A\}$ e vamos mostrar que $f$ \'e injetora. Para isso sejam $x_1$, $x_2 \in A$ tais que $f(x_1) = f(x_2)$. Da{\'\i}
+        \begin{align*}
+            &f(x_1) = f(x_2)\\
+            &f(x_1) \oplus (-f(x_2)) = 0_B\\
+            &f(x_1) \oplus f(-x_2) = 0_B\\
+            &f(x_1 - x_2) = 0_B.
+        \end{align*}
+        Logo $x_1 - x_2 \in \ker(f) = \{0_A\}$. Com isso $x_1 - x_2 = 0_A$, isto \'e, $x_1 = x_2$. Portanto $f$ \'e injetora.
+    \end{enumerate}
 \end{prova}
 
 Usando a Proposição \ref{homomorfismo_injetor} vemos que o homomorfismo do Exemplo \ref{exemplo_kernel_homomorfismo_aneis} é um homomorfismo injetor.
 \begin{proposicao}
-	Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis e seja $f : A \to B$ um homomorfismo sobrejetor de an\'eis.
-	\begin{enumerate}[label={\roman*})]
-		\item Se $A$ tem unidade, ent\~ao $B$ tem unidade e
-		\[
-			f(1_A) = 1_B.
-		\]
-		\item Se $A$ tem unidade e $x \in A$ possui inverso multiplicativo, ent\~ao $f(x)$ tem inverso e
-		\[
-			[f(x)]^{-1} = f(x^{-1}).
-		\]
-	\end{enumerate}
+    Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis e seja $f : A \to B$ um homomorfismo sobrejetor de an\'eis.
+    \begin{enumerate}[label={\roman*})]
+        \item Se $A$ tem unidade, ent\~ao $B$ tem unidade e
+        \[
+            f(1_A) = 1_B.
+        \]
+        \item Se $A$ tem unidade e $x \in A$ possui inverso multiplicativo, ent\~ao $f(x)$ tem inverso e
+        \[
+            [f(x)]^{-1} = f(x^{-1}).
+        \]
+    \end{enumerate}
 \end{proposicao}
 \begin{prova}
-	\begin{enumerate}[label={\roman*})]
-		\item Inicialmente como num anel a unidade \'e \'unica, para mostrar que $B$ possui unidade basta mostrar que
-		\[
-			y\otimes f(1_A) = y = f(1_A)\otimes y
-		\]
-		para todo $y \in B$. Sendo assim, seja $y \in B$. Como $f$ \'e sobrejetor ent\~ao existe $x \in A$ tal que $f(x) = y$. Assim
-		\begin{align*}
-			y\otimes f(1_A) &= f(x) \otimes f(1_A) = f(x\cdot 1_A) = f(x) = y\\
-			f(1_A)\otimes y &= f(1_A) \otimes f(x) = f(1_A\cdot x) = f(x) = y
-		\end{align*}
-		para todo $y \in B$. Portanto $B$ possui unidade e $1_B = f(1_A)$.
+    \begin{enumerate}[label={\roman*})]
+        \item Inicialmente como num anel a unidade \'e \'unica, para mostrar que $B$ possui unidade basta mostrar que
+        \[
+            y\otimes f(1_A) = y = f(1_A)\otimes y
+        \]
+        para todo $y \in B$. Sendo assim, seja $y \in B$. Como $f$ \'e sobrejetor ent\~ao existe $x \in A$ tal que $f(x) = y$. Assim
+        \begin{align*}
+            y\otimes f(1_A) &= f(x) \otimes f(1_A) = f(x\cdot 1_A) = f(x) = y\\
+            f(1_A)\otimes y &= f(1_A) \otimes f(x) = f(1_A\cdot x) = f(x) = y
+        \end{align*}
+        para todo $y \in B$. Portanto $B$ possui unidade e $1_B = f(1_A)$.
 
-		\item Novamente, devido \`a unicidade do inverso em um anel, para mostrar que $f(x)$ possui inverso basta mostrar que
-		\[
-			f(x)\otimes f(x^{-1}) = 1_B = f(x^{-1})\otimes f(x)
-		\]
+        \item Novamente, devido \`a unicidade do inverso em um anel, para mostrar que $f(x)$ possui inverso basta mostrar que
+        \[
+            f(x)\otimes f(x^{-1}) = 1_B = f(x^{-1})\otimes f(x)
+        \]
         desde que $x \in A$ possua inverso multiplicativo. Sendo assim suponha que $x \in A$ possui inverso multiplicativo. Seja $x^{-1}$ o inverso multiplicativo de $x$ em $A$.
         Temos
-		\begin{align*}
-			f(x)\otimes f(x^{-1}) &= f(x\cdot x^{-1}) = f(1_A) = 1_B\\
-			f(x^{-1})\otimes f(x) &= f(x^{-1}\cdot x) = f(1_A) = 1_B
-		\end{align*}
-		Portanto $f(x)$ possui inverso multiplicativo e $[f(x)]^{-1} = f(x^{-1})$, como quer{\'\i}amos.
-	\end{enumerate}
+        \begin{align*}
+            f(x)\otimes f(x^{-1}) &= f(x\cdot x^{-1}) = f(1_A) = 1_B\\
+            f(x^{-1})\otimes f(x) &= f(x^{-1}\cdot x) = f(1_A) = 1_B
+        \end{align*}
+        Portanto $f(x)$ possui inverso multiplicativo e $[f(x)]^{-1} = f(x^{-1})$, como quer{\'\i}amos.
+    \end{enumerate}
 \end{prova}
 
 \section{Anel Quociente} % (fold)
@@ -725,28 +725,28 @@ Usando a Proposição \ref{homomorfismo_injetor} vemos que o homomorfismo do Exe
 \end{definicao}
 
 \begin{proposicao}
-	A congru{\^e}ncia m{\'o}dulo $I$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia em $A \times A$, onde $A$ anel comutativo unit{\'a}rio.
+    A congru{\^e}ncia m{\'o}dulo $I$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia em $A \times A$, onde $A$ anel comutativo unit{\'a}rio.
 \end{proposicao}
 \begin{prova}
-	Como $0 = 0_{A} \in I$ e para todo $x \in I$, $x - x = 0 \in I$, ent{\~a}o $x \equiv x \pmod I$.
+    Como $0 = 0_{A} \in I$ e para todo $x \in I$, $x - x = 0 \in I$, ent{\~a}o $x \equiv x \pmod I$.
 
-	Suponha que $x\equiv y \pmod I$. Ent{\~a}o $x - y \in I$. Como $-1 \in A$, $y - x = -(x - y) = -[(x - y)1] = (x - y)(-1) \in I$, ou seja, $y\equiv x \pmod I$.
+    Suponha que $x\equiv y \pmod I$. Ent{\~a}o $x - y \in I$. Como $-1 \in A$, $y - x = -(x - y) = -[(x - y)1] = (x - y)(-1) \in I$, ou seja, $y\equiv x \pmod I$.
 
-	Agora, se $x\equiv y \pmod I$ e $y\equiv z \pmod I$, ent{\~a}o $x - y \in I$ e $y - z \in I$. Da{\'\i}, $x - z = (x - z) + (y - z)\in I$, ou seja, $x\equiv z \pmod I$.
+    Agora, se $x\equiv y \pmod I$ e $y\equiv z \pmod I$, ent{\~a}o $x - y \in I$ e $y - z \in I$. Da{\'\i}, $x - z = (x - z) + (y - z)\in I$, ou seja, $x\equiv z \pmod I$.
 
-	Logo, {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia.
+    Logo, {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia.
 \end{prova}
 
 Seja $y \in A$. A classe de equival{\^e}ncia m{\'o}dulo $I$ de $y$ {\'e}
 \[
-	C(y) = \{x \in A \mid x\equiv y \pmod I\} = \{x \in A \mid x - y \in I\}.
+    C(y) = \{x \in A \mid x\equiv y \pmod I\} = \{x \in A \mid x - y \in I\}.
 \]
 
 Agora, $x - y \in I$ significa que existe $t \in I$, tal que $x - y = t$. Logo, $x = y + t$, onde $t \in I$.
 
 Assim,
 \[
-	C(y) = \{y + t\mid t \in I\} = y + I.
+    C(y) = \{y + t\mid t \in I\} = y + I.
 \]
 
 \begin{observacao}
@@ -755,76 +755,76 @@ Assim,
 \end{observacao}
 
 \begin{exemplos}
-	\begin{enumerate}[label={\arabic*})]
-		\item Seja $A$ um anel com unidade e $I_{1} = \{0\}$ e $I_{2} = A$ ideais. Ent\~ao:
-		\begin{enumerate}[label={\roman*})]
-		\item Dado $x \in A$:
-		\[
-			C(x) = x + I_{1} = \{x + 0\} = \{x\}.
-		\]
-		Assim $\dfrac{A}{I_{1}} = \{x + I \mid x \in A\}$, logo existem tantas classes de equival{\^e}ncia quantos forem os elementos de $A$.
+    \begin{enumerate}[label={\arabic*})]
+        \item Seja $A$ um anel com unidade e $I_{1} = \{0\}$ e $I_{2} = A$ ideais. Ent\~ao:
+        \begin{enumerate}[label={\roman*})]
+        \item Dado $x \in A$:
+        \[
+            C(x) = x + I_{1} = \{x + 0\} = \{x\}.
+        \]
+        Assim $\dfrac{A}{I_{1}} = \{x + I \mid x \in A\}$, logo existem tantas classes de equival{\^e}ncia quantos forem os elementos de $A$.
 
-		\item Para $I_{2} = A$ temos:
-		\[
-			C(0_A) = 0_A + I = \{0_A + t \mid t \in I_{2}\}.
-		\]
-		Como $I_2 = A$, para todo $x \in A$ temos $x \in C(0_A)$ logo existem uma \'unica classe de equival\^encia
-		e $\dfrac{A}{I_{2}} = \{0_{A} + I\}$.
-	\end{enumerate}
+        \item Para $I_{2} = A$ temos:
+        \[
+            C(0_A) = 0_A + I = \{0_A + t \mid t \in I_{2}\}.
+        \]
+        Como $I_2 = A$, para todo $x \in A$ temos $x \in C(0_A)$ logo existem uma \'unica classe de equival\^encia
+        e $\dfrac{A}{I_{2}} = \{0_{A} + I\}$.
+    \end{enumerate}
 
     \item Seja $A = \z$. Sabemos que os ideais de $\z$ s{\~a}o da forma $m\z$, $m > 1$. Seja $I = m\z$ um ideal de $\z$. Assim $x\equiv y \pmod I$ se, e s\'o se, $x - y \in I$.
         Mais isso ocorre se, e somente se, $x - y = mk $, para algum $k \in \z$. Logo $x\equiv y \pmod I$ se, e s\'o se, $m\mid (x - y)$. Portanto, $\dfrac{\z}{I} = \z_m$.
-	\end{enumerate}
+    \end{enumerate}
 \end{exemplos}
 
 
 Agora seja $I$ ideal e $A$ um anel comutativo unitário. Temos
 \[
-	\dfrac{A}{I} = \{y + I \mid y \in A\}\\
+    \dfrac{A}{I} = \{y + I \mid y \in A\}\\
 \]
 onde $y + I = \{y + t \mid t \in I\}$ e $y \in A$.
 
 Vamos definir uma soma $\oplus$ e um produto $\otimes$ em $\dfrac{A}{I}$ por
 \begin{align*}
-	(x + I)\oplus(y + I) &= (x + y) + I\\
-	(x + I)\otimes(y + I) &= (xy) + I
+    (x + I)\oplus(y + I) &= (x + y) + I\\
+    (x + I)\otimes(y + I) &= (xy) + I
 \end{align*}
 para $x + I$, $y + I \in \dfrac{A}{I}$.
 
 Verifiquemos que a soma e o produto em $\dfrac{A}{I}$ n{\~a}o dependem do representante da classe de equival{\^e}ncia.
 Para isso sejam $x_1 + I$, $x_2 + I$, $y_1 + I$, $y_2 + I \in \dfrac{A}{I}$ tais que
 \begin{align*}
-	x_1 + I &= x_2 + I\\
-	y_1 + I &= y_2 + I
+    x_1 + I &= x_2 + I\\
+    y_1 + I &= y_2 + I
 \end{align*}
 
 Ent{\~a}o
 \begin{align*}
-	(x_1 + I) \oplus (y_1 + I) &= (x_1 + y_1) + I\\
-	(x_2 + I) \oplus (y_2 + I) &= (x_2 + y_2) + I
+    (x_1 + I) \oplus (y_1 + I) &= (x_1 + y_1) + I\\
+    (x_2 + I) \oplus (y_2 + I) &= (x_2 + y_2) + I
 \end{align*}
 
 Como $x_1 + I = x_2 + I$, ent{\~a}o $x_1 - x_2 \in I$ e como $y_1 + I = y_2 + I$, ent{\~a}o $y_1 = y_2 \in I$. Mas $I$ {\'e} ideal, logo $(x_1 - x_2) + (y_1 - y_2) = (x_1 + y_1)
 - (x_2 + y_2) \in I$, ou seja
 \[
-	(x_1 + I) \oplus (y_1 + I) = (x_2 + I) \oplus (y_2 + I).
+    (x_1 + I) \oplus (y_1 + I) = (x_2 + I) \oplus (y_2 + I).
 \]
 
 Agora,
 \begin{align*}
-	(x_1 + I) \otimes (y_1 + I) &= (x_1y_1) + I\\
-	(x_2 + I) \otimes (y_2 + I) &= (x_2y_2) + I
+    (x_1 + I) \otimes (y_1 + I) &= (x_1y_1) + I\\
+    (x_2 + I) \otimes (y_2 + I) &= (x_2y_2) + I
 \end{align*}
 
 Como $(x_1 - x_2)y_1 \in I$ e $(y_1 - y_2)x_2 \in I$ ent\~ao
 \begin{align*}
-	&(x_1 - x_2)y_1 + (y_1 - y_2)x_2 \in I\\
-	&x_1y_2-\underbrace{x_2y_1 + y_1x_2}_{= 0} - y_2x_2 \in I\\
-	&x_1y_1 - x_2y_2\in I,
+    &(x_1 - x_2)y_1 + (y_1 - y_2)x_2 \in I\\
+    &x_1y_2-\underbrace{x_2y_1 + y_1x_2}_{= 0} - y_2x_2 \in I\\
+    &x_1y_1 - x_2y_2\in I,
 \end{align*}
 ou seja, $xy + I = x_2y_2 + I$. Portanto,
 \[
-	(x_1 + I) \otimes (y + I) = (x_2 + I) \otimes (y_2 + I).
+    (x_1 + I) \otimes (y + I) = (x_2 + I) \otimes (y_2 + I).
 \]
 
 \begin{teorema}

@@ -14,108 +14,108 @@
 Nas considera\c{c}\~oes que faremos a seguir uma opera\c{c}\~ao bin\'aria $f$ sobre $A$ que associa a cada par ordenado $(x, y) \in A \times A$ um elemento $f(x, y) \in A$ ser\'a denotada simplesmente por $*$. Assim escreveremos $f(x, y) = x*y$. Por exemplo, a opera\c{c}\~ao $* : \n \times \n \to \n$ tal que $x*y = x^y$ est\'a bem definida pois $x^y \in \n$ sempre que $x$, $y \in \n$. Observe que esta opera\c{c}\~ao n\~ao pode ser definida em $\z$ pois, por exemplo $2^{-1} \notin \z$. Tamb\'em n\~ao pode ser definida em $\rac$ pois $2^{1/2} \notin \rac$.
 
 \begin{definicao}
-	Seja $G$ um conjunto n{\~a}o vazio no qual est\'a definida uma opera{\c c}{\~a}o bin{\'a}ria $*$ tal que:
-	\begin{enumerate}[label={\roman*})]
-		\item Para todos $x$, $y$, $z\in G$:
-		\[
-			(x*y)*z=x*(y*z)
-		\]
+    Seja $G$ um conjunto n{\~a}o vazio no qual est\'a definida uma opera{\c c}{\~a}o bin{\'a}ria $*$ tal que:
+    \begin{enumerate}[label={\roman*})]
+        \item Para todos $x$, $y$, $z\in G$:
+        \[
+            (x*y)*z=x*(y*z)
+        \]
 
-		\item Existe $e \in G$ tal que
-		\[
-			x*e = x = e*x
-		\]
-		para todo $x \in G$. Tal elemento $e$ {\'e} chamado de \textbf{elemento neutro} ou \textbf{unidade} de $G$.
+        \item Existe $e \in G$ tal que
+        \[
+            x*e = x = e*x
+        \]
+        para todo $x \in G$. Tal elemento $e$ {\'e} chamado de \textbf{elemento neutro} ou \textbf{unidade} de $G$.
 
-		\item Para cada $x \in G$, existe $y \in G$ tal que
-		\[
-			x*y = e = y*x
-		\]
-		O elemento $y$ {\'e} chamado de \textbf{inverso} ou \textbf{oposto} de $x$.
-	\end{enumerate}
-	Nesse caso dizemos que o par $(G, *)$ \'e um \textbf{grupo}.
+        \item Para cada $x \in G$, existe $y \in G$ tal que
+        \[
+            x*y = e = y*x
+        \]
+        O elemento $y$ {\'e} chamado de \textbf{inverso} ou \textbf{oposto} de $x$.
+    \end{enumerate}
+    Nesse caso dizemos que o par $(G, *)$ \'e um \textbf{grupo}.
 \end{definicao}
 
 \begin{observacao}
-	Quando $*$ {\'e} uma soma, dizemos que $(G,*)$ {\'e} um \textbf{grupo aditivo}. Se $*$ {\'e} uma multiplica{\c c}{\~a}o, dizemos que $(G,*)$ {\'e} um \textbf{grupo multiplicativo}.
+    Quando $*$ {\'e} uma soma, dizemos que $(G,*)$ {\'e} um \textbf{grupo aditivo}. Se $*$ {\'e} uma multiplica{\c c}{\~a}o, dizemos que $(G,*)$ {\'e} um \textbf{grupo multiplicativo}.
 
-	Al\'em disso, quando n\~ao houver chance de confus\~ao com rela\c{c}\~ao \`a opera\c{c}\~ao do grupo $(G, *)$ vamos dizer simplesmente que $G$ \'e um grupo.
+    Al\'em disso, quando n\~ao houver chance de confus\~ao com rela\c{c}\~ao \`a opera\c{c}\~ao do grupo $(G, *)$ vamos dizer simplesmente que $G$ \'e um grupo.
 \end{observacao}
 
 \begin{definicao}
-	Um grupo $(G,*)$ {\'e} chamado de \textbf{grupo comutativo} ou \textbf{abeliano} quando $*$ {\'e} comutativa, ou seja, quando
-	\[
-		x*y = y*x
-	\]
-	para todos $x$, $y \in G$.
+    Um grupo $(G,*)$ {\'e} chamado de \textbf{grupo comutativo} ou \textbf{abeliano} quando $*$ {\'e} comutativa, ou seja, quando
+    \[
+        x*y = y*x
+    \]
+    para todos $x$, $y \in G$.
 \end{definicao}
 
 \begin{exemplos}
-	\begin{enumerate}[label={\arabic*})]
-		\item $(\z,+)$ {\'e} um grupo abeliano.
-		\item $(\rac,+)$ {\'e} um grupo abeliano.
-		\item $(\rac^*,\cdot)$ {\'e} um grupo abeliano.
-		\item $(\real,+)$ {\'e} um grupo abeliano.
-		\item $(\real^*,\cdot)$ {\'e} um grupo abeliano.
-		\item Considere o conjunto dos n{\'u}meros reais $\mathbb{R}$ com a opera{\c c}{\~a}o $*$ definida por
-		\[
-			x*y = x + y - 3
-		\]
-		para $x$, $y \in \mathbb{R}$. Ent{\~a}o $(\mathbb{R}, *)$ {\'e} um grupo abeliano.
-		\begin{solucao}
-			De fato,
-			\begin{enumerate}[label={\roman*})]
-				\item Para todos $x$, $y$, $z \in \real$
-				\begin{align*}
-					(x*y)*z &= (x+y-3)*z = (x+y-3)+z-3\\
-					&= x+(y-3+z)-3 = x+(y+z-3)-3 = x*(y+z-3)\\
-					&= x*(y*z)
-				\end{align*}
+    \begin{enumerate}[label={\arabic*})]
+        \item $(\z,+)$ {\'e} um grupo abeliano.
+        \item $(\rac,+)$ {\'e} um grupo abeliano.
+        \item $(\rac^*,\cdot)$ {\'e} um grupo abeliano.
+        \item $(\real,+)$ {\'e} um grupo abeliano.
+        \item $(\real^*,\cdot)$ {\'e} um grupo abeliano.
+        \item Considere o conjunto dos n{\'u}meros reais $\mathbb{R}$ com a opera{\c c}{\~a}o $*$ definida por
+        \[
+            x*y = x + y - 3
+        \]
+        para $x$, $y \in \mathbb{R}$. Ent{\~a}o $(\mathbb{R}, *)$ {\'e} um grupo abeliano.
+        \begin{solucao}
+            De fato,
+            \begin{enumerate}[label={\roman*})]
+                \item Para todos $x$, $y$, $z \in \real$
+                \begin{align*}
+                    (x*y)*z &= (x+y-3)*z = (x+y-3)+z-3\\
+                    &= x+(y-3+z)-3 = x+(y+z-3)-3 = x*(y+z-3)\\
+                    &= x*(y*z)
+                \end{align*}
 
-				\item Para todo $x \in \mathbb{R}$, temos $x*3 = x + 3 - 3 = x = 3 * x$. Logo, 3 {\'e} o elemento neutro de $*$.
+                \item Para todo $x \in \mathbb{R}$, temos $x*3 = x + 3 - 3 = x = 3 * x$. Logo, 3 {\'e} o elemento neutro de $*$.
 
-				\item Dado $x \in \mathbb{R}$, tome $y = 6 - x \in \real$. Assim
-				\[
-					x*y = x + (6-x)-3 = 3 = y*x.
-				\]
-				Assim $y = 6 - x$ \'e o oposto de $x$ na opera\c{c}\~ao $*$ definida em $\real$.
-			\end{enumerate}
+                \item Dado $x \in \mathbb{R}$, tome $y = 6 - x \in \real$. Assim
+                \[
+                    x*y = x + (6-x)-3 = 3 = y*x.
+                \]
+                Assim $y = 6 - x$ \'e o oposto de $x$ na opera\c{c}\~ao $*$ definida em $\real$.
+            \end{enumerate}
 
-			Portanto $(\real, *)$ \'e um grupo.
+            Portanto $(\real, *)$ \'e um grupo.
 
-			Al\'em disso, para todos $x$, $y \in \real$
-			\[
-				x*y = x + y - 3 = y + x - 3 = y*x
-			\]
-			Logo, $(\real, *)$ {\'e} um grupo comutativo.
-		\end{solucao}
+            Al\'em disso, para todos $x$, $y \in \real$
+            \[
+                x*y = x + y - 3 = y + x - 3 = y*x
+            \]
+            Logo, $(\real, *)$ {\'e} um grupo comutativo.
+        \end{solucao}
 
-		\item $(\z_m,\oplus)$ {\'e} grupo.
+        \item $(\z_m,\oplus)$ {\'e} grupo.
 
-		\item $(\z_m-\{\overline{0}\},\otimes)$ {\'e} grupo?
-		\begin{solucao}
-			N\~ao, pois por exemplo, para $m = 4$ temos $\z_4-\{\overline{0}\} = \{\overline{1}, \overline{2}, \overline{3}\} = G$ e tomando $\overline{2}\in G$ temos $\overline{2} \otimes \overline{2} = \overline{0} \notin G$. Portanto a opera\c{c}\~ao $\otimes$ n\~ao \'e uma opera\c{c}\~ao bin\'aria em $G = \z_4 - \{\overline{0}\}$.
-		\end{solucao}
-	\end{enumerate}
+        \item $(\z_m-\{\overline{0}\},\otimes)$ {\'e} grupo?
+        \begin{solucao}
+            N\~ao, pois por exemplo, para $m = 4$ temos $\z_4-\{\overline{0}\} = \{\overline{1}, \overline{2}, \overline{3}\} = G$ e tomando $\overline{2}\in G$ temos $\overline{2} \otimes \overline{2} = \overline{0} \notin G$. Portanto a opera\c{c}\~ao $\otimes$ n\~ao \'e uma opera\c{c}\~ao bin\'aria em $G = \z_4 - \{\overline{0}\}$.
+        \end{solucao}
+    \end{enumerate}
 \end{exemplos}
 
 \begin{proposicao}
-	Seja $(G,*)$ um grupo. Ent\~ao:
-	\begin{enumerate}[label={\roman*})]
-		\item O elemento neutro de $G$ {\'e} {\'u}nico.
+    Seja $(G,*)$ um grupo. Ent\~ao:
+    \begin{enumerate}[label={\roman*})]
+        \item O elemento neutro de $G$ {\'e} {\'u}nico.
 
-		\item Existe um {\'u}nico inverso para cada $x \in G$.
+        \item Existe um {\'u}nico inverso para cada $x \in G$.
 
-		\item Para todos $x$, $y \in G$,
-		\[
-			(x*y)^{-1} = y^{-1}*x^{-1}
-		\]
-		Por indu{\c c}{\~a}o, $x_1$, $x_2$, \dots ,$x_{n-1}$, $x_n \in G$,
-		\[
-			(x_1*x_2*\cdots *x_{n-1}*x_{n})^{-1} = x^{-1}_{n}*x^{-1}_{n-1}*\cdots *x^{-1}_2*x^{-1}_1
-		\]
-		\item Para todo $x \in G$, $(x^{-1})^{-1} = x$.
-	\end{enumerate}
+        \item Para todos $x$, $y \in G$,
+        \[
+            (x*y)^{-1} = y^{-1}*x^{-1}
+        \]
+        Por indu{\c c}{\~a}o, $x_1$, $x_2$, \dots ,$x_{n-1}$, $x_n \in G$,
+        \[
+            (x_1*x_2*\cdots *x_{n-1}*x_{n})^{-1} = x^{-1}_{n}*x^{-1}_{n-1}*\cdots *x^{-1}_2*x^{-1}_1
+        \]
+        \item Para todo $x \in G$, $(x^{-1})^{-1} = x$.
+    \end{enumerate}
 \end{proposicao}
 
 
@@ -124,22 +124,22 @@ Nas considera\c{c}\~oes que faremos a seguir uma opera\c{c}\~ao bin\'aria $f$ so
 
 Seja $A$ um conjunto n\~ao vazio. Dada uma fun\c{c}\~ao $f : A \to A$, sabemos que $f$ possui inversa se, e somente se, $f$ \'e bijetora, Teorema \ref{teorema_funcao_inversa}. Assim considere o conjunto
 \[
-	\mathcal{S} = \{ f : A \to A \mid f \mbox{ \'e bijetora}\}
+    \mathcal{S} = \{ f : A \to A \mid f \mbox{ \'e bijetora}\}
 \]
 com a composi\c{c}\~ao de fun\c{c}\~oes $\circ$. Como $Id : A \to A$ tal que $Id(x) = x$ para todo $x \in A$ \'e uma fun\c{c}\~ao bijetora ent\~ao $\mathcal{S} \ne \emptyset$. Agora sejam $f$, $g$ e $h \in \mathcal{S}$. Para todo $x \in A$ temos
 \begin{align*}
-	[(f\circ g)\circ h](x) &= (f \circ g)(h(x)) = f(g(h(x)))\\
-	[f\circ(g\circ h)](x) &= f((g\circ h)(x)) = f(g(h(x)))
+    [(f\circ g)\circ h](x) &= (f \circ g)(h(x)) = f(g(h(x)))\\
+    [f\circ(g\circ h)](x) &= f((g\circ h)(x)) = f(g(h(x)))
 \end{align*}
 Logo $(f\circ g)\circ h = f\circ(g\circ h)$.
 
 Agora da Proposi\c{c}\~ao \ref{propriedades_identidade} sabemos que para toda $f \in \mathcal{S}$
 \[
-	f\circ Id = f = Id\circ f,
+    f\circ Id = f = Id\circ f,
 \]
 logo $Id$ \'e o elemento neutro da composi\c{c}\~ao. Al\'em disso, para toda $f \in \mathcal{S}$ existe $g \in \mathcal{S}$ tal que
 \[
-	f\circ g = Id = g \circ f
+    f\circ g = Id = g \circ f
 \]
 pois $f$ \'e bijetora. Logo todo elemento de $\mathcal{S}$ possui inverso.
 
@@ -152,78 +152,78 @@ Se $A = \{1\}$, ent\~ao s\'o existe uma fun\c{c}\~ao $f : A \to A$ que \'e bijet
 
 Se $A = \{1, 2\}$ ent\~ao podemos definir as seguintes fun\c{c}\~oes bijetoras em $A$:
 \begin{multicols}{2}
-	\begin{enumerate}
-		\item[] \begin{align*}
-			Id : A &\to A\\ Id(1) &= 1\\ Id(2) &= 2
-		\end{align*}
-		\item[]  \begin{align*}
-			f : A &\to A\\ f(1) &= 2\\ f(2) &= 1
-		\end{align*}
-	\end{enumerate}
+    \begin{enumerate}
+        \item[] \begin{align*}
+            Id : A &\to A\\ Id(1) &= 1\\ Id(2) &= 2
+        \end{align*}
+        \item[]  \begin{align*}
+            f : A &\to A\\ f(1) &= 2\\ f(2) &= 1
+        \end{align*}
+    \end{enumerate}
 \end{multicols}
 
 Assim $\mathcal{S} = S_2 = \{Id, f\}$ e $(S_2, \circ)$ \'e um grupo.
 \begin{table}[!htb]
 \centering
-	\begin{tabular}{|c|c|c|}
-	    \hline
-	    $\circ$ & $Id$ & $f$\T\\
-	    \hline
-	    $Id$ & $Id$ & $f$\T\\
-	    \hline
-	    $f$ & $f$ & $Id$\T\\
-	    \hline
-	\end{tabular}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        $\circ$ & $Id$ & $f$\T\\
+        \hline
+        $Id$ & $Id$ & $f$\T\\
+        \hline
+        $f$ & $f$ & $Id$\T\\
+        \hline
+    \end{tabular}
 \end{table}
 
 Al\'em disso, da tabela acima vemos que esse grupo \'e comutativo.
 
 Agora seja $A = \{1, 2, 3\}$. Podemos definir ent\~ao as seguintes fun\c{c}\~oes bijetoras em $A$:
 \begin{multicols}{3}
-	\begin{enumerate}
-		\item[] \begin{align*}
-			Id : A &\to A\\
-			Id(1) &= 1\\
-			Id(2) &= 2\\
-			Id(3) &= 3
-		\end{align*}
-		\item[] \begin{align*}
-			f_1 : A &\to A\\
-			f_1(1) &= 2\\
-			f_1(2) &= 1\\
-			f_1(3) &= 3
-		\end{align*}
-		\item[] \begin{align*}
-			f_2 : A &\to A\\
-			f_2(1) &= 3\\
-			f_2(2) &= 2\\
-			f_2(3) &= 1
-		\end{align*}
-		\item[] \begin{align*}
-			f_3 : A &\to A\\
-			f_3(1) &= 1\\
-			f_3(2) &= 3\\
-			f_3(3) &= 2
-		\end{align*}
-		\item[] \begin{align*}
-			f_4 : A &\to A\\
-			f_4(1) &= 2\\
-			f_4(2) &= 3\\
-			f_4(3) &= 1
-		\end{align*}
-		\item[] \begin{align*}
-			f_5 : A &\to A\\
-			f_5(1) &= 3\\
-			f_5(2) &= 1\\
-			f_5(3) &= 2
-		\end{align*}
-	\end{enumerate}
+    \begin{enumerate}
+        \item[] \begin{align*}
+            Id : A &\to A\\
+            Id(1) &= 1\\
+            Id(2) &= 2\\
+            Id(3) &= 3
+        \end{align*}
+        \item[] \begin{align*}
+            f_1 : A &\to A\\
+            f_1(1) &= 2\\
+            f_1(2) &= 1\\
+            f_1(3) &= 3
+        \end{align*}
+        \item[] \begin{align*}
+            f_2 : A &\to A\\
+            f_2(1) &= 3\\
+            f_2(2) &= 2\\
+            f_2(3) &= 1
+        \end{align*}
+        \item[] \begin{align*}
+            f_3 : A &\to A\\
+            f_3(1) &= 1\\
+            f_3(2) &= 3\\
+            f_3(3) &= 2
+        \end{align*}
+        \item[] \begin{align*}
+            f_4 : A &\to A\\
+            f_4(1) &= 2\\
+            f_4(2) &= 3\\
+            f_4(3) &= 1
+        \end{align*}
+        \item[] \begin{align*}
+            f_5 : A &\to A\\
+            f_5(1) &= 3\\
+            f_5(2) &= 1\\
+            f_5(3) &= 2
+        \end{align*}
+    \end{enumerate}
 \end{multicols}
 
 Logo $\mathcal{S} = S_3 = \{Id, f_1, f_2, f_3, f_4, f_5\}$ e $(S_3, \circ)$ \'e um grupo. Nesse caso temos
 \begin{align*}
-	(f_1 \circ f_4)(1) &= f_1(f_4(1)) = f_1(2) = 1\\
-	(f_4 \circ f_1)(1) &= f_4(f_1(1)) = f_4(2) = 3
+    (f_1 \circ f_4)(1) &= f_1(f_4(1)) = f_1(2) = 1\\
+    (f_4 \circ f_1)(1) &= f_4(f_1(1)) = f_4(2) = 3
 \end{align*}
 da{\'\i} $(f_1 \circ f_4)(1) \ne (f_4 \circ f_1)(1)$, isto \'e, $f_1 \circ f_4 \ne f_4 \circ f_1$. Portanto o grupo $(S_3, \circ)$ n\~ao \'e comutativo.
 
@@ -232,127 +232,127 @@ Note que em $S_2$ temos $2 = 2!$ elementos e em $S_3$ temos $6 = 3!$ elementos.
 De modo geral, se $A = \{1, 2, 3, \dots, n\}$ ent\~ao existem exatamente $n!$ fun\c{c}\~oes $f : A \to A$ bijetoras. Assim o grupo $(S_n, \circ)$ possui $n!$ elementos e se $n \geqslant 3$ $S_n$ \'e um grupo n\~ao comutativo.
 
 \begin{definicao}
-	O grupo $S_n$ \'e chamado de \textbf{grupo sim\'etrico} ou \textbf{grupo de permuta\c{c}\~oes} em $A = \{1, 2, 3, \dots, n\}$.
+    O grupo $S_n$ \'e chamado de \textbf{grupo sim\'etrico} ou \textbf{grupo de permuta\c{c}\~oes} em $A = \{1, 2, 3, \dots, n\}$.
 \end{definicao}
 
 
 Um modo de representar os elementos de $S_n$ \'e o seguinte: vamos representar as fun\c{c}\~oes $f \in S_n$ na forma de uma matriz contendo 2 linhas e $n$ colunas. A primeira linha \'e o dom{\'\i}nio da fun\c{c}\~ao e a segunda cont\'em suas imagens. Assim se $f \in S_n$ escreveremos
 \[
-	f = \begin{pmatrix}
-		1 & 2 & 3 & \dots & n\\
-		f(1) & f(2) & f(3) & \dots & f(n)
-	\end{pmatrix}.
+    f = \begin{pmatrix}
+        1 & 2 & 3 & \dots & n\\
+        f(1) & f(2) & f(3) & \dots & f(n)
+    \end{pmatrix}.
 \]
 
 No caso de $S_3$ vamos escrever
 \begin{multicols}{3}
-	\begin{enumerate}
-		\item[] $Id = \begin{pmatrix}
-			1 & 2 & 3\\
-			1 & 2 & 3
-		\end{pmatrix}$
-		\item[] $f_1 = \begin{pmatrix}
-			1 & 2 & 3\\
-			2 & 1 & 3
-		\end{pmatrix}$
-		\item[] $f_2 = \begin{pmatrix}
-			1 & 2 & 3\\
-			3 & 2 & 1
-		\end{pmatrix}$
-		\item[] $f_3 = \begin{pmatrix}
-			1 & 2 & 3\\
-			1 & 3 & 2
-		\end{pmatrix}$
-		\item[] $f_4 = \begin{pmatrix}
-			1 & 2 & 3\\
-			2 & 3 & 1
-		\end{pmatrix}$
-		\item[] $f_5 = \begin{pmatrix}
-			1 & 2 & 3\\
-			3 & 1 & 2
-		\end{pmatrix}$
-	\end{enumerate}
+    \begin{enumerate}
+        \item[] $Id = \begin{pmatrix}
+            1 & 2 & 3\\
+            1 & 2 & 3
+        \end{pmatrix}$
+        \item[] $f_1 = \begin{pmatrix}
+            1 & 2 & 3\\
+            2 & 1 & 3
+        \end{pmatrix}$
+        \item[] $f_2 = \begin{pmatrix}
+            1 & 2 & 3\\
+            3 & 2 & 1
+        \end{pmatrix}$
+        \item[] $f_3 = \begin{pmatrix}
+            1 & 2 & 3\\
+            1 & 3 & 2
+        \end{pmatrix}$
+        \item[] $f_4 = \begin{pmatrix}
+            1 & 2 & 3\\
+            2 & 3 & 1
+        \end{pmatrix}$
+        \item[] $f_5 = \begin{pmatrix}
+            1 & 2 & 3\\
+            3 & 1 & 2
+        \end{pmatrix}$
+    \end{enumerate}
 \end{multicols}
 e da{\'\i}, por exemplo,
 \[
-	f_3\circ f_4 = \begin{pmatrix}
-			1 & 2 & 3\\
-			1 & 3 & 2
-		\end{pmatrix} \circ \begin{pmatrix}
-			1 & 2 & 3\\
-			2 & 3 & 1
-		\end{pmatrix} = \begin{pmatrix}
-			1 & 2 & 3\\
-			3 & 2 & 1
-		\end{pmatrix} = f_2.
+    f_3\circ f_4 = \begin{pmatrix}
+            1 & 2 & 3\\
+            1 & 3 & 2
+        \end{pmatrix} \circ \begin{pmatrix}
+            1 & 2 & 3\\
+            2 & 3 & 1
+        \end{pmatrix} = \begin{pmatrix}
+            1 & 2 & 3\\
+            3 & 2 & 1
+        \end{pmatrix} = f_2.
 \]
 
 % section grupo_sim\'etrico (end)
 
 
 \begin{definicao}
-	Seja $(G,*)$ um grupo. Se $G$ {\'e} um conjunto com uma quantidade finita de elementos, dizemos que $G$ {\'e} um \textbf{grupo finito}. Denotamos por $|G|$ o n{\'u}mero de elementos de $G$ e que ser{\'a} chamado de \textbf{ordem} de $G$ ou \textbf{cardinalidade} de $G$. Quando o conjunto $G$ n{\~a}o {\'e} finito, dizemos que $G$ {\'e} um \textbf{grupo infinito}.
+    Seja $(G,*)$ um grupo. Se $G$ {\'e} um conjunto com uma quantidade finita de elementos, dizemos que $G$ {\'e} um \textbf{grupo finito}. Denotamos por $|G|$ o n{\'u}mero de elementos de $G$ e que ser{\'a} chamado de \textbf{ordem} de $G$ ou \textbf{cardinalidade} de $G$. Quando o conjunto $G$ n{\~a}o {\'e} finito, dizemos que $G$ {\'e} um \textbf{grupo infinito}.
 \end{definicao}
 
 \begin{exemplos}
-	\begin{enumerate}[label={\arabic*})]
-		\item $(\z_m, +)$ {\'e} um grupo finito para todo $m>1$.
-		\item $(S_n, \circ)$ \'e um grupo finito com $n!$ elementos.
-		\item $(\z, +)$ {\'e} um grupo infinito.
-	\end{enumerate}
+    \begin{enumerate}[label={\arabic*})]
+        \item $(\z_m, +)$ {\'e} um grupo finito para todo $m>1$.
+        \item $(S_n, \circ)$ \'e um grupo finito com $n!$ elementos.
+        \item $(\z, +)$ {\'e} um grupo infinito.
+    \end{enumerate}
 \end{exemplos}
 
 \section{Subgrupos} % (fold)
 \label{sec:subgrupos}
 
 \begin{definicao}
-	Seja $(G,*)$ um grupo. Um subconjunto n{\~a}o vazio $H\sub G$ {\'e} chamado de \textbf{subgrupo} de $G$ se, e somente se, $(H,*)$ {\'e} um grupo.
+    Seja $(G,*)$ um grupo. Um subconjunto n{\~a}o vazio $H\sub G$ {\'e} chamado de \textbf{subgrupo} de $G$ se, e somente se, $(H,*)$ {\'e} um grupo.
 \end{definicao}
 
 \begin{proposicao}
-	Seja $G$ um grupo. Um subconjunto n{\~a}o vazio $H\subseteq G$ {\'e} um subgrupo de $G$ se, e somente se
-	\begin{enumerate}[label={\roman*})]
-		\item\label{subgrupo_condicao_1} $x^{-1}\in H$, para todo $x \in H$;
-		\item\label{subgrupo_condicao_2} $x*y\in H$, para todos $x$, $y \in H$.
-	\end{enumerate}
+    Seja $G$ um grupo. Um subconjunto n{\~a}o vazio $H\subseteq G$ {\'e} um subgrupo de $G$ se, e somente se
+    \begin{enumerate}[label={\roman*})]
+        \item\label{subgrupo_condicao_1} $x^{-1}\in H$, para todo $x \in H$;
+        \item\label{subgrupo_condicao_2} $x*y\in H$, para todos $x$, $y \in H$.
+    \end{enumerate}
 \end{proposicao}
 \begin{prova}
-	Se $H$ {\'e} subgrupo, ent{\~a}o $H$ {\'e} um grupo. Logo \ref{subgrupo_condicao_1} e \ref{subgrupo_condicao_2} s{\~a}o satisfeitos.
+    Se $H$ {\'e} subgrupo, ent{\~a}o $H$ {\'e} um grupo. Logo \ref{subgrupo_condicao_1} e \ref{subgrupo_condicao_2} s{\~a}o satisfeitos.
 
-	Agora provemos que se $H$ satisfaz \ref{subgrupo_condicao_1} e \ref{subgrupo_condicao_2}, ent{\~a}o $H$ {\'e} grupo.
+    Agora provemos que se $H$ satisfaz \ref{subgrupo_condicao_1} e \ref{subgrupo_condicao_2}, ent{\~a}o $H$ {\'e} grupo.
 
-	Como $G$ {\'e} grupo, ent{\~a}o $*$ {\'e} associativa, logo $*$ {\'e} associativa em $H$.
+    Como $G$ {\'e} grupo, ent{\~a}o $*$ {\'e} associativa, logo $*$ {\'e} associativa em $H$.
 
-	De \ref{subgrupo_condicao_1}, para todo $x \in H$, $x^{-1}\in H$. Mas de \ref{subgrupo_condicao_2}, para todos $x$, $y \in H,$ $x*y \in H$. Logo, se $x\in H$, ent{\~a}o $e = x*x^{-1} \in H$.
+    De \ref{subgrupo_condicao_1}, para todo $x \in H$, $x^{-1}\in H$. Mas de \ref{subgrupo_condicao_2}, para todos $x$, $y \in H,$ $x*y \in H$. Logo, se $x\in H$, ent{\~a}o $e = x*x^{-1} \in H$.
 
-	Novamente por \ref{subgrupo_condicao_1}, todo elemento de $H$ possui inverso em $H$.
+    Novamente por \ref{subgrupo_condicao_1}, todo elemento de $H$ possui inverso em $H$.
 
-	Portanto, $(H,*)$ {\'e} um grupo.
+    Portanto, $(H,*)$ {\'e} um grupo.
 \end{prova}
 
 
 \begin{exemplos}
-	\begin{enumerate}[label={\arabic*})]
-		\item Dado $(G,*)$ grupo, $H=\{e\}$ e $H=G$ s{\~a}o subgrupos de $G$, chamados de \textbf{subgrupos triviais}.
+    \begin{enumerate}[label={\arabic*})]
+        \item Dado $(G,*)$ grupo, $H=\{e\}$ e $H=G$ s{\~a}o subgrupos de $G$, chamados de \textbf{subgrupos triviais}.
 
-		\item Seja $(\mathbb{Z},+)$ um grupo. Tomando $H = m\z$, onde $m > 1$, ent{\~a}o $H$ {\'e} subgrupo de $\z$.
+        \item Seja $(\mathbb{Z},+)$ um grupo. Tomando $H = m\z$, onde $m > 1$, ent{\~a}o $H$ {\'e} subgrupo de $\z$.
 
-		\item $G = U(\z_8) = \{\overline{1}, \overline{3}, \overline{5}, \overline{7}\}$. Ent\~ao $(G,\odot)$ {\'e} um grupo com $|G| = 4$. Al\'em disso,
-		\begin{align*}
-			H_1 &= \{\overline{1}, \overline{3}\}\\
-			H_2 &= \{\overline{1}, \overline{5}\}\\
-			H_3 &= \{\overline{1}, \overline{7}\}
-		\end{align*}
-		s\~ao subgrupos de $G$.
+        \item $G = U(\z_8) = \{\overline{1}, \overline{3}, \overline{5}, \overline{7}\}$. Ent\~ao $(G,\odot)$ {\'e} um grupo com $|G| = 4$. Al\'em disso,
+        \begin{align*}
+            H_1 &= \{\overline{1}, \overline{3}\}\\
+            H_2 &= \{\overline{1}, \overline{5}\}\\
+            H_3 &= \{\overline{1}, \overline{7}\}
+        \end{align*}
+        s\~ao subgrupos de $G$.
 
-		\item Considere o grupo aditivo $M_2(\real)$. Ent\~ao o conjunto
+        \item Considere o grupo aditivo $M_2(\real)$. Ent\~ao o conjunto
         \[
             H = \left\{\begin{pmatrix}
                 a & b\\c & d
             \end{pmatrix} \in M_2(\real) \mid a + d = 0\right\}
         \]
         \'e um subgrupo de $M_2(\real)$.
-	\end{enumerate}
+    \end{enumerate}
 \end{exemplos}
 
 Seja $(G, *)$ um grupo. Para simplificar a escrita vamos adotar uma nota\c{c}\~ao multiplicativa e escrever $(G, *) = (G, \cdot)$. Assim, dados $x$, $y \in G$ vamos denotar
@@ -378,162 +378,162 @@ Nesse caso vamos dizer simplesmente que $G$ \'e um grupo.
     \end{enumerate}
 \end{proposicao}
 \begin{prova}
-	\begin{enumerate}[label={\roman*})]
-		\item Precisamos mostrar que a rela\c{c}\~ao $\sim$ definida acima satisfaz a Defini\c{c}\~ao \eqref{definicao_relacao_equivalencia}.
+    \begin{enumerate}[label={\roman*})]
+        \item Precisamos mostrar que a rela\c{c}\~ao $\sim$ definida acima satisfaz a Defini\c{c}\~ao \eqref{definicao_relacao_equivalencia}.
 
-		Denote por $e$ o elemento neutro do grupo $G$.
+        Denote por $e$ o elemento neutro do grupo $G$.
 
-		Primeiro, como $H$ \'e subgrupo de $G$, ent\~ao $e \in H$. Mas
-		\begin{align*}
-			e = x^{-1}x
-		\end{align*}
-		para todo $x \in G$. Logo $x \sim x$, como quer{\'\i}amos.
+        Primeiro, como $H$ \'e subgrupo de $G$, ent\~ao $e \in H$. Mas
+        \begin{align*}
+            e = x^{-1}x
+        \end{align*}
+        para todo $x \in G$. Logo $x \sim x$, como quer{\'\i}amos.
 
-		Suponha que $x \sim y$. Da{\'\i}
-		\[
-			x^{-1}y \in H.
-		\]
-		Isto \'e,
-		\[
-			x^{-1}y = l
-		\]
-		onde $l \in H$. Mas $H$ \'e subgrupo e $l \in H$, ent\~ao $l^{-1} \in H$. Agora
-		\begin{align*}
-			l^{-1} = (x^{-1}y)^{-1} = y^{-1}(x^{-1})^{-1} = y^{-1}x,
-		\end{align*}
-		isto \'e, $y^{-1}x \in H$. Com isso, $y \sim x$.
+        Suponha que $x \sim y$. Da{\'\i}
+        \[
+            x^{-1}y \in H.
+        \]
+        Isto \'e,
+        \[
+            x^{-1}y = l
+        \]
+        onde $l \in H$. Mas $H$ \'e subgrupo e $l \in H$, ent\~ao $l^{-1} \in H$. Agora
+        \begin{align*}
+            l^{-1} = (x^{-1}y)^{-1} = y^{-1}(x^{-1})^{-1} = y^{-1}x,
+        \end{align*}
+        isto \'e, $y^{-1}x \in H$. Com isso, $y \sim x$.
 
-		Finalmente, suponha que $x \sim y$ e $y \sim z$. Da{\'\i}
-		\begin{align*}
-			x^{-1}y &\in H\\
-			y^{-1}z &\in H
-		\end{align*}
-		e ent\~ao como $H$ \'e subgrupo de $G$ devemos ter
-		\begin{align*}
-			(x^{1}y)(y^{-1}z) &\in H\\
-			x^{-1}(yy^{-1})z &\in H\\
-			x^{-1}z &\in H.
-		\end{align*}
+        Finalmente, suponha que $x \sim y$ e $y \sim z$. Da{\'\i}
+        \begin{align*}
+            x^{-1}y &\in H\\
+            y^{-1}z &\in H
+        \end{align*}
+        e ent\~ao como $H$ \'e subgrupo de $G$ devemos ter
+        \begin{align*}
+            (x^{1}y)(y^{-1}z) &\in H\\
+            x^{-1}(yy^{-1})z &\in H\\
+            x^{-1}z &\in H.
+        \end{align*}
 
-		Ou seja, $x \sim z$.
+        Ou seja, $x \sim z$.
 
-		Portanto, $\sim$ \'e uma rela\c{c}\~ao de equival\^encia sobre $G$.
+        Portanto, $\sim$ \'e uma rela\c{c}\~ao de equival\^encia sobre $G$.
 
-		\item Seja $a \in G$. Agora, por defini\c{c}\~ao a classe de equival\^encia de $a$ \'e dada por
-		\[
-			\overline{a} = \{ x \in G \mid x \sim a\}.
-		\]
-		Queremos mostrar que $\overline{a} = aH$, onde
-		\[
-			aH = \{al \mid l \in H\}.
-		\]
+        \item Seja $a \in G$. Agora, por defini\c{c}\~ao a classe de equival\^encia de $a$ \'e dada por
+        \[
+            \overline{a} = \{ x \in G \mid x \sim a\}.
+        \]
+        Queremos mostrar que $\overline{a} = aH$, onde
+        \[
+            aH = \{al \mid l \in H\}.
+        \]
 
-		Seja $x \in \overline{a}$. Assim $x \sim a$, isto \'e, $x^{-1}a \in H$. Logo existe $l \in H$ tal que
-		\[
-			x^{-1}a = l.
-		\]
-		Mas ent\~ao $x = al^{-1}$. Com isso $x \in aH$, uma vez que $H$ \'e subgrupo e $l^{-1} \in H$.
+        Seja $x \in \overline{a}$. Assim $x \sim a$, isto \'e, $x^{-1}a \in H$. Logo existe $l \in H$ tal que
+        \[
+            x^{-1}a = l.
+        \]
+        Mas ent\~ao $x = al^{-1}$. Com isso $x \in aH$, uma vez que $H$ \'e subgrupo e $l^{-1} \in H$.
 
-		Agora seja $y \in aH$. Logo existe $t \in H$ tal que
-		\[
-			y = at.
-		\]
-		Ent\~ao
-		\[
-			ya^{-1} = t \in H.
-		\]
-		Logo $a \in y$, ou seja, $yx \in \overline{a}$.
+        Agora seja $y \in aH$. Logo existe $t \in H$ tal que
+        \[
+            y = at.
+        \]
+        Ent\~ao
+        \[
+            ya^{-1} = t \in H.
+        \]
+        Logo $a \in y$, ou seja, $yx \in \overline{a}$.
 
-		Portanto $\overline{a} = aH$, como quer{\'\i}amos.
-	\end{enumerate}
+        Portanto $\overline{a} = aH$, como quer{\'\i}amos.
+    \end{enumerate}
 \end{prova}
 
 \begin{proposicao}
     Seja $H$ um subgrupo de um grupo $G$. Ent\~ao duas classes laterais quaisquer m\'odulo $H$ s\~ao subconjuntos de $G$ que possuem a mesma cardinalidade, isto \'e, a mesma quantidade de elementos.
 \end{proposicao}
 \begin{prova}
-	Seja $H$ um subgrupo de um grupo $G$. Dados $a$, $b \in G$ para mostrar que $aH$ e $bH$ possuem a mesma cardinalidade vamos mostrar que sempre \'e poss{\'\i}vel definir uma fun\c{c}\~ao bijetora entre esses conjuntos, quaisquer que forem $a$ e $b \in G$.
+    Seja $H$ um subgrupo de um grupo $G$. Dados $a$, $b \in G$ para mostrar que $aH$ e $bH$ possuem a mesma cardinalidade vamos mostrar que sempre \'e poss{\'\i}vel definir uma fun\c{c}\~ao bijetora entre esses conjuntos, quaisquer que forem $a$ e $b \in G$.
 
-	Para isso, defina $f : aH \to bH$ por $f(al) = bl$, para $l \in H$. Mostremos que $f$ \'e bijetora, isto \'e, que $f$ \'e injetora e sobrejetora.
+    Para isso, defina $f : aH \to bH$ por $f(al) = bl$, para $l \in H$. Mostremos que $f$ \'e bijetora, isto \'e, que $f$ \'e injetora e sobrejetora.
 
-	Para mostrar que $f$ \'e injetora, sejam $al_1$, $al_2 \in aH$ tais que
-	\[
-		f(al_1) = f(al_2).
-	\]
-	Da{\'\i}
-	\begin{align*}
-		bl_1 &= bl_2\\
-		b^{-1}(bl_1) &= b^{-1}(bl_2)\\
-		l_1 &= l_2,
-	\end{align*}
-	com isso $al_1 = al_2$. Logo $f$ \'e injetora.
+    Para mostrar que $f$ \'e injetora, sejam $al_1$, $al_2 \in aH$ tais que
+    \[
+        f(al_1) = f(al_2).
+    \]
+    Da{\'\i}
+    \begin{align*}
+        bl_1 &= bl_2\\
+        b^{-1}(bl_1) &= b^{-1}(bl_2)\\
+        l_1 &= l_2,
+    \end{align*}
+    com isso $al_1 = al_2$. Logo $f$ \'e injetora.
 
-	Agora, seja $bt \in bH$. Tome $at \in aH$ e assim
-	\[
-		f(at) = bt,
-	\]
-	isto \'e, $f$ \'e sobrejetora.
+    Agora, seja $bt \in bH$. Tome $at \in aH$ e assim
+    \[
+        f(at) = bt,
+    \]
+    isto \'e, $f$ \'e sobrejetora.
 
-	Portanto $f$ \'e bijetora e com isso $aH$ e $bH$ t\^em a mesma cardinalidade, como quer{\'\i}amos.
+    Portanto $f$ \'e bijetora e com isso $aH$ e $bH$ t\^em a mesma cardinalidade, como quer{\'\i}amos.
 \end{prova}
 
 \begin{observacao}
-	Da proposi\c{c}\~ao anterior, sabemos que duas classes de equival\^encia posssuem sempre a mesma cardinalidade. Agora, tomando $e \in G$, o elemento neutro, temos
-	\[
-		eH = \{el \mid l \in H\} = H.
-	\]
+    Da proposi\c{c}\~ao anterior, sabemos que duas classes de equival\^encia posssuem sempre a mesma cardinalidade. Agora, tomando $e \in G$, o elemento neutro, temos
+    \[
+        eH = \{el \mid l \in H\} = H.
+    \]
 
-	Assim a cardinalidade de $aH$ \'e igual a cardinalidade de $eH = H$, independente de $a \in G$. Ou seja, a cardinalidade de qualquer classe de equival\^encia \'e sempre igual \`a cardinalidade de $H$.
+    Assim a cardinalidade de $aH$ \'e igual a cardinalidade de $eH = H$, independente de $a \in G$. Ou seja, a cardinalidade de qualquer classe de equival\^encia \'e sempre igual \`a cardinalidade de $H$.
 \end{observacao}
 
 \begin{definicao}
-	Para cada $a \in G$, a classe de equival\^encia $aH$ definida pela rela\c{c}\~ao de equival\^encia \eqref{relacao_equivalencia_subgrupo} \'e chamada de \textbf{classe lateral \`a direita, m\'odulo $H$}, determinada por $a$.
+    Para cada $a \in G$, a classe de equival\^encia $aH$ definida pela rela\c{c}\~ao de equival\^encia \eqref{relacao_equivalencia_subgrupo} \'e chamada de \textbf{classe lateral \`a direita, m\'odulo $H$}, determinada por $a$.
 \end{definicao}
 
 \begin{exemplos}
-	\begin{enumerate}[label={\arabic*})]
-		\item No grupo multiplicativo $G = \{1, -1, i, -i\}$, onde $i^2 = -1$. Considere o conjunto $H = \{1, -1\}$. Ent\~ao $H$ \'e um sugbrupo de $G$ e as classes laterais ser\~ao:
-		\begin{align*}
-			1H &= H = \{1, -1\}\\
-			iH &= \{il \mid l \in H\} = \{i, -i\}.
-		\end{align*}
+    \begin{enumerate}[label={\arabic*})]
+        \item No grupo multiplicativo $G = \{1, -1, i, -i\}$, onde $i^2 = -1$. Considere o conjunto $H = \{1, -1\}$. Ent\~ao $H$ \'e um sugbrupo de $G$ e as classes laterais ser\~ao:
+        \begin{align*}
+            1H &= H = \{1, -1\}\\
+            iH &= \{il \mid l \in H\} = \{i, -i\}.
+        \end{align*}
 
-		\item Considere o grupo multiplicativo $\real^*$ e $H = \{ x \in \real^* \mid x > 0\} \subset \real^*$. Ent\~ao $H$ \'e subgrupo de $\real^*$ e as classes laterais ser\~ao:
-		\begin{align*}
-			1H &= H = \{x \in \real^* \mid x > 0\}\\
-			aH &= \{al \mid l \in H\}.
-		\end{align*}
+        \item Considere o grupo multiplicativo $\real^*$ e $H = \{ x \in \real^* \mid x > 0\} \subset \real^*$. Ent\~ao $H$ \'e subgrupo de $\real^*$ e as classes laterais ser\~ao:
+        \begin{align*}
+            1H &= H = \{x \in \real^* \mid x > 0\}\\
+            aH &= \{al \mid l \in H\}.
+        \end{align*}
 
-		Se $a > 0$, ent\~ao $al > 0$ para todo $l \in H$ e com isso $al \in H$. Logo
-		\[
-			aH = H
-		\]
-		para todo $a > 0$.
+        Se $a > 0$, ent\~ao $al > 0$ para todo $l \in H$ e com isso $al \in H$. Logo
+        \[
+            aH = H
+        \]
+        para todo $a > 0$.
 
-		Se $a < 0$, ent\~ao $al < 0$ para todo $l \in H$. Logo
-		\[
-			aH = \{x \in \real^* \mid x < 0\}.
-		\]
+        Se $a < 0$, ent\~ao $al < 0$ para todo $l \in H$. Logo
+        \[
+            aH = \{x \in \real^* \mid x < 0\}.
+        \]
 
-		Com isso existem somente duas classes laterais que s\~ao: $H$ e $aH$, para $a < 0$.
+        Com isso existem somente duas classes laterais que s\~ao: $H$ e $aH$, para $a < 0$.
 
-		\item Considere agora o grupo sim\'etrico $G = S_3$. Denote por
-		\[
-			a = \begin{pmatrix}
-					1 & 2 & 3\\2 & 3 & 1
-				\end{pmatrix}, \quad
-			b = \begin{pmatrix}
-					1 & 2 & 3\\1 & 3 & 2
-				\end{pmatrix}.
-		\]
-		Fica como exerc{\'\i}cio verificar que $\{e, a, a^2 , b, ba, ba^2\} = S_3$. Aqui $e$ \'e a fun\c{c}\~ao identidade, $a^2 = a \circ a$, $ba = b \circ a$ e $ba^2 = b\circ(a\circ a)$. Seja $H = \{e, a , a^2\}$. Ent\~ao $H$ \'e subgrupo de $S_3$ e as classes laterais ser\~ao:
-		\begin{align*}
-			eH &= H\\
-			bH &= \{bl \mid l \in H\} = \{b, ba, ba^2\}.
-		\end{align*}
+        \item Considere agora o grupo sim\'etrico $G = S_3$. Denote por
+        \[
+            a = \begin{pmatrix}
+                    1 & 2 & 3\\2 & 3 & 1
+                \end{pmatrix}, \quad
+            b = \begin{pmatrix}
+                    1 & 2 & 3\\1 & 3 & 2
+                \end{pmatrix}.
+        \]
+        Fica como exerc{\'\i}cio verificar que $\{e, a, a^2 , b, ba, ba^2\} = S_3$. Aqui $e$ \'e a fun\c{c}\~ao identidade, $a^2 = a \circ a$, $ba = b \circ a$ e $ba^2 = b\circ(a\circ a)$. Seja $H = \{e, a , a^2\}$. Ent\~ao $H$ \'e subgrupo de $S_3$ e as classes laterais ser\~ao:
+        \begin{align*}
+            eH &= H\\
+            bH &= \{bl \mid l \in H\} = \{b, ba, ba^2\}.
+        \end{align*}
 
-		Logo existem somente duas classes laterais que s\~ao $H$ e $bH$.
-	\end{enumerate}
+        Logo existem somente duas classes laterais que s\~ao $H$ e $bH$.
+    \end{enumerate}
 \end{exemplos}
 
 \section{Grupos C{\'\i}clicos}
@@ -548,7 +548,7 @@ Caso a opera\c{c}\~ao $*$ seja do tipo multiplicativa, vamos escrever $(G, *) = 
 Com a nota\c{c}\~ao multiplicativa o inverso de um elemento $x \in G$ ser\'a denotado por $x^{-1}$.
 
 \begin{definicao}
-	Seja $G$ um grupo multiplicativo e denote por $e$ o elemento neutro de $G$. Se $x \in G$ e $m \in \z$, a \textbf{pot\^encia $m$-\'esima} de $x$, ou \textbf{pot\^encia de $x$ de expoente $m$}, \'e o elemento de $G$ denotado por
+    Seja $G$ um grupo multiplicativo e denote por $e$ o elemento neutro de $G$. Se $x \in G$ e $m \in \z$, a \textbf{pot\^encia $m$-\'esima} de $x$, ou \textbf{pot\^encia de $x$ de expoente $m$}, \'e o elemento de $G$ denotado por
         \[
             x^m
         \]
@@ -572,50 +572,50 @@ Com a nota\c{c}\~ao multiplicativa o inverso de um elemento $x \in G$ ser\'a den
         \]
         Ent\~ao:
         \begin{align*}
-        	A^0 &= \begin{pmatrix}
-        		1 & 0\\
-        		0 & 1
-        	\end{pmatrix}\\
-        	A^1 &= A\\
-        	A^2 &= A\cdot A = \begin{pmatrix}
-        		1 & 1\\
-        		2 & 3
-        	\end{pmatrix}\cdot \begin{pmatrix}
-        		1 & 1\\
-        		2 & 3
-        	\end{pmatrix} = \begin{pmatrix}
-        		3 & 4\\
-        		8 & 11
-        	\end{pmatrix}\\
-        	A^{-1} &= \begin{pmatrix}
-        		3 & -1\\
-        		-2 & 1
-        	\end{pmatrix}\\
-        	A^{-2} &= (A^2)^{-1}\begin{pmatrix}
-        		11 & -4\\
-        		-8 & 3
-        	\end{pmatrix}\\
+            A^0 &= \begin{pmatrix}
+                1 & 0\\
+                0 & 1
+            \end{pmatrix}\\
+            A^1 &= A\\
+            A^2 &= A\cdot A = \begin{pmatrix}
+                1 & 1\\
+                2 & 3
+            \end{pmatrix}\cdot \begin{pmatrix}
+                1 & 1\\
+                2 & 3
+            \end{pmatrix} = \begin{pmatrix}
+                3 & 4\\
+                8 & 11
+            \end{pmatrix}\\
+            A^{-1} &= \begin{pmatrix}
+                3 & -1\\
+                -2 & 1
+            \end{pmatrix}\\
+            A^{-2} &= (A^2)^{-1}\begin{pmatrix}
+                11 & -4\\
+                -8 & 3
+            \end{pmatrix}\\
         \end{align*}
         e podemos calcular $A^n$ para todo $n \in \z$.
 
         \item No grupo multiplicativo $\z_5^*$ seja $a = \overline{2}$. Ent\~ao:
         \begin{align*}
-        	\overline{2}^0 &= \overline{1}\\
-        	\overline{2}^1 &= \overline{2}\\
-        	\overline{2}^2 &= \overline{2}\odot \overline{2} = \overline{4}\\
-        	\overline{2}^3 &= (\overline{2})^2\odot \overline{2} = \overline{3}\\
-        	\overline{2}^4 &= (\overline{2})^3\odot \overline{2} = \overline{1}\\
-        	\overline{2}^5 &= (\overline{2})^4\odot \overline{2} = \overline{2}\\
+            \overline{2}^0 &= \overline{1}\\
+            \overline{2}^1 &= \overline{2}\\
+            \overline{2}^2 &= \overline{2}\odot \overline{2} = \overline{4}\\
+            \overline{2}^3 &= (\overline{2})^2\odot \overline{2} = \overline{3}\\
+            \overline{2}^4 &= (\overline{2})^3\odot \overline{2} = \overline{1}\\
+            \overline{2}^5 &= (\overline{2})^4\odot \overline{2} = \overline{2}\\
         \end{align*}
         e para $m \ge 5$ os valores se repetem.
 
         Agora,
         \begin{align*}
-        	\overline{2}^{-1} &= \overline{3}\\
-        	\overline{2}^{-2} &= (\overline{2}^2)^{-1} = \overline{4}^{-1} = \overline{4}\\
-        	\overline{2}^{-3} &= (\overline{2}^3)^{-1} = \overline{3}^{-1} = \overline{2}\\
-        	\overline{2}^{-3} &= (\overline{2}^4)^{-1} = \overline{1}^{-1} = \overline{1}\\
-        	\overline{2}^{-5} &= (\overline{2}^5)^{-1} = \overline{2}^{-1} = \overline{3}\\
+            \overline{2}^{-1} &= \overline{3}\\
+            \overline{2}^{-2} &= (\overline{2}^2)^{-1} = \overline{4}^{-1} = \overline{4}\\
+            \overline{2}^{-3} &= (\overline{2}^3)^{-1} = \overline{3}^{-1} = \overline{2}\\
+            \overline{2}^{-3} &= (\overline{2}^4)^{-1} = \overline{1}^{-1} = \overline{1}\\
+            \overline{2}^{-5} &= (\overline{2}^5)^{-1} = \overline{2}^{-1} = \overline{3}\\
         \end{align*}
         e para $m \le -5$ os valores se repetem.
 
@@ -627,52 +627,52 @@ Com a nota\c{c}\~ao multiplicativa o inverso de um elemento $x \in G$ ser\'a den
         \]
         Ent\~ao:
         \begin{align*}
-        	a^0 &= e\\
-        	a^1 &= a\\
-        	a^2 &= \begin{pmatrix}
-        		1 & 2 & 3\\
-        		2 & 3 & 1
-        	\end{pmatrix} \circ \begin{pmatrix}
-        		1 & 2 & 3\\
-        		2 & 3 & 1
-        	\end{pmatrix} = \begin{pmatrix}
-        		1 & 2 & 3\\
-        		3 & 1 & 2
-        	\end{pmatrix}\\
-        	a^3 &= a^2 \circ a = \begin{pmatrix}
-        		1 & 2 & 3\\
-        		3 & 1 & 2
-        	\end{pmatrix} \circ \begin{pmatrix}
-        		1 & 2 & 3\\
-        		2 & 3 & 1
-        	\end{pmatrix} = \begin{pmatrix}
-        		1 & 2 & 3\\
-        		1 & 2 & 3
-        	\end{pmatrix}
+            a^0 &= e\\
+            a^1 &= a\\
+            a^2 &= \begin{pmatrix}
+                1 & 2 & 3\\
+                2 & 3 & 1
+            \end{pmatrix} \circ \begin{pmatrix}
+                1 & 2 & 3\\
+                2 & 3 & 1
+            \end{pmatrix} = \begin{pmatrix}
+                1 & 2 & 3\\
+                3 & 1 & 2
+            \end{pmatrix}\\
+            a^3 &= a^2 \circ a = \begin{pmatrix}
+                1 & 2 & 3\\
+                3 & 1 & 2
+            \end{pmatrix} \circ \begin{pmatrix}
+                1 & 2 & 3\\
+                2 & 3 & 1
+            \end{pmatrix} = \begin{pmatrix}
+                1 & 2 & 3\\
+                1 & 2 & 3
+            \end{pmatrix}
         \end{align*}
         e para $m \ge 4$ os valores se repetem.
 
         Agora,
         \begin{align*}
-        	a^{-1} &= a^2\\
-        	a^{-2} &= (a^2)^{-1} = a\\
-        	a^{-3} &= (a^3)^{-1} = e^{-1} = e\\
+            a^{-1} &= a^2\\
+            a^{-2} &= (a^2)^{-1} = a\\
+            a^{-3} &= (a^3)^{-1} = e^{-1} = e\\
         \end{align*}
         e para $m \le -4$ os valores se repetem.
     \end{enumerate}
 \end{exemplos}
 
 \begin{proposicao}
-	Seja $G$ um grupo multiplicativo. Se $m$ e $n$ s\~ao n\'umeros inteiros e $x \in G$, ent\~ao
-	\begin{enumerate}[label={\roman*})]
-	    \item $x^mx^n = x^{m + n}$
+    Seja $G$ um grupo multiplicativo. Se $m$ e $n$ s\~ao n\'umeros inteiros e $x \in G$, ent\~ao
+    \begin{enumerate}[label={\roman*})]
+        \item $x^mx^n = x^{m + n}$
 
-	    \item $x^{-m} = (x^m)^{-1}$
+        \item $x^{-m} = (x^m)^{-1}$
 
-	    \item $(x^m)^n = x^{mn}$
+        \item $(x^m)^n = x^{mn}$
 
-	    \item $x^mx^n = x^nx^m$.
-	\end{enumerate}
+        \item $x^mx^n = x^nx^m$.
+    \end{enumerate}
 \end{proposicao}
 
 Seja $(G, *)$ um grupo.
@@ -685,18 +685,18 @@ Caso a opera\c{c}\~ao $*$ seja do tipo aditiva, vamos escrever $(G, *) = (G, +)$
 Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
 
 \begin{definicao}
-	Seja $G$ um grupo aditivo e denote por $e$ o elemento neutro de $G$. Se $x \in G$ e $m \in \z$, o \textbf{m\'ultiplo $m$-\'esimo} de $x$ \'e o elemento de $G$ denotado por
-	\[
-		m \cdot x
-	\]
-	e definido por:
-	\[
-		m \cdot x = \begin{cases}
-			e, & \mbox{se m = 0},\\
-			(m - 1)\cdot x + x, & \mbox{ se } m \ge 1,\\
-			-[(-m) \cdot x], & \mbox{ se } m < 0.
-		\end{cases}
-	\]
+    Seja $G$ um grupo aditivo e denote por $e$ o elemento neutro de $G$. Se $x \in G$ e $m \in \z$, o \textbf{m\'ultiplo $m$-\'esimo} de $x$ \'e o elemento de $G$ denotado por
+    \[
+        m \cdot x
+    \]
+    e definido por:
+    \[
+        m \cdot x = \begin{cases}
+            e, & \mbox{se m = 0},\\
+            (m - 1)\cdot x + x, & \mbox{ se } m \ge 1,\\
+            -[(-m) \cdot x], & \mbox{ se } m < 0.
+        \end{cases}
+    \]
 \end{definicao}
 
 \begin{proposicao}
@@ -711,10 +711,10 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
 \end{proposicao}
 
 \begin{definicao}
-	Seja $G$ um grupo multiplicativo e $x \in G$. Denote por $[x]$ o seguinte conjunto
-	\[
-	    [x] = \{x^m \mid m \in \z\} \subseteq G.
-	\]
+    Seja $G$ um grupo multiplicativo e $x \in G$. Denote por $[x]$ o seguinte conjunto
+    \[
+        [x] = \{x^m \mid m \in \z\} \subseteq G.
+    \]
 \end{definicao}
 
 \begin{proposicao}
@@ -726,28 +726,28 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
     \end{enumerate}
 \end{proposicao}
 \begin{prova}
-	\begin{enumerate}[label={\roman*})]
-		\item Como $x^0 = e$, ent\~ao $e \in [x]$ e com isso $[x] \ne \emptyset$.
+    \begin{enumerate}[label={\roman*})]
+        \item Como $x^0 = e$, ent\~ao $e \in [x]$ e com isso $[x] \ne \emptyset$.
 
-		Agora sejam $a$, $b \in [x]$. Assim existem $l$, $k \in \z$ tais que
-		\begin{align*}
-			a &= x^l\\
-			b &= x^k.
-		\end{align*}
-		Ent\~ao
-		\begin{align*}
-			a^{-1} &= (x^l)^{-1} = x^{-l} \in [x]\\
-			ab &= x^lx^k = x^{l + k} \in [x].
-		\end{align*}
-		Portanto, $[x]$ \'e um subgrupo de $G$.
+        Agora sejam $a$, $b \in [x]$. Assim existem $l$, $k \in \z$ tais que
+        \begin{align*}
+            a &= x^l\\
+            b &= x^k.
+        \end{align*}
+        Ent\~ao
+        \begin{align*}
+            a^{-1} &= (x^l)^{-1} = x^{-l} \in [x]\\
+            ab &= x^lx^k = x^{l + k} \in [x].
+        \end{align*}
+        Portanto, $[x]$ \'e um subgrupo de $G$.
 
-		\item Se $x \in H$ e $H$ \'e um subgrupo de $G$, ent\~ao como
-		\begin{align*}
-			x^m &=  x^{m-1}x\\
-			&=\underbrace{x\cdot x \cdots x}_{m\ vezes}
-		\end{align*}
-		segue que $x^m \in H$ para todo $m \in \z$. Logo $[x] \subseteq H$, como quer{\'\i}amos.
-	\end{enumerate}
+        \item Se $x \in H$ e $H$ \'e um subgrupo de $G$, ent\~ao como
+        \begin{align*}
+            x^m &=  x^{m-1}x\\
+            &=\underbrace{x\cdot x \cdots x}_{m\ vezes}
+        \end{align*}
+        segue que $x^m \in H$ para todo $m \in \z$. Logo $[x] \subseteq H$, como quer{\'\i}amos.
+    \end{enumerate}
 \end{prova}
 
 \begin{definicao}
@@ -762,7 +762,7 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
     \begin{enumerate}[label={\arabic*})]
         \item No grupo multiplicativo $\complex^*$, o subgrupo gerado por $i$ \'e:
         \[
-        	[i] = \{i^m \mid i \in \z\} = \{1, -1, i, -1\}.
+            [i] = \{i^m \mid i \in \z\} = \{1, -1, i, -1\}.
         \]
 
         \item No grupo $S_3$, o subgrupo gerado por
@@ -774,11 +774,11 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
         \]
         \'e
         \[
-        	[f] = \{f^m \mid m \in \z\} = \{e, f, f^2\}.
+            [f] = \{f^m \mid m \in \z\} = \{e, f, f^2\}.
         \]
         \item No grupo aditivo $\z$ o subgrupo gerado por $3$ \'e
         \[
-        	[3] = \{3m \mid m \in \z\} = 3\z.
+            [3] = \{3m \mid m \in \z\} = 3\z.
         \]
     \end{enumerate}
 \end{exemplos}
@@ -787,47 +787,47 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
     Todo subgrupo de um grupo c{\'\i}clico \'e tamb\'em c{\'\i}clico.
 \end{proposicao}
 \begin{prova}
-	Seja $G$ um grupo c{\'\i}clico. Queremos mostrar que se $H \subseteq G$ \'e um subgrupo, ent\~ao $H$ tamb\'em \'e c{\'\i}clico.
+    Seja $G$ um grupo c{\'\i}clico. Queremos mostrar que se $H \subseteq G$ \'e um subgrupo, ent\~ao $H$ tamb\'em \'e c{\'\i}clico.
 
-	Para isso suponha que $G = [x]$. Tome $H \subseteq G$ um subgrupo. Como os elementos de $G$ s\~ao todos da forma $x^m$, para $m \in \z$, ent\~ao os elementos de $H$ tamb\'em s\~ao pot\^encias de $x$.
+    Para isso suponha que $G = [x]$. Tome $H \subseteq G$ um subgrupo. Como os elementos de $G$ s\~ao todos da forma $x^m$, para $m \in \z$, ent\~ao os elementos de $H$ tamb\'em s\~ao pot\^encias de $x$.
 
-	Se $H = \{e\}$, ent\~ao $H = [e]$.
+    Se $H = \{e\}$, ent\~ao $H = [e]$.
 
-	Suponha que $H \ne \{e\}$. Assim existe $x^l \in H$ com $l \ne 0$. Como $H$ \'e subgrupo, ent\~ao $(x^l)^{-1} \in H$ para todo $x^l \in H$. Ou seja, existe em $H$ pelo menos um elemento $x^k$ com $k > 0$.
+    Suponha que $H \ne \{e\}$. Assim existe $x^l \in H$ com $l \ne 0$. Como $H$ \'e subgrupo, ent\~ao $(x^l)^{-1} \in H$ para todo $x^l \in H$. Ou seja, existe em $H$ pelo menos um elemento $x^k$ com $k > 0$.
 
-	Seja $\alpha > 0$ o menor n\'umero inteiro tal que $x^\alpha \in H$. Denote
-	\[
-		x^\alpha = b.
-	\]
-	Vamos mostrar que
-	\[
-		H = [b].
-	\]
-	Como $b = x^\alpha \in H$, ent\~ao pela Proposi\c{c}\~ao \eqref{proposicao_subgrupo_gerado}, segue que $[b] \subseteq H$.
+    Seja $\alpha > 0$ o menor n\'umero inteiro tal que $x^\alpha \in H$. Denote
+    \[
+        x^\alpha = b.
+    \]
+    Vamos mostrar que
+    \[
+        H = [b].
+    \]
+    Como $b = x^\alpha \in H$, ent\~ao pela Proposi\c{c}\~ao \eqref{proposicao_subgrupo_gerado}, segue que $[b] \subseteq H$.
 
-	Agora seja $y \in H \subseteq G = [x]$. Da{\'\i} $y = x^t$ para algum $t \in \z$.
+    Agora seja $y \in H \subseteq G = [x]$. Da{\'\i} $y = x^t$ para algum $t \in \z$.
 
-	Como $\alpha > 0$ podemos efetuar a divis\~ao inteira de $t$ por $\alpha$ obtendo
-	\[
-		t = q\alpha + r
-	\]
-	com $0 \le \alpha < r$. Assim
-	\begin{align*}
-		y = x^t = x^{q\alpha + r} = (x^{\alpha})^qx^r.
-	\end{align*}
-	Mas $x^\alpha = b \in H$, logo $b^q \in H$ e da{\'\i}
-	\[
-		x^r = b^{-q}y\in H
-	\]
-	pois $b^{-q}$, $y \in H$. Ou seja, $x^r \in H$. Mas $\alpha$ \'e o menor inteiro positivo tal que $x^\alpha \in H$ e $r < \alpha$. Logo $r = 0$ e com isso
-	\begin{align*}
-		y = x^{q\alpha + r} = (x^{\alpha})^qx^0 = (x^{\alpha})^q = b^q \in [b].
-	\end{align*}
-	Logo $y \in [b]$ e portanto
-	\[
-		H = [b]
-	\]
-	como quer{\'\i}amos.
+    Como $\alpha > 0$ podemos efetuar a divis\~ao inteira de $t$ por $\alpha$ obtendo
+    \[
+        t = q\alpha + r
+    \]
+    com $0 \le \alpha < r$. Assim
+    \begin{align*}
+        y = x^t = x^{q\alpha + r} = (x^{\alpha})^qx^r.
+    \end{align*}
+    Mas $x^\alpha = b \in H$, logo $b^q \in H$ e da{\'\i}
+    \[
+        x^r = b^{-q}y\in H
+    \]
+    pois $b^{-q}$, $y \in H$. Ou seja, $x^r \in H$. Mas $\alpha$ \'e o menor inteiro positivo tal que $x^\alpha \in H$ e $r < \alpha$. Logo $r = 0$ e com isso
+    \begin{align*}
+        y = x^{q\alpha + r} = (x^{\alpha})^qx^0 = (x^{\alpha})^q = b^q \in [b].
+    \end{align*}
+    Logo $y \in [b]$ e portanto
+    \[
+        H = [b]
+    \]
+    como quer{\'\i}amos.
 \end{prova}
 
 \begin{definicao}
@@ -845,95 +845,95 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
     \begin{enumerate}[label={\arabic*})]
         \item No grupo multiplicativo $\complex^*$ temos
         \begin{itemize}
-        	\item $o(1) = 1$  pois $1^1 = 1$
+            \item $o(1) = 1$  pois $1^1 = 1$
 
-        	\item $o(i) = 4$ pois
-        	\begin{align*}
-        		i^1 &= i\\
-        		i^2 &= -1\\
-        		i^3 &= -i\\
-        		i^4 &= 1
-        	\end{align*}
+            \item $o(i) = 4$ pois
+            \begin{align*}
+                i^1 &= i\\
+                i^2 &= -1\\
+                i^3 &= -i\\
+                i^4 &= 1
+            \end{align*}
 
-        	\item $o(-i) = 4$
+            \item $o(-i) = 4$
 
-        	\item $o(2i) = 0$ pois para todo $r > 0$ temos $(2i)^r = 2^ri^r$ e $2^r \ne 1$ para todo $r > 0$.
+            \item $o(2i) = 0$ pois para todo $r > 0$ temos $(2i)^r = 2^ri^r$ e $2^r \ne 1$ para todo $r > 0$.
 
         \end{itemize}
 
         \item Em $S_3$ temos, por exemplo, para
         \[
-        	a = \begin{pmatrix}
-        		1 & 2 & 3\\
-        		2 & 1 & 3
-        	\end{pmatrix}
+            a = \begin{pmatrix}
+                1 & 2 & 3\\
+                2 & 1 & 3
+            \end{pmatrix}
         \]
         que
         \begin{align*}
-        	a &\ne e\\
-        	a^2 &=  \begin{pmatrix}
-        		1 & 2 & 3\\
-        		2 & 1 & 3
-        	\end{pmatrix} \circ \begin{pmatrix}
-        		1 & 2 & 3\\
-        		2 & 1 & 3
-        	\end{pmatrix} = \begin{pmatrix}
-        		1 & 2 & 3\\
-        		1 & 2 & 3
-        	\end{pmatrix}
+            a &\ne e\\
+            a^2 &=  \begin{pmatrix}
+                1 & 2 & 3\\
+                2 & 1 & 3
+            \end{pmatrix} \circ \begin{pmatrix}
+                1 & 2 & 3\\
+                2 & 1 & 3
+            \end{pmatrix} = \begin{pmatrix}
+                1 & 2 & 3\\
+                1 & 2 & 3
+            \end{pmatrix}
         \end{align*}
         e ent\~ao $o(a) = 2$.
 
         Agora para
         \[
-        	b = \begin{pmatrix}
-        		1 & 2 & 3\\
-        		3 & 1 & 2
-        	\end{pmatrix}
+            b = \begin{pmatrix}
+                1 & 2 & 3\\
+                3 & 1 & 2
+            \end{pmatrix}
         \]
         temos
         \begin{align*}
-        	b &\ne e\\
-        	b^2 = \begin{pmatrix}
-        		1 & 2 & 3\\
-        		3 & 1 & 2
-        	\end{pmatrix} \circ \begin{pmatrix}
-        		1 & 2 & 3\\
-        		3 & 1 & 2
-        	\end{pmatrix} = \begin{pmatrix}
-        		1 & 2 & 3\\
-        		2 & 3 & 1
-        	\end{pmatrix}\\
-        	b^3 = b^2 \circ b = \begin{pmatrix}
-        		1 & 2 & 3\\
-        		2 & 3 & 1
-        	\end{pmatrix} \circ \begin{pmatrix}
-        		1 & 2 & 3\\
-        		3 & 1 & 2
-        	\end{pmatrix} = \begin{pmatrix}
-        		1 & 2 & 3\\
-        		1 & 2 & 3
-        	\end{pmatrix}
+            b &\ne e\\
+            b^2 = \begin{pmatrix}
+                1 & 2 & 3\\
+                3 & 1 & 2
+            \end{pmatrix} \circ \begin{pmatrix}
+                1 & 2 & 3\\
+                3 & 1 & 2
+            \end{pmatrix} = \begin{pmatrix}
+                1 & 2 & 3\\
+                2 & 3 & 1
+            \end{pmatrix}\\
+            b^3 = b^2 \circ b = \begin{pmatrix}
+                1 & 2 & 3\\
+                2 & 3 & 1
+            \end{pmatrix} \circ \begin{pmatrix}
+                1 & 2 & 3\\
+                3 & 1 & 2
+            \end{pmatrix} = \begin{pmatrix}
+                1 & 2 & 3\\
+                1 & 2 & 3
+            \end{pmatrix}
         \end{align*}
         e assim $o(b) = 3$.
 
         \item Em $\z_5$ com a soma temos
         \begin{itemize}
-        	\item $o(\overline{0}) = 1$
+            \item $o(\overline{0}) = 1$
 
-        	\item $o(\overline{1}) = 5$ pois
-        	\begin{align*}
-        		\overline{1} &\ne \overline{0}\\
-        		\overline{1} + \overline{1} &\ne \overline{0}\\
-        		\overline{1} + \overline{1} + \overline{1} &\ne \overline{0}\\
-        		\overline{1} + \overline{1} + \overline{1} + \overline{1} &\ne \overline{0}\\
-        		\overline{1} + \overline{1} + \overline{1} + \overline{1} + \overline{1} &= \overline{0}
-        	\end{align*}
+            \item $o(\overline{1}) = 5$ pois
+            \begin{align*}
+                \overline{1} &\ne \overline{0}\\
+                \overline{1} + \overline{1} &\ne \overline{0}\\
+                \overline{1} + \overline{1} + \overline{1} &\ne \overline{0}\\
+                \overline{1} + \overline{1} + \overline{1} + \overline{1} &\ne \overline{0}\\
+                \overline{1} + \overline{1} + \overline{1} + \overline{1} + \overline{1} &= \overline{0}
+            \end{align*}
 
-        	De modo semelhante chega-se \`a conclus\~ao que
-        	\[
-        		o(\overline{2}) = o(\overline{3}) = o(\overline{4}) = 5.
-        	\]
+            De modo semelhante chega-se \`a conclus\~ao que
+            \[
+                o(\overline{2}) = o(\overline{3}) = o(\overline{4}) = 5.
+            \]
         \end{itemize}
 
         \item Em $\z$ o \'unico elemento de ordem diferente de zero \'e o elemento neutro.
@@ -944,34 +944,34 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
     Seja $x$ um elemento de ordem $h > 0$ de um grupo $G$. Ent\~ao $x^m = e$ se, e somente se, $h \mid m$.
 \end{proposicao}
 \begin{prova}
-	Precisamos mostrar que
-	\begin{enumerate}[label={\roman*})]
-		\item Se $x^m = e$, ent\~ao $h \mid m$.
+    Precisamos mostrar que
+    \begin{enumerate}[label={\roman*})]
+        \item Se $x^m = e$, ent\~ao $h \mid m$.
 
-		\item Se $h \mid m$, ent\~ao $a^m = e$.
-	\end{enumerate}
+        \item Se $h \mid m$, ent\~ao $a^m = e$.
+    \end{enumerate}
 
-	Para provar $ii)$ suponha que $o(x) = h$ e que $h \mid m$. Da{\'\i} existe $l \in \z$ tal que $m = hl$. Logo
-	\[
-		x^m = x^{hl} = (x^h)^l = e^l = e
-	\]
-	pois $h(x) = h$.
+    Para provar $ii)$ suponha que $o(x) = h$ e que $h \mid m$. Da{\'\i} existe $l \in \z$ tal que $m = hl$. Logo
+    \[
+        x^m = x^{hl} = (x^h)^l = e^l = e
+    \]
+    pois $h(x) = h$.
 
-	Agora para provar $i)$ suponha que $o(x) = h$ e que $a^m = e$. Como $h > 0$, podemos efetuar a divis\~ao inteira de $m$ por $h$. Assim
-	\[
-		m = hq + r
-	\]
-	com $0 \le r < h$.
+    Agora para provar $i)$ suponha que $o(x) = h$ e que $a^m = e$. Como $h > 0$, podemos efetuar a divis\~ao inteira de $m$ por $h$. Assim
+    \[
+        m = hq + r
+    \]
+    com $0 \le r < h$.
 
-	Da{\'\i}
-	\[
-		e = x^m = x^{hq + r} = x^hqx^r = (x^h)^qx^r = e^qx^r = x^r.
-	\]
-	Assim $x^r = e$. Mas $o(x) = h$ e $0 \le r < r$. Logo $r = 0$ e ent\~ao
-	\[
-		m = hq,
-	\]
-	ou seja, $h \mid m$, como quer{\'\i}amos.
+    Da{\'\i}
+    \[
+        e = x^m = x^{hq + r} = x^hqx^r = (x^h)^qx^r = e^qx^r = x^r.
+    \]
+    Assim $x^r = e$. Mas $o(x) = h$ e $0 \le r < r$. Logo $r = 0$ e ent\~ao
+    \[
+        m = hq,
+    \]
+    ou seja, $h \mid m$, como quer{\'\i}amos.
 \end{prova}
 
 \section{Homomorfismo de Grupos} % (fold)
@@ -979,173 +979,173 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
 
 % Sejam $(G, *)$ e $(H, \triangle)$ grupos quaisquer. Considere uma fun\c{c}\~ao $f : G \to H$. Entre todas as poss{\'\i}veis fun\c{c}\~oes entre $G$ e $H$ vamos considerar somente aquelas que satisfa\c{c}\~ao a condi\c{c}\~ao
 % \[
-% 	f(x * y) = f(x)\triangle f(y)
+%     f(x * y) = f(x)\triangle f(y)
 % \]
 % para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a partir da imagem de $x$ e de $y$,
 
 \begin{definicao}
-	Dados dois grupos $(G, *)$ e $(H,\triangle)$ dizemos que uma fun\c{c}\~ao $f : G \to H$ \'e um \textbf{homomorfismo de grupos} se
-	\[
-		f(x * y) = f(x)\triangle f(y)
-	\]
-	para todos $x$, $y \in G$.
+    Dados dois grupos $(G, *)$ e $(H,\triangle)$ dizemos que uma fun\c{c}\~ao $f : G \to H$ \'e um \textbf{homomorfismo de grupos} se
+    \[
+        f(x * y) = f(x)\triangle f(y)
+    \]
+    para todos $x$, $y \in G$.
 \end{definicao}
 
 \begin{observacao}
-	Sejam $(G, *)$, $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo.
-	\begin{enumerate}[label={\arabic*})]
-		\item Se $G = H$, neste caso $f : G \to G$ \'e chamado de um \textbf{endomorfimos} de grupos.
-		\item Se $f : G \to H$ \'e uma fun\c{c}\~ao injetora, ent\~ao dizemos que $f$ \'e um \textbf{monomorfismo} de grupos.
-		\item Se $f : G \to H$ \'e uma fun\c{c}\~ao sobrejetora, ent\~ao dizemos que $f$ \'e um \textbf{epimorfismo} de grupos.
-		\item Se $f : G \to H$ \'e uma fun\c{c}\~ao bijetora, ent\~ao dizemos que $f$ \'e um \textbf{isomorfismo} de grupos.
-		\item Se $f : G \to G$ \'e uma fun\c{c}\~ao bijetora, ent\~ao dizemos que $f$ \'e um \textbf{automorfismo} de grupos.
-	\end{enumerate}
+    Sejam $(G, *)$, $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo.
+    \begin{enumerate}[label={\arabic*})]
+        \item Se $G = H$, neste caso $f : G \to G$ \'e chamado de um \textbf{endomorfimos} de grupos.
+        \item Se $f : G \to H$ \'e uma fun\c{c}\~ao injetora, ent\~ao dizemos que $f$ \'e um \textbf{monomorfismo} de grupos.
+        \item Se $f : G \to H$ \'e uma fun\c{c}\~ao sobrejetora, ent\~ao dizemos que $f$ \'e um \textbf{epimorfismo} de grupos.
+        \item Se $f : G \to H$ \'e uma fun\c{c}\~ao bijetora, ent\~ao dizemos que $f$ \'e um \textbf{isomorfismo} de grupos.
+        \item Se $f : G \to G$ \'e uma fun\c{c}\~ao bijetora, ent\~ao dizemos que $f$ \'e um \textbf{automorfismo} de grupos.
+    \end{enumerate}
 \end{observacao}
 
 \begin{exemplos}
-	\begin{enumerate}[label={\arabic*})]
-		\item A fun\c{c}\~ao $f : \z \to \complex^*$ dada por $f(x) = i^x$ \'e um homomorfismo de $(\z, +)$ em $(\complex^*, \cdot)$. De fato,
-		\[
-			f(x + y) = i^{x + y} = i^x\cdot i^y = f(x)\cdot f(y)
-		\]
-		para todos $x$, $y \in \z$.
+    \begin{enumerate}[label={\arabic*})]
+        \item A fun\c{c}\~ao $f : \z \to \complex^*$ dada por $f(x) = i^x$ \'e um homomorfismo de $(\z, +)$ em $(\complex^*, \cdot)$. De fato,
+        \[
+            f(x + y) = i^{x + y} = i^x\cdot i^y = f(x)\cdot f(y)
+        \]
+        para todos $x$, $y \in \z$.
 
-		\item A fun\c{c}\~ao $f : \real^*_+ \to \real$ dada por $f(x) = \ln(x)$ \'e um homomorfismo de $(\real^*_+, \cdot)$ em $(\real, +)$. De fato,
-		\[
-			f(xy) = \ln(xy) = \ln(x) + \ln(y) = f(x) + f(y)
-		\]
-		para todos $x$, $y \in \real^*_+$. Al\'em disso, como $\ln(x)$ \'e uma fun\c{c}\~ao bijetora, ent\~ao $f$ \'e um isomorfismo de grupos.
+        \item A fun\c{c}\~ao $f : \real^*_+ \to \real$ dada por $f(x) = \ln(x)$ \'e um homomorfismo de $(\real^*_+, \cdot)$ em $(\real, +)$. De fato,
+        \[
+            f(xy) = \ln(xy) = \ln(x) + \ln(y) = f(x) + f(y)
+        \]
+        para todos $x$, $y \in \real^*_+$. Al\'em disso, como $\ln(x)$ \'e uma fun\c{c}\~ao bijetora, ent\~ao $f$ \'e um isomorfismo de grupos.
 
-		\item Sejam $m$ um inteiro positivo fixo. A fun\c{c}\~ao $f: \z \to \z_m$ definida por $f(x) = \overline{x}$ \'e um homomorfimos de $(\z, +)$ em $(\z_m, \oplus)$. De fato,
-		\[
-			f(x + y) = \overline{x + y} = \overline{x} + \overline{y} = f(x) + f(y).
-		\]
-		Al\'em disso, esse homomorfismo \'e sobrejetor.
-	\end{enumerate}
+        \item Sejam $m$ um inteiro positivo fixo. A fun\c{c}\~ao $f: \z \to \z_m$ definida por $f(x) = \overline{x}$ \'e um homomorfimos de $(\z, +)$ em $(\z_m, \oplus)$. De fato,
+        \[
+            f(x + y) = \overline{x + y} = \overline{x} + \overline{y} = f(x) + f(y).
+        \]
+        Al\'em disso, esse homomorfismo \'e sobrejetor.
+    \end{enumerate}
 \end{exemplos}
 
 \begin{proposicao}
-	Sejam $(G, *)$, $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo. Denote por $1_G$ e $1_H$ os elementos neutros de $G$ e $H$, respectivamente.
-	\begin{enumerate}[label={\roman*})]
-		\item $f(1_G) = 1_H$
-		\item $[f(x)]^{-1} = f(x^{-1})$ para todo $x \in G$.
-	\end{enumerate}
+    Sejam $(G, *)$, $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo. Denote por $1_G$ e $1_H$ os elementos neutros de $G$ e $H$, respectivamente.
+    \begin{enumerate}[label={\roman*})]
+        \item $f(1_G) = 1_H$
+        \item $[f(x)]^{-1} = f(x^{-1})$ para todo $x \in G$.
+    \end{enumerate}
 \end{proposicao}
 \begin{prova}
-	\begin{enumerate}[label={\roman*})]
-		\item Como $f(1_G) \in H$ e $1_H$ \'e o elemento neutro de $H$ temos
-		\begin{align*}
-			f(1_G) \triangle 1_H &= f(1_G) = f(1_G * 1_G)\\
-			f(1_G) \triangle 1_H &= f(1_G) \triangle f(1_G).
-		\end{align*}
+    \begin{enumerate}[label={\roman*})]
+        \item Como $f(1_G) \in H$ e $1_H$ \'e o elemento neutro de $H$ temos
+        \begin{align*}
+            f(1_G) \triangle 1_H &= f(1_G) = f(1_G * 1_G)\\
+            f(1_G) \triangle 1_H &= f(1_G) \triangle f(1_G).
+        \end{align*}
 
-		Seja $f(1_G)^{-1}$ o inverso de $f(1_G)$ em $H$, assim operando nessa \'ultima igualdade, pela esquerda, com $f(1_G)^{-1}$ obtemos
-		\[
-			f(1_G) = 1_H,
-		\]
-		como quer{\'\i}amos.
+        Seja $f(1_G)^{-1}$ o inverso de $f(1_G)$ em $H$, assim operando nessa \'ultima igualdade, pela esquerda, com $f(1_G)^{-1}$ obtemos
+        \[
+            f(1_G) = 1_H,
+        \]
+        como quer{\'\i}amos.
 
-		\item Seja $x \in G$. Como num grupo o inverso de um elemento \'e \'unico, basta mostrar que
-		\begin{align*}
-			f(x) \triangle f(x^{-1}) &= 1_H\\
-			f(x^{-1}) \triangle f(x) &= 1_H.
-		\end{align*}
-		De fato,
-		\begin{align*}
-			f(x) \triangle f(x^{-1}) &= f(x * x^{-1}) = f(1_G) = 1_H\\
-			f(x^{-1}) \triangle f(x) &= f(x^{-1} * x) = f(1_G) = 1_H.
-		\end{align*}
-		Logo
-		\[
-			[f(x)]^{-1} = f(x^{-1})
-		\]
-		como quer{\'\i}amos.
-	\end{enumerate}
+        \item Seja $x \in G$. Como num grupo o inverso de um elemento \'e \'unico, basta mostrar que
+        \begin{align*}
+            f(x) \triangle f(x^{-1}) &= 1_H\\
+            f(x^{-1}) \triangle f(x) &= 1_H.
+        \end{align*}
+        De fato,
+        \begin{align*}
+            f(x) \triangle f(x^{-1}) &= f(x * x^{-1}) = f(1_G) = 1_H\\
+            f(x^{-1}) \triangle f(x) &= f(x^{-1} * x) = f(1_G) = 1_H.
+        \end{align*}
+        Logo
+        \[
+            [f(x)]^{-1} = f(x^{-1})
+        \]
+        como quer{\'\i}amos.
+    \end{enumerate}
 \end{prova}
 
 \begin{proposicao}
-	Sejam $I$ \'e um subgrupo de $G$ e $f : G \to H$ um homomorfismo de grupos. Ent\~ao $f(I)$ \'e um subgrupo de $H$.
+    Sejam $I$ \'e um subgrupo de $G$ e $f : G \to H$ um homomorfismo de grupos. Ent\~ao $f(I)$ \'e um subgrupo de $H$.
 \end{proposicao}
 \begin{prova}
-	Como $I$ \'e um subgrupo de $G$, ent\~ao $1_G \in G$. Agora $f$ \'e um homomorfismo, logo $f(1_G) = 1_H \in f(I)$ e assim $f(I) \ne \emptyset$.
+    Como $I$ \'e um subgrupo de $G$, ent\~ao $1_G \in G$. Agora $f$ \'e um homomorfismo, logo $f(1_G) = 1_H \in f(I)$ e assim $f(I) \ne \emptyset$.
 
-	Agora, dado $y \in f(I)$ precisamos mostrar que $y^{-1} \in f(I)$. Mas se $y \in f(I)$, ent\~ao $y = f(x)$ com $x \in I$. Da{\'\i}
-	\[
-		y^{-1} = [f(x)]^{-1} = f(x^{-1})
-	\]
-	e como $I$ \'e um subgrupo de $G$, $x^{-1} \in I$ e como isso $y^{-1} \in f(I)$.
+    Agora, dado $y \in f(I)$ precisamos mostrar que $y^{-1} \in f(I)$. Mas se $y \in f(I)$, ent\~ao $y = f(x)$ com $x \in I$. Da{\'\i}
+    \[
+        y^{-1} = [f(x)]^{-1} = f(x^{-1})
+    \]
+    e como $I$ \'e um subgrupo de $G$, $x^{-1} \in I$ e como isso $y^{-1} \in f(I)$.
 
-	Finalmente, dados $y$, $z \in f(I)$ existem $x_1$, $x_2 \in I$ tais que $y = f(x_1)$ e $z = f(x_2)$. Mas $f$ \'e homomorfismo, da{\'\i}
-	\[
-		y\triangle z = f(x_1)\triangle f(x_2) = f(x_1*x_2)
-	\]
-	e como $I$ \'e subgrupo, $x_1*x_2 \in I$. Logo $y\triangle z \in f(I)$.
+    Finalmente, dados $y$, $z \in f(I)$ existem $x_1$, $x_2 \in I$ tais que $y = f(x_1)$ e $z = f(x_2)$. Mas $f$ \'e homomorfismo, da{\'\i}
+    \[
+        y\triangle z = f(x_1)\triangle f(x_2) = f(x_1*x_2)
+    \]
+    e como $I$ \'e subgrupo, $x_1*x_2 \in I$. Logo $y\triangle z \in f(I)$.
 
-	Portanto $f(I)$ \'e um subgrupo de $H$.
+    Portanto $f(I)$ \'e um subgrupo de $H$.
 \end{prova}
 
 \begin{definicao}
-	Sejam $(G, *)$, $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo de grupos. Chama-se de \textbf{n\'ucleo} ou \textbf{kernel} de $f$ e denota-se por $N(f)$ ou $\ker(f)$ o seguinte subconjunto de $G$:
-	\[
-		\ker(f) = \{x \in G \mid f(x) = 1_H\}.
-	\]
+    Sejam $(G, *)$, $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo de grupos. Chama-se de \textbf{n\'ucleo} ou \textbf{kernel} de $f$ e denota-se por $N(f)$ ou $\ker(f)$ o seguinte subconjunto de $G$:
+    \[
+        \ker(f) = \{x \in G \mid f(x) = 1_H\}.
+    \]
 \end{definicao}
 
 \begin{exemplos}
-	\begin{enumerate}[label={\roman*})]
-		\item Considere o homomorfismo $f : \z \to \complex^*$ dado por $f(x) = i^x$. Temos
-		\[
-			\ker(f) = \{x \in \z \mid f(x) = 1\} = \{x \in \z \mid i^x = 1\} = \{0, \pm 4, \pm 8, \cdots\} = 4\z.
-		\]
+    \begin{enumerate}[label={\roman*})]
+        \item Considere o homomorfismo $f : \z \to \complex^*$ dado por $f(x) = i^x$. Temos
+        \[
+            \ker(f) = \{x \in \z \mid f(x) = 1\} = \{x \in \z \mid i^x = 1\} = \{0, \pm 4, \pm 8, \cdots\} = 4\z.
+        \]
 
-		\item O n\'ucleo do homomorfismo $f : \real^*_+ \to \real$ dado por $f(x) = \ln(x)$. Temos
-		\[
-			\ker(f) = \{x \in \real^*_+ \mid f(x) = 0\} = \{x \in \real^*_+ \mid \ln(x) = 0\} = \{1\}.
-		\]
+        \item O n\'ucleo do homomorfismo $f : \real^*_+ \to \real$ dado por $f(x) = \ln(x)$. Temos
+        \[
+            \ker(f) = \{x \in \real^*_+ \mid f(x) = 0\} = \{x \in \real^*_+ \mid \ln(x) = 0\} = \{1\}.
+        \]
 
-		\item O n\'ucleo do homomorfismo $f : \z \to \z_m$ dado por $f(x) = \overline{x}$, $m > 0$ fixo. Temos
-		\[
-			\ker(f) = \{x \in \z \mid f(x) = \overline{0}\} = \{x \in \z \mid \overline{x} = \overline{0}\} = \{0, \pm m, \pm 2m, \cdots\}.
-		\]
-	\end{enumerate}
+        \item O n\'ucleo do homomorfismo $f : \z \to \z_m$ dado por $f(x) = \overline{x}$, $m > 0$ fixo. Temos
+        \[
+            \ker(f) = \{x \in \z \mid f(x) = \overline{0}\} = \{x \in \z \mid \overline{x} = \overline{0}\} = \{0, \pm m, \pm 2m, \cdots\}.
+        \]
+    \end{enumerate}
 \end{exemplos}
 
 \begin{proposicao}
-	Sejam $(G, *)$, $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo de grupos. Ent\~ao:
-	\begin{enumerate}[label={\roman*})]
-		\item $\ker(f)$ \'e um subgrupo de $G$.
-		\item $f$ \'e um monomorfismo se, e somente se, $\ker(f) = \{1_G\}$.
-	\end{enumerate}
+    Sejam $(G, *)$, $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo de grupos. Ent\~ao:
+    \begin{enumerate}[label={\roman*})]
+        \item $\ker(f)$ \'e um subgrupo de $G$.
+        \item $f$ \'e um monomorfismo se, e somente se, $\ker(f) = \{1_G\}$.
+    \end{enumerate}
 \end{proposicao}
 \begin{prova}
-	\begin{enumerate}[label={\roman*})]
-		\item Como $f(1_G) = 1_H$, ent\~ao $1_G \in \ker(f)$ e com isso $\ker(f) \ne \emptyset$. Se $x \in \ker(f)$, ent\~ao $f(x^{-1}) = [f(x)]^{-1} = 1_H^{-1} = 1_H$ e da{\'\i} $x^{-1} \in \ker(f)$. Finalmente se $x$, $y \in \ker(f)$, ent\~ao $f(x*y) = f(x)\triangle f(y) = 1_H \triangle 1_H = 1_H$, ou seja, $x * y \in \ker(f)$.
+    \begin{enumerate}[label={\roman*})]
+        \item Como $f(1_G) = 1_H$, ent\~ao $1_G \in \ker(f)$ e com isso $\ker(f) \ne \emptyset$. Se $x \in \ker(f)$, ent\~ao $f(x^{-1}) = [f(x)]^{-1} = 1_H^{-1} = 1_H$ e da{\'\i} $x^{-1} \in \ker(f)$. Finalmente se $x$, $y \in \ker(f)$, ent\~ao $f(x*y) = f(x)\triangle f(y) = 1_H \triangle 1_H = 1_H$, ou seja, $x * y \in \ker(f)$.
 
-		Portanto $\ker(f)$ \'e um subgrupo de $G$.
+        Portanto $\ker(f)$ \'e um subgrupo de $G$.
 
-		\item Suponha que $f$ \'e um monomorfismo de grupos. Tome $x \in \ker(f)$. Temos $f(x) = 1_H = f(1_G)$ e como $f$ \'e injetora $x = 1_G$. Logo $\ker(f) = \{1_G\}$.
+        \item Suponha que $f$ \'e um monomorfismo de grupos. Tome $x \in \ker(f)$. Temos $f(x) = 1_H = f(1_G)$ e como $f$ \'e injetora $x = 1_G$. Logo $\ker(f) = \{1_G\}$.
 
-		Agora suponha que $\ker(f) = \{1_G\}$. Sejam $x$, $y \in G$ tais que
-		\begin{align*}
-			&f(x) = f(y)\\
-			&f(x)\triangle f(y)^{-1} = 1_H\\
-			&f(x)\triangle f(y^{-1}) = 1_H\\
-			&f(x * y^{-1}) = 1_H
-		\end{align*}
-		e da{\'\i} $x*y^{-1} \in \ker(f) = \{1_G\}$. Logo $x*y^{-1} = 1_G$, isto \'e, $x = y$. Portanto $f$ \'e injetora.
-	\end{enumerate}
+        Agora suponha que $\ker(f) = \{1_G\}$. Sejam $x$, $y \in G$ tais que
+        \begin{align*}
+            &f(x) = f(y)\\
+            &f(x)\triangle f(y)^{-1} = 1_H\\
+            &f(x)\triangle f(y^{-1}) = 1_H\\
+            &f(x * y^{-1}) = 1_H
+        \end{align*}
+        e da{\'\i} $x*y^{-1} \in \ker(f) = \{1_G\}$. Logo $x*y^{-1} = 1_G$, isto \'e, $x = y$. Portanto $f$ \'e injetora.
+    \end{enumerate}
 \end{prova}
 
 \begin{proposicao}
     Sejam $H$, $J$ e $L$ grupos. Se $f : H \to J$ e $g : J \to L$ s\~ao homomorfismos de grupos, ent\~ao $g \circ f : H \to L$ tamb\'em \'e um homomorfismo de grupos.
 \end{proposicao}
 \begin{prova}
-	Sejam $x$, $y \in H$. Temos
-	\begin{align*}
-		(g \circ f)(xy) = g(f(xy)) = g(f(x)f(y)) = g(f(x))g(f(y)) = (g \circ f)(xy)(g \circ f)(xy).
-	\end{align*}
+    Sejam $x$, $y \in H$. Temos
+    \begin{align*}
+        (g \circ f)(xy) = g(f(xy)) = g(f(x)f(y)) = g(f(x))g(f(y)) = (g \circ f)(xy)(g \circ f)(xy).
+    \end{align*}
 
-	Portanto, $g \circ f$ \'e um homomorfismo de grupos.
+    Portanto, $g \circ f$ \'e um homomorfismo de grupos.
 \end{prova}
 
 
@@ -1153,7 +1153,7 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
     Se $f$ e $g$ s\~ao homomorfismo injetores (sobrejetores), ent\~ao $g \circ f$ tamb\'em \'e um homomorfismo injetor (sobrejetor).
 \end{corolario}
 \begin{prova}
-	\'E um consequ\^encia direta das Proposi\c{c}\~oes \eqref{composicao_funcoes_injetoras} e \eqref{composicao_funcoes_sobrejetoras}.
+    \'E um consequ\^encia direta das Proposi\c{c}\~oes \eqref{composicao_funcoes_injetoras} e \eqref{composicao_funcoes_sobrejetoras}.
 \end{prova}
 
 
@@ -1161,19 +1161,19 @@ Com a nota\c{c}\~ao aditiva o oposto de $x \in G$ ser\'a denotado por $-x$.
     Sejam $(G, *)$ e $(H, \triangle)$ grupos. Se $f : G \to H$ \'e um isomorfismo de grupos, ent\~ao $f^{-1} : H \to G$ tamb\'em \'e um isomorfismo de grupos.
 \end{proposicao}
 \begin{prova}
-	Como $f : G \to H$ \'e bijetora, ent\~ao $f^{-1} : H \to G$ existe e \'e tamb\'em bijetora, Teorema \eqref{teorema_funcao_inversa} e Proposi\c{c}\~ao \eqref{propriedades_identidade}.
+    Como $f : G \to H$ \'e bijetora, ent\~ao $f^{-1} : H \to G$ existe e \'e tamb\'em bijetora, Teorema \eqref{teorema_funcao_inversa} e Proposi\c{c}\~ao \eqref{propriedades_identidade}.
 
-	Mostremos que $f^{-1}$ \'e um homomorfismo de grupos. Para isso sejam $y_1$ $y_2 \in H$. Como $f : G \to H$ \'e sobrejetora, existem $x_1$, $x_2 \in G$ tais que $f(x_1) = y_1$ e $f(x_2) = y_ 2$. Assim
-	\begin{align*}
-		f^{-1}(y_1) &= x_1\\
-		f^{-1}(y_2) &= x_2.
-	\end{align*}
-	Com isso
-	\begin{align*}
-		f^{-1}(y_1 \triangle y_2) &= f^{-1}(f(x_1) \triangle f(x_2)) \\ &= f^{-1}(f(x_1 * x_2)) \\ &= x_1 * x_2 \\ &= f^{-1}(y_1) * f^{-1}(y_2),
-	\end{align*}
-	ou seja, $f^{-1}$ \'e um homomorfismo de grupos.
-	Portanto $f^{-1}$ \'e um isomorfismo de grupos.
+    Mostremos que $f^{-1}$ \'e um homomorfismo de grupos. Para isso sejam $y_1$ $y_2 \in H$. Como $f : G \to H$ \'e sobrejetora, existem $x_1$, $x_2 \in G$ tais que $f(x_1) = y_1$ e $f(x_2) = y_ 2$. Assim
+    \begin{align*}
+        f^{-1}(y_1) &= x_1\\
+        f^{-1}(y_2) &= x_2.
+    \end{align*}
+    Com isso
+    \begin{align*}
+        f^{-1}(y_1 \triangle y_2) &= f^{-1}(f(x_1) \triangle f(x_2)) \\ &= f^{-1}(f(x_1 * x_2)) \\ &= x_1 * x_2 \\ &= f^{-1}(y_1) * f^{-1}(y_2),
+    \end{align*}
+    ou seja, $f^{-1}$ \'e um homomorfismo de grupos.
+    Portanto $f^{-1}$ \'e um isomorfismo de grupos.
 \end{prova}
 
 \section{Isomorfimos de grupos} % (fold)
@@ -1269,8 +1269,8 @@ Seja $G = [a]$ um grupo c{\'\i}clico. Dois casos podem ocorrer:
 
 Um exemplo desse caso \'e o grupo c{\'\i}clico $G = [3]$ no grupo multiplicativo $(\rac^*, \cdot)$. Aqui, para todos $r \ne s$ temos $3^r \ne 3^s$. Al\'em disso, \'e imediato verificar que a fun\c{c}\~ao
 \begin{align*}
-	f &: \z \to G\\
-	f(x) &= 3^x
+    f &: \z \to G\\
+    f(x) &= 3^x
 \end{align*}
 \'e um isomorfimo de grupos. Assim $\z \cong G$.
 
@@ -1280,23 +1280,23 @@ De modo geral temos a seguinte proposi\c{c}\~ao:
     Se $G = [a]$ \'e um grupo c{\'\i}clico que cumpre a condi\c{c}\~ao do \textbf{Caso 1}, ent\~ao a fun\c{c}\~ao $f : \z \to G$ por $f(r) = a^r$ \'e um isomorfimo de grupos. Ou seja, $G \cong \z$.
 \end{proposicao}
 \begin{prova}
-	Basta verificar que a fun\c{c}\~ao $f : \real \to G$ dada por $f(x) = a^x$ \'e um isomorfimo de grupos.
+    Basta verificar que a fun\c{c}\~ao $f : \real \to G$ dada por $f(x) = a^x$ \'e um isomorfimo de grupos.
 \end{prova}
 
 \begin{observacao}
-	Como a fun\c{c}\~ao da proposi\c{c}\~ao anterior \'e uma bije\c{c}\~ao, segue ent\~ao que os conjuntos $\z$ e $G = [a]$ t\^em a mesma cardinalidade. Assim os grupos que satisfazem o \textbf{Caso 1} s\~ao todos infinitos. Por esse motivo eles s\~ao chamados de \textbf{grupos c{\'\i}clicos infinitos}.
+    Como a fun\c{c}\~ao da proposi\c{c}\~ao anterior \'e uma bije\c{c}\~ao, segue ent\~ao que os conjuntos $\z$ e $G = [a]$ t\^em a mesma cardinalidade. Assim os grupos que satisfazem o \textbf{Caso 1} s\~ao todos infinitos. Por esse motivo eles s\~ao chamados de \textbf{grupos c{\'\i}clicos infinitos}.
 \end{observacao}
 
 \textbf{Caso 2:} $a^r = a^s$ para algum par de inteiros distintos, $r$ e $s$.
 
 Um exemplo desse caso \'e considerar o grupo $G = [\overline{2}]$ no grupo aditivo $\z_6$. Nesse caso
 \begin{align*}
-	G = [\overline{2}] = \{k \cdot \overline{2} \mid k \in \z\}.
+    G = [\overline{2}] = \{k \cdot \overline{2} \mid k \in \z\}.
 \end{align*}
 
 Aqui temos
 \begin{align*}
-	6\cdot\overline{2} = 12\cdot \overline{2}.
+    6\cdot\overline{2} = 12\cdot \overline{2}.
 \end{align*}
 
 \begin{proposicao}
@@ -1312,56 +1312,56 @@ Aqui temos
     \]
 \end{proposicao}
 \begin{prova}
-	Como $a^r = a^s$ para $r$ e $s$ distintos podemos supor sem nenhum preju{\'\i}zo que $r > s$. Ent\~ao $r - s > 0$ e
-	\begin{align*}
-		a^{r - s} &= a^ra^{-1} = a^r(a^s)^{-1} = a^r(a^r)^{-1} = e.
-	\end{align*}
-	Logo existem pot\^encias estritamente positivas de $a$ iguais ao elemento neutro de $G$. Seja $m$ o menor inteiro positivo tal que
-	\begin{align}\label{ordem_elemento_ciclico}
-		a^m = e.
-	\end{align}
-	Com isso provamos o item (i).
+    Como $a^r = a^s$ para $r$ e $s$ distintos podemos supor sem nenhum preju{\'\i}zo que $r > s$. Ent\~ao $r - s > 0$ e
+    \begin{align*}
+        a^{r - s} &= a^ra^{-1} = a^r(a^s)^{-1} = a^r(a^r)^{-1} = e.
+    \end{align*}
+    Logo existem pot\^encias estritamente positivas de $a$ iguais ao elemento neutro de $G$. Seja $m$ o menor inteiro positivo tal que
+    \begin{align}\label{ordem_elemento_ciclico}
+        a^m = e.
+    \end{align}
+    Com isso provamos o item (i).
 
-	Agora, observe que
-	\begin{align*}
-		a^m &= e\\
-		a^{m + 1} &= a\\
-		a^{m + 2} & a^2\\
-		&\vdots\\
-		a^{m + m} &= e
-	\end{align*}
-	ou seja, a partir da pot\^encia $m$ os valores come\c{c}am a se repetir.
+    Agora, observe que
+    \begin{align*}
+        a^m &= e\\
+        a^{m + 1} &= a\\
+        a^{m + 2} & a^2\\
+        &\vdots\\
+        a^{m + m} &= e
+    \end{align*}
+    ou seja, a partir da pot\^encia $m$ os valores come\c{c}am a se repetir.
 
-	Suponha que $a^i = a^j$ com $0 \le i < j < m$. Da{\'\i} $0 < j - i < m$ e
-	\begin{align*}
-		a^{j -  i} &= a^ja^{-1} = a^j(a^i)^{-1} = a^j(a^j)^{-1} = e
-	\end{align*}
-	Mas isso contradiz a escolha de $m$. Logo nas pot\^encias
-	\[
-		a^0,\ a^1,\ a^2, \dots, a^{m - 1}
-	\]
-	n\~ao h\'a repeti\c{c}\~oes de elementos. Assim $a^l \ne e$ para todo $0 < l < m$, o que prova (ii).
+    Suponha que $a^i = a^j$ com $0 \le i < j < m$. Da{\'\i} $0 < j - i < m$ e
+    \begin{align*}
+        a^{j -  i} &= a^ja^{-1} = a^j(a^i)^{-1} = a^j(a^j)^{-1} = e
+    \end{align*}
+    Mas isso contradiz a escolha de $m$. Logo nas pot\^encias
+    \[
+        a^0,\ a^1,\ a^2, \dots, a^{m - 1}
+    \]
+    n\~ao h\'a repeti\c{c}\~oes de elementos. Assim $a^l \ne e$ para todo $0 < l < m$, o que prova (ii).
 
-	Agora seja $x \in G = [a]$. Ent\~ao $x = a^t$ para algum $t \in \z$. Efetuando a divis\~ao inteira de $t$ por $m$ obtemos
-	\[
-		t = qm + r
-	\]
-	com $0 \le r < m$. Da{\'\i}
-	\begin{align*}
-		a^t = a^{qm + r} = a^{qm}a^r = (a^m)^qa^r = e^qa^r = a^r
-	\end{align*}
-	e como os poss{\'\i}veis valores de $r$ s\~ao 0, 1, 2, \dots, m-1 ent\~ao $a^t \in \{a^0, a^1, a^2, \dots, a^{m - 1}\}$. Logo $[a] \subseteq \{a^0, a^1, a^2, \dots, a^{m - 1}\}$ e como $\{a^0, a^1, a^2, \dots, a^{m - 1}\} \subset [a]$ segue que
-	\[
-		G = [a] = \{a^0, a^1, a^2, \dots, a^{m - 1}\}
-	\]
-	e ent\~ao $|G| = m$, o que completa a demonstra\c{c}\~ao.
+    Agora seja $x \in G = [a]$. Ent\~ao $x = a^t$ para algum $t \in \z$. Efetuando a divis\~ao inteira de $t$ por $m$ obtemos
+    \[
+        t = qm + r
+    \]
+    com $0 \le r < m$. Da{\'\i}
+    \begin{align*}
+        a^t = a^{qm + r} = a^{qm}a^r = (a^m)^qa^r = e^qa^r = a^r
+    \end{align*}
+    e como os poss{\'\i}veis valores de $r$ s\~ao 0, 1, 2, \dots, m-1 ent\~ao $a^t \in \{a^0, a^1, a^2, \dots, a^{m - 1}\}$. Logo $[a] \subseteq \{a^0, a^1, a^2, \dots, a^{m - 1}\}$ e como $\{a^0, a^1, a^2, \dots, a^{m - 1}\} \subset [a]$ segue que
+    \[
+        G = [a] = \{a^0, a^1, a^2, \dots, a^{m - 1}\}
+    \]
+    e ent\~ao $|G| = m$, o que completa a demonstra\c{c}\~ao.
 \end{prova}
 
 \begin{corolario}
     Seja $G = [a]$ um grupo c{\'\i}clico de ordem finita igual a $m$. Ent\~ao a fun\c{c}\~ao $f : \z_m \to G$ dada por $f(\overline{x}) = a^x$ \'e um isomorfimo de grupos.
 \end{corolario}
 \begin{prova}
-	Basta mostrar que a fun\c{c}\~ao $f : \z_m \to G$ dada por $f(\overline{x}) = a^x$ \'e um isomorfimo de grupos.
+    Basta mostrar que a fun\c{c}\~ao $f : \z_m \to G$ dada por $f(\overline{x}) = a^x$ \'e um isomorfimo de grupos.
 \end{prova}
 % section isomorfimos_de_grupos (end)
 
@@ -1370,57 +1370,57 @@ Aqui temos
 
 No grupo $S_3$ considere as permuta\c{c}\~oes
 \[
-	f = \begin{pmatrix}
-		1 & 2 & 3\\
-		2 & 3 & 1
-	\end{pmatrix} \quad \mbox{e}\quad
-	g = \begin{pmatrix}
-		1 & 2 & 3\\
-		1 & 3 & 2
-	\end{pmatrix}.
+    f = \begin{pmatrix}
+        1 & 2 & 3\\
+        2 & 3 & 1
+    \end{pmatrix} \quad \mbox{e}\quad
+    g = \begin{pmatrix}
+        1 & 2 & 3\\
+        1 & 3 & 2
+    \end{pmatrix}.
 \]
 
 Assim
 \[
-	S_3 = \{Id, f, f^2, g, gf, gf^2\}.
+    S_3 = \{Id, f, f^2, g, gf, gf^2\}.
 \]
 
 Seja $H = [g] = \{Id, g\}$. As classes laterais de $H$ s\~ao
 \begin{align*}
-	IdH &= H\\
-	fH &= \{f, fg\} = \{f, gf^2\} = (gf^2)H\\
-	f^2H &= \{f^2, f^2g\} = \{f^2, gf\} = (gf)H.
+    IdH &= H\\
+    fH &= \{f, fg\} = \{f, gf^2\} = (gf^2)H\\
+    f^2H &= \{f^2, f^2g\} = \{f^2, gf\} = (gf)H.
 \end{align*}
 Logo
 \[
-	S_3/H = \{H, fH, f^2H\}.
+    S_3/H = \{H, fH, f^2H\}.
 \]
 Defina em $S_3/H$ a opera\c{c}\~ao
 \[
-	(xH)(yH) = (xy)H,
+    (xH)(yH) = (xy)H,
 \]
 onde $xH$, $yH \in S_3/H$.
 
 Vamos verificar se essa opera\c{c}\~ao est\'a bem definida. Para isso sejam
 \begin{align*}
-	fH &= (gf^2)H\\
-	f^2H &= (gf)H.
+    fH &= (gf^2)H\\
+    f^2H &= (gf)H.
 \end{align*}
 Temos
 \[
-	(fH)(f^2H) = (ff^2)H = f^2H = H
+    (fH)(f^2H) = (ff^2)H = f^2H = H
 \]
 e
 \begin{align*}
-	[(gf^2)H][(gf)H] = [(gf^2)(gf)]H = [g(f^2g)f]H = [g(gf)f]H = [(gg)(ff)]H = f^2H.
+    [(gf^2)H][(gf)H] = [(gf^2)(gf)]H = [g(f^2g)f]H = [g(gf)f]H = [(gg)(ff)]H = f^2H.
 \end{align*}
 Com isso
 \[
-	(fH)(f^2H) \ne [(gf^2)H][(gf)H],
+    (fH)(f^2H) \ne [(gf^2)H][(gf)H],
 \]
 ou seja essa opera\c{c}\~ao n\~ao est\'a bem definida em $S_3/H$. Isto ocorre pois
 \[
-	fH = \{f, gf^2\} \ne \{f, gf\} = Hf.
+    fH = \{f, gf^2\} \ne \{f, gf\} = Hf.
 \]
 Portanto nem sempre \'e poss{\'\i}vel transformar o conjunto $S_3/H$ em um grupo. Para tal \'e preciso introduzir um novo conceito.
 
@@ -1442,30 +1442,30 @@ Como $G$ \'e associativo, ent\~ao a \textbf{multiplica\c{c}\~ao de subconjuntos}
     \begin{enumerate}[label={\arabic*})]
         \item Seja $G = \{e, a, b, c\}$ o grupo tal que
         \begin{center}
-        	\begin{table}[htp]
-	        	\centering
-	        	\caption{Grupo de Klein}
-	            \begin{tabular}{|c|c|c|c|c|}
-	                \hline
-	                $\cdot$ & e & a & b & c\\
-	                \hline
-	                e & e & a & b & c\\
-	                \hline
-	                a & a & e & c & b\\
-	                \hline
-	                b & b & c & e & a\\
-	                \hline
-	                c & c & b & a & e\\
-	                \hline
-	            \end{tabular}.
-        	\end{table}	''
+            \begin{table}[htp]
+                \centering
+                \caption{Grupo de Klein}
+                \begin{tabular}{|c|c|c|c|c|}
+                    \hline
+                    $\cdot$ & e & a & b & c\\
+                    \hline
+                    e & e & a & b & c\\
+                    \hline
+                    a & a & e & c & b\\
+                    \hline
+                    b & b & c & e & a\\
+                    \hline
+                    c & c & b & a & e\\
+                    \hline
+                \end{tabular}.
+            \end{table}    ''
         \end{center}
 
         Esse grupo \'e chamada de \textbf{grupo de Klein}.
 
         Se $A = \{e, a\}$ e $B = \{b, c\}$, ent\~ao
         \[
-        	AB = \{xy \mid x \in A,\ y \in B\} = \{b, c, ab, ac\} = \{b, c\}.
+            AB = \{xy \mid x \in A,\ y \in B\} = \{b, c, ab, ac\} = \{b, c\}.
         \]
 
         \item Considere o grupo multiplicativo dos n\'umeros reais. Se
@@ -1475,7 +1475,7 @@ Como $G$ \'e associativo, ent\~ao a \textbf{multiplica\c{c}\~ao de subconjuntos}
         \end{align*}
         ent\~ao
         \[
-        	AB = \{xy \mid x \in A,\ y \in B\} = B.
+            AB = \{xy \mid x \in A,\ y \in B\} = B.
         \]
     \end{enumerate}
 \end{exemplos}
@@ -1511,43 +1511,43 @@ Como $G$ \'e associativo, ent\~ao a \textbf{multiplica\c{c}\~ao de subconjuntos}
         \]
         Considere o subgrupo $H = [\ f\ ] = \{Id, f, f^2\}$. Ent\~ao $H$ \'e um subgrupo normal de $G$.
         \begin{solucao}
-        	De fato,
-        	\begin{align*}
-        		IdH &= H = HId\\
-        		fH &= \{f, f^2, Id\} = Hf\\
-        		f^2H &= \{f^2, Id, f\} = Hf^2\\
-        		gH &= \{g, gf, gf^2\} = Hg\\
-        		(gf)H &= \{gf, gf^2, g\} = H(gf)\\
-        		(gf^2)H &= \{gf^2, g, gf\} = H(gf^2).
-        	\end{align*}
+            De fato,
+            \begin{align*}
+                IdH &= H = HId\\
+                fH &= \{f, f^2, Id\} = Hf\\
+                f^2H &= \{f^2, Id, f\} = Hf^2\\
+                gH &= \{g, gf, gf^2\} = Hg\\
+                (gf)H &= \{gf, gf^2, g\} = H(gf)\\
+                (gf^2)H &= \{gf^2, g, gf\} = H(gf^2).
+            \end{align*}
 
-        	Portanto
-        	\[
-        		xH = Hx
-        	\]
-        	para todo $x \in S_3$. Logo $H$ \'e um subgrupo normal de $S_3$.
+            Portanto
+            \[
+                xH = Hx
+            \]
+            para todo $x \in S_3$. Logo $H$ \'e um subgrupo normal de $S_3$.
         \end{solucao}
 
         \item Se $G$ \'e um grupo abeliano, ent\~ao todo subgrupo de $G$ \'e normal.
         \begin{solucao}
-        	De fato, como $G$ \'e abeliano ent\~ao
-        	\[
-        		xy = yx
-        	\]
-        	para todos $x$, $y \in G$. Da{\'\i} se $N$ \'e um sugrupo de $G$, ent\~ao para todo $x \in G$ temos
-        	\[
-        		xN = \{xt \mid t \in N\} = \{tx \mid t \in N\} = Nx.
-        	\]
-        	Portanto $N$ \'e um subgrupo normal de $G$.
+            De fato, como $G$ \'e abeliano ent\~ao
+            \[
+                xy = yx
+            \]
+            para todos $x$, $y \in G$. Da{\'\i} se $N$ \'e um sugrupo de $G$, ent\~ao para todo $x \in G$ temos
+            \[
+                xN = \{xt \mid t \in N\} = \{tx \mid t \in N\} = Nx.
+            \]
+            Portanto $N$ \'e um subgrupo normal de $G$.
         \end{solucao}
 
         \item Seja $H$ um subgrupo de $G$ tal que $H$ possui somente duas classes laterais. Ent\~ao $H$ \'e um subgrupo normal de $G$.
         \begin{solucao}
-        	De fato, como as classes laterais \`a direita s\~ao duas: $H$ e $xH$, onde $x \notin H$. Ent\~ao $xH = C_G(H)$ pois $G = H \cup xH$ e $H \cap xH = \emptyset$.
+            De fato, como as classes laterais \`a direita s\~ao duas: $H$ e $xH$, onde $x \notin H$. Ent\~ao $xH = C_G(H)$ pois $G = H \cup xH$ e $H \cap xH = \emptyset$.
 
-        	Agora as classes laterais \`a esquerda tamb\'em s\~ao somente duas: $H$ e $Hx$, onde $x \notin H$. Ent\~ao $Hx = C_G(H)$ pois $G = H \cup Hx$ e $H \cap Hx = \emptyset$.
+            Agora as classes laterais \`a esquerda tamb\'em s\~ao somente duas: $H$ e $Hx$, onde $x \notin H$. Ent\~ao $Hx = C_G(H)$ pois $G = H \cup Hx$ e $H \cap Hx = \emptyset$.
 
-        	Portanto $xH = Hx$ para todo $x \in G$, isto \'e, $H$ \'e um subgrupo normal de $G$.
+            Portanto $xH = Hx$ para todo $x \in G$, isto \'e, $H$ \'e um subgrupo normal de $G$.
         \end{solucao}
     \end{enumerate}
 \end{exemplos}
@@ -1556,35 +1556,35 @@ Como $G$ \'e associativo, ent\~ao a \textbf{multiplica\c{c}\~ao de subconjuntos}
     Seja $G$ um grupo. Se $H$ e $L$ s\~ao subgrupos normais de $G$, ent\~ao $H \cap L$ \'e um subgrupo normal de $G$.
 \end{proposicao}
 \begin{prova}
-	Precisamos mostrar que
-	\[
-		x(H\cap L) = (H \cap L)x
-	\]
-	para todo $x \in G$. Vamos mostrar isso provando as duas inclus\~oes.
+    Precisamos mostrar que
+    \[
+        x(H\cap L) = (H \cap L)x
+    \]
+    para todo $x \in G$. Vamos mostrar isso provando as duas inclus\~oes.
 
-	Assim seja $x \in G$ e $y \in x(H\cap L)$. Temos
-	\[
-		y = xt
-	\]
-	com $t \in H\cap L$. Da{\'\i} $y = xt$ com $t \in H$ e $t \in L$. Logo $y \in xH$ e $y \in xL$. Mas por hip\'otise, $H$ e $L$ s\~ao subgrupos normais, logo $y \in Hx$ e $y \in Lx$. Ou seja, existem $h_1 \in H$ e $l_1 \in L$ tais que
-	\begin{align*}
-		y &= h_1x\\
-		y &= l_1x.
-	\end{align*}
-	Donde segue que $h_1 = l_1$. Assim $y = kx$ com $k \in H\cap L$, isto \'e, $y \in x(H\cap L)$. Com isso obtemos que $x(H\cap L) \subseteq (H\cap L)x$.
+    Assim seja $x \in G$ e $y \in x(H\cap L)$. Temos
+    \[
+        y = xt
+    \]
+    com $t \in H\cap L$. Da{\'\i} $y = xt$ com $t \in H$ e $t \in L$. Logo $y \in xH$ e $y \in xL$. Mas por hip\'otise, $H$ e $L$ s\~ao subgrupos normais, logo $y \in Hx$ e $y \in Lx$. Ou seja, existem $h_1 \in H$ e $l_1 \in L$ tais que
+    \begin{align*}
+        y &= h_1x\\
+        y &= l_1x.
+    \end{align*}
+    Donde segue que $h_1 = l_1$. Assim $y = kx$ com $k \in H\cap L$, isto \'e, $y \in x(H\cap L)$. Com isso obtemos que $x(H\cap L) \subseteq (H\cap L)x$.
 
-	Agora seja $z \in (H\cap L)x$. Ent\~ao $z = rx$ com $r \in H\cap L$. Ou seja, $z \in xH$ e $ \in Lx$. Novamente, usando a hip\'otese que $H$ e $L$ s\~ao subgrupos normais, obtemos que $z \in xH$ e $z \in xL$. Com isso
-	\begin{align*}
-		z &= xh_2\\
-		z &= xl_2
-	\end{align*}
-	com $h_2 \in H$ e $l_2 \in L$. Assim devemos ter $h_2 = l_2$ o que nos leva \`a conclus\~ao que $z = xu$ com $u \in H\cap L$. Da{\'\i} $z \in x(H \cap L)$ e com isso $(H \cap L)x \subseteq x(H \cap L)$.
+    Agora seja $z \in (H\cap L)x$. Ent\~ao $z = rx$ com $r \in H\cap L$. Ou seja, $z \in xH$ e $ \in Lx$. Novamente, usando a hip\'otese que $H$ e $L$ s\~ao subgrupos normais, obtemos que $z \in xH$ e $z \in xL$. Com isso
+    \begin{align*}
+        z &= xh_2\\
+        z &= xl_2
+    \end{align*}
+    com $h_2 \in H$ e $l_2 \in L$. Assim devemos ter $h_2 = l_2$ o que nos leva \`a conclus\~ao que $z = xu$ com $u \in H\cap L$. Da{\'\i} $z \in x(H \cap L)$ e com isso $(H \cap L)x \subseteq x(H \cap L)$.
 
-	Portanto
-	\[
-		x(H \cap L) = (H \cap L)x
-	\]
-	e ent\~ao $H \cap L$ \'e um subgrupo normal de $G$, como quer{\'\i}amos.
+    Portanto
+    \[
+        x(H \cap L) = (H \cap L)x
+    \]
+    e ent\~ao $H \cap L$ \'e um subgrupo normal de $G$, como quer{\'\i}amos.
 \end{prova}
 
 \begin{proposicao}
@@ -1594,38 +1594,38 @@ Como $G$ \'e associativo, ent\~ao a \textbf{multiplica\c{c}\~ao de subconjuntos}
     \]
 \end{proposicao}
 \begin{prova}
-	Vamos mostrar a igualdade, provando as duas inclus\~oes.
+    Vamos mostrar a igualdade, provando as duas inclus\~oes.
 
-	Seja $x \in (aN)(bN)$. Da{\'\i} $x = \alpha\beta$ com $\alpha \in aN$ e $\beta \in bN$. Logo existem $n_1$, $n_2 \in N$ tais que
-	\begin{align*}
-		\alpha &= an_1\\
-		\beta &= bn_2.
-	\end{align*}
-	Ent\~ao
-	\begin{align*}
-		x = (an_1)(bn_2) = a(n_1b)n_2.
-	\end{align*}
-	Mas por hip\'otese, $N$ \'e um subgrupo normal de $G$ e ent\~ao $bN = Nb$. Assim como $n_1b \in Nb = bN$, existe $n_3 \in N$ tal que
-	\[
-		n_1b = bn_3.
-	\]
-	Com isso
-	\begin{align*}
-		x &= a(n_1b)n_2 = a(bn_2)n_2 = (ab)(n3n_2) \in (ab)N
-	\end{align*}
-	e ent\~ao $x \in (ab)N$, ou seja, $(aN)(bN) \subseteq (ab)N$.
+    Seja $x \in (aN)(bN)$. Da{\'\i} $x = \alpha\beta$ com $\alpha \in aN$ e $\beta \in bN$. Logo existem $n_1$, $n_2 \in N$ tais que
+    \begin{align*}
+        \alpha &= an_1\\
+        \beta &= bn_2.
+    \end{align*}
+    Ent\~ao
+    \begin{align*}
+        x = (an_1)(bn_2) = a(n_1b)n_2.
+    \end{align*}
+    Mas por hip\'otese, $N$ \'e um subgrupo normal de $G$ e ent\~ao $bN = Nb$. Assim como $n_1b \in Nb = bN$, existe $n_3 \in N$ tal que
+    \[
+        n_1b = bn_3.
+    \]
+    Com isso
+    \begin{align*}
+        x &= a(n_1b)n_2 = a(bn_2)n_2 = (ab)(n3n_2) \in (ab)N
+    \end{align*}
+    e ent\~ao $x \in (ab)N$, ou seja, $(aN)(bN) \subseteq (ab)N$.
 
-	Agora, para a outra inclus\~ao, seja $y \in (ab)N$. Da{\'\i}
-	\begin{align*}
-		y &= (ab)n = \underbrace{(ae)}_{\in An}\underbrace{(bn)}_{\in bN},
-	\end{align*}
-	isto \'e, $y \in (aN)(bN)$. Logo $(ab)N \subseteq (aN)(bN)$.
+    Agora, para a outra inclus\~ao, seja $y \in (ab)N$. Da{\'\i}
+    \begin{align*}
+        y &= (ab)n = \underbrace{(ae)}_{\in An}\underbrace{(bn)}_{\in bN},
+    \end{align*}
+    isto \'e, $y \in (aN)(bN)$. Logo $(ab)N \subseteq (aN)(bN)$.
 
-	Portanto,
-	\[
-		(aN)(bN) = (ab)N,
-	\]
-	como quer{\'\i}amos.
+    Portanto,
+    \[
+        (aN)(bN) = (ab)N,
+    \]
+    como quer{\'\i}amos.
 \end{prova}
 
 Seja $N$ um subgrupo normal de um grupo $G$, onde $e$ denota o elemento neutro de $G$. Denote por
@@ -1642,52 +1642,52 @@ para todos $aN$, $bN \in G/N$.
 
 Sejam $a$, $b$, $x$, $y \in G$ tais que
 \begin{align*}
-	aN &= xN\\
-	bN &= yN.
+    aN &= xN\\
+    bN &= yN.
 \end{align*}
 
 Queremos mostrar que
 \[
-	(aN)(bN) = (xN)(yN).
+    (aN)(bN) = (xN)(yN).
 \]
 Mas
 \begin{align*}
-	(aN)(bN) &= (ab)N\\
-	(xN)(yN) &= (xy)N
+    (aN)(bN) &= (ab)N\\
+    (xN)(yN) &= (xy)N
 \end{align*}
 ent\~ao vamos mostrar que $(ab)N = (xy)N$.
 
 Seja $z \in (ab)N$. Da{\'\i}
 \[
-	z = (ab)n = a(bn),\ n \in N.
+    z = (ab)n = a(bn),\ n \in N.
 \]
 Mas, por hip\'otse $bN = yN$, ent\~ao $yN = Ny$ assim $bn = yn_1$. Al\'em disso, $N$ \'e um subgrupo normal de $G$ ent\~ao $yN = Ny$ e da{\'\i} $yn_1 = n_2y$. Ent\~ao
 \[
-	z = a(bn) = a(yn_1) = a(n_2y) = (an_2)y.
+    z = a(bn) = a(yn_1) = a(n_2y) = (an_2)y.
 \]
 Novamente, pela hip\'otese, $aN = xN$ e ent\~ao podemos escrever $an_2 = xn_3$. Assim
 \[
-	z = a(bn) = a(yn_1) = a(n_2y) = (an_2)y = (xn_3)y = x(n_3y).
+    z = a(bn) = a(yn_1) = a(n_2y) = (an_2)y = (xn_3)y = x(n_3y).
 \]
 Mas $N$ \'e um subgrupo normal, com isso $yN = Ny$ e ent\~ao podemos escrever $n_3y = yn_4$. Logo
 \[
-	z = x(n_3y) = x(yn_4) = (xy)n_4
+    z = x(n_3y) = x(yn_4) = (xy)n_4
 \]
 essa \'ultima igualdade nos diz que $z \in (xy)N$ e ent\~ao $(ab)N \subseteq (xy)N$.
 
 Agora seja $v \in (xy)N$. Da{\'\i} existe $r \in N$ tal que $v = (xy)r$. Aqui repetindo os passos do caso anterior, usando que $N$ \'e um subgrupo normal e que $aN = xN$ e que $bN = yN$ podemos escrever
 \begin{align*}
-	v = (xy)r = x(yr) = x(br_1) = x(r_2b) = (xr_2)b = (ar_3)b = a(r_3b) = (ab)r_4
+    v = (xy)r = x(yr) = x(br_1) = x(r_2b) = (xr_2)b = (ar_3)b = a(r_3b) = (ab)r_4
 \end{align*}
 e com isso $v \in (ab)N$. Logo $(xy)N \subseteq (ab)N$.
 
 Portanto
 \[
-	(ab)N = (xy)N,
+    (ab)N = (xy)N,
 \]
 ou seja,
 \[
-	(aN)(bN) = (ab)N = (xy)N = (xN)(yN).
+    (aN)(bN) = (ab)N = (xy)N = (xN)(yN).
 \]
 
 Al\'em disso, a multiplica\c{c}\~ao em $G/H$ satisfaz as seguintes propriedades:
@@ -1714,57 +1714,57 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
     \begin{enumerate}[label={\arabic*})]
         \item Seja $G = \{1, -1, i, -i\}$ um grupo e $N = \{1, -1\}$. Como $G$ \'e um grupo abeliano ent\~ao $N$ \'e um subgrupo normal de $G$. Assim podemos definir o grupo quociente $G/N$. As classes laterais de $N$ s\~ao
         \begin{align*}
-        	1N &= N\\
-        	iN &= \{it \mid t \in N\} = \{i, -i\}.
+            1N &= N\\
+            iN &= \{it \mid t \in N\} = \{i, -i\}.
         \end{align*}
         Assim
         \[
-        	G/N = \{N, iN\}
+            G/N = \{N, iN\}
         \]
         e a opera\c{c}\~ao em $G$ \'e dada por
         \begin{center}
-        	\begin{table}[htp]
-        		\centering
-        		\caption{$G/N$}
-        		\begin{tabular}{|c|c|c|}
-        			\hline
-        			$\cdot$ & $N$ & $iN$\\
-        			\hline
-        			$N$ & $N$ & $iN$\\
-        			\hline
-        			$iN$ & $iN$ & $N$\\
-        			\hline
-        		\end{tabular}
-        	\end{table}
+            \begin{table}[htp]
+                \centering
+                \caption{$G/N$}
+                \begin{tabular}{|c|c|c|}
+                    \hline
+                    $\cdot$ & $N$ & $iN$\\
+                    \hline
+                    $N$ & $N$ & $iN$\\
+                    \hline
+                    $iN$ & $iN$ & $N$\\
+                    \hline
+                \end{tabular}
+            \end{table}
         \end{center}
 
         \item Seja $G = \z_6 = \{\overline{0}, \overline{1}, \overline{2}, \overline{3}, \overline{4}, \overline{5}\}$ e $H = \{\overline{0}, \overline{3}\}$. Como $\z_6$ \'e abeliano, ent\~ao $H$ \'e um subgrupo normal e com isso podemos definir o grupo quociente $\z_6/H$. As classes de equival\^encia de $H$ s\~ao
         \begin{align*}
-        	\overline{0} + H &= H\\
-        	\overline{1} + H &= \{\overline{1} + t \mid t \in H\} = \{\overline{1}, \overline{4}\}\\
-        	\overline{2} + H &= \{\overline{2} + t \mid t \in H\} = \{\overline{2}, \overline{5}\}.
+            \overline{0} + H &= H\\
+            \overline{1} + H &= \{\overline{1} + t \mid t \in H\} = \{\overline{1}, \overline{4}\}\\
+            \overline{2} + H &= \{\overline{2} + t \mid t \in H\} = \{\overline{2}, \overline{5}\}.
         \end{align*}
         Da{\'\i}
         \[
-        	\z_6/H = \{H, \overline{1} + H, \overline{2} + H\}
+            \z_6/H = \{H, \overline{1} + H, \overline{2} + H\}
         \]
         e
         \begin{center}
-        	\begin{table}[htp]
-        		\centering
-        		\caption{$\z_6/H$}
-        		\begin{tabular}{|c|c|c|c|}
-        			\hline
-        			$\oplus$ & $H$ & $\overline{1} + H$ & $\overline{2} + H$\\
-        			\hline
-        			$H$ & $H$ & $\overline{1} + H$ & $\overline{2} + H$\\
-        			\hline
-        			$\overline{1} + H$ & $\overline{1} + H$ & $\overline{2} + H$ & $H$\\
-        			\hline
-        			$\overline{2} + H$ & $\overline{2} + H$ & $H$ & $\overline{1} + H$\\
-        			\hline
-        		\end{tabular}
-        	\end{table}
+            \begin{table}[htp]
+                \centering
+                \caption{$\z_6/H$}
+                \begin{tabular}{|c|c|c|c|}
+                    \hline
+                    $\oplus$ & $H$ & $\overline{1} + H$ & $\overline{2} + H$\\
+                    \hline
+                    $H$ & $H$ & $\overline{1} + H$ & $\overline{2} + H$\\
+                    \hline
+                    $\overline{1} + H$ & $\overline{1} + H$ & $\overline{2} + H$ & $H$\\
+                    \hline
+                    $\overline{2} + H$ & $\overline{2} + H$ & $H$ & $\overline{1} + H$\\
+                    \hline
+                \end{tabular}
+            \end{table}
         \end{center}
 
 
@@ -1789,29 +1789,29 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
                 \]
                 Considere o subgrupo $H = [\ f\ ] = \{Id, f, f^2\}$. Como $H$ possui somente duas classes laterais, que s\~ao
                 \begin{align*}
-                	IdH &= H\\
-                	gH &= \{g, gf, gf^2\}
+                    IdH &= H\\
+                    gH &= \{g, gf, gf^2\}
                 \end{align*}
                 ent\~ao $H$ \'e um subgrupo normal de $S_3$. Assim podemos definir o grupo quociente $S_3/H$, onde
                 \[
-                	S_3/H = \{H, gH\}.
+                    S_3/H = \{H, gH\}.
                 \]
                 Temos
                 \begin{center}
-		        	\begin{table}[htp]
-		        		\centering
-		        		\caption{$S_3/H$}
-		        		\begin{tabular}{|c|c|c|}
-		        			\hline
-		        			$\circ$ & $H$ & $gN$\\
-		        			\hline
-		        			$H$ & $H$ & $gN$\\
-		        			\hline
-		        			$gN$ & $gN$ & $H$\\
-		        			\hline
-		        		\end{tabular}
-		        	\end{table}
-		        \end{center}
+                    \begin{table}[htp]
+                        \centering
+                        \caption{$S_3/H$}
+                        \begin{tabular}{|c|c|c|}
+                            \hline
+                            $\circ$ & $H$ & $gN$\\
+                            \hline
+                            $H$ & $H$ & $gN$\\
+                            \hline
+                            $gN$ & $gN$ & $H$\\
+                            \hline
+                        \end{tabular}
+                    \end{table}
+                \end{center}
     \end{enumerate}
 \end{exemplos}
 
@@ -1822,39 +1822,39 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
     \]
 \end{proposicao}
 \begin{prova}
-	Primeiro vamos mostrar que $\mu$ \'e um homomorfismo de grupos. Para isso sejam $x$, $y \in G$. Da{\'\i}
-	\begin{align*}
-		\mu(xy) = (xy)N = (xN)(yN) = \mu(x)\mu(y).
-	\end{align*}
-	Logo $\mu$ \'e um homomorfismo de grupos.
+    Primeiro vamos mostrar que $\mu$ \'e um homomorfismo de grupos. Para isso sejam $x$, $y \in G$. Da{\'\i}
+    \begin{align*}
+        \mu(xy) = (xy)N = (xN)(yN) = \mu(x)\mu(y).
+    \end{align*}
+    Logo $\mu$ \'e um homomorfismo de grupos.
 
-	Agora, dada $yN \in G/N$ tome $y \in G$ e com isso
-	\[
-		\mu(y) = yN,
-	\]
-	ou seja, $\mu$ \'e sobrejetor.
+    Agora, dada $yN \in G/N$ tome $y \in G$ e com isso
+    \[
+        \mu(y) = yN,
+    \]
+    ou seja, $\mu$ \'e sobrejetor.
 
-	Finalmente, mostremos que
-	\[
-		\ker(\mu) = N.
-	\]
-	Seja $x \in N$. Temos
-	\[
-		\mu(x) = xN = N = eN
-	\]
-	pois $N$ \'e subgrupo. Assim $x \in \ker(\mu)$. Logo $N \subseteq \ker(\mu)$.
+    Finalmente, mostremos que
+    \[
+        \ker(\mu) = N.
+    \]
+    Seja $x \in N$. Temos
+    \[
+        \mu(x) = xN = N = eN
+    \]
+    pois $N$ \'e subgrupo. Assim $x \in \ker(\mu)$. Logo $N \subseteq \ker(\mu)$.
 
-	Por outro lado, se $t \in \ker(\mu)$ ent\~ao
-	\[
-		\mu(t) = eN.
-	\]
-	Mas $\mu(t) = tN$ da{\'\i} devemos ter $te^{-1} \in N$, isto \'e, $t \in N$. Logo $\ker(\mu) \subseteq N$.
+    Por outro lado, se $t \in \ker(\mu)$ ent\~ao
+    \[
+        \mu(t) = eN.
+    \]
+    Mas $\mu(t) = tN$ da{\'\i} devemos ter $te^{-1} \in N$, isto \'e, $t \in N$. Logo $\ker(\mu) \subseteq N$.
 
-	Portanto
-	\[
-		\ker(\mu) = N,
-	\]
-	como quer{\'\i}amos.
+    Portanto
+    \[
+        \ker(\mu) = N,
+    \]
+    como quer{\'\i}amos.
 \end{prova}
 
 \begin{definicao}
@@ -1865,121 +1865,121 @@ Nesse grupo o elemento neutro \'e $eN$ e $(aN)^{-1} = (a^{-1})N$.
     Se $f : G \to L$ \'e um homomorfismo de grupos, ent\~ao $N = \ker(f)$ \'e um subgrupo normal de $G$ e, portanto, $G/N$ \'e um grupo.
 \end{lema}
 \begin{prova}
-	Precisamos mostrar que
-	\[
-		xN = Nx
-	\]
-	para todo $x \in G$.
+    Precisamos mostrar que
+    \[
+        xN = Nx
+    \]
+    para todo $x \in G$.
 
-	Seja $y \in xN$. Da{\'\i} $y = xh$, com $h \in N = \ker(f)$. Agora
-	\begin{align*}
-		y = xh = xh(x^{-1}x) = (xhx^{-1})x.
-	\end{align*}
-	Mas
-	\begin{align*}
-		f(xhx^{-1}) = f(x)f(h)[f(x)]^{-1}
-	\end{align*}
-	e como $h \in N = \ker(f)$ segue que $f(xhx^{-1}) = e_L$. Logo $xhx^{-1} \in N = \ker(f)$ e ent\~ao $y = (xhx^{-1})x \in Nx$. Assim $xN \subseteq Nx$.
+    Seja $y \in xN$. Da{\'\i} $y = xh$, com $h \in N = \ker(f)$. Agora
+    \begin{align*}
+        y = xh = xh(x^{-1}x) = (xhx^{-1})x.
+    \end{align*}
+    Mas
+    \begin{align*}
+        f(xhx^{-1}) = f(x)f(h)[f(x)]^{-1}
+    \end{align*}
+    e como $h \in N = \ker(f)$ segue que $f(xhx^{-1}) = e_L$. Logo $xhx^{-1} \in N = \ker(f)$ e ent\~ao $y = (xhx^{-1})x \in Nx$. Assim $xN \subseteq Nx$.
 
-	Agora seja $z \in Nx$. Da{\'\i} $z = ln$ com $l \in N$ e com isso
-	\begin{align*}
-		z = lx = (xx^{-1})ln = x(x^{-1}lx)
-	\end{align*}
-	e de modo an\'alogo ao caso anterior mostra-se que $x^{-1}lx \in N = \ker(f)$. Assim $z = x(x^{-1}lx) \in xN$. Logo $Nx \subseteq xN$.
+    Agora seja $z \in Nx$. Da{\'\i} $z = ln$ com $l \in N$ e com isso
+    \begin{align*}
+        z = lx = (xx^{-1})ln = x(x^{-1}lx)
+    \end{align*}
+    e de modo an\'alogo ao caso anterior mostra-se que $x^{-1}lx \in N = \ker(f)$. Assim $z = x(x^{-1}lx) \in xN$. Logo $Nx \subseteq xN$.
 
-	Portanto $xN = Nx$ para todo $x \in G$. Com isso $N = \ker(f)$ \'e um subgrupo normal de $G$, como quer{\'\i}amos.
+    Portanto $xN = Nx$ para todo $x \in G$. Com isso $N = \ker(f)$ \'e um subgrupo normal de $G$, como quer{\'\i}amos.
 \end{prova}
 
 \begin{teorema}[Teorema do Homomorfismo para Grupos]\label{primeiro_teorema_homomorfismo}
     Seja $f : G \to L$ um homomorfismo sobrejetor de grupos. Se $N = \ker(f)$, ent\~ao o grupo quociente $G/N$ \'e isomorfo ao grupo $L$.
 \end{teorema}
 \begin{prova}
-	Inicialmente observe que
-	\[
-		G/N = \{aN \mid a \in N\}
-	\]
-	e como $f : G \to L$ \'e sobrejetora ent\~ao
-	\[
-		L = \{f(a) \mid a \in G\}.
-	\]
-	Assim vamos definir a regra $\sigma : G/N \to L$ por $\sigma(aN) = f(a)$. Mostremos que $\sigma$ \'e uma fun\c{c}\~ao.
+    Inicialmente observe que
+    \[
+        G/N = \{aN \mid a \in N\}
+    \]
+    e como $f : G \to L$ \'e sobrejetora ent\~ao
+    \[
+        L = \{f(a) \mid a \in G\}.
+    \]
+    Assim vamos definir a regra $\sigma : G/N \to L$ por $\sigma(aN) = f(a)$. Mostremos que $\sigma$ \'e uma fun\c{c}\~ao.
 
-	Da defini\c{c}\~ao de $\sigma$ segue que todo elemento de $G/N$ possui uma imagem em $L$. Provemos que um mesmo elemento n\~ao possui duas imagens distintas. Assim sejam $aN$, $bN \in G/N$ tais que
-	\[
-		aN = bN.
-	\]
-	Da{\'\i} $ab^{-1} \in N$ e como $N = \ker(f)$ ent\~ao
-	\begin{align*}
-		f(ab^{-1}) &= e_L\\
-		f(a)[f(b)]^{-1} &= e_L\\
-		f(a) &= f(b)
-	\end{align*}
-	mas por defini\c{c}\~ao $\sigma(aN) = f(a)$ e $\sigma(bN) = f(b)$. Logo $\sigma(aN) = \sigma(bN)$, e ent\~ao $\sigma$ realmente \'e uma fun\c{c}\~ao de $G/N$ em $L$.
+    Da defini\c{c}\~ao de $\sigma$ segue que todo elemento de $G/N$ possui uma imagem em $L$. Provemos que um mesmo elemento n\~ao possui duas imagens distintas. Assim sejam $aN$, $bN \in G/N$ tais que
+    \[
+        aN = bN.
+    \]
+    Da{\'\i} $ab^{-1} \in N$ e como $N = \ker(f)$ ent\~ao
+    \begin{align*}
+        f(ab^{-1}) &= e_L\\
+        f(a)[f(b)]^{-1} &= e_L\\
+        f(a) &= f(b)
+    \end{align*}
+    mas por defini\c{c}\~ao $\sigma(aN) = f(a)$ e $\sigma(bN) = f(b)$. Logo $\sigma(aN) = \sigma(bN)$, e ent\~ao $\sigma$ realmente \'e uma fun\c{c}\~ao de $G/N$ em $L$.
 
-	Mostremos que $\sigma$ \'e um homomorfismo de grupos e que esse homomorfismo \'e bijetor.
+    Mostremos que $\sigma$ \'e um homomorfismo de grupos e que esse homomorfismo \'e bijetor.
 
-	Primeiro, dados $aN$, $bN \in G/H$ temos
-	\begin{align*}
-		\sigma((aN)(bN)) = \sigma((ab)N) = f(ab) = f(a)f(b) = \sigma(aN)\sigma(bN).
-	\end{align*}
-	Logo $\sigma$ \'e um homomorfismo de grupos.
+    Primeiro, dados $aN$, $bN \in G/H$ temos
+    \begin{align*}
+        \sigma((aN)(bN)) = \sigma((ab)N) = f(ab) = f(a)f(b) = \sigma(aN)\sigma(bN).
+    \end{align*}
+    Logo $\sigma$ \'e um homomorfismo de grupos.
 
-	Agora
-	\[
-		\ker(\sigma) = \{aN \in g/N \mid \sigma(aN) = e_L\}.
-	\]
-	Mas
-	\begin{align*}
-		\sigma(aN) &= e_L\\
-		f(a) &= e_L
-	\end{align*}
-	e ent\~ao $a \in \ker(f) = N$. Com isso $aN = N = eN$. Logo
-	\[
-		\ker(\sigma) = \{eN\}
-	\]
-	e assim $\sigma$ \'e injetora.
+    Agora
+    \[
+        \ker(\sigma) = \{aN \in g/N \mid \sigma(aN) = e_L\}.
+    \]
+    Mas
+    \begin{align*}
+        \sigma(aN) &= e_L\\
+        f(a) &= e_L
+    \end{align*}
+    e ent\~ao $a \in \ker(f) = N$. Com isso $aN = N = eN$. Logo
+    \[
+        \ker(\sigma) = \{eN\}
+    \]
+    e assim $\sigma$ \'e injetora.
 
-	Finalmente, seja $y \in L$. Queremos encontrar $x \in G/N$ tal que
-	\[
-		\sigma(x) = y.
-	\]
-	Mas
-	\[
-		L = \{f(a) \mid a \in G\}
-	\]
-	e ent\~ao $y = f(a)$ para algum $a \in G$. Tomandi $x = aN$ obtemos
-	\begin{align*}
-		\sigma(x) = \sigma(aN) = f(a) = y,
-	\end{align*}
-	isto \'e, $\sigma$ \'e sobrejetora.
+    Finalmente, seja $y \in L$. Queremos encontrar $x \in G/N$ tal que
+    \[
+        \sigma(x) = y.
+    \]
+    Mas
+    \[
+        L = \{f(a) \mid a \in G\}
+    \]
+    e ent\~ao $y = f(a)$ para algum $a \in G$. Tomandi $x = aN$ obtemos
+    \begin{align*}
+        \sigma(x) = \sigma(aN) = f(a) = y,
+    \end{align*}
+    isto \'e, $\sigma$ \'e sobrejetora.
 
-	Portanto $\sigma$ \'e um isomorfismo de grupos, da{\'\i} $G/N \cong L$, como quer{\'\i}amos.
+    Portanto $\sigma$ \'e um isomorfismo de grupos, da{\'\i} $G/N \cong L$, como quer{\'\i}amos.
 \end{prova}
 
 \begin{exemplo}
     Dado um inteiro $m > 1$, considere o homomorfismo $\rho_m : \z \to \z_m$ definido por $\rho_m(x) = \overline{x}$.
 \end{exemplo}
 \begin{solucao}
-	Como $\rho_m$ \'e um homomorfismo sobrejetor, ent\~ao do Teorema \ref{primeiro_teorema_homomorfismo} segue que
-	\[
-		\z/N \cong \z_m
-	\]
-	onde
-	\[
-		N = \ker(\rho_m).
-	\]
-	Mas
-	\[
-		\ker(\rho_m) = \{x \in \z \mid \rho_m(x) = \overline{0}\}.
-	\]
-	Agora $\rho_m(x) = \overline{0}$ se, e s\'o se, $x \equiv 0 \pmod m$. O que ocorre se, e s\'o se, $x = mk$ com $k \in \z$. Assim temos
-	\[
-		N = \ker(\rho_m) = \{mk \mid k \in \z\} = m\z.
-	\]
-	Logo
-	\[
-		\z/N = \z/m\z \cong \z_m.
-	\]
+    Como $\rho_m$ \'e um homomorfismo sobrejetor, ent\~ao do Teorema \ref{primeiro_teorema_homomorfismo} segue que
+    \[
+        \z/N \cong \z_m
+    \]
+    onde
+    \[
+        N = \ker(\rho_m).
+    \]
+    Mas
+    \[
+        \ker(\rho_m) = \{x \in \z \mid \rho_m(x) = \overline{0}\}.
+    \]
+    Agora $\rho_m(x) = \overline{0}$ se, e s\'o se, $x \equiv 0 \pmod m$. O que ocorre se, e s\'o se, $x = mk$ com $k \in \z$. Assim temos
+    \[
+        N = \ker(\rho_m) = \{mk \mid k \in \z\} = m\z.
+    \]
+    Logo
+    \[
+        \z/N = \z/m\z \cong \z_m.
+    \]
 \end{solucao}
 % section subgrupos_normal (end)
 
@@ -1998,46 +1998,46 @@ O n\'umero de elementos de $G/H$ \'e chamado de \textbf{{\'\i}ndice} de $H$ em $
 \]
 
 \begin{teorema}\label{teorema_de_lagrange}
-	Seja $G$ um grupo finito. Se $H\subseteq G$ {\'e} um subgrupo, ent{\~a}o $|H|$ divide $|G|$.
+    Seja $G$ um grupo finito. Se $H\subseteq G$ {\'e} um subgrupo, ent{\~a}o $|H|$ divide $|G|$.
 \end{teorema}
 \begin{prova}
-	Seja $H$ um subgrupo de um grupo finito $G$. Denote
-	\[
-		[G : H] = r.
-	\]
-	Assim
-	\[
-		G/H = \{a_1H, a_2H, \cdots, a_rH\}
-	\]
-	com
-	\[
-		a_iH \cap a_jH = \emptyset
-	\]
-	sempre que $a_i \ne a_j$. Al\'em disso,
-	\[
-		G = a_1H \cup a_2H \cup \cdots \cup a_rH
-	\]
-	e como todas as classes de equival\^encia m\'odulo $H$ possuem a mesma quantidade de elementos e essa quantidade \'e igual \`a ordem de $H$, $o(H)$, ent\~ao
-	\begin{align*}
-		o(G) &= o(a_1H) + o(a_2H) + \cdots + o(a_rH)\\
-		o(G) &= o(H) + o(H) + \cdots + o(H)
-	\end{align*}
-	logo $o(G) = ro(H)$, ou seja,
-	\[
-		o(G) = [G : H]o(H).
-	\]
-	Portanto $o(H) | o(G)$, como quer{\'\i}amos.
+    Seja $H$ um subgrupo de um grupo finito $G$. Denote
+    \[
+        [G : H] = r.
+    \]
+    Assim
+    \[
+        G/H = \{a_1H, a_2H, \cdots, a_rH\}
+    \]
+    com
+    \[
+        a_iH \cap a_jH = \emptyset
+    \]
+    sempre que $a_i \ne a_j$. Al\'em disso,
+    \[
+        G = a_1H \cup a_2H \cup \cdots \cup a_rH
+    \]
+    e como todas as classes de equival\^encia m\'odulo $H$ possuem a mesma quantidade de elementos e essa quantidade \'e igual \`a ordem de $H$, $o(H)$, ent\~ao
+    \begin{align*}
+        o(G) &= o(a_1H) + o(a_2H) + \cdots + o(a_rH)\\
+        o(G) &= o(H) + o(H) + \cdots + o(H)
+    \end{align*}
+    logo $o(G) = ro(H)$, ou seja,
+    \[
+        o(G) = [G : H]o(H).
+    \]
+    Portanto $o(H) | o(G)$, como quer{\'\i}amos.
 \end{prova}
 
 \begin{exemplo}
-	Quais s{\~a}o as poss{\'\i}veis ordens dos subgrupos de um grupo de ordem 48?
-	\begin{solucao}
-		Seja $G$ um grupo tal que $|G|=48$. Se $H$ {\'e} um subgrupo pr\'orio de $G$, ent{\~a}o $|H|$ divide $|G|$. Mas $48=2^{4}\cdot 3$, da{\'\i} se $H$ \'e um subgrupo de $G$ ent\~ao $|H|=2$ ou $|H|=3$ ou $|H|= 2^{2}$ ou $|H|=2^{3}$ ou $|H|=2^{4}$ ou $|H|=2\cdot3$ ou $|H|=2^2\cdot 3$ ou $|H|=2^3\cdot 3$.
-	\end{solucao}
+    Quais s{\~a}o as poss{\'\i}veis ordens dos subgrupos de um grupo de ordem 48?
+    \begin{solucao}
+        Seja $G$ um grupo tal que $|G|=48$. Se $H$ {\'e} um subgrupo pr\'orio de $G$, ent{\~a}o $|H|$ divide $|G|$. Mas $48=2^{4}\cdot 3$, da{\'\i} se $H$ \'e um subgrupo de $G$ ent\~ao $|H|=2$ ou $|H|=3$ ou $|H|= 2^{2}$ ou $|H|=2^{3}$ ou $|H|=2^{4}$ ou $|H|=2\cdot3$ ou $|H|=2^2\cdot 3$ ou $|H|=2^3\cdot 3$.
+    \end{solucao}
 \end{exemplo}
 
 \begin{observacao}
-	O Teorema \ref{teorema_de_lagrange} n{\~a}o diz que haver{\'a} um subgrupo de ordem $n$ para todo $n$ tal que $n||G|$. Diz apenas que se $H$ {\'e} subgrupo de $G$, ent{\~a}o $|H|$ divide $|G|$. Por exemplo, no grupo $S_4$ considere o seguinte subconjunto:
+    O Teorema \ref{teorema_de_lagrange} n{\~a}o diz que haver{\'a} um subgrupo de ordem $n$ para todo $n$ tal que $n||G|$. Diz apenas que se $H$ {\'e} subgrupo de $G$, ent{\~a}o $|H|$ divide $|G|$. Por exemplo, no grupo $S_4$ considere o seguinte subconjunto:
             \[
                 L = \left\{\begin{pmatrix}
                     1 & 2 & 3 & 4\\
@@ -2063,15 +2063,15 @@ O n\'umero de elementos de $G/H$ \'e chamado de \textbf{{\'\i}ndice} de $H$ em $
     Seja $G$ um grupo finito. Ent\~ao a ordem de um elemento $x \in G$ divide a ordem de $G$ e o quociente \'e $[G : H]$, onde $H = [x]$.
 \end{corolario}
 \begin{prova}
-	A ordem de $x \in G$ \'e igual \`a ordem do subgrupo $H = [x]$. Assim, pelo Teorema de Lagrange \eqref{teorema_de_lagrange}, $o(H) | o(G)$ e
-	\[
-		o(G) = [G : H]o(H),
-	\]
-	ou seja,
-	\[
-		o(x) | o(G)
-	\]
-	como quer{\'\i}amos.
+    A ordem de $x \in G$ \'e igual \`a ordem do subgrupo $H = [x]$. Assim, pelo Teorema de Lagrange \eqref{teorema_de_lagrange}, $o(H) | o(G)$ e
+    \[
+        o(G) = [G : H]o(H),
+    \]
+    ou seja,
+    \[
+        o(x) | o(G)
+    \]
+    como quer{\'\i}amos.
 \end{prova}
 
 \begin{corolario}
@@ -2082,35 +2082,35 @@ O n\'umero de elementos de $G/H$ \'e chamado de \textbf{{\'\i}ndice} de $H$ em $
     onde $e$ denota o elemento neutro de $G$.
 \end{corolario}
 \begin{prova}
-	Suponha que a ordem de $x \in G$ \'e $k$. Assim $k$ \'e o menor inteiro estritamente positivo tal que $x^k = e$. Assim pelo Corol\'ario \eqref{primeiro_coralario_Lagrange} podemos escrever
-	\[
-		o(G) = [G : H]k
-	\]
-	onde $H = [x]$. Logo
-	\[
-		x^{o(G)} = x^{[G : H]k} = (x^k)^{[G : H]} = e
-	\]
-	como quer{\'\i}amos.
+    Suponha que a ordem de $x \in G$ \'e $k$. Assim $k$ \'e o menor inteiro estritamente positivo tal que $x^k = e$. Assim pelo Corol\'ario \eqref{primeiro_coralario_Lagrange} podemos escrever
+    \[
+        o(G) = [G : H]k
+    \]
+    onde $H = [x]$. Logo
+    \[
+        x^{o(G)} = x^{[G : H]k} = (x^k)^{[G : H]} = e
+    \]
+    como quer{\'\i}amos.
 \end{prova}
 
 \begin{corolario}
     Seja $G$ um grupo finito cuja ordem \'e um n\'umero primo. Ent\~ao $G$ \'e um grupo c{\'\i}clico e os \'unicos subgrupos de $G$ s\~ao os triviais, ou seja, $\{e\}$ e $G$.
 \end{corolario}
 \begin{prova}
-	Seja $o(G) = p$, com $p$ primo. Assim $p > 1$ e da{\'\i} existe $x \in G$ com $x \ne e$. Seja $H = [x]$. Do Teorema de Lagrange \eqref{teorema_de_lagrange} segue que
-	\[
-		o(H) | p.
-	\]
-	Da{\'\i} $o(H) = 1$ ou $o(H) = p$. Mas $x \ne e$, logo $o(H) = p$ e ent\~ao
-	\[
-		G = H = [x]
-	\]
-	e assim $G$ \'e c{\'\i}clico.
+    Seja $o(G) = p$, com $p$ primo. Assim $p > 1$ e da{\'\i} existe $x \in G$ com $x \ne e$. Seja $H = [x]$. Do Teorema de Lagrange \eqref{teorema_de_lagrange} segue que
+    \[
+        o(H) | p.
+    \]
+    Da{\'\i} $o(H) = 1$ ou $o(H) = p$. Mas $x \ne e$, logo $o(H) = p$ e ent\~ao
+    \[
+        G = H = [x]
+    \]
+    e assim $G$ \'e c{\'\i}clico.
 
-	Agora seja $J$ um subgrupo de $G$. Da{\'\i} Teorema de Lagrange \eqref{teorema_de_lagrange} segue que
-	\[
-		o(J) | o(G) = p.
-	\]
-	Com isso $o(J) = 1$ ou $o(J) = p$. Logo $J = \{e\}$ ou $J = G$, como quer{\'\i}amos.
+    Agora seja $J$ um subgrupo de $G$. Da{\'\i} Teorema de Lagrange \eqref{teorema_de_lagrange} segue que
+    \[
+        o(J) | o(G) = p.
+    \]
+    Com isso $o(J) = 1$ ou $o(J) = p$. Logo $J = \{e\}$ ou $J = G$, como quer{\'\i}amos.
 
 \end{prova}
