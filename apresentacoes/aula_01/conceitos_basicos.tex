@@ -1,0 +1,91 @@
+%!TEX program = xelatex
+\def\ano{2020}
+\def\semestre{2}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{No\c{c}\~oes de L\'ogica}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+
+    \begin{frame}
+        \begin{definicao}
+            Uma \textbf{proposi\c{c}\~ao} \'e enunciado, \pause por meio de palavras\pause\ ou s{\'\i}mbolos, \pause ao qual podemos atribuir um \textbf{valor l\'ogico}.\pause
+        \end{definicao}
+
+        \begin{definicao}
+            Diz-se que o \textbf{valor l\'ogico} \pause de uma proposi\c{c}\~ao \'e \pause ``verdade'' (V) \pause se a proposi\c{c}\~ao \'e verdadeira \pause ou ``falsidade'' (F) \pause se a proposi\c{c}\~ao \'e falsa.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{center}
+            ``Toda proposi\c{c}\~ao tem um, \pause e um s\'o, \pause dos valores l\'ogicos \textbf{verdade} ou \textbf{falsidade}.''\pause
+        \end{center}
+        Isso \'e conhecido como \pause \textbf{Princ{\'\i}pio da n\~ao contradi\c{c}\~ao \pause e do terceiro exclu{\'\i}do}.\pause
+    \end{frame}
+
+    \begin{frame}
+        Vamos considerar com proposi\c{c}\~oes da forma:\pause
+
+        \begin{center}
+            Se $\mathbb{H}$, ent\~ao $\mathbb{T}$.\pause
+        \end{center}
+
+        $\mathbb{H}$ \'e a hip\'otese\pause
+
+        $\mathbb{T}$ \'e a tese.\pause
+
+        \begin{center}
+            $\mathbb{H}$ se, e somente se, $\mathbb{T}$\pause
+
+            ou
+
+            $\mathbb{H}$ se, e s\'o se, $\mathbb{T}$.\pause
+        \end{center}
+
+        Essa última proposi\c{c}\~ao poder decomposta em duas proposi\c{c}\~oes da seguinte forma:\pause
+        \begin{itemize}
+            \item[1)] Se $\mathbb{H}$, \pause ent\~ao $\mathbb{T}$.\pause
+            \item[2)] Se $\mathbb{T}$, \pause ent\~ao $\mathbb{H}$.
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        Temos 3 caminhos para tentar provar uma proposi\c{c}\~ao do tipo:
+        \begin{center}
+            Se $\mathbb{H}$, ent\~ao $\mathbb{T}$.\pause
+        \end{center}
+
+        \begin{itemize}
+            \item[1)] Demonstra\c{c}\~ao direta: \pause neste caso admitimos a hip\'otese $\mathbb{H}$ \textbf{verdadeira}, e utilizando de uma
+                sequ\^encia de passos cuja veracidade podemos comprovar, e com isso chegar \`a conclus\~ao que a tese $\mathbb{T}$ tamb\'em \'e
+                \textbf{verdadeira}.\pause
+            \item[2)] Demonstra\c{c}\~ao por contraposi\c{c}\~ao: \pause neste caso supomos que a $\mathbb{T}$ \'e \textbf{falsa} e devemos
+                chegar \`a conclus\~ao que a hip\'otese $\mathbb{H}$ tamb\'em \'e \textbf{falsa}. Se conseguirmos chegar \`a essa
+                conclus\~ao, ent\~ao a proposi\c{c}\~ao original ser\'a \textbf{verdadeira}.\pause
+            \item[3)] Demonstra\c{c}\~ao por contradi\c{c}\~ao ou redu\c{c}\~ao ao absurdo: \pause aqui vamos supor que a hip\'otese
+                $\mathbb{H}$ \'e \textbf{verdadeira} \pause e que a tese $\mathbb{T}$ \'e \textbf{falsa}. Usando essas suposi\c{c}\~oes
+                devemos chegar \`a alguma conclus\~ao contradit\'oria. \pause Nesse caso, significa que a nossa tese $\mathbb{T}$ deve ser
+                obrigatoriamente \textbf{verdadeira}, e com isso a proposi\c{c}\~ao tamb\'em ser\'a \textbf{verdadeira}.\pause
+        \end{itemize}
+    \end{frame}
+\end{document}

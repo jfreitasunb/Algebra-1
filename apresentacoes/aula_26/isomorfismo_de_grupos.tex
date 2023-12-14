@@ -1,0 +1,181 @@
+%!TEX program = xelatex
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{Isomorfismos de Grupos}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+
+    \begin{frame}
+        Considere o grupo multiplicativo $G = \{1, -1\}$ \pause e o grupo $S_2$ das permuta\c{c}\~oes sobre o conjunto $\{1,2\}$. \pause Aqui
+        \[
+            S_2 = \left\{id = \begin{pmatrix}
+                1 & 2\\1 & 2
+            \end{pmatrix}; \pause f = \begin{pmatrix}
+                1 & 2\\2 & 1
+            \end{pmatrix}\right\}.
+        \]
+    \end{frame}
+
+    \begin{frame}
+        Temos \pause
+        \begin{table}
+            \begin{minipage}{.5\linewidth}
+                \caption*{$G$}
+                \centering
+                \begin{tabular}{|c|c|c|}
+                    \hline
+                    $\cdot$ & 1 & -1\\
+                    \hline
+                    1 & 1 & -1\\
+                    \hline
+                    -1 & -1 & 1\\
+                    \hline
+                \end{tabular}
+            \end{minipage}%
+            \pause
+            \begin{minipage}{.5\linewidth}
+                \caption*{$S_2$}
+                \centering
+                \begin{tabular}{|c|c|c|}
+                    \hline
+                    $\circ$ & $id$ & $f$\\
+                    \hline
+                    $id$ & $id$ & $f$\\
+                    \hline
+                    $f$ & $f$ & $id$\\
+                    \hline
+                \end{tabular}
+            \end{minipage}\pause
+        \end{table}
+
+        \vspace{.4cm}
+
+        Defina $\sigma : G \to S_2$ por \pause
+        \begin{center}
+            \begin{tabular}{c}
+                $\sigma(1) = id$ \pause\\
+                \vspace{.3cm}\\
+                $\sigma(-1) = f$.
+            \end{tabular}
+        \end{center}
+    \end{frame}
+
+    \begin{frame}
+        Da defini\c{c}\~ao de $\sigma$ \pause \'e f\'acil ver que essa fun\c{c}\~ao \'e bijetora. \pause Al\'em disso, \pause
+        \begin{center}
+            \begin{tabular}{c}
+                $\sigma(1) \circ \sigma(1) \pause = id \pause \circ id \pause = id \pause = \sigma(1) \pause = \sigma(1 \cdot 1)$\pause\\
+                \\
+                $\sigma(1) \circ \sigma(-1) \pause = id \pause \circ f \pause = f \pause = \sigma(-1) \pause = \sigma(1 \cdot -1)$ \pause\\
+                \\
+                $\sigma(-1) \circ \sigma(1) \pause = f \pause \circ id \pause = f \pause = \sigma(-1) \pause = \sigma(-1 \cdot 1)$ \pause\\
+                \\
+                $\sigma(-1) \circ \sigma(-1) \pause = f \pause \circ f \pause = id \pause = \sigma(1) \pause = \sigma(-1 \cdot -1)$ \pause\\
+            \end{tabular}
+        \end{center}
+        ou seja, $\sigma(x\cdot y) = \pause \sigma(x) \circ \sigma(y)$ \pause para todos $x$, $y \in G$. \pause Assim fun\c{c}\~ao $\sigma$ \'e um homomorfismo de $G$ em $S_2$. \pause
+
+        \vspace{.3cm}
+
+        Como $\sigma$ tamb\'em \'e bijetora, \pause ent\~ao $\sigma$ \'e um isomorfismo \pause de $G$ em $S_2$. \pause Nesse caso, dizemos que $G$ e $S_2$ s\~ao grupos isomorfos \pause e denotamos isso escrevendo $G \cong S_2$.
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Sejam $(G, *)$ e $(H, \triangle)$ grupos. \pause Se existe $f : G \to H$ um isomorfismo, \pause diremos que $G$ e $H$ s\~ao \textbf{grupos isomorfos} \pause e denotaremos esse fato escrevendo $G \cong H$.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $G$ e $H$ grupos multiplicativos. \pause Se $f : G \to H$ \'e um isomorfimos de grupos, ent\~ao \pause $G$ \'e comutativo se, e somente se, $H$ \'e comutativo.
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \vspace{.3cm}
+            \begin{enumerate}
+                \item[1)] Os grupos $\z_6$ e $S_3$ \pause n\~ao s\~ao isomorfos \pause pois $\z_6$ \'e comutativo \pause e $S_3$ n\~ao \'e comutativo.\pause
+
+                \vspace{.3cm}
+
+                \item[2)] Considere o grupo $S_6$ das permuta\c{c}\~oes em $\{1, 2, \cdots, 6\}$. \pause Tome
+                \[
+                    f = \begin{pmatrix}
+                        1 & 2 & 3 & 4 & 5 & 6\\
+                        2 & 3 & 4 & 5 & 6 & 1
+                    \end{pmatrix} \in S_6. \pause
+                \]
+                Seja $H = [f]$. \pause Ent\~ao $H \cong \z_6$, \pause onde $\phi : H \to \z_6$ dada por $\phi(f^k) = \overline{k}$ \pause \'e um isomorfimo de grupos.
+
+                \vspace{.3cm}
+
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $G$ e $H$ grupos multiplicativos. \pause Seja $f : G \to H$ \'e um isomorfimos de grupos. \pause Ent\~ao $x \in G$ \pause \'e tal que $o(x) = h$ \pause se, e somente se, $o(f(x)) = h$.
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        Seja $G = [a]$ um grupo c{\'\i}clico. \pause Dois casos podem ocorrer: \pause
+
+        \textbf{Caso 1:} $a^r \ne a^s$ \pause sempre que $r \ne s$.
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Se $G = [a]$ \'e um grupo c{\'\i}clico que cumpre a condi\c{c}\~ao do \textbf{Caso 1}, \pause ent\~ao a fun\c{c}\~ao $f : \z \to G$ por $f(r) = a^r$ \pause \'e um isomorfimo de grupos. \pause Ou seja, $G \cong \z$.
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \textbf{Caso 2:} $a^r = a^s$ \pause para algum par de inteiros distintos, $r$ e $s$.
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $G = [a]$ um grupo c{\'\i}clico que cumpre a condi\c{c}\~ao do \textbf{Caso 2}. \pause Ent\~ao existe um inteiro $m > 0$ tal que \pause
+            \begin{enumerate}
+                \item[i)] $a^m = e$ \pause
+
+                \item[ii)] $a^r \ne e$, sempre que $0 < r < m$. \pause
+            \end{enumerate}
+            Nesse caso, a ordem do grupo $G$ \'e $m$ \pause e
+            \[
+                G = [a] = \{e, a, a^2, \cdots, a^{m - 1}\}.
+            \]
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{corolario}
+            Seja $G = [a]$ um grupo c{\'\i}clico de ordem finita igual a $m$. \pause Ent\~ao a fun\c{c}\~ao $f : \z_m \to G$ \pause dada por $f(\overline{x}) = a^x$ \pause \'e um isomorfimo de grupos.
+        \end{corolario}
+    \end{frame}
+\end{document}

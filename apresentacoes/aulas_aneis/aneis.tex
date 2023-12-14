@@ -1,0 +1,525 @@
+%!TEX program = xelatex
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{An\'eis}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+
+    \begin{frame}
+        \begin{definicao}
+            Seja $A \ne \emptyset$ um conjunto. \pause Dizemos que $A$ est{\'a} munido \pause (ou equipado) \pause de
+            uma \textbf{opera{\c c}{\~a}o bin{\'a}ria} \pause quando existe uma fun{\c c}{\~a}o\pause
+            \begin{align*}
+                &\Delta : A \times A \to A\\
+                &(a,b) \longmapsto a\Delta b
+            \end{align*}
+            \pause Uma opera{\c c}{\~a}o bin{\'a}ria tamb{\'e}m {\'e} chamada de uma \textbf{opera{\c c}{\~a}o interna} em $A$.\pause
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+                \item A soma usual \pause nos conjuntos $\z$, \pause $\rac$, \pause $\real$ \pause e $\complex$ \pause
+                    {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.\pause
+
+                \vspace{.3cm}
+
+                \item A multiplica\c{c}\~ao usual \pause nos conjuntos $\z$, \pause $\rac$, \pause $\real$ \pause e
+                    $\complex$ {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.\pause
+
+                \vspace{.3cm}
+
+                \item Seja $m > 1$, \pause $m \in \z$ fixo. \pause A soma \pause e a multiplica\c{c}\~ao definidos em
+                    $\z_m = \pause \{\overline{0}, \overline{1}, ..., \overline{m-1}\}$ \pause s\~ao opera\c{c}\~oes
+                    bin\'arias.\pause
+
+                \vspace{.3cm}
+
+                \item Em $\n$, \pause $\z$, \pause $\z^{*}$ \pause e em $\rac$ \pause a opera\c{c}\~ao $\div$
+                    \pause n{\~a}o {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.
+
+                \vspace{.3cm}
+
+                \item A opera\c{c}\~ao $\div$ \pause em $\rac^{*}$ \pause {\'e} uma opera{\c c}{\~a}o bin{\'a}ria.\pause
+
+                \vspace{.3cm}
+
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Seja $A \ne \emptyset$ um conjunto \pause no qual est\~ao definidas duas opera{\c c}{\~o}es bin\'arias
+            \pause $\oplus$ \pause e $\otimes$, \pause chamadas \textbf{soma} \pause e \textbf{produto} \pause ou
+            \textbf{multiplicação}. \pause Dizemos que $(A, \oplus, \otimes)$ \pause {\'e} um \textbf{anel} \pause
+            quando as seguintes condi{\c c}{\~o}es s{\~a}o verdadeiras:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item \textbf{Associatividade}: \pause para todos $x$, \pause $y$, \pause $z \in A$ \pause vale\pause
+                \[
+                    (x \oplus y) \pause \oplus z \pause = x \oplus \pause (y \oplus z).\pause
+                \]
+                Essa propriedade {\'e} chamada de \pause \textbf{propriedade associativa} \pause da soma.\pause
+
+                \vspace{.7cm}
+
+                \item \textbf{Comutatividade}: \pause Para todos $x$, \pause $y \in A$ \pause vale\pause
+                \[
+                    x \oplus y = \pause y \oplus x.
+                \]
+
+                \vspace{.7cm}
+
+                \seti
+            \end{enumerate}
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            \begin{enumerate}[label={\roman*})]
+                \conti
+
+                \item \textbf{Elemento Neutro}: \pause Existe em $A$ \pause um elemento denotado por $0$ \pause (zero)
+                    ou $0_{A}$ \pause tal que para todo elemento $x \in A$ \pause vale\pause
+                \[
+                    x \oplus 0_A \pause = x \pause = 0_A \oplus x.\pause
+                \]
+                Tal elemento $0_A$ \pause \'e chamado de \textbf{elemento neutro da soma} \pause ou simplesmente
+                \textbf{elemento neutro}.\pause
+
+                \vspace{.7cm}
+
+                \item \textbf{Elemento Oposto}: \pause Para cada elemento $x \in A$, \pause existe $y \in A$ \pause tal
+                    que\pause
+                \[
+                    x \oplus y \pause = 0_A \pause = y \oplus x.\pause
+                \]
+                Tal elemento $y$ \pause \'e chamado de \textbf{oposto aditivo} \pause de $x$ \pause ou simplesmente
+                \textbf{oposto} de $x$.
+
+                \vspace{.7cm}
+
+                \seti
+            \end{enumerate}
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            \begin{enumerate}[label={\roman*})]
+                \conti
+
+                \item \textbf{Associatividade}: \pause Para todos $x$, \pause $y$, \pause $z \in A$, \pause vale\pause
+                \[
+                    (x\otimes y) \pause \otimes z \pause = x \otimes \pause (y\otimes z).\pause
+                \]
+
+                \vspace{.7cm}
+
+                \item \textbf{Distributividade}: \pause Para todos $x$, \pause $y$, \pause $z \in A$ \pause vale\pause
+                \[
+                    (x \oplus y) \pause \otimes z \pause = x \otimes z \pause \oplus \pause y\otimes z.\pause
+                \]
+                Essa propriedade {\'e} chamada \textbf{distributiva da soma em rela{\c c}{\~a}o ao produto}.
+
+                \vspace{.7cm}
+
+                \seti
+            \end{enumerate}
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            \begin{enumerate}[label={\roman*})]
+                \conti
+
+                \item \textbf{Distributividade}: \pause Para todos $x$, \pause $y$, \pause $z \in A$ \pause vale\pause
+                \[
+                    x \otimes \pause (y \oplus z) \pause = x \otimes y \pause \oplus \pause x\otimes z.\pause
+                \]
+                Essa {\'e} a propriedade \textbf{distributiva do produto em rela{\c c}{\~a}o {\`a} soma}.
+            \end{enumerate}
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{observacoes}
+            Seja $(A, \oplus, \otimes)$ \pause um anel.\pause
+            \begin{enumerate}[label={\arabic*})]
+                \item \textbf{Comutatividade}: Se para todos $x$, \pause $y \in A$ \pause vale
+                \[
+                    x \otimes y \pause = y \otimes x.\pause
+                \]
+                Dizemos que $(A, \oplus, \otimes)$ \pause {\'e} um \textbf{anel comutativo}.\pause
+
+                \vspace{.7cm}
+
+                \item \textbf{Unidade}: \pause Se existe em $A$ \pause um elemento denotado por $1$ \pause ou $1_{A}$
+                    \pause tal que\pause
+                \[
+                    x \otimes 1_A \pause = x \pause = 1_A \otimes x,\pause
+                \]
+                para todo $x \in A$, \pause ent{\~a}o dizemos que $(A, \oplus, \otimes)$ \pause \'e um \textbf{anel com
+                unidade} \pause ou um \textbf{anel unit{\'a}rio} ou ainda um \textbf{anel com identidade}. \pause O
+                elemento $1_A$ \pause {\'e} chamado de \textbf{unidade} de $A$ \pause ou \textbf{elemento neutro da
+                multiplica\c{c}\~ao} \pause de $A$.
+
+                \vspace{.7cm}
+
+                \seti
+             \end{enumerate}
+        \end{observacoes}
+    \end{frame}
+
+    \begin{frame}
+        \begin{observacoes}
+            \begin{enumerate}[label={\arabic*})]
+                \conti
+
+                \item Se um anel $(A, \oplus, \otimes)$ \pause satisfaz as duas propriedades anteriores \pause dizemos
+                    que $(A, \oplus, \otimes)$ \'e um \textbf{anel comutativo com unidade} \pause ou um \textbf{anel
+                    comutativo unit\'ario}.\pause
+
+                \vspace{.5cm}
+
+                \item Seja $(A, \oplus, \otimes)$ um anel. \pause Quando n\~ao houver chance de confus\~ao com
+                    rela\c{c}\~ao \`as opera\c{c}\~oes envolvidas diremos simplesmente que \pause $A$ \'e um anel.\pause
+            \end{enumerate}
+        \end{observacoes}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+                \item $(\z,+,.)$, \pause $(\rac,+,.)$, \pause $(\real,+,.)$, \pause $(\complex,+,.)$ s{\~a}o an{\'e}is
+                    comutativos \pause e com unidade.\pause
+
+                \vspace{1cm}
+
+                \item Seja $m > 1$, $m \in \z$. \pause Então $(\z_m, \oplus, \otimes)$ é um anel \pause comutativo e unitário.\pause
+            \end{enumerate}
+        \end{exemplos}
+
+        \vspace{0.5cm}
+
+        \begin{observacao}
+            Por uma questão de simplicidade vamos denotar a operação de soma $\oplus$ por $+$ \pause e a operação de multiplicação $\otimes$ por $\cdot$.
+        \end{observacao}
+
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $(A, + , \cdot)$ um anel. \pause Ent\~ao:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item O elemento neutro {\'e} {\'u}nico.\pause
+
+                \vspace{.5cm}
+
+                \item Para cada $x \in A$ \pause existe um {\'u}nico
+                    oposto. \pause Neste caso o \textbf{oposto} de
+                    $x \in A$ \pause ser\'a denotado por $-x$.\pause
+
+                \vspace{.5cm}
+
+                \item Para todo $x \in A$, \pause
+                \[
+                    -(-x) = x.\pause
+                \]
+
+                \vspace{.5cm}
+
+                \item Dados $x_{1}$, \pause $x_{2}$, \pause \dots,
+                    $x_n \in A$, \pause $n \geqslant 2$, \pause
+                    ent{\~a}o\pause
+                \[
+                    -(x_1 + x_2 + \dots + x_n) \pause = (-x_1) \pause
+                    + (-x_2) \pause + \dots + (-x_n).\pause
+                \]
+
+                \vspace{.2cm}
+
+                \seti
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            \begin{enumerate}[label={\roman*})]
+                \conti
+
+                \item Para todos $\alpha$, \pause $x$, \pause $y \in A$, \pause se
+                \[
+                    \alpha + x \pause = \alpha + y,\pause
+                \]
+                ent{\~a}o $x = y$.\pause
+
+                \vspace{.5cm}
+
+                \item Para todo $x \in A$, \pause
+                \[
+                    x\cdot 0_A \pause = 0_A \pause = 0_A\cdot x.\pause
+                \]
+
+                \vspace{.5cm}
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            \begin{enumerate}
+                \item[vii)] Para todos $x$, \pause $y \in A$, \pause temos\pause
+                \[
+                    x \cdot (-y) \pause = (-x) \cdot y \pause = -(x \cdot y).\pause
+                \]
+
+                \vspace{.5cm}
+
+                \item[viii)] Para todos $x$, \pause $y \in A$, \pause
+                \[
+                    x \cdot y \pause = (-x) \cdot (-y).\pause
+                \]
+
+                \vspace{.5cm}
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Seja $(A, +, \cdot)$ um anel. \pause Dizemos que um subconjunto n{\~a}o vazio \pause $B\subseteq A$ \pause {\'e} um \textbf{subanel} de $A$ \pause quando $(B, +, \cdot)$ \'e um anel.\pause
+        \end{definicao}
+
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+                \item Todo anel $A$ sempre tem dois suban{\'e}is: \pause $\{0_{A}\}$ \pause e $A$, \pause que s{\~a}o chamados de \textbf{suban{\'e}is triviais}.\pause
+
+                \vspace{.5cm}
+
+                \item Em $(\z_4,\oplus,\otimes)$ \pause o conjunto $B = \{\overline{0}, \overline{2}\}$ \'e um subanel.\pause
+
+                \vspace{.5cm}
+
+                \item No anel $\z$, \pause o conjunto $m\z = \{mk \mid k \in \z\}$, $m > 1$ \pause {\'e} um subanel de $\z$.\pause
+
+                \vspace{.5cm}
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $(A, +,\cdot)$ um anel. \pause Um subconjunto n{\~a}o vazio \pause $B\subseteq A$ \pause {\'e} um subanel de $A$ \pause se, e somente se, \pause $x - y = x + (-y) \in B$ \pause e $x\cdot y \in B$ \pause para todos $x$, $y \in B$.\pause
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Seja $(A, +, \cdot)$ um anel comutativo. \pause Um subconjunto n\~ao-vazio \pause $I \sub A$ \pause {\'e} chamado de \textbf{ideal} \pause de $A$ se:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item para todos $x$, $y \in I$, \pause temos $x - y = x + (-y) \in I$;\pause
+                \item para todo $\alpha \in A$ \pause e todo $x \in I$, \pause temos $\alpha\cdot x \in I$.\pause
+            \end{enumerate}
+        \end{definicao}
+
+        \begin{observacao}
+            Quando $I = A$ \pause ou $I = \{0_A\}$, \pause dizemos que $I$ \pause {\'e} um \textbf{ideal trivial}.\pause
+        \end{observacao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $A$ um anel comutativo \pause e $I$ um ideal de $A$. \pause Ent{\~a}o:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item $0_{A}\in I$.\pause
+                \item $-x \in I$ \pause para todo $x \in I$.\pause
+                \item Se $A$ é um anel unitário e $1_A \in I$, \pause ent\~ao $I = A$.\pause
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Sejam $(A, +, \cdot)$ \pause e $(B, \oplus, \otimes)$ \pause an\'eis. \pause Uma fun{\c c}{\~a}o $f : A \to B$ \pause \'e chamada de um \textbf{homomorfismo de an\'eis}, \pause ou simplesmente \textbf{homomorfismo}, \pause se satisfaz:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item $f(x + y) \pause = f(x) \pause \oplus f(y)$\pause
+
+                \vspace{.5cm}
+
+                \item $f(x \cdot y) \pause = f(x) \pause \otimes f(y)$\pause
+
+                \vspace{.5cm}
+            \end{enumerate}
+            para todos $x$, $y \in A$.\pause
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis. \pause Se $f : A \to B$ \'e um homomorfismo, \pause ent{\~a}o:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item $f(0_{A}) \pause = 0_{B}$\pause
+
+                \vspace{.5cm}
+
+                \item $f(-x) \pause = -f(x)$, \pause para todo $x \in A$.\pause
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}Seja $f:A\rightarrow B$ um homomorfismo, onde $A$ e $B$ s{\~a}o an{\'e}is. Dizemos que:
+            \begin{enumerate}[label={\roman*})]
+                \item $f$ {\'e} um \textbf{epimorfismo} \pause se $f$ for sobrejetora.\pause
+
+                \vspace{.5cm}
+
+                \item $f$ {\'e} um \textbf{monomorfismo} \pause se $f$ for injetora.\pause
+
+                \vspace{.5cm}
+
+                \item $f$ {\'e} um \textbf{isomorfismo} \pause se $f$ for bijetora.\pause
+
+                \vspace{.5cm}
+
+                \item Quando $A=B$ \pause e $f$ {\'e} um isomorfismo, \pause ent{\~a}o $f$ {\'e} um \textbf{automorfismo}.\pause
+
+                \vspace{.5cm}
+
+            \end{enumerate}
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis \pause e $f : A \to B$ um homomorfismo de an\'eis. \pause Ent\~ao o subconjunto de $A$ \pause definido por\pause
+            \[
+                \ker(f) = \pause N(f) =\pause \{ x \in A \pause \mid f(x) = 0_B\}\pause
+            \]
+            \'e chamado de \textbf{kernel} \pause ou \textbf{n\'ucleo} \pause de $f$.\pause
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis \pause e $f : A \to B$ um homomorfismo de an\'eis. \pause Ent\~ao:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item $\ker(f)$ \'e um subanel de $A$.\pause
+
+                \vspace{.5cm}
+
+                \item $f$ \'e injetora \pause se, e somente se, \pause $\ker(f) = \{0_A\}$.\pause
+
+                \vspace{.5cm}
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Seja $(A, +, \cdot)$ um anel unit\'ario. \pause Dado $x \in A$, \pause dizemos que $x$ \'e \textbf{invers{\'\i}vel} \pause ou que $x$ \textbf{possui inverso} \pause se existe $y \in A$ \pause tal que\pause
+            \[
+                x \cdot y = 1_A \pause = y \cdot x.\pause
+            \]
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $(A, +, \cdot)$ um anel unit\'ario. \pause O inverso multiplicativo de um elemento $x \in A$, \pause se existir, \pause \'e \'unico.\pause
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ an\'eis \pause e seja $f : A \to B$ um homomorfismo sobrejetor de an\'eis.\pause
+            \begin{enumerate}[label={\roman*})]
+                \item Se $A$ tem unidade, \pause ent\~ao $B$ tem unidade e\pause
+                \[
+                    f(1_A) = 1_B.\pause
+                \]
+
+                \vspace{.5cm}
+
+                \item Se $A$ tem unidade \pause e $x \in A$ \pause possui inverso multiplicativo, \pause ent\~ao $f(x)$ \pause tem inverso e\pause
+                \[
+                    [f(x)]^{-1} = f(x^{-1}).\pause
+                \]
+
+                \vspace{.5cm}
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        Aplicação de anéis:
+        \begin{enumerate}[label={\arabic*})]
+            \item Códigos corretores de erros\pause
+
+            \item Método: CRC(cyclic redundancy checks)\pause
+
+            \item Polinômios sobre $\z_2$:\pause
+                \[\z_2[x] = \{f(x) = a_0 + a_1x + a_2x^2 + \cdots + a_nx^n \pause \mid a_0, a_1, a_2, \dots, a_n \in \z_2\}\]\pause
+            \item $\z_2[x]$ é um anel comutativo e unitário com a soma e a multiplicação de polinônios.\pause
+
+            \seti
+        \end{enumerate}
+    \end{frame}
+
+    \begin{frame}
+        \begin{enumerate}[label={\arabic*})]
+            \conti
+            \item Explicação do funcionamento computacional do CRC:\\
+                \begin{center}
+                    \qrcode[height=5cm]{https://youtu.be/izG7qT0EpBw}
+                \end{center}
+        \end{enumerate}
+    \end{frame}
+
+    \begin{frame}
+        \begin{enumerate}[label={\arabic*})]
+            \conti
+            \item Implementação do método:
+                \begin{center}
+                    \qrcode[height=5cm]{https://youtu.be/sNkERQlK8j8}
+                \end{center}
+        \end{enumerate}
+    \end{frame}
+
+    \begin{frame}
+        \begin{enumerate}[label={\arabic*})]
+            \item Sejam $(A, +, \cdot)$ um anel e $x \in A$ um elemento fixo. Mostre que o conjunto $N(x) = \{y \in A \mid xy = yx \}$ é um subanel de $A$.
+
+            \vspace{2cm}
+
+            \item Suponha que $(A, +, \cdot)$ é um anel comutativo e que $I$ e $J$ são ideais de $A$. Mostre que $I \cap J$ é um ideal de $A$.
+        \end{enumerate}
+    \end{frame}
+
+\end{document}

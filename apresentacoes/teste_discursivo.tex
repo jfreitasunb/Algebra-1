@@ -1,0 +1,34 @@
+%!TEX program = xelatex
+\def\ano{2020}
+\def\semestre{2}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{configuracoes_latex/pacotes}
+\input{configuracoes_latex/ambientes}
+\input{configuracoes_latex/comandos_personalizados}
+
+\title{Teste Discursivo}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{}
+
+\begin{document}
+    \begin{frame}
+Sejam $H$ e $K$ subgrupos de um grupo $G$ (com nota{\c c}{\~a}o
+    multiplicativa).
+    \begin{enumerate}[label=({\alph*})]
+      \item Mostre que $H\cap K$ tamb{\'e}m {\'e} subgrupo de $G$.
+
+      \item Prove que $H\cup K$ {\'e} subgrupo de $G$ se, e somente se,
+      $H\subseteq K$ ou $K\subseteq H$.
+
+    \end{enumerate}
+    \end{frame}
+\end{document}

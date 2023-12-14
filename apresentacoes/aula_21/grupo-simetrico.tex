@@ -1,0 +1,315 @@
+%!TEX program = xelatex
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{Grupo Sim\'etrico}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+
+    \begin{frame}
+        Seja $A$ um conjunto n\~ao vazio.\pause
+
+        \vspace{.3cm}
+
+        Dada uma fun\c{c}\~ao $f : A \to A$, sabemos que $f$ possui inversa \pause se, e somente se, $f$ \'e bijetora.\pause
+
+        \vspace{.3cm}
+
+        Assim considere o conjunto\pause
+        \[
+            \mathcal{S} = \{ f : A \to A \pause \mid f \mbox{ \'e bijetora}\}.\pause
+        \]
+
+        Em $\mathcal{S}$ vamos considerar a composi\c{c}\~ao de fun\c{c}\~oes $\circ$.\pause
+
+        \vspace{.3cm}
+
+        Como $id : A \to A$ tal que $id(x) = x$ para todo $x \in A$ \pause \'e uma fun\c{c}\~ao bijetora \pause ent\~ao $id \in \mathcal{S}$ \pause e com isso $\mathcal{S} \ne \emptyset$.
+    \end{frame}
+
+    \begin{frame}
+        Dadas $f$, $g \in \mathcal{S}$ \pause como $f$ e $g$ s\~ao bijetoras, \pause ent\~ao $f \circ g$ \'e bijetora \pause e da{\'\i} $f \circ g \in \mathcal{S}$. \pause Isto \'e, \pause a composi\c{c}\~ao de fun\c{c}\~oes \pause \'e uma opera\c{c}\~ao bin\'aria em $\mathcal{S}$.
+
+        \vspace{.3cm}
+
+        Agora, sejam $f$, $g$ e $h \in \mathcal{S}$. \pause Para todo $x \in A$ temos\pause
+        \begin{center}
+            $[(f\circ g) \pause \circ h \pause](x) \pause = (f \circ g) \pause(h(x)) \pause = f(g(h(x))) \pause$\\
+            $[f\circ \pause(g\circ h) \pause](x) \pause = f( \pause(g\circ h)(x) \pause) = f(g(h(x))) \pause$
+        \end{center}
+
+        Logo $(f\circ g) \pause \circ h  \pause = f\circ \pause (g\circ h)$. \pause
+
+        \vspace{.3cm}
+
+        Agora, para toda $f \in \mathcal{S}$\pause
+        \[
+            f\circ id  \pause = f  \pause = id\circ f, \pause
+        \]
+        onde $id : A \to A$ \pause \'e tal que $id(x) = x$, \pause para todo $x \in A$. \pause Logo $id$ \'e o elemento neutro da composi\c{c}\~ao.\pause
+
+    \end{frame}
+
+    \begin{frame}
+
+        Finalmente, \pause para toda $f \in \mathcal{S}$, \pause como $f$ \'e bijetora \pause existe $g \in \mathcal{S}$ \pause tal que \pause
+        \[
+            f\circ g \pause = id \pause = g \circ f. \pause
+        \]
+        Logo todo elemento de $\mathcal{S}$ \pause possui inverso. \pause
+
+        \vspace{.3cm}
+
+        Portanto $(\mathcal{S}, \circ)$ \pause \'e um grupo.  \pause Al\'em disso, em geral, esse grupo n\~ao \'e comutativo. \pause
+
+        \vspace{.3cm}
+
+        Vamos considerar agora o caso particular \pause em que $A$ \'e um conjunto finito. \pause
+
+        \vspace{.3cm}
+
+        Nessa situa\c{c}\~ao podemos supor que $A \sub \n$ \pause para simplificar a nota\c{c}\~ao. \pause
+
+        \vspace{.3cm}
+
+        Vamos ver como \'e o conjunto $\mathcal{S}$ com essa hip\'otese. \pause
+    \end{frame}
+
+    \begin{frame}
+        Se $A = \{1\}$, \pause ent\~ao s\'o existe uma fun\c{c}\~ao $f : A \to A$ \pause que \'e bijetora e essa fun\c{c}\~ao \'e tal que \pause
+        \begin{center}
+            $f : \{1\} \to \{1\}$ \pause\\
+            $f(1) = 1$. \pause
+        \end{center}
+        Ou seja, $f$ \'e a fun\c{c}\~ao a identidade $id$. \pause Nesse caso $\mathcal{S} \pause = S_1 \pause = \{id\}$ \pause e $(S_1, \circ)$ \'e um grupo, \pause e nesse caso comutativo. \pause
+    \end{frame}
+
+    \begin{frame}
+        Se $A = \{1, 2\}$ \pause ent\~ao podemos definir as seguintes fun\c{c}\~oes bijetoras em $A$: \pause
+        \begin{multicols}{2}
+            \begin{enumerate}
+                \item[] \begin{center}
+                    $id : A \to A$ \pause\\
+                    $id(1) = 1$ \pause\\ $id(2) = 2$
+                \end{center}\pause
+                \item[]  \begin{center}
+                    $f : A \to A$ \pause\\ $f(1) = 2 \pause$\\ $f(2) = 1$
+                \end{center}\pause
+            \end{enumerate}
+        \end{multicols}
+
+        Assim $\mathcal{S} \pause = S_2 \pause = \{id, \pause f\}$ \pause e $(S_2, \circ)$ \'e um grupo.\pause
+
+        \begin{table}[!htb]
+        \centering
+            \begin{tabular}{|c|c|c|}
+                \hline
+                $\circ$ & $id$ & $f$\T\\
+                \hline
+                $id$ & \phantom{xyz} & \phantom{xyz}\T\\
+                \hline
+                $f$ & \phantom{xyz} & \phantom{xyz}\T\\
+                \hline
+            \end{tabular}
+        \end{table}\pause
+
+        Al\'em disso, da tabela acima vemos que esse grupo \'e comutativo.
+    \end{frame}
+
+    \begin{frame}
+        Agora, seja $A = \{1, 2, 3\}$. \pause Podemos definir ent\~ao as seguintes fun\c{c}\~oes bijetoras em $A$: \pause
+        \begin{multicols}{3}
+            \begin{enumerate}
+                \item[] \begin{center}
+                    $id : A \to A$ \pause\\
+                    $id(1) = 1$ \pause\\
+                    $id(2) = 2$ \pause\\
+                    $id(3) = 3$ \pause
+                \end{center}\pause
+
+                \vspace{.3cm}
+
+                \item[] \begin{center}
+                    $f_1 : A \to A$\pause\\
+                    $f_1(1) = 2$\pause\\
+                    $f_1(2) = 1$\pause\\
+                    $f_1(3) = 3$
+                \end{center}\pause
+
+                \vspace{.3cm}
+
+                \item[] \begin{center}
+                    $f_2 : A \to A$\pause\\
+                    $f_2(1) = 3$\pause\\
+                    $f_2(2) = 2$\pause\\
+                    $f_2(3) = 1$
+                \end{center}\pause
+
+                \vspace{.3cm}
+
+                \item[] \begin{center}
+                    $f_3 : A \to A$\pause\\
+                    $f_3(1) = 1$\pause\\
+                    $f_3(2) = 3$\pause\\
+                    $f_3(3) = 2$
+                \end{center}\pause
+
+                \vspace{.3cm}
+
+                \item[] \begin{center}
+                    $f_4 : A \to A$\pause\\
+                    $f_4(1) = 2$\pause\\
+                    $f_4(2) = 3$\pause\\
+                    $f_4(3) = 1$
+                \end{center}\pause
+
+                \vspace{.3cm}
+
+                \item[] \begin{center}
+                    $f_5 : A \to A$\pause\\
+                    $f_5(1) = 3$\pause\\
+                    $f_5(2) = 1$\pause\\
+                    $f_5(3) = 2$
+                \end{center}
+            \end{enumerate}
+        \end{multicols}
+    \end{frame}
+
+    \begin{frame}
+        Logo $\mathcal{S} = S_3 = \{id, f_1, f_2, f_3, f_4, f_5\}$ \pause e $(S_3, \circ)$ \'e um grupo.\pause
+
+        \vspace{.3cm}
+
+        Nesse caso temos\pause
+        \begin{center}
+            $(f_1 \circ f_4)(1) \pause = f_1(f_4(1)) \pause = f_1(2) \pause = 1$\pause\\
+            \vspace{.3cm}
+            $(f_4 \circ f_1)(1) \pause = f_4(f_1(1)) \pause = f_4(2) \pause = 3$\pause
+        \end{center}
+        da{\'\i} $(f_1 \circ f_4)(1) \pause \ne (f_4 \circ f_1)(1)$ \pause, isto \'e, \pause $f_1 \circ f_4 \pause \ne f_4 \circ f_1$. \pause Portanto o grupo $(S_3, \circ)$ \pause n\~ao \'e comutativo.\pause
+
+        \vspace{.3cm}
+
+        Note que em $S_2$ \pause temos $2 = 2!$ elementos \pause e em $S_3$ \pause temos $6 = 3!$ elementos.\pause
+    \end{frame}
+
+    \begin{frame}
+        De modo geral, \pause se $A = \{1, 2, 3, \dots, n\}$ \pause ent\~ao existem exatamente $n!$ \pause fun\c{c}\~oes $f : A \to A$ bijetoras. \pause
+
+        \vspace{.3cm}
+
+        Assim o grupo $(S_n, \circ)$ \pause possui $n!$ elementos.\pause
+
+        \vspace{.3cm}
+
+        Se $n \geqslant 3$, ent\~ao \pause $S_n$ \'e um grupo n\~ao comutativo.\pause
+
+        \begin{definicao}
+            O grupo $S_n$ \'e chamado de \pause \textbf{grupo sim\'etrico} \pause ou \textbf{grupo de permuta\c{c}\~oes} \pause em $A = \{1, 2, 3, \dots, n\}$.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        Um modo de representar os elementos de $S_n$ \'e o seguinte: \pause vamos representar as fun\c{c}\~oes $f \in S_n$ \pause na forma de uma matriz contendo 2 linhas \pause e $n$ colunas. \pause A primeira linha \'e o dom{\'\i}nio da fun\c{c}\~ao \pause e a segunda cont\'em suas imagens. \pause Assim se $f \in S_n$ escreveremos\pause
+        \[
+            f = \pause \begin{pmatrix}
+                1 & 2 & 3 & \dots & n\pause \\
+                f(1) \pause & f(2) \pause & f(3) \pause & \dots \pause & f(n)\pause
+            \end{pmatrix}.
+        \]
+    \end{frame}
+
+    \begin{frame}
+        No caso de $S_3$ vamos escrever\pause
+        \begin{multicols}{3}
+            \begin{enumerate}
+                \item[] $id = \begin{pmatrix}
+                    1 & 2 & 3\pause\\
+                    1 \pause & 2 \pause & 3\pause
+                \end{pmatrix}$\pause
+
+                \vspace{.5cm}
+
+                \item[] $f_1 = \begin{pmatrix}
+                    1 & 2 & 3 \pause\\
+                    2 \pause & 1 \pause & 3 \pause
+                \end{pmatrix}$\pause
+
+                \vspace{.5cm}
+
+                \item[] $f_2 = \begin{pmatrix}
+                    1 & 2 & 3 \pause\\
+                    3 \pause & 2 \pause & 1 \pause
+                \end{pmatrix}$\pause
+
+                \vspace{.5cm}
+
+                \item[] $f_3 = \begin{pmatrix}
+                    1 & 2 & 3 \pause\\
+                    1 \pause & 3 \pause & 2 \pause
+                \end{pmatrix}$\pause
+
+                \vspace{.5cm}
+
+                \item[] $f_4 = \begin{pmatrix}
+                    1 & 2 & 3 \pause\\
+                    2 \pause & 3 \pause & 1 \pause
+                \end{pmatrix}$\pause
+
+                \vspace{.5cm}
+
+                \item[] $f_5 = \begin{pmatrix}
+                    1 & 2 & 3 \pause\\
+                    3 \pause & 1 \pause & 2 \pause
+                \end{pmatrix}$\pause
+            \end{enumerate}
+        \end{multicols}
+    \end{frame}
+
+    \begin{frame}
+        Assim a composi\c{c}\~ao $f_3 \circ f_4$ pode ser determinada da seguinte forma:
+        \[
+            f_3\circ f_4 = \begin{pmatrix}
+                    1 & 2 & 3\\
+                    1 & 3 & 2
+                \end{pmatrix} \pause \circ \begin{pmatrix}
+                    1 & 2 & 3\\
+                    2 & 3 & 1
+                \end{pmatrix}
+        \]
+    \end{frame}
+
+    \begin{frame}
+        A composi\c{c}\~ao $f_4 \circ f_5$ \'e:
+
+        \[
+            f_4\circ f_5 = \begin{pmatrix}
+                    1 & 2 & 3\\
+                    2 & 3 & 1
+                \end{pmatrix} \pause \circ \begin{pmatrix}
+                    1 & 2 & 3\\
+                    3 & 1 & 2
+                \end{pmatrix}
+        \]
+    \end{frame}
+\end{document}

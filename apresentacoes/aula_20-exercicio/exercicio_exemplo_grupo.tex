@@ -1,0 +1,38 @@
+%!TEX program = xelatex
+\def\ano{2020}
+\def\semestre{2}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{Grupos}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+
+    \begin{frame}
+        \begin{exercicio}
+            Considere o conjunto
+            \[
+                G = \{a + b\sqrt{2} \in \mathbb{R}^* \mid a,\ b \in \rac\}.
+            \]
+            Então $(G, \cdot)$, onde $\cdot$ é a multiplicação de números reais, é um grupo multiplicativo? Caso afirmativo, esse grupo é comutativo?
+        \end{exercicio}
+    \end{frame}
+\end{document}

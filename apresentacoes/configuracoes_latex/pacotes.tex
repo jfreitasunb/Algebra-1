@@ -1,0 +1,27 @@
+\usepackage[singlelinecheck=false]{caption}
+\usepackage{textpos}
+\usepackage{amssymb}
+\usepackage{amsmath,amsfonts,amsthm,amstext}
+\usepackage[justification=centering]{caption}
+\usepackage[brazil]{babel}
+% \usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\graphicspath{{/home/jfreitas/GitHub_Repos/video_aulas/logo/}}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{answers}
+\usepackage{qrcode}
+\usepackage{tikz,ifthen}
+\usetikzlibrary{lindenmayersystems}
+\usetikzlibrary[shadings]
+
+\newcounter{saveenumi}
+\newcommand{\seti}{\setcounter{saveenumi}{\value{enumi}}}
+\newcommand{\conti}{\setcounter{enumi}{\value{saveenumi}}}
+
+\resetcounteronoverlays{saveenumi}
+
+
+\renewcommand{\qedsymbol}{$\blacksquare$}
+
+\setbeamertemplate{itemize items}[ball]

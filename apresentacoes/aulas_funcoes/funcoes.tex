@@ -1,0 +1,271 @@
+%!TEX program = xelatex
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+
+
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{Fun\c{c}\~oes}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+
+    \begin{frame}
+        \begin{definicao}
+            Uma \textbf{fun{\c c}{\~a}o} \pause $f : A \to B$, \pause de um conjunto $A$ \pause em um conjunto $B$,
+            \pause {\'e} uma rela{\c c}{\~a}o que associa os elementos de $A$ \pause com os elementos em $B$ \pause
+            satisfazendo as seguintes condi\c{c}\~oes:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item Para todo $x \in A$, \pause existe $y \in B$ \pause tal que $f(x) = y$.\pause
+
+                \vspace{.3cm}
+
+                \item  Se $x \in A$ \pause \'e tal que $f(x) = y_1$ \pause e $f(x) = y_2$ \pause com $y_1$, \pause $y_2 \in B$, \pause ent\~ao $y_1 = y_2$.\pause
+            \end{enumerate}
+            Nesse caso $y$ \'e chamado de \textbf{imagem} \pause de $x$ segundo $f$.\pause
+        \end{definicao}
+
+        O conjunto $A$ {\'e} chamado de \textbf{dom{\'\i}nio} \pause de $f$ \pause e ser\'a denotado por $\dom(f)$. \pause O conjunto $B$ {\'e} chamado de \textbf{contra-dom{\'\i}nio} \pause de $f$. \pause O conjunto\pause
+        \[
+            \im(f) = \pause \{f(x) \pause \mid x \in A\} \pause \sub B\pause
+        \]
+        \'e chamado \textbf{imagem} de $f$.
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Seja $f : A \to B$ uma fun\c{c}\~ao.\pause
+            \begin{enumerate}[label={\roman*})]
+                \item Dizemos que $f$ \'e \textbf{injetora} \pause se dados $x_1$, \pause $x_2 \in A$ \pause tais que $f(x_1) = \pause f(x_2)$, \pause ent\~ao $x_1 = x_2$. \pause De modo equivalente, \pause dizemos que $f$ \'e \textbf{injetora} \pause se dados $x_1$, \pause $x_2 \in A$ \pause tais que $x_1 \ne x_2$, \pause ent\~ao $f(x_1) \ne f(x_2)$.\pause
+
+                \vspace{.3cm}
+
+                \item Dizemos que $f$ \'e \textbf{sobrejetora} \pause se para todo $y \in B$, \pause existe $x \in A$ \pause tal que $f(x) = y$.\pause
+
+                \vspace{.3cm}
+
+                \item Dizemos que $f$ é \textbf{bijetora} \pause se $f$ for \textbf{injetora} \pause e \textbf{sobrejetora} \pause simultaneamente.
+            \end{enumerate}
+        \end{definicao}
+    \end{frame}
+    \begin{frame}
+        \vspace{1cm}
+        \begin{definicao}
+            Sejam $f : A \to B$ \pause e $g : B \to C$ \pause fun\c{c}\~oes. \pause Definimos a \textbf{fun\c{c}\~ao composta} \pause de $g$ com $f$ \pause como sendo a fun\c{c}\~ao denotada por $g \circ f \pause : A \to C$ \pause tal que \pause $(g\circ f)(x) \pause = g(f(x))$ \pause para todo $x \in A$.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Se $f : A \to B$ \pause e $g : B \to C$ \pause s{\~a}o fun{\c c}{\~o}es injetoras, \pause ent{\~a}o $g\circ f : \pause A \to C$ \pause {\'e} injetora.
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Se $f : A \to B$ \pause e $g : B \to C$ \pause s{\~a}o fun\c{c}\~oes sobrejetoras, \pause ent{\~a}o $g\circ f : A \to C$ \pause {\'e} sobrejetora.
+        \end{proposicao}
+    \end{frame}
+        \begin{frame}
+        Dado $f : A \to B$ \pause uma fun\c{c}{\~a}o, \pause queremos construir uma fun\c{c}\~ao $g : B \to A$ \pause de modo que
+        \[
+            g(f(x)) = x,\pause
+        \]
+        para todo $x \in A$. \pause Mas $f(x) = y$ \pause com $y \in B$. \pause Assim podemos tentar definir $g$ \pause como
+        \[
+            g(y) = x,\ y \in B \pause \quad \mbox{ se, e somente se, } \pause f(x) = y.\pause
+        \]
+        Com essa defini\c{c}\~ao \pause $g$ \'e uma fun\c{c}\~ao? \pause Vejamos um exemplo: \pause definida $f : \{0,1,2,3\} \to \{4,5,6,7,8\}$ por:\pause
+        \begin{center}
+            $f(0) = 5$ \pause\\
+            \vspace{.3cm}
+            $f(1) = 5$\pause\\
+            \vspace{.3cm}
+            $f(2) = 6$\pause\\
+            \vspace{.3cm}
+            $f(3) = 7$
+        \end{center}
+    \end{frame}
+
+    \begin{frame}
+        A partir da defini\c{c}\~ao acimas temos\pause
+        \begin{center}
+            $g(5) = 0 $\pause\\
+
+            \vspace{.3cm}
+
+            $g(5) = 1$\pause\\
+
+            \vspace{.3cm}
+
+            $g(6) = 2$\pause\\
+
+            \vspace{.3cm}
+
+            $g(7) = 3$\pause
+        \end{center}
+
+        Assim $g$ definida dessa forma \pause n\~ao \'e uma fun\c{c}\~ao \pause pois $g$ atribui ao n\'umero 5 \pause dois poss{\'\i}veis valores: \pause 0 e 1. \pause Isso ocorre pois $f$ n\~ao \'e injetora. \pause Vamos ent\~ao redefinir $f$ de modo a torn\'a-la injetora:\pause
+        \begin{center}
+            $f(0) = 5$\pause\\
+
+            \vspace{.3cm}
+
+            $f(1) = 4$\pause\\
+
+            \vspace{.3cm}
+
+            $f(2) = 6$\pause\\
+
+            \vspace{.3cm}
+
+            $f(3) = 7$\pause
+        \end{center}
+    \end{frame}
+
+    \begin{frame}
+        Agora $g$ torna-se:\pause
+        \begin{center}
+            $g(5) = 0$\pause\\
+
+            \vspace{.3cm}
+
+            $g(4) = 1$\pause\\
+
+            \vspace{.3cm}
+
+            $g(6) = 2$\\
+
+            \vspace{.3cm}
+
+            $g(7) = 3$\pause
+        \end{center}
+
+        Ainda assim $g$ n\~ao \'e fun\c{c}\~ao \pause pois $g$ n\~ao associa $8 \in B$ \pause com nenhum elemento em $A$.  Isso ocorre pois \pause $f$ n\~ao \'e sobrejetora.\pause
+
+        \vspace{.3cm}
+
+        Portanto para que a condi\c{c}\~ao dada \pause defina uma fun\c{c}\~ao \pause \'e necess\'ario que $f$ seja bijetora. \pause Temos ent\~ao o seguinte teorema:
+    \end{frame}
+
+    \begin{frame}
+        \begin{teorema}
+            Seja $f: A \to B$ uma fun{\c c}{\~a}o. \pause Defina $g : B \to A$ \pause por\pause
+            \[
+                g(y) = x,\ y \in B \pause \quad \mbox{ se, e somente se, } \pause f(x) = y.\pause
+            \]
+            Ent{\~a}o $g$ \pause {\'e} uma fun{\c c}{\~a}o \pause se, e somente se, \pause $f$ {\'e} bijetora.
+        \end{teorema}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            A fun\c{c}\~ao $g : B \to A$ \pause do teorema anterior \pause \'e chamada de \textbf{fun\c{c}\~ao inversa} \pause de $f : A \to B$ \pause e ser\'a denotada por $g = f^{-1}$.\pause
+        \end{definicao}
+
+        \vspace{.3cm}
+
+        \begin{definicao}
+            Sejam $f : A \to B$ \pause e $g : A \to B$ fun\c{c}\~oes. \pause Ent\~ao $f = g$ \pause quando $f(x) = g(x)$ \pause para todo $x \in A$.\pause
+        \end{definicao}
+
+        \vspace{.3cm}
+
+        \begin{definicao}
+            Dado um conjunto $A \ne \emptyset$, \pause a fun{\c c}{\~a}o $i_{A}: A \to A$ \pause dada por $i_{A}(x) \pause = x$ \pause {\'e} chamada de \pause \textbf{fun{\c c}{\~a}o identidade}.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Se $f : A \to B$ \pause {\'e} bijetora, \pause ent{\~a}o $f\circ f^{-1} \pause = i_{B}$ \pause e $f^{-1}\circ f \pause = i_{A}$.
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Se $f : A \to B$ \pause e $g : B \to A$ \pause s{\~a}o fun{\c c}{\~o}es, \pause ent{\~a}o:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item $f\circ i_{A} = f$\pause
+
+                \vspace{.3cm}
+
+                \item $i_{B}\circ f = f$\pause
+
+                \vspace{.3cm}
+
+                \item $g\circ i_{B} = g$\pause
+
+                \vspace{.3cm}
+
+                \item $i_{A}\circ g = g$\pause
+
+                \vspace{.3cm}
+
+                \item Se $g\circ f = i_{A}$ \pause e $f\circ g = i_{B}$, \pause ent{\~a}o \pause $f$ e $g$ s{\~a}o bijetoras \pause e $g=f^{-1}$.
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Seja $f : A \to B$ \pause uma fun{\c c}{\~a}o.\pause
+            \begin{enumerate}[label={\roman*})]
+                \item Dado $P \sub A$, \pause chama-se \textbf{imagem direta} \pause de $P$ \pause \textbf{segundo} $f$ \pause e indica-se por $f(P)$ \pause o subconjunto de $B$ \pause dado por\pause
+                \[
+                    f(P) = \pause \{f(x) \pause \mid x \in P\},\pause
+                \]
+                isto {\'e}, \pause $f(P)$ \pause {\'e} o conjunto das imagens por $f$ \pause dos elementos de $P$.\pause
+
+                \vspace{.5cm}
+
+                \item Dado $Q \sub B$, \pause chama-se \textbf{imagem inversa} \pause de $Q$ \textbf{segundo} $f$ \pause e indica-se por \pause $f^{-1}(Q)$ \pause o subconjunto de $A$ \pause dado por\pause
+                \[
+                    f^{-1}(Q) \pause = \{x \in A \pause \mid f(x) \in Q\},\pause
+                \]
+                isto {\'e}, \pause $f^{-1}(Q)$ \pause {\'e} o conjunto dos elementos de $A$ \pause que tem imagem em $Q$ \pause atrav{\'e}s de $f$.
+            \end{enumerate}
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $f : A \to B$ uma fun{\c c}{\~a}o \pause e sejam $P$, \pause $Q \sub A$, \pause $R$, \pause $S \sub B$.\pause
+            \begin{enumerate}[label={\roman*})]
+                \item Se $P \sub Q$, \pause ent{\~a}o $f(P) \sub f(Q)$.\pause
+
+                \vspace{.5cm}
+
+                \item $f^{-1}(R \cup S) \pause = f^{-1}(R) \pause \cup f^{-1}(S)$.
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        Sejam $f : A \to B$ uma função e $X \sub B$. Mostre que
+        \[ f^{-1}(X^C) = [f^{-1}(X)]^C, \]
+        onde $X^C = C_B(X)$  e $[f^{-1}(X)]^C = C_A(f^{-1}(X))$.
+    \end{frame}
+\end{document}

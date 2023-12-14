@@ -1,0 +1,191 @@
+%!TEX program = xelatex
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{Congruência módulo $m$ e rela\c{c}\~oes de equival\^encia em $\z$}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+
+    \begin{frame}
+        \begin{definicao}
+            Sejam $a$, $b \in \z$. \pause Dizemos que $b$ \textbf{divide} $a$ \pause quando existe um inteiro $k$ tal que $a=bk$. \pause Nesse caso escrevemos $b \mid a$. \pause Quando $b$ \textbf{n{\~a}o divide} $a$, \pause escrevemos $b\not{\mid}a$.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            \begin{enumerate}[label={\roman*})]
+                \item $a\mid a$, para todo $a \in \z$.\pause \vspace{.3cm}
+                \item Se $a\mid b$ e $b\mid a$, $a$, $b > 0$ ent\~ao $a = b$.\pause \vspace{.3cm}
+                \item Se $a\mid b$ e $b\mid c$, ent{\~a}o $a\mid c$.\pause \vspace{.3cm}
+                \item Se $a\mid b$ e $a\mid c$, ent{\~a}o $a\mid (bx+cy)$, para todos $x$, $y \in \z$.
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+
+        \begin{definicao}
+            Sejam $a$, $b \in\z$, \pause dizemos que $a$ \textbf{{\'e} congruente \`a} $b$ \pause \textbf{m{\'o}dulo} $m$ \pause se $m \mid (a-b)$. \pause Neste caso, escrevemos $a\equiv_{m} b$ \pause ou $a\equiv b \pmod{m}$.\pause
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{teorema}
+            A rela{\c c}{\~a}o de congru{\^e}ncia m{\'o}dulo $m$ satisfaz as seguintes propriedades:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item $a_{1}\equiv b_{1}\pmod{m}$ se, e somente se, $a_{1}-b_{1}\equiv 0\pmod{m}$.\pause \vspace{.3cm}
+
+                \item Se $a_{1}\equiv b_{1}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, ent{\~a}o $a_{1}+a_{2}\equiv b_{1}+b_{2}\pmod{m}$.\pause \vspace{.3cm}
+
+                \item Se $a_{1}\equiv b_{1}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, ent{\~a}o $a_{1}a_{2}\equiv b_{1}b_{2}\pmod{m}$.\label{item_provado}\pause \vspace{.3cm}
+
+                \item Se $a\equiv b\pmod{m}$, ent{\~a}o $ax\equiv bx\pmod{m}$, para todo $x \in \z$.\pause \vspace{.3cm}
+
+                \item Vale a lei do cancelamento: se $d \in \z$ e $mdc(d,m) = 1$ ent{\~a}o $ad \equiv bd \pmod{m}$ implica $a\equiv b \pmod{m}$.
+            \end{enumerate}
+        \end{teorema}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            A congru{\^e}ncia m{\'o}dulo $m$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia em $\z$.
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        Dado $n \in \z$, temos\pause
+        \[
+            \overline{n} = \pause C(n) = \pause \{x \in \z \mid \pause x\equiv n \pmod{m}\}.\pause
+        \]
+
+        Vamos dentoar $C(n)$ \pause por $R_{m}(n)$ \pause ou $\overline{n}$, \pause quando n{\~a}o houver possibilidade de confus{\~a}o. \pause Assim fixando $m > 1$ vamos escrever\pause
+        \begin{center}
+            \begin{tabular}{l}
+                $R_{m}(0) = \pause \{x \in \z \mid \pause x\equiv 0 \pmod{m}\} \pause =\{x \in \z \mid \pause x = mk, k \in \z\}\pause = m\z$\pause\\
+                \\
+                $R_{m}(1) = \pause \{x \in \z \mid \pause x\equiv 1 \pmod{m}\} \pause = \{x \in \z \mid \pause x = km + 1, k \in \z \}$\pause \\
+                \\
+                \vdots\\
+                \\
+                $R_{m}(n) = \pause \{x \in \z \mid \pause x = km + n, k \in \z \}$
+            \end{tabular}
+        \end{center}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            As classes de equival{\^e}ncia definidas pela congru{\^e}ncia m{\'o}dulo $m$ \pause s{\~a}o determinadas pelos restos da divis{\~a}o inteira por $m$. \pause Em outras palavras, $R_{m}(n)$ \pause {\'e} o conjunto dos n{\'u}meros inteiros \pause cujo resto na divis{\~a}o inteira por $m$ {\'e} $n$.\pause
+        \end{proposicao}
+
+        \begin{corolario}
+            $R_{m}(k) = R_{m}(l)$ \pause se, e somente se, $k\equiv l \pmod{m}$.
+        \end{corolario}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Na rela{\c c}{\~a}o de equival{\^e}ncia m{\'o}dulo $m$ existem $m$ classes de equival{\^e}ncia.\pause
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{observacao}
+        Fixado $m$ inteiro positivo, \pause denotaremos\pause
+        \begin{center}
+            \begin{tabular}{l}
+                $R_{m}(0) = \overline{0}$\pause \\
+                \\
+                $R_{m}(1) = \overline{1}$\pause \\
+                \\
+                $\vdots$\\
+                \\
+                $R_{m}(m-1) = \overline{m-1}$\pause
+            \end{tabular}
+        \end{center}
+
+        O conjunto quociente \pause desta rela{\c c}{\~a}o ser{\'a} denotado por $\displaystyle\frac{\z}{m\z}$ \pause ou $\z_m$. \pause Assim\pause
+        \[
+            \z_m = \pause \displaystyle\frac{\z}{m\z} = \pause \{\overline{0}, \pause \overline{1}, \pause ..., \pause \overline{m-1}\}.\pause
+        \]
+        \end{observacao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Dados $\overline{a}$, $\overline{b} \in \z_m$ definimos\pause
+            \begin{center}
+                \begin{tabular}{l}
+                    $\overline{a}\oplus\overline{b} = \pause \overline{a + b}\label{soma_modulo_m}$\pause \\
+                    \\
+                    $\overline{a}\otimes\overline{b} = \pause \overline{ab}.\label{multiplicacao_modulo_m}$\pause
+                \end{tabular}
+            \end{center}
+        \end{definicao}
+
+        \begin{proposicao}
+            As opera{\c c}{\~o}es de soma \pause e a multiplica\c{c}\~ao \pause definidas acima s{\~a}o independentes dos representantes das classes.
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            As opera\c{c}\~oes de soma $\oplus$ \pause e multiplica\c{c}\~ao $\otimes$ \pause em $\z_m$ satisfazem as seguintes propriedades:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item Para todos $\overline{x}$, $\overline{y} \in \z_m$: \pause $\overline{x} \oplus \overline{y} = \overline{y} \oplus \overline{x}$. \vspace{.2cm} \pause
+
+                \item Para todos $\overline{x}$, $\overline{y}$ e $\overline{z} \in \z_m$: \pause $(\overline{x} \oplus \overline{y}) \oplus \overline{z} = \pause \overline{x} \oplus (\overline{y} \oplus \overline{z})$. \vspace{.2cm} \pause
+
+                \item Para todo $\overline{x} \in \z_m$, \pause $\overline{x} \oplus \overline{0} = \overline{x}$. \vspace{.2cm} \pause
+
+                \item Para todo $\overline{x} \in \z_m$, \pause existe $\overline{y} \in \z_m$ \pause tal que $\overline{x} \oplus \overline{y} = \overline{0}$. \vspace{.2cm} \pause
+
+                \item Para todos $\overline{x}$, $\overline{y} \in \z_m$: \pause $\overline{x} \otimes \overline{y} = \overline{y} \otimes \overline{x}$. \vspace{.2cm} \pause
+
+                \item Para todos $\overline{x}$, $\overline{y}$ e $\overline{z} \in \z_m$: \pause $(\overline{x} \otimes \overline{y}) \otimes \overline{z} = \pause \overline{x} \otimes (\overline{y} \otimes \overline{z})$. \vspace{.2cm} \pause
+
+                \item Para todo $\overline{x} \in \z_m$: \pause $\overline{x} \otimes \overline{1} = \overline{x}$.
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Um elemento $\overline{a} \in \z_m$ {\'e} \textbf{invers{\'\i}vel} \pause se, e somente se, existe $\overline{b} \in \z_m$ \pause tal que $\overline{a} \otimes \overline{b} = \pause \overline{1}$. \pause Neste caso, $\overline{b}$ \pause {\'e} chamado \textbf{inverso} de $\overline{a}$ \pause e denotaremos $\overline{b} = (\overline{a})^{-1}$.\pause
+        \end{definicao}
+
+        \begin{proposicao}
+            Se o inverso existe, \pause ent\~ao ele {\'e} {\'u}nico.
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Um elemento $\overline{a} \in \z_m$ {\'e} \pause invers{\'\i}vel \pause se, e somente se, $mdc(a,m) = 1$.\pause
+        \end{proposicao}
+
+        \begin{corolario}
+            Se $m$ \'e um n\'umero primo, \pause ent\~ao para todo $\overline{x} \in \z_m$, \pause $\overline{x} \ne \overline{0}$, \pause existe inverso.
+        \end{corolario}
+    \end{frame}
+\end{document}

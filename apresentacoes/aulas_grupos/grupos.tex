@@ -1,0 +1,1557 @@
+%!TEX program = xelatex
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{Grupos}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+
+    \begin{frame}
+        \begin{definicao}
+            Seja $G \ne \emptyset$ \pause um conjunto no qual est\'a definida uma opera{\c c}{\~a}o bin{\'a}ria $*$ \pause tal que:\pause
+            \begin{enumerate}
+                \item[i)] Para todos $x$, $y$, $z\in G$:\pause
+                \[
+                    (x*y)*z \pause = x*(y*z).\pause
+                \]
+
+                \item[ii)] Existe $e \in G$ \pause tal que\pause
+                \[
+                    x*e \pause = x = \pause e*x\pause
+                \]
+                para todo $x \in G$. \pause Tal elemento $e$ \pause {\'e} chamado de \textbf{elemento neutro} \pause ou \textbf{unidade} \pause de $G$.\pause
+
+            \end{enumerate}
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            \begin{enumerate}
+                \item[iii)] Para cada $x \in G$, \pause existe $y \in G$ \pause tal que\pause
+                \[
+                    x*y \pause = e = \pause y*x.\pause
+                \]
+                O elemento $y$ \pause {\'e} chamado de \textbf{inverso} \pause ou \textbf{oposto} \pause de $x$.\pause
+            \end{enumerate}
+            Nesse caso dizemos que o par $(G, *)$ \pause \'e um \textbf{grupo}.\pause
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{observacao}
+            Quando $*$ {\'e} uma ``soma", \pause dizemos que $(G,*)$ {\'e} um \textbf{grupo aditivo}.\pause
+
+            \vspace{.3cm}
+
+            Se $*$ {\'e} uma ``multiplica{\c c}{\~a}o", \pause dizemos que $(G,*)$ {\'e} um \textbf{grupo multiplicativo}.\pause
+
+            \vspace{.3cm}
+            Al\'em disso, quando n\~ao houver chance de confus\~ao com rela\c{c}\~ao \`a opera\c{c}\~ao do grupo $(G, *)$ \pause vamos dizer simplesmente que $G$ \'e um grupo.\pause
+        \end{observacao}
+        \end{frame}
+
+        \begin{frame}
+        \begin{definicao}
+            Um grupo $(G,*)$ \pause {\'e} chamado de \textbf{grupo comutativo} \pause ou \textbf{abeliano} \pause quando $*$ {\'e} comutativa, \pause ou seja, quando \pause
+            \[
+                x*y = \pause y*x \pause
+            \]
+            para todos $x$, $y \in G$.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+                \item Se $(A,\oplus, \otimes)$ {\'e} um anel, ent\~ao $(A, \oplus)$ é um grupo abeliano.\pause
+
+                \vspace{.3cm}
+
+                \item Denote por $\mathbb{K}$ \pause um dos conjuntos $\z$, \pause $\rac$, \pause $\real$ \pause ou $\complex$, \pause indistintamente. Seja \pause
+                \begin{center}
+                    $M_{r \times s}(\mathbb{K}) \pause = \{A \mid $ A \'e uma matriz \pause \\de $r$ linhas \pause por $s$ \pause colunas cujas entradas est\~ao em $\mathbb{K} \pause\}$.
+                \end{center}
+                Ent\~ao $(M_{r \times s}(\mathbb{K}), +)$ \pause onde $+$ \'e a soma de matrizes \pause \'e um grupo abeliano. \pause
+
+                \vspace{.3cm}
+
+                \item Denote por $\mathbb{K}$ \pause um dos conjuntos $\rac$, \pause $\real$ \pause ou $\complex$, \pause indistintamente. Seja \pause
+                \begin{center}
+                    $GL_n(\mathbb{K}) \pause = \{A \in M_{n \times n}(\mathbb{K}) \pause \mid \det(A) = 1\}$. \pause
+                \end{center}
+                Ent\~ao $(GL_n(\mathbb{K}), \cdot)$ \pause onde $\cdot$ \'e a multiplica\c{c}\~ao de matrizes \'e um grupo \pause n\~ao abeliano. \pause
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $(G,*)$ um grupo. \pause Ent\~ao:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item O elemento neutro de $G$ {\'e} {\'u}nico.\pause
+
+                \vspace{.3cm}
+
+                \item Existe um {\'u}nico inverso para cada $x \in G$.
+
+                \seti
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            \begin{enumerate}[label={\roman*})]
+
+                \conti
+
+                \item Para todos $x$, $y \in G$,\pause
+                \[
+                    (x*y)^{-1} \pause = y^{-1}*x^{-1}.\pause
+                \]
+                Por indu{\c c}{\~a}o, \pause $x_1$, $x_2$, \dots ,$x_{n-1}$, $x_n \in G$,\pause
+                \[
+                    (x_1*x_2*\cdots *x_{n-1}*x_{n})^{-1} = \pause x^{-1}_{n}\pause *x^{-1}_{n-1}\pause *\cdots *\pause x^{-1}_2\pause *x^{-1}_1\pause
+                \]
+                \item Para todo $x \in G$, \pause
+                \[
+                    (x^{-1})^{-1} \pause = x.
+                \]
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Seja $(G,*)$ um grupo. \pause Um subconjunto n{\~a}o vazio \pause $H\sub G$ \pause {\'e} chamado de \textbf{subgrupo} de $G$ \pause se, e somente se, $(H,*)$ \pause {\'e} um grupo.\pause
+        \end{definicao}
+
+        \begin{proposicao}
+            Seja $(G, *)$ um grupo. \pause Um subconjunto n{\~a}o vazio \pause $H\subseteq G$ {\'e} um subgrupo de $G$ \pause se, e somente se\pause
+            \begin{enumerate}[label={\roman*})]
+                \item\label{subgrupo_condicao_1} $x^{-1}\in H$, \pause para todo $x \in H$;
+                \item\label{subgrupo_condicao_2} $x*y\in H$, \pause para todos $x$, $y \in H$.\pause
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\roman*})]
+                \item Dado $(G,*)$ grupo, \pause $H=\{e\}$ \pause e $H=G$ \pause s{\~a}o subgrupos de $G$, \pause chamados de \textbf{subgrupos triviais}.\pause
+
+                \item Seja $(\mathbb{Z},+)$ um grupo. \pause Tomando $H = m\z$, \pause onde $m > 1$, ent{\~a}o $H$ {\'e} subgrupo de $\z$.\pause
+
+                \item $G = U(\z_8) = \{\overline{1}, \overline{3}, \overline{5}, \overline{7}\}$. \pause Ent\~ao $(G,\odot)$ {\'e} um grupo \pause com $|G| = 4$. \pause Al\'em disso,\pause
+                \begin{center}
+                    \begin{tabular}{l}
+                        $H_1 = \{\overline{1}, \overline{3}\}\pause$\\
+                        $H_2 = \{\overline{1}, \overline{5}\}\pause$\\
+                        $H_3 = \{\overline{1}, \overline{7}\}\pause$
+                    \end{tabular}
+                \end{center}
+                S\~ao subgrupos de $G$.
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Dados dois grupos $(G, *)$ \pause e $(H,\triangle)$ \pause dizemos que uma fun\c{c}\~ao $f : G \to H$ \pause \'e um \textbf{homomorfismo de grupos} se \pause
+            \[
+                f(x * y) = \pause f(x)\triangle f(y) \pause
+            \]
+            para todos $x$, $y \in G$.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{observacao}
+            Sejam $(G, *)$ \pause, $(H, \triangle)$ grupos \pause e $f : G \to H$ um homomorfismo. \pause
+
+            \vspace{.5cm}
+
+            \begin{enumerate}[label={\arabic*})]
+                \item Se $G = H$, \pause neste caso $f : G \to G$ \pause \'e chamado de um \textbf{endomorfimos} de grupos.\pause
+
+                \vspace{.5cm}
+
+                \item Se $f : G \to H$ \'e uma fun\c{c}\~ao injetora, \pause ent\~ao dizemos que $f$ \'e um \textbf{monomorfismo} de grupos.\pause
+
+                \vspace{.5cm}
+
+                \seti
+            \end{enumerate}
+        \end{observacao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{observacao}
+            \vspace{.5cm}
+
+            \begin{enumerate}[label={\arabic*})]
+                \conti
+                \item Se $f : G \to H$ \'e uma fun\c{c}\~ao sobrejetora, \pause ent\~ao dizemos que $f$ \'e um \textbf{epimorfismo} de grupos.\pause
+
+                \vspace{.5cm}
+
+                \item Se $f : G \to H$ \'e uma fun\c{c}\~ao bijetora, \pause ent\~ao dizemos que $f$ \'e um \textbf{isomorfismo} de grupos.\pause
+
+                \vspace{.5cm}
+
+                \item Se $f : G \to G$ \'e uma fun\c{c}\~ao bijetora, \pause ent\~ao dizemos que $f$ \'e um \textbf{automorfismo} de grupos.
+
+                \vspace{.5cm}
+
+            \end{enumerate}
+        \end{observacao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+                \item A fun\c{c}\~ao $f : \z \to \complex^*$ \pause dada por $f(x) = i^x$ \pause \'e um homomorfismo de $(\z, +)$ \pause em $(\complex^*, \cdot)$.
+                \seti
+            \end{enumerate}
+
+            \vspace{2cm}
+        \end{exemplos}
+    \end{frame}
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+                \conti
+
+                \item A fun\c{c}\~ao $f : \real^*_+ \to \real$ \pause dada por $f(x) = \ln(x)$ \pause \'e um homomorfismo de $(\real^*_+, \cdot)$ \pause em $(\real, +)$.
+                \seti
+            \end{enumerate}
+            \vspace{2cm}
+        \end{exemplos}
+    \end{frame}
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+                \conti
+
+                \item Sejam $m$ um inteiro positivo fixo. \pause A fun\c{c}\~ao $f: \z \to \z_m$ \pause definida por $f(x) = \overline{x}$ \pause \'e um homomorfimos de $(\z, +)$ \pause em $(\z_m, \oplus)$.
+                \seti
+            \end{enumerate}
+            \vspace{2cm}
+        \end{exemplos}
+    \end{frame}
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+                \conti
+
+                \item Sejam $(G, *)$ um grupo, \pause $z\in G$ um elemento fixado \pause e $z^{-1}$ seu inverso. \pause Ent\~ao a aplica{\c c}{\~a}o\pause
+                \begin{center}
+                    \begin{tabular}{c}
+                        $f_z: G\to G$\pause\\
+                        $f_z(x) = z^{-1}*x*z$,\pause
+                    \end{tabular}
+                \end{center}
+                 para todo $x \in G$, {\'e} um isomorfismo de grupos.
+            \end{enumerate}
+            \vspace{.5cm}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $(G, *)$, \pause $(H, \triangle)$ grupos \pause e $f : G \to H$ um homomorfismo. \pause Denote por $1_G$ \pause e $1_H$ \pause os elementos neutros de $G$ e $H$, \pause respectivamente.\pause
+            \vspace{.5cm}
+            \begin{enumerate}[label={\roman*})]
+                \item $f(1_G) = 1_H$\pause
+
+                \vspace{.5cm}
+
+                \item $[f(x)]^{-1} = f(x^{-1})$ \pause para todo $x \in G$.
+                \vspace{.5cm}
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $I$ \'e um subgrupo de $H$ \pause e $f : G \to H$ \pause um homomorfismo de grupos. \pause Ent\~ao $f^{-1}(I)$ \pause \'e um subgrupo de $G$.
+        \end{proposicao}
+
+        \vspace{2cm}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Sejam $(G, *)$, \pause $(H, \triangle)$ grupos \pause e $f : G \to H$ um homomorfismo de grupos. \pause Chama-se de \textbf{n\'ucleo} \pause ou \textbf{kernel} \pause de $f$ e denota-se por \pause $N(f)$ \pause ou $\ker(f)$ \pause o seguinte subconjunto de $G$:\pause
+            \[
+                \ker(f) = \pause \{x \in G \pause \mid f(x) = 1_H\}.
+            \]
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+                \item Considere o homomorfismo $f : \z \to \complex^*$ \pause dado por $f(x) = i^x$. \pause O kernel de $f$ \'e:
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+        \vspace{2cm}
+    \end{frame}
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+            \conti
+                \item Considere o homomorfismo $g : \real^*_+ \to \real$ \pause dado por $g(x) = \ln(x)$. \pause O n\'ucleo de $g$ \'e:
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+        \vspace{2cm}
+    \end{frame}
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+            \conti
+                \item Considere o homomorfismo $h : \z \to \z_m$ \pause dado por $h(x) = \overline{x}$, \pause $m > 0$ fixo. \pause O kernel de $h$ \'e:
+            \end{enumerate}
+        \end{exemplos}
+        \vspace{2cm}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $(G, *)$, \pause $(H, \triangle)$ grupos \pause e $f : G \to H$ um homomorfismo de grupos. \pause Ent\~ao: \pause
+            \vspace{.5cm}
+
+            \begin{enumerate}[label={\roman*})]
+                \item $\ker(f)$ \'e um subgrupo de $G$. \pause
+
+                \vspace{.5cm}
+
+                \item $f$ \'e um monomorfismo se, e somente se, $\ker(f) = \{1_G\}$.
+
+                \vspace{.5cm}
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $H$, $J$ e $L$ grupos. \pause Se $f : H \to J$ \pause e $g : J \to L$ \pause s\~ao homomorfismos de grupos, \pause ent\~ao $g \circ f : H \to L$ \pause tamb\'em \'e um homomorfismo de grupos.
+        \end{proposicao}
+        \vspace{2cm}
+    \end{frame}
+
+    \begin{frame}
+        \begin{corolario}
+            Se $f$ e $g$ s\~ao homomorfismo \pause injetores \pause (sobrejetores), ent\~ao $g \circ f$ \pause tamb\'em \'e um homomorfismo injetor \pause (sobrejetor).
+        \end{corolario}
+        \vspace{2cm}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Se $f : G \to H$ \'e um isomorfismo de grupos, \pause ent\~ao $f^{-1} : H \to G$ \pause tamb\'em \'e um isomorfismo de grupos.
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\roman*})]
+                \conti
+                \item Considere o grupo aditivo $M_2(\real)$. \pause Mostre que o conjunto\pause
+                \[
+                    H = \left\{\begin{pmatrix}
+                        a & b\\c & d
+                    \end{pmatrix} \in M_2(\real) \mid a + d = 0\right\} \pause
+                \]
+                \'e um subgrupo de $M_2(\real)$.
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+     \begin{frame}
+        Seja $A$ um conjunto n\~ao vazio.\pause
+
+        \vspace{.3cm}
+
+        Dada uma fun\c{c}\~ao $f : A \to A$, sabemos que $f$ possui inversa \pause se, e somente se, $f$ \'e bijetora.\pause
+
+        \vspace{.3cm}
+
+        Assim considere o conjunto\pause
+        \[
+            \mathcal{S} = \{ f : A \to A \pause \mid f \mbox{ \'e bijetora}\}.\pause
+        \]
+
+        Em $\mathcal{S}$ vamos considerar a composi\c{c}\~ao de fun\c{c}\~oes $\circ$.\pause
+
+        \vspace{.3cm}
+
+        Como $id : A \to A$ tal que $id(x) = x$ para todo $x \in A$ \pause \'e uma fun\c{c}\~ao bijetora \pause ent\~ao $id \in \mathcal{S}$ \pause e com isso $\mathcal{S} \ne \emptyset$.
+    \end{frame}
+
+    \begin{frame}
+        Dadas $f$, $g \in \mathcal{S}$ \pause como $f$ e $g$ s\~ao bijetoras, \pause ent\~ao $f \circ g$ \'e bijetora \pause e da{\'\i} $f \circ g \in \mathcal{S}$. \pause Isto \'e, \pause a composi\c{c}\~ao de fun\c{c}\~oes \pause \'e uma opera\c{c}\~ao bin\'aria em $\mathcal{S}$.
+
+        \vspace{.3cm}
+
+        Agora, sejam $f$, $g$ e $h \in \mathcal{S}$. \pause Para todo $x \in A$ temos\pause
+        \begin{center}
+            $[(f\circ g) \pause \circ h \pause](x) \pause = (f \circ g) \pause(h(x)) \pause = f(g(h(x))) \pause$\\
+            $[f\circ \pause(g\circ h) \pause](x) \pause = f( \pause(g\circ h)(x) \pause) = f(g(h(x))) \pause$
+        \end{center}
+
+        Logo $(f\circ g) \pause \circ h  \pause = f\circ \pause (g\circ h)$. \pause
+
+        \vspace{.3cm}
+
+        Agora, para toda $f \in \mathcal{S}$\pause
+        \[
+            f\circ id  \pause = f  \pause = id\circ f, \pause
+        \]
+        onde $id : A \to A$ \pause \'e tal que $id(x) = x$, \pause para todo $x \in A$. \pause Logo $id$ \'e o elemento neutro da composi\c{c}\~ao.\pause
+
+    \end{frame}
+
+    \begin{frame}
+
+        Finalmente, \pause para toda $f \in \mathcal{S}$, \pause como $f$ \'e bijetora \pause existe $g \in \mathcal{S}$ \pause tal que \pause
+        \[
+            f\circ g \pause = id \pause = g \circ f. \pause
+        \]
+        Logo todo elemento de $\mathcal{S}$ \pause possui inverso. \pause
+
+        \vspace{.3cm}
+
+        Portanto $(\mathcal{S}, \circ)$ \pause \'e um grupo.  \pause Al\'em disso, em geral, esse grupo n\~ao \'e comutativo. \pause
+
+        \vspace{.3cm}
+
+        Vamos considerar agora o caso particular \pause em que $A$ \'e um conjunto finito. \pause
+
+        \vspace{.3cm}
+
+        Nessa situa\c{c}\~ao podemos supor que $A \sub \n$ \pause para simplificar a nota\c{c}\~ao. \pause
+
+        \vspace{.3cm}
+
+        Vamos ver como \'e o conjunto $\mathcal{S}$ com essa hip\'otese. \pause
+    \end{frame}
+
+    \begin{frame}
+        Se $A = \{1\}$, \pause ent\~ao s\'o existe uma fun\c{c}\~ao $f : A \to A$ \pause que \'e bijetora e essa fun\c{c}\~ao \'e tal que \pause
+        \begin{center}
+            $f : \{1\} \to \{1\}$ \pause\\
+            $f(1) = 1$. \pause
+        \end{center}
+        Ou seja, $f$ \'e a fun\c{c}\~ao identidade $id$. \pause Nesse caso $\mathcal{S} \pause = S_1 \pause = \{id\}$ \pause e $(S_1, \circ)$ \'e um grupo, \pause e nesse caso comutativo. \pause
+    \end{frame}
+
+    \begin{frame}
+        Se $A = \{1, 2\}$ \pause ent\~ao podemos definir as seguintes fun\c{c}\~oes bijetoras em $A$: \pause
+        \begin{multicols}{2}
+            \begin{enumerate}
+                \item[] \begin{center}
+                    $id : A \to A$ \pause\\
+                    $id(1) = 1$ \pause\\ $id(2) = 2$
+                \end{center}\pause
+                \item[]  \begin{center}
+                    $f : A \to A$ \pause\\ $f(1) = 2 \pause$\\ $f(2) = 1$
+                \end{center}\pause
+            \end{enumerate}
+        \end{multicols}
+
+        Assim $\mathcal{S} \pause = S_2 \pause = \{id, \pause f\}$ \pause e $(S_2, \circ)$ \'e um grupo.\pause
+
+        Al\'em disso, esse grupo \'e comutativo.
+    \end{frame}
+
+    \begin{frame}
+        Agora, seja $A = \{1, 2, 3\}$. \pause Podemos definir ent\~ao as seguintes fun\c{c}\~oes bijetoras em $A$: \pause
+        \begin{multicols}{3}
+            \begin{enumerate}
+                \item[] \begin{center}
+                    $id : A \to A$ \pause\\
+                    $id(1) = 1$ \pause\\
+                    $id(2) = 2$ \pause\\
+                    $id(3) = 3$ \pause
+                \end{center}\pause
+
+                \vspace{.3cm}
+
+                \item[] \begin{center}
+                    $f_1 : A \to A$\pause\\
+                    $f_1(1) = 2$\pause\\
+                    $f_1(2) = 1$\pause\\
+                    $f_1(3) = 3$
+                \end{center}\pause
+
+                \vspace{.3cm}
+
+                \item[] \begin{center}
+                    $f_2 : A \to A$\pause\\
+                    $f_2(1) = 3$\pause\\
+                    $f_2(2) = 2$\pause\\
+                    $f_2(3) = 1$
+                \end{center}\pause
+
+                \vspace{.3cm}
+
+                \item[] \begin{center}
+                    $f_3 : A \to A$\pause\\
+                    $f_3(1) = 1$\pause\\
+                    $f_3(2) = 3$\pause\\
+                    $f_3(3) = 2$
+                \end{center}\pause
+
+                \vspace{.3cm}
+
+                \item[] \begin{center}
+                    $f_4 : A \to A$\pause\\
+                    $f_4(1) = 2$\pause\\
+                    $f_4(2) = 3$\pause\\
+                    $f_4(3) = 1$
+                \end{center}\pause
+
+                \vspace{.3cm}
+
+                \item[] \begin{center}
+                    $f_5 : A \to A$\pause\\
+                    $f_5(1) = 3$\pause\\
+                    $f_5(2) = 1$\pause\\
+                    $f_5(3) = 2$
+                \end{center}
+            \end{enumerate}
+        \end{multicols}
+    \end{frame}
+
+    \begin{frame}
+        Logo $\mathcal{S} = S_3 = \{id, f_1, f_2, f_3, f_4, f_5\}$ \pause e $(S_3, \circ)$ \'e um grupo.\pause
+
+        \vspace{.3cm}
+
+        Nesse caso temos\pause
+        \begin{center}
+            $(f_1 \circ f_4)(1) \pause = f_1(f_4(1)) \pause = f_1(2) \pause = 1$\pause\\
+            \vspace{.3cm}
+            $(f_4 \circ f_1)(1) \pause = f_4(f_1(1)) \pause = f_4(2) \pause = 3$\pause
+        \end{center}
+        da{\'\i} $(f_1 \circ f_4)(1) \pause \ne (f_4 \circ f_1)(1)$ \pause, isto \'e, \pause $f_1 \circ f_4 \pause \ne f_4 \circ f_1$. \pause Portanto o grupo $(S_3, \circ)$ \pause n\~ao \'e comutativo.\pause
+
+        \vspace{.3cm}
+
+        Note que em $S_2$ \pause temos $2 = 2!$ elementos \pause e em $S_3$ \pause temos $6 = 3!$ elementos.\pause
+    \end{frame}
+
+    \begin{frame}
+        De modo geral, \pause se $A = \{1, 2, 3, \dots, n\}$ \pause ent\~ao existem exatamente $n!$ \pause fun\c{c}\~oes $f : A \to A$ bijetoras. \pause
+
+        \vspace{.3cm}
+
+        Assim o grupo $(S_n, \circ)$ \pause possui $n!$ elementos.\pause
+
+        \vspace{.3cm}
+
+        Se $n \geqslant 3$, ent\~ao \pause $S_n$ \'e um grupo n\~ao comutativo.\pause
+
+        \begin{definicao}
+            O grupo $S_n$ \'e chamado de \pause \textbf{grupo sim\'etrico} \pause ou \textbf{grupo de permuta\c{c}\~oes} \pause em $A = \{1, 2, 3, \dots, n\}$.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        Um modo de representar os elementos de $S_n$ \'e o seguinte: \pause vamos representar as fun\c{c}\~oes $f \in S_n$ \pause na forma de uma matriz contendo 2 linhas \pause e $n$ colunas. \pause A primeira linha \'e o dom{\'\i}nio da fun\c{c}\~ao \pause e a segunda cont\'em suas imagens. \pause Assim se $f \in S_n$ escreveremos\pause
+        \[
+            f = \pause \begin{pmatrix}
+                1 & 2 & 3 & \dots & n\pause \\
+                f(1) \pause & f(2) \pause & f(3) \pause & \dots \pause & f(n)\pause
+            \end{pmatrix}.
+        \]
+    \end{frame}
+
+    \begin{frame}
+        No caso de $S_3$ vamos escrever\pause
+        \begin{multicols}{3}
+            \begin{enumerate}
+                \item[] $id = \begin{pmatrix}
+                    1 & 2 & 3\pause\\
+                    1 \pause & 2 \pause & 3\pause
+                \end{pmatrix}$\pause
+
+                \vspace{.5cm}
+
+                \item[] $f_1 = \begin{pmatrix}
+                    1 & 2 & 3 \pause\\
+                    2 \pause & 1 \pause & 3 \pause
+                \end{pmatrix}$\pause
+
+                \vspace{.5cm}
+
+                \item[] $f_2 = \begin{pmatrix}
+                    1 & 2 & 3 \pause\\
+                    3 \pause & 2 \pause & 1 \pause
+                \end{pmatrix}$\pause
+
+                \vspace{.5cm}
+
+                \item[] $f_3 = \begin{pmatrix}
+                    1 & 2 & 3 \pause\\
+                    1 \pause & 3 \pause & 2 \pause
+                \end{pmatrix}$\pause
+
+                \vspace{.5cm}
+
+                \item[] $f_4 = \begin{pmatrix}
+                    1 & 2 & 3 \pause\\
+                    2 \pause & 3 \pause & 1 \pause
+                \end{pmatrix}$\pause
+
+                \vspace{.5cm}
+
+                \item[] $f_5 = \begin{pmatrix}
+                    1 & 2 & 3 \pause\\
+                    3 \pause & 1 \pause & 2 \pause
+                \end{pmatrix}$\pause
+            \end{enumerate}
+        \end{multicols}
+    \end{frame}
+
+    \begin{frame}
+        Assim a composi\c{c}\~ao $f_3 \circ f_4$ pode ser determinada da seguinte forma:
+        \[
+            f_3\circ f_4 = \begin{pmatrix}
+                    1 & 2 & 3\\
+                    1 & 3 & 2
+                \end{pmatrix} \pause \circ \begin{pmatrix}
+                    1 & 2 & 3\\
+                    2 & 3 & 1
+                \end{pmatrix}
+        \]
+    \end{frame}
+
+    \begin{frame}
+        A composi\c{c}\~ao $f_4 \circ f_5$ \'e:
+
+        \[
+            f_4\circ f_5 = \begin{pmatrix}
+                    1 & 2 & 3\\
+                    2 & 3 & 1
+                \end{pmatrix} \pause \circ \begin{pmatrix}
+                    1 & 2 & 3\\
+                    3 & 1 & 2
+                \end{pmatrix}
+        \]
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Seja $(G,*)$ um grupo. \pause Se $G$ {\'e} um conjunto com uma quantidade finita de elementos, \pause dizemos que $G$ {\'e} um \textbf{grupo finito}. \pause Denotamos por $|G|$ \pause o n{\'u}mero de elementos de $G$ \pause e que ser{\'a} chamado de \textbf{ordem} de $G$ \pause ou \textbf{cardinalidade} de $G$. \pause Quando o conjunto $G$ n{\~a}o {\'e} finito, \pause dizemos que $G$ {\'e} um \textbf{grupo infinito}.\pause
+        \end{definicao}
+
+        \begin{exemplos}
+            \begin{enumerate}[label={\roman*})]
+                \item $(\z_m, +)$ {\'e} um grupo finito para todo $m>1$ \pause e $|G| = m$.\pause
+                \item $(S_n, \circ)$ \'e um grupo finito \pause e $|G| = n!$ elementos.\pause
+                \item $(\z, +)$ {\'e} um grupo infinito.
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        Seja $(G, *)$ um grupo. \pause Para simplificar a nota\c{c}\~ao \pause vamos adotar uma nota\c{c}\~ao multiplicativa \pause e escrever $(G, *) = \pause (G, \cdot)$. \pause Assim, dados $x$, $y \in G$ vamos denotar\pause
+        \[
+            x * y = \pause x \cdot y = \pause xy.\pause
+        \]
+
+        Nesse caso vamos dizer simplesmente que $G$ \'e um grupo.
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $G$ um grupo. \pause Dado $H \subset G$ um subgrupo \pause defina \pause
+            \[
+                x \sim y \pause \mbox{ se, e somente se, } \pause x^{-1}y \in H \pause
+            \]
+            para todos $x$, $y \in G$. \pause
+            \begin{enumerate}[label={\roman*})]
+                \item A rela\c{c}\~ao $\sim$ \pause sobre $G$ definida acima \'e uma rela\c{c}\~ao de equival\^encia. \pause
+
+                \item Se $a \in G$, \pause ent\~ao a classe de equival\^encia determinada por $a$ \pause \'e o conjunto \pause
+                \[
+                    aH = \pause \{ah \pause \mid h \in H\}.
+                \]
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $H$ um subgrupo de um grupo $G$. \pause Ent\~ao duas classes laterais quaisquer \pause m\'odulo $H$ \pause s\~ao subconjuntos de $G$ que possuem a mesma cardinalidade, \pause isto \'e, a mesma quantidade de elementos. \pause
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\roman*})]
+                \item No grupo multiplicativo $G = \{1, -1, i, -i\}$, \pause onde $i^2 = -1$. \pause Considere o conjunto $H = \{1, -1\}$. \pause Ent\~ao $H$ \'e um sugbrupo de $G$ \pause e as classes laterais ser\~ao:
+
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\roman*})]
+                \conti
+                \item Considere o grupo multiplicativo $\real^*$ \pause e $H = \{ x \in \real^* \mid x > 0\} \pause \subset \real^*$. \pause Ent\~ao $H$ \'e subgrupo de $\real^*$ \pause e as classes laterais ser\~ao:
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\roman*})]
+                \conti
+                \item Considere agora o grupo sim\'etrico $G = S_3$. \pause Denote por \pause
+                \[
+                    a = \begin{pmatrix}
+                        1 & 2 & 3\\2 & 3 & 1
+                    \end{pmatrix}, \pause \quad
+                    b = \begin{pmatrix}
+                        1 & 2 & 3\\1 & 3 & 2
+                    \end{pmatrix}. \pause
+                \]
+                Fica como exerc{\'\i}cio verificar que $\{e, a, a^2 , b, ba, ba^2\} = \pause S_3$. \pause Aqui $e$ \'e a fun\c{c}\~ao identidade, \pause $a^2 = a \circ a$, \pause $ba = b \circ a$ e \pause $ba^2 = b\circ(a\circ a)$. \pause Seja $H = \{e, a , a^2\}$. \pause Ent\~ao $H$ \'e subgrupo de $S_3$ \pause e as classes laterais ser\~ao:
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        Seja $(G, *)$ um grupo. \pause
+
+        Caso a opera\c{c}\~ao $*$ seja do tipo multiplicativa, vamos escrever $(G, *) = \pause (G, \cdot)$. \pause Assim, dados $x$, $y \in G$ vamos denotar\pause
+        \[
+            x * y = \pause x \cdot y = \pause xy.
+        \]
+
+        Caso a opera\c{c}\~ao $*$ seja do tipo aditiva, vamos escrever $(G, *) = \pause (G, +)$. \pause Assim, dados $x$, $y \in G$ vamos denotar\pause
+        \[
+            x * y = \pause x + y.
+        \]
+
+        Com a nota\c{c}\~ao multiplicativa \pause o inverso de um elemento $x \in G$ \pause ser\'a denotado por $x^{-1}$ \pause e no caso da nota\c{c}\~ao aditiva \pause o oposto de $x \in G$ \pause ser\'a denotado por $-x$.
+    \end{frame}
+
+    \begin{frame}
+        Seja $G$ um grupo multiplicativo \pause e denote por $e$ o elemento neutro de $G$. \pause Se $x \in G$ \pause e $m \in \z$, \pause a \textbf{pot\^encia $m$-\'esima} de $x$, \pause ou \textbf{pot\^encia de $x$ de expoente $m$}, \pause \'e o elemento de $G$ denotado por \pause
+        \[
+            x^m \pause
+        \]
+        e definido por: \pause
+        \[
+            x^m = \pause \begin{cases}
+                    e, & \mbox{se m = 0}, \pause\\
+                    x^{m-1}x, \pause & \mbox{ se } m \ge 1, \pause\\
+                    (x^{-m})^{-1}, \pause & \mbox{ se } m < 0.
+                   \end{cases}
+        \]
+
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\roman*})]
+                \item No grupo multiplicativo $GL_2(\real)$ \pause seja \pause
+                \[
+                    A = \begin{pmatrix}
+                        1 & 1\\2 & 3
+                    \end{pmatrix}. \pause
+                \]
+                Ent\~ao:
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\roman*})]
+                \conti
+                \item No grupo multiplicativo $\z_5^*$ \pause seja $a = \overline{2}$. \pause Ent\~ao:
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\roman*})]
+                \conti
+                \item No grupo multiplicativo $S_3$ \pause seja
+                \[
+                    a = \begin{pmatrix}
+                        1 & 2 & 3\\ 2 & 3 & 1
+                    \end{pmatrix}.\pause
+                \]
+                Ent\~ao:
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $G$ um grupo multiplicativo. \pause Se $m$ e $n$ s\~ao n\'umeros inteiros \pause e $x \in G$, \pause ent\~ao \pause
+            \begin{enumerate}[label={\roman*})]
+                \item $x^mx^n = \pause x^{m + n}$ \pause
+
+                \item $x^{-m} = \pause (x^m)^{-1}$ \pause
+
+                \item $(x^m)^n = \pause x^{mn}$ \pause
+
+                \item $x^mx^n = \pause x^nx^m$
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        Seja $G$ um grupo aditivo \pause e denote por $e$ o elemento neutro de $G$. \pause Se $x \in G$ \pause e $m \in \z$, \pause o \textbf{m\'ultiplo $m$-\'esimo} de $x$ \pause \'e o elemento de $G$ denotado por \pause
+        \[
+            m \cdot x \pause
+        \]
+        e definido por:
+        \[
+            m \cdot x = \pause \begin{cases}
+                    e, & \mbox{se m = 0}, \pause\\
+                    (m - 1)\cdot x + x, \pause & \mbox{ se } m \ge 1, \pause\\
+                    -[(-m) \cdot x], \pause & \mbox{ se } m < 0.
+                   \end{cases}
+        \]
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $G$ um grupo aditivo. \pause Se $m$ e $n$ s\~ao n\'umeros inteiros \pause e $x \in G$, ent\~ao \pause
+            \begin{enumerate}[label={\roman*})]
+                \item $m \cdot x + n \cdot x = \pause (m + n) \cdot x$ \pause
+
+                \item $(-m) \cdot x = \pause -(m \cdot x)$ \pause
+
+                \item $n\cdot (m \cdot x) = \pause (nm)\cdot x$
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        Seja $G$ um grupo multiplicativo \pause e $x \in G$. \pause Denote por $[x]$ \pause o seguinte conjunto \pause
+        \[
+            [x] = \pause \{x^m \pause \mid m \in \z\} \pause \subset G.\pause
+        \]
+
+        \begin{proposicao}
+            Seja $G$ um grupo multiplicativo \pause e $x \in G$. \pause
+            \begin{enumerate}[label={\roman*})]
+                \item O subconjunto $[x]$ \pause \'e um subgrupo de $G$.\pause
+
+                \item Se $H$ \'e um subgrupo de $G$ \pause tal que $x \in H$, \pause ent\~ao $[x] \subset H$.
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Um grupo multiplicativo $G$ \pause ser\'a chamado de \textbf{grupo c{\'\i}clico} \pause se, para algum $x \in G$, \pause vale \pause
+            \[
+                G = [x]. \pause
+            \]
+            Nessas condi\c{c}\~oes, o elemento $x$  \pause \'e chamado de \textbf{gerador} do grupo $G$.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\roman*})]
+                \item No grupo multiplicativo $\complex^*$, \pause encontre o subgrupo gerado por $i$.
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\roman*})]
+                \conti
+                \item No grupo $S_3$, \pause encontre o subgrupo gerado por
+                \[
+                    f = \begin{pmatrix}
+                        1 & 2 & 3\\
+                        2 & 3 & 1
+                    \end{pmatrix}.
+                \]
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Todo subgrupo de um grupo c{\'\i}clico \'e tamb\'em c{\'\i}clico.
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Seja $G$ um grupo com elemento neutro $e$. \pause Dado $x \in G$ \pause se existir um inteiro $h > 0$ \pause tal que \pause
+            \begin{enumerate}[label={\roman*})]
+                \item $x^h = e$ \pause
+                \item $x^r \ne e$ \pause qualquer que seja o inteiro $r$ \pause tal que $0 < r < h$\pause
+            \end{enumerate}
+            diremos que a \textbf{ordem} \pause ou \textbf{per{\'\i}odo} \pause de $x$ \'e $h$. \pause Nesse caso escreveremos $|x| = \pause o(x) = h$. \pause
+
+            Se para qualquer inteiro \pause $r \ne 0$, \pause $x^r \ne e$, \pause diremos que a \textbf{ordem} de $x$ \'e \textbf{zero}.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\roman*})]
+                \item No grupo multiplicativo $\complex^*$ temos:
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\roman*})]
+                \conti
+                \item Em $S_3$ temos:
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\roman*})]
+                \conti
+
+                \item Em $\z_5$ temos:
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\roman*})]
+                \conti
+
+                \item Em $\z$ \pause o \'unico elemento de ordem diferente de zero \pause \'e o elemento neutro.
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $x$ um elemento de ordem $h > 0$ \pause de um grupo $G$. \pause Ent\~ao $x^m = e$ \pause se, e somente se, $h \mid m$.
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        Considere o grupo multiplicativo $G = \{1, -1\}$ \pause e o grupo $S_2$ das permuta\c{c}\~oes sobre o conjunto $\{1,2\}$. \pause Aqui
+        \[
+            S_2 = \left\{id = \begin{pmatrix}
+                1 & 2\\1 & 2
+            \end{pmatrix}; \pause f = \begin{pmatrix}
+                1 & 2\\2 & 1
+            \end{pmatrix}\right\}.
+        \]
+    \end{frame}
+
+    \begin{frame}
+        Temos \pause
+        \begin{table}
+            \begin{minipage}{.5\linewidth}
+                \caption*{$G$}
+                \centering
+                \begin{tabular}{|c|c|c|}
+                    \hline
+                    $\cdot$ & 1 & -1\\
+                    \hline
+                    1 & 1 & -1\\
+                    \hline
+                    -1 & -1 & 1\\
+                    \hline
+                \end{tabular}
+            \end{minipage}%
+            \pause
+            \begin{minipage}{.5\linewidth}
+                \caption*{$S_2$}
+                \centering
+                \begin{tabular}{|c|c|c|}
+                    \hline
+                    $\circ$ & $id$ & $f$\\
+                    \hline
+                    $id$ & $id$ & $f$\\
+                    \hline
+                    $f$ & $f$ & $id$\\
+                    \hline
+                \end{tabular}
+            \end{minipage}\pause
+        \end{table}
+
+        \vspace{.4cm}
+
+        Defina $\sigma : G \to S_2$ por \pause
+        \begin{center}
+            \begin{tabular}{c}
+                $\sigma(1) = id$ \pause\\
+                \vspace{.3cm}\\
+                $\sigma(-1) = f$.
+            \end{tabular}
+        \end{center}
+    \end{frame}
+
+    \begin{frame}
+        Da defini\c{c}\~ao de $\sigma$ \pause \'e f\'acil ver que essa fun\c{c}\~ao \'e bijetora. \pause Al\'em disso, \pause
+        \begin{center}
+            \begin{tabular}{c}
+                $\sigma(1) \circ \sigma(1) \pause = id \pause \circ id \pause = id \pause = \sigma(1) \pause = \sigma(1 \cdot 1)$\pause\\
+                \\
+                $\sigma(1) \circ \sigma(-1) \pause = id \pause \circ f \pause = f \pause = \sigma(-1) \pause = \sigma(1 \cdot -1)$ \pause\\
+                \\
+                $\sigma(-1) \circ \sigma(1) \pause = f \pause \circ id \pause = f \pause = \sigma(-1) \pause = \sigma(-1 \cdot 1)$ \pause\\
+                \\
+                $\sigma(-1) \circ \sigma(-1) \pause = f \pause \circ f \pause = id \pause = \sigma(1) \pause = \sigma(-1 \cdot -1)$ \pause\\
+            \end{tabular}
+        \end{center}
+        ou seja, $\sigma(x\cdot y) = \pause \sigma(x) \circ \sigma(y)$ \pause para todos $x$, $y \in G$. \pause Assim fun\c{c}\~ao $\sigma$ \'e um homomorfismo de $G$ em $S_2$. \pause
+
+        \vspace{.3cm}
+
+        Como $\sigma$ tamb\'em \'e bijetora, \pause ent\~ao $\sigma$ \'e um isomorfismo \pause de $G$ em $S_2$. \pause Nesse caso, dizemos que $G$ e $S_2$ s\~ao grupos isomorfos \pause e denotamos isso escrevendo $G \cong S_2$.
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Sejam $(G, *)$ e $(H, \triangle)$ grupos. \pause Se existe $f : G \to H$ um isomorfismo, \pause diremos que $G$ e $H$ s\~ao \textbf{grupos isomorfos} \pause e denotaremos esse fato escrevendo $G \cong H$.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $G$ e $H$ grupos multiplicativos. \pause Se $f : G \to H$ \'e um isomorfimos de grupos, ent\~ao \pause $G$ \'e comutativo se, e somente se, $H$ \'e comutativo.
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \vspace{.3cm}
+            \begin{enumerate}
+                \item[1)] Os grupos $\z_6$ e $S_3$ \pause n\~ao s\~ao isomorfos \pause pois $\z_6$ \'e comutativo \pause e $S_3$ n\~ao \'e comutativo.\pause
+
+                \vspace{.3cm}
+
+                \item[2)] Considere o grupo $S_6$ das permuta\c{c}\~oes em $\{1, 2, \cdots, 6\}$. \pause Tome
+                \[
+                    f = \begin{pmatrix}
+                        1 & 2 & 3 & 4 & 5 & 6\\
+                        2 & 3 & 4 & 5 & 6 & 1
+                    \end{pmatrix} \in S_6. \pause
+                \]
+                Seja $H = [f]$. \pause Ent\~ao $H \cong \z_6$, \pause onde $\phi : H \to \z_6$ dada por $\phi(f^k) = \overline{k}$ \pause \'e um isomorfimo de grupos.
+
+                \vspace{.3cm}
+
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $G$ e $H$ grupos multiplicativos. \pause Seja $f : G \to H$ \'e um isomorfimos de grupos. \pause Ent\~ao $x \in G$ \pause \'e tal que $o(x) = h$ \pause se, e somente se, $o(f(x)) = h$.
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        Seja $G = [a]$ um grupo c{\'\i}clico. \pause Dois casos podem ocorrer: \pause
+
+        \textbf{Caso 1:} $a^r \ne a^s$ \pause sempre que $r \ne s$.
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Se $G = [a]$ \'e um grupo c{\'\i}clico que cumpre a condi\c{c}\~ao do \textbf{Caso 1}, \pause ent\~ao a fun\c{c}\~ao $f : \z \to G$ por $f(r) = a^r$ \pause \'e um isomorfimo de grupos. \pause Ou seja, $G \cong \z$.
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \textbf{Caso 2:} $a^r = a^s$ \pause para algum par de inteiros distintos, $r$ e $s$.
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $G = [a]$ um grupo c{\'\i}clico que cumpre a condi\c{c}\~ao do \textbf{Caso 2}. \pause Ent\~ao existe um inteiro $m > 0$ tal que \pause
+            \begin{enumerate}
+                \item[i)] $a^m = e$ \pause
+
+                \item[ii)] $a^r \ne e$, sempre que $0 < r < m$. \pause
+            \end{enumerate}
+            Nesse caso, a ordem do grupo $G$ \'e $m$ \pause e
+            \[
+                G = [a] = \{e, a, a^2, \cdots, a^{m - 1}\}.
+            \]
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{corolario}
+            Seja $G = [a]$ um grupo c{\'\i}clico de ordem finita igual a $m$. \pause Ent\~ao a fun\c{c}\~ao $f : \z_m \to G$ \pause dada por $f(\overline{x}) = a^x$ \pause \'e um isomorfimo de grupos.
+        \end{corolario}
+    \end{frame}
+
+    \begin{frame}
+        Sejam $(G, \cdot)$ um grupo \pause e $A$ e $B$ subconjuntos de $G$. \pause Vamos indicar por \pause
+        \[
+            AB \pause
+        \]
+        e chamaremos de \textbf{produto} de $A$ por $B$ \pause o seguinte subconjunto de $G$: \pause
+        \begin{center}
+            \begin{tabular}{l}
+                $AB = \emptyset$, \pause se $A = \emptyset$ ou $B = \emptyset$ \pause\\
+                \\
+                $AB = \{xy \pause \mid x \in A \pause \mbox{ e } y \in B \pause\}$, se  $A \ne \emptyset$ e $B \ne \emptyset$. \pause
+            \end{tabular}
+        \end{center}
+
+        \vspace{.3cm}
+
+        Assim o \textbf{produto} de $A$ por $B$ \pause \'e uma opera\c{c}\~ao sobre o subconjuntos das partes de $G$, \pause $\mathcal{P}(G)$, chamada de \textbf{multiplica\c{c}\~ao de subconjuntos} de $G$. \pause
+
+        \vspace{.3cm}
+
+        Como $G$ \'e associativo, \pause ent\~ao a \textbf{multiplica\c{c}\~ao de subconjuntos} tamb\'em ser\'a associativa. \pause Al\'em disso, caso o grupo $G$ seja comutativo, \pause ent\~ao \textbf{multiplica\c{c}\~ao de subconjuntos} tamb\'em ser\'a comutativa.
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label=({\arabic*})]
+                \item Seja $G = \{e, a, b, c\}$ \pause o grupo tal que \pause
+                \begin{table}[h]
+                    \begin{tabular}{|c|c|c|c|c|}
+                        \hline
+                        $\cdot$ & e & a & b & c\\
+                        \hline
+                        e & e & a & b & c\\
+                        \hline
+                        a & a & e & c & b\\
+                        \hline
+                        b & b & c & e & a\\
+                        \hline
+                        c & c & b & a & e\\
+                        \hline
+                    \end{tabular}.
+                \end{table}
+                Esse grupo \'e chamada de \textbf{grupo de Klein}. \pause
+
+                \vspace{.3cm}
+
+                Se $A = \{e, a\}$ \pause e $B = \{b, c\}$, \pause ent\~ao:
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label=({\arabic*})]
+                \conti
+                \item Considere o grupo multiplicativo dos n\'umeros reais. \pause Se
+                \begin{center}
+                    $A = \{x \in \real^* \mid x > 0\}$ \pause\\
+                    $B = \{x \in \real^* \mid x < 0\}$ \pause
+                \end{center}
+                ent\~ao:
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Um subgrupo $N$ \pause de um grupo $G$ \pause \'e chamado de \textbf{subgrupo normal} \pause (ou \textbf{invariante}) \pause se, para todo $x \in G$, \pause vale
+            \[
+                xN \pause = Nx. \pause
+            \]
+            Denotaremos esse fato escrevendo $H \unlhd G$.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label=({\arabic*})]
+                \item Seja $G = S_3$. \pause J\'a vimos que se tomamos
+                \[
+                    Id = \begin{pmatrix}
+                        1 & 2 & 3\\
+                        1 & 2 & 3
+                    \end{pmatrix}, \pause \quad
+                    f = \begin{pmatrix}
+                        1 & 2 & 3\\
+                        2 & 3 & 1
+                    \end{pmatrix} \pause \quad \mbox{e}\quad
+                    g = \begin{pmatrix}
+                        1 & 2 & 3\\
+                        1 & 3 & 2
+                    \end{pmatrix} \pause
+                \]
+                ent\~ao
+                \[
+                    S_3 = \{Id, f, f^2, g, gf, gf^2\}. \pause
+                \]
+                Considere o subgrupo $H = [\ f\ ] \pause = \{Id, f, f^2\}$. \pause Ent\~ao $H$ \'e um subgrupo normal de $G$.
+
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label=({\arabic*})]
+                \conti
+
+                \item Se $G$ \'e um grupo abeliano, \pause ent\~ao todo subgrupo de $G$ \'e normal.
+
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label=({\arabic*})]
+                \conti
+
+                \item Seja $H$ um subgrupo de $G$ \pause tal que $H$ possui somente duas classes laterais. \pause Ent\~ao $H$ \'e um subgrupo normal de $G$.
+
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $G$ um grupo. \pause Se $H$ e $L$ s\~ao subgrupos normais de $G$, \pause ent\~ao $H \cap L$ \pause \'e um subgrupo normal de $G$.
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $N$ um subgrupo normal \pause do grupo $G$. \pause Ent\~ao, para quaisquer $a$, $b \in G$ temos \pause
+            \[
+                (aN)(bN) \pause = (ab)N.
+            \]
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        Seja $N$ um subgrupo normal \pause de um grupo $G$, onde $e$ denota o elemento neutro de $G$. \pause Denote por \pause
+        \[
+            G/N = \{aN \mid a \in G\} \pause
+        \]
+        o conjunto das classes de equival\^encia determinadas por $N$. \pause
+
+        \vspace{.5cm}
+
+        Defina em $G/N$ a opera\c{c}\~ao \pause
+        \[
+            (aN)(bN)  \pause = (ab)N \pause
+        \]
+        para todos $aN$, $bN \in G/N$.
+    \end{frame}
+
+    \begin{frame}
+        Temos: \pause
+
+        \vspace{.3cm}
+
+        \begin{enumerate}[label={\roman*})]
+            \item $[(aN)(bN)](cN) \pause = (an)[(bN)(cN)]$ \pause para todos $aN$, $bN$, $cN \in G/N$; \pause
+
+            \vspace{.3cm}
+
+            \item $(aN)(eN) \pause = (ae)N \pause = aN \pause = (ea)N \pause = (eN)(aN)$ \pause para todo $aN \in G/N$; \pause
+
+            \vspace{.3cm}
+
+            \item $(aN)(a^{-1}N) \pause = (aa^{-1})N \pause = eN \pause = (a^{-1}a)N \pause = (a^{-1}N)(aN)$ \pause para todo $aN \in G/N$. \pause
+
+            \vspace{.3cm}
+        \end{enumerate}
+
+        Assim, o conjunto $G/N$ \'e um grupo com a multiplica\c{c}\~ao de conjuntos. \pause
+
+        \vspace{.3cm}
+
+        Nesse grupo o elemento neutro \'e $eN$ \pause e $(aN)^{-1} = (a^{-1})N$.
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Sejam $G$ um grupo e $N$ um subgrupo normal de $G$. \pause Nessas condi\c{c}\~oes, \pause o \textbf{grupo quociente} \pause
+            de $G$ por $N$ \pause \'e o par formado pelo conjunto quociente $G/N$ \pause e da opera\c{c}\~ao de multiplica\c{c}\~ao de conjuntos
+            aplicadas aos elementos desse conjunto.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label=({\arabic*})]
+                \item Seja $G = \{1, -1, i, -i\}$ um grupo \pause e $N = \{1, -1\}$.
+
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label=({\arabic*})]
+                \conti
+
+                \item Seja $G = \z_6 = \{\overline{0}, \overline{1}, \overline{2}, \overline{3}, \overline{4}, \overline{5}\}$ \pause e $H = \{\overline{0}, \overline{3}\}$.
+
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label=({\arabic*})]
+                \conti
+
+                \item Seja $G = S_3$. \pause J\'a vimos que se tomamos
+                \[
+                    Id = \begin{pmatrix}
+                        1 & 2 & 3\\
+                        1 & 2 & 3
+                    \end{pmatrix}, \pause\quad
+                    f = \begin{pmatrix}
+                        1 & 2 & 3\\
+                        2 & 3 & 1
+                    \end{pmatrix} \pause \quad \mbox{e}\quad
+                    g = \begin{pmatrix}
+                        1 & 2 & 3\\
+                        1 & 3 & 2
+                    \end{pmatrix}
+                \]
+                ent\~ao
+                \[
+                    S_3 = \{Id, f, f^2, g, gf, gf^2\}. \pause
+                \]
+                Considere o subgrupo $H = [\ f\ ] \pause = \{Id, f, f^2\}$.
+
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Se $N$ \'e um subgrupo normal de $G$, \pause ent\~ao a fun\c{c}\~ao $\mu : G \to G/N$ \pause definida por $\mu(a) = aN$ \pause \'e um homomorfismo sobrejetor \pause de grupos tal que \pause
+            \[
+                \ker(\mu) = N.
+            \]
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Se $N$ \'e um subgrupo normal de $G$, \pause ent\~ao o homomorfismo $\mu : G \to G/N$ \pause definido por $\mu(a) = aN$ \pause \'e chamado de \textbf{homomorfismo can\^onico} \pause de $G$ sobre $G/N$.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{lema}
+            Se $f : G \to L$ \'e um homomorfismo de grupos, \pause ent\~ao $N = \ker(f)$ \pause \'e um subgrupo normal de $G$ \pause e, portanto, $G/N$ \'e um grupo.
+        \end{lema}
+    \end{frame}
+
+    \begin{frame}
+        \begin{teorema}[Teorema do Homomorfismo para Grupos]
+            Seja $f : G \to L$ um homomorfismo sobrejetor \pause de grupos. \pause Se $N = \ker(f)$, \pause ent\~ao o grupo quociente $G/N$ \'e isomorfo ao grupo $L$.
+        \end{teorema}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplo}
+            Dado um inteiro $m > 1$, \pause considere o homomorfismo $\rho_m : \z \to \z_m$ \pause definido por $\rho_m(x) = \overline{x}$.
+        \end{exemplo}
+    \end{frame}
+
+    \begin{frame}
+        Seja $G$ um grupo finito. \pause Se $H$ \'e um subgrupo de $G$, \pause ent\~ao existir\'a uma quantidade finita de classes laterais m\'odulo $H$ \pause.
+        Assim o conjunto
+        \[
+            G/H = \{aH \mid a \in G\} \pause
+        \]
+        \'e finito. \pause
+
+        O n\'umero de elementos de $G/H$ \pause \'e chamado de \textbf{{\'\i}ndice} \pause de $H$ em $G$ \pause e ser\'a denotado por
+        \[
+            [G : H] = |G/H|.
+        \]
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label=({\arabic*})]
+                \item Seja $G = \{1, -1, i, -i\}$ um grupo \pause e $N = \{1, -1\}$ \pause um subgrupo de $G$. \pause J\'a vimos que as classes laterais de $N$ em $G$ s\~ao \pause
+                \[
+                    N \quad \mbox{e}\quad iN. \pause
+                \]
+                Da{\'\i}
+                \[
+                    G/N = \{N, iN\} \pause
+                \]
+                e assim $[G : N] = 2$.
+
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label=({\arabic*})]
+                \conti
+
+                \item Seja $G = S_3$. \pause J\'a vimos que se tomamos
+                \[
+                    Id = \begin{pmatrix}
+                        1 & 2 & 3\\
+                        1 & 2 & 3
+                    \end{pmatrix}, \pause\quad
+                    f = \begin{pmatrix}
+                        1 & 2 & 3\\
+                        2 & 3 & 1
+                    \end{pmatrix} \pause \quad \mbox{e}\quad
+                    g = \begin{pmatrix}
+                        1 & 2 & 3\\
+                        1 & 3 & 2
+                    \end{pmatrix}
+                \]
+                ent\~ao
+                \[
+                    S_3 = \{Id, f, f^2, g, gf, gf^2\}. \pause
+                \]
+                Considere o subgrupo $H = [\ g\ ] \pause = \{Id, g\}$. Ent\~ao $H$ possui 3 classes laterais que s\~ao
+                \[
+                    H,\ fH,\ f^2H. \pause
+                \]
+                Da{\'\i}
+                \[
+                    G/H = \{H, fH, f^2H\} \pause
+                \]
+                e ent\~ao $[G : H] = 3$.
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{teorema}[Teorema de Lagrange]
+            Seja $H$ um subgrupo \pause de um grupo finito $G$. \pause Ent\~ao $o(G) = o(H)[G:H]$ \pause e, portanto, $o(H) | o(G)$.
+        \end{teorema}
+    \end{frame}
+
+    \begin{frame}
+        \begin{observacao}
+            No grupo $S_4$ \pause considere o seguinte subconjunto: \pause
+            \[
+                L = \left\{\begin{pmatrix}
+                    1 & 2 & 3 & 4\\
+                    1 & 2 & 3 & 4
+                \end{pmatrix}, \pause \begin{pmatrix}
+                    1 & 2 & 3 & 4\\
+                    1 & 3 & 4 & 2
+                \end{pmatrix}\right\}. \pause
+            \]
+            Observe que o n\'umero de elementos de L \pause divide $|S_4| = 4! = 24$ \pause mas $L$ n\~ao \'e um subgrupo de $S_4$ \pause pois
+            \[
+                \begin{pmatrix}
+                    1 & 2 & 3 & 4\\
+                    1 & 3 & 4 & 2
+                \end{pmatrix}^{-1} \pause = \begin{pmatrix}
+                    1 & 2 & 3 & 4\\
+                    1 & 4 & 2 & 3
+                \end{pmatrix} \pause \notin L.
+            \]
+        \end{observacao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{corolario}
+            Seja $G$ um grupo finito. \pause Ent\~ao a ordem de um elemento $x \in G$ \pause divide a ordem de $G$ \pause e o quociente \'e $[G : H]$, \pause onde $H = [x]$.
+        \end{corolario}
+    \end{frame}
+
+    \begin{frame}
+        \begin{corolario}
+            Sejam $G$ um grupo finito \pause e $x \in G$. \pause Ent\~ao
+            \[
+                x^{o(G)} \pause = e, \pause
+            \]
+            onde $e$ denota o elemento neutro de $G$.
+        \end{corolario}
+    \end{frame}
+
+    \begin{frame}
+        \begin{corolario}
+            Seja $G$ um grupo finito \pause cuja ordem \'e um n\'umero primo. \pause Ent\~ao $G$ \'e um grupo c{\'\i}clico \pause e os \'unicos subgrupos de $G$ \pause s\~ao os triviais, \pause ou seja, $\{e\}$ e $G$.
+        \end{corolario}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplo}
+            Determine todos os subgrupos do grupo $S_3$.
+        \end{exemplo}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Se $G$ \'e um grupo finito tal que $o(G) \le 5$, ent\~ao $G$ \'e abeliano.
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $G$ um grupo tal que $|G| = pq$, onde $p$ e $q$ s\~ao n\'umeros primos. Se $G$ \'e abeliano e $p \ne q$, ent\~ao $G$ \'e um grupo c{\'\i}clico.
+        \end{proposicao}
+    \end{frame}
+
+\end{document}

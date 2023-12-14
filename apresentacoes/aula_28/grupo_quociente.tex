@@ -1,0 +1,165 @@
+%!TEX program = xelatex
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{Grupo Quociente}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+
+    \begin{frame}
+        Seja $N$ um subgrupo normal \pause de um grupo $G$, onde $e$ denota o elemento neutro de $G$. \pause Denote por \pause
+        \[
+            G/N = \{aN \mid a \in G\} \pause
+        \]
+        o conjunto das classes de equival\^encia determinadas por $N$. \pause
+
+        \vspace{.5cm}
+
+        Defina em $G/N$ a opera\c{c}\~ao \pause
+        \[
+            (aN)(bN)  \pause = (ab)N \pause
+        \]
+        para todos $aN$, $bN \in G/N$.
+    \end{frame}
+
+    \begin{frame}
+        Temos: \pause
+
+        \vspace{.3cm}
+
+        \begin{enumerate}[label={\roman*})]
+            \item $[(aN)(bN)](cN) \pause = (an)[(bN)(cN)]$ \pause para todos $aN$, $bN$, $cN \in G/N$; \pause
+
+            \vspace{.3cm}
+
+            \item $(aN)(eN) \pause = (ae)N \pause = aN \pause = (ea)N \pause = (eN)(aN)$ \pause para todo $aN \in G/N$; \pause
+
+            \vspace{.3cm}
+
+            \item $(aN)(a^{-1}N) \pause = (aa^{-1})N \pause = eN \pause = (a^{-1}a)N \pause = (a^{-1}N)(aN)$ \pause para todo $aN \in G/N$. \pause
+
+            \vspace{.3cm}
+        \end{enumerate}
+
+        Assim, o conjunto $G/N$ \'e um grupo com a multiplica\c{c}\~ao de conjuntos. \pause
+
+        \vspace{.3cm}
+
+        Nesse grupo o elemento neutro \'e $eN$ \pause e $(aN)^{-1} = (a^{-1})N$.
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Sejam $G$ um grupo e $N$ um subgrupo normal de $G$. \pause Nessas condi\c{c}\~oes, \pause o \textbf{grupo quociente} \pause
+            de $G$ por $N$ \pause \'e o par formado pelo conjunto quociente $G/N$ \pause e da opera\c{c}\~ao de multiplica\c{c}\~ao de conjuntos
+            aplicadas aos elementos desse conjunto.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label=({\arabic*})]
+                \item Seja $G = \{1, -1, i, -i\}$ um grupo \pause e $N = \{1, -1\}$.
+
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label=({\arabic*})]
+                \conti
+
+                \item Seja $G = \z_6 = \{\overline{0}, \overline{1}, \overline{2}, \overline{3}, \overline{4}, \overline{5}\}$ \pause e $H = \{\overline{0}, \overline{3}\}$.
+
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label=({\arabic*})]
+                \conti
+
+                \item Seja $G = S_3$. \pause J\'a vimos que se tomamos
+                \[
+                    Id = \begin{pmatrix}
+                        1 & 2 & 3\\
+                        1 & 2 & 3
+                    \end{pmatrix}, \pause\quad
+                    f = \begin{pmatrix}
+                        1 & 2 & 3\\
+                        2 & 3 & 1
+                    \end{pmatrix} \pause \quad \mbox{e}\quad
+                    g = \begin{pmatrix}
+                        1 & 2 & 3\\
+                        1 & 3 & 2
+                    \end{pmatrix}
+                \]
+                ent\~ao
+                \[
+                    S_3 = \{Id, f, f^2, g, gf, gf^2\}. \pause
+                \]
+                Considere o subgrupo $H = [\ f\ ] \pause = \{Id, f, f^2\}$.
+
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Se $N$ \'e um subgrupo normal de $G$, \pause ent\~ao a fun\c{c}\~ao $\mu : G \to G/N$ \pause definida por $\mu(a) = aN$ \pause \'e um homomorfismo sobrejetor \pause de grupos tal que \pause
+            \[
+                \ker(\mu) = N.
+            \]
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Se $N$ \'e um subgrupo normal de $G$, \pause ent\~ao o homomorfismo $\mu : G \to G/N$ \pause definido por $\mu(a) = aN$ \pause \'e chamado de \textbf{homomorfismo can\^onico} \pause de $G$ sobre $G/N$.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{lema}
+            Se $f : G \to L$ \'e um homomorfismo de grupos, \pause ent\~ao $N = \ker(f)$ \pause \'e um subgrupo normal de $G$ \pause e, portanto, $G/N$ \'e um grupo.
+        \end{lema}
+    \end{frame}
+
+    \begin{frame}
+        \begin{teorema}[Teorema do Homomorfismo para Grupos]
+            Seja $f : G \to L$ um homomorfismo sobrejetor \pause de grupos. \pause Se $N = \ker(f)$, \pause ent\~ao o grupo quociente $G/N$ \'e isomorfo ao grupo $L$.
+        \end{teorema}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplo}
+            Dado um inteiro $m > 1$, \pause considere o homomorfismo $\rho_m : \z \to \z_m$ \pause definido por $\rho_m(x) = \overline{x}$.
+        \end{exemplo}
+    \end{frame}
+
+\end{document}

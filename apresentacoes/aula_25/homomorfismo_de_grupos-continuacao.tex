@@ -1,0 +1,104 @@
+%!TEX program = xelatex
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{Homomorfismo de Grupos - Continua\c{c}\~ao}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+
+    \begin{frame}
+        \begin{definicao}
+            Sejam $(G, *)$, \pause $(H, \triangle)$ grupos \pause e $f : G \to H$ um homomorfismo de grupos. \pause Chama-se de \textbf{n\'ucleo} \pause ou \textbf{kernel} \pause de $f$ e denota-se por \pause $N(f)$ \pause ou $\ker(f)$ \pause o seguinte subconjunto de $G$:\pause
+            \[
+                \ker(f) = \pause \{x \in G \pause \mid f(x) = 1_H\}.
+            \]
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+                \item Considere o homomorfismo $f : \z \to \complex^*$ \pause dado por $f(x) = i^x$. \pause O kernel de $f$ \'e:
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+        \vspace{2cm}
+    \end{frame}
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+            \conti
+                \item Considere o homomorfismo $g : \real^*_+ \to \real$ \pause dado por $g(x) = \ln(x)$. \pause O n\'ucleo de $g$ \'e:
+                \seti
+            \end{enumerate}
+        \end{exemplos}
+        \vspace{2cm}
+    \end{frame}
+    \begin{frame}
+        \begin{exemplos}
+            \begin{enumerate}[label={\arabic*})]
+            \conti
+                \item Considere o homomorfismo $h : \z \to \z_m$ \pause dado por $h(x) = \overline{x}$, \pause $m > 0$ fixo. \pause O kernel de $h$ \'e:
+            \end{enumerate}
+        \end{exemplos}
+        \vspace{2cm}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $(G, *)$, \pause $(H, \triangle)$ grupos \pause e $f : G \to H$ um homomorfismo de grupos. \pause Ent\~ao: \pause
+            \vspace{.5cm}
+
+            \begin{enumerate}[label={\roman*})]
+                \item $\ker(f)$ \'e um subgrupo de $G$. \pause
+
+                \vspace{.5cm}
+
+                \item $f$ \'e um monomorfismo se, e somente se, $\ker(f) = \{1_G\}$.
+
+                \vspace{.5cm}
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Sejam $H$, $J$ e $L$ grupos. \pause Se $f : H \to J$ \pause e $g : J \to L$ \pause s\~ao homomorfismos de grupos, \pause ent\~ao $g \circ f : H \to L$ \pause tamb\'em \'e um homomorfismo de grupos.
+        \end{proposicao}
+        \vspace{2cm}
+    \end{frame}
+
+    \begin{frame}
+        \begin{corolario}
+            Se $f$ e $g$ s\~ao homomorfismo \pause injetores \pause (sobrejetores), ent\~ao $g \circ f$ \pause tamb\'em \'e um homomorfismo injetor \pause (sobrejetor).
+        \end{corolario}
+        \vspace{2cm}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Se $f : G \to H$ \'e um isomorfismo de grupos, \pause ent\~ao $f^{-1} : H \to G$ \pause tamb\'em \'e um isomorfismo de grupos.
+        \end{proposicao}
+    \end{frame}
+    \vspace{2cm}
+\end{document}

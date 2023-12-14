@@ -1,0 +1,46 @@
+%!TEX program = xelatex
+\def\ano{2020}
+\def\semestre{1}
+\def\disciplina{\'Algebra 1}
+\def\turma{C}
+\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\instituto{MAT-UnB}
+
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+% \mode<presentation>
+\input{../configuracoes_latex/pacotes}
+\input{../configuracoes_latex/ambientes}
+\input{../configuracoes_latex/comandos_personalizados}
+
+\title{Aplica\c{c}\~oes do Teorema de Lagrange}
+\author[\autor]{\autor}
+\institute[\instituto]{\instituto}
+\date{}
+
+\begin{document}
+    \begin{frame}
+        \maketitle
+    \end{frame}
+
+    \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
+
+    \begin{frame}
+        \begin{exemplo}
+            Determine todos os subgrupos do grupo $S_3$.
+        \end{exemplo}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Se $G$ \'e um grupo finito tal que $o(G) \le 5$, ent\~ao $G$ \'e abeliano.
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Seja $G$ um grupo tal que $|G| = pq$, onde $p$ e $q$ s\~ao n\'umeros primos. Se $G$ \'e abeliano e $p \ne q$, ent\~ao $G$ \'e um grupo c{\'\i}clico.
+        \end{proposicao}
+    \end{frame}
+\end{document}
