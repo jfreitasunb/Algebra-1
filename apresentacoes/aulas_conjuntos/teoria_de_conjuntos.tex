@@ -1,6 +1,7 @@
 %!TEX program = xelatex
-\def\disciplina{\'Algebra 1}
-\def\autor{Jos\'e Ant\^onio O. Freitas}
+%!TEX encoding = UTF-8
+\def\disciplina{Álgebra 1}
+\def\autor{José Antônio O. Freitas}
 \def\instituto{MAT-UnB}
 
 \documentclass{beamer}
@@ -25,26 +26,26 @@
 
     \begin{frame}
         \vspace{.4cm}
-        Um conjunto {\'e} \pause uma ``cole{\c c}{\~a}o'' \pause ou ``fam{\'\i}lia'' \pause de objetos que ser\~ao chamados de \textbf{elementos} do conjunto.\pause
+        Um conjunto é \pause uma ``coleção'' \pause ou ``família'' \pause de objetos que serão chamados de \textbf{elementos} do conjunto.\pause
 
         \vspace{.4cm}
 
-        Denotaremos os conjuntos por letras mai\'uscula \pause e os elementos de um dado conjunto por letras min{\'u}sculas.\pause
+        Denotaremos os conjuntos por letras maiúscula \pause e os elementos de um dado conjunto por letras minúsculas.\pause
 
         \vspace{.4cm}
-        Seja $A$ um conjunto, \pause para indicar que $x$ {\'e} \pause um elemento de $A$ \pause ou que $x$ \textbf{pertence} ao conjunto $A$, \pause escrevemos:
+        Seja $A$ um conjunto, \pause para indicar que $x$ é \pause um elemento de $A$ \pause ou que $x$ \textbf{pertence} ao conjunto $A$, \pause escrevemos:
         \[
             x \in A.\pause
         \]
 
-        Para dizer que um elemento $x$ \pause n{\~a}o pertence ao conjunto $A$, escrevemos:\pause
+        Para dizer que um elemento $x$ \pause não pertence ao conjunto $A$, escrevemos:\pause
         \[
             x \notin A.
         \]
     \end{frame}
 
     \begin{frame}
-        Um conjunto sem elementos \pause {\'e} chamado de \textbf{conjunto vazio} \pause e {\'e} denotado por \pause $\emptyset$ ou \pause $\{\}$.\pause
+        Um conjunto sem elementos \pause é chamado de \textbf{conjunto vazio} \pause e é denotado por \pause $\emptyset$ ou \pause $\{\}$.\pause
 
         \vspace{.4cm}
         Dado um conjunto $A$ \pause e $x$ um elemento,\pause temos:\pause
@@ -52,7 +53,7 @@
             x \in A\pause \mbox{ ou } x \notin A.\pause
         \]
 
-        Al{\'e}m disso, \pause para dois elementos \pause $x$, $y \in A$, \pause sempre ocorre:\pause
+        Além disso, \pause para dois elementos \pause $x$, $y \in A$, \pause sempre ocorre:\pause
         \[
             x = y\pause \mbox{ ou } x \neq y
         \]
@@ -67,69 +68,69 @@
             \end{center}
 
 
-        Ou pela descri{\c c}{\~a}o das propriedades dos seus elementos, tamb\'em  entre chaves:\pause
+        Ou pela descrição das propriedades dos seus elementos, também  entre chaves:\pause
         \begin{center}
-            $A = \{n \mid n \mbox{ \'e m{\'u}ltiplo de } 2\}$\pause
+            $A = \{n \mid n \mbox{ é múltiplo de } 2\}$\pause
         \end{center}
     \end{frame}
 
     \begin{frame}
         \begin{enumerate}[label={\arabic*})]
-            \item $\n = \{0,1,2,3,...\}$ o conjunto dos n{\'u}meros naturais.\pause
+            \item $\n = \{0,1,2,3,...\}$ o conjunto dos números naturais.\pause
             \vspace{.3cm}
-            \item $\n^* = \{1,2,3,...\}$ o conjunto dos n{\'u}meros naturais sem o zero.\pause
+            \item $\n^* = \{1,2,3,...\}$ o conjunto dos números naturais sem o zero.\pause
             \vspace{.3cm}
-            \item $\z = \{...,-2,-1,0,1,2,...\}$ o conjunto dos n{\'u}meros inteiros.\pause
+            \item $\z = \{...,-2,-1,0,1,2,...\}$ o conjunto dos números inteiros.\pause
             \vspace{.3cm}
-            \item $\rac = \left\{\dfrac{p}{q} \mid p,q \in \z, q \neq 0 \right\}$ o conjunto dos n{\'u}meros racionais.\pause
+            \item $\rac = \left\{\dfrac{p}{q} \mid p,q \in \z, q \neq 0 \right\}$ o conjunto dos números racionais.\pause
             \vspace{.3cm}
-            \item $\real $ o conjunto dos n{\'u}meros reais.\pause
+            \item $\real $ o conjunto dos números reais.\pause
             \vspace{.3cm}
-            \item $\complex = \{a + bi \mid a,b \in \real,\ i^2 = -1\}$ o conjunto dos n\'umeros complexos.
+            \item $\complex = \{a + bi \mid a,b \in \real,\ i^2 = -1\}$ o conjunto dos números complexos.
         \end{enumerate}
     \end{frame}
 
     \begin{frame}
         \begin{definicao}
-            Dados dois conjuntos $A$ e $B$, \pause dizemos que $A$ e $B$ s{\~a}o \textbf{iguais} \pause se, e somente se, eles t{\^e}m os mesmos elementos. \pause Ou seja, para todo $x \in A$ tamb\'em vale que $x \in B$ \pause e para todo $y \in B$ tamb\'em vale que $y \in A$. \pause Se $A$ e $B$ s{\~a}o iguais, \pause escrevemos $A = B$.\pause
+            Dados dois conjuntos $A$ e $B$, \pause dizemos que $A$ e $B$ são \textbf{iguais} \pause se, e somente se, eles têm os mesmos elementos. \pause Ou seja, para todo $x \in A$ também vale que $x \in B$ \pause e para todo $y \in B$ também vale que $y \in A$. \pause Se $A$ e $B$ são iguais, \pause escrevemos $A = B$.\pause
         \end{definicao}
 
         \begin{definicao}
-            Se $A$ e $B$ s{\~a}o dois conjuntos, \pause dizemos que $A$ {\'e} um \textbf{subconjunto} de $B$ \pause ou que $A$ \textbf{est\'a contido} em $B$ \pause ou que $B$ \textbf{cont\'em} $A$ \pause se todo elemento de $A$ for elemento de $B$. \pause Ou seja, se para todo elemento $x \in A$, \pause temos $x \in B$. \pause Nesse caso, escrevemos $A \subseteq B$ (ou $A \subset B$) \pause ou $B \supseteq A$ (ou $B \supset A$).
+            Se $A$ e $B$ são dois conjuntos, \pause dizemos que $A$ é um \textbf{subconjunto} de $B$ \pause ou que $A$ \textbf{est\'a contido} em $B$ \pause ou que $B$ \textbf{contém} $A$ \pause se todo elemento de $A$ for elemento de $B$. \pause Ou seja, se para todo elemento $x \in A$, \pause temos $x \in B$. \pause Nesse caso, escrevemos $A \subseteq B$ (ou $A \subset B$) \pause ou $B \supseteq A$ (ou $B \supset A$).
         \end{definicao}
     \end{frame}
 
     \begin{frame}
 
         \begin{observacao}
-            Dados dois conjuntos $A$ e $B$ \pause para que $A$ \textbf{n\~ao esteja contido em} $B$ basta \pause que exista $x \in A$ tal que $x \notin B$. \pause Nesse caso escrevemos $A \nsubseteq B$.
+            Dados dois conjuntos $A$ e $B$ \pause para que $A$ \textbf{não esteja contido em} $B$ basta \pause que exista $x \in A$ tal que $x \notin B$. \pause Nesse caso escrevemos $A \nsubseteq B$.
         \end{observacao}
     \end{frame}
     \begin{frame}
         \vspace{.4cm}
-        Pela defini\c{c}\~ao de contin\^encia de conjuntos, \pause podemos reescrever a igualdade de conjuntos, da seguinte forma: \pause dados dois conjuntos $A$ e $B$\pause
+        Pela definição de continência de conjuntos, \pause podemos reescrever a igualdade de conjuntos, da seguinte forma: \pause dados dois conjuntos $A$ e $B$\pause
         \begin{center}
             $A = B$\quad \textbf{se, e somente se,} \pause\quad $A \subseteq B$ \quad\pause \textbf{e}\quad $B \subseteq A$.\pause
         \end{center}
 
         Ou seja,
         \begin{center}
-            \textbf{se} $A = B$,\textbf{ent{\~a}o} $A \subseteq B$ \textbf{e} $B \subseteq A$.\pause
+            \textbf{se} $A = B$,\textbf{então} $A \subseteq B$ \textbf{e} $B \subseteq A$.\pause
         \end{center}
 
-        Al\'em disso,
+        Além disso,
         \begin{center}
-            \textbf{se} $A \subseteq B$ \textbf{e} $B \subseteq A$, \textbf{ent{\~a}o} $A = B$.\pause
+            \textbf{se} $A \subseteq B$ \textbf{e} $B \subseteq A$, \textbf{então} $A = B$.\pause
         \end{center}
 
-        Quando $A$ e $B$ n{\~a}o s{\~a}o iguais, escrevemos $A \neq B$.\pause
+        Quando $A$ e $B$ não são iguais, escrevemos $A \neq B$.\pause
 
         \begin{proposicao}
-            Dados tr\^es conjuntos $A$, $B$ e $C$ temos:\pause
+            Dados três conjuntos $A$, $B$ e $C$ temos:\pause
             \begin{enumerate}[label={\roman*})]
                 \item $A\subseteq A$ (Reflexividade)\pause
-                \item Se $A\subseteq B \mbox{ e } B\subseteq A$, ent{\~a}o $A=B$. (Antissimetria)\pause
-                \item Se $A\subseteq B$ e $B\subseteq C$, ent{\~a}o $A\subseteq C$. (Transitividade)
+                \item Se $A\subseteq B \mbox{ e } B\subseteq A$, então $A=B$. (Antissimetria)\pause
+                \item Se $A\subseteq B$ e $B\subseteq C$, então $A\subseteq C$. (Transitividade)
             \end{enumerate}
         \end{proposicao}
     \end{frame}
@@ -137,21 +138,21 @@
     \begin{frame}
         Considere os seguintes conjuntos:\pause
         \begin{center}
-            $A = \{ n \in \n \mid n \mbox{ {\'e} m{\'u}ltiplo de } 2\} = \{2,4,6,...\}$\pause\\
-            $B = \{n \in \n \mid n \mbox{ {\'e} m{\'u}ltiplo de } 3\} = \{3,6,9,...\}.$\pause
+            $A = \{ n \in \n \mid n \mbox{ é múltiplo de } 2\} = \{2,4,6,...\}$\pause\\
+            $B = \{n \in \n \mid n \mbox{ é múltiplo de } 3\} = \{3,6,9,...\}.$\pause
         \end{center}
 
         Neste caso, $A \nsubseteq B$ \pause e $B \nsubseteq A$. \pause Portanto, dados dois conjuntos $A$ e $B$, nem sempre
         temos $A \subseteq B$ \pause ou $B \subseteq A$.\pause
 
         \begin{proposicao}
-            Seja $A$ um conjunto. \pause Ent{\~a}o $ \emptyset \subseteq A$.
+            Seja $A$ um conjunto. \pause Então $ \emptyset \subseteq A$.
         \end{proposicao}
     \end{frame}
 
         \begin{frame}
         \begin{definicao}
-            Sejam $A$ e $B$ dois conjuntos. \pause Definimos a \textbf{interse{\c c}{\~a}o} de $A$ e $B$ \pause como sendo o conjunto $A \cap B$ \pause cujos elementos pertencem aos conjuntos $A$ e $B$ simultaneamente. \pause Assim,
+            Sejam $A$ e $B$ dois conjuntos. \pause Definimos a \textbf{interseção} de $A$ e $B$ \pause como sendo o conjunto $A \cap B$ \pause cujos elementos pertencem aos conjuntos $A$ e $B$ simultaneamente. \pause Assim,
             \[
                 A \cap B = \{x \mid x \in A\mbox{ e }  x \in B\}.
             \]
@@ -161,7 +162,7 @@
 
     \begin{frame}
         \begin{definicao}
-            Sejam $A$ e $B$ dois conjuntos. \pause Definimos a \textbf{uni{\~a}o} de $A$ com $B$ \pause como sendo o conjunto $A \cup B$, \pause cujos elementos pertencem ao conjunto $A$ ou ao conjunto $B$. \pause Assim,\pause
+            Sejam $A$ e $B$ dois conjuntos. \pause Definimos a \textbf{união} de $A$ com $B$ \pause como sendo o conjunto $A \cup B$, \pause cujos elementos pertencem ao conjunto $A$ ou ao conjunto $B$. \pause Assim,\pause
             \[
                 A \cup B = \{x \mid x \in A \mbox{ ou } x \in B\}.
             \]
@@ -169,7 +170,7 @@
     \end{frame}
 
     \begin{frame}
-        \begin{proposicao} Sejam $A$ e $B$ dois conjuntos. \pause Ent{\~a}o:\pause
+        \begin{proposicao} Sejam $A$ e $B$ dois conjuntos. \pause Então:\pause
             \begin{enumerate}[label={\roman*})]
                 \item $(A \cap B) \subseteq A$;\pause
                 \item $(A \cap B) \subseteq B$;\pause
@@ -181,7 +182,7 @@
 
 
     \begin{frame}
-        \begin{proposicao} Sejam $A,$ $B$ e $C$ tr{\^e}s conjuntos, \pause ent{\~a}o:\pause
+        \begin{proposicao} Sejam $A,$ $B$ e $C$ três conjuntos, \pause então:\pause
             \begin{enumerate}[label={\roman*})]
                 \item $A \cap \pause ( B \cup C) \pause = (A \cap B) \pause \cup \pause (A \cap C)$\pause
                 \item $A \cup \pause (B \cap C) \pause = (A \cup B) \pause \cap \pause (A \cup C)$\pause
@@ -191,7 +192,7 @@
 
     \begin{frame}
         \begin{definicao}
-            Dados dois conjuntos $A$ e $B$, \pause definimos a \textbf{diferen{\c c}a} \pause dos conjuntos $A$ e $B$, denotada por \pause $A - B$ ou $A \backslash B$ \pause como sendo o conjunto\pause
+            Dados dois conjuntos $A$ e $B$, \pause definimos a \textbf{diferença} \pause dos conjuntos $A$ e $B$, denotada por \pause $A - B$ ou $A \backslash B$ \pause como sendo o conjunto\pause
             \[
                 A - B = \pause \{x \pause \mid x \in A \pause \mbox{ e } x \notin B\}.
             \]
@@ -201,7 +202,7 @@
 
     \begin{frame}
         \begin{proposicao}
-            Sejam $A$, $B$ e $C$ \pause conjuntos n\~ao vazios. Ent\~ao\pause
+            Sejam $A$, $B$ e $C$ \pause conjuntos não vazios. Então\pause
             \[
                 (A \cup B) \pause - C \pause = (A - C) \pause \cup \pause (B - C).
             \]
@@ -219,13 +220,13 @@
 
     \begin{frame}
         \begin{proposicao}
-            Sejam $A$, $B$ e $E$ conjuntos. \pause Se $A\subseteq B \pause \subseteq E$, \pause ent{\~a}o $C_E(B) \pause \subseteq C_E(A)$.
+            Sejam $A$, $B$ e $E$ conjuntos. \pause Se $A\subseteq B \pause \subseteq E$, \pause então $C_E(B) \pause \subseteq C_E(A)$.
         \end{proposicao}
     \end{frame}
 
     \begin{frame}
         \begin{proposicao}
-            Sejam $A$, $B$ e $E$ tr{\^e}s conjuntos \pause tais que $A\subseteq E$ \pause e $B\subseteq E$. \pause Ent{\~a}o:\pause
+            Sejam $A$, $B$ e $E$ três conjuntos \pause tais que $A\subseteq E$ \pause e $B\subseteq E$. \pause Então:\pause
             \begin{enumerate}[label={\roman*})]
                 \item $(A\cup B)^C \pause = A^C \pause \cap \pause B^C$.\pause
                 \item $(A\cap B)^C \pause = A^C \pause \cup \pause B^C$.
@@ -239,7 +240,7 @@
             \[
                 \mathcal{P}(A) = \pause \{ X \mid X\subseteq A\}\pause
             \]
-            que \'e chamado de \textbf{conjunto das partes} de $A$.
+            que é chamado de \textbf{conjunto das partes} de $A$.
         \end{definicao}
     \end{frame}
 
