@@ -1,9 +1,10 @@
 %!TEX program = xelatex
-\def\ano{2020}
-\def\semestre{2}
-\def\disciplina{\'Algebra 1}
+%!TEX encoding = UTF-8
+\def\ano{2024}
+\def\semestre{1}
+\def\disciplina{Álgebra 1}
 \def\turma{C}
-\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\autor{José Antônio O. Freitas}
 \def\instituto{MAT-UnB}
 
 \documentclass{beamer}
@@ -14,7 +15,7 @@
 \input{../configuracoes_latex/ambientes}
 \input{../configuracoes_latex/comandos_personalizados}
 
-\title{No\c{c}\~oes de L\'ogica}
+\title{Noções de Lógica}
 \author[\autor]{\autor}
 \institute[\instituto]{\instituto}
 \date{}
@@ -28,64 +29,64 @@
 
     \begin{frame}
         \begin{definicao}
-            Uma \textbf{proposi\c{c}\~ao} \'e enunciado, \pause por meio de palavras\pause\ ou s{\'\i}mbolos, \pause ao qual podemos atribuir um \textbf{valor l\'ogico}.\pause
+            Uma \textbf{proposição} é enunciado, \pause por meio de palavras\pause\ ou símbolos, \pause ao qual podemos atribuir um \textbf{valor lógico}.\pause
         \end{definicao}
 
         \begin{definicao}
-            Diz-se que o \textbf{valor l\'ogico} \pause de uma proposi\c{c}\~ao \'e \pause ``verdade'' (V) \pause se a proposi\c{c}\~ao \'e verdadeira \pause ou ``falsidade'' (F) \pause se a proposi\c{c}\~ao \'e falsa.
+            Diz-se que o \textbf{valor lógico} \pause de uma proposição é \pause ``verdade'' (V) \pause se a proposição é verdadeira \pause ou ``falsidade'' (F) \pause se a proposição é falsa.
         \end{definicao}
     \end{frame}
 
     \begin{frame}
         \begin{center}
-            ``Toda proposi\c{c}\~ao tem um, \pause e um s\'o, \pause dos valores l\'ogicos \textbf{verdade} ou \textbf{falsidade}.''\pause
+            ``Toda proposição tem um, \pause e um só, \pause dos valores lógicos \textbf{verdade} ou \textbf{falsidade}.''\pause
         \end{center}
-        Isso \'e conhecido como \pause \textbf{Princ{\'\i}pio da n\~ao contradi\c{c}\~ao \pause e do terceiro exclu{\'\i}do}.\pause
+        Isso é conhecido como \pause \textbf{Princípio da não contradição \pause e do terceiro excluído}.\pause
     \end{frame}
 
     \begin{frame}
-        Vamos considerar com proposi\c{c}\~oes da forma:\pause
+        Vamos considerar com proposições da forma:\pause
 
         \begin{center}
-            Se $\mathbb{H}$, ent\~ao $\mathbb{T}$.\pause
+            Se $\mathbb{H}$, então $\mathbb{T}$.\pause
         \end{center}
 
-        $\mathbb{H}$ \'e a hip\'otese\pause
+        $\mathbb{H}$ é a hipótese\pause
 
-        $\mathbb{T}$ \'e a tese.\pause
+        $\mathbb{T}$ é a tese.\pause
 
         \begin{center}
             $\mathbb{H}$ se, e somente se, $\mathbb{T}$\pause
 
             ou
 
-            $\mathbb{H}$ se, e s\'o se, $\mathbb{T}$.\pause
+            $\mathbb{H}$ se, e só se, $\mathbb{T}$.\pause
         \end{center}
 
-        Essa última proposi\c{c}\~ao poder decomposta em duas proposi\c{c}\~oes da seguinte forma:\pause
+        Essa última proposição poder decomposta em duas proposições da seguinte forma:\pause
         \begin{itemize}
-            \item[1)] Se $\mathbb{H}$, \pause ent\~ao $\mathbb{T}$.\pause
-            \item[2)] Se $\mathbb{T}$, \pause ent\~ao $\mathbb{H}$.
+            \item[1)] Se $\mathbb{H}$, \pause então $\mathbb{T}$.\pause
+            \item[2)] Se $\mathbb{T}$, \pause então $\mathbb{H}$.
         \end{itemize}
     \end{frame}
 
     \begin{frame}
-        Temos 3 caminhos para tentar provar uma proposi\c{c}\~ao do tipo:
+        Temos 3 caminhos para tentar provar uma proposição do tipo:
         \begin{center}
-            Se $\mathbb{H}$, ent\~ao $\mathbb{T}$.\pause
+            Se $\mathbb{H}$, então $\mathbb{T}$.\pause
         \end{center}
 
         \begin{itemize}
-            \item[1)] Demonstra\c{c}\~ao direta: \pause neste caso admitimos a hip\'otese $\mathbb{H}$ \textbf{verdadeira}, e utilizando de uma
-                sequ\^encia de passos cuja veracidade podemos comprovar, e com isso chegar \`a conclus\~ao que a tese $\mathbb{T}$ tamb\'em \'e
+            \item[1)] Demonstração direta: \pause neste caso admitimos a hipótese $\mathbb{H}$ \textbf{verdadeira}, e utilizando de uma
+                sequência de passos cuja veracidade podemos comprovar, e com isso chegar à conclusão que a tese $\mathbb{T}$ também é
                 \textbf{verdadeira}.\pause
-            \item[2)] Demonstra\c{c}\~ao por contraposi\c{c}\~ao: \pause neste caso supomos que a $\mathbb{T}$ \'e \textbf{falsa} e devemos
-                chegar \`a conclus\~ao que a hip\'otese $\mathbb{H}$ tamb\'em \'e \textbf{falsa}. Se conseguirmos chegar \`a essa
-                conclus\~ao, ent\~ao a proposi\c{c}\~ao original ser\'a \textbf{verdadeira}.\pause
-            \item[3)] Demonstra\c{c}\~ao por contradi\c{c}\~ao ou redu\c{c}\~ao ao absurdo: \pause aqui vamos supor que a hip\'otese
-                $\mathbb{H}$ \'e \textbf{verdadeira} \pause e que a tese $\mathbb{T}$ \'e \textbf{falsa}. Usando essas suposi\c{c}\~oes
-                devemos chegar \`a alguma conclus\~ao contradit\'oria. \pause Nesse caso, significa que a nossa tese $\mathbb{T}$ deve ser
-                obrigatoriamente \textbf{verdadeira}, e com isso a proposi\c{c}\~ao tamb\'em ser\'a \textbf{verdadeira}.\pause
+            \item[2)] Demonstração por contraposição: \pause neste caso supomos que a $\mathbb{T}$ é \textbf{falsa} e devemos
+                chegar à conclusão que a hipótese $\mathbb{H}$ também é \textbf{falsa}. Se conseguirmos chegar à essa
+                conclusão, então a proposição original será \textbf{verdadeira}.\pause
+            \item[3)] Demonstração por contradição ou redução ao absurdo: \pause aqui vamos supor que a hipótese
+                $\mathbb{H}$ é \textbf{verdadeira} \pause e que a tese $\mathbb{T}$ é \textbf{falsa}. Usando essas suposições
+                devemos chegar à alguma conclusão contraditória. \pause Nesse caso, significa que a nossa tese $\mathbb{T}$ deve ser
+                obrigatoriamente \textbf{verdadeira}, e com isso a proposição também será \textbf{verdadeira}.\pause
         \end{itemize}
     \end{frame}
 \end{document}
