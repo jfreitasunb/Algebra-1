@@ -1,0 +1,320 @@
+%!TEX program = xelatex
+%!TEX encoding = UTF-8
+\def\numeromodulo{1}
+\def\numerolista{2}
+
+\documentclass[12pt]{exam}
+
+\input{../configuracoes_listas/variaveis_listas}
+\input{../configuracoes_listas/pacotes}
+\input{../configuracoes_listas/configuracoes_paginas}
+\input{../configuracoes_listas/comandos_personalizados}
+
+\begin{document}
+    \begin{center}
+    {\Large\bf \disciplina\ - Turma \turma\ -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
+        $\numerolista^a$ Lista de Exercícios -- Módulo \numeromodulo\\ Relações}\\ \vspace{9pt} Prof. José Antônio O. Freitas
+    \end{center}
+    \hrule
+
+    \vspace{.6cm}
+        \vspace{.3cm}
+
+    \questao{} Quais das relações abaixo são relações de equivalência sobre $E = \{a,b,c\}$?
+    \begin{enumerate}[label={\alph*})]
+        \item $R_1 = \{(a,a);(a,b);(b,a);(b,b);(c,c)\}$
+
+        \item $R_2 = \{(a,a);(a,b);(b,a);(b,b);(b,c)\}$
+
+        \item $R_3 = \{(a,a);(b,b);(b,c);(c,b);(a,c);(c,a);(c,c)\}$
+
+        \item $R_3 = \{(a,a);(b,b);(b,c);(c,b);(a,c);(c,a)\}$
+
+        \item $R_4 = E \times E$
+
+        \item $R_5 = \vaz$
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Determinar todas as relações de equivalência
+    $R$ sobre $A$ e os respectivos conjuntos quocientes $A/R$ para:
+    \begin{enumerate}[label={\alph*})]
+        \item $A=\{a\}$;
+
+        \item $A=\{a,b\}$;
+
+        \item $A=\{a,b,c\}$;
+
+        \item $A=\{a,b,c,d\}$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Seja $m \in \z$, $m > 1$. Defina $R \sub \z\times\z$ como
+    \[
+    R = \{(x,y) \in \z\times\z \mid x - y = km, \mbox{ para algum } k \in \z\}.
+    \]
+    Mostre que $R$ é uma relação de equivalência sobre $\z$.
+
+    \vspace{.3cm}
+
+    \questao{} Para $x$, $y \in \real$ defina a relação $R$ como
+    \[
+    R = \{(x,y) \in \real \times \real \mid x - y = 2n\pi, \mbox{ para algum } n \in \z\}.
+    \]
+    Mostre que $R$ é uma relação de equivalência sobre $\real$.
+
+    \vspace{.3cm}
+
+    \questao{} Quais das seguintes sentenças definem uma relação de equivalência no conjunto $A$ dado?
+    \begin{enumerate}[label={\alph*})]
+        \item $aRb$ se, e s{\'o} se, existe $k \in \n$ tal que $a - b = 3k$, $A = \n$.
+
+        \item $aRb$ quando existe $k \in \n$ tal que $b = k a$, $A = \n$.
+
+        \item $aRb$ quando $a \le b$, $A = \z$.
+
+        \item $xRy$ quando $xy > 0$, $ A = \real$.
+
+        \item $xRy$ quando $xy \ge 0$, $ A = \real$.
+
+        \item $x \sim y$ quando $x + y$ é par, onde $x$, $y \in \z$.
+
+        \item $x \sim y$ quando  $x + y = km$, para algum $k \in \z$, $A = \z$.
+
+        \item $x \sim y$ quando $x + y$ é ímpar, onde $x$, $y \in \z$.
+
+        \item $x \sim y$ quando $\dfrac{x}{y} \in \rac$, onde $x$, $y \in \real^* = \real - \{0\}$.
+
+        \item $x \sim y$ quando $\dfrac{x}{y} \in \z$, onde $x$, $y \in \real^* = \real - \{0\}$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Seja $\mathcal{A} = \{1,2,3,4\}$ e suponha que $R$ é uma relação de equivalência em $\mathcal{A}$. Sabendo que $1R2$ e $2R3$ mostre que existem exatamente duas possibilidades para a relação $R$, e descreva as duas.
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $A$ e $B$ conjuntos. Definia a relação $\mathcal{R}$ por
+    \[
+    A \mathcal{R} B \mbox{ quando } A \subseteq B.
+    \]
+    Então $\mathcal{R}$ é uma relação de equivalência?
+
+    \vspace{.3cm}
+
+    \questao{} Seja $A = \n \times \n^*$. Considere a seguinte
+    relação sobre $A$:
+    \[
+    (a,b) R (c,d) \mbox{ quando } a + b = c + d.
+    \]
+    Mostre que $R$ é uma relação de equivalência sobre $A$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $A = \real^2$ e considere o conjunto definido por
+    \[
+    (a,b)R(c,d) \mbox{ quando } 2a - b = 2c - d.
+    \]
+    Mostre que $R$ é uma relação de equivalência sobre $\real^2$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $A = \rac^2$ e considere o conjunto definido por
+    \[
+    (a,b)S(c,d) \mbox{ quando } 3a - b = 3c - d.
+    \]
+    Então $S$ é uma relação de equivalência sobre $\rac^2$?
+
+    \vspace{.3cm}
+
+    \questao{} Seja $A = \real^3$. Dados $(x, y, z)$, $(\alpha, \beta, \gamma) \in \real^3$, defina $(x, y, z) R (\alpha, \beta, \gamma)$
+    quando $y = \beta$. Mostre que $R$ é uma relação de equivalência sobre $\real^3.$
+
+    \vspace{.3cm}
+
+    \questao{} Seja $A = \real^3$. Dados $u = (x_1, y_1, z_1)$, $v = (x_2, y_2, z_2) \in \real^3$ defina
+    \[
+    u\cdot v = x_1x_2 + y_1y_2 + z_1z_2.
+    \]
+    Tome um elemento fixo $w = (\alpha, \beta, \gamma) \in \real^3$ e defina
+    \[
+    u \sim v \mbox{ quando } u \cdot w = v \cdot w.
+    \]
+
+    \begin{enumerate}[label={\alph*})]
+        \item Mostre que $\sim$ é uma relação de equivalência sobre $\real^3$.
+
+        \item Encontre a classe de equivalência dos elementos $(1, 0, 0)$, $(0, 1, 0)$, $(0, 0, 1)$ e $(1, 1, 1)$.
+    \end{enumerate}
+    \vspace{.3cm}
+
+    \questao{} Em $\z$ defina a relação $R$ por
+    \[
+    a R b \mbox{ se, e somente se, } |a + b| \mbox{ é par}
+    \]
+    para $a$, $b \in \z$.
+    \begin{enumerate}[label={\alph*})]
+        \item Mostre que $R$ é uma relação de equivalência em $\z$.
+
+        \item Determine todas as classes de equivalência dessa relação.
+
+        \item A qual classe de equivalência sua matrícula pertence.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Para pontos $(a, b)$, $(c, d) \in \real^2$ defina $(a, b) S (c, d)$ quando $a^2 + b^2 = c^2 + d^2$.
+    \begin{enumerate}[label={\alph*})]
+        \item Prove que $S$ é uma relação de equivalência em $\real^2$.
+
+        \item Liste todos os elementos no conjunto $\{(x, y) \in \real \mid (x, y) S (0, 0)\}$.
+
+        \item Liste cinco elementos distintos no conjunto $\{(x, y) \in \real \mid (x, y) S (1, 0)\}$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $E = \{-5, -4, -3, -2, -1, 0, 1, 2, 3, 5, 5\}$ e $R = \{(x, y) \in E \times E : x + |x| = y + |y|\}$.
+    \begin{enumerate}[label={\alph*})]
+        \item Mostre que $R$ é uma relação de equivalência.
+
+        \item Descreva o conjunto quociente $E/R$.
+    \end{enumerate}
+    \vspace{.3cm}
+
+    \vspace{.3cm}
+
+    \questao{} Considere a seguinte relação sobre $\mathbb{C}$:
+    \[
+    (x+yi) R (r+si) \mbox{ quando } x^2+y^2=r^2+s^2.
+    \]
+    \begin{enumerate}[label={\alph*})]
+        \item Mostre que $R$ é relação de equivalência.
+
+        \item Descreva a classe de equivalência de $2 - 3i$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Considere a seguinte relação sobre $\z$:
+    \[
+    x \sim y \mbox{ quando }  x^2 - y^2 = 4k, \mbox{ para algum } k \in \z.
+    \]
+
+    \begin{enumerate}[label={\alph*})]
+        \item Mostre que $\sim$ é relação de equivalência.
+
+        \item Determine as classes de equivalência dessa relação.
+
+        \item A qual classe de equivalência sua matrícula pertence.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Considera a relação em $\real$ dada por
+    \[
+    a \sim b \mbox{ quando } a^2 + a = b^2 + b.
+    \]
+    \begin{enumerate}[label={\alph*})]
+        \item Mostre que $\sim$ é uma relação de equivalência em $\real$.
+
+        \item Determine as classes de equivalência dessa relação.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Seja $U$ um conjunto não vazio e considere $\mathcal{P}(U)$ o conjunto das partes de $U$. Fixado um conjunto $T$ defina a relação $\sim$ em $\mathcal{P}(U)$ por
+    \[
+    X \sim Y \mbox{ quando } X \cap T = Y \cap T,
+    \]
+    para $X$, $Y \in \mathcal{P}(U)$. Mostre que $\sim$ é uma relação de equivalência. Em particular, tome $U = \{1,2,3,4,5\}$ e $T = \{1,3\}$.
+    \begin{enumerate}[label={\alph*})]
+        \item Verdadeiro ou falso: $\{1,2,4\} \sim \{1,4,5\}$? Justifique.
+
+        \item Verdadeiro ou falso: $\{1,2,4\} \sim \{1,3,4\}$? Justifique.
+
+        \item Verdadeiro ou falso: $\{1,3,4\} \sim \{1,3,5\}$? Justifique.
+
+        \item Encontre $\overline{\{1,5\}}$.
+
+        \item Encontre $\overline{\{2,3\}}$.
+
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Seja $\sim$ uma relação sobre $\rac$ definida da seguinte forma:
+    \[
+    x \sim y \mbox{ quando } x - y \in \mathbb{Z}.
+    \]
+    \begin{enumerate}[label={\alph*})]
+        \item Prove que $\sim$ é uma relação de equivalência sobre $\rac$.
+
+        \item Descreva a classe $\bar{1}$.
+
+        \item Descreva a classe $\overline{1/2}$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Defina
+    \[
+    H = \{3^m \mid m \in \z\} \mbox{ e } \rac^+ = \{x \in \rac \mid x > 0\}.
+    \]
+    Seja $R$ dado por
+    \[
+    R = \left\{(x,y) \in \rac^+\times \rac^+ : \frac{x}{y} \in H\right\}.
+    \]
+    \begin{enumerate}[label={\alph*})]
+        \item Mostre que $R$ é uma relação de equivalência em $\rac^+$.
+
+        \item Determine a classe de equivalência de $5$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Mostre que as seguintes condições definem uma relação de equivalência em $\z$ e encontre suas classes de equivalência:
+    \begin{enumerate}[label={\alph*})]
+        \item $mRn$ quando $3 | (m + 2n)$
+
+        \item $mSn$ quando $5 | (2m + 3n)$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} A divisibilidade (ou seja, a relação definida por $xRy$ se, e s{\'o}
+    se, $x \mid y$) é uma relação de equivalência sobre $\z$?
+
+    \vspace{.3cm}
+
+    \questao{} Seja $R$ a seguinte relação sobre $\z^*$:
+    \[
+    x R y \mbox{ quando existem }  k, l \in \z \mbox{ tais que } y = kx \mbox{ e } x = ly.
+    \]
+    Mostre que $R$ é uma relação de equivalência sobre $\z^*$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $R = \{ (x, y) \in \real^2 \mid x - y \in \rac\}$. Prove que $R$ é uma relação de equivalência e descreva as classes representadas por $1/2$ e $\sqrt{2}$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $A$ um conjunto não vazio. Suponha que $R \sub A \times A$ é tal que:
+    \begin{enumerate}[label={\alph*})]
+        \item Para todo $x \in A$, $(x,x) \in R$;
+
+        \item Para todos $x$, $y$, $z \in A$ se $(x, y) \in R$ e $(x,z) \in R$, então $(y,z) \in R$.
+    \end{enumerate}
+    Mostre que $R$ é uma relação de equivalência sobre $A$.
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $R$ e $S$ relações de equivalência em um conjunto $A$. Defina $T = R \cap S$. Assim $aTb$ se, e somente se, $aRb$ e $aSb$. Mostre que $T$ é uma relação de equivalência em $A$.
+
+    \vspace{.3cm}
+
+    \questao{} É verdade que a união de duas relações de equivalência ainda é uma relação de equivalência?
+
+\end{document}

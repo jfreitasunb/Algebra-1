@@ -1,0 +1,467 @@
+%!TEX program = xelatex
+%!TEX encoding = UTF-8
+\def\numeromodulo{1}
+\def\numerolista{1}
+
+\documentclass[12pt]{exam}
+
+\input{../configuracoes_listas/variaveis_listas}
+\input{../configuracoes_listas/pacotes}
+\input{../configuracoes_listas/configuracoes_paginas}
+\input{../configuracoes_listas/comandos_personalizados}
+
+\begin{document}
+    \begin{center}
+    {\Large\bf \disciplina\ - Turma \turma\ -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
+        $\numerolista^a$ Lista de Exercícios -- Módulo \numeromodulo\\ Conjuntos}\\ \vspace{9pt} Prof. José Antônio O. Freitas
+    \end{center}
+    \hrule
+
+    \vspace{.6cm}
+
+    \begin{center}
+        \textit{Observações: \begin{enumerate} \item A notação $A \nsub B$ significa que $A \subset B$ e $A \ne B$, isto é, existe $x \in B$ com $x \notin A$. \item Seja $A$ um conjunto com uma quantidade finita de elementos, denotamos por $|A|$ a quantidade de elementos no conjunto $A$.\end{enumerate}}
+    \end{center}
+    \questao{} Dados os conjuntos $A = \{0,1,2\}$, $B = \{0,2,3\}$ e $C = \{0,1,2,3,4\}$, classifique as afirmações a seguir em verdadeira ou falsa, justificando:
+    \begin{multicols}{2}
+        \begin{enumerate}[label={\arabic*})]
+            \item $A \sub B$
+
+            \item $A \in C$
+
+            \item $B \sub C$
+
+            \item $A \in \{A, B, \{A, C\}\}$
+
+            \item $\{A\} \sub \{B, \{A, B\}\}$
+
+            \item $\{0,2\} \sub B$
+
+            \item $\{0,2\} \sub C$
+
+            \item $1 \sub C$
+
+            \item $\{1,4\} \in C$
+
+            \item $\{0,3\} \sub B$
+
+            \item $B \sub A$
+
+            \item $C \sub \{0, 1, 2, 3, 4, C, \{A, B, C\}\}$
+
+            \item $\{\vaz\} \sub A$
+
+            \item $\vaz \in C$
+
+            \item $A \sub C$
+
+            \item $x \neq \{x\}$
+
+            \item $\emptyset = \{\emptyset\}$
+
+            \item $\emptyset \in \{\emptyset\}$
+
+            \item $\emptyset \sub \{A, B, \{C\}\}$
+
+            \item $\{\} = \{0\}$
+
+            \item $A \sub \emptyset$
+
+            \item $\{\emptyset\} \sub \emptyset$
+
+            \item $\{1, 3, 3\} = \{1, \{2, 3\}, 3\}$
+
+            \item $\{a, b, c\} = \{A, B, C\}$
+
+            \item $\{\{a\}, \{b\}\} = \{\{a\}, b\}$
+
+            \item $\{1, 2, 3, 4, 5\} = \{4, 1, 3, 5, 2, 4, 5\}$
+
+            \item $\{\} \sub \{\emptyset\}$
+
+            \item $|\emptyset| = 1$
+
+            \item $|\{x,x\}| = 2$
+
+            \item $|A \cap \emptyset | = 0$
+
+            \item $|\{A, B, C\}| = 11$
+
+            \item $|\{A, B, C\}| = 3$
+
+            \item $|\{A, \{B, C\}, C, \{A, B, C\}\}| = 4$
+
+        \end{enumerate}
+    \end{multicols}
+
+    \questao{} Dê exemplos de conjuntos não vazios $A$, $B$ e $C$ tais que:
+    \begin{enumerate}[label={\alph*})]
+        \item $A \sub B$, $C \sub B$ e $A \cap C = \emptyset$.
+
+        \item $A \sub B$, $C \nsub B$ e $A \cap C = \emptyset$.
+
+        \item $A \sub C$, $A \ne C$ e $B \cap C = \emptyset$.
+
+        \item $A \sub (B \cap C)$, $B \sub C$, $B \ne C$ e $A \ne C$.
+
+        \item $A \in B$, $B \sub C$ e $A \nsubseteq C$.
+
+        \item $A \subsetneq B$, $B \in C$ e $A \in C$.
+
+        \item $A \cap B \sub C$, $A \nsubseteq C$ e $B \nsubseteq C$.
+
+        \item $A \cap C = \emptyset$, $A \sub B$ e $|B \cap C| = 3$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Determine $A \cup B$ e $A \cap B$ se $A = \{x \in \real \mid x^2 = 1\}$ e $B = \z$.
+
+    \vspace{.3cm}
+
+    \questao{} Em cada um dos seguintes itens, determine se a afirmação é
+    verdadeira ou falsa. Se for verdadeira, demonstre-a. Se for falsa, apresente um exemplo mostrando que a afirmação é falsa.
+    \begin{enumerate}[label={\alph*})]
+        \item Se $x \in A$ e $A \sub B$, então $x \in B$.
+
+        \item Se $A \nsub B$ e $B \sub C$, então $A \nsub C$.
+
+        \item Se $A \nsub B$ e $B \nsub C$, então $A \nsub C$.
+
+        \item Se $x \in A$ e $A \nsub B$, então $x \notin B$.
+
+        \item Se $x \in B$ e $A \nsub B$, então $x \notin A$.
+
+        \item Se $A \sub B$ e $x \notin B$, então $x \notin A$.
+
+        \item Se $A$, $B$ e $C$ são conjuntos, então $A \cup (B \cap C) = (A \cup B) \cap C$.
+
+        \item Se $A$, $B$ e $C$ são conjuntos, então $A \cap (B \cup C) = (A \cup B) \cap C$.
+
+        \item $A \cap B = B \cap A$
+
+        \item Se $A \cap B = A \cap C$, então $B = C$.
+
+        \item Se $A \cup B = A \cup C$, então $B = C$.
+
+        \item $A \cup B = B \cup A$
+
+        \item Se $A \cap B = A$, então $A \subset B$.
+
+        \item Se $A \cap B = B$, então $A \subset B$.
+
+        \item Se $A \cup B = B$, então $A \subset B$.
+
+        \item Se $A \cup B = A$, então $A \subset B$.
+
+        \item $A \cap B = A$ se, e somente se, $A \cup B = B$
+
+        \item Se $A \sub B$, $B \sub C$ e $C \sub A$, então $A = B = C$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Considere os seguintes conjuntos:
+    \begin{align*}
+        A &= \{x \in \z \mid x = 2m,\ m \in \z\}\\
+        B &= \{y \in \z \mid y = 2(n - 1),\ n \in \z\}.
+    \end{align*}
+    Os conjuntos $A$ e $B$ são iguais? Justifique sua resposta.
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $a$, $b \in \real$ com $a < b$. O intervalo fechado $[a, b]$ é o conjunto $\{x \in \real \mid a \le x \le b\}$. De modo semelhantes, o intervalo aberto $(a, b)$ é o conjunto $\{y \in \real \mid a < y < b\}$. Sejam $P = [3, 7]$, $Q = [7,9]$ e $R = [-3, 8]$. Descreva os seguintes conjuntos:
+    \begin{enumerate}[label={\alph*})]
+        \item $P \cap Q$.
+
+        \item $P \cup Q$.
+
+        \item $(P \cup Q) \cap R$.
+
+        \item $P \cup (Q \cap R)$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $A$ e $B$ conjuntos e suponha que $A$ não é um subconjunto de $B$. Quais das seguintes afirmações são verdadeiras? Encontre todas as respostas corretas.
+
+    \begin{enumerate}[label={\roman*})]
+        \item Se $x \in A$, então $x \notin B$.
+
+        \item Se $x \in B$, então $x \in A$.
+
+        \item Existe um elemento $x \in A$ tal que $x \notin B$.
+
+        \item Existe um elemento $x \in B$, tal que $x \notin B$.
+    \end{enumerate}
+    \questao{} Demonstre que:
+    \begin{enumerate}[label={\alph*})]
+        \item Se $A \sub B$ e $C \sub D$, então $A \cap C \sub B \cap D$.
+
+        \item $A \cup B = \vaz$ se, e somente se, $A = \vaz$ e $B = \vaz$.
+
+        \item $A \cup B = A \cap B$ se, e somente se,  $A = B$.
+
+        \item $A \sub B$ se, e somente se,  $A \cap B = A$.
+
+        \item $A \cup (B \cap (A \cup C)) = A \cup (B \cap C)$.
+
+        \item $A \cup B = B$ se, e somente se, $A \subset B$.
+
+        \item $(A \cup B) \cap C \sub A \cup (B \cap C)$.
+
+        \item $A \sub B \cap C$ se, e somente se, $A \sub B$ e $A \sub C$.
+
+        \item Se $A \sub B \cup C$ e $A \cap B = \emptyset$, então $A \sub C$.
+    \end{enumerate}
+
+    \questao{} Dê exemplos de conjuntos $A$, $B$ e $C$ tais que as interseções $A \cap B$, $A \cap C$ e $B \cap C$ não são o conjunto vazio mas $A \cap B \cap C$ é o conjunto vazio.
+
+    \vspace{.3cm}
+
+    \questao{} Determinar os elementos dos conjuntos $A$, $B$ e $E$ tais que:
+    \[
+        A \cap B = \{b, c\}, \quad C_E(A) = \{d, e, f\} \quad \mbox{e}\quad C_E(B) = \{a          , e, f\}.
+    \]
+
+    \vspace{.3cm}
+
+    \questao{} Dados os conjuntos $A = \{a, b, c, d\}$, $B = \{c, d, e, f\}$, $C = \{d, e, f, g\}$, determine:
+    \begin{enumerate}[label={\alph*})]
+        \item $A - (B - C)$ e $(A - B) - C$
+
+        \item $(A \cap B) - (B \cup C)$ e $(A \cup C) - (A \cup B)$
+
+        \item $A \cap (B - C)$ e $(A \cap B) - C$
+
+        \item $A - (B \cup C)$ e $(A - B) \cap (B - C)$
+    \end{enumerate}
+
+    \questao{} Dados os conjuntos $E = \{1,2,3,4,5,a,b,c,d\}$, $A = \{1,2,4,d\}$ e $B = \{a,2,4,b,5\}$, determine:
+    \begin{multicols}{2}
+        \begin{enumerate}[label={\alph*})]
+            \item $A \cup B$
+
+            \item $A \cup C_E(B)$
+
+            \item $C_E(A) \cup B$
+
+            \item $C_E(A \cup B)$
+        \end{enumerate}
+    \end{multicols}
+
+    \vspace{.3cm}
+
+    \questao{} Dados os conjuntos $A = \{3,6,9,12,15,18\}$, $B = \{2,3,5,7,11,13,17,19\}$ e $C = \{1,2,3,4,5,\dots,20\}$ calcule:
+    \begin{multicols}{3}
+        \begin{enumerate}[label={\alph*})]
+            \item $A - B$
+
+            \item $A - C$
+
+            \item $B - C$
+
+            \item $(A - B) - C$
+
+            \item $A - (B - C)$
+
+            \item $(A \cup B) - C$
+
+            \item $A - (B \cap C)$
+
+            \item $(A \cup C) - B$
+
+            \item $(B \cap C) - A$
+        \end{enumerate}
+    \end{multicols}
+
+    \vspace{.3cm}
+
+    \questao{} Determine os conjuntos $E$, $A$ e $B$ se:
+    \begin{align*}
+        C_E(A) &= \{2, 5, 9, 13, 18, 20\}\\
+        C_E(B) &= \{2, 6, 18, 20\}\\
+        A \cup B &= \{1, 5, 6, 9, 13, 14\}.
+    \end{align*}
+
+    \newpage
+
+    \questao{} Demonstre que:
+    \begin{enumerate}[label={\alph*})]
+
+        \item Se $A \sub B$ e $C = B - A$, então $A = B - C$.
+
+        \item Se $A \cap B = \vaz$ e $A \cup B = C$, então $A = C - B$.
+
+        \item Se $A\cup B = E$, então $C_E(A) \sub B$. \textit{(Aqui suponha que $A$,            $B \sub E$.)}
+
+        \item Se $A \cap B = \vaz$, então $A \cup C_E(B) = C_E(B)$. \textit{(Aqui suponha que $A$, $B \sub E$.)}
+
+        \item Suponha que $A \subseteq E$. Mostre que $C_E((C_E(A) \cap E)) = A$.
+
+        \item $A = B$ se, e somente se, $A - B = B - A$.
+
+        \item $A \sub B$ se, e somente se, $A - B = \vaz$.
+
+        \item $C_E(A) \sub C_E(B)$ se, e somente se, $A \cup B = A$. \textit{(Aqui suponha que $A$, $B \sub E$.)}
+
+        \item $C_E(A) \sub C_E(B)$ se, e somente se, $A \cap B = B$. \textit{(Aqui suponha que $A$, $B \sub E$.)}
+
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Demonstre as seguintes igualdades.
+    \begin{enumerate}[label={\alph*})]
+        \item $A \cup (C_E(A) \cap B) = A \cup B$. \textit{(Aqui suponha que $A$, $B \sub E$.)}
+
+        \item $A \cap (C_E(A) \cup B) = A \cap B$. \textit{(Aqui suponha que $A$, $B \sub E$.)}
+
+        \item $(A \cap C_E(B)) \cup (C_E(A) \cap B) = (A \cup B) \cap C_E(A \cap B)$. \textit{(Aqui suponha que $A$, $B \sub E$.)}
+        \item $(A - B) - C = A - (B \cup C)$.
+
+        \item $A \cup (B - C) = (A \cup B) - (C - A)$.
+
+        \item $A \cap (B - C) = (A \cap B) - (A \cap C)$.
+
+        \item $A - (B \cup C) = (A - B) \cap (A - C)$.
+
+        \item $A - (B \cap C) = (A - B) \cup (A - C)$.
+
+        \item $(A \cup B) - C = (A - C) \cup (B - C)$.
+
+        \item $(A \cap B) - C = (A - C) \cap (B - C)$.
+
+        \item $(A \cap B) \cap (A - B) = (A - B) \cap (B - A) = \vaz$.
+
+        \item $(A - B) \cup (B - A) = (A \cup B) - (A \cap B)$.
+
+        \item $A - (A - B) = A \cap B$.
+
+        \item $(A - B) - (B - C) = A - B$.
+
+        \item $(A - B) - B = A - B$.
+
+        \item $A \cup (B \cap (A \cup C)) = A \cup (B \cap C)$.
+
+        \item $(A \cap B) \cup C_E(A \cup C_E(B)) = B$. \textit{(Aqui suponha que $A$, $B \sub E$.)}
+
+        \item $C_E( A \cap [B \cup C]) = C_E(A) \cup [C_E(B)\cap C_E(C)]$. \textit{(Aqui suponha que $A$, $B$, $C \sub E$.)}
+
+        \item $C_E( A \cap B \cap C) = C_E(A) \cup C_E(B) \cup C_E(C)$. \textit{(Aqui suponha que $A$, $B$, $C \sub E$.)}
+
+        \item $C_E( A \cup B \cup C) = C_E(A) \cap C_E(B) \cap C_E(C)$. \textit{(Aqui suponha que $A$, $B$, $C \sub E$.)}
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Dados os conjuntos $A = \{1, 2, 3, r, s\}$, $B = \{r, s, 2, 3, 4\}$, $C = \{s, t, 4, 5\}$, $D = \{s, t, 5, 6\}$ e $E = \{1, 2, 3, 4, 5, 6, r, s, t\}$, determine:
+    \begin{multicols}{2}
+        \begin{enumerate}[label={\alph*})]
+            \item $(A \times A) \cap (B \times B)$
+
+            \item $A^2 \times C^2$
+
+            \item $(A - B) \times (C - D)$
+
+            \item $(A \cap B) \times (C \cap B)$
+
+            \item $(A \cup B) \times (B \cup D)$
+
+            \item $(A \times B) - (C \times D)$
+
+            \item $(A - B) \times (C \cap D)$
+
+            \item $(A - C) \times (B - D)$
+
+            \item $(A - (C - D)) \times ((D - B) \cup A)$
+
+            \item $C_E(A) \times C_E(B)$
+
+            \item $C_{E\times E}(A \times B)$
+
+            \item $(A - B) \times (C_E(B) - C_E(A))$
+        \end{enumerate}
+
+    \end{multicols}
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $A$ e $B$ conjuntos tais que $A$, $B \subseteq E$. Mostre que $C_E(A) \times C_E(B) \subseteq C_{E \times E}(A \times B)$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $A$ e $B$ conjuntos tais que $A$, $B \subseteq E$. É verdade que
+    \[
+        C_{E\times E}(A \times B) = C_E(A) \times C_E(B)?
+    \]
+    Prove ou apresente um contra-exemplo.
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $A$, $B$, $C$ e $D$ conjuntos quaisquer. A igualdade
+    \[
+        (A \cup B) \times (C \cup D) = (A \times C) \cup (B \times D)
+    \]
+    é válida? Justifique.
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $A$, $B$, $C$ e $D$ conjuntos. Prove que:
+    \begin{enumerate}[label={\alph*})]
+        \item Se $A \sub C$ e $B \sub D$, então $A \times B \sub C \times D$.
+
+        \item $A \times (B \cup C) = (A \times B) \cup (A \times C)$
+
+        \item $A \times (B \cap C) = (A \times B) \cap (A \times C)$
+
+        \item $A \times B = \emptyset$ se, e somente se, $A = \emptyset$ ou $B = \emptyset$.
+
+        \item $A \times B \ne \emptyset$ se, e somente se, $A \ne \emptyset$ e $B \ne \emptyset$.
+
+        \item $(A \cap B) \times (C \cap D) = (A \times C) \cap (B \times D)$
+
+        \item $(A \times B) - (C_E(A) \times C_E(B)) = [(A - C_E(A)) \times (B - C_E(B))] \cup [(A - C_E(A)) \times B]$  \textit{(Aqui suponha que $A$, $B \sub E$.)}
+
+        \item $A \times (B - C) = (A \times B) - (A \times C)$
+
+        \item $(A \times B) - (C \times D) = [A \times (B - D)] \cup [(A - C) \times B]$
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $A$, $B$, $C$ e $D$ conjuntos quaisquer. É válido que
+    \[
+        (A \times B) - (C \times D) = (A - C) \times (B - D)?
+    \]
+    Prove ou dê um contra-exemplo.
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $A$, $B$, $C$ e $D$ conjuntos.
+    \begin{enumerate}[label={\alph*})]
+        \item Mostre que $A$ e $B$ são disjuntos se, e somente se, para todo conjunto não vazio $C$, $A \times C$ e $B \times C$ são disjuntos.
+
+        \item Suponha $A \ne \emptyset$ e $C \ne \emptyset$, com $A \ne C$. Mostre que $A \sub B$ e $C \sub D$ se, e somente se, $A \times C \sub B \times D$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $X_1$, $X_2$, $Y_1$ e $Y_2$ subconjuntos contidos num conjunto $E$. Suponha que $X_1 \cup X_2 = E$, $Y_1 \cap Y_2 = \emptyset$, $X_1 \sub Y_1$ e $X_2 \sub Y_2$. Prove que $X_1 = Y_1$ e $X_2 = Y_2$.
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $A$ e $B$ conjuntos quaisquer. Mostre que $A \subset B$ se, e somente se, $\mathcal{P}(A) \subset \mathcal{P}(B)$.
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $A$ e $B$ conjuntos quaisquer. Mostre que $\mathcal{P}(A \cap B) = \mathcal{P}(A) \cap \mathcal{P}(B)$.
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $A$ e $B$ conjuntos quaisquer. É verdade que
+    \[
+       \mathcal{P}(A \cup B) = \mathcal{P}(A) \cup \mathcal{P}(B)?
+    \]
+    Prove ou apresente um contra-exemplo.
+\end{document}
