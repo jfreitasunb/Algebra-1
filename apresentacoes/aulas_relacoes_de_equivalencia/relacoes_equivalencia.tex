@@ -1,6 +1,6 @@
 %!TEX program = xelatex
 %!TEX encoding = UTF-8
-\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\autor{José Antônio O. Freitas}
 \def\instituto{MAT-UnB}
 
 \documentclass{beamer}
@@ -25,46 +25,46 @@
 
     \begin{frame}
         \begin{definicao}
-            Seja $A$ um conjunto n{\~a}o vazio \pause e $R\subseteq A \times A$. \pause Dizemos que $R$ \pause {\'e} uma \textbf{rela{\c c}{\~a}o de equival{\^e}ncia} se:\pause
+            Seja $A$ um conjunto não vazio \pause e $R\subseteq A \times A$. \pause Dizemos que $R$ \pause é uma \textbf{relação de equivalência} se:\pause
             \begin{enumerate}[label={\roman*})]
                 \item Para todo $x \in A$, \pause $(x,x) \in R$. \pause \textit{(Propriedade Reflexiva)}\pause
-                \item Se $(x, y) \in R$, \pause ent\~ao $(y, x) \in R$. \pause \textit{(Propriedade Sim\'etrica)}\pause
-                \item Se $(x, y) \in R$ \pause e $(y, z) \in R$, \pause ent\~ao $(x, z)\in R$. \pause \textit{(Propriedade Transitiva)}\pause
+                \item Se $(x, y) \in R$, \pause então $(y, x) \in R$. \pause \textit{(Propriedade Simétrica)}\pause
+                \item Se $(x, y) \in R$ \pause e $(y, z) \in R$, \pause então $(x, z)\in R$. \pause \textit{(Propriedade Transitiva)}\pause
             \end{enumerate}
         \end{definicao}
 
-        Quando $R\subseteq A \times A$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia, \pause dizemos que $R$ {\'e} uma rela{\c c}{\~a}o de equival{\^e}ncia em $A$. \pause
+        Quando $R\subseteq A \times A$ é uma relação de equivalência, \pause dizemos que $R$ é uma relação de equivalência em $A$. \pause
 
-        Quando dois elementos $x$, $y \in A$ \pause s{\~a}o tais que $(x,y) \in R$, \pause dizemos que $x$ e $y$ \textbf{s{\~a}o relacionados} \pause ou que $x$ e $y$ \textbf{est\~ao relacionados}.
+        Quando dois elementos $x$, $y \in A$ \pause são tais que $(x,y) \in R$, \pause dizemos que $x$ e $y$ \textbf{são relacionados} \pause ou que $x$ e $y$ \textbf{estão relacionados}.
     \end{frame}
 
     \begin{frame}
         \begin{observacoes}
-            Seja $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em $A$, \pause isto \'e, $R \sub A \times A$.\pause
+            Seja $R$ uma relação de equivalência em $A$, \pause isto é, $R \sub A \times A$.\pause
             \begin{enumerate}[label={\arabic*})]
-                \item  Para dizermos que $(x, y) \in R$ \pause usaremos a nota{\c c}{\~a}o $x\equiv y\ (R)$, \pause que deve ser lido como ``$x$ \'e equivalente a $y$ m{\'o}dulo $R$", \pause ou ainda a nota{\c c}{\~a}o $xRy$ \pause, com o mesmo significado anterior.\pause\vspace{.2cm}
+                \item  Para dizermos que $(x, y) \in R$ \pause usaremos a notação $x\equiv y\ (R)$, \pause que deve ser lido como ``$x$ é equivalente a $y$ módulo $R$", \pause ou ainda a notação $xRy$ \pause, com o mesmo significado anterior.\pause\vspace{.2cm}
 
-                \item Em alguns casos vamos utilizar a nota\c{c}\~ao $\sim$ \pause para representar a rela\c{c}\~ao $R$. \pause Nesse caso, escrevemos $x \sim y$ \pause para dizer que $(x, y) \in R$, \pause ou que, $xRy$.
+                \item Em alguns casos vamos utilizar a nota\c{c}ão $\sim$ \pause para representar a rela\c{c}ão $R$. \pause Nesse caso, escrevemos $x \sim y$ \pause para dizer que $(x, y) \in R$, \pause ou que, $xRy$.
             \end{enumerate}
         \end{observacoes}
     \end{frame}
 
     \begin{frame}
         \begin{definicao}
-            Seja $A$ um conjunto n{\~a}o vazio \pause e $R\subseteq A \times A$. \pause Dizemos que $R$ {\'e} uma \textbf{rela{\c c}{\~a}o de equival{\^e}ncia} se:\pause
+            Seja $A$ um conjunto não vazio \pause e $R\subseteq A \times A$. \pause Dizemos que $R$ é uma \textbf{relação de equivalência} se:\pause
             \begin{enumerate}[label={\roman*})]
                 \item Para todo $x \in A$, $xRx$. \textit{(Propriedade Reflexiva)}\pause\vspace{.2cm}
 
-                \item Se $xRy$, ent\~ao $yRx$. \textit{(Propriedade Sim\'etrica)}\pause\vspace{.2cm}
+                \item Se $xRy$, então $yRx$. \textit{(Propriedade Simétrica)}\pause\vspace{.2cm}
 
-                \item Se $xRy$ e $yRz$, ent\~ao $xRz$. \textit{(Propriedade Transitiva)}
+                \item Se $xRy$ e $yRz$, então $xRz$. \textit{(Propriedade Transitiva)}
             \end{enumerate}
         \end{definicao}
     \end{frame}
 
     \begin{frame}
         \begin{definicao}
-            Seja $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia sobre um conjunto $A$. \pause Dado $b \in A$, \pause chamamos de \textbf{classe de equival{\^e}ncia \pause determinada por $b$ \pause m{\'o}dulo $R$}\pause, denotada por $\overline{b}$ \pause ou $C(b)$, \pause o subconjunto de $A$ \pause dado por\pause
+            Seja $R$ uma relação de equivalência sobre um conjunto $A$. \pause Dado $b \in A$, \pause chamamos de \textbf{classe de equivalência \pause determinada por $b$ \pause módulo $R$}\pause, denotada por $\overline{b}$ \pause ou $C(b)$, \pause o subconjunto de $A$ \pause dado por\pause
             \begin{center}
                 $\overline{b} =\pause C(b) = \pause \{x \in A \pause \mid (x,b) \in R\}\pause = \{x \in A \pause\mid xRb\}.$
             \end{center}
@@ -73,32 +73,32 @@
 
     \begin{frame}
         \begin{proposicao}
-            Seja $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia \pause em um conjunto n{\~a}o vazio $A$. \pause Dados $a$, $b \in A$ temos:\pause
+            Seja $R$ uma relação de equivalência \pause em um conjunto não vazio $A$. \pause Dados $a$, $b \in A$ temos:\pause
             \begin{enumerate}[label={\roman*})]
-                \item se $\overline{a} \cap \overline{b} \ne \emptyset$, \pause ent{\~a}o $aRb$.\pause \vspace{.3cm}
-                \item se  $\overline{a} \cap \overline{b} \neq \emptyset$, \pause ent{\~a}o $\overline{a} = \overline{b}$.
+                \item se $\overline{a} \cap \overline{b} \ne \emptyset$, \pause então $aRb$.\pause \vspace{.3cm}
+                \item se  $\overline{a} \cap \overline{b} \neq \emptyset$, \pause então $\overline{a} = \overline{b}$.
             \end{enumerate}
         \end{proposicao}
 
         \begin{corolario}
-            Seja $R$ uma rela\c{c}\~ao de equival\^encia sobre um conjunto n\~ao vazio $A$. \pause Dados $a$, $b \in A$ \pause ent\~ao $\overline{a} \cap \overline{b} = \emptyset$ \pause ou $\overline{a} = \overline{b}$.\pause
+            Seja $R$ uma rela\c{c}ão de equivalência sobre um conjunto não vazio $A$. \pause Dados $a$, $b \in A$ \pause então $\overline{a} \cap \overline{b} = \emptyset$ \pause ou $\overline{a} = \overline{b}$.\pause
         \end{corolario}
 
     \end{frame}
 
     \begin{frame}
         \begin{definicao}
-            Seja $R$ uma rela\c{c}\~ao de equival\^encia sobre um conjunto n\~ao vazio $A$. \pause O conjunto de todas as classes de equival{\^e}ncia \pause determinadas por $R$ ser{\'a} \pause denotado por $A/R$ \pause e {\'e} chamado de \textbf{conjunto quociente} de $A$ por $R$.\pause
+            Seja $R$ uma rela\c{c}ão de equivalência sobre um conjunto não vazio $A$. \pause O conjunto de todas as classes de equivalência \pause determinadas por $R$ será \pause denotado por $A/R$ \pause e é chamado de \textbf{conjunto quociente} de $A$ por $R$.\pause
         \end{definicao}
     \end{frame}
 
     \begin{frame}
         \begin{definicao}
-            Seja $C$ uma classe de equival{\^e}ncia \pause de uma rela{\c c}{\~a}o de equival{\^e}ncia $R$. \pause Qualquer elemento $y\in C$ \pause {\'e} chamado \textbf{representante} de $C$.\pause
+            Seja $C$ uma classe de equivalência \pause de uma relação de equivalência $R$. \pause Qualquer elemento $y\in C$ \pause é chamado \textbf{representante} de $C$.\pause
         \end{definicao}
 
         \begin{proposicao}
-            Seja $A$ um conjunto n{\~a}o vazio \pause e $R$ uma rela{\c c}{\~a}o de equival{\^e}ncia em $A$. \pause Ent{\~a}o $A$ {\'e} a uni{\~a}o disjunta das classes $\overline{b}$, $b \in A$, ou seja,\pause
+            Seja $A$ um conjunto não vazio \pause e $R$ uma relação de equivalência em $A$. \pause Então $A$ é a união disjunta das classes $\overline{b}$, $b \in A$, ou seja,\pause
             \[
                 A = \bigcup_{b\in A}\overline{b}.
             \]
