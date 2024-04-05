@@ -1,0 +1,17 @@
+\newcounter{exercicios}
+\setcounter{exercicios}{0}
+\newcommand{\questao}{
+    \addtocounter{exercicios}{1}
+    \noindent{\bf Questão \arabic{exercicios}: }}
+
+\newcommand{\solucao}{
+    \noindent{\bf Solução: }}
+
+\newcommand{\resp}[1]{
+    \noindent{\bf Exerc{\'\i}cio #1: }}
+
+\extrafootheight[.25in]{.5in}
+\footrule
+\lfoot{Teste \numeroteste\ - Módulo \modulo\ - \nomeabreviado\ - Turma \turma\ - \semestre$^o$/\ano}
+\cfoot{}
+\rfoot{P\'agina \thepage\ de \numpages}
