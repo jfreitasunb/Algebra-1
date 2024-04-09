@@ -1,6 +1,6 @@
 %!TEX program = xelatex
 \def\ano{2020}
-\def\semestre{1}
+\def\semestre1
 \def\disciplina{Álgebra 1}
 \def\turma{C}
 \def\autor{José Antônio O. Freitas}
@@ -54,15 +54,15 @@
         \begin{teorema}
             A relação de congruência módulo $m$ satisfaz as seguintes propriedades:\pause
             \begin{enumerate}[label={\roman*})]
-                \item $a_{1}\equiv b_{1}\pmod{m}$ se, e somente se, $a_{1}-b_{1}\equiv 0\pmod{m}$.\pause \vspace{.3cm}
+                \item $a_1\equiv b_1\pmod{m}$ se, e somente se, $a_1 - b_1\equiv 0\pmod{m}$.\pause \vspace{.3cm}
 
-                \item Se $a_{1}\equiv b_{1}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, então $a_{1}+a_{2}\equiv b_{1}+b_{2}\pmod{m}$.\pause \vspace{.3cm}
+                \item Se $a_1\equiv b_1\pmod{m}$ e $a_2\equiv b_2\pmod{m}$, então $a_1+a_2\equiv b_1+b_2\pmod{m}$.\pause \vspace{.3cm}
 
-                \item Se $a_{1}\equiv b_{1}\pmod{m}$ e $a_{2}\equiv b_{2}\pmod{m}$, então $a_{1}a_{2}\equiv b_{1}b_{2}\pmod{m}$.\label{item_provado}\pause \vspace{.3cm}
+                \item Se $a_1\equiv b_1\pmod{m}$ e $a_2\equiv b_2\pmod{m}$, então $a_1a_2\equiv b_1b_2\pmod{m}$.\label{item_provado}\pause \vspace{.3cm}
 
                 \item Se $a\equiv b\pmod{m}$, então $ax\equiv bx\pmod{m}$, para todo $x \in \z$.\pause \vspace{.3cm}
 
-                \item Vale a lei do cancelamento: se $d \in \z$ e $mdc(d,m) = 1$ então $ad \equiv bd \pmod{m}$ implica $a\equiv b \pmod{m}$.
+                \item Vale a lei do cancelamento: se $d \in \z$ e $mdc(d, m) = 1$ então $ad \equiv bd \pmod m$ implica $a\equiv b \pmod m$.
             \end{enumerate}
         \end{teorema}
     \end{frame}
@@ -79,27 +79,27 @@
             \overline{n} = \pause C(n) = \pause \{x \in \z \mid \pause x\equiv n \pmod{m}\}.\pause
         \]
 
-        Vamos denotar $C(n)$ \pause por $R_{m}(n)$ \pause ou $\overline{n}$, \pause quando não houver possibilidade de confusão. \pause Assim fixando $m > 1$ vamos escrever\pause
+        Vamos denotar $C(n)$ \pause por $R_m(n)$ \pause ou $\overline{n}$, \pause quando não houver possibilidade de confusão. \pause Assim fixando $m > 1$ vamos escrever\pause
         \begin{center}
             \begin{tabular}{l}
-                $R_{m}(0) = \pause \{x \in \z \mid \pause x\equiv 0 \pmod{m}\} \pause =\{x \in \z \mid \pause x = mk, k \in \z\}\pause = m\z$\pause\\
+                $R_m(0) = \pause \{x \in \z \mid \pause x\equiv 0 \pmod{m}\} \pause =\{x \in \z \mid \pause x = mk, k \in \z\}\pause = m\z$\pause\\
                 \\
-                $R_{m}(1) = \pause \{x \in \z \mid \pause x\equiv 1 \pmod{m}\} \pause = \{x \in \z \mid \pause x = km + 1, k \in \z \}$\pause \\
+                $R_m(1) = \pause \{x \in \z \mid \pause x\equiv 1 \pmod m\} \pause = \{x \in \z \mid \pause x = km + 1, k \in \z \}$\pause \\
                 \\
                 \vdots\\
                 \\
-                $R_{m}(n) = \pause \{x \in \z \mid \pause x = km + n, k \in \z \}$
+                $R_m(n) = \pause \{x \in \z \mid \pause x = km + n, k \in \z \}$
             \end{tabular}
         \end{center}
     \end{frame}
 
     \begin{frame}
         \begin{proposicao}
-            As classes de equivalência definidas pela congruência módulo $m$ \pause são determinadas pelos restos da divisão inteira por $m$. \pause Em outras palavras, $R_{m}(n)$ \pause é o conjunto dos números inteiros \pause cujo resto na divisão inteira por $m$ é $n$.\pause
+            As classes de equivalência definidas pela congruência módulo $m$ \pause são determinadas pelos restos da divisão inteira por $m$. \pause Em outras palavras, $R_m(n)$ \pause é o conjunto dos números inteiros \pause cujo resto na divisão inteira por $m$ é $n$.\pause
         \end{proposicao}
 
         \begin{corolario}
-            $R_{m}(k) = R_{m}(l)$ \pause se, e somente se, $k\equiv l \pmod{m}$.
+            $R_m(k) = R_m(l)$ \pause se, e somente se, $k\equiv l \pmod m$.
         \end{corolario}
     \end{frame}
 
@@ -114,19 +114,19 @@
         Fixado $m$ inteiro positivo, \pause denotaremos\pause
         \begin{center}
             \begin{tabular}{l}
-                $R_{m}(0) = \overline{0}$\pause \\
+                $R_m(0) = \overline{0}$\pause \\
                 \\
-                $R_{m}(1) = \overline{1}$\pause \\
+                $R_m(1) = \overline1$\pause \\
                 \\
                 $\vdots$\\
                 \\
-                $R_{m}(m-1) = \overline{m-1}$\pause
+                $R_m(m-1) = \overline{m-1}$\pause
             \end{tabular}
         \end{center}
 
         O conjunto quociente \pause desta relação será denotado por $\displaystyle\frac{\z}{m\z}$ \pause ou $\z_m$. \pause Assim\pause
         \[
-            \z_m = \pause \displaystyle\frac{\z}{m\z} = \pause \{\overline{0}, \pause \overline{1}, \pause ..., \pause \overline{m-1}\}.\pause
+            \z_m = \pause \displaystyle\frac{\z}{m\z} = \pause \{\overline{0}, \pause \overline1, \pause ..., \pause \overline{m-1}\}.\pause
         \]
         \end{observacao}
     \end{frame}
@@ -164,14 +164,14 @@
 
                 \item Para todos $\overline{x}$, $\overline{y}$ e $\overline{z} \in \z_m$: \pause $(\overline{x} \otimes \overline{y}) \otimes \overline{z} = \pause \overline{x} \otimes (\overline{y} \otimes \overline{z})$. \vspace{.2cm} \pause
 
-                \item Para todo $\overline{x} \in \z_m$: \pause $\overline{x} \otimes \overline{1} = \overline{x}$.
+                \item Para todo $\overline{x} \in \z_m$: \pause $\overline{x} \otimes \overline1 = \overline{x}$.
             \end{enumerate}
         \end{proposicao}
     \end{frame}
 
     \begin{frame}
         \begin{definicao}
-            Um elemento $\overline{a} \in \z_m$ é \textbf{inversível} \pause se, e somente se, existe $\overline{b} \in \z_m$ \pause tal que $\overline{a} \otimes \overline{b} = \pause \overline{1}$. \pause Neste caso, $\overline{b}$ \pause é chamado \textbf{inverso} de $\overline{a}$ \pause e denotaremos $\overline{b} = (\overline{a})^{-1}$.\pause
+            Um elemento $\overline{a} \in \z_m$ é \textbf{inversível} \pause se, e somente se, existe $\overline{b} \in \z_m$ \pause tal que $\overline{a} \otimes \overline{b} = \pause \overline1$. \pause Neste caso, $\overline{b}$ \pause é chamado \textbf{inverso} de $\overline{a}$ \pause e denotaremos $\overline{b} = (\overline{a})^{-1}$.\pause
         \end{definicao}
 
         \begin{proposicao}
