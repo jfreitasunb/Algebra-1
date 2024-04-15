@@ -48,7 +48,46 @@
 
         \item Determine todas as classes de equivalência dessa relação.
     \end{enumerate}
+    \solucao
+    \begin{enumerate}[label={\alph*})]
+        \item Seja $a \in \z$. Temos
+        \[
+            |a + a| = |2a| = 2|a|
+        \]
+        que é sempre um número par. Logo $aRa$.
 
+        Agora suponha que $aRb$. Assim
+        \[
+            |a + b| = 2k
+        \]
+        para algum $k \in \z$. Com isso temos
+        \[
+            |b + a| = |a + b| = 2k.
+        \]
+        Logo $bRa$.
+
+        Finalmente, suponha que $aRb$ e $bRc$. Assim
+        \begin{align}
+            |a + b| = 2k\label{primeiraequacao}\\
+            |b + c| = 2l\label{segundaequacao}
+        \end{align}
+        para $k$, $l \in \z$.
+
+        De \eqref{primeiraequacao} segue que se $a$ é par, então $b$ é par. Também obtemos que se $a$ é ímpar, então $b$ é impar.
+
+        Agora, de \eqref{segundaequacao} segue que se $b$ é par, então $c$ é par. Também obtemos que se $b$ é ímpar, então $c$ é impar.
+
+        Assim temos que se $a$ é par, então $b$ é par e com isso $c$ também deve ser par. Logo $|a + c|$ será par. Por outro lado, se $a$ é ímpar, então $b$ é ímpar e com isso $c$ também será ímpar. Logo $|a + c|$ será par. Independente do caso, sempre teremos $|a + b|$ par e com isso $aRc$.
+
+        Portanto $R$ é uma relação de equivalência sobre $\z$.
+
+        \item As classes de equivalência de $R$ serão:
+        \begin{align*}
+            \overline{0} &= \{x \in \z : |x + 0| = 2k,\ k \in \z\} = \{x \in \z : |x| = 2k, \ k \in \z\} = \{0, \pm 2, \pm 4, \pm 6, \dots\}\\
+            \overline{1} &= \{x \in \z : |x + 1| = 2k,\ l \in \z\} = \{x \in \z : |x + 1| = 2l, \ k \in \z\} = \{\pm 1, \pm 3, \pm 5, \dots\}
+        \end{align*}
+        Portanto existem somente duas classes de equivalência.
+    \end{enumerate}
     \vspace*{.75cm}
 
     \questao{} Considere a seguinte relação sobre $\z$:
