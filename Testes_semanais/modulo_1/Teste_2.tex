@@ -101,4 +101,44 @@
         \item Determine todas as classes de equivalência dessa relação.
     \end{enumerate}
 
+        \solucao
+    \begin{enumerate}[label={\alph*})]
+        \item Seja $x \in \z$. Temos
+        \[
+        x^2 - x^2 = 0 = 4\cdot 0
+        \]
+        logo $x \sim x$.
+
+        Agora, suponha que $x \sim y$. Daí
+        \[
+        x^2 - y^2 = 4k
+        \]
+        para algum $k \in \z$. Assim
+        \[
+        y^2 - x^2 = -(x^2 - y^2) = -4k = 4(-k),
+        \]
+        logo $y \sim x$.
+
+        Finalmente, suponha que $x \sim y$ e que $y \sim z$. Assim
+        \begin{align}
+            x^2 - y^2 = 4k\label{equacao1}\\
+            y^2 - z^2 = 4l\label{equacao2}
+        \end{align}
+        para $k$, $l \in \z$. Somando \eqref{equacao1} e \eqref{equacao2} obtemos
+        \[
+        x^2 - z^2 = (x^2 - y^2) + (y^2 - z^2) = 4k + 4l = 4(k + l).
+        \]
+        Logo $x \sim z$.
+
+        Portanto $\sim$ é uma relação de equivalência sobre $\z$.
+
+        \item As classes de equivalência de $\sim$ são:
+        \begin{align*}
+            \overline{0} &= \{x \in \z \mid x^2 - 0^2 = 4k,\ k \in \z\} = \{x \in \z \mid x^2 = 4k,\ k \in \z\} = \{0, \pm 2, \pm 4, \pm 6, \dots\}\\
+            \overline{1} &= \{x \in \z \mid x^2 - 1^2 = 4l,\ l \in \z\} = \{x \in \z \mid x^2 = 4l + 1,\ l \in \z\} = \{\pm 1, \pm 3, \pm 5, \dots\}.
+        \end{align*}
+    \end{enumerate}
+
+    Portanto existem somente duas classes de equivalência.
+
 \end{document}
