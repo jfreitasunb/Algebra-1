@@ -13,11 +13,525 @@
 \begin{document}
     \begin{center}
     {\Large\bf \disciplina\ - Turma \turma\ -- \semestre$^{o}$/\ano} \\ \vspace{9pt} {\large\bf
-        $\numerolista^a$ Lista de Exercícios -- Módulo \numeromodulo\\ Operações em $\z_m$}\\ \vspace{9pt} Prof. José Antônio O. Freitas
+        $\numerolista^a$ Lista de Exercícios -- Módulo \numeromodulo\\ Funções}\\ \vspace{9pt} Prof. José Antônio O. Freitas
     \end{center}
     \hrule
 
     \vspace{.6cm}
 
+\begin{center}
+    \textit{Notações:}
+\end{center}
+\begin{multicols}{2}
+    \begin{enumerate}[label={\roman*})]
+        \item $\n^* = \n - \{0\}$
+
+        \item $\real^*_+ = \{x \in \real \mid x > 0\}$
+
+        \item $\real^*_- = \{x \in \real \mid x < 0\}$
+
+        \item $\real_+ = \{x \in \real \mid x \ge 0\}$
+
+        \item $\real_- = \{x \in \real \mid x \le 0\}$
+
+        \item $]c,d[\ = (c,d) = \{x \in \real \mid c < x < d\}$
+
+        \item $[c,d] = \{x \in \real \mid c \le x \le d\}$
+
+        \item $[c,d[\ = [c, d) = \{x \in \real \mid c \le x < d\}$
+
+        \item $]c,d] = (c, d] = \{x \in \real \mid c < x \le d\}$
+
+        \item Em alguns exercícios vamos denotar a operação de soma $\oplus$ em $\z_m$ simplesmente por $+$.
+
+        \item Em alguns exercícios vamos denotar a operação de multiplicação $\otimes$ em $\z_m$ simplesmente por $\cdot$.
+
+    \end{enumerate}
+\end{multicols}
+
+\vspace{.6cm}
+
+\questao{} Seja $f: \real^2 \to \real$ dada por $f(x,y) = xy$.
+\begin{enumerate}[label={\alph*})]
+    \item $f$ é injetora?
+
+    \item $f$ é sobrejetora?
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Seja $f: \z_4 \times \z_8 \to \z_{12}$ dada por $f(\overline{x},\overline{y}) = \overline{3xy}$.
+\begin{enumerate}[label={\alph*})]
+    \item $f$ é injetora?
+
+    \item $f$ é sobrejetora?
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Seja $f: \z_4 \to \z_9 \times \z_4$ dada por $f(\overline{x}) = (\overline{9 + x},\overline{x+1})$.
+\begin{enumerate}[label={\alph*})]
+    \item $f$ é injetora?
+
+    \item $f$ é sobrejetora?
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Seja $f : A \to [-9,-1)$ dada por $f(x) = \dfrac{4x + 3}{3 - x}$.
+\begin{enumerate}[label={\alph*})]
+    \item Determine $A$.
+
+    \item Mostre que $f$ é injetora.
+
+    \item É verdade que $f$ é sobrejetora?
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Sejam $S = \{1, 2, 3\}$ e $T = \{a, b, c, d\}$.
+\begin{enumerate}[label={\alph*})]
+    \item Quantas funções $f : S \to T$ existem? Descreva cada uma delas.
+
+    \item Quantas funções injetoras $f : S \to T$ existem? Descreva cada uma delas.
+
+    \item Quantas funções sobrejetoras $f : S \to T$ existem? Descreva cada uma delas.
+
+    \item Quantas funções bijetoras $f : S \to T$ existem? Descreva cada uma delas.
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Seja $f : A \to (1,10]$ dada por $f(x) = \dfrac{4 - 11x}{4 - 2x}$.
+\begin{enumerate}[label={\alph*})]
+    \item Determine $A$.
+
+    \item Mostre que $f$ é injetora.
+
+    \item É verdade que $f$ é sobrejetora?
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Considere a função $f : \z \times \z \to \z \times \z$ tal que $f(x,y) = (2x + 3, 4y + 5)$. Prove que $f$ é injetora. Verifique se $f$ é bijetora.
+
+\vspace{.3cm}
+
+\questao{} Mostre que a função $f : \z \to \z$ dada por $f(n) = 2n$, é injetora mas não é sobrejetora.
+
+\vspace{.3cm}
+
+\questao{} Mostre que a função $h : \real^2 \to \real^2$ tal que $h(x, y) = (\sqrt[3]{x}, y^5)$ é sobrejetora. Essa função é bijetora? Justifique.
+
+\vspace{.3cm}
+
+\questao{} Classificar (se possível) em injetora ou sobrejetora as seguintes funç{õ}es de $f : \z \times \z \to \z$.
+
+\begin{multicols}{2}
+    \begin{enumerate}[label={\alph*})]
+        \item $f(m, n) = m^2 + n^2$
+
+        \item $f(m, n) = m$
+
+        \item $f(m, n) = |n|$
+
+        \item $f(m, n) = m - n$
+    \end{enumerate}
+\end{multicols}
+
+\vspace{.3cm}
+
+\questao{} Considere a função $g : \z_5 \times \z_9 \to \z_5 \times \z_9$ tal que $g(\overline{x},\overline{y}) = (\overline{2x + 3}, \overline{4y + 5})$.
+\begin{enumerate}[label={\alph*})]
+    \item $g$ é injetora?
+
+    \item $g$ é sobrejetora?
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Achar uma função $f : A \to B$, com $A$ e $B$ subconjuntos de $\real$, para cada caso abaixo:
+\begin{enumerate}[label={\alph*})]
+    \item $A = \real$, $B \nsub \real$ e $f$ injetora e não sobrejetora.
+
+    \item $A \nsub \real$, $B = \real$ e $f$ injetora e não sobrejetora.
+
+    \item $A = \real$, $B \nsub \real$ e $f$ sobrejetora e não injetora.
+
+    \item $A \nsub \real$, $B = \real$ e $f$ sobrejetora e não injetora.
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Classificar (se possível) em injetora ou sobrejetora as seguintes funç{õ}es de $\real$ em $\real$.
+
+\begin{multicols}{2}
+    \begin{enumerate}[label={\alph*})]
+        \item $f(x) = x^3$
+
+        \item $f(x) = x^2 - 5x - 6$
+
+        \item $f(x) = 2^x$
+
+        \item $f(x) = x + | x |$
+
+        \item $f(x) = x + 3$
+
+        \item $f(x) = \mid x - 1\mid$
+
+        \item $f(x) = 1/x$
+
+        \item $f(x) = 1 - x^2$
+
+        \item $f(x) = x^2/(1 + x^2)$
+    \end{enumerate}
+\end{multicols}
+
+\vspace{.3cm}
+
+\questao{} Seja $f : A \to B$ uma função. Defina $P_f : \mathcal{P}(A) \to \mathcal{P}(B)$ por
+\[
+P_f(C) = \{\beta \in B \mid \mbox{ existe } \alpha \in C \mbox{ tal que } f(\alpha) = \beta\}
+\]
+para $C \sub A$. Prove que:
+\begin{enumerate}[label={\roman*})]
+
+    \item $f : A \to B$ é injetora se, e somente se, $P_f : \mathcal{P}(A) \to \mathcal{P}(B)$ é injetora.
+
+    \item $f : A \to B$ é sobrejetora se, e somente se, $P_f : \mathcal{P}(A) \to \mathcal{P}(B)$ é sobrejetora.
+\end{enumerate}
+
+
+\vspace{.3cm}
+
+\questao{} Sejam $f$, $g : \real \to \real$ dadas por $f(x) = x^4$ e $g(x) = x^7$. Verifique que $(f\circ g)(x) = (g\circ f)(x)$.
+
+\vspace{.3cm}
+
+\questao{} Dadas as funções $f(x) = 3x + m$ e $g(x) = ax + 2$, determine condições sobre $a$ e $m$ para que $(f\circ g)(x) = (g\circ f)(x)$, quando:
+\begin{enumerate}[label={\roman*})]
+    \item $f : \z \to \z$ e $g : \z \to \z$
+    \item $f : \real \to \real$ e $g : \real \to \real$
+    \item $f : \z_6 \to \z_6$ e $g : \z_6 \to \z_6$
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Sejam $f$, $g$ e $h$ funções de $\real$ em $\real$ definidas por $f(x) = x + 2$, $g(x) = x^2 - 1$ e $h(x) = 3x$, respectivamente.
+\begin{enumerate}[label={\alph*})]
+    \item Determine $f \circ g$, $f \circ h$, $g \circ f$, $g \circ h$ e $h \circ g$.
+    \item Verifique que $(f \circ g)\circ h = f \circ (g \circ h)$.
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Dada as funções
+\[
+f(x) = \begin{cases}
+    1, & \mbox{ se } x < 0\\
+    2x^2, & \mbox{ se } 0 \le x \le 1\\
+    0, & \mbox{ se } x > 1
+\end{cases} \qquad g(x) = \begin{cases}
+    x, & \mbox{ se } x < 0\\
+    0, & \mbox{ se } 0 \le x \le 1\\
+    1, & \mbox{ se } x > 1.
+\end{cases}
+\]
+Determine $f\circ g$.
+
+\vspace{.3cm}
+
+\questao{} Dada as funções
+\[
+f(x) = \begin{cases}
+    x^2 + 2, & \mbox{ se } x \le -1\\
+    \dfrac{1}{x - 2}, & \mbox{ se } -1 < x < 1\\
+    4 - x^2, & \mbox{ se } x \ge 1
+\end{cases} \qquad g(x) = 2 - 3x.
+\]
+Determine $f\circ g$ e $g \circ f$.
+
+\vspace{.3cm}
+
+\questao{} Seja $f : A \to B$ uma função. Quando a composição $f \circ f$ está definida?
+
+\vspace{.3cm}
+
+\questao{} Encontre exemplos de conjuntos $A$, $B$ e $C$ e funções $f : A \to B$ e $g : B \to C$ tais que $g \circ f : A \to C$ é sobrejetora mas $f : A \to B$ não é sobrejetora.
+
+\vspace{.3cm}
+
+\questao{} Sejam $f : A \to B$, $g : A \to B$ e $h : B \to C$ funções. Prove que se $h$ é injetora e $h \circ g = h \circ f$, então $g = f$.
+
+\vspace{.3cm}
+
+\questao{} Se as funç{õ}es $f : A \to B$ e $g : B\to A$ são
+tais que $g\circ f$ é injetora, então $f$ é injetora.
+
+\vspace{.3cm}
+
+\questao{} Dê um exemplo de funções $f$ e $g$ tais que $g \circ f$ é injetora mas $g$ não é injetora.
+
+\vspace{.3cm}
+
+\questao{} Se as funç{õ}es $f : A \to B$ e $g : B\to A$ são
+tais que $g\circ f$ é sobrejetora, então g é sobrejetora.
+
+\vspace{.3cm}
+
+\questao{} Mostre que toda função injetora (sobrejetora) de um conjunto finito em si mesmo é também sobrejetora (injetora).
+
+\vspace{.3cm}
+
+\questao{} Suponha que $f$, $g : A \to A$ são funções. Se $f \circ f = g \circ g$, então $f = g$? Prove ou dê um contra-exemplo.
+
+\vspace{.3cm}
+
+\questao{} Uma função $f : \real \to \real$ é dita \textit{estritamente crescente} se para todo $x_1 < x_2$ temos $f(x_1) < f(x_2)$. Mostre que se $f : \real \to \real$ é estritamente crescente, então $f$ é injetora.
+
+\vspace{.3cm}
+
+\questao{} Considere a função $f : \real \to \real$ dada por $f(x) = \left| x - \dfrac{5}{2}\right|$. Encontre:
+\begin{multicols}{3}
+    \begin{enumerate}[label={\alph*})]
+        \item $f(\{1\})$
+
+        \item $f(\{-\sqrt{2}, 3\})$
+
+        \item $f([-2,2])$
+
+        \item $f((-3,5))$
+
+        \item $f^{-1}(\{3\})$
+
+        \item $f^{-1}(\{-3,5\})$
+
+        \item $f^{-1}([0,2])$
+
+        \item $f^{-1}([-3,3])$
+
+        \item $f^{-1}(\real^*_-)$
+    \end{enumerate}
+\end{multicols}
+
+\vspace{.3cm}
+
+\questao{} Seja $g : \real \to \real$ dada por
+\[
+g(x) = \begin{cases}
+    x^3 - 2,& \mbox{ se } x \le 0\\
+    \sqrt{x + 1}, & \mbox{ se } 0 < x \le 2\\
+    \dfrac{1}{x - 2}, & \mbox{ se } x > 2.
+\end{cases}
+\]
+Encontre:
+\begin{multicols}{2}
+    \begin{enumerate}[label={\alph*})]
+        \item $g([-1,8])$
+
+        \item $g(\real_+)$
+
+        \item $g(]1, 3])$
+
+        \item $g^{-1}([-1,16])$
+
+        \item $g(\real_-)$
+
+        \item $g^{-1}([1,25])$
+
+        \item $g^{-1}(\real^*_-)$
+
+        \item $g^{-1}([-1,5])$
+    \end{enumerate}
+\end{multicols}
+
+\vspace{.3cm}
+
+\questao{} Seja $f: \real^2 \to \real$ dada por $f(x,y) = xy - 2$.
+\begin{multicols}{2}
+    \begin{enumerate}[label={\alph*})]
+        \item Obter $f^{-1}(\{0\})$.
+
+        \item Obter $f([0,1]\times [0,1])$.
+
+        \item Obter $f^{-1}([0,2])$.
+
+        \item Obter $f(]-3,4]\times [2,4[)$.
+    \end{enumerate}
+\end{multicols}
+
+\vspace{.3cm}
+
+\questao{} Seja $f : \z \to \z_{12}$ dada por $f(x) = \overline{4x + 3}$.
+\begin{enumerate}[label={\alph*})]
+    \item Obter $f^{-1}(\{\overline{0}\})$.
+
+    \item Seja $I = \{8k \mid k \in \z\}$. Encontre $f(I)$.
+
+    \item Obter $f^{-1}(\{\overline{0}, \overline{2}, \overline{7}, \overline{10}\})$.
+
+    \item Seja $J = \{5k \mid k \in \z\} \cup \{10l \mid l \in \z\}$. Encontre $f(I)$.
+
+    \item Obter $f^{-1}(\{\overline{1}, \overline{3}, \overline{4}, \overline{8}\})$.
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Considere a função $f : \z_5 \times \z_9 \to \z_5 \times \z_9$ tal que $f(\overline{x},\overline{y}) = (\overline{2x + 3}, \overline{4y + 5})$. Verifique se $f$ possui inversa e em caso afirmativo, encontre sua inversa.
+
+\vspace{.3cm}
+
+\questao{} Para quais valores de $a \in \z$ a função $f : \z \to \z$ dada por $f(x)       = x + a$ possui inversa? Para cada valor de $a$, encontre a função inversa.
+
+\vspace{.3cm}
+
+\questao{} Para quais valores de $b \in \z$ a função $g : \z \to \z$ dada por $g(x)       = bx$ possui inversa? Para cada valor de $b$, encontre a função inversa.
+
+\vspace{.3cm}
+
+\questao{} Suponha que as funções $f : A \to B$ e $g : B \to C$ são inversíveis. Mos      tre que $g \circ f$ é inversível e que
+\[
+(g \circ f)^{-1} = f^{-1} \circ g^{-1}.
+\]
+
+\vspace{.3cm}
+
+\questao{} Considere a função $g : \z_6 \times \z_8 \to \z_6 \times \z_8$ tal que $g(\overline{x},\overline{y}) = (\overline{2x + 3}, \overline{4y + 5})$. Verifique se $g$ possui inversa e em caso afirmativo, encontre sua inversa.
+
+\vspace{.3cm}
+
+\questao{} Considere a função $h : \z_5 \times \z_7 \to \z_5 \times \z_7$ tal que $h(\overline{x},\overline{y}) = (\overline{x + 3}, \overline{6y + 2})$. Determine a função inversa de $h$, se existir.
+
+\vspace{.3cm}
+
+\questao{} Considere a função $t : \z_8 \times \z_{10} \to \z_8 \times \z_{10}$ tal que $t(\overline{x},\overline{y}) = (\overline{x + 3}, \overline{6y + 2})$. Determine a função inversa de $t$, se existir.
+
+\vspace{.3cm}
+
+\questao{} A função $f : \z \to \z$ definida por $f(x) = ax + b$, com $a$ e $b$ constantes, $a \ne 0$, é uma bijeção? Caso afirmativo, obtenha $f^{-1}$.
+
+\vspace{.3cm}
+
+
+\questao{} Mostre que a função $f : \real \to \real$ definida por $f(x) = ax + b$, com $a$ e $b$ constantes reais, $a \ne 0$, é uma bijeção. Obter $f^{-1}$.
+
+\vspace{.3cm}
+
+\questao{} Mostrar que $f : \real - \left\{-\dfrac{d}{c}\right\} \to \real  - \left\{\dfrac{a}{c}\right\}$ dada por $f(x) =  \dfrac{ax + b}{cx + d}$, onde $a$, $b$, $c$, $d$ são n{\'u}meros reais constantes, $ad - bc \ne 0$, é uma bijeção. Descrever a função $f^{-1}$.
+
+\vspace{.3cm}
+
+\questao{} Seja $f : A \to B$ e $g : B \to A$ funções tais que $g \circ f = i_A$. Quais das afirmações seguintes são verdadeiras?
+\begin{enumerate}[label={\alph*})]
+    \item $g = f^{-1}$
+
+    \item $f$ é sobrejetora
+
+    \item $f$ é injetora
+
+    \item $g$ é sobrejetora
+
+    \item $g$ é injetora
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Seja $f : A \to B$ uma função. Se $Y \sub B$, então $f(f^{-1}(Y)) = Y$? Prove ou d\^e um contra-exemplo.
+
+\vspace{.3cm}
+
+\questao{} Seja $f : A \to B$ uma função e $X \sub A$. É verdade que
+\[
+f(f^{-1}(f(X))) = f(X)?
+\]
+Prove ou d\^e um contra-exemplo.
+
+\vspace{.3cm}
+
+\questao{} Seja $f : A \to B$ uma função. Dados conjuntos $X \sub A$ e $Y \sub B$ é verdade que
+\[
+f^{-1}(f(f^{-1}(f(X)))) = f^{-1}(Y)?
+\]
+Prove ou d\^e um contra-exemplo.
+
+\vspace{.3cm}
+
+\questao{} Seja $f : A \to B$ uma função. Prove que $f$ é injetiva se, e somente se, $X = f^{-1}(f(X))$ para todo $X \sub A$.
+
+\vspace{.3cm}
+
+\questao{} Dada uma função $f : A \to B$ e conjuntos $W$, $X \sub A$, então a igualdade
+\[
+f(W \cap X) = f(W) \cap f(X)
+\]
+\textbf{em geral é falsa}. D\^e um exemplo em que essa igualdade seja falsa.
+
+\vspace{.3cm}
+
+\questao{} Seja $f : A \to B$ uma função e sejam $P$ e $Q$ subconjuntos de $A$. Mostre que:
+\begin{enumerate}[label={\alph*})]
+    \item Se $P\sub Q$, então $f(P)\sub f(Q)$.
+    \item $f(P\cup Q) = f(P)\cup f(Q)$.
+
+    \item $f(P\cap Q)\sub f(P)\cap f(Q)$.
+
+    \item $f(P) - f(Q) \sub f(P - Q)$.
+
+    \item Mostre que se $f$ é bijetora, então $f(P - Q) = f(P) - f(Q)$.
+
+    \item Se $f$ é injetora, então $f(P\cap Q) =  f(P)\cap f(Q)$.
+
+    \item $f$ é bijetora se, e somente se, $f(P^C) = (f(P))^C$ para todo $P \sub A$. \textit{(Aqui $P^C$ é o complementar de $P$ em relação \`a $A$.)}
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Suponha que $f : A \to B$ e $g : B \to C$ são funções. Seja $P \sub A$, então
+\[
+(g \circ f)(A) = g(f(A)).
+\]
+
+\vspace{.3cm}
+
+\questao{} Sejam $P$, $Q$ conjuntos, $f : P \to Q$ uma função, $A \sub P$ e $B \sub Q$. Então $f(A) \cap B = f(A \cap f^{-1}(B))$.
+
+\vspace{.3cm}
+
+\questao{} Suponha que $f : A \to B$ e $g : B \to C$ são funções. Seja $P \sub C$. Então
+\[
+(g \circ f)^{-1}(C) = f^{-1}(g^{-1}(C)).
+\]
+
+\questao{} Seja $f : A \to B$ uma função e sejam $P \sub
+A$ e $X, Y\sub B$. Mostre que:
+\begin{enumerate}[label={\alph*})]
+    \item Se $X\sub Y$, então $f^{-1}(X)\sub f^{-1}(Y)$.
+
+    \item $f^{-1}(X\cup Y)=f^{-1}(X)\cup f^{-1}(Y)$.
+
+    \item $f^{-1}(X - Y) = f^{-1}(X) - f^{-1}(Y)$.
+
+    \item $f^{-1}(X\cap Y)= f^{-1}(X)\cap f^{-1}(Y)$.
+
+    \item $P\sub f^{-1}(f(P))$.
+
+    \item $f(f^{-1}(X))= X \cap \mbox{Im}f$ e conclua que se $f$ é sobrejetora então
+    $f(f^{-1}(X))=X$.
+    \item $f^{-1}(X^C) = (f^{-1}(X))^C$.
+
+    \item $f$ é sobrejetora se, e somente se, $f^{-1}(T) \ne \emptyset$ para todo $T \sub B$.
+\end{enumerate}
+
+\vspace{.3cm}
+
+\questao{} Seja $f : A \to B$ uma função. Mostre que $f$ é injetora se, e somente se, para todos conjuntos $P$, $Q \sub A$ temos $f(P \cap Q) = f(P) \cap f(Q)$.
+
+\vspace{.3cm}
+
+\questao{} Seja $f : A \to B$ uma função. Prove que $f$ é sobrejetora se, e somente se, $B - f(P) \sub f(A - P)$, para todo conjunto $P \sub A$.
+
+\vspace{.3cm}
+
+\questao{} Seja $f: A \to B$ uma função. Prove que $f$ é injetora se, e somente se, $f(A - P) = B - f(P)$ para todo conjunto $P \sub A$.
 
 \end{document}
