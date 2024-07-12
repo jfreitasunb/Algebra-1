@@ -96,6 +96,33 @@
     \end{frame}
 
     \begin{frame}
+        \begin{definicao}
+            Dado um conjunto $A \ne \emptyset$, \pause a fun{\c c}{\~a}o $i_{A}: A \to A$ \pause dada por $i_{A}(x) \pause = x$ \pause {\'e} chamada de \pause \textbf{fun{\c c}{\~a}o identidade}.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        \begin{proposicao}
+            Se $f : A \to B$ \pause e $g : B \to A$ \pause s{\~a}o fun{\c c}{\~o}es, \pause ent{\~a}o:\pause
+            \begin{enumerate}[label={\roman*})]
+                \item $f\circ i_{A} = f$\pause
+
+                \vspace{.3cm}
+
+                \item $i_{B}\circ f = f$\pause
+
+                \vspace{.3cm}
+
+                \item $g\circ i_{B} = g$\pause
+
+                \vspace{.3cm}
+
+                \item $i_{A}\circ g = g$\pause
+            \end{enumerate}
+        \end{proposicao}
+    \end{frame}
+
+    \begin{frame}
         Dado $f : A \to B$ \pause uma fun\c{c}{\~a}o, \pause queremos construir uma fun\c{c}\~ao $g : B \to A$ \pause de modo que
         \[
             g(f(x)) = x,\pause
@@ -197,12 +224,6 @@
         \begin{definicao}
             Sejam $f : A \to B$ \pause e $g : A \to B$ fun\c{c}\~oes. \pause Ent\~ao $f = g$ \pause quando $f(x) = g(x)$ \pause para todo $x \in A$.\pause
         \end{definicao}
-
-        \vspace{.3cm}
-
-        \begin{definicao}
-            Dado um conjunto $A \ne \emptyset$, \pause a fun{\c c}{\~a}o $i_{A}: A \to A$ \pause dada por $i_{A}(x) \pause = x$ \pause {\'e} chamada de \pause \textbf{fun{\c c}{\~a}o identidade}.
-        \end{definicao}
     \end{frame}
 
     \begin{frame}
@@ -213,26 +234,7 @@
 
     \begin{frame}
         \begin{proposicao}
-            Se $f : A \to B$ \pause e $g : B \to A$ \pause s{\~a}o fun{\c c}{\~o}es, \pause ent{\~a}o:\pause
-            \begin{enumerate}[label={\roman*})]
-                \item $f\circ i_{A} = f$\pause
-
-                \vspace{.3cm}
-
-                \item $i_{B}\circ f = f$\pause
-
-                \vspace{.3cm}
-
-                \item $g\circ i_{B} = g$\pause
-
-                \vspace{.3cm}
-
-                \item $i_{A}\circ g = g$\pause
-
-                \vspace{.3cm}
-
-                \item Se $g\circ f = i_{A}$ \pause e $f\circ g = i_{B}$, \pause ent{\~a}o \pause $f$ e $g$ s{\~a}o bijetoras \pause e $g=f^{-1}$.
-            \end{enumerate}
+            Sejam $f : A \to B$ \pause e $g : B \to A$ \pause s{\~a}o fun{\c c}{\~o}es. \pause Se $g\circ f = i_{A}$ \pause e $f\circ g = i_{B}$, \pause ent{\~a}o \pause $f$ e $g$ s{\~a}o bijetoras \pause e $g=f^{-1}$.
         \end{proposicao}
     \end{frame}
 
