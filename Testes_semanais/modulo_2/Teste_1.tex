@@ -43,7 +43,68 @@
     \vspace{.5cm}
     \questao $g$ é injetora?
 
+    \solucao Para mostrar que $g$ é injetora começamos tomando dois elementos de $\z_5 \times \z_9$, digamos $(\overline{x}_1, \overline{y}_1)$, $(\overline{x}_2, \overline{y}_2) \in \z_5 \times \z_9$, tais que
+    \begin{align*}
+        g(\overline{x}_1, \overline{y}_1) &= g(\overline{x}_2, \overline{y}_2)\\
+        (\overline{2x_1 + 3}, \overline{4y_1 + 5}) &= (\overline{2x_2 + 3}, \overline{4y_1 + 5})
+    \end{align*}
+
+    Daí devemos ter:
+    \begin{align}
+        \overline{2x_1 + 3} &= \overline{2x_2 + 3}\label{primeiraequacao}\\
+        \overline{4y_1 + 5} &= \overline{4y_1 + 5}\label{segundaequacao}
+    \end{align}
+
+    Devemos resolver a equação \eqref{primeiraequacao} em $\z_5$. Primeiro, podemos escrever essa equação como
+    \[
+        \overline{2}\overline{x}_1 \oplus \overline{3} = \overline{2}\overline{x}_2 \oplus \overline{3}.
+    \]
+
+    Somando cada lado dessa equação com $\overline{2}$, obtemos
+    \[
+        \overline{2}\overline{x}_1 = \overline{2}\overline{x}_2
+    \]
+    pois $\overline{2} \oplus \overline{3} = \overline{0}$ em $\z_5$.
+
+
+    Agora, multiplicando cada lado da última equação por $\overline{3}$ obtemos
+    \[
+        \overline{x}_1 = \overline{x}_2
+    \]
+    pois em $\z_5$ temos $\overline{2} \otimes \overline{3} = \overline{1}$.
+
+    Agora vamos resolver a equação \eqref{segundaequacao} em $\z_9$. Primeiro, podemos escrever essa equação como
+    \[
+        \overline{4}\overline{y}_1 \oplus \overline{5} = \overline{4}\overline{y}_2 \oplus \overline{5}.
+    \]
+
+    Somando cada lado dessa equação com $\overline{4}$, obtemos
+    \[
+        \overline{4}\overline{y}_1 = \overline{4}\overline{y}_2
+    \]
+    pois $\overline{4} \oplus \overline{5} = \overline{0}$ em $\z_9$.
+
+
+    Agora, multiplicando cada lado da última equação por $\overline{7}$ obtemos
+    \[
+        \overline{y}_1 = \overline{y}_2
+    \]
+    pois em $\z_9$ temos $\overline{4} \otimes \overline{7} = \overline{1}$.
+
+    Portanto $(\overline{x}_1, \overline{y}_1) = (\overline{x}_2, \overline{y}_2)$ e então $g$ é injetora.
+
     \vspace{1cm}
     \questao $g$ é sobrejetora?
 
+    \solucao Dado $(\overline{c}, \overline{d}) \in \z_5 \times \z_9$ tome $(\overline{a}, \overline{b}) \in  \z_5 \times \z_9$ dado por
+    \[
+        (\overline{a}, \overline{b}) = (\overline{3c + 1}, \overline{7d + 1}).
+    \]
+    Assim temos
+    \begin{align*}
+        g(\overline{a}, \overline{b}) &= (\overline{2a + 3}, \overline{4b + 5}) \\ &= (\overline{2(3c + 1) + 3}, \overline{4(7d + 1) + 5})\\ &= (\overline{6c + 2 + 3)}, \overline{28d + 4 + 5}) = (\overline{6c + 5}, \overline{28d + 9})\\ &= (\overline{6}\overline{c} \oplus \overline{5}, \overline{28}\overline{d} \oplus \overline{9})\\ &= (\overline{c}, \overline{d}).
+    \end{align*}
+
+    Portanto, $g$ é sobrejetora.
+\vspace{1cm}
 \end{document}
