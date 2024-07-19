@@ -1,0 +1,45 @@
+%!TEX program = xelatex
+%!TEX encoding = UTF-8
+%Definições de Ano, Semestre, número e data da avaliação
+\def\numeroteste{2}
+\def\modulo{2}
+\def\dataavaliacao{19/07/2024}
+
+\documentclass[12pt]{exam}
+
+\include{../configuracoes_testes/pacotes}
+\include{../configuracoes_testes/comandos_personalizados}
+\include{../configuracoes_testes/ambientes}
+
+\begin{document}
+
+    \begin{figure}[h]
+        \begin{minipage}[c]{1.7cm}
+            \includegraphics[width=1.7cm]{unb.pdf}
+        \end{minipage}
+        \hspace{0pt}
+        \begin{minipage}[c]{4in}
+            {Universidade de Brasília} \\
+            {Departamento de Matemática}
+        \end{minipage}
+    \end{figure}
+    \vesp{-1}
+    \hrule
+    \begin{center}
+        {\Large\bf \disciplina\ - Turma \turma}  \\
+        \vesp{0.2} {\large\bf Teste \numeroteste\ - Módulo\ \modulo\ -\ \dataavaliacao}
+    \end{center}
+
+    \noindent{\bf \underline{Nome: \hspace{9.8cm} Mat.:\qquad \
+            \hspace{2.1cm}}}\\
+    \vspace*{.01cm}
+
+    \noindent{\bf \underline{Nome: \hspace{9.8cm} Mat.:\qquad \
+            \hspace{2.1cm}}}
+    \vspace{.4cm}
+
+    \questao ????
+
+
+    \vspace{1cm}
+\end{document}
