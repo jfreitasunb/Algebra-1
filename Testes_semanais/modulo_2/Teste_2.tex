@@ -41,10 +41,35 @@
     \questao Se as funções $f : A \to B$ e $g : B\to A$ são
     tais que $g\circ f$ é injetora, então $f$ é injetora.
 
+    \noindent\solucao Para mostrar que $f$ é injetora, sejam $x_1$, $x_2 \in A$ tais que
+    \[
+        f(x_1) = f(x_2).
+    \]
+    Como $g : B \to A$ é uma função então:
+    \[
+        g(f(x_1)) = g(f(x_2)),
+    \]
+    isto é,
+    \[
+        g \circ f(x_1) = g \circ f(x_2).
+    \]
+    Mas $g \circ f$ é injetora, logo $x_1 = x_2$. Portanto $f$ é injetora.
+
     \vspace*{1cm}
 
     \questao{} Se as funções $f : A \to B$ e $g : B\to A$ são
     tais que $g\circ f$ é sobrejetora, então g é sobrejetora.
+
+    \noindent\solucao Seja $z \in A$. Como $g \circ f : A \to A$ é uma função
+    sobrejetora, então existe $t \in A$ tal que
+    \[
+        g \circ f(t) = z,
+    \]
+    isto é, $g(f(t)) = z$. Mas $f(t) \in B$. Logo tomando $u = f(t) \in B$ temos
+    \[
+        g(u) = g(f(t)) = z
+    \]
+    e portanto $g$ é sobrejetora.
 
 
     \vspace{1cm}
