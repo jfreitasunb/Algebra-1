@@ -19,6 +19,201 @@
 
     \vspace{.6cm}
 
+        \questao{} Verifique se o conjunto $A$ com as operações dadas é um anel. Em caso afirmativo, esse anel é comutativo? Possui unidade?
+    \begin{enumerate}[label={\alph*})]
+        \item $A = \real$, $x \oplus y = \dfrac{x + y}{2}$, $x \otimes y = x$, para todos $x$, $y \in A$.
+        \item $A = \real$, $x \oplus y = \sqrt[3]{x^3 + y^3}$, $x \otimes y = x$, para todos $x$, $y \in A$.
+        \item $A = \rac^*$, $x \oplus y = x + y + xy$, $x \otimes y = \dfrac{x}{y}$, para todos $x$, $y \in A$.
+        \item $A = \z$, $x \oplus y = xy + 2x$, $x \otimes y = x + xy$, para todos $x$, $y \in A$.
+        \item $A = \real_+$, $x \oplus y = \dfrac{x + y}{1 + xy}$, $x \otimes y = x^2 + y^2 + 2xy$, para todos $x$, $y \in A$.
+        \item $A = \z \times \z$, $(x, y) \oplus (z, t) = (x + y, z + t)$, $(x, y) \otimes (z, t) = (xz, 0)$, para todos $(x, y)$, $(z, t) \in A$.
+    \end{enumerate}
 
+    \vspace{.3cm}
+
+    \questao{} Consideremos em $\z \times \z$ as operações $\oplus$ e $\otimes$ definidas por
+    \begin{align*}
+        (a, b) \oplus (c, d) = (a + c, b + d)\\
+        (a ,b) \otimes (c, d) = (ac - bd, ad + bc).
+    \end{align*}
+    Mostre que $(\z \times \z, \oplus, \otimes)$ é um anel comutativo e com unidade.
+
+    \vspace{.3cm}
+
+    \questao{} Considere as operações $\star$ e $\odot$ em $\rac$ definidas por
+    \begin{align*}
+        x \star y = x + y - 8\\
+        x \odot y = x + y - \dfrac{xy}{8}.
+    \end{align*}
+    Mostre que $(\rac, \star, \odot)$ é um anel comutativo e com unidade.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $m > 1$, $m \in \z$. No conjunto $\z_m$ considere as operações usuais de soma $\oplus$ e multiplicação $\otimes$. Mostre que $(\z_m, \oplus, \otimes)$ é um anel comutativo com unidade.
+
+    \vspace{.3cm}
+
+    \questao{} Prove que são anéis:
+    \begin{enumerate}[label={\alph*})]
+        \item O conjunto $\z$ com a adição usual e o produto $x \otimes y = 0$, para todo $x$, $y \in \z$.
+        \item O conjunto $\rac$ com as operações $x \oplus y = x + y - 1$ e $x \odot y = x + y - xy$.
+        \item O conjunto $\z \times \z$ com as operações:
+        \begin{align*}
+            (a, b) \oplus (c, d) = (a + c, b + d)\\
+            (a ,b) \otimes (c, d) = (ac, ad + bc).
+        \end{align*}
+    \end{enumerate}
+    Quais destes anéis são comutativos? Quais t\^em unidade?
+
+    \vspace{.3cm}
+
+    \questao{} Determinar quais dos seguintes conjuntos são anéis com as operações usuais em $\rac$:
+    \begin{multicols}{2}
+        \begin{enumerate}[label=({\alph*})]
+            \item $\z$
+            \item $2\z = \{2k \mid k \in \z\}$
+            \item $B = \{x \in \rac \mid x \notin \z\}$
+            \item $C = \left\{\dfrac{a}{b} \in \rac \mid a \in \z,\ b \in \z,\ 2 |b \right\}$
+            \item $D = \left\{\dfrac{a}{2^n} \in \rac \mid a \in \z \mbox{ e } n \in \z \right\}$
+        \end{enumerate}
+    \end{multicols}
+
+    \vspace{.3cm}
+
+    \questao{} Seja
+    \[
+    M_2(\real) = \left\{\begin{pmatrix}
+        x & y\\z & t
+    \end{pmatrix} \mid x, y, z, t \in \real \right\}.
+    \]
+    Dados $A = \begin{pmatrix}
+        x & y\\z & t
+    \end{pmatrix}$, $B = \begin{pmatrix}
+        a & b\\c & d
+    \end{pmatrix} \in M_2(\real)$ definimos
+    \begin{align*}
+        A &= B \mbox{ quando } x = a, y = b, z = c, t = d\\
+        A + B &= \begin{pmatrix}
+            x & y\\z & t
+        \end{pmatrix} + \begin{pmatrix}
+            a & b\\c & d
+        \end{pmatrix} = \begin{pmatrix}
+            x + a & y + b\\z + c & t + d
+        \end{pmatrix}\\
+        A \cdot B &= \begin{pmatrix}
+            x & y\\z & t
+        \end{pmatrix} \cdot \begin{pmatrix}
+            a & b\\c & d
+        \end{pmatrix} = \begin{pmatrix}
+            xa + yc & xb + yd\\za + tc & zb + td
+        \end{pmatrix}.
+    \end{align*}
+    \begin{enumerate}[label=({\alph*})]
+        \item Mostre que $(M_2(\real), + , \cdot)$ é um anel. Esse anel é comutativo? Possui unidade?
+        \item Quais dos seguintes conjuntos são anéis com as operações de $M_2(\real)$? Quais são comutativos? Quais possuem unidade?
+
+        \begin{align*}
+            L_1 &= \left\{\begin{pmatrix}
+                a & 0\\
+                b & 0
+            \end{pmatrix} \mid a, b \in \real\right\},\qquad
+            L_2 = \left\{\begin{pmatrix}
+                a & b\\
+                0 & c
+            \end{pmatrix} \mid a, b, c \in \real\right\}\\
+            L_3 &= \left\{\begin{pmatrix}
+                a & 0\\
+                0 & b
+            \end{pmatrix} \mid a, b \in \real\right\},\qquad
+            L_4 = \left\{\begin{pmatrix}
+                0 & a\\
+                c & b
+            \end{pmatrix} \mid a, b, c \in \real\right\}
+        \end{align*}
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Considere o conjunto
+    \[
+    T_2(\z) = \left\{\begin{bmatrix}a & b\\ 0 & c\end{bmatrix} \mid a, b, c \in \z\right\}.
+    \]
+    Mostre que $T_2(\z)$ é um anel, com as operações usuais de soma e multiplicação de matrizes. Esse anel possui unidade? É comutativo?
+
+    \vspace{.3cm}
+
+    \questao{} Seja
+    \[
+    M_2(\z_m) = \left\{\begin{pmatrix}
+        \overline{x} & \overline{y}\\\overline{z} & \overline{t}
+    \end{pmatrix} \mid \overline{x}, \overline{y}, \overline{z}, \overline{t} \in \z_m \right\}
+    \]
+    onde $m \in \z$, $m > 1$.
+    Dados $A = \begin{pmatrix}
+        \overline{x} & \overline{y}\\\overline{z} & \overline{t}
+    \end{pmatrix}$, $B = \begin{pmatrix}
+        \overline{a} & \overline{b}\\\overline{c} & \overline{d}
+    \end{pmatrix} \in M_2(\z_m)$ definimos
+    \begin{align*}
+        A &= B \mbox{ quando } \overline{x} = \overline{a}, \overline{y} = \overline{b}, \overline{z} = \overline{c}, \overline{t} = \overline{d}\\
+        A + B &= \begin{pmatrix}
+            \overline{x}& \overline{y}\\\overline{z} &\overline{t}
+        \end{pmatrix} + \begin{pmatrix}
+            \overline{a} & \overline{b}\\\overline{c} & \overline{d}
+        \end{pmatrix} = \begin{pmatrix}
+            \overline{x + a} & \overline{y + b}\\\overline{z + c} &\overline{t + d}
+        \end{pmatrix}\\
+        A \cdot B &= \begin{pmatrix}
+            \overline{x}& \overline{y}\\\overline{z} &\overline{t}
+        \end{pmatrix} \cdot \begin{pmatrix}
+            \overline{a} & \overline{b}\\\overline{c} & \overline{d}
+        \end{pmatrix} = \begin{pmatrix}
+            \overline{xa + yc} & \overline{xb + yd}\\\overline{za + tc} & \overline{zb + td}
+        \end{pmatrix}.
+    \end{align*}
+    Mostre que $(M_2(\z_m), + , \cdot)$ é um anel. Esse anel é comutativo? Possui unidade?
+
+    \vspace{.2cm}
+
+    \textbf{Observação: }\textit{No caso geral, o conjunto $(M_n(\z_m), + , \cdot)$ também é um anel.}
+
+    \vspace{.3cm}
+
+    \questao{} Considere o conjunto $L = \{ a + b\sqrt{2} \mid a, b \in \rac\} \sub \real$. Para $a + b\sqrt{2}$, $c + d\sqrt{2} \in L$ definimos:
+    \begin{align*}
+        a + b\sqrt{2} &= c + d\sqrt{2} \quad \mbox{ quando } a = c \mbox{ e } b = d\\
+        (a + b\sqrt{2}) \oplus (c + d\sqrt{2}) &= (a + c) + (b + d)\sqrt{2}\\
+        (a + b\sqrt{2}) \otimes (c + d\sqrt{2}) &= (ac + 2bd) + (ad + bc)\sqrt{2}.
+    \end{align*}
+
+    Mostre que $(L, \oplus, \otimes)$ é um anel. Esse anel é comutativo? Possui unidade?
+
+    \vspace{.3cm}
+
+    \questao{} Seja $(R, \oplus, \otimes)$ um anel. Dados $a$, $b$, $c$, $d \in R$ calcule $(a \oplus b)\otimes (c \oplus d)$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $(R, +, \cdot)$ um anel. Dados $a$, $b \in R$ prove que
+    \[
+    (a + b)^2 = a^2 + ab + ba + b^2,
+    \]
+    onde $x^2 = xx$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $(R, +, \cdot)$ um anel. Prove que se para todo $x \in R$, vale que $x^2 = x$, então $R$ é um anel comutativo.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $(R, +, \cdot)$ um anel. Prove que $R$ é comutativo se, e somente se, $(a + b)^2 = a^2 + 2ab + b^2$ para todos $a$, $b \in R$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $(R, +, \cdot)$ um anel. Prove que $R$ é comutativo se, e somente se, $a^2 - b^2 = (a - b)(a + b)$ para todos $a$, $b \in R$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $(R, +, \cdot)$ um anel. Se $a^3 = a$ para todo $a \in R$, mostre que $R$ é comutativo.
 
 \end{document}
