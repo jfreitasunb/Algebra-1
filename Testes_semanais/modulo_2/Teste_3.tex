@@ -43,6 +43,25 @@
     \vspace{.4cm}
 
     \questao Sejam $P$, $Q \sub A$. Mostre que se $f$ é injetora, então $f(P \cap Q) = f(P) \cap f(Q)$.
+    \noindent\solucao Precisamos mostrar que
+    \begin{enumerate}
+        \item $f(P \cap Q) = f(P) \sub f(Q)$
+        \item $f(P) \cap f(Q) \sub f(P \cap Q)$
+    \end{enumerate}
+
+    Para mostrar (1), seja $z \in f(P \cap Q)$. Assim existe $t \in P \cap Q$ tal que $z = f(t)$.
+    Logo $z = f(t)$ com $t \in P$ e $z = f(t)$ com $t \in Q$. Isto é, $z \in f(P)$ e $z \in f(Q)$.
+    Assim $z \in f(P) \cap f(Q)$, como queríamos.
+
+    Para mostrar (2), seja $z \in f(P) \cap f(Q)$. Daí, $z \in f(P)$ e $z \in f(Q)$. Logo existe
+    $t_1 \in P$ tal que $z = f(t_1)$ e existe $t_2 \in Q$ tal que $z = f(t_2)$. Com isso, $f(t_1) = f(t_2)$,
+    mas por hipótese, $f$ é injetora. Logo $t_1 = t_2$ e assim $z = f(t_1) = f(t_2)$ com $t_1 = t_2 \in P \cap Q$.
+    Com isso, $z \in f(P \cap Q)$.
+
+    Portanto
+    \[
+        f(P \cap Q) = f(P) \cap f(Q).
+    \]
 
     \vspace{.4cm}
 
@@ -50,7 +69,22 @@
     \[
         f^{-1}(D^C) = (f^{-1}(D))^C.
     \]
+    \noindent\solucao Precisamos mostrar que
+    \begin{enumerate}
+        \item $f^{-1}(D^C) \sub (f^{-1}(D))^C$
+        \item $(f^{-1}(D))^C \sub f^{-1}(D^C)$
+    \end{enumerate}
 
+    Para mostrar (1), seja $x \in f^{-1}(D^C)$. Daí $f(x) \in D^C$, isto é, $f(x) \notin D$.
+    Logo $x \notin f^{-1}(D)$ e então $x \in (f^{-1}(D))^C$, como queríamos.
+
+    Finalmente, para mostrar (2) seja $t \in (f^{-1}(D))^C$. Assim $t \notin f^{-1}(D)$ e com isso
+    $f(t) \notin D$. Daí, $f(t) \in D^C$, isto é, $t \in f^{-1}(D^C)$, como queríamos.
+
+    Portanto,
+    \[
+        f^{-1}(D^C) = (f^{-1}(D))^C.
+    \]
 
     \vspace{1cm}
 \end{document}
