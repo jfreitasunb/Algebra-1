@@ -1,0 +1,51 @@
+%!TEX program = xelatex
+%!TEX encoding = UTF-8
+%Definições de Ano, Semestre, número e data da avaliação
+\def\numeroteste{4}
+\def\modulo{2}
+\def\dataavaliacao{02/08/2024}
+
+\documentclass[12pt]{exam}
+
+\include{../configuracoes_testes/pacotes}
+\include{../configuracoes_testes/comandos_personalizados}
+\include{../configuracoes_testes/ambientes}
+
+\begin{document}
+
+    \begin{figure}[h]
+        \begin{minipage}[c]{1.7cm}
+            \includegraphics[width=1.7cm]{unb.pdf}
+        \end{minipage}
+        \hspace{0pt}
+        \begin{minipage}[c]{4in}
+            {Universidade de Brasília} \\
+            {Departamento de Matemática}
+        \end{minipage}
+    \end{figure}
+    \vesp{-1}
+    \hrule
+    \begin{center}
+        {\Large\bf \disciplina\ - Turma \turma}  \\
+        \vesp{0.2} {\large\bf Teste \numeroteste\ - Módulo\ \modulo\ -\ \dataavaliacao}
+    \end{center}
+
+    \noindent{\bf \underline{Nome: \hspace{9.8cm} Mat.:\qquad \
+            \hspace{2.1cm}}}\\
+    \vspace*{.01cm}
+
+    \noindent{\bf \underline{Nome: \hspace{9.8cm} Mat.:\qquad \
+            \hspace{2.1cm}}}
+    \vspace{.4cm}
+
+    \questao{} Considere o conjunto $L = \{ a + b\sqrt{2} \mid a, b \in \rac\} \sub \real$. Para $a + b\sqrt{2}$, $c + d\sqrt{2} \in L$ definimos:
+    \begin{align*}
+        a + b\sqrt{2} &= c + d\sqrt{2} \quad \mbox{ quando } a = c \mbox{ e } b = d\\
+        (a + b\sqrt{2}) \oplus (c + d\sqrt{2}) &= (a + c) + (b + d)\sqrt{2}\\
+        (a + b\sqrt{2}) \otimes (c + d\sqrt{2}) &= (ac + 2bd) + (ad + bc)\sqrt{2}.
+    \end{align*}
+
+    Mostre que $(L, \oplus, \otimes)$ é um anel. Esse anel é comutativo? Justifique. Possui unidade? Justifique.
+
+    \vspace{1cm}
+\end{document}
