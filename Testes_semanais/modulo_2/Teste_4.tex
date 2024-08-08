@@ -47,5 +47,89 @@
 
     Mostre que $(L, \oplus, \otimes)$ é um anel. Esse anel é comutativo? Justifique. Possui unidade? Justifique.
 
-    \vspace{1cm}
+    \solucao Sejam $a + b\sqrt{2}$, $c + d\sqrt{2}$, $e + f\sqrt{2} \in L$. Temos:
+    \begin{align*}
+        ((a + b\sqrt{2}) \oplus (c + d\sqrt{2})) \oplus (e + f\sqrt{2}) &= ((a + c) + (b + d)\sqrt{2}) \oplus (e + f\sqrt{2})\\ &= (a + c) + e + ((b + d) + f)\sqrt{2} \\ &= a + (b + c) + (b + (d + f))\sqrt{2} \\ &= (a + b\sqrt{2}) \oplus ((b + c) + (d + f)\sqrt{2}) \\ &= (a + b\sqrt{2}) \oplus ((c + d\sqrt{2}) \oplus (e + f\sqrt{2})),
+    \end{align*}
+    como queríamos.
+
+    Agora, dados $a + b\sqrt{2}$, $c + d\sqrt{2} \in L$ temos:
+    \begin{align*}
+        (a + b\sqrt{2}) \oplus (c + d\sqrt{2}) &= (a + c) + (b + d)\sqrt{2} \\ &= (c + a) + (b + d)\sqrt{2} \\ &= (c + d\sqrt{2}) \oplus (a + b\sqrt{2}),
+    \end{align*}
+    e com isso a soma em $L$ é comutativa.
+
+    Agora tome $0_L = 0 + 0\sqrt{2} \in L$. Para todo $a + b\sqrt{2} \in L$ temos:
+    \begin{align*}
+        (a + b\sqrt{2}) \oplus 0_L = (a + b\sqrt{2}) + (0 + 0\sqrt{2}) = (a + 0) + (b + 0)\sqrt{2} = a + b\sqrt{2}.
+    \end{align*}
+    Logo $0_L = 0 + 0\sqrt{2}$ é o elemento neutro da soma $\oplus$ em $L$.
+
+    Dado $a + b\sqrt{2} \in L$, tome $-a - b\sqrt{2} \in L$. Temos:
+    \begin{align*}
+        (a + b\sqrt{2}) \oplus (-a - b\sqrt{2}) = (a + (-a)) + (b + (-b))\sqrt{2} = 0 + 0\sqrt{2} = 0_L,
+    \end{align*}
+    assim $-a - b\sqrt{2} \in L$ é o oposto de $a + b\sqrt{2}$ na operação $\oplus$ em $L$.
+
+    Sejam $a + b\sqrt{2}$, $c + d\sqrt{2}$, $e + f\sqrt{2} \in L$. Temos:
+    \begin{align*}
+        ((a + b\sqrt{2}) \otimes (c + d\sqrt{2})) \otimes (e + f\sqrt{2}) &= ((ac + 2bd) + (ad + bc)\sqrt{2}) \otimes (e + f\sqrt{2}) \\ &= ((ac + 2bd)e + 2(ad + bc)f) + ((ac + 2bd)f + (ad + bc)e)\sqrt{2},
+    \end{align*}
+    e pelo outro lado temos:
+    \begin{align*}
+        (a + b\sqrt{2}) \otimes ((c + d\sqrt{2}) \otimes (e + f\sqrt{2})) &= (a + b\sqrt{2}) \otimes ((ce + 2df) + (cf + de)\sqrt{2}) \\ &= (a(ce + 2df) + 2b(cf + de)) + (a(cf + de) + b(ce + 2df))\sqrt{2}.
+    \end{align*}
+
+    Com isso,
+    \[
+        ((a + b\sqrt{2}) \otimes (c + d\sqrt{2})) \otimes (e + f\sqrt{2}) = (a + b\sqrt{2}) \otimes ((c + d\sqrt{2}) \otimes (e + f\sqrt{2})).
+    \]
+
+
+    Sejam $a + b\sqrt{2}$, $c + d\sqrt{2}$, $e + f\sqrt{2} \in L$. Temos:
+    \begin{align*}
+        ((a + b\sqrt{2}) \oplus (c + d\sqrt{2})) \otimes (e + f\sqrt{2}) &= ((a + c) + (b + d)\sqrt{2}) \otimes (e + f\sqrt{2}) \\ &= ((a + c)e + 2(b + d)f) + ((a + c)f + (b + d)e)\sqrt{2}
+    \end{align*}
+    e pelo outro lado temos:
+    \begin{align*}
+        ((a + b\sqrt{2}) \otimes (e + f\sqrt{2})) \oplus ((c + d\sqrt{2}) \otimes (e + f\sqrt{2})) &= ((ae + 2bf) +(af + be)\sqrt{2}) \\ &\oplus ((ce + 2df) + (cf + de)\sqrt{2}) \\ &= (ae + ebf + ce + edf) + (af + be + cf + de)\sqrt{2}.
+    \end{align*}
+    Logo
+    \[
+        ((a + b\sqrt{2}) \oplus (c + d\sqrt{2})) \otimes (e + f\sqrt{2}) = ((a + b\sqrt{2}) \otimes (e + f\sqrt{2})) \oplus ((c + d\sqrt{2}) \otimes (e + f\sqrt{2})),
+    \]
+    como queríamos.
+
+    Finalmente, sejam $a + b\sqrt{2}$, $c + d\sqrt{2}$, $e + f\sqrt{2} \in L$. Temos:
+    \begin{align*}
+        (a + b\sqrt{2}) \otimes ((c + d\sqrt{2}) \oplus (e + f\sqrt{2})) &= (a + b \sqrt{2}) \otimes ((c + e) + (d + f)\sqrt{2}) \\ &= (a(c + e) + 2b(d + f)) + (a(d + f) + b(c + e))\sqrt{2} \\ &= (ac + ae + 2bd + 2bf) + (ad + af + bc + be)\sqrt{2},
+    \end{align*}
+    e pelo outro lado temos:
+    \begin{align*}
+        ((a + b\sqrt{2}) \otimes (c + d\sqrt{2})) \oplus ((a + b\sqrt{2}) \otimes (e + f\sqrt{2})) &= ((ac + 2bd) + (ad + bc)\sqrt{2}) \\ &\oplus ((ae + 2bf) + (af + be)\sqrt{2}) \\ &= (ac + 2bd + ae + 2bf) + (ad + bc + af + be)\sqrt{2}.
+    \end{align*}
+    Logo
+    \[
+        (a + b\sqrt{2}) \otimes ((c + d\sqrt{2}) \oplus (e + f\sqrt{2})) = ((a + b\sqrt{2}) \otimes (c + d\sqrt{2})) \oplus ((a + b\sqrt{2}) \otimes (e + f\sqrt{2})),
+    \]
+    como queríamos.
+
+    Portanto $(L, \oplus, \otimes)$ é um anel.
+
+    Para verificar se esse anel é comutativo, sejam $a + b\sqrt{2}$, $c + d\sqrt{2} \in L$. Temos:
+    \begin{align*}
+        (a + b\sqrt{2}) \otimes (c + d\sqrt{2}) &= (ac + 2bd) +(ad + bc)\sqrt{2} \\ &= (ca + 2bd) + (da + cb)\sqrt{2} \\ &= (c + d)\sqrt{2} \otimes (a + b\sqrt{2}).
+    \end{align*}
+
+    Logo $(L, \oplus, \otimes)$ é um anel comutativo.
+
+    Finalmente, tome $1_L = 1 + 0\sqrt{2} \in L$. Para todo $a + b\sqrt{2} \in L$ temos
+    \begin{align*}
+        (a + b\sqrt{2}) \otimes 1_L &= (a + b\sqrt{2}) \otimes (1 + 0\sqrt{2}) \\ &= (a\cdot 1 + 2b\cdot 0) + (a\cdot 0 + b\cdot 1)\sqrt{2} \\ &= a + b\sqrt{2}.
+    \end{align*}
+
+    Logo $1_L = 1 + 0\sqrt{2}$ é o elemento neutro da operação $\otimes$ em $L$. Assim $(L, \oplus, \otimes)$ é um anel com unidade.
+
+    Portanto $(L, \oplus, \otimes)$ é um anel comutativo unitário.
+
 \end{document}
