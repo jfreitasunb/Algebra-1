@@ -46,6 +46,56 @@
     \]
     Mostre que $M_2^d(\z)$ é um subanel de $M_2(\z)$.
 
+    \solucao \noindent Primeiro observe que o elemento neutro do anel $M_2(\z)$ é
+    \[
+        0_{M_2(\z)} = \begin{bmatrix}
+            0 & 0\\
+            0 & 0
+        \end{bmatrix}
+    \]
+    e é fácil ver que $0_{M_2(\z)} \in M_2^d(\z)$ e com isso, $M_2^d(\z) \ne \emptyset$.
+
+    Agora sejam $x$, $y \in M_2^d(\z)$. Assim
+    \begin{align*}
+        x &= \begin{bmatrix}
+            a & db\\b & a
+        \end{bmatrix}\\
+        y &= \begin{bmatrix}
+            c & de\\e & c
+        \end{bmatrix}
+    \end{align*}
+    e em $M_2(\z)$ o oposto de $y$ é:
+    \[
+        -y = \begin{bmatrix}
+            -c & -de\\-e & -c
+        \end{bmatrix}.
+    \]
+
+    Com isso temos
+    \begin{align*}
+        x + (-y) = \begin{bmatrix}
+            a & db\\b & a
+        \end{bmatrix} + \begin{bmatrix}
+        -c & -de\\-e & -c
+        \end{bmatrix} = \begin{bmatrix}
+        a - c & d(b - e)\\b - e & a - c
+        \end{bmatrix} \in M_2^d(\z).
+    \end{align*}
+
+    Além disso,
+    \begin{align*}
+        x \cdot y = \begin{bmatrix}
+            a & db\\b & a
+        \end{bmatrix} \cdot \begin{bmatrix}
+            c & de\\e & c
+        \end{bmatrix} = \begin{bmatrix}
+            ac + dbe & ade + dbc\\bc + ae & bde + ac
+        \end{bmatrix} = \begin{bmatrix}
+            ac + dbe & d(ae + bc)\\ae + bc & ac + dbe
+        \end{bmatrix} \in M_2^d(\z).
+    \end{align*}
+
+    Portanto $M_2^d(\z)$ é um subanel de $M_2(\z)$.
     \vspace{.4cm}
 
     \questao Seja $(A, +, \cdot)$ um anel comutativo. Se $I$ e $J$ são ideais de $A$, mostre que $I \cap J$ é um ideal de $A$.
