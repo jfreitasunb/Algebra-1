@@ -677,6 +677,38 @@
 \end{prova}
 
 Usando a Proposição \ref{homomorfismo_injetor} vemos que o homomorfismo do Exemplo \ref{exemplo_kernel_homomorfismo_aneis} é um homomorfismo injetor.
+
+\begin{definicao}
+    Seja $(A, +, \cdot)$ um anel unitário. Dado $x \in A$, dizemos que $x$ é \textbf{inversível} ou que $x$ \textbf{possui inverso} se existe $y \in A$ tal que
+    \[
+        x \cdot y = 1_A = y \cdot x.
+    \]
+\end{definicao}
+
+\begin{proposicao}
+    Seja $(A, +, \cdot)$ um anel unitário. O inverso multiplicativo de um elemento $x \in A$, se existir, é único.
+\end{proposicao}
+\begin{prova}
+    Seja $x \in A$ e suponha que $x$ possua inverso multiplicativo. Suponha também que $y$ e $z \in A$ são inversos de $x$. Assim
+    \begin{align*}
+        x\cdot y = 1_A = y \cdot x\\
+        x\cdot z = 1_A = z \cdot x.
+    \end{align*}
+Daí
+    \begin{align*}
+        y = y \cdot 1_A = y\cdot (x\cdot z) = (y\cdot x)\cdot z = 1_A \cdot z = z.
+    \end{align*}
+Logo o inverso de $x$, se existir, é único.
+\end{prova}
+
+\begin{definicao}
+    Seja $(A, +, \cdot)$ um anel unitário. Se $x \in A$ é inversível, vamos denotar seu inverso multiplicativo por $x^{-1}$. Nessa caso temos
+    \[
+        x \cdot x^{-1} = 1_A = x^{-1}\cdot x.
+    \]
+\end{definicao}
+
+
 \begin{proposicao}
     Sejam $(A, +, \cdot)$ e $(B, \oplus, \otimes)$ anéis e seja $f : A \to B$ um homomorfismo sobrejetor de anéis.
     \begin{enumerate}[label={\roman*})]
