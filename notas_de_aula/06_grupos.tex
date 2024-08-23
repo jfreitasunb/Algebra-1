@@ -1178,7 +1178,7 @@ Com a notação aditiva o oposto de $x \in G$ será denotado por $-x$.
 \end{prova}
 
 \section{Isomorfimos de grupos} % (fold)
-\label{sec:isomorfimos_de_grupos}
+\label{sec:isomorfismos_de_grupos}
 
 Considere o grupo multiplicativo $G = \{1, -1\}$ e o grupo $S_2$ das permutações sobre o conjunto $\{1,2\}$. Aqui
 \[
@@ -1242,7 +1242,7 @@ Como $\sigma$ também é bijetora, então $\sigma$ é um isomorfismo de $G$ em $
 \end{definicao}
 
 \begin{proposicao}
-    Sejam $G$ e $H$ grupos multiplicativos. Se $f : G \to H$ é um isomorfimos de grupos, então $G$ é comutativo se, e somente se, $H$ é comutativo.
+    Sejam $G$ e $H$ grupos multiplicativos. Se $f : G \to H$ é um isomorfismos de grupos, então $G$ é comutativo se, e somente se, $H$ é comutativo.
 \end{proposicao}
 
 \begin{exemplos}
@@ -1256,12 +1256,12 @@ Como $\sigma$ também é bijetora, então $\sigma$ é um isomorfismo de $G$ em $
                 2 & 3 & 4 & 5 & 6 & 1
             \end{pmatrix} \in S_6.
         \]
-        Seja $H = [f]$. Então $H \cong \z_6$, onde $\phi : H \to \z_6$ dada por $\phi(f^k) = \overline{k}$ é um isomorfimo de grupos.
+        Seja $H = [f]$. Então $H \cong \z_6$, onde $\phi : H \to \z_6$ dada por $\phi(f^k) = \overline{k}$ é um isomorfismo de grupos.
     \end{enumerate}
 \end{exemplos}
 
 \begin{proposicao}
-    Sejam $G$ e $H$ grupos multiplicativos. Seja $f : G \to H$ é um isomorfimos de grupos. Então $x \in G$ é tal que $o(x) = h$ se, e somente se, $o(f(x)) = h$.
+    Sejam $G$ e $H$ grupos multiplicativos. Seja $f : G \to H$ é um isomorfismos de grupos. Então $x \in G$ é tal que $o(x) = h$ se, e somente se, $o(f(x)) = h$.
 \end{proposicao}
 
 Seja $G = [a]$ um grupo cíclico. Dois casos podem ocorrer:
@@ -1273,15 +1273,15 @@ Um exemplo desse caso é o grupo cíclico $G = [3]$ no grupo multiplicativo $(\r
     f &: \z \to G\\
     f(x) &= 3^x
 \end{align*}
-é um isomorfimo de grupos. Assim $\z \cong G$.
+é um isomorfismo de grupos. Assim $\z \cong G$.
 
 De modo geral temos a seguinte proposição:
 
 \begin{proposicao}
-    Se $G = [a]$ é um grupo cíclico que cumpre a condição do \textbf{Caso 1}, então a função $f : \z \to G$ por $f(r) = a^r$ é um isomorfimo de grupos. Ou seja, $G \cong \z$.
+    Se $G = [a]$ é um grupo cíclico que cumpre a condição do \textbf{Caso 1}, então a função $f : \z \to G$ por $f(r) = a^r$ é um isomorfismo de grupos. Ou seja, $G \cong \z$.
 \end{proposicao}
 \begin{prova}
-    Basta verificar que a função $f : \real \to G$ dada por $f(x) = a^x$ é um isomorfimo de grupos.
+    Basta verificar que a função $f : \real \to G$ dada por $f(x) = a^x$ é um isomorfismo de grupos.
 \end{prova}
 
 \begin{observacao}
@@ -1359,12 +1359,12 @@ Aqui temos
 \end{prova}
 
 \begin{corolario}
-    Seja $G = [a]$ um grupo cíclico de ordem finita igual a $m$. Então a função $f : \z_m \to G$ dada por $f(\overline{x}) = a^x$ é um isomorfimo de grupos.
+    Seja $G = [a]$ um grupo cíclico de ordem finita igual a $m$. Então a função $f : \z_m \to G$ dada por $f(\overline{x}) = a^x$ é um isomorfismo de grupos.
 \end{corolario}
 \begin{prova}
-    Basta mostrar que a função $f : \z_m \to G$ dada por $f(\overline{x}) = a^x$ é um isomorfimo de grupos.
+    Basta mostrar que a função $f : \z_m \to G$ dada por $f(\overline{x}) = a^x$ é um isomorfismo de grupos.
 \end{prova}
-% section isomorfimos_de_grupos (end)
+% section isomorfismos_de_grupos (end)
 
 \section{Subgrupo Normal} % (fold)
 \label{sec:subgrupo_normal}
@@ -1859,7 +1859,7 @@ Nesse grupo o elemento neutro é $eN$ e $(aN)^{-1} = (a^{-1})N$.
 \end{prova}
 
 \begin{definicao}
-    Se $N$ é um subgrupo normal de $G$, então o homomorfismo $\mu : G \to G/N$ definido por $\mu(a) = aN$ é chamado de \textbf{homomorfismo can\^onico} de $G$ sobre $G/N$.
+    Se $N$ é um subgrupo normal de $G$, então o homomorfismo $\mu : G \to G/N$ definido por $\mu(a) = aN$ é chamado de \textbf{homomorfismo canônico} de $G$ sobre $G/N$.
 \end{definicao}
 
 \begin{lema}
@@ -1954,7 +1954,7 @@ Nesse grupo o elemento neutro é $eN$ e $(aN)^{-1} = (a^{-1})N$.
     \end{align*}
     isto é, $\sigma$ é sobrejetora.
 
-    Portanto $\sigma$ é um isomorfismo de grupos, daí $G/N \cong L$, como queríamos.
+    Portanto, $\sigma$ é um isomorfismo de grupos, daí $G/N \cong L$, como queríamos.
 \end{prova}
 
 \begin{exemplo}
@@ -2033,7 +2033,7 @@ O número de elementos de $G/H$ é chamado de \textbf{índice} de $H$ em $G$ e s
 \begin{exemplo}
     Quais são as possíveis ordens dos subgrupos de um grupo de ordem 48?
     \begin{solucao}
-        Seja $G$ um grupo tal que $|G|=48$. Se $H$ é um subgrupo prório de $G$, então $|H|$ divide $|G|$. Mas $48=2^{4}\cdot 3$, daí se $H$ é um subgrupo de $G$ então $|H|=2$ ou $|H|=3$ ou $|H|= 2^{2}$ ou $|H|=2^{3}$ ou $|H|=2^{4}$ ou $|H|=2\cdot3$ ou $|H|=2^2\cdot 3$ ou $|H|=2^3\cdot 3$.
+        Seja $G$ um grupo tal que $|G|=48$. Se $H$ é um subgrupo próprio de $G$, então $|H|$ divide $|G|$. Mas $48=2^{4}\cdot 3$, daí se $H$ é um subgrupo de $G$ então $|H|=2$ ou $|H|=3$ ou $|H|= 2^{2}$ ou $|H|=2^{3}$ ou $|H|=2^{4}$ ou $|H|=2\cdot3$ ou $|H|=2^2\cdot 3$ ou $|H|=2^3\cdot 3$.
     \end{solucao}
 \end{exemplo}
 
