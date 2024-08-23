@@ -1,9 +1,10 @@
 %!TEX program = xelatex
-\def\ano{2020}
+%!TEX encoding = UTF-8
+\def\ano{2024}
 \def\semestre{1}
-\def\disciplina{\'Algebra 1}
+\def\disciplina{Álgebra 1}
 \def\turma{C}
-\def\autor{Jos\'e Ant\^onio O. Freitas}
+\def\autor{José Antônio O. Freitas}
 \def\instituto{MAT-UnB}
 
 \documentclass{beamer}
@@ -27,28 +28,28 @@
     \logo{\includegraphics[scale=.1]{logo-MAT.png}\vspace*{8.5cm}}
 
     \begin{frame}
-        Seja $A$ um conjunto n\~ao vazio.\pause
+        Seja $A$ um conjunto não vazio.\pause
 
         \vspace{.3cm}
 
-        Dada uma fun\c{c}\~ao $f : A \to A$, sabemos que $f$ possui inversa \pause se, e somente se, $f$ \'e bijetora.\pause
+        Dada uma função $f : A \to A$, sabemos que $f$ possui inversa \pause se, e somente se, $f$ é bijetora.\pause
 
         \vspace{.3cm}
 
         Assim considere o conjunto\pause
         \[
-            \mathcal{S} = \{ f : A \to A \pause \mid f \mbox{ \'e bijetora}\}.\pause
+            \mathcal{S} = \{ f : A \to A \pause \mid f \mbox{ é bijetora}\}.\pause
         \]
 
-        Em $\mathcal{S}$ vamos considerar a composi\c{c}\~ao de fun\c{c}\~oes $\circ$.\pause
+        Em $\mathcal{S}$ vamos considerar a composição de funções $\circ$.\pause
 
         \vspace{.3cm}
 
-        Como $id : A \to A$ tal que $id(x) = x$ para todo $x \in A$ \pause \'e uma fun\c{c}\~ao bijetora \pause ent\~ao $id \in \mathcal{S}$ \pause e com isso $\mathcal{S} \ne \emptyset$.
+        Como $id : A \to A$ tal que $id(x) = x$ para todo $x \in A$ \pause é uma função bijetora \pause então $id \in \mathcal{S}$ \pause e com isso $\mathcal{S} \ne \emptyset$.
     \end{frame}
 
     \begin{frame}
-        Dadas $f$, $g \in \mathcal{S}$ \pause como $f$ e $g$ s\~ao bijetoras, \pause ent\~ao $f \circ g$ \'e bijetora \pause e da{\'\i} $f \circ g \in \mathcal{S}$. \pause Isto \'e, \pause a composi\c{c}\~ao de fun\c{c}\~oes \pause \'e uma opera\c{c}\~ao bin\'aria em $\mathcal{S}$.
+        Dadas $f$, $g \in \mathcal{S}$ \pause como $f$ e $g$ são bijetoras, \pause então $f \circ g$ é bijetora \pause e daí $f \circ g \in \mathcal{S}$. \pause Isto é, \pause a composição de funções \pause é uma operação binária em $\mathcal{S}$.
 
         \vspace{.3cm}
 
@@ -66,13 +67,13 @@
         \[
             f\circ id  \pause = f  \pause = id\circ f, \pause
         \]
-        onde $id : A \to A$ \pause \'e tal que $id(x) = x$, \pause para todo $x \in A$. \pause Logo $id$ \'e o elemento neutro da composi\c{c}\~ao.\pause
+        onde $id : A \to A$ \pause é tal que $id(x) = x$, \pause para todo $x \in A$. \pause Logo $id$ é o elemento neutro da composição.\pause
 
     \end{frame}
 
     \begin{frame}
 
-        Finalmente, \pause para toda $f \in \mathcal{S}$, \pause como $f$ \'e bijetora \pause existe $g \in \mathcal{S}$ \pause tal que \pause
+        Finalmente, \pause para toda $f \in \mathcal{S}$, \pause como $f$ é bijetora \pause existe $g \in \mathcal{S}$ \pause tal que \pause
         \[
             f\circ g \pause = id \pause = g \circ f. \pause
         \]
@@ -80,32 +81,32 @@
 
         \vspace{.3cm}
 
-        Portanto $(\mathcal{S}, \circ)$ \pause \'e um grupo.  \pause Al\'em disso, em geral, esse grupo n\~ao \'e comutativo. \pause
+        Portanto $(\mathcal{S}, \circ)$ \pause é um grupo.  \pause Além disso, em geral, esse grupo não é comutativo. \pause
 
         \vspace{.3cm}
 
-        Vamos considerar agora o caso particular \pause em que $A$ \'e um conjunto finito. \pause
+        Vamos considerar agora o caso particular \pause em que $A$ é um conjunto finito. \pause
 
         \vspace{.3cm}
 
-        Nessa situa\c{c}\~ao podemos supor que $A \sub \n$ \pause para simplificar a nota\c{c}\~ao. \pause
+        Nessa situação podemos supor que $A \sub \n$ \pause para simplificar a notação. \pause
 
         \vspace{.3cm}
 
-        Vamos ver como \'e o conjunto $\mathcal{S}$ com essa hip\'otese. \pause
+        Vamos ver como é o conjunto $\mathcal{S}$ com essa hipótese. \pause
     \end{frame}
 
     \begin{frame}
-        Se $A = \{1\}$, \pause ent\~ao s\'o existe uma fun\c{c}\~ao $f : A \to A$ \pause que \'e bijetora e essa fun\c{c}\~ao \'e tal que \pause
+        Se $A = \{1\}$, \pause então só existe uma função $f : A \to A$ \pause que é bijetora e essa função é tal que \pause
         \begin{center}
             $f : \{1\} \to \{1\}$ \pause\\
             $f(1) = 1$. \pause
         \end{center}
-        Ou seja, $f$ \'e a fun\c{c}\~ao identidade $id$. \pause Nesse caso $\mathcal{S} \pause = S_1 \pause = \{id\}$ \pause e $(S_1, \circ)$ \'e um grupo, \pause e nesse caso comutativo. \pause
+        Ou seja, $f$ é a função identidade $id$. \pause Nesse caso $\mathcal{S} \pause = S_1 \pause = \{id\}$ \pause e $(S_1, \circ)$ é um grupo, \pause e nesse caso comutativo. \pause
     \end{frame}
 
     \begin{frame}
-        Se $A = \{1, 2\}$, \pause ent\~ao podemos definir as seguintes fun\c{c}\~oes bijetoras em $A$: \pause
+        Se $A = \{1, 2\}$, \pause então podemos definir as seguintes funções bijetoras em $A$: \pause
         \begin{multicols}{2}
             \begin{enumerate}
                 \item[] \begin{center}
@@ -118,13 +119,13 @@
             \end{enumerate}
         \end{multicols}
 
-        Assim $\mathcal{S} \pause = S_2 \pause = \{id, \pause f\}$ \pause e $(S_2, \circ)$ \'e um grupo.\pause
+        Assim $\mathcal{S} \pause = S_2 \pause = \{id, \pause f\}$ \pause e $(S_2, \circ)$ é um grupo.\pause
 
-        Al\'em disso, esse grupo \'e comutativo.
+        Além disso, esse grupo é comutativo.
     \end{frame}
 
     \begin{frame}
-        Agora, seja $A = \{1, 2, 3\}$. \pause Podemos definir ent\~ao as seguintes fun\c{c}\~oes bijetoras em $A$: \pause
+        Agora, seja $A = \{1, 2, 3\}$. \pause Podemos definir então as seguintes funções bijetoras em $A$: \pause
         \begin{multicols}{3}
             \begin{enumerate}
                 \item[] \begin{center}
@@ -183,7 +184,7 @@
     \end{frame}
 
     \begin{frame}
-        Logo $\mathcal{S} = S_3 = \{id, f_1, f_2, f_3, f_4, f_5\}$ \pause e $(S_3, \circ)$ \'e um grupo.\pause
+        Logo $\mathcal{S} = S_3 = \{id, f_1, f_2, f_3, f_4, f_5\}$ \pause e $(S_3, \circ)$ é um grupo.\pause
 
         \vspace{.3cm}
 
@@ -193,7 +194,7 @@
             \vspace{.3cm}
             $(f_4 \circ f_1)(1) \pause = f_4(f_1(1)) \pause = f_4(2) \pause = 3$\pause
         \end{center}
-        da{\'\i} $(f_1 \circ f_4)(1) \pause \ne (f_4 \circ f_1)(1)$ \pause, isto \'e, \pause $f_1 \circ f_4 \pause \ne f_4 \circ f_1$. \pause Portanto o grupo $(S_3, \circ)$ \pause n\~ao \'e comutativo.\pause
+        daí $(f_1 \circ f_4)(1) \pause \ne (f_4 \circ f_1)(1)$ \pause, isto é, \pause $f_1 \circ f_4 \pause \ne f_4 \circ f_1$. \pause Portanto o grupo $(S_3, \circ)$ \pause não é comutativo.\pause
 
         \vspace{.3cm}
 
@@ -201,7 +202,7 @@
     \end{frame}
 
     \begin{frame}
-        De modo geral, \pause se $A = \{1, 2, 3, \dots, n\}$ \pause ent\~ao existem exatamente $n!$ \pause fun\c{c}\~oes $f : A \to A$ bijetoras. \pause
+        De modo geral, \pause se $A = \{1, 2, 3, \dots, n\}$ \pause então existem exatamente $n!$ \pause funções $f : A \to A$ bijetoras. \pause
 
         \vspace{.3cm}
 
@@ -209,15 +210,15 @@
 
         \vspace{.3cm}
 
-        Se $n \geqslant 3$, ent\~ao \pause $S_n$ \'e um grupo n\~ao comutativo.\pause
+        Se $n \geqslant 3$, então \pause $S_n$ é um grupo não comutativo.\pause
 
         \begin{definicao}
-            O grupo $S_n$ \'e chamado de \pause \textbf{grupo sim\'etrico} \pause ou \textbf{grupo de permuta\c{c}\~oes} \pause em $A = \{1, 2, 3, \dots, n\}$.
+            O grupo $S_n$ é chamado de \pause \textbf{grupo simétrico} \pause ou \textbf{grupo de permutações} \pause em $A = \{1, 2, 3, \dots, n\}$.
         \end{definicao}
     \end{frame}
 
     \begin{frame}
-        Um modo de representar os elementos de $S_n$ \'e o seguinte: \pause vamos representar as fun\c{c}\~oes $f \in S_n$ \pause na forma de uma matriz contendo 2 linhas \pause e $n$ colunas. \pause A primeira linha \'e o dom{\'\i}nio da fun\c{c}\~ao \pause e a segunda cont\'em suas imagens. \pause Assim se $f \in S_n$ escreveremos\pause
+        Um modo de representar os elementos de $S_n$ é o seguinte: \pause vamos representar as funções $f \in S_n$ \pause na forma de uma matriz contendo 2 linhas \pause e $n$ colunas. \pause A primeira linha é o domínio da função \pause e a segunda contém suas imagens. \pause Assim se $f \in S_n$ escreveremos\pause
         \[
             f = \pause \begin{pmatrix}
                 1 & 2 & 3 & \dots & n\pause \\
@@ -274,7 +275,7 @@
     \end{frame}
 
     \begin{frame}
-        Assim a composi\c{c}\~ao $f_3 \circ f_4$ pode ser determinada da seguinte forma:
+        Assim a composição $f_3 \circ f_4$ pode ser determinada da seguinte forma:
         \[
             f_3\circ f_4 = \begin{pmatrix}
                     1 & 2 & 3\\
@@ -287,7 +288,7 @@
     \end{frame}
 
     \begin{frame}
-        A composi\c{c}\~ao $f_4 \circ f_5$ \'e:
+        A composição $f_4 \circ f_5$ é:
 
         \[
             f_4\circ f_5 = \begin{pmatrix}
