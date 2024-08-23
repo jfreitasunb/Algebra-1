@@ -226,7 +226,7 @@ Logo $\mathcal{S} = S_3 = \{Id, f_1, f_2, f_3, f_4, f_5\}$ e $(S_3, \circ)$ é u
     (f_1 \circ f_4)(1) &= f_1(f_4(1)) = f_1(2) = 1\\
     (f_4 \circ f_1)(1) &= f_4(f_1(1)) = f_4(2) = 3
 \end{align*}
-daí $(f_1 \circ f_4)(1) \ne (f_4 \circ f_1)(1)$, isto é, $f_1 \circ f_4 \ne f_4 \circ f_1$. Portanto o grupo $(S_3, \circ)$ não é comutativo.
+daí $(f_1 \circ f_4)(1) \ne (f_4 \circ f_1)(1)$, isto é, $f_1 \circ f_4 \ne f_4 \circ f_1$. Portanto, o grupo $(S_3, \circ)$ não é comutativo.
 
 Note que em $S_2$ temos $2 = 2!$ elementos e em $S_3$ temos $6 = 3!$ elementos.
 
@@ -445,7 +445,7 @@ Nesse caso vamos dizer simplesmente que $G$ é um grupo.
         \]
         Logo $a \in y$, ou seja, $yx \in \overline{a}$.
 
-        Portanto $\overline{a} = aH$, como queríamos.
+        Portanto, $aH$, como queríamos.
     \end{enumerate}
 \end{prova}
 
@@ -475,7 +475,7 @@ Nesse caso vamos dizer simplesmente que $G$ é um grupo.
     \]
     isto é, $f$ é sobrejetora.
 
-    Portanto $f$ é bijetora e com isso $aH$ e $bH$ têm a mesma cardinalidade, como queríamos.
+    Portanto, $f$ é bijetora e com isso $aH$ e $bH$ têm a mesma cardinalidade, como queríamos.
 \end{prova}
 
 \begin{observacao}
@@ -493,7 +493,7 @@ Nesse caso vamos dizer simplesmente que $G$ é um grupo.
 
 \begin{exemplos}
     \begin{enumerate}[label={\arabic*})]
-        \item No grupo multiplicativo $G = \{1, -1, i, -i\}$, onde $i^2 = -1$. Considere o conjunto $H = \{1, -1\}$. Então $H$ é um sugbrupo de $G$ e as classes laterais serão:
+        \item No grupo multiplicativo $G = \{1, -1, i, -i\}$, onde $i^2 = -1$. Considere o conjunto $H = \{1, -1\}$. Então $H$ é um subgrupo de $G$ e as classes laterais serão:
         \begin{align*}
             1H &= H = \{1, -1\}\\
             iH &= \{il \mid l \in H\} = \{i, -i\}.
@@ -835,7 +835,7 @@ Com a notação aditiva o oposto de $x \in G$ será denotado por $-x$.
     Seja $G$ um grupo com elemento neutro $e$. Dado $x \in G$ se existir um inteiro $h > 0$ tal que
     \begin{enumerate}[label={\roman*})]
         \item $x^h = e$
-        \item $x^r \ne e$ qualquer que seja o inteiro $r$ tal que $0 < r < h$
+        \item $x^r \ne e$ independentemente do inteiro $r$ tal que $0 < r < h$
     \end{enumerate}
     diremos que a \textbf{ordem} ou \textbf{período} de $x$ é $h$. Nesse caso escreveremos $|x| = o(x) = h$.
 
@@ -846,9 +846,9 @@ Com a notação aditiva o oposto de $x \in G$ será denotado por $-x$.
     \begin{enumerate}[label={\arabic*})]
         \item No grupo multiplicativo $\complex^*$ temos
         \begin{itemize}
-            \item $o(1) = 1$  pois $1^1 = 1$
+            \item $o(1) = 1$,  pois $1^1 = 1$
 
-            \item $o(i) = 4$ pois
+            \item $o(i) = 4$, pois
             \begin{align*}
                 i^1 &= i\\
                 i^2 &= -1\\
@@ -858,7 +858,7 @@ Com a notação aditiva o oposto de $x \in G$ será denotado por $-x$.
 
             \item $o(-i) = 4$
 
-            \item $o(2i) = 0$ pois para todo $r > 0$ temos $(2i)^r = 2^ri^r$ e $2^r \ne 1$ para todo $r > 0$.
+            \item $o(2i) = 0$, pois para todo $r > 0$ temos $(2i)^r = 2^ri^r$ e $2^r \ne 1$ para todo $r > 0$.
 
         \end{itemize}
 
@@ -922,7 +922,7 @@ Com a notação aditiva o oposto de $x \in G$ será denotado por $-x$.
         \begin{itemize}
             \item $o(\overline{0}) = 1$
 
-            \item $o(\overline{1}) = 5$ pois
+            \item $o(\overline{1}) = 5$, pois
             \begin{align*}
                 \overline{1} &\ne \overline{0}\\
                 \overline{1} + \overline{1} &\ne \overline{0}\\
@@ -937,7 +937,7 @@ Com a notação aditiva o oposto de $x \in G$ será denotado por $-x$.
             \]
         \end{itemize}
 
-        \item Em $\z$ o único elemento de ordem diferente de zero é o elemento neutro.
+        \item Em $\z$, o único elemento de ordem diferente de zero é o elemento neutro.
     \end{enumerate}
 \end{exemplos}
 
@@ -995,7 +995,7 @@ Com a notação aditiva o oposto de $x \in G$ será denotado por $-x$.
 \begin{observacao}
     Sejam $(G, *)$, $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo.
     \begin{enumerate}[label={\arabic*})]
-        \item Se $G = H$, neste caso $f : G \to G$ é chamado de um \textbf{endomorfimos} de grupos.
+        \item Se $G = H$, neste caso $f : G \to G$ é chamado de um \textbf{endomorfismos} de grupos.
         \item Se $f : G \to H$ é uma função injetora, então dizemos que $f$ é um \textbf{monomorfismo} de grupos.
         \item Se $f : G \to H$ é uma função sobrejetora, então dizemos que $f$ é um \textbf{epimorfismo} de grupos.
         \item Se $f : G \to H$ é uma função bijetora, então dizemos que $f$ é um \textbf{isomorfismo} de grupos.
@@ -1017,7 +1017,7 @@ Com a notação aditiva o oposto de $x \in G$ será denotado por $-x$.
         \]
         para todos $x$, $y \in \real^*_+$. Além disso, como $\ln(x)$ é uma função bijetora, então $f$ é um isomorfismo de grupos.
 
-        \item Sejam $m$ um inteiro positivo fixo. A função $f: \z \to \z_m$ definida por $f(x) = \overline{x}$ é um homomorfimos de $(\z, +)$ em $(\z_m, \oplus)$. De fato,
+        \item Sejam $m$ um inteiro positivo fixo. A função $f: \z \to \z_m$ definida por $f(x) = \overline{x}$ é um homomorfismos de $(\z, +)$ em $(\z_m, \oplus)$. De fato,
         \[
             f(x + y) = \overline{x + y} = \overline{x} + \overline{y} = f(x) + f(y).
         \]
@@ -1133,7 +1133,7 @@ Com a notação aditiva o oposto de $x \in G$ será denotado por $-x$.
             &f(x)\triangle f(y^{-1}) = 1_H\\
             &f(x * y^{-1}) = 1_H
         \end{align*}
-        e daí $x*y^{-1} \in \ker(f) = \{1_G\}$. Logo $x*y^{-1} = 1_G$, isto é, $x = y$. Portanto $f$ é injetora.
+        e daí $x*y^{-1} \in \ker(f) = \{1_G\}$. Logo $x*y^{-1} = 1_G$, isto é, $x = y$. Portanto, $f$ é injetora.
     \end{enumerate}
 \end{prova}
 
@@ -1154,7 +1154,7 @@ Com a notação aditiva o oposto de $x \in G$ será denotado por $-x$.
     Se $f$ e $g$ são homomorfismos injetores (sobrejetores), então $g \circ f$ também é um homomorfismo injetor (sobrejetor).
 \end{corolario}
 \begin{prova}
-    \'E uma consequência direta das Proposições \eqref{composicao_funcoes_injetoras} e \eqref{composicao_funcoes_sobrejetoras}.
+    É uma consequência direta das Proposições \eqref{composicao_funcoes_injetoras} e \eqref{composicao_funcoes_sobrejetoras}.
 \end{prova}
 
 
@@ -1174,7 +1174,7 @@ Com a notação aditiva o oposto de $x \in G$ será denotado por $-x$.
         f^{-1}(y_1 \triangle y_2) &= f^{-1}(f(x_1) \triangle f(x_2)) \\ &= f^{-1}(f(x_1 * x_2)) \\ &= x_1 * x_2 \\ &= f^{-1}(y_1) * f^{-1}(y_2),
     \end{align*}
     ou seja, $f^{-1}$ é um homomorfismo de grupos.
-    Portanto $f^{-1}$ é um isomorfismo de grupos.
+    Portanto, $f^{-1}$ é um isomorfismo de grupos.
 \end{prova}
 
 \section{Isomorfimos de grupos} % (fold)
@@ -1261,7 +1261,7 @@ Como $\sigma$ também é bijetora, então $\sigma$ é um isomorfismo de $G$ em $
 \end{exemplos}
 
 \begin{proposicao}
-    Sejam $G$ e $H$ grupos multiplicativos. Seja $f : G \to H$ é um isomorfismos de grupos. Então $x \in G$ é tal que $o(x) = h$ se, e somente se, $o(f(x)) = h$.
+    Sejam $G$ e $H$ grupos multiplicativos. Seja $f : G \to H$ um isomorfismo de grupos. Então $x \in G$ é tal que $o(x) = h$ se, e somente se, $o(f(x)) = h$.
 \end{proposicao}
 
 Seja $G = [a]$ um grupo cíclico. Dois casos podem ocorrer:
