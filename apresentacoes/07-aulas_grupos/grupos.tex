@@ -143,6 +143,303 @@
         \end{proposicao}
     \end{frame}
 
+         \begin{frame}
+        Seja $A$ um conjunto não vazio.\pause
+
+        \vspace{.3cm}
+
+        Dada uma função $f : A \to A$, sabemos que $f$ possui inversa \pause se, e somente se, $f$ é bijetora.\pause
+
+        \vspace{.3cm}
+
+        Assim considere o conjunto\pause
+        \[
+        \mathcal{S} = \{ f : A \to A \pause \mid f \mbox{ é bijetora}\}.\pause
+        \]
+
+        Em $\mathcal{S}$ vamos considerar a composição de funções $\circ$.\pause
+
+        \vspace{.3cm}
+
+        Como $id : A \to A$ tal que $id(x) = x$ para todo $x \in A$ \pause é uma função bijetora \pause então $id \in \mathcal{S}$ \pause e com isso $\mathcal{S} \ne \emptyset$.
+    \end{frame}
+
+    \begin{frame}
+        Dadas $f$, $g \in \mathcal{S}$ \pause como $f$ e $g$ são bijetoras, \pause então $f \circ g$ é bijetora \pause e daí $f \circ g \in \mathcal{S}$. \pause Isto é, \pause a composição de funções \pause é uma operação binária em $\mathcal{S}$.
+
+        \vspace{.3cm}
+
+        Agora, sejam $f$, $g$ e $h \in \mathcal{S}$. \pause Para todo $x \in A$ temos\pause
+        \begin{center}
+            $[(f\circ g) \pause \circ h \pause](x) \pause = (f \circ g) \pause(h(x)) \pause = f(g(h(x))) \pause$\\
+            $[f\circ \pause(g\circ h) \pause](x) \pause = f( \pause(g\circ h)(x) \pause) = f(g(h(x))) \pause$
+        \end{center}
+
+        Logo $(f\circ g) \pause \circ h  \pause = f\circ \pause (g\circ h)$. \pause
+
+        \vspace{.3cm}
+
+        Agora, para toda $f \in \mathcal{S}$\pause
+        \[
+        f\circ id  \pause = f  \pause = id\circ f, \pause
+        \]
+        onde $id : A \to A$ \pause é tal que $id(x) = x$, \pause para todo $x \in A$. \pause Logo $id$ é o elemento neutro da composição.\pause
+
+    \end{frame}
+
+    \begin{frame}
+
+        Finalmente, \pause para toda $f \in \mathcal{S}$, \pause como $f$ é bijetora \pause existe $g \in \mathcal{S}$ \pause tal que \pause
+        \[
+        f\circ g \pause = id \pause = g \circ f. \pause
+        \]
+        Logo todo elemento de $\mathcal{S}$ \pause possui inverso. \pause
+
+        \vspace{.3cm}
+
+        Portanto $(\mathcal{S}, \circ)$ \pause é um grupo. \pause Além disso, em geral, esse grupo não é comutativo. \pause
+
+        \vspace{.3cm}
+
+        Vamos considerar agora o caso particular \pause em que $A$ é um conjunto finito. \pause
+
+        \vspace{.3cm}
+
+        Nessa situação podemos supor que $A \sub \n$ \pause para simplificar a notação. \pause
+
+        \vspace{.3cm}
+
+        Vamos ver como é o conjunto $\mathcal{S}$ com essa hip\'otese. \pause
+    \end{frame}
+
+    \begin{frame}
+        Se $A = \{1\}$, \pause então s\'o existe uma função $f : A \to A$ \pause que é bijetora e essa função é tal que \pause
+        \begin{center}
+            $f : \{1\} \to \{1\}$ \pause\\
+            $f(1) = 1$. \pause
+        \end{center}
+        Ou seja, $f$ é a função identidade $id$. \pause Nesse caso $\mathcal{S} \pause = S_1 \pause = \{id\}$ \pause e $(S_1, \circ)$ é um grupo, \pause e nesse caso comutativo. \pause
+    \end{frame}
+
+    \begin{frame}
+        Se $A = \{1, 2\}$ \pause então podemos definir as seguintes funções bijetoras em $A$: \pause
+        \begin{multicols}{2}
+            \begin{enumerate}
+                \item[] \begin{center}
+                    $id : A \to A$ \pause\\
+                    $id(1) = 1$ \pause\\ $id(2) = 2$
+                \end{center}\pause
+                \item[]  \begin{center}
+                    $f : A \to A$ \pause\\ $f(1) = 2 \pause$\\ $f(2) = 1$
+                \end{center}\pause
+            \end{enumerate}
+        \end{multicols}
+
+        Assim $\mathcal{S} \pause = S_2 \pause = \{id, \pause f\}$ \pause e $(S_2, \circ)$ é um grupo.\pause
+
+        Além disso, esse grupo é comutativo.
+    \end{frame}
+
+    \begin{frame}
+        Agora, seja $A = \{1, 2, 3\}$. \pause Podemos definir então as seguintes funções bijetoras em $A$: \pause
+        \begin{multicols}{3}
+            \begin{enumerate}
+                \item[] \begin{center}
+                    $id : A \to A$ \pause\\
+                    $id(1) = 1$ \pause\\
+                    $id(2) = 2$ \pause\\
+                    $id(3) = 3$ \pause
+                \end{center}\pause
+
+                \vspace{.3cm}
+
+                \item[] \begin{center}
+                    $f_1 : A \to A$\pause\\
+                    $f_1(1) = 2$\pause\\
+                    $f_1(2) = 1$\pause\\
+                    $f_1(3) = 3$
+                \end{center}\pause
+
+                \vspace{.3cm}
+
+                \item[] \begin{center}
+                    $f_2 : A \to A$\pause\\
+                    $f_2(1) = 3$\pause\\
+                    $f_2(2) = 2$\pause\\
+                    $f_2(3) = 1$
+                \end{center}\pause
+
+                \vspace{.3cm}
+
+                \item[] \begin{center}
+                    $f_3 : A \to A$\pause\\
+                    $f_3(1) = 1$\pause\\
+                    $f_3(2) = 3$\pause\\
+                    $f_3(3) = 2$
+                \end{center}\pause
+
+                \vspace{.3cm}
+
+                \item[] \begin{center}
+                    $f_4 : A \to A$\pause\\
+                    $f_4(1) = 2$\pause\\
+                    $f_4(2) = 3$\pause\\
+                    $f_4(3) = 1$
+                \end{center}\pause
+
+                \vspace{.3cm}
+
+                \item[] \begin{center}
+                    $f_5 : A \to A$\pause\\
+                    $f_5(1) = 3$\pause\\
+                    $f_5(2) = 1$\pause\\
+                    $f_5(3) = 2$
+                \end{center}
+            \end{enumerate}
+        \end{multicols}
+    \end{frame}
+
+    \begin{frame}
+        Logo $\mathcal{S} = S_3 = \{id, f_1, f_2, f_3, f_4, f_5\}$ \pause e $(S_3, \circ)$ é um grupo.\pause
+
+        \vspace{.3cm}
+
+        Nesse caso temos\pause
+        \begin{center}
+            $(f_1 \circ f_4)(1) \pause = f_1(f_4(1)) \pause = f_1(2) \pause = 1$\pause\\
+            \vspace{.3cm}
+            $(f_4 \circ f_1)(1) \pause = f_4(f_1(1)) \pause = f_4(2) \pause = 3$\pause
+        \end{center}
+        daí $(f_1 \circ f_4)(1) \pause \ne (f_4 \circ f_1)(1)$ \pause, isto é, \pause $f_1 \circ f_4 \pause \ne f_4 \circ f_1$. \pause Portanto o grupo $(S_3, \circ)$ \pause não é comutativo.\pause
+
+        \vspace{.3cm}
+
+        Note que em $S_2$ \pause temos $2 = 2!$ elementos \pause e em $S_3$ \pause temos $6 = 3!$ elementos.\pause
+    \end{frame}
+
+    \begin{frame}
+        De modo geral, \pause se $A = \{1, 2, 3, \dots, n\}$ \pause então existem exatamente $n!$ \pause funções $f : A \to A$ bijetoras. \pause
+
+        \vspace{.3cm}
+
+        Assim o grupo $(S_n, \circ)$ \pause possui $n!$ elementos.\pause
+
+        \vspace{.3cm}
+
+        Se $n \geqslant 3$, então \pause $S_n$ é um grupo não comutativo.\pause
+
+        \begin{definicao}
+            O grupo $S_n$ é chamado de \pause \textbf{grupo simétrico} \pause ou \textbf{grupo de permutações} \pause em $A = \{1, 2, 3, \dots, n\}$.
+        \end{definicao}
+    \end{frame}
+
+    \begin{frame}
+        Um modo de representar os elementos de $S_n$ é o seguinte: \pause vamos representar as funções $f \in S_n$ \pause na forma de uma matriz contendo 2 linhas \pause e $n$ colunas. \pause A primeira linha é o domínio da função \pause e a segunda contém suas imagens. \pause Assim se $f \in S_n$ escreveremos\pause
+        \[
+        f = \pause \begin{pmatrix}
+            1 & 2 & 3 & \dots & n\pause \\
+            f(1) \pause & f(2) \pause & f(3) \pause & \dots \pause & f(n)\pause
+        \end{pmatrix}.
+        \]
+    \end{frame}
+
+    \begin{frame}
+        No caso de $S_3$ vamos escrever\pause
+        \begin{multicols}{3}
+            \begin{enumerate}
+                \item[] $id = \begin{pmatrix}
+                    1 & 2 & 3\pause\\
+                    1 \pause & 2 \pause & 3\pause
+                \end{pmatrix}$\pause
+
+                \vspace{.5cm}
+
+                \item[] $f_1 = \begin{pmatrix}
+                    1 & 2 & 3 \pause\\
+                    2 \pause & 1 \pause & 3 \pause
+                \end{pmatrix}$\pause
+
+                \vspace{.5cm}
+
+                \item[] $f_2 = \begin{pmatrix}
+                    1 & 2 & 3 \pause\\
+                    3 \pause & 2 \pause & 1 \pause
+                \end{pmatrix}$\pause
+
+                \vspace{.5cm}
+
+                \item[] $f_3 = \begin{pmatrix}
+                    1 & 2 & 3 \pause\\
+                    1 \pause & 3 \pause & 2 \pause
+                \end{pmatrix}$\pause
+
+                \vspace{.5cm}
+
+                \item[] $f_4 = \begin{pmatrix}
+                    1 & 2 & 3 \pause\\
+                    2 \pause & 3 \pause & 1 \pause
+                \end{pmatrix}$\pause
+
+                \vspace{.5cm}
+
+                \item[] $f_5 = \begin{pmatrix}
+                    1 & 2 & 3 \pause\\
+                    3 \pause & 1 \pause & 2 \pause
+                \end{pmatrix}$\pause
+            \end{enumerate}
+        \end{multicols}
+    \end{frame}
+
+    \begin{frame}
+        Assim a composição $f_3 \circ f_4$ pode ser determinada da seguinte forma:
+        \[
+        f_3\circ f_4 = \begin{pmatrix}
+            1 & 2 & 3\\
+            1 & 3 & 2
+        \end{pmatrix} \pause \circ \begin{pmatrix}
+            1 & 2 & 3\\
+            2 & 3 & 1
+        \end{pmatrix}
+        \]
+    \end{frame}
+
+    \begin{frame}
+        A composição $f_4 \circ f_5$ é:
+
+        \[
+        f_4\circ f_5 = \begin{pmatrix}
+            1 & 2 & 3\\
+            2 & 3 & 1
+        \end{pmatrix} \pause \circ \begin{pmatrix}
+            1 & 2 & 3\\
+            3 & 1 & 2
+        \end{pmatrix}
+        \]
+    \end{frame}
+
+    \begin{frame}
+        \begin{definicao}
+            Seja $(G,*)$ um grupo. \pause Se $G$ é um conjunto com uma quantidade finita de elementos, \pause dizemos que $G$ é um \textbf{grupo finito}. \pause Denotamos por $|G|$ \pause o número de elementos de $G$ \pause e que será chamado de \textbf{ordem} de $G$ \pause ou \textbf{cardinalidade} de $G$. \pause Quando o conjunto $G$ não é finito, \pause dizemos que $G$ é um \textbf{grupo infinito}.\pause
+        \end{definicao}
+
+        \begin{exemplos}
+            \begin{enumerate}[label={\roman*})]
+                \item $(\z_m, +)$ é um grupo finito para todo $m>1$ \pause e $|\z_m| = m$.\pause
+                \item $(S_n, \circ)$ é um grupo finito \pause e $|S_n| = n!$.\pause
+                \item $(\z, +)$ é um grupo infinito.
+            \end{enumerate}
+        \end{exemplos}
+    \end{frame}
+
+    \begin{frame}
+        Seja $(G, *)$ um grupo. \pause Para simplificar a notação \pause vamos adotar uma notação multiplicativa \pause e escrever $(G, *) = \pause (G, \cdot)$. \pause Assim, dados $x$, $y \in G$ vamos denotar\pause
+        \[
+        x * y = \pause x \cdot y = \pause xy.\pause
+        \]
+
+        Nesse caso vamos dizer simplesmente que $G$ é um grupo.
+    \end{frame}
+
     \begin{frame}
         \begin{definicao}
             Seja $(G,*)$ um grupo. \pause Um subconjunto não vazio \pause $H\sub G$ \pause é chamado de \textbf{subgrupo} de $G$ \pause se, e somente se, $(H,*)$ \pause é um grupo.\pause
@@ -391,303 +688,6 @@
                 é um subgrupo de $M_2(\real)$.
             \end{enumerate}
         \end{exemplos}
-    \end{frame}
-
-     \begin{frame}
-        Seja $A$ um conjunto não vazio.\pause
-
-        \vspace{.3cm}
-
-        Dada uma função $f : A \to A$, sabemos que $f$ possui inversa \pause se, e somente se, $f$ é bijetora.\pause
-
-        \vspace{.3cm}
-
-        Assim considere o conjunto\pause
-        \[
-            \mathcal{S} = \{ f : A \to A \pause \mid f \mbox{ é bijetora}\}.\pause
-        \]
-
-        Em $\mathcal{S}$ vamos considerar a composição de funções $\circ$.\pause
-
-        \vspace{.3cm}
-
-        Como $id : A \to A$ tal que $id(x) = x$ para todo $x \in A$ \pause é uma função bijetora \pause então $id \in \mathcal{S}$ \pause e com isso $\mathcal{S} \ne \emptyset$.
-    \end{frame}
-
-    \begin{frame}
-        Dadas $f$, $g \in \mathcal{S}$ \pause como $f$ e $g$ são bijetoras, \pause então $f \circ g$ é bijetora \pause e daí $f \circ g \in \mathcal{S}$. \pause Isto é, \pause a composição de funções \pause é uma operação binária em $\mathcal{S}$.
-
-        \vspace{.3cm}
-
-        Agora, sejam $f$, $g$ e $h \in \mathcal{S}$. \pause Para todo $x \in A$ temos\pause
-        \begin{center}
-            $[(f\circ g) \pause \circ h \pause](x) \pause = (f \circ g) \pause(h(x)) \pause = f(g(h(x))) \pause$\\
-            $[f\circ \pause(g\circ h) \pause](x) \pause = f( \pause(g\circ h)(x) \pause) = f(g(h(x))) \pause$
-        \end{center}
-
-        Logo $(f\circ g) \pause \circ h  \pause = f\circ \pause (g\circ h)$. \pause
-
-        \vspace{.3cm}
-
-        Agora, para toda $f \in \mathcal{S}$\pause
-        \[
-            f\circ id  \pause = f  \pause = id\circ f, \pause
-        \]
-        onde $id : A \to A$ \pause é tal que $id(x) = x$, \pause para todo $x \in A$. \pause Logo $id$ é o elemento neutro da composição.\pause
-
-    \end{frame}
-
-    \begin{frame}
-
-        Finalmente, \pause para toda $f \in \mathcal{S}$, \pause como $f$ é bijetora \pause existe $g \in \mathcal{S}$ \pause tal que \pause
-        \[
-            f\circ g \pause = id \pause = g \circ f. \pause
-        \]
-        Logo todo elemento de $\mathcal{S}$ \pause possui inverso. \pause
-
-        \vspace{.3cm}
-
-        Portanto $(\mathcal{S}, \circ)$ \pause é um grupo. \pause Além disso, em geral, esse grupo não é comutativo. \pause
-
-        \vspace{.3cm}
-
-        Vamos considerar agora o caso particular \pause em que $A$ é um conjunto finito. \pause
-
-        \vspace{.3cm}
-
-        Nessa situação podemos supor que $A \sub \n$ \pause para simplificar a notação. \pause
-
-        \vspace{.3cm}
-
-        Vamos ver como é o conjunto $\mathcal{S}$ com essa hip\'otese. \pause
-    \end{frame}
-
-    \begin{frame}
-        Se $A = \{1\}$, \pause então s\'o existe uma função $f : A \to A$ \pause que é bijetora e essa função é tal que \pause
-        \begin{center}
-            $f : \{1\} \to \{1\}$ \pause\\
-            $f(1) = 1$. \pause
-        \end{center}
-        Ou seja, $f$ é a função identidade $id$. \pause Nesse caso $\mathcal{S} \pause = S_1 \pause = \{id\}$ \pause e $(S_1, \circ)$ é um grupo, \pause e nesse caso comutativo. \pause
-    \end{frame}
-
-    \begin{frame}
-        Se $A = \{1, 2\}$ \pause então podemos definir as seguintes funções bijetoras em $A$: \pause
-        \begin{multicols}{2}
-            \begin{enumerate}
-                \item[] \begin{center}
-                    $id : A \to A$ \pause\\
-                    $id(1) = 1$ \pause\\ $id(2) = 2$
-                \end{center}\pause
-                \item[]  \begin{center}
-                    $f : A \to A$ \pause\\ $f(1) = 2 \pause$\\ $f(2) = 1$
-                \end{center}\pause
-            \end{enumerate}
-        \end{multicols}
-
-        Assim $\mathcal{S} \pause = S_2 \pause = \{id, \pause f\}$ \pause e $(S_2, \circ)$ é um grupo.\pause
-
-        Além disso, esse grupo é comutativo.
-    \end{frame}
-
-    \begin{frame}
-        Agora, seja $A = \{1, 2, 3\}$. \pause Podemos definir então as seguintes funções bijetoras em $A$: \pause
-        \begin{multicols}{3}
-            \begin{enumerate}
-                \item[] \begin{center}
-                    $id : A \to A$ \pause\\
-                    $id(1) = 1$ \pause\\
-                    $id(2) = 2$ \pause\\
-                    $id(3) = 3$ \pause
-                \end{center}\pause
-
-                \vspace{.3cm}
-
-                \item[] \begin{center}
-                    $f_1 : A \to A$\pause\\
-                    $f_1(1) = 2$\pause\\
-                    $f_1(2) = 1$\pause\\
-                    $f_1(3) = 3$
-                \end{center}\pause
-
-                \vspace{.3cm}
-
-                \item[] \begin{center}
-                    $f_2 : A \to A$\pause\\
-                    $f_2(1) = 3$\pause\\
-                    $f_2(2) = 2$\pause\\
-                    $f_2(3) = 1$
-                \end{center}\pause
-
-                \vspace{.3cm}
-
-                \item[] \begin{center}
-                    $f_3 : A \to A$\pause\\
-                    $f_3(1) = 1$\pause\\
-                    $f_3(2) = 3$\pause\\
-                    $f_3(3) = 2$
-                \end{center}\pause
-
-                \vspace{.3cm}
-
-                \item[] \begin{center}
-                    $f_4 : A \to A$\pause\\
-                    $f_4(1) = 2$\pause\\
-                    $f_4(2) = 3$\pause\\
-                    $f_4(3) = 1$
-                \end{center}\pause
-
-                \vspace{.3cm}
-
-                \item[] \begin{center}
-                    $f_5 : A \to A$\pause\\
-                    $f_5(1) = 3$\pause\\
-                    $f_5(2) = 1$\pause\\
-                    $f_5(3) = 2$
-                \end{center}
-            \end{enumerate}
-        \end{multicols}
-    \end{frame}
-
-    \begin{frame}
-        Logo $\mathcal{S} = S_3 = \{id, f_1, f_2, f_3, f_4, f_5\}$ \pause e $(S_3, \circ)$ é um grupo.\pause
-
-        \vspace{.3cm}
-
-        Nesse caso temos\pause
-        \begin{center}
-            $(f_1 \circ f_4)(1) \pause = f_1(f_4(1)) \pause = f_1(2) \pause = 1$\pause\\
-            \vspace{.3cm}
-            $(f_4 \circ f_1)(1) \pause = f_4(f_1(1)) \pause = f_4(2) \pause = 3$\pause
-        \end{center}
-        daí $(f_1 \circ f_4)(1) \pause \ne (f_4 \circ f_1)(1)$ \pause, isto é, \pause $f_1 \circ f_4 \pause \ne f_4 \circ f_1$. \pause Portanto o grupo $(S_3, \circ)$ \pause não é comutativo.\pause
-
-        \vspace{.3cm}
-
-        Note que em $S_2$ \pause temos $2 = 2!$ elementos \pause e em $S_3$ \pause temos $6 = 3!$ elementos.\pause
-    \end{frame}
-
-    \begin{frame}
-        De modo geral, \pause se $A = \{1, 2, 3, \dots, n\}$ \pause então existem exatamente $n!$ \pause funções $f : A \to A$ bijetoras. \pause
-
-        \vspace{.3cm}
-
-        Assim o grupo $(S_n, \circ)$ \pause possui $n!$ elementos.\pause
-
-        \vspace{.3cm}
-
-        Se $n \geqslant 3$, então \pause $S_n$ é um grupo não comutativo.\pause
-
-        \begin{definicao}
-            O grupo $S_n$ é chamado de \pause \textbf{grupo simétrico} \pause ou \textbf{grupo de permutações} \pause em $A = \{1, 2, 3, \dots, n\}$.
-        \end{definicao}
-    \end{frame}
-
-    \begin{frame}
-        Um modo de representar os elementos de $S_n$ é o seguinte: \pause vamos representar as funções $f \in S_n$ \pause na forma de uma matriz contendo 2 linhas \pause e $n$ colunas. \pause A primeira linha é o domínio da função \pause e a segunda contém suas imagens. \pause Assim se $f \in S_n$ escreveremos\pause
-        \[
-            f = \pause \begin{pmatrix}
-                1 & 2 & 3 & \dots & n\pause \\
-                f(1) \pause & f(2) \pause & f(3) \pause & \dots \pause & f(n)\pause
-            \end{pmatrix}.
-        \]
-    \end{frame}
-
-    \begin{frame}
-        No caso de $S_3$ vamos escrever\pause
-        \begin{multicols}{3}
-            \begin{enumerate}
-                \item[] $id = \begin{pmatrix}
-                    1 & 2 & 3\pause\\
-                    1 \pause & 2 \pause & 3\pause
-                \end{pmatrix}$\pause
-
-                \vspace{.5cm}
-
-                \item[] $f_1 = \begin{pmatrix}
-                    1 & 2 & 3 \pause\\
-                    2 \pause & 1 \pause & 3 \pause
-                \end{pmatrix}$\pause
-
-                \vspace{.5cm}
-
-                \item[] $f_2 = \begin{pmatrix}
-                    1 & 2 & 3 \pause\\
-                    3 \pause & 2 \pause & 1 \pause
-                \end{pmatrix}$\pause
-
-                \vspace{.5cm}
-
-                \item[] $f_3 = \begin{pmatrix}
-                    1 & 2 & 3 \pause\\
-                    1 \pause & 3 \pause & 2 \pause
-                \end{pmatrix}$\pause
-
-                \vspace{.5cm}
-
-                \item[] $f_4 = \begin{pmatrix}
-                    1 & 2 & 3 \pause\\
-                    2 \pause & 3 \pause & 1 \pause
-                \end{pmatrix}$\pause
-
-                \vspace{.5cm}
-
-                \item[] $f_5 = \begin{pmatrix}
-                    1 & 2 & 3 \pause\\
-                    3 \pause & 1 \pause & 2 \pause
-                \end{pmatrix}$\pause
-            \end{enumerate}
-        \end{multicols}
-    \end{frame}
-
-    \begin{frame}
-        Assim a composição $f_3 \circ f_4$ pode ser determinada da seguinte forma:
-        \[
-            f_3\circ f_4 = \begin{pmatrix}
-                    1 & 2 & 3\\
-                    1 & 3 & 2
-                \end{pmatrix} \pause \circ \begin{pmatrix}
-                    1 & 2 & 3\\
-                    2 & 3 & 1
-                \end{pmatrix}
-        \]
-    \end{frame}
-
-    \begin{frame}
-        A composição $f_4 \circ f_5$ é:
-
-        \[
-            f_4\circ f_5 = \begin{pmatrix}
-                    1 & 2 & 3\\
-                    2 & 3 & 1
-                \end{pmatrix} \pause \circ \begin{pmatrix}
-                    1 & 2 & 3\\
-                    3 & 1 & 2
-                \end{pmatrix}
-        \]
-    \end{frame}
-
-    \begin{frame}
-        \begin{definicao}
-            Seja $(G,*)$ um grupo. \pause Se $G$ é um conjunto com uma quantidade finita de elementos, \pause dizemos que $G$ é um \textbf{grupo finito}. \pause Denotamos por $|G|$ \pause o número de elementos de $G$ \pause e que será chamado de \textbf{ordem} de $G$ \pause ou \textbf{cardinalidade} de $G$. \pause Quando o conjunto $G$ não é finito, \pause dizemos que $G$ é um \textbf{grupo infinito}.\pause
-        \end{definicao}
-
-        \begin{exemplos}
-            \begin{enumerate}[label={\roman*})]
-                \item $(\z_m, +)$ é um grupo finito para todo $m>1$ \pause e $|\z_m| = m$.\pause
-                \item $(S_n, \circ)$ é um grupo finito \pause e $|S_n| = n!$.\pause
-                \item $(\z, +)$ é um grupo infinito.
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        Seja $(G, *)$ um grupo. \pause Para simplificar a notação \pause vamos adotar uma notação multiplicativa \pause e escrever $(G, *) = \pause (G, \cdot)$. \pause Assim, dados $x$, $y \in G$ vamos denotar\pause
-        \[
-            x * y = \pause x \cdot y = \pause xy.\pause
-        \]
-
-        Nesse caso vamos dizer simplesmente que $G$ é um grupo.
     \end{frame}
 
     \begin{frame}
