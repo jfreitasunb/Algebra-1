@@ -21,9 +21,472 @@
 
     \textbf{Observação: }\textit{Nos casos em que não forem especificadas as operações do anel, considere as operações usuais.}
 
-\vspace{.6cm}
+    \vspace{.6cm}
 
 
+    %    \questao{} Considere o grupo $S_3$:
+    %    \begin{enumerate}[label=({\alph*})]
+        %        \item Determine todos os elementos $f \in S_3$ tais que $f^2 = Id$ e $f \ne Id$.
 
-\vspace{.3cm}
+        %        \item Determine todos os elementos $g \in S_3$ tais que $g^3 = Id$ e $g \ne Id$.
+        %    \end{enumerate}
+
+    %    \vspace{.3cm}
+
+    %    \questao{} Considere o grupo $S_4$:
+    %    \begin{enumerate}[label=({\alph*})]
+        %        \item Determine todos os elementos $f \in S_4$ tais que $f^2 = Id$ e $f \ne Id$.
+
+        %        \item Determine todos os elementos $g \in S_4$ tais que $g^3 = Id$ e $g \ne Id$.
+
+        %        \item Determine todos os elementos $g \in S_4$ tais que $g^4 = Id$ e $g \ne Id$.
+        %    \end{enumerate}
+
+    %    \vspace{.3cm}
+
+    %    \questao{} Seja $V = \{1, f, g, h\}$ o seguinte subconjunto do grupo $S_4$:
+    %    \begin{align*}
+        %        1 = \begin{pmatrix}
+            %            1 & 2 & 3 & 4\\
+            %            1 & 2 & 3 & 4
+            %        \end{pmatrix}; \quad f = \begin{pmatrix}
+            %            1 & 2 & 3 & 4\\
+            %            2 & 1 & 4 & 3
+            %        \end{pmatrix}\\
+        %        g = \begin{pmatrix}
+            %            1 & 2 & 3 & 4\\
+            %            3 & 4 & 1 & 2
+            %        \end{pmatrix}; \quad h = \begin{pmatrix}
+            %            1 & 2 & 3 & 4\\
+            %            4 & 3 & 2 & 1
+            %        \end{pmatrix}.
+        %    \end{align*}
+    %    \begin{enumerate}[label=({\alph*})]
+        %        \item Prove que $(V, \comp)$ é um grupo contendo 4 elementos, onde $\comp$ é a operação de $S_4$.
+
+        %        \item Prove que $(V, \comp)$ é um grupo abeliano.
+        %    \end{enumerate}
+
+    %    \vspace{.3cm}
+
+    %    \questao{} Considere o grupo $S_7$ e sejam
+    %    \begin{align*}
+        %        1 &= \begin{pmatrix}
+            %            1 & 2 & 3 & 4 & 5 & 6 & 7\\
+            %            1 & 2 & 3 & 4 & 5 & 6 & 7
+            %        \end{pmatrix}\\
+        %        \sigma &= \begin{pmatrix}
+            %                1 & 2 & 3 & 4 & 5 & 6 & 7\\
+            %                3 & 4 & 2 & 6 & 7 & 5 & 1
+            %            \end{pmatrix}.\\
+        %        \beta &= \begin{pmatrix}
+            %                1 & 2 & 3 & 4 & 5 & 6 & 7\\
+            %                3 & 1 & 2 & 6 & 7 & 4 & 5
+            %            \end{pmatrix}.
+        %    \end{align*}.
+    %    \begin{enumerate}[label=({\alph*})]
+        %        \item Encontre o menor $l \ge 0$ tal que $\sigma^l = 1$.
+
+        %        \item Encontre $\delta \in S_7$ tal que $\sigma\comp\delta = 1$.
+
+        %        \item Encontre o menor $k \ge 0$ tal que $\beta^k = 1$.
+
+        %        \item Encontre $\gamma \in S_7$ tal que $\gamma\comp\beta = 1$.
+        %    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Seja $(G,*)$ um grupo. Mostre que:
+    \begin{enumerate}[label={\alph*})]
+        \item O elemento neutro de $G$ é único.
+
+        \item Existe um único inverso para cada $x \in G$.
+
+        \item Para todo $x \in G$, $(x^{-1})^{-1} = x$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Seja $(G,*)$ um grupo com elemento neutro $e$. Para $x\in
+    G$, considere a notação $x^n=x*x*\cdots *x$ ($n$ vezes).
+    \begin{enumerate}[label=({\alph*})]
+        \item Prove que se
+        $x^2 = e$, para todo $x\in G$, então $G$ é um grupo abeliano.
+
+        \item Mostre que se $x\in G$ é tal que $x^2 = x$, então $x$ é o elemento neutro.
+    \end{enumerate}
+
+    \newpage
+
+    \questao{} Sejam $G$ um grupo e $x$, $y$, $z \in G$. Prove que:
+    \begin{enumerate}[label=({\alph*})]
+        \item Se $xy = xz$, então $y = z$.
+
+        \item Se $yx = zx$, então $y = z$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Na tabela abaixo encontra-se representada a operação $\cdot$ definida no conjunto $G = \{e, a , b, c, d, f\}$ de tal modo que $(G, \cdot)$ é um grupo:
+    \[
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \hline
+        $\cdot$ & e & a & b & c & d & f\\
+        \hline
+        e & e & a & b & c & d & f\\
+        \hline
+        a & a & b & e & f & c & d\\
+        \hline
+        b & b & e & a & d & f & c\\
+        \hline\
+        c & c & d & f & e & a & b\\
+        \hline
+        d & d & f & c & b & e & a\\
+        \hline
+        f & f & c & d & a & b & e\\
+        \hline
+    \end{tabular}
+    \]
+    \begin{enumerate}[label=({\alph*})]
+        \item Esse grupo é comutativo?
+
+        \item Determine $x \in G$ de maneira que
+        \[
+        d^{-1}\cdot f \cdot x \cdot b = (a \cdot b \cdot c)^{-1}.
+        \]
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Na tabela abaixo encontra-se representada a operação $\cdot$ definida no conjunto $G = \{e, a , b, c, d, f\}$ de tal modo que $(G, \cdot)$ é um grupo:
+    \[
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \hline
+        $\cdot$ & e & a & b & c & d & f\\
+        \hline
+        e & e & a & b & c & d & f\\
+        \hline
+        a & a & b & c & d & f & e\\
+        \hline
+        b & b & c & d & f & e & a\\
+        \hline\
+        c & c & d & f & e & a & b\\
+        \hline
+        d & d & f & e & a & b & c\\
+        \hline
+        f & f & e & a & b & c & d\\
+        \hline
+    \end{tabular}
+    \]
+    \begin{enumerate}[label=({\alph*})]
+        \item Esse grupo é comutativo?
+
+        \item Determine $x \in G$ de maneira que
+        \[
+        (c \cdot d)^{-1}\cdot x^{-1} \cdot b  \cdot a^{-1} = f^{-1}.
+        \]
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $(G, \cdot)$ um grupo e $a$, $b \in G$. Determine $x \in G$, em termos de $a$ e $b$, tal que
+    \[
+    x\cdot a \cdot x = b \cdot b \cdot a^{-1}.
+    \]
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $(G, \cdot)$ um grupo e $a$, $b \in G$. Suponha que $a \cdot b = e$, onde $e$ é o elemento neutro de $G$. Prove que $b \cdot a = e$.
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $(G, \cdot)$ um grupo e $a$, $b \in G$. Suponha que $a \cdot b \cdot a \cdot b = e$, onde $e$ é o elemento neutro de $G$. Prove que $b \cdot a \cdot b \cdot a= e$.
+
+    \vspace{.3cm}
+
+    \questao{} Verifique se são subgrupos:
+    \begin{enumerate}[label=({\alph*})]
+        \item $H = \{x \in \rac \mid x > 0\}$ de $(\rac^*,\cdot)$.
+
+        \item $H = \left\{\dfrac{1 + 2m}{1 + 2n} \mid m, n \in \z\right\}$ de $(\rac^*,\cdot)$.
+
+        \item $H = \{\cos\theta + i\sin\theta \mid \theta \in \rac\}$ de $(\complex^*,\cdot)$.
+
+        \item $H = \{0, \pm 2, \pm 4, \pm 6, \dots\}$ de $(\z,+)$.
+
+        \item $H = \{0, \pm 2, \pm 4, \pm 6, \dots\}$ do grupo $(\rac - \{1\},\star)$ onde $\star$ é definida como $x \star y = x + y - xy$.
+
+        \item $H = \{a + b\sqrt{2} \mid a, b \in \rac\}$ de $(\real,+)$.
+
+        \item $H = \{a + b\sqrt{2} \in \real^* \mid a, b \in \rac\}$ de $(\real^*,\cdot)$.
+
+        \item $H = \{a + b\sqrt[3]{2} \mid a, b \in \rac\}$ de $(\real,+)$.
+
+        \item $H = \{a + b\sqrt[3]{2} \in \real^* \mid a, b \in \rac\}$ de $(\real^*,\cdot)$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Determine todos os subgrupos do grupo aditivo $\z_4$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja
+    \[
+    GL_2(\real) = GL(2, \real) = \left\{A = \begin{bmatrix}x & y\\z & t\end{bmatrix} \mid x, y, z, t \in \real,\ \det(A) \ne 0 \right\}.
+    \]
+    \begin{enumerate}[label=({\alph*})]
+        \item Mostre que $GL_2(\real)$ com a operação de multiplicação de matrizes é um grupo. Esse grupo é abeliano?
+
+        \item Seja
+        \[
+        H = \left\{ \begin{pmatrix}
+            \cos a & \sin a\\ - \sin a & \cos a
+        \end{pmatrix} \mid a \in \real\right\}.
+        \]
+        Mostre que $H$ é um subgrupo de $GL_2(\real)$.
+
+        \item Seja
+        \[
+        K = \left\{ \begin{pmatrix}
+            a & b\\ -b & a
+        \end{pmatrix} \mid a, b \in \real \mbox{ e não nulos simultaneamente}\right\}.
+        \]
+        Mostre que $K$ é um subgrupo de $GL_2(\real)$.
+    \end{enumerate}
+
+    \questao{} Sejam $H$ e $K$ subgrupos de um grupo $G$ (com notação
+    multiplicativa).
+    \begin{enumerate}[label=({\alph*})]
+        \item Mostre que $H\cap K$ também é subgrupo de $G$.
+
+        \item Seja $g\in G$ um elemento fixado. Mostre que o conjunto
+        $g^{-1}Hg=\{ g^{-1}xg \mid x\in H \} $ é um subgrupo de $G$.
+
+        \item Prove que $H\cup K$ é subgrupo de $G$ se, e somente se,
+        $H\subseteq K$ ou $K\subseteq H$.
+
+        \item Demonstre que $HK=\{hk \mid h\in H, k\in K\}$ é subgrupo
+        de $G$ se, e somente se, $HK=KH$.
+
+        [\emph{Nota: $HK=KH$ \textbf{não} quer dizer que $hk=kh$,
+            para todo $h\in H, k\in K$; significa que $hk=k_1h_1 \in KH$ e $kh=h_2k_2 \in
+            HK$, para todo $h\in H, k\in K$.}]
+    \end{enumerate}
+
+    \vspace{.3cm}
+    \questao{} Seja $G$ um grupo com notação multiplicativa e $a$ um elemento de $G$. Prove que $N(a) = \{x \in G \mid ax = xa\}$ é um subgrupo de $G$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $G$ um grupo com notação multiplicativa. Considere o subconjunto $Z(G) = \{x \in G \mid xh = hx, \mbox{ para todo } h \in G\}$. Mostre que:
+    \begin{enumerate}[label=({\alph*})]
+        \item $Z(G)$ é um subgrupo de $G$.
+
+        \item $G$ é abeliano se, e somente se, $Z(G) = G$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Considere o conjunto $\z_{24}$. Defina
+    \[
+    G = \{ \overline{a} \in \z_{24}^* \mid \mbox{ existe } \overline{b} \in \z_{24} \mbox{ tal que } \overline{a}\overline{b} = \overline{1}\}.
+    \]
+    \begin{enumerate}[label={\alph*})]
+        \item  Mostre que $G$ é um grupo com a multiplicação de $\z_{24}$.
+
+        \item Encontre todos os subgrupos de $G$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Considere o conjunto $\z_{20}$. Defina
+    \[
+    G = \{ \overline{a} \in \z_{20}^* \mid \mbox{ existe } \overline{b} \in \z_{20} \mbox{ tal que } \overline{a}\overline{b} = \overline{1}\}.
+    \]
+    \begin{enumerate}[label={\alph*})]
+        \item  Mostre que $G$ é um grupo com a multiplicação de $\z_{20}$.
+
+        \item Encontre todos os subgrupos de $G$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{nucleo_homomorfismo} Verificar em cada caso se $f$ é um homomorfismo de grupos.
+    \begin{enumerate}[label=({\alph*})]
+        \item $f: \z \to \z$ dada por $f(x) = kx$, sendo $\z$ o grupo aditivo dos inteiros e $k$ um número inteiro fixo.
+
+        \item $f: \real^* \to \real^*$ dada por $f(x) = |x|$ sendo $\real^*$ o grupo multiplicativo dos reais.
+
+        \item $f: \real \to \real$ dada por $f(x) = x + 1$, onde $\real$ é o grupo aditivo dos reais.
+
+        \item $f: \z \to \z \times \z$ dada por $f(x) = (x, 0)$, onde $\z$ e $\z \times \z$ denotam grupos aditivos.
+
+        \item $f: \z \times \z \to \z$ dada por $f(x,y) = x$, onde $\z \times \z$ e $\z$ são grupos aditivos.
+
+        \item $f: \z \to \real^*_+$ dada por $f(x) = 2^x$, onde $\z$ é grupo aditivo e $\real^*_+$ é grupo multiplicativo.
+    \end{enumerate}
+
+    \newpage
+
+    \questao{} Das funções a seguir, algumas são homomorfismos do grupo multiplicativo $\complex^*$. \textbf{Descubra} quais e determine o núcleo de cada uma.
+    \begin{multicols}{2}
+        \begin{enumerate}[label=({\alph*})]
+            \item $f(z) = z^2$
+
+            \item $f(z) = |z|$, aqui $|z| = \sqrt{a^2 + b^2}$, se $z = a + bi$.
+
+            \item $f(z) = \dfrac{1}{z}$
+
+            \item $f(z) = -\dfrac{1}{z}$
+
+            \item $f(z) = -z$
+
+            \item $f(z) = z^3$
+
+            \item $f(z) = \overline{z}$ onde $\overline{z} = a - bi$, se $z = a + bi$.
+        \end{enumerate}
+    \end{multicols}
+
+    \vspace{.3cm}
+
+    \questao{} Considere o conjunto
+    \[
+    T = \left\{\begin{bmatrix}x & y\\0 & 1/x\end{bmatrix} \mid x \in \real^*,\ y \in \real\right\}.
+    \]
+    \begin{enumerate}[label=({\alph*})]
+        \item Mostre que $T$ é um grupo não comutativo com a operação de multiplicação de matrizes.
+
+        \item A função $f : \real \to T$ definida por
+        \[
+        f(t) = \begin{bmatrix}1 & t\\0 & 1\end{bmatrix}
+        \]
+        é um homomorfismo de grupos? Caso afirmativo, esse homomorfismo é injetor? É sobrejetor?
+
+        \item A função $g : \real \to T$ definida por
+        \[
+        g(t) = \begin{bmatrix}e^t & 0\\0 & e^{-t}\end{bmatrix}
+        \]
+        é um homomorfismo de grupos? Caso afirmativo, esse homomorfismo é injetor? É sobrejetor?
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Considere o conjunto
+    \[
+    SO(2) = \left\{\begin{bmatrix}x & -y\\y & x\end{bmatrix} \mid x, y \in \real,\ x^2 + y^2 = 1\right\}.
+    \]
+    \begin{enumerate}[label=({\alph*})]
+        \item Mostre que $SO(2)$ é um grupo abeliano com a operação de multiplicação de matrizes.
+
+        \item A função $f : \real \to SO(2)$ definida por
+        \[
+        f(t) = \begin{bmatrix}cos(t) & -\sin(t)\\\sin(t) & \cos(t)\end{bmatrix}
+        \]
+        é um homomorfismo de grupos? Caso afirmativo, esse homomorfismo é injetor? É sobrejetor?
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Considere os grupos $\real$ e $GL_2(\real)$ com as operações usuais.
+    \begin{enumerate}[label=({\alph*})]
+        \item A função $f : \real \to GL_2(\real)$ definida por
+        \[
+        f(x) = \begin{bmatrix}x & 0\\0 & 1\end{bmatrix}
+        \]
+        é um homomorfismo de grupos? Caso afirmativo, esse homomorfismo é injetor? É sobrejetor?
+
+        \item A função $g : \real \to GL_2(\real)$ definida por
+        \[
+        g(x) = \begin{bmatrix}1 & x\\0 & 1\end{bmatrix}
+        \]
+        é um homomorfismo de grupos? Caso afirmativo, esse homomorfismo é injetor? É sobrejetor?
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Considere o conjunto
+    \[
+    T = \left\{\begin{bmatrix}a & b\\0 & d\end{bmatrix} \mid a, b, d \in \real,\ ad \ne 0 \right\}.
+    \]
+    \begin{enumerate}[label=({\alph*})]
+        \item Mostre que $T$ é um subgrupo de $GL_2(\real)$.
+
+        \item Seja $\phi : T \to \real^*$ definida por
+        \[
+        \phi\left(\begin{bmatrix}a & b\\0 & d\end{bmatrix}\right) = a^2
+        \]
+        Mostre que $\phi$ é um homomorfismo de grupos. Esse homomorfismo é injetor? É sobrejetor?
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $(G, \cdot)$ e $(J, \cdot)$ grupos. Estabeleça quais das seguintes funções são homomorfismos e determine seus núcleos.
+
+    \begin{enumerate}[label=({\alph*})]
+        \item $f_1 : G \times J \to G$ dada por $f_1(x,y) = x$.
+
+        \item $f_2 : G \times J \to J$ dada por $f_2(x,y) = y$.
+
+        \item $f_3 : G  \to G \times J$ dada por $f_3(x) = (x, 1_J)$.
+
+        \item $f_4 : G \times J \to J \times G$ dada por $f_4(x,y) = (y, x)$.
+
+        \item $f_5 : J \to G \times J$ dada por $f_5(y) = (1_G, y)$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Determine o núcleo em cada homomorfismo do \textbf{Exercício \ref{nucleo_homomorfismo}}.
+
+    \vspace{.3cm}
+
+    \questao{} Determinar os homomorfismos injetores e os sobrejetores do \textbf{Exercício \ref{nucleo_homomorfismo}}.
+
+    \vspace{.3cm}
+
+    \questao{} Sejam $G$ e $J$ grupos multiplicativos, $f : G \to J$ um homomorfismo de grupos e $H$ um subgrupo de $J$. Mostre que $f^{-1}(H) = \{ x \in G \mid f(x) \in H\}$ é um subgrupo de $G$.
+
+    \vspace{.3cm}
+
+    \questao{} Prove que um grupo $G$ é abeliano se, e somente se, $f : G \to G$ definida por $f(x) = x^{-1}$ é um homomorfismo.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f: G\to H$ um homomorfismo de grupos e $K$ um subgrupo de $H$. Mostre que $\ker(f)\sub f^{-1}(K)$.
+
+    \vspace{.3cm}
+
+    \questao{} Se $\phi : G \to H$ é um homomorfismo de grupos e $G$ é abeliano, prove que $\phi(G)$ também é abeliano.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $f: \z \times \z \to \z \times \z$ definida por $f(x, y) = (x - y, 0)$. Provar que $f$ é um homomorfismo do grupo aditivo $\z \times \z$ em si pr\'oprio. Obter $\ker(f)$.
+
+    \vspace{.3cm}
+
+    \questao{} Mostre que $f : \z \to 2\z$ dada por $f(n) = 2n$, para todo $n \in \z$, é um isomorfismo do grupo aditivo $\z$ no grupo aditivo $2\z = \{0, \pm 2, \pm 4, \dots\}$.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $a \in \real_+^*$ e $a \ne 1$.
+    \begin{enumerate}[label=({\alph*})]
+        \item  Mostre que $G = \{a^n \mid n \in \z\}$ é um subgrupo de $(\real_+^*, \cdot)$.
+
+        \item Mostre que $f : \z \to G$ tal que $f(n) = a^n$ é um isomorfismo de $(\z, +)$ em $(G, \cdot)$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Mostre que $G = \{2^m3^n \mid m, n \in \z\}$ e $J = \{m + ni \mid m, n \in \z\}$ são subgrupos de $(\real_+^*, \cdot)$ e $(\complex, +)$, respectivamente, e que são isomorfos.
+
+    \vspace{.3cm}
+
+    \questao{} Seja $G = \real - \{-1\}$ e defina a operação binária em $G$ por
+    \[
+    a * b = a + b + ab.
+    \]
+    Prove que $G$ é um grupo com essa operação. Mostre também que $f : G \to \real^*$ dada por $f(x) = x + 1$ é um isomorfismo do grupo $G$ no grupo multiplicativo $\real^*$.
+
+    \vspace{.3cm}
 \end{document}
