@@ -53,6 +53,62 @@
         \item $f$ é um isomorfismo? Justifique.
     \end{enumerate}
 
+    \solucao
+    \begin{enumerate}[label=({\alph*})]
+        \item Sejam $x$, $y \in \z$. Temos
+        \begin{align*}
+            f(x + y) &= \begin{bmatrix}
+                \overline{x + y} & \overline{0}\\
+                \overline{0} & \overline{x + y}
+            \end{bmatrix} = \begin{bmatrix}
+            \overline{x} + \overline{y} & \overline{0}\\
+            \overline{0} & \overline{x} + \overline{y}
+            \end{bmatrix} = \begin{bmatrix}
+            \overline{x} & \overline{0}\\
+            \overline{0} & \overline{x}
+            \end{bmatrix} + \begin{bmatrix}
+            \overline{y} & \overline{0}\\
+            \overline{0} & \overline{y} = f(x) + f(y)
+            \end{bmatrix}\\
+            f(xy) &= \begin{bmatrix}
+                \overline{xy} & \overline{0}\\
+                \overline{0} & \overline{xy}
+            \end{bmatrix} =
+            \begin{bmatrix}
+                \overline{x} & \overline{0}\\
+                \overline{0} & \overline{x}
+            \end{bmatrix}\begin{bmatrix}
+                \overline{y} & \overline{0}\\
+                \overline{0} & \overline{y}
+            \end{bmatrix} = f(x)f(y)
+        \end{align*}
+        Logo $f$ é um homomorfismo de anéis.
+
+        \item Para que $f$ seja um isomorfismo é preciso que $f$ seja bijetora. Assim $f$ deve ser injetora e sobrejetora.
+
+        Para determinar se $f$ é injetora podemos encontrar o kernel de $f$:
+        \[
+            \ker(f) = \left\{x \in \z \mid f(x) = \begin{bmatrix}
+                \overline{0} & \overline{0}\\\overline{0} & \overline{0}
+            \end{bmatrix}\right\}.
+        \]
+        Agora
+        \begin{align*}
+            f(x) &= \begin{bmatrix}
+                \overline{0} & \overline{0}\\\overline{0} & \overline{0}
+            \end{bmatrix}\\
+            \begin{bmatrix}
+                \overline{x} & \overline{0}\\\overline{0} & \overline{x}
+            \end{bmatrix} &= \begin{bmatrix}
+            \overline{0} & \overline{0}\\\overline{0} & \overline{0}
+            \end{bmatrix}
+        \end{align*}
+        Assim devemos ter $\overline{x} = \overline{0}$ e com isso
+        \[
+            \ker(f) = \{x \in \z \mid \overline{x} = \overline{0}\} = \{0, \pm 3, \pm 6, \dots\}
+        \]
+        e então $f$ não é injetora. Portanto $f$ não é um isomorfismo.
+    \end{enumerate}
     \vspace{.4cm}
 
     \questao Sejam os anéis $A = \{ a + b\sqrt{-2} \mid a,\ b \in \z\}$ e $B = M_2(\z_7)$.
