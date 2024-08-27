@@ -125,5 +125,59 @@
 
         \item $g$ é um isomorfismo? Justifique.
     \end{enumerate}
+
+    \solucao
+    \begin{enumerate}[label=({\alph*})]
+        \item Sejam $a + b\sqrt{-2}$, $c + d\sqrt{-2} \in A$. Temos:
+        \begin{align*}
+            g((a + b\sqrt{-2}) + (c + d\sqrt{-2})) &= g((a + c) + (b + d)\sqrt{-2}) = \begin{pmatrix}
+                \overline{a + c} & \overline{5}\overline{(b + d)}\\\overline{b + d} & \overline{a + c}
+            \end{pmatrix}\\ &= \begin{pmatrix}
+            \overline{a} & \overline{5}\overline{b}\\\overline{b} & \overline{a}
+            \end{pmatrix} + \begin{pmatrix}
+            \overline{c} & \overline{5}\overline{d}\\\overline{d} & \overline{c}
+            \end{pmatrix} \\ &= g(a + b\sqrt{-2}) + g(c + d\sqrt{-2})\\
+            g((a + b\sqrt{-2})(c + d\sqrt{-2})) &= g((ac - 2bd) + (ad + bc)\sqrt{-2}) = \begin{pmatrix}
+                \overline{ac - 2bd} & \overline{5}(\overline{ad + bc})\\\overline{ad + bc} & \overline{ac - 2bd}
+            \end{pmatrix} \\ &= \begin{pmatrix}
+            \overline{ac} + \overline{-2}\overline{bd} & \overline{5}\overline{ad} + \overline{5}\overline{bc}\\\overline{ad} + \overline{bc} & \overline{ac} + \overline{-2}\overline{bd}
+            \end{pmatrix}
+        \end{align*}
+        Agora, observe que $5 \equiv -2 \pmod 7$, assim $\overline{5} = \overline{-2}$ e daí podemos escrever
+        \begin{align*}
+            g((a + b\sqrt{-2})(c + d\sqrt{-2})) &= \begin{pmatrix}
+                \overline{ac} + \overline{-2}\overline{bd} & \overline{5}\overline{ad} + \overline{5}\overline{cd}\\\overline{ad} + \overline{bc} & \overline{ac} + \overline{-2}\overline{bd}
+            \end{pmatrix} = \begin{pmatrix}
+            \overline{ac} + \overline{5}\overline{bd} & \overline{5}\overline{ad} + \overline{5}\overline{bc}\\\overline{ad} + \overline{bc} & \overline{ac} + \overline{5}\overline{bd}
+            \end{pmatrix} \\ &= \begin{pmatrix}
+            \overline{a} & \overline{5}\overline{b}\\\overline{b} & \overline{a}
+            \end{pmatrix} \begin{pmatrix}
+            \overline{c} & \overline{5}\overline{d}\\\overline{d} & \overline{c}
+            \end{pmatrix} \\ &= g(a + b\sqrt{-2})g(c + d\sqrt{-2})
+        \end{align*}
+        e portanto $g$ é um homomorfismo de anéis.
+
+         \item Para que $g$ seja um isomorfismo é preciso que $g$ seja bijetora. Assim $g$ deve ser injetora e sobrejetora.
+
+        Para determinar se $g$ é injetora podemos encontrar o kernel de $g$:
+        \[
+            \ker(g) = \left\{a + b\sqrt{-2} \in A \mid g(a + b\sqrt{-2}) = \begin{pmatrix}
+            \overline{0} & \overline{0}\\\overline{0} & \overline{0}
+        \end{pmatrix}\right\}.
+        \]
+        Agora
+        \begin{align*}
+            g(x) &= \begin{bmatrix}\overline{0} & \overline{0}\\\overline{0} & \overline{0}\end{bmatrix}\\
+            \begin{bmatrix}\overline{a} & \overline{5}\overline{b}\\\overline{b} & \overline{a}
+            \end{bmatrix} &= \begin{bmatrix}
+                \overline{0} & \overline{0}\\\overline{0} & \overline{0}
+            \end{bmatrix}
+        \end{align*}
+        Assim devemos ter $\overline{a} = \overline{b} = \overline{0}$ e com isso
+        \[
+            \ker(g) = \{a + b\sqrt{-2} \in A \mid \overline{a} = \overline{b} = \overline{0}\} = \{a,\ b \in \z \mid a = 7k,\ b = 7l, k,l \in \z\}
+        \]
+        e então $g$ não é injetora. Portanto $g$ não é um isomorfismo.
+    \end{enumerate}
     \vspace{1cm}
 \end{document}
