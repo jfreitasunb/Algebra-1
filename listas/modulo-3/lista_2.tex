@@ -22,6 +22,130 @@
     \textbf{Observação: }\textit{Nos casos em que não forem especificadas as operações do grupo, considere as operações usuais.}
 
     \vspace{.6cm}
+    \questao{} Verifique se os seguintes conjuntos com a operação dada é ou não um grupo. Em caso afirmativo, o grupo é comutativo?
+    \begin{enumerate}[label=({\alph*})]
+        \item $(\z, \star)$, onde $x \star y = x + xy$, para $x$, $y \in \z$;
+
+        \item $(\z, \star)$, onde $x \star y = x + y + xy$, para $x$, $y \in \z$;
+
+        \item $(\z, \star)$, onde $x \star y = xy + 2x$, para $x$, $y \in \z$;
+
+        \item $(\rac, \star)$, onde $x \star y = x + xy$, para $x$, $y \in \rac$;
+
+        \item $(\real^*, \star)$, onde $x \star y = \dfrac{x}{y}$, para $x$, $y \in \real$;
+
+        \item $(\real_+, \star)$, onde $x \star y = \sqrt{x^2 + y^2}$, para $x$, $y \in \real_+$;
+
+        \item $(\real, \star)$, onde $x \star y = \sqrt[3]{x^3 + y^3}$, para $x$, $y \in \real$.
+
+        \item $(G, \cdot)$, onde $G = \{x \in \rac \mid x > 0\}$ e $\cdot$ é a multiplicação de números racionais.
+
+        \item $(G, \cdot)$, onde $G = \left\{\dfrac{1 + 2m}{1 + 2n} \mid m, n \in \z\right\}$ e $\cdot$ é a multiplicação de números racionais.
+
+        \item $(G, +)$, onde $G = \{0, \pm 2, \pm 4, \pm 6, \dots\}$ e $+$ é a soma de números inteiros.
+
+        \item $(G, \star)$, onde $G = \{0, \pm 2, \pm 4, \pm 6, \dots\}$ e $\star$ é definida como $x \star y = x + y - xy$.
+
+        \item $(G, +)$, onde $G = \{a + b\sqrt{2} \mid a, b \in \rac\}$ e $+$ é a soma de números reais.
+
+        \item $(G, \cdot)$, onde $G = \{a + b\sqrt{2} \in \real^* \mid a, b \in \rac\}$ e $\cdot$ é a multiplicação de números reais.
+
+        \item $(G, +)$, onde $G = \{a + b\sqrt[3]{2} \mid a, b \in \rac\}$ e $+$ é a soma de números reais.
+
+        \item $(G, \cdot)$, onde $G = \{a + b\sqrt[3]{2} \in \real^* \mid a, b \in \rac\}$ e $\cdot$ é a multiplicação de números reais..
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Seja
+    \[
+    \complex = \{a + bi \mid a, b \in \real\}
+    \]
+    e $i^2 = -1$. Mostre que:
+    \begin{enumerate}[label=({\alph*})]
+        \item $(\complex, +)$ é um grupo abeliano, onde
+        \[
+        (a + bi) + (c + di) = (a + c) + (b + d)i
+        \]
+        para $a + bi$, $c + di \in \complex$.
+        \item Para $\complex^* = \complex - \{0\}$, $(\complex^*, \cdot)$ é um grupo abeliano, onde
+        \[
+        (a + bi)\cdot (c + di) = (ac - bd) + (ad + bc)i
+        \]
+        para $a + bi$, $c + di \in \complex$.
+    \end{enumerate}
+
+    \vspace{.3cm}
+
+    \questao{} Verifique se o conjunto $\rac_{>0}$ dos números racionais estritamente positivos com a
+    operação dada é ou não um grupo. Justifique sua
+    resposta.
+    \begin{multicols}{2}
+        \begin{enumerate}[label=({\alph*})]
+            \item $(\rac_{>0},\cdot)$
+
+            \item $(\rac_{>0}, +)$
+        \end{enumerate}
+    \end{multicols}
+
+    \vspace{.3cm}
+
+    \questao{} Seja $z  = a + bi \in \mathbb{C}$, onde $a$, $b \in \real$. Definimos $|z| = \sqrt{a^2 + b^2}$. Prove que $G=\{z \in \mathbb{C} \mid |z| = 1\}$ é um grupo
+    abeliano com a operação de multiplicação de números complexos.
+
+    \vspace{.3cm}
+
+    \questao{} Mostre que o conjunto $\rac[\sqrt{2}]^*=\{ a + b\sqrt{2} \in
+    \mathbb{R}^* \mid  a, b \in \rac \}$ é um grupo multiplicativo abeliano.
+
+    \vspace{.3cm}
+
+    \questao{} No conjunto $\z \times \z$ considere a operação de soma definida por
+    \[
+    (x, y) + (z, t) = (x + z, y + t)
+    \]
+    para $(x, y)$, $(z, t) \in \z \times \z$. Mostre que $(\z\times\z, +)$ é um grupo abeliano.
+
+    \vspace{.3cm}
+
+    \questao{} Considere o seguinte conjunto
+    \[
+    G = \left\{\begin{pmatrix} 1 & a & b\\ 0 & 1 & c \\ 0 & 0 & 1\end{pmatrix} \mid a, b, c \in \real\right\}.
+    \]
+    Mostre que $(G, \cdot)$, onde $\cdot$ é a multiplicação de matrizes, é um grupo. Esse grupo é comutativo?
+
+    \vspace{.3cm}
+
+    \questao{} Seja $p \ge 2$, um número primo. Mostre que o conjunto
+    \[
+    G = \left\{
+    \begin{pmatrix}
+        \overline{1} & \overline{a} & -\overline{a} & \overline{b}\\
+        \overline{0} & \overline{1} & \overline{0} & \overline{b}\\
+        \overline{0} & \overline{0} & \overline{1} & \overline{b}\\
+        \overline{0} & \overline{0} & \overline{0} & \overline{1}\\
+    \end{pmatrix}
+    \mid \overline{a}, \overline{b} \in \z_p
+    \right\}
+    \]
+    é um grupo com a multiplicação de matrizes. Esse grupo é comutativo?
+    \vspace{.3cm}
+
+    \questao{} Quais dos seguintes subconjuntos $G$ de $\z_{13}$ são grupos
+    com a operação de multiplicação?
+    \begin{multicols}{2}
+        \begin{enumerate}[label=({\alph*})]
+            \item $G=\{\overline{1},\overline{12}\}$;
+
+            \item $G=\{\overline{1},\overline{5},\overline{8},\overline{12}\}$;
+
+            \item $G=\{\overline{1},\overline{2},\overline{3},\overline{4}, \overline{5},\overline{6},\overline{7}, \overline{8},\overline{9},\overline{10},\overline{11},\overline{12}\}$
+
+            \item $G=\{\overline{1}, \overline{3},\overline{5},\overline{7},\overline{9},\overline{11}\}$.
+        \end{enumerate}
+    \end{multicols}
+
+    \vspace{.3cm}
 
     \questao{} Seja $(G,*)$ um grupo. Mostre que:
     \begin{enumerate}[label={\alph*})]
