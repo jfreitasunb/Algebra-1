@@ -419,7 +419,7 @@
 
     \begin{frame}
         \begin{definicao}
-            Seja $(G,*)$ um grupo. \pause Se $G$ é um conjunto com uma quantidade finita de elementos, \pause dizemos que $G$ é um \textbf{grupo finito}. \pause Denotamos por $|G|$ \pause o número de elementos de $G$ \pause e que será chamado de \textbf{ordem} de $G$ \pause ou \textbf{cardinalidade} de $G$. \pause Quando o conjunto $G$ não é finito, \pause dizemos que $G$ é um \textbf{grupo infinito}.\pause
+            Seja $(G,*)$ um grupo. \pause Se $G$ é um conjunto com uma quantidade finita de elementos, \pause dizemos que $G$ é um \textbf{grupo finito}. \pause Denotamos por $|G|$ \pause, ou por $g(G)$\pause, o número de elementos de $G$ \pause e que será chamado de \textbf{ordem} de $G$ \pause ou \textbf{cardinalidade} de $G$. \pause Quando o conjunto $G$ não é finito, \pause dizemos que $G$ é um \textbf{grupo infinito}.\pause
         \end{definicao}
 
         \begin{exemplos}
@@ -666,812 +666,816 @@
         \end{proposicao}
     \end{frame}
 
+%    \begin{frame}
+%        Seja $(G, *)$ um grupo. \pause Para simplificar a notação \pause vamos adotar uma notação multiplicativa \pause e escrever $(G, *) = \pause (G, \cdot)$. \pause Assim, dados $x$, $y \in G$ vamos denotar\pause
+%        \[
+%            x * y = \pause x \cdot y = \pause xy.\pause
+%        \]
+%
+%        Nesse caso vamos dizer simplesmente que $G$ é um grupo.
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{proposicao}
+%            Seja $G$ um grupo. \pause Dado $H \subset G$ um subgrupo \pause defina \pause
+%            \[
+%                x \sim y \pause \mbox{ se, e somente se, } \pause x^{-1}y \in H \pause
+%            \]
+%            para todos $x$, $y \in G$. \pause
+%            \begin{enumerate}[label={\roman*})]
+%                \item A relação $\sim$ \pause sobre $G$ definida acima é uma relação de equivalência. \pause
+%
+%                \item Se $a \in G$, \pause então a classe de equivalência determinada por $a$ \pause é o conjunto \pause
+%                \[
+%                    aH = \pause \{ah \pause \mid h \in H\}.
+%                \]
+%            \end{enumerate}
+%        \end{proposicao}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{proposicao}
+%            Seja $H$ um subgrupo de um grupo $G$. \pause Então duas classes laterais quaisquer \pause módulo $H$ \pause são subconjuntos de $G$ que possuem a mesma cardinalidade, \pause isto é, a mesma quantidade de elementos. \pause
+%        \end{proposicao}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label={\roman*})]
+%                \item No grupo multiplicativo $G = \{1, -1, i, -i\}$, \pause onde $i^2 = -1$. \pause Considere o conjunto $H = \{1, -1\}$. \pause Então $H$ é um subgrupo de $G$ \pause e as classes laterais serão:
+%
+%                \seti
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label={\roman*})]
+%                \conti
+%                \item Considere o grupo multiplicativo $\real^*$ \pause e $H = \{ x \in \real^* \mid x > 0\} \pause \subset \real^*$. \pause Então $H$ é subgrupo de $\real^*$ \pause e as classes laterais serão:
+%                \seti
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label={\roman*})]
+%                \conti
+%                \item Considere agora o grupo simétrico $G = S_3$. \pause Denote por \pause
+%                \[
+%                    a = \begin{pmatrix}
+%                        1 & 2 & 3\\2 & 3 & 1
+%                    \end{pmatrix}, \pause \quad
+%                    b = \begin{pmatrix}
+%                        1 & 2 & 3\\1 & 3 & 2
+%                    \end{pmatrix}. \pause
+%                \]
+%                Fica como exercício verificar que $\{e, a, a^2 , b, ba, ba^2\} = \pause S_3$. \pause Aqui $e$ é a função identidade, \pause $a^2 = a \circ a$, \pause $ba = b \circ a$ e \pause $ba^2 = b\circ(a\circ a)$. \pause Seja $H = \{e, a , a^2\}$. \pause Então $H$ é subgrupo de $S_3$ \pause e as classes laterais serão:
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        Seja $(G, *)$ um grupo. \pause
+%
+%        Caso a operação $*$ seja do tipo multiplicativa, vamos escrever $(G, *) = \pause (G, \cdot)$. \pause Assim, dados $x$, $y \in G$ vamos denotar\pause
+%        \[
+%            x * y = \pause x \cdot y = \pause xy.
+%        \]
+%
+%        Caso a operação $*$ seja do tipo aditiva, vamos escrever $(G, *) = \pause (G, +)$. \pause Assim, dados $x$, $y \in G$ vamos denotar\pause
+%        \[
+%            x * y = \pause x + y.
+%        \]
+%
+%        Com a notação multiplicativa \pause o inverso de um elemento $x \in G$ \pause será denotado por $x^{-1}$ \pause e no caso da notação aditiva \pause o oposto de $x \in G$ \pause será denotado por $-x$.
+%    \end{frame}
+%
+%    \begin{frame}
+%        Seja $G$ um grupo multiplicativo \pause e denote por $e$ o elemento neutro de $G$. \pause Se $x \in G$ \pause e $m \in \z$, \pause a \textbf{potência $m$-ésima} de $x$, \pause ou \textbf{potência de $x$ de expoente $m$}, \pause é o elemento de $G$ denotado por \pause
+%        \[
+%            x^m \pause
+%        \]
+%        e definido por: \pause
+%        \[
+%            x^m = \pause \begin{cases}
+%                    e, & \mbox{se m = 0}, \pause\\
+%                    x^{m-1}x, \pause & \mbox{ se } m \ge 1, \pause\\
+%                    (x^{-m})^{-1}, \pause & \mbox{ se } m < 0.
+%                   \end{cases}
+%        \]
+%
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label={\roman*})]
+%                \item No grupo multiplicativo $GL_2(\real)$ \pause seja \pause
+%                \[
+%                    A = \begin{pmatrix}
+%                        1 & 1\\2 & 3
+%                    \end{pmatrix}. \pause
+%                \]
+%                Então:
+%                \seti
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label={\roman*})]
+%                \conti
+%                \item No grupo multiplicativo $\z_5^*$ \pause seja $a = \overline{2}$. \pause Então:
+%                \seti
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label={\roman*})]
+%                \conti
+%                \item No grupo multiplicativo $S_3$ \pause seja
+%                \[
+%                    a = \begin{pmatrix}
+%                        1 & 2 & 3\\ 2 & 3 & 1
+%                    \end{pmatrix}.\pause
+%                \]
+%                Então:
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{proposicao}
+%            Seja $G$ um grupo multiplicativo. \pause Se $m$ e $n$ são números inteiros \pause e $x \in G$, \pause então \pause
+%            \begin{enumerate}[label={\roman*})]
+%                \item $x^mx^n = \pause x^{m + n}$ \pause
+%
+%                \item $x^{-m} = \pause (x^m)^{-1}$ \pause
+%
+%                \item $(x^m)^n = \pause x^{mn}$ \pause
+%
+%                \item $x^mx^n = \pause x^nx^m$
+%            \end{enumerate}
+%        \end{proposicao}
+%    \end{frame}
+%
+%    \begin{frame}
+%        Seja $G$ um grupo aditivo \pause e denote por $e$ o elemento neutro de $G$. \pause Se $x \in G$ \pause e $m \in \z$, \pause o \textbf{múltiplo $m$-ésimo} de $x$ \pause é o elemento de $G$ denotado por \pause
+%        \[
+%            m \cdot x \pause
+%        \]
+%        e definido por:
+%        \[
+%            m \cdot x = \pause \begin{cases}
+%                    e, & \mbox{se m = 0}, \pause\\
+%                    (m - 1)\cdot x + x, \pause & \mbox{ se } m \ge 1, \pause\\
+%                    -[(-m) \cdot x], \pause & \mbox{ se } m < 0.
+%                   \end{cases}
+%        \]
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{proposicao}
+%            Seja $G$ um grupo aditivo. \pause Se $m$ e $n$ são números inteiros \pause e $x \in G$, então \pause
+%            \begin{enumerate}[label={\roman*})]
+%                \item $m \cdot x + n \cdot x = \pause (m + n) \cdot x$ \pause
+%
+%                \item $(-m) \cdot x = \pause -(m \cdot x)$ \pause
+%
+%                \item $n\cdot (m \cdot x) = \pause (nm)\cdot x$
+%            \end{enumerate}
+%        \end{proposicao}
+%    \end{frame}
+%
+%    \begin{frame}
+%        Seja $G$ um grupo multiplicativo \pause e $x \in G$. \pause Denote por $[x]$ \pause o seguinte conjunto \pause
+%        \[
+%            [x] = \pause \{x^m \pause \mid m \in \z\} \pause \subset G.\pause
+%        \]
+%
+%        \begin{proposicao}
+%            Seja $G$ um grupo multiplicativo \pause e $x \in G$. \pause
+%            \begin{enumerate}[label={\roman*})]
+%                \item O subconjunto $[x]$ \pause é um subgrupo de $G$.\pause
+%
+%                \item Se $H$ é um subgrupo de $G$ \pause tal que $x \in H$, \pause então $[x] \subset H$.
+%            \end{enumerate}
+%        \end{proposicao}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{definicao}
+%            Um grupo multiplicativo $G$ \pause será chamado de \textbf{grupo cíclico} \pause se, para algum $x \in G$, \pause vale \pause
+%            \[
+%                G = [x]. \pause
+%            \]
+%            Nessas condições, o elemento $x$  \pause é chamado de \textbf{gerador} do grupo $G$.
+%        \end{definicao}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label={\roman*})]
+%                \item No grupo multiplicativo $\complex^*$, \pause encontre o subgrupo gerado por $i$.
+%                \seti
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label={\roman*})]
+%                \conti
+%                \item No grupo $S_3$, \pause encontre o subgrupo gerado por
+%                \[
+%                    f = \begin{pmatrix}
+%                        1 & 2 & 3\\
+%                        2 & 3 & 1
+%                    \end{pmatrix}.
+%                \]
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{proposicao}
+%            Todo subgrupo de um grupo cíclico é também cíclico.
+%        \end{proposicao}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{definicao}
+%            Seja $G$ um grupo com elemento neutro $e$. \pause Dado $x \in G$ \pause se existir um inteiro $h > 0$ \pause tal que \pause
+%            \begin{enumerate}[label={\roman*})]
+%                \item $x^h = e$ \pause
+%                \item $x^r \ne e$ \pause qualquer que seja o inteiro $r$ \pause tal que $0 < r < h$\pause
+%            \end{enumerate}
+%            diremos que a \textbf{ordem} \pause ou \textbf{período} \pause de $x$ é $h$. \pause Nesse caso escreveremos $|x| = \pause o(x) = h$. \pause
+%
+%            Se para qualquer inteiro \pause $r \ne 0$, \pause $x^r \ne e$, \pause diremos que a \textbf{ordem} de $x$ é \textbf{zero}.
+%        \end{definicao}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label={\roman*})]
+%                \item No grupo multiplicativo $\complex^*$ temos:
+%                \seti
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label={\roman*})]
+%                \conti
+%                \item Em $S_3$ temos:
+%                \seti
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label={\roman*})]
+%                \conti
+%
+%                \item Em $\z_5$ temos:
+%                \seti
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label={\roman*})]
+%                \conti
+%
+%                \item Em $\z$ \pause o único elemento de ordem diferente de zero \pause é o elemento neutro.
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{proposicao}
+%            Seja $x$ um elemento de ordem $h > 0$ \pause de um grupo $G$. \pause Então $x^m = e$ \pause se, e somente se, $h \mid m$.
+%        \end{proposicao}
+%    \end{frame}
+%
+%    \begin{frame}
+%        Considere o grupo multiplicativo $G = \{1, -1\}$ \pause e o grupo $S_2$ das permutações sobre o conjunto $\{1,2\}$. \pause Aqui
+%        \[
+%            S_2 = \left\{id = \begin{pmatrix}
+%                1 & 2\\1 & 2
+%            \end{pmatrix}; \pause f = \begin{pmatrix}
+%                1 & 2\\2 & 1
+%            \end{pmatrix}\right\}.
+%        \]
+%    \end{frame}
+%
+%    \begin{frame}
+%        Temos \pause
+%        \begin{table}
+%            \begin{minipage}{.5\linewidth}
+%                \caption*{$G$}
+%                \centering
+%                \begin{tabular}{|c|c|c|}
+%                    \hline
+%                    $\cdot$ & 1 & -1\\
+%                    \hline
+%                    1 & 1 & -1\\
+%                    \hline
+%                    -1 & -1 & 1\\
+%                    \hline
+%                \end{tabular}
+%            \end{minipage}%
+%            \pause
+%            \begin{minipage}{.5\linewidth}
+%                \caption*{$S_2$}
+%                \centering
+%                \begin{tabular}{|c|c|c|}
+%                    \hline
+%                    $\circ$ & $id$ & $f$\\
+%                    \hline
+%                    $id$ & $id$ & $f$\\
+%                    \hline
+%                    $f$ & $f$ & $id$\\
+%                    \hline
+%                \end{tabular}
+%            \end{minipage}\pause
+%        \end{table}
+%
+%        \vspace{.4cm}
+%
+%        Defina $\sigma : G \to S_2$ por \pause
+%        \begin{center}
+%            \begin{tabular}{c}
+%                $\sigma(1) = id$ \pause\\
+%                \vspace{.3cm}\\
+%                $\sigma(-1) = f$.
+%            \end{tabular}
+%        \end{center}
+%    \end{frame}
+%
+%    \begin{frame}
+%        Da definição de $\sigma$ \pause é fácil ver que essa função é bijetora. \pause Além disso, \pause
+%        \begin{center}
+%            \begin{tabular}{c}
+%                $\sigma(1) \circ \sigma(1) \pause = id \pause \circ id \pause = id \pause = \sigma(1) \pause = \sigma(1 \cdot 1)$\pause\\
+%                \\
+%                $\sigma(1) \circ \sigma(-1) \pause = id \pause \circ f \pause = f \pause = \sigma(-1) \pause = \sigma(1 \cdot -1)$ \pause\\
+%                \\
+%                $\sigma(-1) \circ \sigma(1) \pause = f \pause \circ id \pause = f \pause = \sigma(-1) \pause = \sigma(-1 \cdot 1)$ \pause\\
+%                \\
+%                $\sigma(-1) \circ \sigma(-1) \pause = f \pause \circ f \pause = id \pause = \sigma(1) \pause = \sigma(-1 \cdot -1)$ \pause\\
+%            \end{tabular}
+%        \end{center}
+%        ou seja, $\sigma(x\cdot y) = \pause \sigma(x) \circ \sigma(y)$ \pause para todos $x$, $y \in G$. \pause Assim função $\sigma$ é um homomorfismo de $G$ em $S_2$. \pause
+%
+%        \vspace{.3cm}
+%
+%        Como $\sigma$ também é bijetora, \pause então $\sigma$ é um isomorfismo \pause de $G$ em $S_2$. \pause Nesse caso, dizemos que $G$ e $S_2$ são grupos isomorfos \pause e denotamos isso escrevendo $G \cong S_2$.
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{definicao}
+%            Sejam $(G, *)$ e $(H, \triangle)$ grupos. \pause Se existe $f : G \to H$ um isomorfismo, \pause diremos que $G$ e $H$ são \textbf{grupos isomorfos} \pause e denotaremos esse fato escrevendo $G \cong H$.
+%        \end{definicao}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{proposicao}
+%            Sejam $G$ e $H$ grupos multiplicativos. \pause Se $f : G \to H$ é um isomorfismos de grupos, então \pause $G$ é comutativo se, e somente se, $H$ é comutativo.
+%        \end{proposicao}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \vspace{.3cm}
+%            \begin{enumerate}
+%                \item[1)] Os grupos $\z_6$ e $S_3$ \pause não são isomorfos, \pause pois $\z_6$ é comutativo \pause e $S_3$ não é comutativo.\pause
+%
+%                \vspace{.3cm}
+%
+%                \item[2)] Considere o grupo $S_6$ das permutações em $\{1, 2, \cdots, 6\}$. \pause Tome
+%                \[
+%                    f = \begin{pmatrix}
+%                        1 & 2 & 3 & 4 & 5 & 6\\
+%                        2 & 3 & 4 & 5 & 6 & 1
+%                    \end{pmatrix} \in S_6. \pause
+%                \]
+%                Seja $H = [f]$. \pause Então $H \cong \z_6$, \pause onde $\phi : H \to \z_6$ dada por $\phi(f^k) = \overline{k}$ \pause é um isomorfismo de grupos.
+%
+%                \vspace{.3cm}
+%
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{proposicao}
+%            Sejam $G$ e $H$ grupos multiplicativos. \pause Seja $f : G \to H$ é um isomorfismos de grupos. \pause Então $x \in G$ \pause é tal que $o(x) = h$ \pause se, e somente se, $o(f(x)) = h$.
+%        \end{proposicao}
+%    \end{frame}
+%
+%    \begin{frame}
+%        Seja $G = [a]$ um grupo cíclico. \pause Dois casos podem ocorrer: \pause
+%
+%        \textbf{Caso 1:} $a^r \ne a^s$ \pause sempre que $r \ne s$.
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{proposicao}
+%            Se $G = [a]$ é um grupo cíclico que cumpre a condição do \textbf{Caso 1}, \pause então a função $f : \z \to G$ por $f(r) = a^r$ \pause é um isomorfismo de grupos. \pause Ou seja, $G \cong \z$.
+%        \end{proposicao}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \textbf{Caso 2:} $a^r = a^s$ \pause para algum par de inteiros distintos, $r$ e $s$.
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{proposicao}
+%            Seja $G = [a]$ um grupo cíclico que cumpre a condição do \textbf{Caso 2}. \pause Então existe um inteiro $m > 0$ tal que \pause
+%            \begin{enumerate}
+%                \item[i)] $a^m = e$ \pause
+%
+%                \item[ii)] $a^r \ne e$, sempre que $0 < r < m$. \pause
+%            \end{enumerate}
+%            Nesse caso, a ordem do grupo $G$ é $m$ \pause e
+%            \[
+%                G = [a] = \{e, a, a^2, \cdots, a^{m - 1}\}.
+%            \]
+%        \end{proposicao}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{corolario}
+%            Seja $G = [a]$ um grupo cíclico de ordem finita igual a $m$. \pause Então a função $f : \z_m \to G$ \pause dada por $f(\overline{x}) = a^x$ \pause é um isomorfismo de grupos.
+%        \end{corolario}
+%    \end{frame}
+%
+%    \begin{frame}
+%        Sejam $(G, \cdot)$ um grupo \pause e $A$ e $B$ subconjuntos de $G$. \pause Vamos indicar por \pause
+%        \[
+%            AB \pause
+%        \]
+%        e chamaremos de \textbf{produto} de $A$ por $B$ \pause o seguinte subconjunto de $G$: \pause
+%        \begin{center}
+%            \begin{tabular}{l}
+%                $AB = \emptyset$, \pause se $A = \emptyset$ ou $B = \emptyset$ \pause\\
+%                \\
+%                $AB = \{xy \pause \mid x \in A \pause \mbox{ e } y \in B \pause\}$, se  $A \ne \emptyset$ e $B \ne \emptyset$. \pause
+%            \end{tabular}
+%        \end{center}
+%
+%        \vspace{.3cm}
+%
+%        Assim o \textbf{produto} de $A$ por $B$ \pause é uma operação sobre o subconjunto das partes de $G$, \pause $\mathcal{P}(G)$, chamada de \textbf{multiplicação de subconjuntos} de $G$. \pause
+%
+%        \vspace{.3cm}
+%
+%        Como $G$ é associativo, \pause então a \textbf{multiplicação de subconjuntos} também será associativa. \pause Além disso, caso o grupo $G$ seja comutativo, \pause então \textbf{multiplicação de subconjuntos} também será comutativa.
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label=({\arabic*})]
+%                \item Seja $G = \{e, a, b, c\}$ \pause o grupo tal que \pause
+%                \begin{table}[h]
+%                    \begin{tabular}{|c|c|c|c|c|}
+%                        \hline
+%                        $\cdot$ & e & a & b & c\\
+%                        \hline
+%                        e & e & a & b & c\\
+%                        \hline
+%                        a & a & e & c & b\\
+%                        \hline
+%                        b & b & c & e & a\\
+%                        \hline
+%                        c & c & b & a & e\\
+%                        \hline
+%                    \end{tabular}.
+%                \end{table}
+%                Esse grupo é chamada de \textbf{grupo de Klein}. \pause
+%
+%                \vspace{.3cm}
+%
+%                Se $A = \{e, a\}$ \pause e $B = \{b, c\}$, \pause então:
+%                \seti
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label=({\arabic*})]
+%                \conti
+%                \item Considere o grupo multiplicativo dos números reais. \pause Se
+%                \begin{center}
+%                    $A = \{x \in \real^* \mid x > 0\}$ \pause\\
+%                    $B = \{x \in \real^* \mid x < 0\}$ \pause
+%                \end{center}
+%                então:
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{definicao}
+%            Um subgrupo $N$ \pause de um grupo $G$ \pause é chamado de \textbf{subgrupo normal} \pause (ou \textbf{invariante}) \pause se, para todo $x \in G$, \pause vale
+%            \[
+%                xN \pause = Nx. \pause
+%            \]
+%            Denotaremos esse fato escrevendo $H \unlhd G$.
+%        \end{definicao}
+%    \end{frame}
+
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label=({\arabic*})]
+%                \item Seja $G = S_3$. \pause Já vimos que se tomamos
+%                \[
+%                    Id = \begin{pmatrix}
+%                        1 & 2 & 3\\
+%                        1 & 2 & 3
+%                    \end{pmatrix}, \pause \quad
+%                    f = \begin{pmatrix}
+%                        1 & 2 & 3\\
+%                        2 & 3 & 1
+%                    \end{pmatrix} \pause \quad \mbox{e}\quad
+%                    g = \begin{pmatrix}
+%                        1 & 2 & 3\\
+%                        1 & 3 & 2
+%                    \end{pmatrix} \pause
+%                \]
+%                então
+%                \[
+%                    S_3 = \{Id, f, f^2, g, gf, gf^2\}. \pause
+%                \]
+%                Considere o subgrupo $H = [\ f\ ] \pause = \{Id, f, f^2\}$. \pause Então $H$ é um subgrupo normal de $G$.
+%
+%                \seti
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label=({\arabic*})]
+%                \conti
+%
+%                \item Se $G$ é um grupo abeliano, \pause então todo subgrupo de $G$ é normal.
+%
+%                \seti
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label=({\arabic*})]
+%                \conti
+%
+%                \item Seja $H$ um subgrupo de $G$ \pause tal que $H$ possui somente duas classes laterais. \pause Então $H$ é um subgrupo normal de $G$.
+%
+%                \seti
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{proposicao}
+%            Seja $G$ um grupo. \pause Se $H$ e $L$ são subgrupos normais de $G$, \pause então $H \cap L$ \pause é um subgrupo normal de $G$.
+%        \end{proposicao}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{proposicao}
+%            Seja $N$ um subgrupo normal \pause do grupo $G$. \pause Então, para quaisquer $a$, $b \in G$ temos \pause
+%            \[
+%                (aN)(bN) \pause = (ab)N.
+%            \]
+%        \end{proposicao}
+%    \end{frame}
+%
+%    \begin{frame}
+%        Seja $N$ um subgrupo normal \pause de um grupo $G$, onde $e$ denota o elemento neutro de $G$. \pause Denote por \pause
+%        \[
+%            G/N = \{aN \mid a \in G\} \pause
+%        \]
+%        o conjunto das classes de equivalência determinadas por $N$. \pause
+%
+%        \vspace{.5cm}
+%
+%        Defina em $G/N$ a operação \pause
+%        \[
+%            (aN)(bN)  \pause = (ab)N \pause
+%        \]
+%        para todos $aN$, $bN \in G/N$.
+%    \end{frame}
+%
+%    \begin{frame}
+%        Temos: \pause
+%
+%        \vspace{.3cm}
+%
+%        \begin{enumerate}[label={\roman*})]
+%            \item $[(aN)(bN)](cN) \pause = (an)[(bN)(cN)]$ \pause para todos $aN$, $bN$, $cN \in G/N$; \pause
+%
+%            \vspace{.3cm}
+%
+%            \item $(aN)(eN) \pause = (ae)N \pause = aN \pause = (ea)N \pause = (eN)(aN)$ \pause para todo $aN \in G/N$; \pause
+%
+%            \vspace{.3cm}
+%
+%            \item $(aN)(a^{-1}N) \pause = (aa^{-1})N \pause = eN \pause = (a^{-1}a)N \pause = (a^{-1}N)(aN)$ \pause para todo $aN \in G/N$. \pause
+%
+%            \vspace{.3cm}
+%        \end{enumerate}
+%
+%        Assim, o conjunto $G/N$ é um grupo com a multiplicação de conjuntos. \pause
+%
+%        \vspace{.3cm}
+%
+%        Nesse grupo o elemento neutro é $eN$ \pause e $(aN)^{-1} = (a^{-1})N$.
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{definicao}
+%            Sejam $G$ um grupo e $N$ um subgrupo normal de $G$. \pause Nessas condições, \pause o \textbf{grupo quociente} \pause
+%            de $G$ por $N$ \pause é o par formado pelo conjunto quociente $G/N$ \pause e da operação de multiplicação de conjuntos
+%            aplicadas aos elementos desse conjunto.
+%        \end{definicao}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label=({\arabic*})]
+%                \item Seja $G = \{1, -1, i, -i\}$ um grupo \pause e $N = \{1, -1\}$.
+%
+%                \seti
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label=({\arabic*})]
+%                \conti
+%
+%                \item Seja $G = \z_6 = \{\overline{0}, \overline{1}, \overline{2}, \overline{3}, \overline{4}, \overline{5}\}$ \pause e $H = \{\overline{0}, \overline{3}\}$.
+%
+%                \seti
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label=({\arabic*})]
+%                \conti
+%
+%                \item Seja $G = S_3$. \pause Já vimos que se tomamos
+%                \[
+%                    Id = \begin{pmatrix}
+%                        1 & 2 & 3\\
+%                        1 & 2 & 3
+%                    \end{pmatrix}, \pause\quad
+%                    f = \begin{pmatrix}
+%                        1 & 2 & 3\\
+%                        2 & 3 & 1
+%                    \end{pmatrix} \pause \quad \mbox{e}\quad
+%                    g = \begin{pmatrix}
+%                        1 & 2 & 3\\
+%                        1 & 3 & 2
+%                    \end{pmatrix}
+%                \]
+%                então
+%                \[
+%                    S_3 = \{Id, f, f^2, g, gf, gf^2\}. \pause
+%                \]
+%                Considere o subgrupo $H = [\ f\ ] \pause = \{Id, f, f^2\}$.
+%
+%                \seti
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{proposicao}
+%            Se $N$ é um subgrupo normal de $G$, \pause então a função $\mu : G \to G/N$ \pause definida por $\mu(a) = aN$ \pause é um homomorfismo sobrejetor \pause de grupos tal que \pause
+%            \[
+%                \ker(\mu) = N.
+%            \]
+%        \end{proposicao}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{definicao}
+%            Se $N$ é um subgrupo normal de $G$, \pause então o homomorfismo $\mu : G \to G/N$ \pause definido por $\mu(a) = aN$ \pause é chamado de \textbf{homomorfismo canônico} \pause de $G$ sobre $G/N$.
+%        \end{definicao}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{lema}
+%            Se $f : G \to L$ é um homomorfismo de grupos, \pause então $N = \ker(f)$ \pause é um subgrupo normal de $G$ \pause e, portanto, $G/N$ é um grupo.
+%        \end{lema}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{teorema}[Teorema do Homomorfismo para Grupos]
+%            Seja $f : G \to L$ um homomorfismo sobrejetor \pause de grupos. \pause Se $N = \ker(f)$, \pause então o grupo quociente $G/N$ é isomorfo ao grupo $L$.
+%        \end{teorema}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplo}
+%            Dado um inteiro $m > 1$, \pause considere o homomorfismo $\rho_m : \z \to \z_m$ \pause definido por $\rho_m(x) = \overline{x}$.
+%        \end{exemplo}
+%    \end{frame}
+%
+%    \begin{frame}
+%        Seja $G$ um grupo finito. \pause Se $H$ é um subgrupo de $G$, \pause então existirá uma quantidade finita de classes laterais m\'odulo $H$ \pause.
+%        Assim o conjunto
+%        \[
+%            G/H = \{aH \mid a \in G\} \pause
+%        \]
+%        é finito. \pause
+%
+%        O número de elementos de $G/H$ \pause é chamado de \textbf{índice} \pause de $H$ em $G$ \pause e será denotado por
+%        \[
+%            [G : H] = |G/H|.
+%        \]
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label=({\arabic*})]
+%                \item Seja $G = \{1, -1, i, -i\}$ um grupo \pause e $N = \{1, -1\}$ \pause um subgrupo de $G$. \pause Já vimos que as classes laterais de $N$ em $G$ são \pause
+%                \[
+%                    N \quad \mbox{e}\quad iN. \pause
+%                \]
+%                Daí
+%                \[
+%                    G/N = \{N, iN\} \pause
+%                \]
+%                e assim $[G : N] = 2$.
+%
+%                \seti
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{exemplos}
+%            \begin{enumerate}[label=({\arabic*})]
+%                \conti
+%
+%                \item Seja $G = S_3$. \pause Já vimos que se tomamos
+%                \[
+%                    Id = \begin{pmatrix}
+%                        1 & 2 & 3\\
+%                        1 & 2 & 3
+%                    \end{pmatrix}, \pause\quad
+%                    f = \begin{pmatrix}
+%                        1 & 2 & 3\\
+%                        2 & 3 & 1
+%                    \end{pmatrix} \pause \quad \mbox{e}\quad
+%                    g = \begin{pmatrix}
+%                        1 & 2 & 3\\
+%                        1 & 3 & 2
+%                    \end{pmatrix}
+%                \]
+%                então
+%                \[
+%                    S_3 = \{Id, f, f^2, g, gf, gf^2\}. \pause
+%                \]
+%                Considere o subgrupo $H = [\ g\ ] \pause = \{Id, g\}$. Então $H$ possui 3 classes laterais que são
+%                \[
+%                    H,\ fH,\ f^2H. \pause
+%                \]
+%                Daí
+%                \[
+%                    G/H = \{H, fH, f^2H\} \pause
+%                \]
+%                e então $[G : H] = 3$.
+%            \end{enumerate}
+%        \end{exemplos}
+%    \end{frame}
+%
     \begin{frame}
-        Seja $(G, *)$ um grupo. \pause Para simplificar a notação \pause vamos adotar uma notação multiplicativa \pause e escrever $(G, *) = \pause (G, \cdot)$. \pause Assim, dados $x$, $y \in G$ vamos denotar\pause
-        \[
-            x * y = \pause x \cdot y = \pause xy.\pause
-        \]
 
-        Nesse caso vamos dizer simplesmente que $G$ é um grupo.
-    \end{frame}
-
-    \begin{frame}
-        \begin{proposicao}
-            Seja $G$ um grupo. \pause Dado $H \subset G$ um subgrupo \pause defina \pause
-            \[
-                x \sim y \pause \mbox{ se, e somente se, } \pause x^{-1}y \in H \pause
-            \]
-            para todos $x$, $y \in G$. \pause
-            \begin{enumerate}[label={\roman*})]
-                \item A relação $\sim$ \pause sobre $G$ definida acima é uma relação de equivalência. \pause
-
-                \item Se $a \in G$, \pause então a classe de equivalência determinada por $a$ \pause é o conjunto \pause
-                \[
-                    aH = \pause \{ah \pause \mid h \in H\}.
-                \]
-            \end{enumerate}
-        \end{proposicao}
-    \end{frame}
-
-    \begin{frame}
-        \begin{proposicao}
-            Seja $H$ um subgrupo de um grupo $G$. \pause Então duas classes laterais quaisquer \pause módulo $H$ \pause são subconjuntos de $G$ que possuem a mesma cardinalidade, \pause isto é, a mesma quantidade de elementos. \pause
-        \end{proposicao}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label={\roman*})]
-                \item No grupo multiplicativo $G = \{1, -1, i, -i\}$, \pause onde $i^2 = -1$. \pause Considere o conjunto $H = \{1, -1\}$. \pause Então $H$ é um subgrupo de $G$ \pause e as classes laterais serão:
-
-                \seti
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label={\roman*})]
-                \conti
-                \item Considere o grupo multiplicativo $\real^*$ \pause e $H = \{ x \in \real^* \mid x > 0\} \pause \subset \real^*$. \pause Então $H$ é subgrupo de $\real^*$ \pause e as classes laterais serão:
-                \seti
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label={\roman*})]
-                \conti
-                \item Considere agora o grupo simétrico $G = S_3$. \pause Denote por \pause
-                \[
-                    a = \begin{pmatrix}
-                        1 & 2 & 3\\2 & 3 & 1
-                    \end{pmatrix}, \pause \quad
-                    b = \begin{pmatrix}
-                        1 & 2 & 3\\1 & 3 & 2
-                    \end{pmatrix}. \pause
-                \]
-                Fica como exercício verificar que $\{e, a, a^2 , b, ba, ba^2\} = \pause S_3$. \pause Aqui $e$ é a função identidade, \pause $a^2 = a \circ a$, \pause $ba = b \circ a$ e \pause $ba^2 = b\circ(a\circ a)$. \pause Seja $H = \{e, a , a^2\}$. \pause Então $H$ é subgrupo de $S_3$ \pause e as classes laterais serão:
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        Seja $(G, *)$ um grupo. \pause
-
-        Caso a operação $*$ seja do tipo multiplicativa, vamos escrever $(G, *) = \pause (G, \cdot)$. \pause Assim, dados $x$, $y \in G$ vamos denotar\pause
-        \[
-            x * y = \pause x \cdot y = \pause xy.
-        \]
-
-        Caso a operação $*$ seja do tipo aditiva, vamos escrever $(G, *) = \pause (G, +)$. \pause Assim, dados $x$, $y \in G$ vamos denotar\pause
-        \[
-            x * y = \pause x + y.
-        \]
-
-        Com a notação multiplicativa \pause o inverso de um elemento $x \in G$ \pause será denotado por $x^{-1}$ \pause e no caso da notação aditiva \pause o oposto de $x \in G$ \pause será denotado por $-x$.
-    \end{frame}
-
-    \begin{frame}
-        Seja $G$ um grupo multiplicativo \pause e denote por $e$ o elemento neutro de $G$. \pause Se $x \in G$ \pause e $m \in \z$, \pause a \textbf{potência $m$-ésima} de $x$, \pause ou \textbf{potência de $x$ de expoente $m$}, \pause é o elemento de $G$ denotado por \pause
-        \[
-            x^m \pause
-        \]
-        e definido por: \pause
-        \[
-            x^m = \pause \begin{cases}
-                    e, & \mbox{se m = 0}, \pause\\
-                    x^{m-1}x, \pause & \mbox{ se } m \ge 1, \pause\\
-                    (x^{-m})^{-1}, \pause & \mbox{ se } m < 0.
-                   \end{cases}
-        \]
-
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label={\roman*})]
-                \item No grupo multiplicativo $GL_2(\real)$ \pause seja \pause
-                \[
-                    A = \begin{pmatrix}
-                        1 & 1\\2 & 3
-                    \end{pmatrix}. \pause
-                \]
-                Então:
-                \seti
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label={\roman*})]
-                \conti
-                \item No grupo multiplicativo $\z_5^*$ \pause seja $a = \overline{2}$. \pause Então:
-                \seti
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label={\roman*})]
-                \conti
-                \item No grupo multiplicativo $S_3$ \pause seja
-                \[
-                    a = \begin{pmatrix}
-                        1 & 2 & 3\\ 2 & 3 & 1
-                    \end{pmatrix}.\pause
-                \]
-                Então:
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{proposicao}
-            Seja $G$ um grupo multiplicativo. \pause Se $m$ e $n$ são números inteiros \pause e $x \in G$, \pause então \pause
-            \begin{enumerate}[label={\roman*})]
-                \item $x^mx^n = \pause x^{m + n}$ \pause
-
-                \item $x^{-m} = \pause (x^m)^{-1}$ \pause
-
-                \item $(x^m)^n = \pause x^{mn}$ \pause
-
-                \item $x^mx^n = \pause x^nx^m$
-            \end{enumerate}
-        \end{proposicao}
-    \end{frame}
-
-    \begin{frame}
-        Seja $G$ um grupo aditivo \pause e denote por $e$ o elemento neutro de $G$. \pause Se $x \in G$ \pause e $m \in \z$, \pause o \textbf{múltiplo $m$-ésimo} de $x$ \pause é o elemento de $G$ denotado por \pause
-        \[
-            m \cdot x \pause
-        \]
-        e definido por:
-        \[
-            m \cdot x = \pause \begin{cases}
-                    e, & \mbox{se m = 0}, \pause\\
-                    (m - 1)\cdot x + x, \pause & \mbox{ se } m \ge 1, \pause\\
-                    -[(-m) \cdot x], \pause & \mbox{ se } m < 0.
-                   \end{cases}
-        \]
-    \end{frame}
-
-    \begin{frame}
-        \begin{proposicao}
-            Seja $G$ um grupo aditivo. \pause Se $m$ e $n$ são números inteiros \pause e $x \in G$, então \pause
-            \begin{enumerate}[label={\roman*})]
-                \item $m \cdot x + n \cdot x = \pause (m + n) \cdot x$ \pause
-
-                \item $(-m) \cdot x = \pause -(m \cdot x)$ \pause
-
-                \item $n\cdot (m \cdot x) = \pause (nm)\cdot x$
-            \end{enumerate}
-        \end{proposicao}
-    \end{frame}
-
-    \begin{frame}
-        Seja $G$ um grupo multiplicativo \pause e $x \in G$. \pause Denote por $[x]$ \pause o seguinte conjunto \pause
-        \[
-            [x] = \pause \{x^m \pause \mid m \in \z\} \pause \subset G.\pause
-        \]
-
-        \begin{proposicao}
-            Seja $G$ um grupo multiplicativo \pause e $x \in G$. \pause
-            \begin{enumerate}[label={\roman*})]
-                \item O subconjunto $[x]$ \pause é um subgrupo de $G$.\pause
-
-                \item Se $H$ é um subgrupo de $G$ \pause tal que $x \in H$, \pause então $[x] \subset H$.
-            \end{enumerate}
-        \end{proposicao}
-    \end{frame}
-
-    \begin{frame}
-        \begin{definicao}
-            Um grupo multiplicativo $G$ \pause será chamado de \textbf{grupo cíclico} \pause se, para algum $x \in G$, \pause vale \pause
-            \[
-                G = [x]. \pause
-            \]
-            Nessas condições, o elemento $x$  \pause é chamado de \textbf{gerador} do grupo $G$.
-        \end{definicao}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label={\roman*})]
-                \item No grupo multiplicativo $\complex^*$, \pause encontre o subgrupo gerado por $i$.
-                \seti
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label={\roman*})]
-                \conti
-                \item No grupo $S_3$, \pause encontre o subgrupo gerado por
-                \[
-                    f = \begin{pmatrix}
-                        1 & 2 & 3\\
-                        2 & 3 & 1
-                    \end{pmatrix}.
-                \]
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{proposicao}
-            Todo subgrupo de um grupo cíclico é também cíclico.
-        \end{proposicao}
-    \end{frame}
-
-    \begin{frame}
-        \begin{definicao}
-            Seja $G$ um grupo com elemento neutro $e$. \pause Dado $x \in G$ \pause se existir um inteiro $h > 0$ \pause tal que \pause
-            \begin{enumerate}[label={\roman*})]
-                \item $x^h = e$ \pause
-                \item $x^r \ne e$ \pause qualquer que seja o inteiro $r$ \pause tal que $0 < r < h$\pause
-            \end{enumerate}
-            diremos que a \textbf{ordem} \pause ou \textbf{período} \pause de $x$ é $h$. \pause Nesse caso escreveremos $|x| = \pause o(x) = h$. \pause
-
-            Se para qualquer inteiro \pause $r \ne 0$, \pause $x^r \ne e$, \pause diremos que a \textbf{ordem} de $x$ é \textbf{zero}.
-        \end{definicao}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label={\roman*})]
-                \item No grupo multiplicativo $\complex^*$ temos:
-                \seti
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label={\roman*})]
-                \conti
-                \item Em $S_3$ temos:
-                \seti
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label={\roman*})]
-                \conti
-
-                \item Em $\z_5$ temos:
-                \seti
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label={\roman*})]
-                \conti
-
-                \item Em $\z$ \pause o único elemento de ordem diferente de zero \pause é o elemento neutro.
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{proposicao}
-            Seja $x$ um elemento de ordem $h > 0$ \pause de um grupo $G$. \pause Então $x^m = e$ \pause se, e somente se, $h \mid m$.
-        \end{proposicao}
-    \end{frame}
-
-    \begin{frame}
-        Considere o grupo multiplicativo $G = \{1, -1\}$ \pause e o grupo $S_2$ das permutações sobre o conjunto $\{1,2\}$. \pause Aqui
-        \[
-            S_2 = \left\{id = \begin{pmatrix}
-                1 & 2\\1 & 2
-            \end{pmatrix}; \pause f = \begin{pmatrix}
-                1 & 2\\2 & 1
-            \end{pmatrix}\right\}.
-        \]
-    \end{frame}
-
-    \begin{frame}
-        Temos \pause
-        \begin{table}
-            \begin{minipage}{.5\linewidth}
-                \caption*{$G$}
-                \centering
-                \begin{tabular}{|c|c|c|}
-                    \hline
-                    $\cdot$ & 1 & -1\\
-                    \hline
-                    1 & 1 & -1\\
-                    \hline
-                    -1 & -1 & 1\\
-                    \hline
-                \end{tabular}
-            \end{minipage}%
-            \pause
-            \begin{minipage}{.5\linewidth}
-                \caption*{$S_2$}
-                \centering
-                \begin{tabular}{|c|c|c|}
-                    \hline
-                    $\circ$ & $id$ & $f$\\
-                    \hline
-                    $id$ & $id$ & $f$\\
-                    \hline
-                    $f$ & $f$ & $id$\\
-                    \hline
-                \end{tabular}
-            \end{minipage}\pause
-        \end{table}
-
-        \vspace{.4cm}
-
-        Defina $\sigma : G \to S_2$ por \pause
-        \begin{center}
-            \begin{tabular}{c}
-                $\sigma(1) = id$ \pause\\
-                \vspace{.3cm}\\
-                $\sigma(-1) = f$.
-            \end{tabular}
-        \end{center}
-    \end{frame}
-
-    \begin{frame}
-        Da definição de $\sigma$ \pause é fácil ver que essa função é bijetora. \pause Além disso, \pause
-        \begin{center}
-            \begin{tabular}{c}
-                $\sigma(1) \circ \sigma(1) \pause = id \pause \circ id \pause = id \pause = \sigma(1) \pause = \sigma(1 \cdot 1)$\pause\\
-                \\
-                $\sigma(1) \circ \sigma(-1) \pause = id \pause \circ f \pause = f \pause = \sigma(-1) \pause = \sigma(1 \cdot -1)$ \pause\\
-                \\
-                $\sigma(-1) \circ \sigma(1) \pause = f \pause \circ id \pause = f \pause = \sigma(-1) \pause = \sigma(-1 \cdot 1)$ \pause\\
-                \\
-                $\sigma(-1) \circ \sigma(-1) \pause = f \pause \circ f \pause = id \pause = \sigma(1) \pause = \sigma(-1 \cdot -1)$ \pause\\
-            \end{tabular}
-        \end{center}
-        ou seja, $\sigma(x\cdot y) = \pause \sigma(x) \circ \sigma(y)$ \pause para todos $x$, $y \in G$. \pause Assim função $\sigma$ é um homomorfismo de $G$ em $S_2$. \pause
-
-        \vspace{.3cm}
-
-        Como $\sigma$ também é bijetora, \pause então $\sigma$ é um isomorfismo \pause de $G$ em $S_2$. \pause Nesse caso, dizemos que $G$ e $S_2$ são grupos isomorfos \pause e denotamos isso escrevendo $G \cong S_2$.
-    \end{frame}
-
-    \begin{frame}
-        \begin{definicao}
-            Sejam $(G, *)$ e $(H, \triangle)$ grupos. \pause Se existe $f : G \to H$ um isomorfismo, \pause diremos que $G$ e $H$ são \textbf{grupos isomorfos} \pause e denotaremos esse fato escrevendo $G \cong H$.
-        \end{definicao}
-    \end{frame}
-
-    \begin{frame}
-        \begin{proposicao}
-            Sejam $G$ e $H$ grupos multiplicativos. \pause Se $f : G \to H$ é um isomorfismos de grupos, então \pause $G$ é comutativo se, e somente se, $H$ é comutativo.
-        \end{proposicao}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \vspace{.3cm}
-            \begin{enumerate}
-                \item[1)] Os grupos $\z_6$ e $S_3$ \pause não são isomorfos, \pause pois $\z_6$ é comutativo \pause e $S_3$ não é comutativo.\pause
-
-                \vspace{.3cm}
-
-                \item[2)] Considere o grupo $S_6$ das permutações em $\{1, 2, \cdots, 6\}$. \pause Tome
-                \[
-                    f = \begin{pmatrix}
-                        1 & 2 & 3 & 4 & 5 & 6\\
-                        2 & 3 & 4 & 5 & 6 & 1
-                    \end{pmatrix} \in S_6. \pause
-                \]
-                Seja $H = [f]$. \pause Então $H \cong \z_6$, \pause onde $\phi : H \to \z_6$ dada por $\phi(f^k) = \overline{k}$ \pause é um isomorfismo de grupos.
-
-                \vspace{.3cm}
-
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{proposicao}
-            Sejam $G$ e $H$ grupos multiplicativos. \pause Seja $f : G \to H$ é um isomorfismos de grupos. \pause Então $x \in G$ \pause é tal que $o(x) = h$ \pause se, e somente se, $o(f(x)) = h$.
-        \end{proposicao}
-    \end{frame}
-
-    \begin{frame}
-        Seja $G = [a]$ um grupo cíclico. \pause Dois casos podem ocorrer: \pause
-
-        \textbf{Caso 1:} $a^r \ne a^s$ \pause sempre que $r \ne s$.
-    \end{frame}
-
-    \begin{frame}
-        \begin{proposicao}
-            Se $G = [a]$ é um grupo cíclico que cumpre a condição do \textbf{Caso 1}, \pause então a função $f : \z \to G$ por $f(r) = a^r$ \pause é um isomorfismo de grupos. \pause Ou seja, $G \cong \z$.
-        \end{proposicao}
-    \end{frame}
-
-    \begin{frame}
-        \textbf{Caso 2:} $a^r = a^s$ \pause para algum par de inteiros distintos, $r$ e $s$.
-    \end{frame}
-
-    \begin{frame}
-        \begin{proposicao}
-            Seja $G = [a]$ um grupo cíclico que cumpre a condição do \textbf{Caso 2}. \pause Então existe um inteiro $m > 0$ tal que \pause
-            \begin{enumerate}
-                \item[i)] $a^m = e$ \pause
-
-                \item[ii)] $a^r \ne e$, sempre que $0 < r < m$. \pause
-            \end{enumerate}
-            Nesse caso, a ordem do grupo $G$ é $m$ \pause e
-            \[
-                G = [a] = \{e, a, a^2, \cdots, a^{m - 1}\}.
-            \]
-        \end{proposicao}
-    \end{frame}
-
-    \begin{frame}
-        \begin{corolario}
-            Seja $G = [a]$ um grupo cíclico de ordem finita igual a $m$. \pause Então a função $f : \z_m \to G$ \pause dada por $f(\overline{x}) = a^x$ \pause é um isomorfismo de grupos.
-        \end{corolario}
-    \end{frame}
-
-    \begin{frame}
-        Sejam $(G, \cdot)$ um grupo \pause e $A$ e $B$ subconjuntos de $G$. \pause Vamos indicar por \pause
-        \[
-            AB \pause
-        \]
-        e chamaremos de \textbf{produto} de $A$ por $B$ \pause o seguinte subconjunto de $G$: \pause
-        \begin{center}
-            \begin{tabular}{l}
-                $AB = \emptyset$, \pause se $A = \emptyset$ ou $B = \emptyset$ \pause\\
-                \\
-                $AB = \{xy \pause \mid x \in A \pause \mbox{ e } y \in B \pause\}$, se  $A \ne \emptyset$ e $B \ne \emptyset$. \pause
-            \end{tabular}
-        \end{center}
-
-        \vspace{.3cm}
-
-        Assim o \textbf{produto} de $A$ por $B$ \pause é uma operação sobre o subconjunto das partes de $G$, \pause $\mathcal{P}(G)$, chamada de \textbf{multiplicação de subconjuntos} de $G$. \pause
-
-        \vspace{.3cm}
-
-        Como $G$ é associativo, \pause então a \textbf{multiplicação de subconjuntos} também será associativa. \pause Além disso, caso o grupo $G$ seja comutativo, \pause então \textbf{multiplicação de subconjuntos} também será comutativa.
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label=({\arabic*})]
-                \item Seja $G = \{e, a, b, c\}$ \pause o grupo tal que \pause
-                \begin{table}[h]
-                    \begin{tabular}{|c|c|c|c|c|}
-                        \hline
-                        $\cdot$ & e & a & b & c\\
-                        \hline
-                        e & e & a & b & c\\
-                        \hline
-                        a & a & e & c & b\\
-                        \hline
-                        b & b & c & e & a\\
-                        \hline
-                        c & c & b & a & e\\
-                        \hline
-                    \end{tabular}.
-                \end{table}
-                Esse grupo é chamada de \textbf{grupo de Klein}. \pause
-
-                \vspace{.3cm}
-
-                Se $A = \{e, a\}$ \pause e $B = \{b, c\}$, \pause então:
-                \seti
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label=({\arabic*})]
-                \conti
-                \item Considere o grupo multiplicativo dos números reais. \pause Se
-                \begin{center}
-                    $A = \{x \in \real^* \mid x > 0\}$ \pause\\
-                    $B = \{x \in \real^* \mid x < 0\}$ \pause
-                \end{center}
-                então:
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{definicao}
-            Um subgrupo $N$ \pause de um grupo $G$ \pause é chamado de \textbf{subgrupo normal} \pause (ou \textbf{invariante}) \pause se, para todo $x \in G$, \pause vale
-            \[
-                xN \pause = Nx. \pause
-            \]
-            Denotaremos esse fato escrevendo $H \unlhd G$.
-        \end{definicao}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label=({\arabic*})]
-                \item Seja $G = S_3$. \pause Já vimos que se tomamos
-                \[
-                    Id = \begin{pmatrix}
-                        1 & 2 & 3\\
-                        1 & 2 & 3
-                    \end{pmatrix}, \pause \quad
-                    f = \begin{pmatrix}
-                        1 & 2 & 3\\
-                        2 & 3 & 1
-                    \end{pmatrix} \pause \quad \mbox{e}\quad
-                    g = \begin{pmatrix}
-                        1 & 2 & 3\\
-                        1 & 3 & 2
-                    \end{pmatrix} \pause
-                \]
-                então
-                \[
-                    S_3 = \{Id, f, f^2, g, gf, gf^2\}. \pause
-                \]
-                Considere o subgrupo $H = [\ f\ ] \pause = \{Id, f, f^2\}$. \pause Então $H$ é um subgrupo normal de $G$.
-
-                \seti
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label=({\arabic*})]
-                \conti
-
-                \item Se $G$ é um grupo abeliano, \pause então todo subgrupo de $G$ é normal.
-
-                \seti
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label=({\arabic*})]
-                \conti
-
-                \item Seja $H$ um subgrupo de $G$ \pause tal que $H$ possui somente duas classes laterais. \pause Então $H$ é um subgrupo normal de $G$.
-
-                \seti
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{proposicao}
-            Seja $G$ um grupo. \pause Se $H$ e $L$ são subgrupos normais de $G$, \pause então $H \cap L$ \pause é um subgrupo normal de $G$.
-        \end{proposicao}
-    \end{frame}
-
-    \begin{frame}
-        \begin{proposicao}
-            Seja $N$ um subgrupo normal \pause do grupo $G$. \pause Então, para quaisquer $a$, $b \in G$ temos \pause
-            \[
-                (aN)(bN) \pause = (ab)N.
-            \]
-        \end{proposicao}
-    \end{frame}
-
-    \begin{frame}
-        Seja $N$ um subgrupo normal \pause de um grupo $G$, onde $e$ denota o elemento neutro de $G$. \pause Denote por \pause
-        \[
-            G/N = \{aN \mid a \in G\} \pause
-        \]
-        o conjunto das classes de equivalência determinadas por $N$. \pause
-
-        \vspace{.5cm}
-
-        Defina em $G/N$ a operação \pause
-        \[
-            (aN)(bN)  \pause = (ab)N \pause
-        \]
-        para todos $aN$, $bN \in G/N$.
-    \end{frame}
-
-    \begin{frame}
-        Temos: \pause
-
-        \vspace{.3cm}
-
-        \begin{enumerate}[label={\roman*})]
-            \item $[(aN)(bN)](cN) \pause = (an)[(bN)(cN)]$ \pause para todos $aN$, $bN$, $cN \in G/N$; \pause
-
-            \vspace{.3cm}
-
-            \item $(aN)(eN) \pause = (ae)N \pause = aN \pause = (ea)N \pause = (eN)(aN)$ \pause para todo $aN \in G/N$; \pause
-
-            \vspace{.3cm}
-
-            \item $(aN)(a^{-1}N) \pause = (aa^{-1})N \pause = eN \pause = (a^{-1}a)N \pause = (a^{-1}N)(aN)$ \pause para todo $aN \in G/N$. \pause
-
-            \vspace{.3cm}
-        \end{enumerate}
-
-        Assim, o conjunto $G/N$ é um grupo com a multiplicação de conjuntos. \pause
-
-        \vspace{.3cm}
-
-        Nesse grupo o elemento neutro é $eN$ \pause e $(aN)^{-1} = (a^{-1})N$.
-    \end{frame}
-
-    \begin{frame}
-        \begin{definicao}
-            Sejam $G$ um grupo e $N$ um subgrupo normal de $G$. \pause Nessas condições, \pause o \textbf{grupo quociente} \pause
-            de $G$ por $N$ \pause é o par formado pelo conjunto quociente $G/N$ \pause e da operação de multiplicação de conjuntos
-            aplicadas aos elementos desse conjunto.
-        \end{definicao}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label=({\arabic*})]
-                \item Seja $G = \{1, -1, i, -i\}$ um grupo \pause e $N = \{1, -1\}$.
-
-                \seti
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label=({\arabic*})]
-                \conti
-
-                \item Seja $G = \z_6 = \{\overline{0}, \overline{1}, \overline{2}, \overline{3}, \overline{4}, \overline{5}\}$ \pause e $H = \{\overline{0}, \overline{3}\}$.
-
-                \seti
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label=({\arabic*})]
-                \conti
-
-                \item Seja $G = S_3$. \pause Já vimos que se tomamos
-                \[
-                    Id = \begin{pmatrix}
-                        1 & 2 & 3\\
-                        1 & 2 & 3
-                    \end{pmatrix}, \pause\quad
-                    f = \begin{pmatrix}
-                        1 & 2 & 3\\
-                        2 & 3 & 1
-                    \end{pmatrix} \pause \quad \mbox{e}\quad
-                    g = \begin{pmatrix}
-                        1 & 2 & 3\\
-                        1 & 3 & 2
-                    \end{pmatrix}
-                \]
-                então
-                \[
-                    S_3 = \{Id, f, f^2, g, gf, gf^2\}. \pause
-                \]
-                Considere o subgrupo $H = [\ f\ ] \pause = \{Id, f, f^2\}$.
-
-                \seti
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{proposicao}
-            Se $N$ é um subgrupo normal de $G$, \pause então a função $\mu : G \to G/N$ \pause definida por $\mu(a) = aN$ \pause é um homomorfismo sobrejetor \pause de grupos tal que \pause
-            \[
-                \ker(\mu) = N.
-            \]
-        \end{proposicao}
-    \end{frame}
-
-    \begin{frame}
-        \begin{definicao}
-            Se $N$ é um subgrupo normal de $G$, \pause então o homomorfismo $\mu : G \to G/N$ \pause definido por $\mu(a) = aN$ \pause é chamado de \textbf{homomorfismo canônico} \pause de $G$ sobre $G/N$.
-        \end{definicao}
-    \end{frame}
-
-    \begin{frame}
-        \begin{lema}
-            Se $f : G \to L$ é um homomorfismo de grupos, \pause então $N = \ker(f)$ \pause é um subgrupo normal de $G$ \pause e, portanto, $G/N$ é um grupo.
-        \end{lema}
-    \end{frame}
-
-    \begin{frame}
-        \begin{teorema}[Teorema do Homomorfismo para Grupos]
-            Seja $f : G \to L$ um homomorfismo sobrejetor \pause de grupos. \pause Se $N = \ker(f)$, \pause então o grupo quociente $G/N$ é isomorfo ao grupo $L$.
-        \end{teorema}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplo}
-            Dado um inteiro $m > 1$, \pause considere o homomorfismo $\rho_m : \z \to \z_m$ \pause definido por $\rho_m(x) = \overline{x}$.
-        \end{exemplo}
-    \end{frame}
-
-    \begin{frame}
-        Seja $G$ um grupo finito. \pause Se $H$ é um subgrupo de $G$, \pause então existirá uma quantidade finita de classes laterais m\'odulo $H$ \pause.
-        Assim o conjunto
-        \[
-            G/H = \{aH \mid a \in G\} \pause
-        \]
-        é finito. \pause
-
-        O número de elementos de $G/H$ \pause é chamado de \textbf{índice} \pause de $H$ em $G$ \pause e será denotado por
-        \[
-            [G : H] = |G/H|.
-        \]
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label=({\arabic*})]
-                \item Seja $G = \{1, -1, i, -i\}$ um grupo \pause e $N = \{1, -1\}$ \pause um subgrupo de $G$. \pause Já vimos que as classes laterais de $N$ em $G$ são \pause
-                \[
-                    N \quad \mbox{e}\quad iN. \pause
-                \]
-                Daí
-                \[
-                    G/N = \{N, iN\} \pause
-                \]
-                e assim $[G : N] = 2$.
-
-                \seti
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
-        \begin{exemplos}
-            \begin{enumerate}[label=({\arabic*})]
-                \conti
-
-                \item Seja $G = S_3$. \pause Já vimos que se tomamos
-                \[
-                    Id = \begin{pmatrix}
-                        1 & 2 & 3\\
-                        1 & 2 & 3
-                    \end{pmatrix}, \pause\quad
-                    f = \begin{pmatrix}
-                        1 & 2 & 3\\
-                        2 & 3 & 1
-                    \end{pmatrix} \pause \quad \mbox{e}\quad
-                    g = \begin{pmatrix}
-                        1 & 2 & 3\\
-                        1 & 3 & 2
-                    \end{pmatrix}
-                \]
-                então
-                \[
-                    S_3 = \{Id, f, f^2, g, gf, gf^2\}. \pause
-                \]
-                Considere o subgrupo $H = [\ g\ ] \pause = \{Id, g\}$. Então $H$ possui 3 classes laterais que são
-                \[
-                    H,\ fH,\ f^2H. \pause
-                \]
-                Daí
-                \[
-                    G/H = \{H, fH, f^2H\} \pause
-                \]
-                e então $[G : H] = 3$.
-            \end{enumerate}
-        \end{exemplos}
-    \end{frame}
-
-    \begin{frame}
+        \begin{observacao}
+            Seja $G$ um grupo finito. \pause Vamos denotar a ordem de $G$\pause  por $o(G)$. \pause Se $H$ for um subgrupo de $G$\pause  vamos denotar a ordem de $H$ por $o(H)$.\pause
+        \end{observacao}
         \begin{teorema}[Teorema de Lagrange]
-            Seja $H$ um subgrupo \pause de um grupo finito $G$. \pause Então $o(G) = o(H)[G:H]$ \pause e, portanto, $o(H) | o(G)$.
+            Seja $H$ um subgrupo \pause de um grupo finito $G$. \pause Então $o(H) | o(G)$.
         \end{teorema}
     \end{frame}
 
@@ -1500,44 +1504,44 @@
         \end{observacao}
     \end{frame}
 
-    \begin{frame}
-        \begin{corolario}
-            Seja $G$ um grupo finito. \pause Então a ordem de um elemento $x \in G$ \pause divide a ordem de $G$ \pause e o quociente é $[G : H]$, \pause onde $H = [x]$.
-        \end{corolario}
-    \end{frame}
+%    \begin{frame}
+%        \begin{corolario}
+%            Seja $G$ um grupo finito. \pause Então a ordem de um elemento $x \in G$ \pause divide a ordem de $G$ \pause e o quociente é $[G : H]$, \pause onde $H = [x]$.
+%        \end{corolario}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{corolario}
+%            Sejam $G$ um grupo finito \pause e $x \in G$. \pause Então
+%            \[
+%                x^{o(G)} \pause = e, \pause
+%            \]
+%            onde $e$ denota o elemento neutro de $G$.
+%        \end{corolario}
+%    \end{frame}
 
     \begin{frame}
         \begin{corolario}
-            Sejam $G$ um grupo finito \pause e $x \in G$. \pause Então
-            \[
-                x^{o(G)} \pause = e, \pause
-            \]
-            onde $e$ denota o elemento neutro de $G$.
+            Seja $G$ um grupo finito \pause cuja ordem é um número primo. \pause Então $G$ os únicos subgrupos de $G$ \pause são os triviais, \pause ou seja, $\{e\}$ e $G$.
         \end{corolario}
     \end{frame}
 
-    \begin{frame}
-        \begin{corolario}
-            Seja $G$ um grupo finito \pause cuja ordem é um número primo. \pause Então $G$ é um grupo cíclico \pause e os únicos subgrupos de $G$ \pause são os triviais, \pause ou seja, $\{e\}$ e $G$.
-        \end{corolario}
-    \end{frame}
+%    \begin{frame}
+%        \begin{exemplo}
+%            Determine todos os subgrupos do grupo $S_3$.
+%        \end{exemplo}
+%    \end{frame}
+%
+%    \begin{frame}
+%        \begin{proposicao}
+%            Se $G$ é um grupo finito tal que $o(G) \le 5$, então $G$ é abeliano.
+%        \end{proposicao}
+%    \end{frame}
 
-    \begin{frame}
-        \begin{exemplo}
-            Determine todos os subgrupos do grupo $S_3$.
-        \end{exemplo}
-    \end{frame}
-
-    \begin{frame}
-        \begin{proposicao}
-            Se $G$ é um grupo finito tal que $o(G) \le 5$, então $G$ é abeliano.
-        \end{proposicao}
-    \end{frame}
-
-    \begin{frame}
-        \begin{proposicao}
-            Seja $G$ um grupo tal que $|G| = pq$, onde $p$ e $q$ são números primos. Se $G$ é abeliano e $p \ne q$, então $G$ é um grupo cíclico.
-        \end{proposicao}
-    \end{frame}
+%    \begin{frame}
+%        \begin{proposicao}
+%            Seja $G$ um grupo tal que $|G| = pq$, onde $p$ e $q$ são números primos. Se $G$ é abeliano e $p \ne q$, então $G$ é um grupo cíclico.
+%        \end{proposicao}
+%    \end{frame}
 
 \end{document}
