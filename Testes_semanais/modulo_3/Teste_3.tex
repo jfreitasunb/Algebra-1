@@ -71,7 +71,64 @@
 
     \questao Considere o seguinte conjunto
     \[
-    G = \left\{\begin{pmatrix} 1 & a & b\\ 0 & 1 & c \\ 0 & 0 & 1\end{pmatrix} \mid a, b, c \in \real\right\}.
+        G = \left\{\begin{pmatrix} 1 & a & b\\ 0 & 1 & c \\ 0 & 0 & 1\end{pmatrix} \mid a, b, c \in \real\right\}.
     \]
     Mostre que $(G, \cdot)$, onde $\cdot$ é a multiplicação de matrizes, é um grupo. Esse grupo é comutativo? Justifique.
+
+    \noindent\solucao Primeiro, observe que tomando
+    \[
+        A = \begin{pmatrix}1 & 2 & 3\\0 & 1 & 2\\0 & 0 & 1\end{pmatrix},\\
+        B = \begin{pmatrix}1 & 3 & 2\\0 & 1 & 1\\0 & 0 & 1\end{pmatrix}\\
+    \]
+    temos
+    \begin{align*}
+        AB &= \begin{pmatrix}1 & 2 & 3\\0 & 1 & 2\\0 & 0 & 1\end{pmatrix}\begin{pmatrix}1 & 3 & 2\\0 & 1 & 1\\0 & 0 & 1\end{pmatrix} = \begin{pmatrix}1 & 5 & 7\\0 & 1 & 3\\0 & 0 & 1\end{pmatrix}\\
+        BA &= \begin{pmatrix}1 & 3 & 2\\0 & 1 & 1\\0 & 0 & 1\end{pmatrix}\begin{pmatrix}1 & 2 & 3\\0 & 1 & 2\\0 & 0 & 1\end{pmatrix} = \begin{pmatrix}1 & 5 & 11\\0 & 1 & 3\\0 & 0 & 1\end{pmatrix}.
+    \end{align*}
+    Com isso $AB \ne BA$ e a operação de multiplicação de matrizes em $G$ não é comutativa.
+
+    Agora sejam $A$, $B$, $C \in G$ com
+    \[
+        A = \begin{pmatrix} 1 & a & b\\0 & 1 & c\\0 & 0 & 1\end{pmatrix},
+        B = \begin{pmatrix} 1 & d & e\\0 & 1 & f\\0 & 0 & 1\end{pmatrix},
+        C = \begin{pmatrix} 1 & g & h\\0 & 1 & j\\0 & 0 & 1\end{pmatrix}.
+    \]
+    Temos
+    \begin{align*}
+        [AB]C &= \left[\begin{pmatrix} 1 & a & b\\0 & 1 & c\\0 & 0 & 1\end{pmatrix}\begin{pmatrix} 1 & d & e\\0 & 1 & f\\0 & 0 & 1\end{pmatrix}\right]\begin{pmatrix} 1 & g & h\\0 & 1 & j\\0 & 0 & 1\end{pmatrix} \\ &= \begin{pmatrix} 1 & d + a & e + af + b\\0 & 1 & c + f\\0 & 0 & 1\end{pmatrix}\begin{pmatrix} 1 & g & h\\0 & 1 & j\\0 & 0 & 1\end{pmatrix} \\ &= \begin{pmatrix} 1 & d + a + g & h + (d + a)j + e + af + b\\0 & 1 & c + f + j\\0 & 0 & 1\end{pmatrix}\\
+        A[BC] &= \begin{pmatrix} 1 & a & b\\0 & 1 & c\\0 & 0 & 1\end{pmatrix}\left[\begin{pmatrix} 1 & d & e\\0 & 1 & f\\0 & 0 & 1\end{pmatrix}\begin{pmatrix} 1 & g & h\\0 & 1 & j\\0 & 0 & 1\end{pmatrix}\right] \\ &=\begin{pmatrix} 1 & a & b\\0 & 1 & c\\0 & 0 & 1\end{pmatrix}\begin{pmatrix} 1 & dg & h + dj + e\\0 & 1 & fj\\0 & 0 & 1\end{pmatrix} \\ &= \begin{pmatrix} 1 & d + g + a & h + (d + a)j + e + af + b\\0 & 1 & c + f + j\\0 & 0 & 1\end{pmatrix}
+    \end{align*}
+    logo $(AB)C = A(BC)$ e com isso a operação é associativa.
+
+    Seja
+    \[
+        I = \begin{pmatrix} 1 & 0 & 0\\0 & 1 & 0\\0 & 0 & 1\end{pmatrix} \in G.
+    \]
+    Para toda $A \in G$,
+    \[
+        A = \begin{pmatrix} 1 & a & b\\0 & 1 & c\\0 & 0 & 1\end{pmatrix}
+    \]
+    temos
+    \begin{align*}
+        AI &= \begin{pmatrix} 1 & a & b\\0 & 1 & c\\0 & 0 & 1\end{pmatrix} \begin{pmatrix} 1 & 0 & 0\\0 & 1 & 0\\0 & 0 & 1\end{pmatrix} = \begin{pmatrix} 1 & a & b\\0 & 1 & c\\0 & 0 & 1\end{pmatrix} = A\\
+        IA &= \begin{pmatrix} 1 & 0 & 0\\0 & 1 & 0\\0 & 0 & 1\end{pmatrix}\begin{pmatrix} 1 & a & b\\0 & 1 & c\\0 & 0 & 1\end{pmatrix} = \begin{pmatrix} 1 & a & b\\0 & 1 & c\\0 & 0 & 1\end{pmatrix} = A,
+    \end{align*}
+    logo $I$ é o elemento neutro de $G$.
+
+    Finalmente, dada $A \in G$,
+    \[
+        A = \begin{pmatrix} 1 & a & b\\0 & 1 & c\\0 & 0 & 1\end{pmatrix} \in G
+    \]
+    tome
+    \[
+        B = \begin{pmatrix} 1 & -a & -b + ac\\0 & 1 & -c\\0 & 0 & 1\end{pmatrix}.
+    \]
+    Temos
+    \begin{align*}
+        AB &= \begin{pmatrix} 1 & a & b\\0 & 1 & c\\0 & 0 & 1\end{pmatrix} \begin{pmatrix} 1 & -a & -b + ac\\0 & 1 & -c\\0 & 0 & 1\end{pmatrix} = \begin{pmatrix} 1 & 0 & 0\\0 & 1 & 0\\0 & 0 & 1\end{pmatrix} = I\\
+        BA &= \begin{pmatrix} 1 & -a & -b + ac\\0 & 1 & -c\\0 & 0 & 1\end{pmatrix}\begin{pmatrix} 1 & a & b\\0 & 1 & c\\0 & 0 & 1\end{pmatrix} = \begin{pmatrix} 1 & 0 & 0\\0 & 1 & 0\\0 & 0 & 1\end{pmatrix} = I
+    \end{align*}
+    com isso $B$ é o inverso de $A$.
+
+    Portanto $G$ é um grupo e esse grupo não é comutativo.
 \end{document}
