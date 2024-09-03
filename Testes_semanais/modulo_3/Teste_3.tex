@@ -42,6 +42,31 @@
 
     \questao Seja $G = \real$ e a operação $\star$ dada por $x \star y = \sqrt[3]{x^3 + y^3}$, para $x$, $y \in \real$. Mostre que $(\real, \star)$ é um grupo. Esse grupo é comutativo? Justifique.
 
+    \noindent\solucao Primeiro, para todos $x$, $y \in \real$ temos
+    \begin{align*}
+        x \star y = \sqrt[3]{x^3 + y^3} = \sqrt[3]{y^3 + x^3} = y \star x
+    \end{align*}
+    e assim a operação $\star$ é comutativa.
+
+    Agora sejam $x$, $y$, $z \in \real$. Temos
+    \begin{align*}
+        (x\star y) \star z &= \sqrt[3]{x^3 + y^3} \star z = \sqrt[3]{\sqrt[3]{x^3 + y^3}^3 + z^3} \\ &= \sqrt[3]{x^3 + y^3 + z^3} = \sqrt[3]{x^3 + \sqrt[3]{y^3 + z^3}^3} \\ &= x \star \sqrt[3]{y^3 + z^3} \\ &= x \star (y \star z)
+    \end{align*}
+    e assim a operação $\star$ é associativa.
+
+    Tome $e = 0$. Para todo $x \in \real$ temos
+    \[
+        x\star e = x \star 0 = \sqrt[3]{x^3 + 0^3} = \sqrt[3]{x^3} = x
+    \]
+    e assim $e = 0$ é o elemento neutro da operação $\star$.
+
+    Finalmente, dado $x \in \real$, tome $y = -x \in \real$. Daí
+    \[
+        x \star y = x \star (-x) = \sqrt[3]{x^3 + (-x)^3} = \sqrt[3]{x^3 - x^3} = 0
+    \]
+    e então $-x$ é o oposto de $x$ na operação $\star$.
+
+    Portanto, $(\real, \star)$ é um grupo e esse grupo é comutativo.
     \vspace{1cm}
 
     \questao Considere o seguinte conjunto
