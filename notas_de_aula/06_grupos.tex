@@ -1138,12 +1138,12 @@ Com a notação aditiva o oposto de $x \in G$ será denotado por $-x$.
 \end{prova}
 
 \begin{proposicao}
-    Sejam $H$, $J$ e $L$ grupos. Se $f : H \to J$ e $g : J \to L$ são homomorfismos de grupos, então $g \circ f : H \to L$ também é um homomorfismo de grupos.
+    Sejam $(H, \ast)$, $(J, \star)$ e $(L, \diamond)$ grupos. Se $f : H \to J$ e $g : J \to L$ são homomorfismos de grupos, então $g \circ f : H \to L$ também é um homomorfismo de grupos.
 \end{proposicao}
 \begin{prova}
     Sejam $x$, $y \in H$. Temos
     \begin{align*}
-        (g \circ f)(xy) = g(f(xy)) = g(f(x)f(y)) = g(f(x))g(f(y)) = (g \circ f)(xy)(g \circ f)(xy).
+        (g \circ f)(x \ast y) = g(f(x \ast y)) = g(f(x) \star f(y)) = g(f(x)) \diamond g(f(y)) = (g \circ f)(x \ast y)(g \circ f)(x \ast y).
     \end{align*}
 
     Portanto, $g \circ f$ é um homomorfismo de grupos.
