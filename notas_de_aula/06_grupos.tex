@@ -12,41 +12,41 @@
    Seja $A$ um conjunto não vazio. Toda função $f : A \times A \to A$ é chamada de uma \textbf{operação binária} sobre $A$.
 \end{definicao}
 
-Nas considerações que faremos a seguir uma operação binária $f$ sobre $A$ que associa a cada par ordenado $(x, y) \in A \times A$ um elemento $f(x, y) \in A$ será denotada simplesmente por $*$. Assim escreveremos $f(x, y) = x*y$. Por exemplo, a operação $* : \n \times \n \to \n$ tal que $x*y = x^y$ está bem definida, pois $x^y \in \n$ sempre que $x$, $y \in \n$. Observe que esta operação não pode ser definida em $\z$, pois, por exemplo, $2^{-1} \notin \z$. Também não pode ser definida em $\rac$, pois $2^{1/2} \notin \rac$.
+Nas considerações que faremos a seguir uma operação binária $f$ sobre $A$ que associa a cada par ordenado $(x, y) \in A \times A$ um elemento $f(x, y) \in A$ será denotada simplesmente por $\ast$. Assim escreveremos $f(x, y) = x \ast y$. Por exemplo, a operação $\ast : \n \times \n \to \n$ tal que $x \ast y = x^y$ está bem definida, pois $x^y \in \n$ sempre que $x$, $y \in \n$. Observe que esta operação não pode ser definida em $\z$, pois, por exemplo, $2^{-1} \notin \z$. Também não pode ser definida em $\rac$, pois $2^{1/2} \notin \rac$.
 
 \begin{definicao}
-    Seja $G$ um conjunto não vazio no qual está definida uma operação binária $*$ tal que:
+    Seja $G$ um conjunto não vazio no qual está definida uma operação binária $\ast$ tal que:
     \begin{enumerate}[label={\roman*})]
         \item Para todos $x$, $y$, $z\in G$:
         \[
-            (x*y)*z=x*(y*z)
+            (x \ast y) \ast z=x \ast(y \ast z)
         \]
 
         \item Existe $e \in G$ tal que
         \[
-            x*e = x = e*x
+            x \ast e = x = e \ast x
         \]
         para todo $x \in G$. Tal elemento $e$ é chamado de \textbf{elemento neutro} ou \textbf{unidade} de $G$.
 
         \item Para cada $x \in G$, existe $y \in G$ tal que
         \[
-            x*y = e = y*x
+            x \ast y = e = y \ast x
         \]
         O elemento $y$ é chamado de \textbf{inverso} ou \textbf{oposto} de $x$.
     \end{enumerate}
-    Nesse caso dizemos que o par $(G, *)$ é um \textbf{grupo}.
+    Nesse caso dizemos que o par $(G, \ast )$ é um \textbf{grupo}.
 \end{definicao}
 
 \begin{observacao}
-    Quando $*$ é uma soma, dizemos que $(G,*)$ é um \textbf{grupo aditivo}. Se $*$ é uma multiplicação, dizemos que $(G,*)$ é um \textbf{grupo multiplicativo}.
+    Quando $\ast$ é uma soma, dizemos que $(G, \ast )$ é um \textbf{grupo aditivo}. Se $\ast$ é uma multiplicação, dizemos que $(G, \ast )$ é um \textbf{grupo multiplicativo}.
 
-    Além disso, quando não houver chance de confusão com relação à operação do grupo $(G, *)$ vamos dizer simplesmente que $G$ é um grupo.
+    Além disso, quando não houver chance de confusão com relação à operação do grupo $(G, \ast )$ vamos dizer simplesmente que $G$ é um grupo.
 \end{observacao}
 
 \begin{definicao}
-    Um grupo $(G,*)$ é chamado de \textbf{grupo comutativo} ou \textbf{abeliano} quando $*$ é comutativa, ou seja, quando
+    Um grupo $(G, \ast )$ é chamado de \textbf{grupo comutativo} ou \textbf{abeliano} quando $\ast$ é comutativa, ou seja, quando
     \[
-        x*y = y*x
+        x \ast y = y \ast x
     \]
     para todos $x$, $y \in G$.
 \end{definicao}
@@ -58,37 +58,37 @@ Nas considerações que faremos a seguir uma operação binária $f$ sobre $A$ q
         \item $(\rac^*,\cdot)$ é um grupo abeliano.
         \item $(\real,+)$ é um grupo abeliano.
         \item $(\real^*,\cdot)$ é um grupo abeliano.
-        \item Considere o conjunto dos números reais $\mathbb{R}$ com a operação $*$ definida por
+        \item Considere o conjunto dos números reais $\mathbb{R}$ com a operação $\ast$ definida por
         \[
-            x*y = x + y - 3
+            x \ast y = x + y - 3
         \]
-        para $x$, $y \in \mathbb{R}$. Então $(\mathbb{R}, *)$ é um grupo abeliano.
+        para $x$, $y \in \mathbb{R}$. Então $(\mathbb{R}, \ast )$ é um grupo abeliano.
         \begin{solucao}
             De fato,
             \begin{enumerate}[label={\roman*})]
                 \item Para todos $x$, $y$, $z \in \real$
                 \begin{align*}
-                    (x*y)*z &= (x+y-3)*z = (x+y-3)+z-3\\
+                    (x \ast y) \ast z &= (x+y-3) \ast z = (x+y-3)+z-3\\
                     &= x+(y-3+z)-3 = x+(y+z-3)-3 = x*(y+z-3)\\
-                    &= x*(y*z)
+                    &= x*(y \ast z)
                 \end{align*}
 
-                \item Para todo $x \in \mathbb{R}$, temos $x*3 = x + 3 - 3 = x = 3 * x$. Logo, 3 é o elemento neutro de $*$.
+                \item Para todo $x \in \mathbb{R}$, temos $x*3 = x + 3 - 3 = x = 3 * x$. Logo, 3 é o elemento neutro de $\ast$.
 
                 \item Dado $x \in \mathbb{R}$, tome $y = 6 - x \in \real$. Assim
                 \[
-                    x*y = x + (6-x)-3 = 3 = y*x.
+                    x \ast y = x + (6-x)-3 = 3 = y \ast x.
                 \]
-                Assim $y = 6 - x$ é o oposto de $x$ na operação $*$ definida em $\real$.
+                Assim $y = 6 - x$ é o oposto de $x$ na operação $\ast$ definida em $\real$.
             \end{enumerate}
 
-            Portanto $(\real, *)$ é um grupo.
+            Portanto $(\real, \ast )$ é um grupo.
 
             Além disso, para todos $x$, $y \in \real$
             \[
-                x*y = x + y - 3 = y + x - 3 = y*x
+                x \ast y = x + y - 3 = y + x - 3 = y \ast x
             \]
-            Logo, $(\real, *)$ é um grupo comutativo.
+            Logo, $(\real, \ast )$ é um grupo comutativo.
         \end{solucao}
 
         \item $(\z_m,\oplus)$ é grupo.
@@ -101,7 +101,7 @@ Nas considerações que faremos a seguir uma operação binária $f$ sobre $A$ q
 \end{exemplos}
 
 \begin{proposicao}
-    Seja $(G,*)$ um grupo. Então:
+    Seja $(G, \ast )$ um grupo. Então:
     \begin{enumerate}[label={\roman*})]
         \item O elemento neutro de $G$ é único.
 
@@ -109,11 +109,11 @@ Nas considerações que faremos a seguir uma operação binária $f$ sobre $A$ q
 
         \item Para todos $x$, $y \in G$,
         \[
-            (x*y)^{-1} = y^{-1}*x^{-1}
+            (x \ast y)^{-1} = y^{-1}*x^{-1}
         \]
         Por indução, $x_1$, $x_2$, \dots ,$x_{n-1}$, $x_n \in G$,
         \[
-            (x_1*x_2*\cdots *x_{n-1}*x_{n})^{-1} = x^{-1}_{n}*x^{-1}_{n-1}*\cdots *x^{-1}_2*x^{-1}_1
+            (x_1 \ast x_2 \ast \cdots  \ast x_{n-1} \ast x_{n})^{-1} = x^{-1}_{n} \ast x^{-1}_{n-1} \ast \cdots  \ast x^{-1}_2 \ast x^{-1}_1
         \]
         \item Para todo $x \in G$, $(x^{-1})^{-1} = x$.
     \end{enumerate}
@@ -292,7 +292,7 @@ e daí, por exemplo,
 
 
 \begin{definicao}
-    Seja $(G,*)$ um grupo. Se $G$ é um conjunto com uma quantidade finita de elementos, dizemos que $G$ é um \textbf{grupo finito}. Denotamos por $|G|$ o número de elementos de $G$, que será chamado de \textbf{ordem} de $G$ ou \textbf{cardinalidade} de $G$. Quando o conjunto $G$ não é finito, dizemos que $G$ é um \textbf{grupo infinito}.
+    Seja $(G, \ast )$ um grupo. Se $G$ é um conjunto com uma quantidade finita de elementos, dizemos que $G$ é um \textbf{grupo finito}. Denotamos por $|G|$ o número de elementos de $G$, que será chamado de \textbf{ordem} de $G$ ou \textbf{cardinalidade} de $G$. Quando o conjunto $G$ não é finito, dizemos que $G$ é um \textbf{grupo infinito}.
 \end{definicao}
 
 \begin{exemplos}
@@ -307,14 +307,14 @@ e daí, por exemplo,
 \label{sec:subgrupos}
 
 \begin{definicao}
-    Seja $(G,*)$ um grupo. Um subconjunto não vazio $H\sub G$ é chamado de \textbf{subgrupo} de $G$ se, e somente se, $(H,*)$ é um grupo.
+    Seja $(G, \ast )$ um grupo. Um subconjunto não vazio $H\sub G$ é chamado de \textbf{subgrupo} de $G$ se, e somente se, $(H, \ast )$ é um grupo.
 \end{definicao}
 
 \begin{proposicao}
     Seja $G$ um grupo. Um subconjunto não vazio $H\subseteq G$ é um subgrupo de $G$ se, e somente se
     \begin{enumerate}[label={\roman*})]
         \item\label{subgrupo_condicao_1} $x^{-1}\in H$, para todo $x \in H$;
-        \item\label{subgrupo_condicao_2} $x*y\in H$, para todos $x$, $y \in H$.
+        \item\label{subgrupo_condicao_2} $x \ast y\in H$, para todos $x$, $y \in H$.
     \end{enumerate}
 \end{proposicao}
 \begin{prova}
@@ -322,19 +322,19 @@ e daí, por exemplo,
 
     Agora provemos que se $H$ satisfaz \ref{subgrupo_condicao_1} e \ref{subgrupo_condicao_2}, então $H$ é grupo.
 
-    Como $G$ é grupo, então $*$ é associativa, logo $*$ é associativa em $H$.
+    Como $G$ é grupo, então $\ast$ é associativa, logo $\ast$ é associativa em $H$.
 
-    De \ref{subgrupo_condicao_1}, para todo $x \in H$, $x^{-1}\in H$. Mas de \ref{subgrupo_condicao_2}, para todos $x$, $y \in H,$ $x*y \in H$. Logo, se $x\in H$, então $e = x*x^{-1} \in H$.
+    De \ref{subgrupo_condicao_1}, para todo $x \in H$, $x^{-1}\in H$. Mas de \ref{subgrupo_condicao_2}, para todos $x$, $y \in H,$ $x \ast y \in H$. Logo, se $x\in H$, então $e = x*x^{-1} \in H$.
 
     Novamente por \ref{subgrupo_condicao_1}, todo elemento de $H$ possui inverso em $H$.
 
-    Portanto, $(H,*)$ é um grupo.
+    Portanto, $(H, \ast )$ é um grupo.
 \end{prova}
 
 
 \begin{exemplos}
     \begin{enumerate}[label={\arabic*})]
-        \item Dado $(G,*)$ grupo, $H=\{e\}$ e $H=G$ são subgrupos de $G$, chamados de \textbf{subgrupos triviais}.
+        \item Dado $(G, \ast )$ grupo, $H=\{e\}$ e $H=G$ são subgrupos de $G$, chamados de \textbf{subgrupos triviais}.
 
         \item Seja $(\mathbb{Z},+)$ um grupo. Tomando $H = m\z$, onde $m > 1$, então $H$ é subgrupo de $\z$.
 
@@ -356,9 +356,9 @@ e daí, por exemplo,
     \end{enumerate}
 \end{exemplos}
 
-Seja $(G, *)$ um grupo. Para simplificar a escrita vamos adotar uma notação multiplicativa e escrever $(G, *) = (G, \cdot)$. Assim, dados $x$, $y \in G$ vamos denotar
+Seja $(G, \ast )$ um grupo. Para simplificar a escrita vamos adotar uma notação multiplicativa e escrever $(G, \ast ) = (G, \cdot)$. Assim, dados $x$, $y \in G$ vamos denotar
 \[
-    x * y = x \cdot y = xy.
+    x \ast y = x \cdot y = xy.
 \]
 
 Nesse caso vamos dizer simplesmente que $G$ é um grupo.
@@ -539,9 +539,9 @@ Nesse caso vamos dizer simplesmente que $G$ é um grupo.
 
 \section{Grupos Cíclicos}
 
-Seja $(G, *)$ um grupo.
+Seja $(G, \ast )$ um grupo.
 
-Caso a operação $*$ seja do tipo multiplicativa, vamos escrever $(G, *) = (G, \cdot)$. Assim, dados $x$, $y \in G$ vamos denotar
+Caso a operação $\ast$ seja do tipo multiplicativa, vamos escrever $(G, \ast ) = (G, \cdot)$. Assim, dados $x$, $y \in G$ vamos denotar
 \[
     x * y = x \cdot y = xy.
 \]
@@ -676,9 +676,9 @@ Com a notação multiplicativa o inverso de um elemento $x \in G$ será denotado
     \end{enumerate}
 \end{proposicao}
 
-Seja $(G, *)$ um grupo.
+Seja $(G, \ast )$ um grupo.
 
-Caso a operação $*$ seja do tipo aditiva, vamos escrever $(G, *) = (G, +)$. Assim, dados $x$, $y \in G$ vamos denotar
+Caso a operação $\ast$ seja do tipo aditiva, vamos escrever $(G, \ast ) = (G, +)$. Assim, dados $x$, $y \in G$ vamos denotar
 \[
     x * y = x + y.
 \]
@@ -978,14 +978,14 @@ Com a notação aditiva o oposto de $x \in G$ será denotado por $-x$.
 \section{Homomorfismo de Grupos} % (fold)
 \label{sec:homomorfismo_de_grupos}
 
-% Sejam $(G, *)$ e $(H, \triangle)$ grupos quaisquer. Considere uma função $f : G \to H$. Entre todas as possíveis funções entre $G$ e $H$ vamos considerar somente aquelas que satisfação a condição
+% Sejam $(G, \ast )$ e $(H, \triangle)$ grupos quaisquer. Considere uma função $f : G \to H$. Entre todas as possíveis funções entre $G$ e $H$ vamos considerar somente aquelas que satisfação a condição
 % \[
 %     f(x * y) = f(x)\triangle f(y)
 % \]
-% para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x*y)$ a partir da imagem de $x$ e de $y$,
+% para todos $x$, $y \in G$, ou seja, podemos determinar a imagem de $f(x \ast y)$ a partir da imagem de $x$ e de $y$,
 
 \begin{definicao}
-    Dados dois grupos $(G, *)$ e $(H,\triangle)$ dizemos que uma função $f : G \to H$ é um \textbf{homomorfismo de grupos} se
+    Dados dois grupos $(G, \ast )$ e $(H,\triangle)$ dizemos que uma função $f : G \to H$ é um \textbf{homomorfismo de grupos} se
     \[
         f(x * y) = f(x)\triangle f(y)
     \]
@@ -993,7 +993,7 @@ Com a notação aditiva o oposto de $x \in G$ será denotado por $-x$.
 \end{definicao}
 
 \begin{observacao}
-    Sejam $(G, *)$, $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo.
+    Sejam $(G, \ast )$, $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo.
     \begin{enumerate}[label={\arabic*})]
         \item Se $G = H$, neste caso $f : G \to G$ é chamado de um \textbf{endomorfismos} de grupos.
         \item Se $f : G \to H$ é uma função injetora, então dizemos que $f$ é um \textbf{monomorfismo} de grupos.
@@ -1026,7 +1026,7 @@ Com a notação aditiva o oposto de $x \in G$ será denotado por $-x$.
 \end{exemplos}
 
 \begin{proposicao}
-    Sejam $(G, *)$, $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo. Denote por $1_G$ e $1_H$ os elementos neutros de $G$ e $H$, respectivamente.
+    Sejam $(G, \ast )$, $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo. Denote por $1_G$ e $1_H$ os elementos neutros de $G$ e $H$, respectivamente.
     \begin{enumerate}[label={\roman*})]
         \item $f(1_G) = 1_H$
         \item $[f(x)]^{-1} = f(x^{-1})$ para todo $x \in G$.
@@ -1086,7 +1086,7 @@ Com a notação aditiva o oposto de $x \in G$ será denotado por $-x$.
 \end{prova}
 
 \begin{definicao}
-    Sejam $(G, *)$, $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo de grupos. Chama-se de \textbf{núcleo} ou \textbf{kernel} de $f$ e denota-se por $N(f)$ ou $\ker(f)$ o seguinte subconjunto de $G$:
+    Sejam $(G, \ast )$, $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo de grupos. Chama-se de \textbf{núcleo} ou \textbf{kernel} de $f$ e denota-se por $N(f)$ ou $\ker(f)$ o seguinte subconjunto de $G$:
     \[
         \ker(f) = \{x \in G \mid f(x) = 1_H\}.
     \]
@@ -1112,7 +1112,7 @@ Com a notação aditiva o oposto de $x \in G$ será denotado por $-x$.
 \end{exemplos}
 
 \begin{proposicao}
-    Sejam $(G, *)$, $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo de grupos. Então:
+    Sejam $(G, \ast )$, $(H, \triangle)$ grupos e $f : G \to H$ um homomorfismo de grupos. Então:
     \begin{enumerate}[label={\roman*})]
         \item $\ker(f)$ é um subgrupo de $G$.
         \item $f$ é um monomorfismo se, e somente se, $\ker(f) = \{1_G\}$.
@@ -1120,7 +1120,7 @@ Com a notação aditiva o oposto de $x \in G$ será denotado por $-x$.
 \end{proposicao}
 \begin{prova}
     \begin{enumerate}[label={\roman*})]
-        \item Como $f(1_G) = 1_H$, então $1_G \in \ker(f)$ e com isso $\ker(f) \ne \emptyset$. Se $x \in \ker(f)$, então $f(x^{-1}) = [f(x)]^{-1} = 1_H^{-1} = 1_H$ e daí $x^{-1} \in \ker(f)$. Finalmente se $x$, $y \in \ker(f)$, então $f(x*y) = f(x)\triangle f(y) = 1_H \triangle 1_H = 1_H$, ou seja, $x * y \in \ker(f)$.
+        \item Como $f(1_G) = 1_H$, então $1_G \in \ker(f)$ e com isso $\ker(f) \ne \emptyset$. Se $x \in \ker(f)$, então $f(x^{-1}) = [f(x)]^{-1} = 1_H^{-1} = 1_H$ e daí $x^{-1} \in \ker(f)$. Finalmente se $x$, $y \in \ker(f)$, então $f(x \ast y) = f(x)\triangle f(y) = 1_H \triangle 1_H = 1_H$, ou seja, $x * y \in \ker(f)$.
 
         Portanto $\ker(f)$ é um subgrupo de $G$.
 
@@ -1133,7 +1133,7 @@ Com a notação aditiva o oposto de $x \in G$ será denotado por $-x$.
             &f(x)\triangle f(y^{-1}) = 1_H\\
             &f(x * y^{-1}) = 1_H
         \end{align*}
-        e daí $x*y^{-1} \in \ker(f) = \{1_G\}$. Logo $x*y^{-1} = 1_G$, isto é, $x = y$. Portanto, $f$ é injetora.
+        e daí $x \ast y^{-1} \in \ker(f) = \{1_G\}$. Logo $x \ast y^{-1} = 1_G$, isto é, $x = y$. Portanto, $f$ é injetora.
     \end{enumerate}
 \end{prova}
 
@@ -1159,7 +1159,7 @@ Com a notação aditiva o oposto de $x \in G$ será denotado por $-x$.
 
 
 \begin{proposicao}
-    Sejam $(G, *)$ e $(H, \triangle)$ grupos. Se $f : G \to H$ é um isomorfismo de grupos, então $f^{-1} : H \to G$ também é um isomorfismo de grupos.
+    Sejam $(G, \ast )$ e $(H, \diamond)$ grupos. Se $f : G \to H$ é um isomorfismo de grupos, então $f^{-1} : H \to G$ também é um isomorfismo de grupos.
 \end{proposicao}
 \begin{prova}
     Como $f : G \to H$ é bijetora, então $f^{-1} : H \to G$ existe e é também bijetora, Teorema \eqref{teorema_funcao_inversa} e Proposição \eqref{propriedades_identidade}.
@@ -1171,7 +1171,7 @@ Com a notação aditiva o oposto de $x \in G$ será denotado por $-x$.
     \end{align*}
     Com isso
     \begin{align*}
-        f^{-1}(y_1 \triangle y_2) &= f^{-1}(f(x_1) \triangle f(x_2)) \\ &= f^{-1}(f(x_1 * x_2)) \\ &= x_1 * x_2 \\ &= f^{-1}(y_1) * f^{-1}(y_2),
+        f^{-1}(y_1 \diamond y_2) &= f^{-1}(f(x_1) \diamond f(x_2)) \\ &= f^{-1}(f(x_1 * x_2)) \\ &= x_1 * x_2 \\ &= f^{-1}(y_1) * f^{-1}(y_2),
     \end{align*}
     ou seja, $f^{-1}$ é um homomorfismo de grupos.
     Portanto, $f^{-1}$ é um isomorfismo de grupos.
@@ -1238,7 +1238,7 @@ ou seja, $\sigma(x\cdot y) = \sigma(x) \circ \sigma(y)$ para todos $x$, $y \in G
 Como $\sigma$ também é bijetora, então $\sigma$ é um isomorfismo de $G$ em $S_2$. Nesse caso, dizemos que $G$ e $S_2$ são grupos isomorfos e denotamos isso escrevendo $G \cong S_2$.
 
 \begin{definicao}
-    Sejam $(G, *)$ e $(H, \triangle)$ grupos. Se existe $f : G \to H$ um isomorfismo, diremos que $G$ e $H$ são \textbf{grupos isomorfos} e denotaremos esse fato escrevendo $G \cong H$.
+    Sejam $(G, \ast )$ e $(H, \diamond)$ grupos. Se existe $f : G \to H$ um isomorfismo, diremos que $G$ e $H$ são \textbf{grupos isomorfos} e denotaremos esse fato escrevendo $G \cong H$.
 \end{definicao}
 
 \begin{proposicao}
